@@ -444,8 +444,6 @@ Within an interface definition, complex schemas may be defined for reusability a
 | --- | --- | --- | --- |
 | @id | required | IRI | The globally unique identifier for the schema. |
 | @type | required | `Array`, `Enum`, `Map`, or `Object` | The type of complex schema. This must refer to one of the complex schema metamodel classes (`Array`, `Enum`, `Map`, or `Object`). |
-| mapKey | required | `MapKey` | A description of the keys in the map. |
-| mapValue | required | `MapValue` | A description of the values in the map. |
 | comment | optional | string | A developer comment. |
 | description | optional | string | A [localizable](#display-string-localization) description for human display. |
 | displayName | optional | string | A [localizable](#display-string-localization) name for human display. |
