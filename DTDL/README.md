@@ -572,7 +572,7 @@ This example shows the kinds of changes that are allowed in new versions of an i
         {
             "@type": "Telemetry",
             "name": "humidity",
-            "schema": "double"
+            "schema": "integer"
         }
     ],
     "@context": "http://azureiot.com/v1/contexts/Interface.json"
