@@ -325,6 +325,7 @@ An Enum describes a data type with a set of named labels that map to values. The
     "name": "state",
     "schema": {
         "@type": "Enum",
+        "valueSchema": "integer",
         "enumValues": [
             {
                 "name": "offline",
