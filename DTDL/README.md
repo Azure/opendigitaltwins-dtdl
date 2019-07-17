@@ -42,7 +42,7 @@ Capability models must follow these rules for the interfaces they implement.
 | --- | --- | --- | --- | --- | --- |
 | @id | required | [DT id](#digital-twin-identifier-format) | max 256 chars | version number can be incremented | An identifier for the capability model that follows the digital twin identity format. Two capability models with same identifier refer to the same capability model. |
 | @type | required | IRI | | immutable | The type of capability model instance. This must refer to the `CapabilityModel` metamodel class. |
-| @context | required | IRI | | immutable | The context to use when processing this capability model. For this version, it must be set to `http://azureiot.com/v1/contexts/CapabilityModel.json` |
+| @context | required | IRI | | immutable | The context to use when processing this capability model. For this version, it must be set to `http://azureiot.com/v1/contexts/IoTModel.json` |
 | implements | required | set of `Capability Model Interface`s | max 30 interfaces | new interfaces can be added; versions of existing interfaces can be incremented; no interfaces can be removed | A set of capability model interfaces. |
 | comment | optional | string | 1-512 chars | mutable | A developer comment. |
 | description | optional | string | 1-512 chars | mutable | A [localizable](#display-string-localization) description for human display. |
@@ -65,7 +65,7 @@ This `CapabilityModel` example shows a thermostat that implements two `Interface
             "schema": "urn:azureiot:DeviceManagement:DeviceInformation:1"
         }
     ],
-    "@context": "http://azureiot.com/v1/contexts/CapabilityModel.json"
+    "@context": "http://azureiot.com/v1/contexts/IoTModel.json"
 }
 ```
 This example shows defining an `Interface` inline with a `CapabilityModel`.
@@ -83,7 +83,7 @@ This example shows defining an `Interface` inline with a `CapabilityModel`.
                 "displayName": "Thermostat",
                 "contents": [
                 ],
-                "@context": "http://azureiot.com/v1/contexts/Interface.json"
+                "@context": "http://azureiot.com/v1/contexts/IoTModel.json"
             }
         },
         {
@@ -91,7 +91,7 @@ This example shows defining an `Interface` inline with a `CapabilityModel`.
             "schema": "urn:azureiot:DeviceManagement:DeviceInformation:1"
         }
     ],
-    "@context": "http://azureiot.com/v1/contexts/CapabilityModel.json"
+    "@context": "http://azureiot.com/v1/contexts/IoTModel.json"
 }
 ```
 
@@ -116,7 +116,7 @@ An `Interface` describes related capabilities that are implemented by a device o
 | --- | --- | --- | --- | --- | --- |
 | @id | required | [DT id](#digital-twin-identifier-format) | max 256 chars | version number can be incremented | An identifier for the interface that follows the digital twin identity format. Two interfaces with same identifier refer to the same interface. |
 | @type | required | IRI | | immutable | The type of interface object. This must refer to the `Interface` metamodel class. |
-| @context | required | IRI | | immutable | The context to use when processing this interface. For this version, it must be set to `http://azureiot.com/v1/contexts/Interface.json` |
+| @context | required | IRI | | immutable | The context to use when processing this interface. For this version, it must be set to `http://azureiot.com/v1/contexts/IoTModel.json` |
 | comment | optional | string | 1-512 chars | mutable | A developer comment. |
 | contents | optional | set of `Telemetry`, `Property`, or `Command` | max 300 contents | new contents can be added; versions of existing contents can be incremented; no contents can be removed | A set of objects that describe the capabilities (telemetry, property, and/or commands) of this interface. |
 | description | optional | string | 1-512 chars | mutable | A [localizable](#display-string-localization) description for human display. |
@@ -143,7 +143,7 @@ This `Interface` example shows a thermostat interface that implements one teleme
             "schema": "double"
         }
     ],
-    "@context": "http://azureiot.com/v1/contexts/Interface.json"
+    "@context": "http://azureiot.com/v1/contexts/IoTModel.json"
 }
 ```
 
@@ -180,7 +180,7 @@ A Property describes the read-only and read-write state of a device or digital t
 | --- | --- | --- | --- | --- | --- |
 | @type | required | IRI | | immutable | The type of property object. This must refer to the `Property` metamodel class. |
 | name | required | string | 1-64 chars | immutable | The "programming" name of the property. The name must match this regular expression `^[a-zA-Z_][a-zA-Z0-9_]*$`. The name must be unique for all contents in this interface. |
-| schema | required | `Schema` | | immutable | The data type of the property. |
+| schema | required | `Schema` | | immutable | The data type of the property. The Array schema is not supported for properties. |
 | @id | optional | [DT id](#digital-twin-identifier-format) | max 256 chars | version number can be incremented | The ID of the property description. If no @id is provided, the digital twin interface processor assigns one. |
 | comment | optional | string | 1-512 chars | mutable | A developer comment. |
 | description | optional | string | 1-512 chars | mutable | A [localizable](#display-string-localization) description for human display. |
@@ -518,7 +518,7 @@ Within an interface definition, complex schemas may be defined for reusability a
             ]
         }
     ],
-    "@context": "http://azureiot.com/v1/contexts/Interface.json"
+    "@context": "http://azureiot.com/v1/contexts/IoTModel.json"
 }
 ```
 
@@ -552,7 +552,7 @@ This example shows the kinds of changes that are allowed in new versions of an i
             "displayUnit": "F"
         }
     ],
-    "@context": "http://azureiot.com/v1/contexts/Interface.json"
+    "@context": "http://azureiot.com/v1/contexts/IoTModel.json"
 }
 ```
 ```json
@@ -575,7 +575,7 @@ This example shows the kinds of changes that are allowed in new versions of an i
             "schema": "integer"
         }
     ],
-    "@context": "http://azureiot.com/v1/contexts/Interface.json"
+    "@context": "http://azureiot.com/v1/contexts/IoTModel.json"
 }
 ```
 
@@ -627,6 +627,4 @@ In this example, the `displayName` property is localized into multiple languages
 ### Context
 When writing a digital twin definition, it’s necessary to specify the version of DTDL being used. Because DTDL is based on JSON-LD, we use the JSON-LD context (the `@context` statement) to specify the version of DTDL being used.
 
-For this version of DTDL, the capability model context is exactly `http://azureiot.com/v1/contexts/CapabilityModel.json`.
-
-For this version of DTDL, the interface context is exactly `http://azureiot.com/v1/contexts/Interface.json`.
+For this version of DTDL, the context is exactly `http://azureiot.com/v1/contexts/IoTModel.json`.
