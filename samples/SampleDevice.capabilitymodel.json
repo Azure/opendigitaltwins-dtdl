@@ -1,0 +1,16 @@
+{
+  "@id": "urn:{your name}:sample_device:1",
+  "@type": "CapabilityModel",
+  "displayName": "My Sample Capability Model",
+  "implements": [
+    {
+      "schema": "urn:azureiot:DeviceManagement:DeviceInformation:1",
+      "name": "deviceinfo"
+    },
+    {
+      "schema": "urn:{your name}:EnvironmentalSensor:1",
+      "name": "sensor"
+    }
+  ],
+  "@context": "http://azureiot.com/v1/contexts/CapabilityModel.json"
+}
