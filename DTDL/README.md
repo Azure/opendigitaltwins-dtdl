@@ -349,7 +349,7 @@ An `EnumValue` describes an element of an enum.
 | Property | Required | Data type | Limits | Version rules | Description |
 | --- | --- | --- | --- | --- | --- |
 | name | required | string | 1-64 chars | immutable | The "programming" name of the enum value. The name must match this regular expression `^[a-zA-Z_][a-zA-Z0-9_]*$`. The name must be unique for all enum values in this enum. |
-| value | required | int or string | | immutable | The on-the-wire value that maps to the `EnumValue`. Value may be either an integer or a string and must be unique for all enum values in this enum. |
+| enumValue | required | int or string | | immutable | The on-the-wire value that maps to the `EnumValue`. Value may be either an integer or a string and must be unique for all enum values in this enum. |
 | @id | optional | [DT id](#digital-twin-identifier-format) | max 256 chars | version number can be incremented | The ID of the enum description. If no @id is provided, the digital twin interface processor assigns one. |
 | comment | optional | string | 1-512 chars | mutable | A developer comment. |
 | description | optional | string | 1-512 chars | mutable | A [localizable](#display-string-localization) description for human display. |
