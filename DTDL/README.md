@@ -1,5 +1,5 @@
 # Digital Twin Definition Language
-**Preview, Version 1**
+**Version 2**
 
 ## Contents
 [CapabilityModel](#capabilitymodel)<br>
@@ -29,22 +29,17 @@ Lastly, DTDL provides semantic type annotations of capabilities, so that analyti
 When writing a digital twin definition, it's necessary to specify the version of DTDL being used. Because DTDL is based on JSON-LD, we use the JSON-LD context (the `@context` statement) to specify the version of DTDL being used.
 
 ## CapabilityModel
-A `CapabilityModel` describes a device and defines the set of interfaces implemented by the device.
+A `CapabilityModel` describes a device and defines the set of components that make up the device. A component is a logically related set of capabilities that are declared together in an interface. See the [Component](#component) section for more details.
 
-A capability model includes the identifiers of the interfaces that it implements (including the version number). A new version of the capability model must be created when the device implements a new version of an interface, or when the device implements a new interface.
-
-Capability models must follow these rules for the interfaces they implement.
-* A capability model can only implement one instance of each interface.
-* A capability model can only implement one version of each interface. A capability model cannot implement two versions of the same interface.
-* A newer version of a capability model must include all the interfaces implemented by the previous version (although the version numbers of the interfaces can be the same or greater than the interface versions in the previous capability model version).
+A newer version of a capability model must include all the components declared by the previous version (although the version numbers of the interfaces in each component schema can be the same or greater than the version in the previous capability model version).
 
 ### CapabilityModel properties
 | Property | Required | Data type | Limits | Version rules | Description |
 | --- | --- | --- | --- | --- | --- |
 | @id | required | [DT id](#digital-twin-identifier-format) | max 256 chars | version number can be incremented | An identifier for the capability model that follows the digital twin identity format. Two capability models with same identifier refer to the same capability model. |
 | @type | required | IRI | | immutable | The type of capability model instance. This must refer to the `CapabilityModel` metamodel class. |
-| @context | required | IRI | | immutable | The context to use when processing this capability model. For this version, it must be set to `http://azureiot.com/v1/contexts/IoTModel.json` |
-| implements | required | set of `Capability Model Interface`s | max 30 interfaces | new interfaces can be added; versions of existing interfaces can be incremented; no interfaces can be removed | A set of capability model interfaces. |
+| @context | required | IRI | | immutable | The context to use when processing this capability model. For this version, it must be set to `http://azure.com/v2/contexts/Model.json` |
+| implements | required | set of `Component`s | max 30 components | new components can be added; versions of existing components can be incremented; no components can be removed | A set of components. |
 | comment | optional | string | 1-512 chars | mutable | A developer comment. |
 | description | optional | string | 1-512 chars | mutable | A [localizable](#display-string-localization) description for human display. |
 | displayName | optional | string | 1-64 chars | mutable | A [localizable](#display-string-localization) name for human display. |
@@ -62,11 +57,11 @@ This `CapabilityModel` example shows a thermostat that implements two `Interface
             "schema": "urn:example:thermostat:1"
         },
         {
-            "name": "urn_azureiot_DeviceManagement_DeviceInformation",
-            "schema": "urn:azureiot:DeviceManagement:DeviceInformation:1"
+            "name": "urn_azure_DeviceManagement_DeviceInformation",
+            "schema": "urn:azure:DeviceManagement:DeviceInformation:1"
         }
     ],
-    "@context": "http://azureiot.com/v1/contexts/IoTModel.json"
+    "@context": "http://azure.com/v2/contexts/Model.json"
 }
 ```
 This example shows defining an `Interface` inline with a `CapabilityModel`.
@@ -84,26 +79,26 @@ This example shows defining an `Interface` inline with a `CapabilityModel`.
                 "displayName": "Thermostat",
                 "contents": [
                 ],
-                "@context": "http://azureiot.com/v1/contexts/IoTModel.json"
+                "@context": "http://azure.com/v2/contexts/Model.json"
             }
         },
         {
-            "name": "urn_azureiot_DeviceManagement_DeviceInformation",
-            "schema": "urn:azureiot:DeviceManagement:DeviceInformation:1"
+            "name": "urn_azure_DeviceManagement_DeviceInformation",
+            "schema": "urn:azure:DeviceManagement:DeviceInformation:1"
         }
     ],
-    "@context": "http://azureiot.com/v1/contexts/IoTModel.json"
+    "@context": "http://azure.com/v2/contexts/Model.json"
 }
 ```
 
-### Capability Model Interface (Implements)
-A Capability Model Interface describes a part of a capability model. Interfaces enable capability models to be composed of many interfaces and for those interfaces to be named (so that name collisions across interfaces composed in a single capability model are mitigated).
+### Component
+A `Component` describes a part of a capability model. Components enable capability models to be made up of many interfaces and for those components to be named (to provide namespacing for interfaces).
 
-#### Capability Model Interface properties
+#### Component properties
 | Property | Required | Data type | Limits | Version rules | Description |
 | --- | --- | --- | --- | --- | --- |
-| name | required | string | 1-256 chars | immutable | The "programming" name of the capability model interface. The name must match this regular expression `^[a-zA-Z_][a-zA-Z0-9_]*$`. The name must be unique for all capability model interfaces in this capability model. |
-| schema | required | `Interface` | | version number can be incremented | The interface implemented by the capability model. |
+| name | required | string | 1-256 chars | immutable | The "programming" name of the component. The name must match this regular expression `^[a-zA-Z_][a-zA-Z0-9_]*$`. The name must be unique for all components in this capability model. |
+| schema | required | `Interface` | | version number can be incremented | The component's type, which must be an interface. |
 | @id | optional | [DT id](#digital-twin-identifier-format) | max 256 chars | version number can be incremented | The id of the capability model interface. If no @id is provided, the digital twin capability model processor assigns one. |
 | comment | optional | string | 1-512 chars | mutable | A developer comment. |
 | description | optional | string | 1-512 chars | mutable | A [localizable](#display-string-localization) description for human display. |
@@ -117,7 +112,7 @@ An `Interface` describes related capabilities that are implemented by a device o
 | --- | --- | --- | --- | --- | --- |
 | @id | required | [DT id](#digital-twin-identifier-format) | max 256 chars | version number can be incremented | An identifier for the interface that follows the digital twin identity format. Two interfaces with same identifier refer to the same interface. |
 | @type | required | IRI | | immutable | The type of interface object. This must refer to the `Interface` metamodel class. |
-| @context | required | IRI | | immutable | The context to use when processing this interface. For this version, it must be set to `http://azureiot.com/v1/contexts/IoTModel.json` |
+| @context | required | IRI | | immutable | The context to use when processing this interface. For this version, it must be set to `http://azure.com/v2/contexts/Model.json` |
 | comment | optional | string | 1-512 chars | mutable | A developer comment. |
 | contents | optional | set of `Telemetry`, `Property`, or `Command` | max 300 contents | new contents can be added; versions of existing contents can be incremented; no contents can be removed | A set of objects that describe the capabilities (telemetry, property, and/or commands) of this interface. |
 | description | optional | string | 1-512 chars | mutable | A [localizable](#display-string-localization) description for human display. |
@@ -144,7 +139,7 @@ This `Interface` example shows a thermostat interface that implements one teleme
             "schema": "double"
         }
     ],
-    "@context": "http://azureiot.com/v1/contexts/IoTModel.json"
+    "@context": "http://azure.com/v2/contexts/Model.json"
 }
 ```
 
@@ -520,7 +515,7 @@ Within an interface definition, complex schemas may be defined for reusability a
             ]
         }
     ],
-    "@context": "http://azureiot.com/v1/contexts/IoTModel.json"
+    "@context": "http://azure.com/v2/contexts/Model.json"
 }
 ```
 
@@ -554,7 +549,7 @@ This example shows the kinds of changes that are allowed in new versions of an i
             "displayUnit": "F"
         }
     ],
-    "@context": "http://azureiot.com/v1/contexts/IoTModel.json"
+    "@context": "http://azure.com/v2/contexts/Model.json"
 }
 ```
 ```json
@@ -577,7 +572,7 @@ This example shows the kinds of changes that are allowed in new versions of an i
             "schema": "integer"
         }
     ],
-    "@context": "http://azureiot.com/v1/contexts/IoTModel.json"
+    "@context": "http://azure.com/v2/contexts/Model.json"
 }
 ```
 
@@ -629,4 +624,4 @@ In this example, the `displayName` property is localized into multiple languages
 ### Context
 When writing a digital twin definition, it’s necessary to specify the version of DTDL being used. Because DTDL is based on JSON-LD, we use the JSON-LD context (the `@context` statement) to specify the version of DTDL being used.
 
-For this version of DTDL, the context is exactly `http://azureiot.com/v1/contexts/IoTModel.json`.
+For this version of DTDL, the context is exactly `http://azure.com/v2/contexts/Model.json`.
