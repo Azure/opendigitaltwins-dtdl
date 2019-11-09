@@ -1051,20 +1051,12 @@ span.step {
     display: none;
   }
   
-  .disk {
-    display: none;
-  }
-  
   .blue-oval {
     display: none;
   }
   
   .triangle {
     display: none;
-  }
-  
-  .line {
-   display: none;
   }
 }
 
@@ -1173,5 +1165,19 @@ span.step {
     margin-right: 0em;
     margin-bottom: 1em;
     height: 230px;
+  }
+
+  .home-wrapper {
+    padding: 100px 0px 50px 0px;
+  }
+}
+
+@media (max-width: 1366px) {
+  .line {
+    display: none;
+  }
+
+  .disk {
+    display: none;
   }
 }
