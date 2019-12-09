@@ -2,15 +2,9 @@ $(document).ready(function () {
   const urlParams = new URLSearchParams(window.location.search);
   const beta = urlParams.get('beta');
   if (beta === 'true') {
-    $("#journey").show();
-    $("#tabs-videos").show();
     $("#footer").show();
-    $("#faq").show();
   } else {
-    $("#journey").hide();
-    $("#tabs-videos").hide();
     $("#footer").hide();
-    $("#faq").hide();
   }
 });
 
@@ -55,6 +49,27 @@ myPlayer2.addEventListener(amp.eventName.loadedmetadata, function () {
     myPlayer2.currentAudioStreamList().switchIndex(0);
   }
 });
+
+var myPlayer3 = amp("azuremediaplayer3", myOptions);
+myPlayer3.src([
+  { src: "https://kevin-usea.streaming.media.azure.net/1ec5e2f1-b4d3-4823-bcfb-457abfbb57a4/2019_Msft_PlugPlay_CRADLEPOINT.ism/manifest", type: "application/vnd.ms-sstr+xml" }],
+  [
+    { src: "https://kevin-usea.streaming.media.azure.net/1ec5e2f1-b4d3-4823-bcfb-457abfbb57a4/2019_Msft_PlugPlay_CRADLEPOINT_Cut_11_Final_HRHD_1080p_Prores422HQ_MASTER.ttml.vtt", srclang: "en", kind: "subtitles", label: "English" }
+  ]);
+
+var myPlayer4 = amp("azuremediaplayer4", myOptions);
+myPlayer4.src([
+  { src: "https://kevin-usea.streaming.media.azure.net/1ec5e2f1-b4d3-4823-bcfb-457abfbb57a4/2019_Msft_PlugPlay_CRADLEPOINT.ism/manifest", type: "application/vnd.ms-sstr+xml" }],
+  [
+    { src: "https://kevin-usea.streaming.media.azure.net/1ec5e2f1-b4d3-4823-bcfb-457abfbb57a4/2019_Msft_PlugPlay_CRADLEPOINT_Cut_11_Final_HRHD_1080p_Prores422HQ_MASTER.ttml.vtt", srclang: "en", kind: "subtitles", label: "English" }
+  ]);
+
+  var myPlayer5 = amp("azuremediaplayer5", myOptions);
+myPlayer5.src([
+  { src: "https://kevin-usea.streaming.media.azure.net/1ec5e2f1-b4d3-4823-bcfb-457abfbb57a4/2019_Msft_PlugPlay_CRADLEPOINT.ism/manifest", type: "application/vnd.ms-sstr+xml" }],
+  [
+    { src: "https://kevin-usea.streaming.media.azure.net/1ec5e2f1-b4d3-4823-bcfb-457abfbb57a4/2019_Msft_PlugPlay_CRADLEPOINT_Cut_11_Final_HRHD_1080p_Prores422HQ_MASTER.ttml.vtt", srclang: "en", kind: "subtitles", label: "English" }
+  ]);
 
 // var myPlayer3 = amp("azuremediaplayer3", myOptions);
 // myPlayer3.src([

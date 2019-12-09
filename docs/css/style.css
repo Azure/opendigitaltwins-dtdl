@@ -43,8 +43,8 @@ iframe {
 }
 
 .section {
-  padding-top: 80px;
-  padding-bottom: 80px;
+  padding-top: 50px;
+  padding-bottom: 50px;
   position: relative;
 }
 
@@ -426,13 +426,12 @@ iframe {
 
 .home {
   position: relative;
-  background-color: #F4F9FF;
+  background-image: url('../images/background.png')
 }
 
 .home-wrapper {
   color: #FFFFFF;
   padding: 200px 0px 150px 0px;
-  background-color: #F4F9FF;
 }
 
 .home-wrapper-sm {
@@ -662,6 +661,7 @@ span.step {
 .nav-item-videos {
   padding-left: 1em;
   padding-right: 1em;
+  text-align: center;
 }
 
 .nav-pills .nav-link.active:hover, .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
@@ -669,15 +669,22 @@ span.step {
   background-color: transparent;
   border-bottom: 3px solid;
   border-radius: initial;
+  width: 170px;
 }
 
 .nav-pills .nav-link {
   color: #000000;
-  font-size: 26px;
+  font-size: 22px;
+  width: 170px;
 }
 
 .nav-pills .nav-item .nav-link:hover {
   background-color: #e1e1e1;
+  width: 170px;
+}
+
+.nav-pills-container {
+  margin-right: 1em;
 }
 
 .separationPages {
@@ -743,6 +750,12 @@ span.step {
     color: #11223F;
     font-size: 18px;
     line-height: 40px;
+}
+
+.faq-text{
+  color: #11223F;
+  font-size: 16px;
+  line-height: 22px;
 }
 
 .white {
@@ -888,18 +901,16 @@ span.step {
   opacity: 0.2;
   color: #3A84EC;
   font-size: 150px;
-  line-height: 40px;
   position: absolute;
   font-weight: 600;
   right: 0;
-    bottom: 31px;
-  -webkit-touch-callout: none; /* iOS Safari */
-    -webkit-user-select: none; /* Safari */
-     -khtml-user-select: none; /* Konqueror HTML */
-       -moz-user-select: none; /* Old versions of Firefox */
-        -ms-user-select: none; /* Internet Explorer/Edge */
-            user-select: none; /* Non-prefixed version, currently
-                                  supported by Chrome, Opera and Firefox */
+  bottom: 45px;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .github-logo {
@@ -925,7 +936,7 @@ span.step {
 
 .video-box {
   display: flex;
-  justify-content: normal;
+  justify-content: center;
   flex-direction: column;
   padding-left: 1.5em;
   padding-top: 1em;
@@ -958,7 +969,7 @@ span.step {
 
 .blue-oval {
   position: absolute;
-  bottom: 365px;
+  top: -60px;
   right: 0px;
   z-index: 1;
 }
@@ -995,6 +1006,29 @@ span.step {
   color: #5A43EE;
 }
 
+.btn-hero {
+  width: 200px;
+  margin-right: 1em;
+  margin-bottom: 1em;
+}
+
+a:not([href]):not([tabindex]) {
+  color: #19365f;
+}
+
+.azuremediaplayer {
+  height: 350px !important;
+}
+
+.amp-default-skin .vjs-big-play-button {
+  height: 80px !important;
+  width: 80px !important;
+}
+
+.amp-default-skin .vjs-big-play-button::before {
+  font-size: 50px !important;
+}
+
 @media (min-width: 768px) {
 	.nav-custom-left {
 		margin-left: 5%;
@@ -1005,7 +1039,7 @@ span.step {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 812px) {
   .navbar-custom {
         -moz-box-shadow: 0 2px 2px rgba(0,0,0,.1);
     -webkit-box-shadow: 0 2px 2px rgba(0,0,0,.1);
@@ -1025,10 +1059,10 @@ span.step {
     margin-top: 30px;
   }
   .navbar-custom > .container {
-    width: 90%;
+    width: 100%;
   }
   .navbar-toggle {
-      font-size: 30px;
+    font-size: 30px;
   }
   .navbar-toggler {
       position: relative;
@@ -1084,7 +1118,35 @@ span.step {
     width: 160px;
   }
 }
-@media (max-width: 768px) {
+
+@media (max-width: 1024px) {
+  .azuremediaplayer {
+    height: 300px !important;
+  }
+  .faq-question {
+    color: #11223F;
+    font-size: 15px;
+    line-height: 22px;
+  }
+
+  .faq-text{
+    color: #11223F;
+    font-size: 12px;
+    line-height: 22px;
+  }
+  .top-features-title {
+    font-size: 26px;
+  }
+}
+
+@media (max-width: 812px) {
+  .container {
+    max-width: 2000px;
+  }
+  .azuremediaplayer {
+    height: 220px !important;
+  }
+
   .logo {
     margin: 7px;
   }
@@ -1100,7 +1162,7 @@ span.step {
 
   .number {
     font-size: 100px;
-    bottom: 14px;
+    bottom: 25px;
   }
 
   .disk-width {
@@ -1136,11 +1198,6 @@ span.step {
   .headline-text {
     font-size: 32px;
   }
-  .section {
-    padding-top: 50px;
-    padding-bottom: 50px;
-    position: relative;
-  }
 
   .top-features-title {
     font-size: 24px;
@@ -1153,12 +1210,8 @@ span.step {
 
 @media (max-width: 500px) {
 
-  .azuremediaplayer-dimensions {
-    height: 200px;
-  }
-
-  .azuremediaplayer2-dimensions {
-    height: 200px;
+  .azuremediaplayer {
+    height: 180px !important;
   }
 
   .getting-started-card {
@@ -1179,5 +1232,10 @@ span.step {
 
   .disk {
     display: none;
+  }
+
+  .journey-image {
+    width: 70%;
+    margin-left: 1em;
   }
 }
