@@ -102,7 +102,7 @@ A Capability Model Interface describes a part of a capability model. Interfaces 
 #### Capability Model Interface properties
 | Property | Required | Data type | Limits | Version rules | Description |
 | --- | --- | --- | --- | --- | --- |
-| name | required | string | 1-256 chars | immutable | The "programming" name of the capability model interface. The name must match this regular expression `^[a-zA-Z_][a-zA-Z0-9_]*$`. The name must be unique for all capability model interfaces in this capability model. |
+| name | required | string | 1-256 chars | immutable | The "programming" name of the capability model interface. Name attributes may only contain the characters a-z, A-Z, 0-9, and underscore, conforming to this regular expression `^[a-zA-Z_][a-zA-Z0-9_]*$`. The name must be unique for all capability model interfaces in this capability model. |
 | schema | required | `Interface` | | version number can be incremented | The interface implemented by the capability model. |
 | @id | optional | [DT id](#digital-twin-identifier-format) | max 256 chars | version number can be incremented | The id of the capability model interface. If no @id is provided, the digital twin capability model processor assigns one. |
 | comment | optional | string | 1-512 chars | mutable | A developer comment. |
@@ -155,7 +155,7 @@ Telemetry describes the data emitted by a device or digital twin, whether the da
 | Property | Required | Data type | Limits | Version rules | Description |
 | --- | --- | --- | --- | --- | --- |
 | @type | required | IRI | | immutable | The type of telemetry object. This must refer to the `Telemetry` metamodel class. |
-| name | required | string | 1-64 chars | immutable | The "programming" name of the telemetry. The name must match this regular expression `^[a-zA-Z_][a-zA-Z0-9_]*$`. The name must be unique for all contents in this interface. |
+| name | required | string | 1-64 chars | immutable | The "programming" name of the telemetry. Name attributes may only contain the characters a-z, A-Z, 0-9, and underscore, conforming to this regular expression `^[a-zA-Z_][a-zA-Z0-9_]*$`. The name must be unique for all contents in this interface. |
 | schema | required | `Schema` | | immutable | The data type of the telemetry. |
 | @id | optional | [DT id](#digital-twin-identifier-format) | max 256 chars | version number can be incremented | The ID of the telemetry description. If no @id is provided, the digital twin interface processor assigns one. |
 | comment | optional | string | 1-512 chars | mutable | A developer comment. |
@@ -180,7 +180,7 @@ A Property describes the read-only and read-write state of a device or digital t
 | Property | Required | Data type | Limits | Version rules | Description |
 | --- | --- | --- | --- | --- | --- |
 | @type | required | IRI | | immutable | The type of property object. This must refer to the `Property` metamodel class. |
-| name | required | string | 1-64 chars | immutable | The "programming" name of the property. The name must match this regular expression `^[a-zA-Z_][a-zA-Z0-9_]*$`. The name must be unique for all contents in this interface. |
+| name | required | string | 1-64 chars | immutable | The "programming" name of the property. Name attributes may only contain the characters a-z, A-Z, 0-9, and underscore, conforming to this regular expression `^[a-zA-Z_][a-zA-Z0-9_]*$`. The name must be unique for all contents in this interface. |
 | schema | required | `Schema` | | immutable | The data type of the property. The Array schema is not supported for properties. |
 | @id | optional | [DT id](#digital-twin-identifier-format) | max 256 chars | version number can be incremented | The ID of the property description. If no @id is provided, the digital twin interface processor assigns one. |
 | comment | optional | string | 1-512 chars | mutable | A developer comment. |
@@ -207,7 +207,7 @@ A command describes a function or operation that can be performed on a device or
 | Property | Required | Data type | Limits | Version rules | Description |
 | --- | --- | --- | --- | --- | --- |
 | @type | required | IRI | | immutable | The type of command object. This must refer to the `Command` metamodel class. |
-| name | required | string | 1-64 chars | immutable | The "programming" name of the command. The name must match this regular expression `^[a-zA-Z_][a-zA-Z0-9_]*$`. The name must be unique for all contents in this interface. |
+| name | required | string | 1-64 chars | immutable | The "programming" name of the command. Name attributes may only contain the characters a-z, A-Z, 0-9, and underscore, conforming to this regular expression `^[a-zA-Z_][a-zA-Z0-9_]*$`. The name must be unique for all contents in this interface. |
 | @id | optional | [DT id](#digital-twin-identifier-format) | max 256 chars | version number can be incremented | The ID of the command description. If no @id is provided, the digital twin interface processor assigns one. |
 | comment | optional | string | 1-512 chars | mutable | A developer comment. |
 | description | optional | string | 1-512 chars | mutable | A [localizable](#display-string-localization) description for human display. |
@@ -249,7 +249,7 @@ A `CommandPayload` describes the inputs to or the outputs from a command.
 #### CommandPayload properties
 | Property | Required | Data type | Limits | Version rules | Description |
 | --- | --- | --- | --- | --- | --- |
-| name | required | string | 1-64 chars | immutable | The "programming" name of the field. The name must match this regular expression `^[a-zA-Z_][a-zA-Z0-9_]*$`. The name must be unique for all fields in this object. |
+| name | required | string | 1-64 chars | immutable | The "programming" name of the field. Name attributes may only contain the characters a-z, A-Z, 0-9, and underscore, conforming to this regular expression `^[a-zA-Z_][a-zA-Z0-9_]*$`. The name must be unique for all fields in this object. |
 | schema | required | `Schema` | | immutable | The data type of the field. |
 | @id | optional | [DT id](#digital-twin-identifier-format) | max 256 chars | version number can be incremented | The ID of the command payload. If no @id is provided, the digital twin interface processor assigns one. |
 | comment | optional | string | 1-512 chars | mutable | A developer comment. |
@@ -349,7 +349,7 @@ An `EnumValue` describes an element of an enum.
 ### EnumValue properties
 | Property | Required | Data type | Limits | Version rules | Description |
 | --- | --- | --- | --- | --- | --- |
-| name | required | string | 1-64 chars | immutable | The "programming" name of the enum value. The name must match this regular expression `^[a-zA-Z_][a-zA-Z0-9_]*$`. The name must be unique for all enum values in this enum. |
+| name | required | string | 1-64 chars | immutable | The "programming" name of the enum value. Name attributes may only contain the characters a-z, A-Z, 0-9, and underscore, conforming to this regular expression `^[a-zA-Z_][a-zA-Z0-9_]*$`. The name must be unique for all enum values in this enum. |
 | enumValue | required | int or string | | immutable | The on-the-wire value that maps to the `EnumValue`. EnumValue may be either an integer or a string and must be unique for all enum values in this enum. |
 | @id | optional | [DT id](#digital-twin-identifier-format) | max 256 chars | version number can be incremented | The ID of the enum description. If no @id is provided, the digital twin interface processor assigns one. |
 | comment | optional | string | 1-512 chars | mutable | A developer comment. |
@@ -396,7 +396,7 @@ A `MapKey` describes the key in a map. The schema of a `MapKey` must be string.
 ### MapKey properties
 | Property | Required | Data type | Limits | Version rules | Description |
 | --- | --- | --- | --- | --- | --- |
-| name | required | string | 1-64 chars | immutable | The "programming" name of the map key. The name must match this regular expression `^[a-zA-Z_][a-zA-Z0-9_]*$`. |
+| name | required | string | 1-64 chars | immutable | The "programming" name of the map key. Name attributes may only contain the characters a-z, A-Z, 0-9, and underscore, conforming to this regular expression `^[a-zA-Z_][a-zA-Z0-9_]*$`. |
 | schema | required | `Schema` | | immutable | The data type of the map key. Must be string. |
 | @id | optional | [DT id](#digital-twin-identifier-format) | max 256 chars | version number can be incremented | The ID of the map key description. If no @id is provided, the digital twin interface processor assigns one. |
 | comment | optional | string | 1-512 chars | mutable | A developer comment. |
@@ -409,7 +409,7 @@ A `MapValue` describes the values in a map.
 ### MapValue properties
 | Property | Required | Data type | Limits | Version rules | Description |
 | --- | --- | --- | --- | --- | --- |
-| name | required | string | 1-64 chars | immutable | The "programming" name of the map value. The name must match this regular expression `^[a-zA-Z_][a-zA-Z0-9_]*$`. |
+| name | required | string | 1-64 chars | immutable | The "programming" name of the map value. Name attributes may only contain the characters a-z, A-Z, 0-9, and underscore, conforming to this regular expression `^[a-zA-Z_][a-zA-Z0-9_]*$`. |
 | schema | required | `Schema` | | immutable | The data type of the map value. |
 | @id | optional | [DT id](#digital-twin-identifier-format) | max 256 chars | version number can be incremented | The ID of the map value description. If no @id is provided, the digital twin interface processor assigns one. |
 | comment | optional | string | 1-512 chars | mutable | A developer comment. |
