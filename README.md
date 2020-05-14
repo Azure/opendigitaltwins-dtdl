@@ -5,5 +5,3 @@ IoT Plug and Play simplifies IoT by allowing solution developers to integrate de
 We have unified the IoT Plug and Play schema with our upcoming [Digital Twin Definition Language](https://github.com/Azure/IoTPlugandPlay/tree/master/DTDL) (DTDL). IoT Plug and Play and the DTDL are open to the community and Microsoft welcomes collaboration with customers, partners, and the industry. They are based on open W3C standards such as JSON-LD and RDF which allow for easier adoption across services and tooling. Additionally, there is no additional cost for using IoT Plug and Play and DTDL; standard rates for IoT Hub, IoT Central, and other Azure services will remain the same. 
 
 Learn more about the Digital Twin Definition Language [here](https://github.com/Azure/IoTPlugandPlay/tree/master/DTDL).
-
-Contact [Microsoft](mailto:iotcert@microsoft.com) to learn more about building certified IoT Plug and Play devices.
