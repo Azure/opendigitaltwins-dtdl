@@ -19,6 +19,7 @@ This document specifies the Digital Twins Definition Language (DTDL), a language
 * Character set for the `name` property is updated.
 * The `unit` property is replaced with a semantic unit `unit` property.
 * The property `displayUnit` is removed.
+* The `commandType` property on `Command` is deprecated and its value is not used.
 
 ## Digital Twins Definition Language
 
@@ -257,7 +258,7 @@ The chart below lists the properties that a command may have.
 | `comment` | optional | *string* | 1-512 chars | mutable | A developer comment |
 | `description` | optional | *string* | 1-512 chars | mutable | A localizable description for human display |
 | `displayName` | optional | *string* | 1-64 chars | mutable | A localizable name for human display |
-| `commandType` | optional | Command-Type |  | immutable | The type of command execution, currently either synchronous or asynchronous. The default value is synchronous. |
+| `commandType` | optional | Command-Type |  | immutable | This property is deprecated. Either value, synchronous or asynchronous, has the same meaning: a command that starts execution within a configurable time and that completes execution within a configurable time. |
 | `request` | optional | Command-Payload |  | immutable | A description of the input to the Command |
 | `response` | optional | Command-Payload |  | immutable | A description of the output of the Command |
 
@@ -267,7 +268,6 @@ The chart below lists the properties that a command may have.
 {
     "@type": "Command",
     "name": "reboot",
-    "commandType": "asynchronous",
     "request": {
         "name": "rebootTime",
         "displayName": "Reboot Time",
@@ -283,12 +283,7 @@ The chart below lists the properties that a command may have.
 
 #### CommandType
 
-Command types are defined for the Command/commandType property.
-
-| `commandType` value | Description |
-| --- | --- | --- |
-| `asynchronous` | The command will complete sometime after control returns to the caller. After the command completes, the result and any outputs are available. |
-| `synchronous` | The command will be complete when control returns to the caller. The result and any outputs are available immediately. This is the default value for commandType. |
+CommandType is deprecated. Either value, `synchronous` or `asynchronous`, has the same meaning: a command that starts execution within a configurable time and that completes execution within a configurable time.
 
 #### CommandPayload
 
