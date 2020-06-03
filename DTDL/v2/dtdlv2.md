@@ -22,6 +22,7 @@ This document specifies the Digital Twins Definition Language (DTDL), a language
 * Character set for the `name` property is updated.
 * The `unit` property is replaced with a semantic unit `unit` property.
 * The property `displayUnit` is removed.
+* The `commandType` property on `Command` is deprecated and its value is not used.
 
 ## Digital Twins Definition Language
 
@@ -130,6 +131,7 @@ The following interface example shows a digital twin of a building that has a *n
 ```
 
 The following interface example shows how interface inheritance can be used to create specialized interfaces from more general interfaces. In this example, the *ConferenceRoom* interface inherits from the *Room* interface. Through inheritance, the *ConferenceRoom* has two properties: the *occupied* property (from *Room*) and the *capacity* property (from *ConferenceRoom()).
+
 ```json
 [
     {
@@ -159,9 +161,13 @@ The following interface example shows how interface inheritance can be used to c
     }
 ]
 ```
+
 ### Telemetry
+
 Telemetry describes the data emitted by any digital twin, whether the data is a regular stream of sensor readings or a computed stream of data, such as occupancy, or an occasional error or information message.
+
 The chart below lists the properties that telemetry may have.
+
 | Property | Required | Data type | Limits | Version rules | Description |
 | --- | --- | --- | --- | --- | --- |
 | `@type` | required | IRI |  | immutable | This must be at least "Telemetry". It can also include a semantic type |
@@ -255,7 +261,7 @@ The chart below lists the properties that a command may have.
 | `comment` | optional | *string* | 1-512 chars | mutable | A developer comment |
 | `description` | optional | *string* | 1-512 chars | mutable | A localizable description for human display |
 | `displayName` | optional | *string* | 1-64 chars | mutable | A localizable name for human display |
-| `commandType` | optional | Command-Type |  | immutable | The type of command execution, currently either synchronous or asynchronous. The default value is synchronous. |
+| `commandType` | optional | Command-Type |  | immutable | This property is deprecated. Either value, synchronous or asynchronous, has the same meaning: a command that starts execution within a configurable time and that completes execution within a configurable time. |
 | `request` | optional | Command-Payload |  | immutable | A description of the input to the Command |
 | `response` | optional | Command-Payload |  | immutable | A description of the output of the Command |
 
@@ -265,7 +271,6 @@ The chart below lists the properties that a command may have.
 {
     "@type": "Command",
     "name": "reboot",
-    "commandType": "asynchronous",
     "request": {
         "name": "rebootTime",
         "displayName": "Reboot Time",
@@ -281,12 +286,7 @@ The chart below lists the properties that a command may have.
 
 #### CommandType
 
-Command types are defined for the Command/commandType property.
-
-| `commandType` value | Description |
-| --- | --- | --- |
-| `asynchronous` | The command will complete sometime after control returns to the caller. After the command completes, the result and any outputs are available. |
-| `synchronous` | The command will be complete when control returns to the caller. The result and any outputs are available immediately. This is the default value for commandType. |
+CommandType is deprecated. Either value, `synchronous` or `asynchronous`, has the same meaning: a command that starts execution within a configurable time and that completes execution within a configurable time.
 
 #### CommandPayload
 
@@ -692,6 +692,7 @@ The chart below lists standard semantic types, corresponding unit types, and ava
 
 > [!NOTE]
 > The `TimeSpan` semantic type should not be confused with the duration schema type. The duration schema is in ISO 8601 format; it is intended for calendar durations; and it does not play well with SI units. The semantic unit for `TimeSpan` is `TimeUnit`, which gives temporal semantics to a numeric schema type.
+
 | Semantic type | Unit type | Unit |
 | --- | --- | --- |
 | `Acceleration` | `AccelerationUnit` | `metrePerSecondSquared` <br> `centimetrePerSecondSquared` <br> `gForce` |
@@ -771,6 +772,7 @@ This example shows the kinds of changes that are allowed in new versions of an i
     ],
     "@context": "dtmi:dtdl:context;2"
 }
+
 {
     "@id": "dtmi:com:example:Thermostat;2",
     "@type": "Interface",
