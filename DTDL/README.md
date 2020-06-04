@@ -1,10 +1,10 @@
 # Digital Twin Definition Language
 
-The Digital Twin Definition Language (DTDL) is a language for describing models and interfaces for IoT digital twins. Digital twins are models of entities in the physical environment such as shipping containers, rooms, factory floors, or logical entities that participate in IoT solutions. Using DTDL to describe a digital twin's capabilities enables the IoT platform and IoT solutions to leverage the semantics of the entity.
+The Digital Twins Definition Language (DTDL) is a language for describing models and interfaces for IoT digital twins. Digital twins are models of entities in the physical environment such as shipping containers, rooms, factory floors, or logical entities that participate in IoT solutions. Using DTDL to describe a digital twin's capabilities enables the IoT platform and IoT solutions to leverage the semantics of the entity.
 
 DTDL is open to the community and Microsoft welcomes collaboration with customers, partners, and the industry. It is based on open W3C standards such as JSON-LD and RDF which allow for easier adoption across services and tooling.
 
-To converge the use of DTDL across Azure IoT Hub, Azure IoT Central, Azure Digital Twins, and other Azure services, DTDL is going to a set of breaking changes.
+To converge DTDL across Azure IoT Hub, Azure IoT Central, Azure Digital Twins, and other Azure services, DTDL is introducing a set of breaking changes.
 
 Azure IoT Hub and Azure IoT Central support for [IoT Plug & Play](#iot-plug-and-play) is using [DTDL preview, version 1](v1-preview/dtdlv1.md). They are in the process of moving to version 2.
 
