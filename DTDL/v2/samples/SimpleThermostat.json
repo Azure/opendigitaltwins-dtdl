@@ -2,30 +2,29 @@
   "@context": "dtmi:dtdl:context;2",
   "@id": "dtmi:com:example:simplethermostat;1",
   "@type": "Interface",
-  "displayName": "Simple thermostat ",
+  "displayName": "Simple thermostat",
   "contents": [
     {
-      "@type": "Property",
+      "@type": [ "Property", "Temperature" ],
       "displayName": "Target Temperature",
       "description": "Desired temperature to configure remotely.",
       "name": "targetTemperature",
       "schema": "double",
+      "unit": "degreeCelsius",
       "writable": true
     },
     {
-      "@type": "Property",
+      "@type": [ "Property", "Temperature"],
       "displayName": "Current Temperature",
-      "description": "Current temperature reported from the device.",
+      "description": "Current temperature reported from the device as a property.",
       "name": "currentTemperature",
-      "schema": "double",
-      "writable": false
+      "schema": "double", 
+      "unit": "degreeCelsius",
+      "writable": false     
     },
     {
-      "@type": [
-        "Telemetry",
-        "Temperature"
-      ],
-      "description": "Current temperature on the device",
+      "@type": [ "Telemetry", "Temperature"],
+      "description": "Temperature reported from the device as telemetry.",
       "displayName": "Temperature",
       "name": "temperature",
       "schema": "double",
