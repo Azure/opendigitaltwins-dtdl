@@ -1,0 +1,26 @@
+{
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:com:example:Diagnostics;1",
+    "@type": "Interface",
+    "displayName": "Diagnostics",
+    "description": "Provides functionality to report memory usage and reboot the device.",
+    "contents": [
+      {
+        "@type": "Telemetry",
+        "description": "Current workingset of the device application",
+        "displayName": "Workingset",
+        "name": "workingset",
+        "schema": "long"
+      },
+      {
+        "@type": "Command",
+        "description": "This command will reboot the device application.",
+        "displayName": "Reboot",
+        "name": "reboot",
+        "request": {
+          "name": "delay",
+          "schema": "integer"
+        }
+      }
+    ]  
+}

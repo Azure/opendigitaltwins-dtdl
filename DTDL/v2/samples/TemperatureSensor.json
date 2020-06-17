@@ -1,0 +1,37 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:com:example:TemperatureSensor;1",
+  "@type": "Interface",
+  "displayName": "Temperature Sensor",
+  "description": "Report temperature, and allows to control the target temperature remotely.",
+  "comment": "Requires temperature sensors.",
+  "contents": [
+    {
+      "@type": "Property",
+      "displayName": "Target Temperature",
+      "description": "Desired temperature to configure remotely.",
+      "name": "targetTemperature",
+      "schema": "double",
+      "writable": true
+    },
+    {
+      "@type": "Property",
+      "displayName": "Current Temperature",
+      "description": "Current temperature reported from the device.",
+      "name": "currentTemperature",
+      "schema": "double",
+      "writable": false
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Temperature"
+      ],
+      "description": "Current temperature on the device.",
+      "displayName": "Temperature",
+      "name": "temperature",
+      "schema": "double",
+      "unit": "degreeCelsius"
+    }
+  ]
+}
