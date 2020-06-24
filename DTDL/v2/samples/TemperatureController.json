@@ -1,11 +1,10 @@
 {
   "@context": "dtmi:dtdl:context;2",
-  "@id": "dtmi:com:example:WeatherStation;1",
+  "@id": "dtmi:com:example:TemperatureController;1",
   "@type": "Interface",
-  "displayName": "WeatherStation",
+  "displayName": "Temperature Controller",
   "description": "Device with two thermostats and remote reboot.",
-  "contents": [
-    {
+  "contents": [    {
       "@type": "Telemetry",
       "name": "workingSet",
       "displayName": "Working Set",
