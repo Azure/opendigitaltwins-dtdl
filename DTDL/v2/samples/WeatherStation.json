@@ -1,0 +1,50 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:com:example:WeatherStation;1",
+  "@type": "Interface",
+  "displayName": "WeatherStation",
+  "description": "Device with two thermostats and remote reboot.",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "workingSet",
+      "displayName": "Working Set",
+      "description": "Current working set of the device memory.",
+      "schema": "double"
+    },
+    {
+      "@type": "Property",
+      "name": "serialNumber",
+      "schema": "string"
+    },
+    {
+      "@type": "Command",
+      "name": "reboot",
+      "displayName": "Reboot",
+      "description": "Reboots the device after waiting the number of seconds specified.",
+      "request": {
+        "name": "delay",
+        "displayName": "Delay",
+        "description": "Number of seconds to wait before rebooting the device.",
+        "schema": "integer"
+      }
+    },
+    {
+      "@type" : "Component",
+      "schema": "dtmi:com:example:Thermostat;1",
+      "name": "thermostat1",
+      "displayName": "Thermostat One"
+    },
+    {
+      "@type" : "Component",
+      "schema": "dtmi:com:example:Thermostat;1",
+      "name": "thermostat2",
+      "displayName": "Thermostat Two"
+    },
+    {
+      "@type": "Component",
+      "schema": "dtmi:azure:DeviceManagement:DeviceInformation;1",
+      "name": "deviceInfo"
+    }
+  ]
+}
