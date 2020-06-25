@@ -8,7 +8,7 @@
       "@type": "Telemetry",
       "name": "workingSet",
       "displayName": "Working Set",
-      "description": "Current working set of the device memory.",
+      "description": "Current working set of the device memory in KB.",
       "schema": "double"
     },
     {
@@ -34,13 +34,22 @@
       "@type" : "Component",
       "schema": "dtmi:com:example:Thermostat;1",
       "name": "thermostat1",
-      "displayName": "Thermostat One"
+      "displayName": "Thermostat One",
+      "description": "Thermostat One of Two."
     },
     {
       "@type" : "Component",
       "schema": "dtmi:com:example:Thermostat;1",
       "name": "thermostat2",
-      "displayName": "Thermostat Two"
+      "displayName": "Thermostat Two",
+      "description": "Thermostat Two of Two."
+    },
+    {
+      "@type": "Component",
+      "schema": "dtmi:azure:DeviceManagement:DeviceInformation;1",
+      "name": "deviceInformation",
+      "displayName": "Device Information interface",
+      "description": "Optional interface with basic device hardware information."
     }
   ]
 }
