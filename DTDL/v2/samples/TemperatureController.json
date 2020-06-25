@@ -14,6 +14,8 @@
     {
       "@type": "Property",
       "name": "serialNumber",
+      "displayName": "Serial Number",
+      "description": "Serial number of the device.",
       "schema": "string"
     },
     {
@@ -39,11 +41,6 @@
       "schema": "dtmi:com:example:Thermostat;1",
       "name": "thermostat2",
       "displayName": "Thermostat Two"
-    },
-    {
-      "@type": "Component",
-      "schema": "dtmi:azure:DeviceManagement:DeviceInformation;1",
-      "name": "deviceInfo"
     }
   ]
 }
