@@ -12,7 +12,7 @@
       ],
       "name": "temperature",
       "displayName" : "Temperature",
-      "description" : "Temperature in celsius.",
+      "description" : "Temperature in degrees Celsius.",
       "schema": "double",
       "unit": "degreeCelsius"
     },
@@ -43,7 +43,7 @@
       "@type": "Command",
       "name": "getMaxMinReport",
       "displayName": "Get Max-Min report.",
-      "description": "This command returns the max, min and average temperature in the specified period.",
+      "description": "This command returns the max, min and average temperature from the specified time to the current time.",
       "request": {
         "name": "since",
         "displayName": "Since",
@@ -72,7 +72,12 @@
               "schema": "double"
             },
             {
-              "name" : "since",
+              "name" : "startTime",
+              "displayName": "Since",
+              "schema": "dateTime"
+            },
+            {
+              "name" : "endTime",
               "displayName": "Since",
               "schema": "dateTime"
             }
