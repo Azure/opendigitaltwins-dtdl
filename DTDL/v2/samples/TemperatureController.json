@@ -5,11 +5,14 @@
   "displayName": "Temperature Controller",
   "description": "Device with two thermostats and remote reboot.",
   "contents": [    {
-      "@type": "Telemetry",
+      "@type": [
+        "Telemetry", "DataSize"
+      ],
       "name": "workingSet",
       "displayName": "Working Set",
       "description": "Current working set of the device memory in KB.",
-      "schema": "double"
+      "schema": "double",
+      "unit" : "kibibyte"
     },
     {
       "@type": "Property",
