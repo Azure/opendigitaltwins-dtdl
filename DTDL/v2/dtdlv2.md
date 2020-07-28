@@ -401,7 +401,6 @@ A full set of primitive data types are provided and can be specified directly as
 
 | Digital twin primitive schema | Description |
 | --- | --- |
-| `bytes` | A sequence of bytes. Not supported during public preview. |
 | `boolean` | A boolean value |
 | `date` | A date in ISO 8601 format |
 | `dateTime` | A date and time in ISO 8601 format |
