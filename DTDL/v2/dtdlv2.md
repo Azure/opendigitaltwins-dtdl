@@ -520,7 +520,7 @@ The chart below lists the properties that a Map may have.
 | `displayName` | optional | *string* | 1-64 chars | mutable | A localizable name for human display |
 
 ##### Map examples
-
+This example shows defining a map from a module name to a module state.
 ```json
 {
     "@type": "Property",
@@ -539,7 +539,13 @@ The chart below lists the properties that a Map may have.
     }
 }
 ```
-
+When JSON is used to serialize map data, this example shows the serialized map data for the map model definition above. Note that the map key name and map key value are not serialized; they are metadata.
+```json
+"modules": {
+    "moduleA": "running",
+    "moduleB": "stopped"
+}
+```
 #### MapKey
 
 A MapKey describes the key in a Map. The schema of a MapKey must be *string*.
