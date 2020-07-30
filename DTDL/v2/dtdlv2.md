@@ -1,4 +1,5 @@
 # Digital Twins Definition Language (DTDL)
+
 **Version 2**
 
 This version of DTDL is used for Azure Digital Twins.
@@ -7,7 +8,7 @@ If you are using IoT Plug and Play in IoT Hub and IoT Central, refer to [DTDL ve
 
 ## Introduction
 
-This document specifies the Digital Twins Definition Language (DTDL), a language for describing models for Plug & Play (P&P) devices, device digital twins, and logical digital twins. Broadly, modeling enables IoT solutions to provision, use, and configure digital twins of all kinds from multiple sources in a single solution. Using DTDL to describe any digital twin's abilities enables the IoT platform and IoT solutions to leverage the semantics of each digital twin.
+This document specifies the Digital Twins Definition Language (DTDL), a language for describing models for IoT Plug and Play devices, device digital twins, and logical digital twins. Broadly, modeling enables IoT solutions to provision, use, and configure digital twins of all kinds from multiple sources in a single solution. Using DTDL to describe any digital twin's abilities enables the IoT platform and IoT solutions to leverage the semantics of each digital twin.
 
 ## Changes from Public Preview 1
 
