@@ -47,7 +47,7 @@ The chart below lists the properties that may be part of an interface.
 | `@type` | required | [IRI](#internationalized-resource-identifier) |  | immutable | This must be "Interface" |
 | `@context` | required (at least once in the doc) | [IRI](#internationalized-resource-identifier) |  | immutable | The context to use when processing this interface. For this version, it must be set to "dtmi:dtdl:context;2" |
 | `comment` | optional | *string* | 1-512 chars | mutable | A comment for model authors |
-| `contents` | optional | set of Telemetry, Properties, Commands, Relationships, Components | max 300 contents | new contents can be added; versions of existing contents can be incremented; no contents can be removed | A set of objects that define to the contents (Telemetry, Properties, Commands, Relationships, and/or Components) of this interface |
+| `contents` | optional | set of Telemetry, Properties, Commands, Relationships, Components | max 300 contents | new contents can be added; versions of existing contents can be incremented; no contents can be removed | A set of objects that define the contents (Telemetry, Properties, Commands, Relationships, and/or Components) of this interface |
 | `description` | optional | *string* | 1-512 chars | mutable | A localizable description for display |
 | `displayName` | optional | *string* | 1-64 chars | mutable | A localizable name for display |
 | `extends` | optional | set of interfaces | up to 2 interfaces per extends; max depth of 10 levels | new interfaces can be added; versions of existing interfaces can be incremented; no interfaces can be removed | A set of DTMIs that refer to interfaces this interface inherits from. Interfaces can inherit from multiple interfaces. |
