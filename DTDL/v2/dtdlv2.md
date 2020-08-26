@@ -2,9 +2,10 @@
 
 **Version 2**
 
-This version of DTDL is used for Azure Digital Twins.
+This version of DTDL is used for [Azure Digital Twins](https://azure.microsoft.com/services/digital-twins/) and  [IoT Plug and Play](https://aka.ms/iotpnp).
 
-If you are using IoT Plug and Play in IoT Hub and IoT Central, refer to [DTDL version 1 preview](../v1-preview/dtdlv1.md).
+> Note: If you are using IoT Plug and Play public preview in IoT Central, refer to [DTDL version 1 preview](../v1-preview/dtdlv1.md).
+
 
 ## Introduction
 
