@@ -48,7 +48,7 @@ The chart below lists the properties that may be part of an interface.
 | `@type` | required | [IRI](#internationalized-resource-identifier) |  | This must be "Interface" |
 | `@context` | required (at least once in the doc) | [IRI](#internationalized-resource-identifier) |  | The context to use when processing this interface. For this version, it must be set to "dtmi:dtdl:context;2" |
 | `comment` | optional | *string* | 1-512 chars | A comment for model authors |
-| `contents` | optional | set of Telemetry, Properties, Commands, Relationships, Components | max 300 contents | A set of objects that define to the contents (Telemetry, Properties, Commands, Relationships, and/or Components) of this interface |
+| `contents` | optional | set of Telemetry, Properties, Commands, Relationships, Components | max 300 contents | A set of objects that define the contents (Telemetry, Properties, Commands, Relationships, and/or Components) of this interface |
 | `description` | optional | *string* | 1-512 chars | A localizable description for display |
 | `displayName` | optional | *string* | 1-64 chars | A localizable name for display |
 | `extends` | optional | set of interfaces | up to 2 interfaces per extends; max depth of 10 levels | A set of DTMIs that refer to interfaces this interface inherits from. Interfaces can inherit from multiple interfaces. |
