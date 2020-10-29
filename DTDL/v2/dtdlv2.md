@@ -1,13 +1,15 @@
 # Digital Twins Definition Language (DTDL)
+
 **Version 2**
 
-This version of DTDL is used for Azure Digital Twins.
+This version of DTDL is used for [Azure Digital Twins](https://azure.microsoft.com/services/digital-twins/) and  [IoT Plug and Play](https://aka.ms/iotpnp).
 
-If you are using IoT Plug and Play in IoT Hub and IoT Central, refer to [DTDL version 1 preview](../v1-preview/dtdlv1.md).
+> Note: If you are using IoT Plug and Play public preview in IoT Central, refer to [DTDL version 1 preview](../v1-preview/dtdlv1.md).
+
 
 ## Introduction
 
-This document specifies the Digital Twins Definition Language (DTDL), a language for describing models for Plug & Play (P&P) devices, device digital twins, and logical digital twins. Broadly, modeling enables IoT solutions to provision, use, and configure digital twins of all kinds from multiple sources in a single solution. Using DTDL to describe any digital twin's abilities enables the IoT platform and IoT solutions to leverage the semantics of each digital twin.
+This document specifies the Digital Twins Definition Language (DTDL), a language for describing models for IoT Plug and Play devices, device digital twins, and logical digital twins. Broadly, modeling enables IoT solutions to provision, use, and configure digital twins of all kinds from multiple sources in a single solution. Using DTDL to describe any digital twin's abilities enables the IoT platform and IoT solutions to leverage the semantics of each digital twin.
 
 ## Changes from Public Preview 1
 
@@ -28,7 +30,7 @@ This document specifies the Digital Twins Definition Language (DTDL), a language
 
 Plug & Play devices, device digital twins, and logical digital twins are described using a variant of JSON called JSON-LD. JSON-LD is designed to be usable directly as JSON as well as usable in Resource Description Framework (RDF) systems. RDF is a widely adopted standard for describing resources in a distributed, extensible way. We chose JSON-LD because it is JSON and because it is an easy-to-use language for RDF. Developers can use DTDL with no knowledge of RDF, but equally important, can take advantage of semantic annotations and RDF using the same entity definitions.
 
-The Digital Twins Definition Language (DTDL) is made up of a set of metamodel classes (described in the rest of this document) that are used to define the behavior of all digital twins (including devices). There are five metamodel classes that describe these behaviors: Telemetry, Property, Command, Relationship, and Component. In addition, because data is a key element in IoT solutions, the DTDL provides a data description language that is compatible with many popular serialization formats, including JSON and binary serialization formats. When a digital twin is modeled using the DTDL, its behaviors are defined using these metamodel classes (Interfaces, Telemetry, Properties, Commands, Relationships, Components, and data types) and it often implements those behaviors using an SDK in terms of these metamodel classes.
+The Digital Twins Definition Language (DTDL) is made up of a set of metamodel classes (described in the rest of this document) that are used to define the behavior of all digital twins (including devices). There are six metamodel classes that describe these behaviors: Interface, Telemetry, Property, Command, Relationship, and Component. In addition, because data is a key element in IoT solutions, the DTDL provides a data description language that is compatible with many popular serialization formats, including JSON and binary serialization formats. When a digital twin is modeled using the DTDL, its behaviors are defined using these metamodel classes (Interfaces, Telemetry, Properties, Commands, Relationships, Components, and data types) and it often implements those behaviors using an SDK in terms of these metamodel classes.
 
 Lastly, the Digital Twins Definition Language provides semantic type annotations of behaviors, so that analytics, machine learning, UIs, and other computation can reason about the semantics of the data, not just the schema of the data. For example, properties that are semantically annotated as "temperature" can be reasoned about as temperature (charted together, compared, converted to like units, etc.) instead of simply double data types.
 
