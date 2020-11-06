@@ -625,7 +625,7 @@ A Field describes a field in an Object.
 The chart below lists the properties that a Field may have.
 
 | Property | Required | Data type | Limits | Description |
-| --- | --- | --- | --- | --- | --- |
+| --- | --- | --- | --- | --- |
 | `name` | required | *string* | 1-64 chars; unique for all fields in the object | The "programming" name of the field. The name may only contain the characters a-z, A-Z, 0-9, and underscore, and must match this regular expression `^[a-zA-Z](?:[a-zA-Z0-9_]*[a-zA-Z0-9])?$`. |
 | `schema` | required | Schema |  | The data type of the field |
 | `@id` | optional | [DTMI](#digital-twin-model-identifier-(dtmi)) | max 2048 chars | The ID of the field. If no `@id` is provided, the digital twin interface processor will assign one. |
