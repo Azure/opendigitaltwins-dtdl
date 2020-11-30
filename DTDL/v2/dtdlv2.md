@@ -44,11 +44,11 @@ The chart below lists the properties that may be part of an interface.
 
 | Property | Required | Data type | Limits | Description |
 | --- | --- | --- | --- | --- |
-| `@id` | required | [DTMI](#digital-twin-model-identifier-(dtmi)) | max 128 chars | A digital twin model identifier for the interface |
+| `@id` | required | [DTMI](#digital-twin-model-identifier) | max 128 chars | A digital twin model identifier for the interface |
 | `@type` | required | [IRI](#internationalized-resource-identifier) |  | This must be "Interface" |
 | `@context` | required (at least once in the doc) | [IRI](#internationalized-resource-identifier) |  | The context to use when processing this interface. For this version, it must be set to "dtmi:dtdl:context;2" |
 | `comment` | optional | *string* | 1-512 chars | A comment for model authors |
-| `contents` | optional | set of Telemetry, Properties, Commands, Relationships, Components | max 300 contents | A set of objects that define the contents (Telemetry, Properties, Commands, Relationships, and/or Components) of this interface |
+| `contents` | optional | set of [Telemetry](#telemetry), [Properties](#property), [Commands](#command), [Relationships](#relationship), [Components](#component) | max 300 contents | A set of objects that define the contents (Telemetry, Properties, Commands, Relationships, and/or Components) of this interface |
 | `description` | optional | *string* | 1-512 chars | A localizable description for display |
 | `displayName` | optional | *string* | 1-64 chars | A localizable name for display |
 | `extends` | optional | set of interfaces | up to 2 interfaces per extends; max depth of 10 levels | A set of DTMIs that refer to interfaces this interface inherits from. Interfaces can inherit from multiple interfaces. |
@@ -175,7 +175,7 @@ The chart below lists the properties that telemetry may have.
 | `@type` | required | [IRI](#internationalized-resource-identifier) |  | This must be at least "Telemetry". It can also include a semantic type |
 | `name` | required | *string* | 1-64 chars; unique for all contents in the interface | The "programming" name of the telemetry. The name may only contain the characters a-z, A-Z, 0-9, and underscore, and must match this regular expression `^[a-zA-Z](?:[a-zA-Z0-9_]*[a-zA-Z0-9])?$`. |
 | `schema` | required | Schema | The data type of the Telemetry |
-| `@id` | optional | [DTMI](#digital-twin-model-identifier-(dtmi)) | max 2048 chars | The ID of the telemetry. If no `@id` is provided, the digital twin interface processor will assign one. |
+| `@id` | optional | [DTMI](#digital-twin-model-identifier) | max 2048 chars | The ID of the telemetry. If no `@id` is provided, the digital twin interface processor will assign one. |
 | `comment` | optional | *string* | 1-512 chars | A comment for model authors |
 | `description` | optional | *string* | 1-512 chars | A localizable description for display |
 | `displayName` | optional | *string* | 1-64 chars | A localizable name for display |
@@ -217,7 +217,7 @@ The chart below lists the properties that a DTDL property may have.
 | `@type` | required | [IRI](#internationalized-resource-identifier) |  | This must at least be "Property". It can also include a semantic type. |
 | `name` | required | *string* | 1-64 chars; unique for all contents in the interface | The "programming" name of the property. The name may only contain the characters a-z, A-Z, 0-9, and underscore, and must match this regular expression `^[a-zA-Z](?:[a-zA-Z0-9_]*[a-zA-Z0-9])?$`. |
 | `schema` | required | Schema | may not be Array nor any complex schema that contains Array | The data type of the Property |
-| `@id` | optional | [DTMI](#digital-twin-model-identifier-(dtmi)) | max 2048 chars | The ID of the property. If no `@id` is provided, the digital twin interface processor will assign one. |
+| `@id` | optional | [DTMI](#digital-twin-model-identifier) | max 2048 chars | The ID of the property. If no `@id` is provided, the digital twin interface processor will assign one. |
 | `comment` | optional | *string* | 1-512 chars | A comment for model authors |
 | `description` | optional | *string* | 1-512 chars | A localizable description for display |
 | `displayName` | optional | *string* | 1-64 chars | A localizable name for display |
@@ -259,7 +259,7 @@ The chart below lists the properties that a command may have.
 | --- | --- | --- | --- | --- |
 | `@type` | required | [IRI](#internationalized-resource-identifier) |  | This must be "Command" |
 | `name` | required | *string* | 1-64 chars; unique for all contents in the interface | The "programming" name of the command. The name may only contain the characters a-z, A-Z, 0-9, and underscore, and must match this regular expression `^[a-zA-Z](?:[a-zA-Z0-9_]*[a-zA-Z0-9])?$`. |
-| `@id` | optional | [DTMI](#digital-twin-model-identifier-(dtmi)) | max 2048 chars | The ID of the command. If no `@id` is provided, the digital twin interface processor will assign one. |
+| `@id` | optional | [DTMI](#digital-twin-model-identifier) | max 2048 chars | The ID of the command. If no `@id` is provided, the digital twin interface processor will assign one. |
 | `comment` | optional | *string* | 1-512 chars | A comment for model authors |
 | `description` | optional | *string* | 1-512 chars | A localizable description for display |
 | `displayName` | optional | *string* | 1-64 chars | A localizable name for display |
@@ -300,14 +300,14 @@ The chart below lists the properties that CommandPayload may have.
 | --- | --- | --- | --- | --- |
 | `name` | required | *string* | 1-64 chars | The "programming" name of the payload. The name may only contain the characters a-z, A-Z, 0-9, and underscore, and must match this regular expression `^[a-zA-Z](?:[a-zA-Z0-9_]*[a-zA-Z0-9])?$`. |
 | `schema` | required | Schema |  | The data type of the payload |
-| `@id` | optional | [DTMI](#digital-twin-model-identifier-(dtmi)) | max 2048 chars | The ID of the command payload. If no `@id` is provided, the digital twin interface processor will assign one. |
+| `@id` | optional | [DTMI](#digital-twin-model-identifier) | max 2048 chars | The ID of the command payload. If no `@id` is provided, the digital twin interface processor will assign one. |
 | `comment` | optional | *string* | 1-512 chars | A comment for model authors |
 | `description` | optional | *string* | 1-512 chars | A localizable description for display |
 | `displayName` | optional | *string* | 1-64 chars | A localizable name for display |
 
 ### Relationship
 
-A relationship describes a link to any other digital twin. For more details about relationships, see [Create digital twins and the twin graph](../Documentation/concepts-twins-graph.md).
+A Relationship describes a link to another digital twin and enables graphs of digital twins to be created. Relationships are different from [Components](#component) because they describe a link to a separate digital twin.
 
 The chart below lists the properties that a relationship may have.
 
@@ -315,25 +315,25 @@ The chart below lists the properties that a relationship may have.
 | --- | --- | --- | --- | --- |
 | `@type` | required | [IRI](#internationalized-resource-identifier) |  | This must be "Relationship" |
 | `name` | required | *string* | 1-64 chars; unique for all contents in the interface | The "programming" name of the relationship. The name may only contain the characters a-z, A-Z, 0-9, and underscore, and must match this regular expression `^[a-zA-Z](?:[a-zA-Z0-9_]*[a-zA-Z0-9])?$`. |
-| `@id` | optional | [DTMI](#digital-twin-model-identifier-(dtmi)) | max 2048 chars | The ID of the relationship description. If no `@id` is provided, the digital twin interface processor will assign one. |
+| `@id` | optional | [DTMI](#digital-twin-model-identifier) | max 2048 chars | The ID of the relationship description. If no `@id` is provided, the digital twin interface processor will assign one. |
 | `comment` | optional | *string* | 1-512 chars | A comment for model authors |
 | `description` | optional | *string* | 1-512 chars | A localizable description for display |
 | `displayName` | optional | *string* | 1-64 chars | A localizable name for display |
-| `maxMultiplicity` | optional | non-negative integer | must be > 1 and >= `min-Multiplicity` | The maximum multiplicity for the target of the relationship. The default value is infinite (there may be an unlimited number of relationship instances for this relationship). |
-| `minMultiplicity` | optional | non-negative integer | must <= `max-Multiplicity` | The minimum multiplicity for the target of the relationship. The default value is 0 (this relationship is permitted to have no instances). During public preview, `minMultiplicity` must always be 0. |
+| `maxMultiplicity` | optional | non-negative integer | must be >= 1 and >= `minMultiplicity` | The maximum multiplicity for the target of the relationship. The default value is infinite (there may be an unlimited number of relationship instances for this relationship). |
+| `minMultiplicity` | optional | non-negative integer | must be <= `maxMultiplicity` | The minimum multiplicity for the target of the relationship. The default value is 0 (this relationship is permitted to have no instances). In DTDL v2, `minMultiplicity` must always be 0. |
 | `properties` | optional | set of Property | max 300 properties | A set of Properties that define relationship-specific state |
 | `target` | optional | Interface |  | An interface ID. The default value (when target is not specified) is that the target may be any interface. |
 | `writable` | optional | *boolean* |  | A boolean value that indicates whether the relationship is writable or not. The default value is *false*, indicating the property is read-only. |
 
 #### Relationship examples
 
-The following example defines a relationship to be had with a *Floor* twin. In this example, there must be one and only one relationship instance to the floor.
+The following example defines a relationship to be had with a *Floor* twin. In this example, there must be zero or one relationships instance to the floor.
 
 ```json
 {
     "@type": "Relationship",
     "name": "floor",
-    "minMultiplicity": 1,
+    "minMultiplicity": 0,
     "maxMultiplicity": 1,
     "target": "dtmi:com:example:Floor;1"
 }
@@ -371,14 +371,16 @@ Components enable interfaces to be composed of other interfaces. Components are 
 
 A component describes the inclusion of an interface into an interface "by value". This means that cycles in components are not allowed because the value of the component would be infinitely big.
 
+In DTDL v2, a Component cannot contain another Component. The maximum depth of Components is 1.
+
 The chart below lists the properties that a component may have.
 
 | Property | Required | Data type | Limits | Description |
 | --- | --- | --- | --- | --- |
 | `@type` | required | [IRI](#internationalized-resource-identifier) |  | This must be "Component" |
 | `name` | required | *string* | 1-64 chars; unique for all contents in the interface | The "programming" name of the component. The name may only contain the characters a-z, A-Z, 0-9, and underscore, and must match this regular expression `^[a-zA-Z](?:[a-zA-Z0-9_]*[a-zA-Z0-9])?$`. |
-| `schema` | required | Interface | cannot have a Component in a Component; cannot introduce a cycle of Components | The data type of the component |
-| `@id` | optional | [DTMI](#digital-twin-model-identifier-(dtmi)) | max 2048 chars | The ID of the component. If no `@id` is provided, the digital twin interface processor will assign one. |
+| `schema` | required | [Interface](#interface) | maximum depth of 1; no cycles | The data type of the component |
+| `@id` | optional | [DTMI](#digital-twin-model-identifier) | max 2048 chars | The ID of the component. If no `@id` is provided, the digital twin interface processor will assign one. |
 | `comment` | optional | *string* | 1-512 chars | A comment for model authors |
 | `description` | optional | *string* | 1-512 chars | A localizable description for display |
 | `displayName` | optional | *string* | 1-64 chars | A localizable name for display |
@@ -404,15 +406,15 @@ A full set of primitive data types are provided and can be specified directly as
 | Digital twin primitive schema | Description |
 | --- | --- |
 | `boolean` | A boolean value |
-| `date` | A date in ISO 8601 format |
-| `dateTime` | A date and time in ISO 8601 format |
+| `date` | A full-date as defined in [section 5.6 of RFC 3339](https://tools.ietf.org/html/rfc3339#section-5.6) |
+| `dateTime` | A date-time as defined in [RFC 3339](https://tools.ietf.org/html/rfc3339) |
 | `double` | An IEEE 8-byte floating point |
 | `duration` | A duration in ISO 8601 format |
 | `float` | An IEEE 4-byte floating point |
 | `integer` | A signed 4-byte integer |
 | `long` | A signed 8-byte integer |
 | `string` | A UTF8 string |
-| `time` | A time in ISO 8601 format |
+| `time` | A full-time as defined in [section 5.6 of RFC 3339](https://tools.ietf.org/html/rfc3339#section-5.6) |
 
 ### Complex schemas
 
@@ -430,7 +432,7 @@ The chart below lists the properties that an array may have.
 | --- | --- | --- | --- | --- |
 | `@type` | required | [IRI](#internationalized-resource-identifier) |  | This must be "Array" |
 | `elementSchema` | required | Schema |  | The data type of the array elements |
-| `@id` | optional | [DTMI](#digital-twin-model-identifier-(dtmi)) | max 2048 chars | The ID of the array. If no `@id` is provided, the digital twin interface processor will assign one. |
+| `@id` | optional | [DTMI](#digital-twin-model-identifier) | max 2048 chars | The ID of the array. If no `@id` is provided, the digital twin interface processor will assign one. |
 | `comment` | optional | *string* | 1-512 chars | A comment for model authors |
 | `description` | optional | *string* | 1-512 chars | A localizable description for display |
 | `displayName` | optional | *string* | 1-64 chars | A localizable name for display |
@@ -459,7 +461,7 @@ The chart below lists the properties that an Enum may have.
 | `@type` | required | [IRI](#internationalized-resource-identifier) |  | This must be "Enum" |
 | `enumValues` | required | EnumValue |  | A set of enum value and label mappings |
 | `valueSchema` | required | *integer* or *string* |  | The data type for the enum values. All enum values must be of the same type. |
-| `@id` | optional | [DTMI](#digital-twin-model-identifier-(dtmi)) | max 2048 chars | The ID of the enum. If no `@id` is provided, the digital twin interface processor will assign one. |
+| `@id` | optional | [DTMI](#digital-twin-model-identifier) | max 2048 chars | The ID of the enum. If no `@id` is provided, the digital twin interface processor will assign one. |
 | `comment` | optional | *string* | 1-512 chars | A comment for model authors |
 | `description` | optional | *string* | 1-512 chars | A localizable description for display |
 | `displayName` | optional | *string* | 1-64 chars | A localizable name for display |
@@ -499,7 +501,7 @@ The chart below lists the properties that an EnumValue may have.
 | --- | --- | --- | --- | --- |
 | `name` | required | *string* | 1-64 chars | The "programming" name of the enum value. The name must match this regular expression `^[a-zA-Z](?:[a-zA-Z0-9_]*[a-zA-Z0-9])?$`. The name must be unique for all enum values in this enum. |
 | `enumValue` | required | *int* or *string* |  | The on-the-wire value that maps to the EnumValue. EnumValue may be either an integer or a string and must be unique for all enum values in this enum. |
-| `@id` | optional | [DTMI](#digital-twin-model-identifier-(dtmi)) | max 2048 chars | The ID of the enum value. If no `@id` is provided, the digital twin interface processor will assign one. |
+| `@id` | optional | [DTMI](#digital-twin-model-identifier) | max 2048 chars | The ID of the enum value. If no `@id` is provided, the digital twin interface processor will assign one. |
 | `comment` | optional | *string* | 1-512 chars | A comment for model authors |
 | `description` | optional | *string* | 1-512 chars | A localizable description for display |
 | `displayName` | optional | *string* | 1-64 chars | A localizable name for display |
@@ -515,7 +517,7 @@ The chart below lists the properties that a Map may have.
 | `@type` | required | [IRI](#internationalized-resource-identifier) |  | This must be "Map" |
 | `mapKey` | required | MapKey |  | A description of the keys in the map |
 | `mapValue` | required | MapValue |  | A description of the values in the map |
-| `@id` | optional | [DTMI](#digital-twin-model-identifier-(dtmi)) | max 2048 chars | The ID of the map. If no `@id` is provided, the digital twin interface processor will assign one. |
+| `@id` | optional | [DTMI](#digital-twin-model-identifier) | max 2048 chars | The ID of the map. If no `@id` is provided, the digital twin interface processor will assign one. |
 | `comment` | optional | *string* | 1-512 chars | A comment for model authors |
 | `description` | optional | *string* | 1-512 chars | A localizable description for display |
 | `displayName` | optional | *string* | 1-64 chars | A localizable name for display |
@@ -557,7 +559,7 @@ The chart below lists the properties that a MapKey may have.
 | --- | --- | --- | --- | --- |
 | `name` | required | *string* | 1-64 chars | The "programming" name of the map's key. The name may only contain the characters a-z, A-Z, 0-9, and underscore, and must match this regular expression `^[a-zA-Z](?:[a-zA-Z0-9_]*[a-zA-Z0-9])?$`. |
 | `schema` | required | Schema | must be *string* | The data type of the map's key |
-| `@id` | optional | [DTMI](#digital-twin-model-identifier-(dtmi)) | max 2048 chars | The ID of the map key. If no `@id` is provided, the digital twin interface processor will assign one. |
+| `@id` | optional | [DTMI](#digital-twin-model-identifier) | max 2048 chars | The ID of the map key. If no `@id` is provided, the digital twin interface processor will assign one. |
 | `comment` | optional | *string* | 1-512 chars | A comment for model authors |
 | `description` | optional | *string* | 1-512 chars | A localizable description for display |
 | `displayName` | optional | *string* | 1-64 chars | A localizable name for display |
@@ -572,7 +574,7 @@ The chart below lists the properties that a MapValue may have.
 | --- | --- | --- | --- | --- |
 | `name` | required | *string* | 1-64 chars | The "programming" name of the map's value. The name may only contain the characters a-z, A-Z, 0-9, and underscore, and must match this regular expression `^[a-zA-Z](?:[a-zA-Z0-9_]*[a-zA-Z0-9])?$`. |
 | `schema` | required | Schema |  | The data type of the map's values |
-| `@id` | optional | [DTMI](#digital-twin-model-identifier-(dtmi)) | max 2048 chars | The ID of the map value. If no `@id` is provided, the digital twin interface processor will assign one. |
+| `@id` | optional | [DTMI](#digital-twin-model-identifier) | max 2048 chars | The ID of the map value. If no `@id` is provided, the digital twin interface processor will assign one. |
 | `comment` | optional | *string* | 1-512 chars | A comment for model authors |
 | `description` | optional | *string* | 1-512 chars | A localizable description for display |
 | `displayName` | optional | *string* | 1-64 chars | A localizable name for display |
@@ -586,8 +588,8 @@ The chart below lists the properties that an Object may have.
 | Property | Required | Data type | Limits | Description |
 | --- | --- | --- | --- | --- |
 | `@type` | required | [IRI](#internationalized-resource-identifier) |  | This must be "Object" |
-| `fields` | required | set of Fields | max depth 5 levels | A set of field descriptions, one for each field in the Object |
-| `@id` | optional | [DTMI](#digital-twin-model-identifier-(dtmi)) | max 2048 chars | The ID of the object. If no `@id` is provided, the digital twin interface processor will assign one. |
+| `fields` | required | set of Fields | max 30 fields; max depth 5 levels | A set of field descriptions, one for each field in the Object |
+| `@id` | optional | [DTMI](#digital-twin-model-identifier) | max 2048 chars | The ID of the object. If no `@id` is provided, the digital twin interface processor will assign one. |
 | `comment` | optional | *string* | 1-512 chars | A comment for model authors |
 | `description` | optional | *string* | 1-512 chars | A localizable description for display |
 | `displayName` | optional | *string* | 1-64 chars | A localizable name for display |
@@ -628,7 +630,7 @@ The chart below lists the properties that a Field may have.
 | --- | --- | --- | --- | --- |
 | `name` | required | *string* | 1-64 chars; unique for all fields in the object | The "programming" name of the field. The name may only contain the characters a-z, A-Z, 0-9, and underscore, and must match this regular expression `^[a-zA-Z](?:[a-zA-Z0-9_]*[a-zA-Z0-9])?$`. |
 | `schema` | required | Schema |  | The data type of the field |
-| `@id` | optional | [DTMI](#digital-twin-model-identifier-(dtmi)) | max 2048 chars | The ID of the field. If no `@id` is provided, the digital twin interface processor will assign one. |
+| `@id` | optional | [DTMI](#digital-twin-model-identifier) | max 2048 chars | The ID of the field. If no `@id` is provided, the digital twin interface processor will assign one. |
 | `comment` | optional | *string* | 1-512 chars | A comment for model authors |
 | `description` | optional | *string* | 1-512 chars | A localizable description for display |
 | `displayName` | optional | *string* | 1-64 chars | A localizable name for display |
@@ -641,7 +643,7 @@ The chart below lists the properties that interface schemas may have.
 
 | Property | Required | Data type | Limits | Description |
 | --- | --- | --- | --- | --- |
-| `@id` | required | [DTMI](#digital-twin-model-identifier-(dtmi)) | max 2048 chars | The globally unique identifier for the schema |
+| `@id` | required | [DTMI](#digital-twin-model-identifier) | max 2048 chars | The globally unique identifier for the schema |
 | `@type` | required | Array, Enum, Map, Object |  | The type of complex schema. This must refer to one of the complex schema classes (Array, Enum, Map, or Object). |
 | `comment` | optional | *string* | 1-512 chars | A comment for model authors |
 | `description` | optional | *string* | 1-512 chars | A localizable description for display |
@@ -755,7 +757,7 @@ In DTDL, interfaces are versioned by a single version number (positive integer) 
 
 Unless stated otherwise in this document, the Digital Twins Definition Language conforms with the JSON and JSON-LD 1.1 specifications. This conformance includes things such as keywords, case sensitivity, terminology, etc. In particular, the JSON-LD spec states that all keys, keywords, and values in JSON-LD are case-sensitive.
 
-### Digital Twin Model Identifier (DTMI)
+### Digital Twin Model Identifier
 
 All elements in digital twin models must have an identifier that is a **digital twin model identifier (DTMI)**. This includes interfaces, properties, telemetry, commands, relationships, components, complex schema objects, etc. This does not require that every model element have an explicit identifier, but any identifier assigned to a model element by a digital twin processor must follow this identifier format.
 
@@ -792,7 +794,7 @@ DTDL uses Internationalized Resource Identifiers (IRIs) to refer to DTDL languag
 
 ### Display string localization
 
-Some string properties in models are meant for display and, therefore, support localization. Digital twin models use JSON-LD's string internationalization support for localization. Each localizable property (i.e. `displayName` and `description`) is defined to be a JSON-LD language map (`"@container": "@language"`). The default language for digital twin documents is English. Localized string values are declared using their language code (as defined in [BCP47](https://tools.ietf.org/html/bcp47) using the shortest ISO 639 code or the expanded language name with culture information (RFC4646)). Because of the composable nature of JSON-LD graphs, localized strings can be prepared in a separate file and merged with an existing graph.
+Some string properties in models are meant for display and, therefore, support localization. Digital twin models use JSON-LD's string internationalization support for localization. Each localizable property (e.g. `displayName` and `description`) is defined to be a JSON-LD language map (`"@container": "@language"`). The keys of the language map must be language tag strings (see [BCP 47](https://tools.ietf.org/html/bcp47)). [ISO 639](https://www.loc.gov/standards/iso639-2/php/code_list.php) provides a list of language tags. The default language for DTDL documents is English.
 
 #### Localization examples
 
