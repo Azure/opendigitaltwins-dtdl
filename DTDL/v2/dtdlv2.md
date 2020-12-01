@@ -635,6 +635,45 @@ The chart below lists the properties that a Field may have.
 | `description` | optional | *string* | 1-512 chars | A localizable description for display |
 | `displayName` | optional | *string* | 1-64 chars | A localizable name for display |
 
+### Geospatial schemas
+
+DTDL provides a set of geospatial schemas, based on [GeoJSON](https://geojson.org/), for modeling a variety of geographic data structures.
+
+> NOTE:
+> Because GeoJSON is array-based (coordinates are stored in an array) and DTDL v2 does not support arrays in [Properties](#property), geospatial types cannot be used in Property schemas, but can be used in [Telemetry](#telemetry) and [Commands](#command) schemas.
+
+| DTDL geospatial schema term | GeoJSON geometry type | DTDL geospatial schema IRI |
+| --- | --- | --- |
+| point | Point | dtmi:standard:schema:geospatial:point;2 |
+| multiPoint | MultiPoint | dtmi:standard:schema:geospatial:multiPoint;2 |
+| lineString | LineString | dtmi:standard:schema:geospatial:lineString;2 |
+| multiLineString | MultiLineString | dtmi:standard:schema:geospatial:multiLineString;2 |
+| polygon | Polygon | dtmi:standard:schema:geospatial:polygon;2 |
+| multiPolygon | MultiPolygon | dtmi:standard:schema:geospatial:multiPolygon;2 |
+
+#### Geospatial schema examples
+
+This example shows modeling the location of a robot as telemetry using the geospatial schema `point`.
+
+```json
+{
+    "@type": "Telemetry",
+    "name": "location",
+    "schema": "point"
+}
+```
+
+A telemetry message sent by a particular robot reporting its location would have the following structure in JSON (and equivalent structure in other serializations).
+
+```json
+{
+    "location": {
+        "type": "Point",
+        "coordinates": [ 47.643742, -122.128014 ]
+    }
+}
+```
+
 ### Interface schemas
 
 Within an interface definition, complex schemas may be defined for reusability across Telemetry, Properties, and Commands. This is designed to promote readability and improved maintenance because schemas that are reused can be defined once (per interface). Interface schemas are defined in the `schemas` property of an interface.
