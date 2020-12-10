@@ -6,25 +6,31 @@ This version of DTDL is used for [Azure Digital Twins](https://azure.microsoft.c
 
 > Note: If you are using IoT Plug and Play public preview in IoT Central, refer to [DTDL version 1 preview](../v1-preview/dtdlv1.md).
 
+## Table of Contents
+
+* [Introduction](#introduction)
+* [Digital Twins Definition Language](#digital-twins-definition-language)
+* [Interface](#interface)
+* [Telemetry](#telemetry)
+* [Property](#property)
+* [Command](#command)
+* [Relationship](#relationship)
+* [Component](#component)
+* [Primitive Schemas](#primitive-schemas)
+* [Array](#array)
+* [Enum](#enum)
+* [Map](#map)
+* [Object](#object)
+* [Interface Schemas](#interface-schemas)
+* [Semantic Types](#semantic-types)
+* [Model Versioning](#model-versioning)
+* [Additional Concerns](#additional-concerns)
+* [Changes from Version 1](#changes-from-version-1)
+* [References](#references)
 
 ## Introduction
 
 This document specifies the Digital Twins Definition Language (DTDL), a language for describing models for IoT Plug and Play devices, device digital twins, and logical digital twins. Broadly, modeling enables IoT solutions to provision, use, and configure digital twins of all kinds from multiple sources in a single solution. Using DTDL to describe any digital twin's abilities enables the IoT platform and IoT solutions to leverage the semantics of each digital twin.
-
-## Changes from Public Preview 1
-
-* Digital twin ID is now digital twin model identifier (DTMI).
-* *InterfaceInstance* is renamed to *Component*.
-* *CapabilityModel* is removed.
-* The context is changed from *http://azureiot.com/v1/contexts/IoTModel.json* to *dtmi:dtdl:context;2*.
-* Components are added.
-* Relationships are added.
-* Interface inheritance is added.
-* Semantic type support is added.
-* Character set for the `name` property is updated.
-* The `unit` property is replaced with a semantic unit `unit` property.
-* The property `displayUnit` is removed.
-* The `commandType` property on `Command` is deprecated and its value is not used.
 
 ## Digital Twins Definition Language
 
@@ -54,7 +60,7 @@ The chart below lists the properties that may be part of an interface.
 | `extends` | optional | set of Interfaces | up to 2 interfaces per extends; max depth of 10 levels | A set of DTMIs that refer to interfaces this interface inherits from. Interfaces can inherit from multiple interfaces. |
 | `schemas` | optional | set of [interface schemas](#interface-schemas) |  | A set of IRIs or objects that refer to the reusable schemas within this interface. |
 
-#### Interface examples
+### Interface examples
 
 The following interface example shows a thermostat device interface. The interface has one telemetry that reports the temperature measurement, and one read/write property that controls the desired temperature.
 
@@ -164,7 +170,7 @@ The following interface example shows how interface inheritance can be used to c
 ]
 ```
 
-### Telemetry
+## Telemetry
 
 Telemetry describes the data emitted by any digital twin, whether the data is a regular stream of sensor readings or a computed stream of data, such as occupancy, or an occasional error or information message.
 
@@ -181,7 +187,7 @@ The chart below lists the properties that telemetry may have.
 | `displayName` | optional | *string* | 1-64 chars | A localizable name for display |
 | `unit` | optional | Unit |  | The unit type of the Telemetry. A semantic type is required for the unit property to be available. |
 
-#### Telemetry examples
+### Telemetry examples
 
 The following example shows a simple telemetry definition of a temperature measurement, with the data type *double*.
 
@@ -204,7 +210,7 @@ The following example shows a telemetry definition with a *Temperature* semantic
 }
 ```
 
-### Property
+## Property
 
 A Property describes the read-only and read/write state of any digital twin. For example, a device serial number may be a read-only property, the desired temperature on a thermostat may be a read-write property; and the name of a room may be a read-write property.
 
@@ -224,7 +230,7 @@ The chart below lists the properties that a DTDL property may have.
 | `unit` | optional | Unit |  | The unit type of the property. A semantic type is required for the unit property to be available. |
 | `writable` | optional | *boolean* |  | A boolean value that indicates whether the property is writable by an external source, such as an application, or not. The default value is false (read-only). |
 
-#### Property examples
+### Property examples
 
 The following example shows a property definition of a writable temperature set-point, with the data type *double*.
 
@@ -249,7 +255,7 @@ The following example shows a property definition with a *Temperature* semantic 
 }
 ```
 
-### Command
+## Command
 
 A Command describes a function or operation that can be performed on any digital twin.
 
@@ -267,7 +273,7 @@ The chart below lists the properties that a command may have.
 | `request` | optional | [CommandPayload](#commandpayload) |  | A description of the input to the Command |
 | `response` | optional | [CommandPayload](#commandpayload) |  | A description of the output of the Command |
 
-#### Command examples
+### Command examples
 
 ```json
 {
@@ -286,11 +292,11 @@ The chart below lists the properties that a command may have.
 }
 ```
 
-#### CommandType
+### CommandType
 
 CommandType is deprecated. Either value, `synchronous` or `asynchronous`, has the same meaning: a command that starts execution within a configurable time and that completes execution within a configurable time.
 
-#### CommandPayload
+### CommandPayload
 
 A CommandPayload describes the inputs to or the outputs from a Command.
 
@@ -305,7 +311,7 @@ The chart below lists the properties that CommandPayload may have.
 | `description` | optional | *string* | 1-512 chars | A localizable description for display |
 | `displayName` | optional | *string* | 1-64 chars | A localizable name for display |
 
-### Relationship
+## Relationship
 
 A Relationship describes a link to another digital twin and enables graphs of digital twins to be created. Relationships are different from [Components](#component) because they describe a link to a separate digital twin.
 
@@ -325,7 +331,7 @@ The chart below lists the properties that a relationship may have.
 | `target` | optional | [Interface](#interface) |  | An interface ID. The default value (when target is not specified) is that the target may be any interface. |
 | `writable` | optional | *boolean* |  | A boolean value that indicates whether the relationship is writable or not. The default value is *false*, indicating the property is read-only. |
 
-#### Relationship examples
+### Relationship examples
 
 The following example defines a relationship to be had with a *Floor* twin. In this example, there must be zero or one relationship instances of floor.
 
@@ -365,7 +371,7 @@ The following example defines a relationship with a property.
 }
 ```
 
-### Component
+## Component
 
 Components enable interfaces to be composed of other interfaces. Components are different from relationships because they describe contents that are directly part of the interface. (A relationship describes a link between two interfaces.)
 
@@ -385,7 +391,7 @@ The chart below lists the properties that a component may have.
 | `description` | optional | *string* | 1-512 chars | A localizable description for display |
 | `displayName` | optional | *string* | 1-64 chars | A localizable name for display |
 
-#### Component Examples
+### Component Examples
 
 ```json
 {
@@ -399,7 +405,7 @@ The chart below lists the properties that a component may have.
 
 Schemas are used to describe the on-the-wire or serialized format of the data in a digital twin interface. A full set of primitive data types are provided, along with support for a variety of complex schemas in the forms of Arrays, Enums, Maps, and Objects. Schemas described through digital twin's schema definition language are compatible with popular serialization formats, including JSON, Avro, and Protobuf.
 
-### Primitive schemas
+## Primitive schemas
 
 A full set of primitive data types are provided and can be specified directly as the value in a schema statement in a digital twin interface.
 
@@ -416,13 +422,13 @@ A full set of primitive data types are provided and can be specified directly as
 | `string` | A UTF8 string |
 | `time` | A full-time as defined in [section 5.6 of RFC 3339](https://tools.ietf.org/html/rfc3339#section-5.6) |
 
-### Complex schemas
+## Complex schemas
 
 Complex schemas are designed for supporting complex data types made up of primitive data types. Currently the following complex schemas are provided: Array, Enum, Map, and Object. A complex schema can be specified directly as the value in a schema statement or described in the interface schemas set and referenced in the schema statement.
 
 Complex schema definitions are recursive. An array's elementSchema may be an array, enum, map, or object. Likewise, a map's mapValue's schema may be an array, enum, map, or object and an object's field's schema may be an array, enum, map, or object. Currently, the maximum depth for arrays, maps, and objects is 5 levels of depth.
 
-#### Array
+## Array
 
 An Array describes an indexable data type where each element is of the same schema. An Array elements' schema can itself be a primitive or complex schema.
 
@@ -437,7 +443,7 @@ The chart below lists the properties that an array may have.
 | `description` | optional | *string* | 1-512 chars | A localizable description for display |
 | `displayName` | optional | *string* | 1-64 chars | A localizable name for display |
 
-##### Array examples
+### Array examples
 
 ```json
 {
@@ -450,7 +456,7 @@ The chart below lists the properties that an array may have.
 }
 ```
 
-#### Enum
+## Enum
 
 An Enum describes a data type with a set of named labels that map to values. The values in an Enum can be either integers or strings, but the labels are always strings.
 
@@ -466,7 +472,7 @@ The chart below lists the properties that an Enum may have.
 | `description` | optional | *string* | 1-512 chars | A localizable description for display |
 | `displayName` | optional | *string* | 1-64 chars | A localizable name for display |
 
-##### Enum examples
+### Enum examples
 
 ```json
 {
@@ -491,7 +497,7 @@ The chart below lists the properties that an Enum may have.
 }
 ```
 
-#### EnumValue
+### EnumValue
 
 An EnumValue describes an element of an Enum.
 
@@ -506,7 +512,7 @@ The chart below lists the properties that an EnumValue may have.
 | `description` | optional | *string* | 1-512 chars | A localizable description for display |
 | `displayName` | optional | *string* | 1-64 chars | A localizable name for display |
 
-#### Map
+## Map
 
 A Map describes a data type of key-value pairs where the values share the same schema. The key in a Map must be a string. The values in a Map can be any schema.
 
@@ -522,7 +528,7 @@ The chart below lists the properties that a Map may have.
 | `description` | optional | *string* | 1-512 chars | A localizable description for display |
 | `displayName` | optional | *string* | 1-64 chars | A localizable name for display |
 
-##### Map examples
+### Map examples
 This example shows defining a map from a module name to a module state.
 ```json
 {
@@ -549,7 +555,7 @@ When JSON is used to serialize map data, this example shows the serialized map d
     "moduleB": "stopped"
 }
 ```
-#### MapKey
+### MapKey
 
 A MapKey describes the key in a Map. The schema of a MapKey must be *string*.
 
@@ -564,7 +570,7 @@ The chart below lists the properties that a MapKey may have.
 | `description` | optional | *string* | 1-512 chars | A localizable description for display |
 | `displayName` | optional | *string* | 1-64 chars | A localizable name for display |
 
-#### MapValue
+### MapValue
 
 A MapValue describes the values in a Map.
 
@@ -579,7 +585,7 @@ The chart below lists the properties that a MapValue may have.
 | `description` | optional | *string* | 1-512 chars | A localizable description for display |
 | `displayName` | optional | *string* | 1-64 chars | A localizable name for display |
 
-#### Object
+## Object
 
 An Object describes a data type made up of named fields (like a struct in C). The fields in an Object map can be primitive or complex schemas.
 
@@ -594,7 +600,7 @@ The chart below lists the properties that an Object may have.
 | `description` | optional | *string* | 1-512 chars | A localizable description for display |
 | `displayName` | optional | *string* | 1-64 chars | A localizable name for display |
 
-##### Object examples
+### Object examples
 
 ```json
 {
@@ -620,7 +626,7 @@ The chart below lists the properties that an Object may have.
 }
 ```
 
-#### Field
+### Field
 
 A Field describes a field in an Object.
 
@@ -635,7 +641,7 @@ The chart below lists the properties that a Field may have.
 | `description` | optional | *string* | 1-512 chars | A localizable description for display |
 | `displayName` | optional | *string* | 1-64 chars | A localizable name for display |
 
-### Interface schemas
+## Interface schemas
 
 Within an interface definition, complex schemas may be defined for reusability across Telemetry, Properties, and Commands. This is designed to promote readability and improved maintenance because schemas that are reused can be defined once (per interface). Interface schemas are defined in the `schemas` property of an interface.
 
@@ -649,7 +655,7 @@ The chart below lists the properties that interface schemas may have.
 | `description` | optional | *string* | 1-512 chars | A localizable description for display |
 | `displayName` | optional | *string* | 1-64 chars | A localizable name for display |
 
-#### Interface schema examples
+### Interface schema examples
 
 ```json
 {
@@ -747,7 +753,7 @@ The chart below lists standard semantic types, corresponding unit types, and ava
 | `Volume` | `VolumeUnit` | `cubicMetre` <br> `cubicCentimetre` <br> `litre` <br> `millilitre` <br> `cubicFoot` <br> `cubicInch` <br> `fluidOunce` <br> `gallon` |
 | `VolumeFlowRate` | `VolumeFlowRateUnit` | `litrePerSecond` <br> `millilitrePerSecond` <br> `litrePerHour` <br> `millilitrePerHour` |
 
-## Model versioning
+## Model Versioning
 
 In DTDL, interfaces are versioned by a single version number (positive integer) in the last segment of their identifier. The use of the version number is up to the model author. In some cases, when the model author is working closely with the code that implements and/or consumes the model, any number of changes from version to version may be acceptable. In other cases, when the model author is publishing an interface to be implemented by multiple devices or digital twins or consumed by multiple consumers, compatible changes may be appropriate.
 
@@ -790,6 +796,7 @@ This practice will not eliminate the possibility of collisions, but it will limi
 For a full definition of DTMI, please see the [DTMI repo on GitHub](https://github.com/Azure/digital-twin-model-identifier).
 
 ### Internationalized Resource Identifier
+
 DTDL uses Internationalized Resource Identifiers (IRIs) to refer to DTDL language elements (such as type names) as well as model-defined elements (such as schemas). IRIs in DTDL are [JSON-LD IRIs](https://w3c.github.io/json-ld-syntax/#iris) and may be relative or absolute.
 
 ### Display string localization
@@ -827,7 +834,22 @@ When writing a digital twin definition, it's necessary to specify the version of
 
 For this version of DTDL, the context is exactly *dtmi:dtdl:context;2*.
 
-### References
+## Changes from Version 1
+
+* Digital twin ID is now digital twin model identifier (DTMI).
+* *InterfaceInstance* is renamed to *Component*.
+* *CapabilityModel* is removed.
+* The context is changed from *http://azureiot.com/v1/contexts/IoTModel.json* to *dtmi:dtdl:context;2*.
+* Components are added.
+* Relationships are added.
+* Interface inheritance is added.
+* Semantic type support is added.
+* Character set for the `name` property is updated.
+* The `unit` property is replaced with a semantic unit `unit` property.
+* The property `displayUnit` is removed.
+* The `commandType` property on `Command` is deprecated and its value is not used.
+
+## References
 
 * JSON-LD: JSON-LD 1.1 - https://json-ld.org/spec/latest/json-ld/
 * Language codes: BCP47 - https://tools.ietf.org/html/bcp47
