@@ -21,6 +21,7 @@ This version of DTDL is used for [Azure Digital Twins](https://azure.microsoft.c
 * [Enum](#enum)
 * [Map](#map)
 * [Object](#object)
+* [Geospatial Schemas](#geospatial-schemas)
 * [Interface Schemas](#interface-schemas)
 * [Semantic Types](#semantic-types)
 * [Model Versioning](#model-versioning)
@@ -641,7 +642,7 @@ The chart below lists the properties that a Field may have.
 | `description` | optional | *string* | 1-512 chars | A localizable description for display |
 | `displayName` | optional | *string* | 1-64 chars | A localizable name for display |
 
-## Geospatial schemas
+## Geospatial Schemas
 
 DTDL provides a set of geospatial schemas, based on [GeoJSON](https://geojson.org/), for modeling a variety of geographic data structures.
 
