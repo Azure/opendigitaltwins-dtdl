@@ -134,14 +134,14 @@ The following Interface example shows a *Phone* device that has two cameras as C
         {
             "@type": "Component",
             "name": "deviceInfo",
-            "schema": "dtmi:azure:deviceManagement:DeviceInformation;2"
+            "schema": "dtmi:azure:deviceManagement:DeviceInformation;1"
         }
     ],
     "@context": "dtmi:dtdl:context;3"
 }
 ```
 
-The following Interface example shows a digital twin of a building that has a *name* Property and a Relationship to rooms contained in the building.
+The following Interface example shows a digital twin model of a building that has a *name* Property and a Relationship to rooms contained in the building.
 
 ```json
 {
@@ -212,7 +212,7 @@ The chart below lists the properties that Telemetry may have.
 | `comment` | optional | *string* | max 512 characters | A comment for model authors. |
 | `description` | optional | localizable *string* | max 512 characters | A localizable description for display. |
 | `displayName` | optional | localizable *string* | max 64 characters | A localizable name for display. |
-| `name` | required | *string* | max 64 characters; must match this regular expression: `^[A-Za-z](?:[A-Za-z0-9_]*[A-Za-z0-9])?$`; must be unique for all contents in Interface | The programming name of the element. |
+| `name` | required | *string* | max 64 characters; contains only alphanumerics and underscore, starting with a letter, ending with alphanumeric; must be unique for all contents in Interface | The programming name of the element. |
 | `schema` | required | [Schema](#schema) |  | The data type of the Telemetry, which is an instance of Schema. |
 
 ### Telemetry examples
@@ -225,6 +225,12 @@ The following example shows a simple Telemetry definition of a temperature measu
     "name": "temp",
     "schema": "double"
 }
+```
+
+When JSON is used to serialize Telemetry data, this example shows the serialized Telemetry data for the Telemetry model definition above.
+
+```json
+"temp": 42.5
 ```
 
 ## Property
@@ -245,7 +251,7 @@ The chart below lists the properties that a DTDL Property may have.
 | `comment` | optional | *string* | max 512 characters | A comment for model authors. |
 | `description` | optional | localizable *string* | max 512 characters | A localizable description for display. |
 | `displayName` | optional | localizable *string* | max 64 characters | A localizable name for display. |
-| `name` | required | *string* | max 64 characters; must match this regular expression: `^[A-Za-z](?:[A-Za-z0-9_]*[A-Za-z0-9])?$`; must be unique for all contents in Interface; must be unique for all properties in Relationship | The programming name of the element. |
+| `name` | required | *string* | max 64 characters; contains only alphanumerics and underscore, starting with a letter, ending with alphanumeric; must be unique for all contents in Interface; must be unique for all properties in Relationship | The programming name of the element. |
 | `schema` | required | [Schema](#schema) |  | The data type of the Property, which is an instance of Schema. |
 | `writable` | optional | *boolean* |  | A boolean value that indicates whether the Property is writable or not. The default value is false, indicating the Property is read-only. |
 
@@ -275,7 +281,7 @@ The chart below lists the properties that a DTDL Command may have.
 | `comment` | optional | *string* | max 512 characters | A comment for model authors. |
 | `description` | optional | localizable *string* | max 512 characters | A localizable description for display. |
 | `displayName` | optional | localizable *string* | max 64 characters | A localizable name for display. |
-| `name` | required | *string* | max 64 characters; must match this regular expression: `^[A-Za-z](?:[A-Za-z0-9_]*[A-Za-z0-9])?$`; must be unique for all contents in Interface | The programming name of the element. |
+| `name` | required | *string* | max 64 characters; contains only alphanumerics and underscore, starting with a letter, ending with alphanumeric; must be unique for all contents in Interface | The programming name of the element. |
 | `request` | optional | [CommandRequest](#commandrequest) |  | A description of the input to the Command. |
 | `response` | optional | [CommandResponse](#commandresponse) |  | A description of the output of the Command. |
 
@@ -311,7 +317,7 @@ The chart below lists the properties that CommandRequest may have.
 | `comment` | optional | *string* | max 512 characters | A comment for model authors. |
 | `description` | optional | localizable *string* | max 512 characters | A localizable description for display. |
 | `displayName` | optional | localizable *string* | max 64 characters | A localizable name for display. |
-| `name` | required | *string* | max 64 characters; must match this regular expression: `^[A-Za-z](?:[A-Za-z0-9_]*[A-Za-z0-9])?$` | The programming name of the element. |
+| `name` | required | *string* | max 64 characters; contains only alphanumerics and underscore, starting with a letter, ending with alphanumeric | The programming name of the element. |
 | `schema` | required | [Schema](#schema) |  | The data type of the element, which is an instance of Schema. |
 
 ### CommandResponse
@@ -327,7 +333,7 @@ The chart below lists the properties that CommandResponse may have.
 | `comment` | optional | *string* | max 512 characters | A comment for model authors. |
 | `description` | optional | localizable *string* | max 512 characters | A localizable description for display. |
 | `displayName` | optional | localizable *string* | max 64 characters | A localizable name for display. |
-| `name` | required | *string* | max 64 characters; must match this regular expression: `^[A-Za-z](?:[A-Za-z0-9_]*[A-Za-z0-9])?$` | The programming name of the element. |
+| `name` | required | *string* | max 64 characters; contains only alphanumerics and underscore, starting with a letter, ending with alphanumeric | The programming name of the element. |
 | `schema` | required | [Schema](#schema) |  | The data type of the element, which is an instance of Schema. |
 
 ## Relationship
@@ -336,6 +342,10 @@ A Relationship describes a link to another digital twin and enables graphs of di
 A Relationship is different from a [Component](#component) because it describes a link to a separate digital twin.
 
 The chart below lists the properties that a Relationship may have.
+
+> Note that the datatype of the `target` property is DTMI, in contrast to the datatype of the `schema` property of Component, which is Interface.
+A Component has "by value" semantics, so it is not valid unless its `schema` property identifies a valid Interface.
+A Relationship has "by reference" semantic, so its validity does not depend on the identity of its `target` property (although a Relationship with a non-Interface `target` value will have minimal utility.)
 
 | Property | Required | Data type | Limits | Description |
 | --- | --- | --- | --- | --- |
@@ -346,9 +356,9 @@ The chart below lists the properties that a Relationship may have.
 | `displayName` | optional | localizable *string* | max 64 characters | A localizable name for display. |
 | `maxMultiplicity` | optional | *integer* | must be >= 1; must be <= 500 | The maximum multiplicity for the target of the Relationship; defaults to the maximum allowable value. |
 | `minMultiplicity` | optional | *integer* | must be = 0 | The minimum multiplicity for the target of the Relationship; defaults to the minimum allowable value. |
-| `name` | required | *string* | max 64 characters; must match this regular expression: `^[A-Za-z](?:[A-Za-z0-9_]*[A-Za-z0-9])?$`; must be unique for all contents in Interface | The programming name of the element. |
+| `name` | required | *string* | max 64 characters; contains only alphanumerics and underscore, starting with a letter, ending with alphanumeric; must be unique for all contents in Interface | The programming name of the element. |
 | `properties` | optional | set of [Properties](#property) |  | A set of Properties that define Relationship-specific state. |
-| `target` | optional | [DTMI](#digital-twin-model-identifier) | max 2048 characters; must match this regular expression: `^dtmi:[A-Za-z](?:[A-Za-z0-9_]*[A-Za-z0-9])?(?::[A-Za-z](?:[A-Za-z0-9_]*[A-Za-z0-9])?)*(?:;[1-9][0-9]{0,8}(?:\.[1-9][0-9]{0,5})?)?$` | An Interface identifier. If no target is specified, each instance target is permitted to be any Interface. |
+| `target` | optional | [DTMI](#digital-twin-model-identifier) | max 2048 characters; must follow user DTMI syntax | An Interface identifier. If no target is specified, each instance target is permitted to be any Interface. |
 | `writable` | optional | *boolean* |  | A boolean value that indicates whether the Relationship is writable or not. The default value is false, indicating the Relationship is read-only. |
 
 ### Relationship examples
@@ -412,7 +422,7 @@ The chart below lists the properties that a Component may have.
 | `comment` | optional | *string* | max 512 characters | A comment for model authors. |
 | `description` | optional | localizable *string* | max 512 characters | A localizable description for display. |
 | `displayName` | optional | localizable *string* | max 64 characters | A localizable name for display. |
-| `name` | required | *string* | max 64 characters; must match this regular expression: `^[A-Za-z](?:[A-Za-z0-9_]*[A-Za-z0-9])?$`; must be unique for all contents in Interface | The programming name of the element. |
+| `name` | required | *string* | max 64 characters; contains only alphanumerics and underscore, starting with a letter, ending with alphanumeric; must be unique for all contents in Interface | The programming name of the element. |
 | `schema` | required | [Interface](#interface) | may not contain nested Component in hierarchy | The data type of the Component, which is an instance of Interface. |
 
 ### Component examples
@@ -556,7 +566,7 @@ The chart below lists the properties that an EnumValue may have.
 | `description` | optional | localizable *string* | max 512 characters | A localizable description for display. |
 | `displayName` | optional | localizable *string* | max 64 characters | A localizable name for display. |
 | `enumValue` | required | literal | must be unique for all enumValues in Enum | The on-the-wire value that maps to the EnumValue, which may be either an integer or a string. |
-| `name` | required | *string* | max 64 characters; must match this regular expression: `^[A-Za-z](?:[A-Za-z0-9_]*[A-Za-z0-9])?$`; must be unique for all enumValues in Enum | The programming name of the element. |
+| `name` | required | *string* | max 64 characters; contains only alphanumerics and underscore, starting with a letter, ending with alphanumeric; must be unique for all enumValues in Enum | The programming name of the element. |
 
 ## Map
 
@@ -621,7 +631,7 @@ The chart below lists the properties that a MapKey may have.
 | `comment` | optional | *string* | max 512 characters | A comment for model authors. |
 | `description` | optional | localizable *string* | max 512 characters | A localizable description for display. |
 | `displayName` | optional | localizable *string* | max 64 characters | A localizable name for display. |
-| `name` | required | *string* | max 64 characters; must match this regular expression: `^[A-Za-z](?:[A-Za-z0-9_]*[A-Za-z0-9])?$` | The programming name of the element. |
+| `name` | required | *string* | max 64 characters; contains only alphanumerics and underscore, starting with a letter, ending with alphanumeric | The programming name of the element. |
 | `schema` | required | [String](#string) |  | The data type of the Map's key, which must be string. |
 
 ### MapValue
@@ -637,7 +647,7 @@ The chart below lists the properties that a MapValue may have.
 | `comment` | optional | *string* | max 512 characters | A comment for model authors. |
 | `description` | optional | localizable *string* | max 512 characters | A localizable description for display. |
 | `displayName` | optional | localizable *string* | max 64 characters | A localizable name for display. |
-| `name` | required | *string* | max 64 characters; must match this regular expression: `^[A-Za-z](?:[A-Za-z0-9_]*[A-Za-z0-9])?$` | The programming name of the element. |
+| `name` | required | *string* | max 64 characters; contains only alphanumerics and underscore, starting with a letter, ending with alphanumeric | The programming name of the element. |
 | `schema` | required | [Schema](#schema) | max depth of 5 levels when MapValue is the value of Map `mapValue` | The data type of the element, which is an instance of Schema. |
 
 ## Object
@@ -705,7 +715,7 @@ The chart below lists the properties that a Field may have.
 | `comment` | optional | *string* | max 512 characters | A comment for model authors. |
 | `description` | optional | localizable *string* | max 512 characters | A localizable description for display. |
 | `displayName` | optional | localizable *string* | max 64 characters | A localizable name for display. |
-| `name` | required | *string* | max 64 characters; must match this regular expression: `^[A-Za-z](?:[A-Za-z0-9_]*[A-Za-z0-9])?$`; must be unique for all fields in Object | The programming name of the element. |
+| `name` | required | *string* | max 64 characters; contains only alphanumerics and underscore, starting with a letter, ending with alphanumeric; must be unique for all fields in Object | The programming name of the element. |
 | `schema` | required | [Schema](#schema) | max depth of 5 levels when Field is the value of Object `fields` | The data type of the element, which is an instance of Schema. |
 
 ## Geospatial Schemas
@@ -926,6 +936,34 @@ When writing a digital twin definition, it is necessary to specify the version o
 Because DTDL is based on JSON-LD, you use the JSON-LD context (the `@context` statement) to specify the version of DTDL being used.
 
 For this version of DTDL, the context is exactly *dtmi:dtdl:context;3*.
+
+### Undefined co-types and properties
+
+As described below, DTDL supports [Feature extensions](#feature-extensions) that define *adjunct types*, which can be added as "co-types" to a DTDL element.
+In keeping with the [RDF](https://www.w3.org/RDF/) "open world" model, DTDL also permits elements to have arbitrary, undefined types as co-types.
+Furthermore, when an element has an undefined co-type, it is also permitted to have arbitrary, undefined properties with arbitrary values.
+The following example shows a Property that is co-typed with the undefined type "Commercial" and has the undefined property "brand":
+
+```json
+{
+    "@id": "dtmi:com:example:Thermostat;1",
+    "@type": "Interface",
+    "contents": [
+        {
+            "@type": [ "Property", "Commercial" ],
+            "name": "setPointTemp",
+            "writable": true,
+            "schema": "double",
+            "brand": "Honeywell"
+        }
+    ],
+    "@context": "dtmi:dtdl:context;3"
+}
+```
+
+Note that an undefined property is permitted only on an element that has an undefined co-type.
+The co-type's unknown definition might plausibly add the property, so the presence of the property does not necessarily invalidate the model.
+By contrast, if the undefined co-type "Commercial" were not present in the above example, the undefined property "brand" would be invalid, since this is not a defined property of DTDL type Property.
 
 ## Feature extensions
 

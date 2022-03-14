@@ -30,7 +30,6 @@ For example, a Property can be co-typed with the adjunct type Historized defined
     ],
     "@context": [
         "dtmi:dtdl:context;3",
-        "",
         "dtmi:dtdl:extension:historization;1"
     ]
 }
@@ -55,7 +54,6 @@ This additional property can be assigned a value in the model in the same manner
     ],
     "@context": [
         "dtmi:dtdl:context;3",
-        "",
         "dtmi:dtdl:extension:initialization;1"
     ]
 }
@@ -105,7 +103,6 @@ Conseqently, an additional context for the QuantitativeTypes extension is also s
     ],
     "@context": [
         "dtmi:dtdl:context;3",
-        "",
         "dtmi:dtdl:extension:quantitativeTypes;1"
     ]
 }
@@ -118,11 +115,11 @@ The chart below lists the feature extensions that are currently available.
 | Extension | Description | DTDL versions |
 | --- | --- | --- |
 | [QuantitativeTypes v1](./DTDL.quantitativeTypes.v1.md) | A set of standard semantic types, unit types, and units. | [3](./DTDL.v3.md) |
-| [Historization v1](./DTDL.historization.v1.md) | Record the historical sequence of values of a Property or Telemetry and the times at which values change. | [3](./DTDL.v3.md) |
+| [Historization v1](./DTDL.historization.v1.md) | Record the historical sequence of values of a Property or Telemetry and the times at which values change. | [2](../v2/dtdlv2.md), [3](./DTDL.v3.md) |
 | [Annotation v1](./DTDL.annotation.v1.md) | Add custom metadata to a Property or a Telemetry. | [3](./DTDL.v3.md) |
 | [Overriding v1](./DTDL.overriding.v1.md) | Override a model property with an instance value. | [3](./DTDL.v3.md) |
-| [Initialization v1](./DTDL.initialization.v1.md) | Specify an initial value for a Property. | [3](./DTDL.v3.md) |
-| [Optionality v1](./DTDL.optionality.v1.md) | Specify a default value for a Command request that is issued without an explicit request value. | [3](./DTDL.v3.md) |
+| [Initialization v1](./DTDL.initialization.v1.md) | Specify an initial value for a Property. | [2](../v2/dtdlv2.md), [3](./DTDL.v3.md) |
+| [Optionality v1](./DTDL.optionality.v1.md) | Specify a default value for a Command request that is issued without an explicit request value. | [2](../v2/dtdlv2.md), [3](./DTDL.v3.md) |
 
 ## Service and tool support of language extensions
 

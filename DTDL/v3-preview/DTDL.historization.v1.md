@@ -46,7 +46,6 @@ The following example shows an Interface with a single `contents` element named 
     ],
     "@context": [
         "dtmi:dtdl:context;2",
-        "",
         "dtmi:dtdl:extension:historization;1"
     ]
 }
@@ -69,7 +68,6 @@ Applying the Historized adjunct type does not preclude the application of other 
     ],
     "@context": [
         "dtmi:dtdl:context;2",
-        "",
         "dtmi:dtdl:extension:historization;1"
     ]
 }
@@ -81,5 +79,5 @@ The chart below lists the versions of the Historization extension that are curre
 
 | Extension | Context | DTDL versions |
 | --- | --- | --- |
-| [Historization v1](./DTDL.historization.v1.md) | dtmi:dtdl:extension:historization;1 | [3](./DTDL.v3.md) |
+| [Historization v1](./DTDL.historization.v1.md) | dtmi:dtdl:extension:historization;1 | [2](../v2/dtdlv2.md), [3](./DTDL.v3.md) |
 

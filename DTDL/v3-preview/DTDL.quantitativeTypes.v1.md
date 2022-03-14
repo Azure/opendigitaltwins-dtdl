@@ -132,7 +132,6 @@ One Telemetry has a `schema` value of *integer*, and the other three have `schem
     ],
     "@context": [
         "dtmi:dtdl:context;3",
-        "",
         "dtmi:dtdl:extension:quantitativeTypes;1"
     ]
 }

@@ -54,7 +54,6 @@ The value of the `initialValue` property is 62.6, which satisfies the syntax for
     ],
     "@context": [
         "dtmi:dtdl:context;2",
-        "",
         "dtmi:dtdl:extension:initialization;1"
     ]
 }
@@ -84,7 +83,6 @@ The value of the `initialValue` property is "unknown", which satisfies the synta
     ],
     "@context": [
         "dtmi:dtdl:context;2",
-        "",
         "dtmi:dtdl:extension:initialization;1"
     ]
 }
@@ -124,5 +122,5 @@ The chart below lists the versions of the Initialization extension that are curr
 
 | Extension | Context | DTDL versions |
 | --- | --- | --- |
-| [Initialization v1](./DTDL.initialization.v1.md) | dtmi:dtdl:extension:initialization;1 | [3](./DTDL.v3.md) |
+| [Initialization v1](./DTDL.initialization.v1.md) | dtmi:dtdl:extension:initialization;1 | [2](../v2/dtdlv2.md), [3](./DTDL.v3.md) |
 

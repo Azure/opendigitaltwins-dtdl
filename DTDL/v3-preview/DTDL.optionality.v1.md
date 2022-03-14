@@ -61,7 +61,6 @@ The value of the `defaultValue` property is October 26, 1985, 1:24 AM PDT expres
     ],
     "@context": [
         "dtmi:dtdl:context;3",
-        "",
         "dtmi:dtdl:extension:optionality;1"
     ]
 }
@@ -159,7 +158,6 @@ The value of the `defaultValue` property is a JSON object that conforms to the n
     ],
     "@context": [
         "dtmi:dtdl:context;3",
-        "",
         "dtmi:dtdl:extension:optionality;1"
     ]
 }
@@ -171,5 +169,5 @@ The chart below lists the versions of the Optionality extension that are current
 
 | Extension | Context | DTDL versions |
 | --- | --- | --- |
-| [Optionality v1](./DTDL.optionality.v1.md) | dtmi:dtdl:extension:optionality;1 | [3](./DTDL.v3.md) |
+| [Optionality v1](./DTDL.optionality.v1.md) | dtmi:dtdl:extension:optionality;1 | [2](../v2/dtdlv2.md), [3](./DTDL.v3.md) |
 
