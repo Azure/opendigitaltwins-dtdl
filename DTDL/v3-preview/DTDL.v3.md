@@ -93,6 +93,7 @@ The Interface has one Telemetry that reports the temperature measurement, and on
 
 ```json
 {
+    "@context": "dtmi:dtdl:context;3",
     "@id": "dtmi:com:example:Thermostat;1",
     "@type": "Interface",
     "displayName": "Thermostat",
@@ -108,8 +109,7 @@ The Interface has one Telemetry that reports the temperature measurement, and on
             "writable": true,
             "schema": "double"
         }
-    ],
-    "@context": "dtmi:dtdl:context;3"
+    ]
 }
 ```
 
@@ -117,6 +117,7 @@ The following Interface example shows a *Phone* device that has two cameras as C
 
 ```json
 {
+    "@context": "dtmi:dtdl:context;3",
     "@id": "dtmi:com:example:Phone;2",
     "@type": "Interface",
     "displayName": "Phone",
@@ -136,8 +137,7 @@ The following Interface example shows a *Phone* device that has two cameras as C
             "name": "deviceInfo",
             "schema": "dtmi:azure:deviceManagement:DeviceInformation;1"
         }
-    ],
-    "@context": "dtmi:dtdl:context;3"
+    ]
 }
 ```
 
@@ -145,6 +145,7 @@ The following Interface example shows a digital twin model of a building that ha
 
 ```json
 {
+    "@context": "dtmi:dtdl:context;3",
     "@id": "dtmi:com:example:Building;1",
     "@type": "Interface",
     "displayName": "Building",
@@ -160,8 +161,7 @@ The following Interface example shows a digital twin model of a building that ha
             "name": "contains",
             "target": "dtmi:com:example:Room;1"
         }
-    ],
-    "@context": "dtmi:dtdl:context;3"
+    ]
 }
 ```
 
@@ -172,6 +172,7 @@ Through inheritance, the *ConferenceRoom* has two Properties: the *occupied* Pro
 ```json
 [
     {
+        "@context": "dtmi:dtdl:context;3",
         "@id": "dtmi:com:example:Room;1",
         "@type": "Interface",
         "contents": [
@@ -180,10 +181,10 @@ Through inheritance, the *ConferenceRoom* has two Properties: the *occupied* Pro
                 "name": "occupied",
                 "schema": "boolean"
             }
-        ],
-        "@context": "dtmi:dtdl:context;3"
+        ]
     },
     {
+        "@context": "dtmi:dtdl:context;3",
         "@id": "dtmi:com:example:ConferenceRoom;1",
         "@type": "Interface",
         "extends": "dtmi:com:example:Room;1",
@@ -193,8 +194,7 @@ Through inheritance, the *ConferenceRoom* has two Properties: the *occupied* Pro
                 "name": "capacity",
                 "schema": "integer"
             }
-        ],
-        "@context": "dtmi:dtdl:context;3"
+        ]
     }
 ]
 ```
@@ -780,6 +780,7 @@ The chart below lists the properties that Interface schemas may have.
 
 ```json
 {
+    "@context": "dtmi:dtdl:context;3",
     "@id": "dtmi:com:example:ReusableTypeExample;1",
     "@type": "Interface",
     "contents": [
@@ -813,8 +814,7 @@ The chart below lists the properties that Interface schemas may have.
                 }
             ]
         }
-    ],
-    "@context": "dtmi:dtdl:context;3"
+    ]
 }
 ```
 
@@ -913,10 +913,10 @@ In the following example, no language code is used for the localizable `displayN
 
 ```json
 {
+    "@context": "dtmi:dtdl:context;3",
     "@id": "dtmi:com:example:Thermostat;1",
     "@type": "Interface",
-    "displayName": "Thermostat",
-    "@context": "dtmi:dtdl:context;3"
+    "displayName": "Thermostat"
 }
 ```
 
@@ -924,13 +924,13 @@ In the following example, the localizable `displayName` property is localized in
 
 ```json
 {
+    "@context": "dtmi:dtdl:context;3",
     "@id": "dtmi:com:example:Thermostat;1",
     "@type": "Interface",
     "displayName": {
         "en": "Thermostat",
         "it": "Termostato"
-    },
-    "@context": "dtmi:dtdl:context;3"
+    }
 }
 ```
 
@@ -953,6 +953,7 @@ The following example shows a Property that is co-typed with the undefined type 
 
 ```json
 {
+    "@context": "dtmi:dtdl:context;3",
     "@id": "dtmi:com:example:Thermostat;1",
     "@type": "Interface",
     "contents": [
@@ -963,8 +964,7 @@ The following example shows a Property that is co-typed with the undefined type 
             "schema": "double",
             "brand": "Honeywell"
         }
-    ],
-    "@context": "dtmi:dtdl:context;3"
+    ]
 }
 ```
 
