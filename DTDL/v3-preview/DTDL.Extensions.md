@@ -63,6 +63,11 @@ Each feature extension is identifed by a JSON-LD context specifier, which is a [
 To use a feature extension, a model's `@context` property includes the extension's context specifier in addition to the DTDL context specifier, as illustrated in the example above.
 The order of context specifiers is important; different versions of DTDL may have different sets of extensions available, so it is necessary to first declare the DTDL version with a DTDL context specifier before declaring any language extensions via extension context specifiers.
 
+> Note that the absence of an extension context does not invalidate the model.
+For instance, if the context specifier "dtmi:dtdl:extension:initialization;1" were removed from the above example, the resulting model would still be valid.
+This is because DTDL permits the use of undefined types and properties in models, and the co-type "Initialized" and the property "initialValue" are undefined without the extension context.
+However, because these terms are undefined, a service that understands the Initialization feature would not provide the expected behavior when the defining context is not specified.
+
 Of particular note is the [QuantitativeTypes](./DTDL.quantitativeTypes.v1.md) extension.
 DTDL v2 provides native support for semantic types and units, so the following example is valid.
 The Telemetry named "currentTemp" is co-typed Temperature, and it has a `unit` property with value *degreeFahrenheit*.

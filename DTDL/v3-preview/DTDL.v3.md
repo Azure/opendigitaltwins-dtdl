@@ -199,6 +199,10 @@ Through inheritance, the *ConferenceRoom* has two Properties: the *occupied* Pro
 ]
 ```
 
+Inheritance designates a subtype/supertype relation between the Interfaces.
+In the example above, Interface "dtmi:com:example:Room;1" is a supertype, and "dtmi:com:example:ConferenceRoom;1" is a subtype.
+Tools and services may look at the value of the "extends" property to determine supertypes of the Interface, which may be used for additional validation or other service-specific purposes.
+
 ## Telemetry
 
 Telemetry describes the data emitted by any digital twin, whether the data is a regular stream of sensor readings or a computed stream of data, such as occupancy, or an occasional alert or information message.
