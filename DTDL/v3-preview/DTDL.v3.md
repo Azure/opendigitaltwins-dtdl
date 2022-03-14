@@ -345,7 +345,7 @@ The chart below lists the properties that a Relationship may have.
 
 > Note that the datatype of the `target` property is DTMI, in contrast to the datatype of the `schema` property of Component, which is Interface.
 A Component has "by value" semantics, so it is not valid unless its `schema` property identifies a valid Interface.
-A Relationship has "by reference" semantic, so its validity does not depend on the identity of its `target` property (although a Relationship with a non-Interface `target` value will have minimal utility.)
+A Relationship has "by reference" semantics, so its validity does not depend on the identity of its `target` property (although a Relationship with a non-Interface `target` value will have minimal utility.)
 
 | Property | Required | Data type | Limits | Description |
 | --- | --- | --- | --- | --- |
@@ -936,6 +936,9 @@ When writing a digital twin definition, it is necessary to specify the version o
 Because DTDL is based on JSON-LD, you use the JSON-LD context (the `@context` statement) to specify the version of DTDL being used.
 
 For this version of DTDL, the context is exactly *dtmi:dtdl:context;3*.
+
+Additional context specifiers may also be included, in particular to import definitions for [Feature extensions](#feature-extensions).
+However, the DTDL context must always be first in the ordered list of context specifiers, with any other contexts listed subsequently.
 
 ### Undefined co-types and properties
 
