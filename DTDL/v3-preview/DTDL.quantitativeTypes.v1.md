@@ -102,6 +102,10 @@ One Telemetry has a `schema` value of *integer*, and the other three have `schem
 
 ```json
 {
+    "@context": [
+        "dtmi:dtdl:context;3",
+        "dtmi:dtdl:extension:quantitativeTypes;1"
+    ],
     "@id": "dtmi:com:example:Sensor;1",
     "@type": "Interface",
     "contents": [
@@ -129,10 +133,6 @@ One Telemetry has a `schema` value of *integer*, and the other three have `schem
             "schema": "double",
             "unit": "metrePerSecond"
         }
-    ],
-    "@context": [
-        "dtmi:dtdl:context;3",
-        "dtmi:dtdl:extension:quantitativeTypes;1"
     ]
 }
 ```

@@ -18,6 +18,10 @@ For example, a Property can be co-typed with the adjunct type Historized defined
 
 ```json
 {
+    "@context": [
+        "dtmi:dtdl:context;3",
+        "dtmi:dtdl:extension:historization;1"
+    ],
     "@id": "dtmi:com:example:Thermostat;1",
     "@type": "Interface",
     "contents": [
@@ -27,10 +31,6 @@ For example, a Property can be co-typed with the adjunct type Historized defined
             "writable": true,
             "schema": "double"
         }
-    ],
-    "@context": [
-        "dtmi:dtdl:context;3",
-        "dtmi:dtdl:extension:historization;1"
     ]
 }
 ```
@@ -41,6 +41,10 @@ This additional property can be assigned a value in the model in the same manner
 
 ```json
 {
+    "@context": [
+        "dtmi:dtdl:context;3",
+        "dtmi:dtdl:extension:initialization;1"
+    ],
     "@id": "dtmi:com:example:Thermostat;1",
     "@type": "Interface",
     "contents": [
@@ -51,10 +55,6 @@ This additional property can be assigned a value in the model in the same manner
             "schema": "double",
             "initialValue": 62.6
         }
-    ],
-    "@context": [
-        "dtmi:dtdl:context;3",
-        "dtmi:dtdl:extension:initialization;1"
     ]
 }
 ```
@@ -75,6 +75,7 @@ Note that the only context specifier is the core DTDL v2 context, "dtmi:dtdl:con
 
 ```json
 {
+    "@context": "dtmi:dtdl:context;2",
     "@id": "dtmi:com:example:Sensor;1",
     "@type": "Interface",
     "contents": [
@@ -84,8 +85,7 @@ Note that the only context specifier is the core DTDL v2 context, "dtmi:dtdl:con
             "schema": "double",
             "unit": "degreeFahrenheit"
         }
-    ],
-    "@context": "dtmi:dtdl:context;2"
+    ]
 }
 ```
 
@@ -96,6 +96,10 @@ Conseqently, an additional context for the QuantitativeTypes extension is also s
 
 ```json
 {
+    "@context": [
+        "dtmi:dtdl:context;3",
+        "dtmi:dtdl:extension:quantitativeTypes;1"
+    ],
     "@id": "dtmi:com:example:Sensor;1",
     "@type": "Interface",
     "contents": [
@@ -105,10 +109,6 @@ Conseqently, an additional context for the QuantitativeTypes extension is also s
             "schema": "double",
             "unit": "degreeFahrenheit"
         }
-    ],
-    "@context": [
-        "dtmi:dtdl:context;3",
-        "dtmi:dtdl:extension:quantitativeTypes;1"
     ]
 }
 ```

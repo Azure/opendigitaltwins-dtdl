@@ -41,6 +41,10 @@ The value of the `initialValue` property is 62.6, which satisfies the syntax for
 
 ```json
 {
+    "@context": [
+        "dtmi:dtdl:context;2",
+        "dtmi:dtdl:extension:initialization;1"
+    ],
     "@id": "dtmi:com:example:Thermostat;1",
     "@type": "Interface",
     "contents": [
@@ -51,10 +55,6 @@ The value of the `initialValue` property is 62.6, which satisfies the syntax for
             "schema": "double",
             "initialValue": 62.6
         }
-    ],
-    "@context": [
-        "dtmi:dtdl:context;2",
-        "dtmi:dtdl:extension:initialization;1"
     ]
 }
 ```
@@ -64,6 +64,10 @@ The value of the `initialValue` property is "unknown", which satisfies the synta
 
 ```json
 {
+    "@context": [
+        "dtmi:dtdl:context;2",
+        "dtmi:dtdl:extension:initialization;1"
+    ],
     "@id": "dtmi:com:example:Neighborhood;1",
     "@type": "Interface",
     "contents": [
@@ -80,10 +84,6 @@ The value of the `initialValue` property is "unknown", which satisfies the synta
                 }
             ]
         }
-    ],
-    "@context": [
-        "dtmi:dtdl:context;2",
-        "dtmi:dtdl:extension:initialization;1"
     ]
 }
 ```

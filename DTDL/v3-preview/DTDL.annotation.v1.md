@@ -46,6 +46,11 @@ Because this is a Property, its value is not transmitted with every temperature 
 
 ```json
 {
+    "@context": [
+        "dtmi:dtdl:context;3",
+        "dtmi:dtdl:extension:quantitativeTypes;1",
+        "dtmi:dtdl:extension:annotation;1"
+    ],
     "@id": "dtmi:com:example:Sensor;1",
     "@type": "Interface",
     "contents": [
@@ -68,11 +73,6 @@ Because this is a Property, its value is not transmitted with every temperature 
             "schema": "string",
             "writable": true
         }
-    ],
-    "@context": [
-        "dtmi:dtdl:context;3",
-        "dtmi:dtdl:extension:quantitativeTypes;1",
-        "dtmi:dtdl:extension:annotation;1"
     ]
 }
 ```

@@ -48,6 +48,12 @@ Since "currentTemp" is co-typed with adjunct type Temperature, the schema type o
 
 ```json
 {
+    "@context": [
+        "dtmi:dtdl:context;3",
+        "dtmi:dtdl:extension:quantitativeTypes;1",
+        "dtmi:dtdl:extension:annotation;1",
+        "dtmi:dtdl:extension:overriding;1"
+    ],
     "@id": "dtmi:com:example:Sensor;1",
     "@type": "Interface",
     "contents": [
@@ -65,12 +71,6 @@ Since "currentTemp" is co-typed with adjunct type Temperature, the schema type o
             "schema": "TemperatureUnit",
             "writable": true
         }
-    ],
-    "@context": [
-        "dtmi:dtdl:context;3",
-        "dtmi:dtdl:extension:quantitativeTypes;1",
-        "dtmi:dtdl:extension:annotation;1",
-        "dtmi:dtdl:extension:overriding;1"
     ]
 }
 ```

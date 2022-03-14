@@ -34,6 +34,10 @@ The following example shows an Interface with a single `contents` element named 
 
 ```json
 {
+    "@context": [
+        "dtmi:dtdl:context;2",
+        "dtmi:dtdl:extension:historization;1"
+    ],
     "@id": "dtmi:com:example:Thermostat;1",
     "@type": "Interface",
     "contents": [
@@ -43,10 +47,6 @@ The following example shows an Interface with a single `contents` element named 
             "writable": true,
             "schema": "double"
         }
-    ],
-    "@context": [
-        "dtmi:dtdl:context;2",
-        "dtmi:dtdl:extension:historization;1"
     ]
 }
 ```
@@ -55,6 +55,10 @@ Applying the Historized adjunct type does not preclude the application of other 
 
 ```json
 {
+    "@context": [
+        "dtmi:dtdl:context;2",
+        "dtmi:dtdl:extension:historization;1"
+    ],
     "@id": "dtmi:com:example:Thermostat;1",
     "@type": "Interface",
     "contents": [
@@ -65,10 +69,6 @@ Applying the Historized adjunct type does not preclude the application of other 
             "schema": "double",
             "unit": "degreeFahrenheit"
         }
-    ],
-    "@context": [
-        "dtmi:dtdl:context;2",
-        "dtmi:dtdl:extension:historization;1"
     ]
 }
 ```

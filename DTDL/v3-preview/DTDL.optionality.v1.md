@@ -41,6 +41,10 @@ The value of the `defaultValue` property is October 26, 1985, 1:24 AM PDT expres
 
 ```json
 {
+    "@context": [
+        "dtmi:dtdl:context;3",
+        "dtmi:dtdl:extension:optionality;1"
+    ],
     "@id": "dtmi:com:example:FluxCapacitor;1",
     "@type": "Interface",
     "contents": [
@@ -58,10 +62,6 @@ The value of the `defaultValue` property is October 26, 1985, 1:24 AM PDT expres
                 "schema": "dateTime"
             }
         }
-    ],
-    "@context": [
-        "dtmi:dtdl:context;3",
-        "dtmi:dtdl:extension:optionality;1"
     ]
 }
 ```
@@ -101,6 +101,10 @@ The value of the `defaultValue` property is a JSON object that conforms to the n
 
 ```json
 {
+    "@context": [
+        "dtmi:dtdl:context;3",
+        "dtmi:dtdl:extension:optionality;1"
+    ],
     "@id": "dtmi:com:example:Robot;1",
     "@type": "Interface",
     "contents": [
@@ -155,10 +159,6 @@ The value of the `defaultValue` property is a JSON object that conforms to the n
                 }
             }
         }
-    ],
-    "@context": [
-        "dtmi:dtdl:context;3",
-        "dtmi:dtdl:extension:optionality;1"
     ]
 }
 ```
