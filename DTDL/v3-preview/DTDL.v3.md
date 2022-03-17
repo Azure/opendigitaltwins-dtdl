@@ -981,10 +981,6 @@ The chart below lists the feature extensions that are currently available for us
 | --- | --- |
 | [QuantitativeTypes v1](./DTDL.quantitativeTypes.v1.md) | A set of standard semantic types, unit types, and units. |
 | [Historization v1](./DTDL.historization.v1.md) | Record the historical sequence of values of a Property or Telemetry and the times at which values change. |
-| [Annotation v1](./DTDL.annotation.v1.md) | Add custom metadata to a Property or a Telemetry. |
-| [Overriding v1](./DTDL.overriding.v1.md) | Override a model property with an instance value. |
-| [Initialization v1](./DTDL.initialization.v1.md) | Specify an initial value for a Property. |
-| [Optionality v1](./DTDL.optionality.v1.md) | Specify a default value for a Command request that is issued without an explicit request value. |
 
 ## Changes from Version 2
 

@@ -137,6 +137,55 @@ One Telemetry has a `schema` value of *integer*, and the other three have `schem
 }
 ```
 
+The following example reformulates the above Interface to have a single Telemetry whose schema is an Object with four Fields.
+Each field has a name, co-type, and unit that matches one of the separate Telemetries above.
+
+```json
+{
+  "@context": [
+    "dtmi:dtdl:context;3",
+    "dtmi:dtdl:extension:quantitativeTypes;1"
+  ],
+  "@id": "dtmi:com:example:Sensor;1",
+  "@type": "Interface",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "multimeter",
+      "schema": {
+        "@type": "Object",
+        "fields": [
+          {
+            "@type": [ "Field", "Temperature" ],
+            "name": "thermometer",
+            "schema": "double",
+            "unit": "degreeCelsius"
+          },
+          {
+            "@type": [ "Field", "Pressure" ],
+            "name": "barometer",
+            "schema": "double",
+            "unit": "millibar"
+          },
+          {
+            "@type": [ "Field", "RelativeHumidity" ],
+            "name": "humidityMeter",
+            "schema": "integer",
+            "unit": "percent"
+          },
+          {
+            "@type": [ "Field", "Velocity" ],
+            "name": "anemometer",
+            "schema": "double",
+            "unit": "metrePerSecond"
+          }
+        ]
+      }
+    }
+  ]
+}
+```
+
 ## Feature versions
 
 The chart below lists the versions of the QuantitativeTypes extension that are currently available.
