@@ -6,7 +6,7 @@ DTDL is open to the community and Microsoft welcomes collaboration with customer
 
 To converge DTDL across Azure IoT Hub, Azure IoT Central, Azure Digital Twins, and other Azure services, DTDL is introducing a set of breaking changes.
 
-Azure IoT Hub and Azure IoT Central support for [IoT Plug & Play](#iot-plug-and-play) is using [DTDL preview, version 1](v1-preview/dtdlv1.md). They are in the process of moving to version 2.
+Azure IoT Hub and Azure IoT Central support for [IoT Plug & Play](#iot-plug-and-play) is using [DTDLv2](v2/dtdlv2.md). They are in the process of moving to version 2.
 
 [Azure Digital Twins](https://azure.microsoft.com/en-us/services/digital-twins/) is using [DTDL version 2](v2/dtdlv2.md).
 
