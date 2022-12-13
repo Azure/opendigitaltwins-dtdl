@@ -760,7 +760,7 @@ The chart below lists standard semantic types, corresponding unit types, and ava
 | `Density` | `DensityUnit` | `kilogramPerCubicMetre` <br> `gramPerCubicMetre` |
 | `Distance` | `LengthUnit` | `metre` <br> `centimetre` <br> `millimetre` <br> `micrometre` <br> `nanometre` <br> `kilometre` <br> `foot` <br> `inch` <br> `mile` <br> `nauticalMile` <br> `astronomicalUnit` |
 | `ElectricCharge` | `ChargeUnit` | `coulomb` |
-| `Energy` | `EnergyUnit` | `joule` <br> `kilojoule` <br> `megajoule` <br> `gigajoule` <br> `electronvolt` <br> `megaelectronvolt` <br> `kilowattHour` |
+| `Energy` | `EnergyUnit` | `joule` <br> `kilojoule` <br> `megajoule` <br> `gigajoule` <br> `electronvolt` <br> `megaelectronvolt` <br> `wattHour` <br> `kilowattHour` |
 | `Force` | `ForceUnit` | `newton` <br> `pound` <br> `ounce` <br> `ton` |
 | `Frequency` | `FrequencyUnit` | `hertz` <br> `kilohertz` <br> `megahertz` <br> `gigahertz` |
 | `Humidity` | `DensityUnit` | `kilogramPerCubicMetre` <br> `gramPerCubicMetre` |
