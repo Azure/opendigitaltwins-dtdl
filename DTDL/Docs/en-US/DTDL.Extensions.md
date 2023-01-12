@@ -3,31 +3,31 @@
 The Digital Twins Definition Language (DTDL) is made up of a set of metamodel classes.
 In addition to its native classes &mdash; Interface, Command, Component, Property, Relationship, and Telemetry &mdash; DTDL supports *language extensions* that define additional metamodel classes.
 There are two categories of language extensions:
-*Partner extensions* add types, properties, and elements that are relevant to a specific IoT service.
+*Partner extensions* add types, properties, and elements that are relevant to a specific cloud service.
 *Feature extensions* add non-core features to the DTDL language in a selectable manner.
 
 Each extension commonly includes one or more *adjunct types*, which are types that can be added to the `@type` property of a DTDL element.
-For example, a Telemetry can be co-typed with the adjunct type Event defined in the [IoT Central](./DTDL.iotcentral.v0.md) partner extension:
+For example, a Property can be co-typed with the adjunct type Historized defined in the [Historization](./DTDL.historization.v1.md) feature extension:
 
 ```json
 {
   "@context": [
-      "dtmi:dtdl:context;2",
-      "dtmi:iotcentral:context;2"
+      "dtmi:dtdl:context;3",
+      "dtmi:dtdl:extension:historization;1"
   ],
-  "@id": "dtmi:com:example:Alarm;1",
+  "@id": "dtmi:com:example:Thermometer;1",
   "@type": "Interface",
   "contents": [
     {
-      "@type": [ "Telemetry", "Event" ],
-      "name": "alert",
-      "schema": "string"
+      "@type": [ "Property", "Historized" ],
+      "name": "currentTemp",
+      "schema": "double"
     }
   ]
 }
 ```
 
-Each language extension is identifed by a JSON-LD context specifier, which is a [DTMI](https://github.com/Azure/digital-twin-model-identifier).
+Each language extension is identifed by a JSON-LD context specifier, which is a [DTMI](../../../DTMI/README.md).
 To use a language extension, a model's `@context` property includes the extension's context specifier in addition to the DTDL context specifier, as illustrated in the example above.
 The order of context specifiers is important; different versions of DTDL may have different sets of extensions available, so it is necessary to first declare the DTDL version with a DTDL context specifier before declaring any language extensions via extension context specifiers.
 

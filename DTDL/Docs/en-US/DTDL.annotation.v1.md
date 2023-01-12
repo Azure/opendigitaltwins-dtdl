@@ -86,7 +86,6 @@ Such annotations do not apply to the next value, to the previous value, to the s
 
 When a Property annotates a Telemetry, the annotation applies to the entire stream of Telemetry values for the duration of the annotating Property value.
 When a Property annotates another Property, the annotation applies to the values with which it is concurrent.
-A special case of using a Property for annotation is when the [Overriding](./DTDL.overriding.v0.md) feature extension is employed to override a model property with an instance value.
 
 As the following example shows, the Property or Telemetry that is annotated need not be defined directly in the same Interface as the ValueAnnotation.
 When an Interface `extends` another Interface, the former can annotate a `contents` element that is defined in the latter, because the `extends` property imports the Property or Telemetry into the former's `contents`.

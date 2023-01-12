@@ -4,8 +4,6 @@
 
 This version of DTDL is used for [Azure Digital Twins](https://azure.microsoft.com/services/digital-twins/) and [IoT Plug and Play](https://aka.ms/iotpnp).
 
-> Note: If you are using IoT Plug and Play public preview in IoT Central, refer to [DTDL version 1 preview](../v1-preview/dtdlv1.md).
-
 ## Table of Contents
 
 * [Introduction](#introduction)
@@ -32,13 +30,13 @@ This version of DTDL is used for [Azure Digital Twins](https://azure.microsoft.c
 
 ## Introduction
 
-This document describes the Digital Twins Definition Language (DTDL), a language for describing models for IoT Plug and Play devices, device digital twins, and logical digital twins.
-Broadly, modeling enables IoT solutions to provision, use, and configure digital twins of all kinds from multiple sources in a single solution.
-Using DTDL to describe any digital twin's abilities enables the IoT platform and IoT solutions to leverage the semantics of each digital twin.
+This document describes the Digital Twins Definition Language (DTDL), a language for describing digital twin models of smart devices, assets, spaces, and environments.
+Broadly, modeling enables digital twin solutions to provision, use, and configure digital twins of all kinds from multiple sources in a single solution.
+Using DTDL to describe any digital twin's abilities enables the platform and solutions to leverage the semantics of each digital twin.
 
 ## Digital Twins Definition Language
 
-Plug & Play devices, device digital twins, and logical digital twins are described using a variant of JSON called JSON-LD.
+Digital twins for smart devices, assets, spaces, and environments are described using a variant of JSON called JSON-LD.
 JSON-LD is designed to be usable directly as JSON as well as usable in Resource Description Framework (RDF) systems.
 RDF is a widely adopted standard for describing resources in a distributed, extensible way.
 We chose JSON-LD because it is JSON and because it is an easy-to-use language for RDF.
@@ -46,7 +44,7 @@ Developers can use DTDL with no knowledge of RDF, but equally important, can tak
 
 The Digital Twins Definition Language (DTDL) is made up of a set of metamodel classes (described in the rest of this document) that are used to define the behavior of all digital twins (including devices).
 The main metamodel classes that describe these behaviors are Interface, Command, Component, Property, Relationship, and Telemetry.
-In addition, because data is a key element in IoT solutions, DTDL provides a data description language that is compatible with many popular serialization formats, including JSON and binary serialization formats.
+In addition, because data is a key element in digital twin solutions, DTDL provides a data description language that is compatible with popular serialization formats including JSON.
 When a digital twin is modeled using the DTDL, its behaviors are defined using these metamodel classes (Interface, Command, Component, Property, Relationship, Telemetry, and data types) and it often implements those behaviors using an SDK in terms of these metamodel classes.
 
 Lastly, the Digital Twins Definition Language provides semantic type annotations of behaviors, so that analytics, machine learning, UIs, and other computation can reason about the semantics of the data, not just the schema of the data.
@@ -104,6 +102,8 @@ The Interface has one Telemetry that reports the temperature measurement, and on
 
 The following Interface example shows a *Phone* device that has two cameras as Components, and the *DeviceInformation* Interface as another Component.
 
+> Note that for this model to be complete and valid, Interface definitions for "dtmi:com:example:Camera;3" and "dtmi:azure:deviceManagement:DeviceInformation;1" must be provided.
+
 ```json
 {
   "@context": "dtmi:dtdl:context;2",
@@ -131,6 +131,8 @@ The following Interface example shows a *Phone* device that has two cameras as C
 ```
 
 The following Interface example shows a digital twin model of a building that has a *name* Property and a Relationship to rooms contained in the building.
+
+> Note that unlike the example above, no definition is required for "dtmi:com:example:Room;1", because the datatype of the Relationship `target` property is DTMI, not Interface, so it has "by reference" semantics.
 
 ```json
 {
@@ -957,7 +959,7 @@ Identifiers with the following prefixes are reserved by the DTDL language:
 * `dtmi:dtdl:`
 * `dtmi:standard:`
 
-For a full definition of DTMI, please see the [DTMI repo on GitHub](https://github.com/Azure/digital-twin-model-identifier).
+For a full definition of DTMI, please see the [DTMI spec](../../../DTMI/README.md).
 
 ### Internationalized Resource Identifier
 
@@ -1007,7 +1009,7 @@ Because DTDL is based on JSON-LD, you use the JSON-LD context (the `@context` st
 
 For this version of DTDL, the context is exactly *dtmi:dtdl:context;2*.
 
-Additional context specifiers may also be included, in particular to import definitions for [language extensions](#language-extensions).
+Additional context specifiers may also be included, in particular to import definitions for [language extensions](#language-extensions) into the model.
 However, the DTDL context must always be first in the ordered list of context specifiers, with any other contexts listed subsequently.
 
 ### Undefined co-types and properties
