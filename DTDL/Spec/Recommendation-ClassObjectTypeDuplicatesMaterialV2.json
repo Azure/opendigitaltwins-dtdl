@@ -1,0 +1,52 @@
+﻿[
+  {
+    "valid": true,
+    "desirable": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:humpf_omicron;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:humpf_nu;1",
+          "fields": [
+            {
+              "name": "humpf_xi",
+              "schema": "integer"
+            }
+          ],
+          "@type": [
+            "Object",
+            "Object"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "desirable": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:humpf_sigma;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:humpf_pi;1",
+          "fields": [
+            {
+              "name": "humpf_rho",
+              "schema": "long"
+            }
+          ],
+          "@type": [
+            "dtmi:dtdl:class:Object;2",
+            "dtmi:dtdl:class:Object;2"
+          ]
+        }
+      }
+    ]
+  }
+]

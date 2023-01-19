@@ -1,0 +1,104 @@
+﻿[
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:alpha_fuddle;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:alpha_um;1",
+          "@type": "Map",
+          "mapValue": {
+            "name": "alpha_humpf",
+            "schema": "double"
+          },
+          "mapKey": {
+            "name": "alpha_wum",
+            "schema": "string",
+            "dtmi:foo:bar;1": 626
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:alpha_quan;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:alpha_nuh;1",
+          "@type": "Map",
+          "mapValue": {
+            "name": "alpha_snee",
+            "schema": "duration"
+          },
+          "mapKey": {
+            "@context": "dtmi:undefinedExtension:context;1",
+            "name": "alpha_glikk",
+            "schema": "string",
+            "dtmi:foo:bar;1": 626
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:alpha_zatz;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:alpha_spazz;1",
+          "@type": "Map",
+          "mapValue": {
+            "name": "alpha_floob",
+            "schema": "float"
+          },
+          "mapKey": {
+            "name": "alpha_thnad",
+            "schema": "string",
+            "boolean": null
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:alpha_yekk;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:alpha_flunn;1",
+          "@type": "Map",
+          "mapValue": {
+            "name": "alpha_itch",
+            "schema": "integer"
+          },
+          "mapKey": {
+            "@context": "dtmi:undefinedExtension:context;1",
+            "name": "alpha_jogg",
+            "schema": "string",
+            "boolean": null
+          }
+        }
+      }
+    ]
+  }
+]

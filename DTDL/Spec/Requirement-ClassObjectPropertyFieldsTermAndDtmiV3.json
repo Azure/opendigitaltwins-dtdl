@@ -1,0 +1,59 @@
+﻿[
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:iota_gamma;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:theta_hi;1",
+          "@type": "Object",
+          "fields": [
+            {
+              "name": "iota_alpha",
+              "schema": "float"
+            }
+          ],
+          "dtmi:dtdl:property:fields;3": [
+            {
+              "name": "iota_beta",
+              "schema": "integer"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:iota_eta;1",
+        "@type": "Interface",
+        "schemas": {
+          "@context": "dtmi:undefinedExtension:context;1",
+          "@id": "dtmi:example:iota_delta;1",
+          "@type": "Object",
+          "fields": [
+            {
+              "name": "iota_epsilon",
+              "schema": "long"
+            }
+          ],
+          "dtmi:dtdl:property:fields;3": [
+            {
+              "name": "iota_zeta",
+              "schema": "string"
+            }
+          ]
+        }
+      }
+    ]
+  }
+]

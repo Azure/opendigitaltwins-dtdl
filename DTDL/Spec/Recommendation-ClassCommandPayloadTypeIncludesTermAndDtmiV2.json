@@ -1,0 +1,26 @@
+﻿[
+  {
+    "valid": true,
+    "desirable": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:pi_xi;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Command",
+          "name": "pi_nu",
+          "request": {
+            "name": "pi_mu",
+            "schema": "long",
+            "@type": [
+              "CommandPayload",
+              "dtmi:dtdl:class:CommandPayload;2"
+            ]
+          }
+        }
+      }
+    ]
+  }
+]

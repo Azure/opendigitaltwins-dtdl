@@ -1,0 +1,254 @@
+﻿[
+  {
+    "valid": true,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:snee_fuddle;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": [
+            "Property",
+            "Luminosity"
+          ],
+          "name": "snee_humpf",
+          "schema": "long",
+          "unit": "gigawatt"
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:snee_nuh;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": [
+            "Property",
+            "dtmi:standard:class:Luminosity;2"
+          ],
+          "name": "snee_glikk",
+          "schema": "double",
+          "unit": "gigawatt"
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:snee_quan;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": [
+            "Property",
+            "Luminosity"
+          ],
+          "name": "snee_snee",
+          "schema": "float",
+          "unit": "dtmi:standard:unit:gigawatt;2"
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:snee_spazz;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": [
+            "Property",
+            "dtmi:standard:class:Luminosity;2"
+          ],
+          "name": "snee_thnad",
+          "schema": "integer",
+          "unit": "dtmi:standard:unit:gigawatt;2"
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:snee_zatz;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": [
+            "Property",
+            "Luminosity"
+          ],
+          "name": "snee_floob",
+          "schema": "long",
+          "unit": "lumen"
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:snee_flunn;1",
+        "@type": "Interface",
+        "contents": {
+          "@context": "dtmi:undefinedExtension:context;1",
+          "@type": [
+            "Property",
+            "Luminosity"
+          ],
+          "name": "snee_jogg",
+          "schema": "double",
+          "unit": "lumen"
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:snee_yekk;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": [
+            "Property",
+            "dtmi:standard:class:Luminosity;2"
+          ],
+          "name": "snee_itch",
+          "schema": "float",
+          "unit": "lumen"
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:snee_hi;1",
+        "@type": "Interface",
+        "contents": {
+          "@context": "dtmi:undefinedExtension:context;1",
+          "@type": [
+            "Property",
+            "dtmi:standard:class:Luminosity;2"
+          ],
+          "name": "snee_vroo",
+          "schema": "integer",
+          "unit": "lumen"
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:quan_beta;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": [
+            "Property",
+            "Luminosity"
+          ],
+          "name": "quan_alpha",
+          "schema": "long",
+          "unit": "dtmi:standard:unit:lumen;2"
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:quan_delta;1",
+        "@type": "Interface",
+        "contents": {
+          "@context": "dtmi:undefinedExtension:context;1",
+          "@type": [
+            "Property",
+            "Luminosity"
+          ],
+          "name": "quan_gamma",
+          "schema": "double",
+          "unit": "dtmi:standard:unit:lumen;2"
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:quan_zeta;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": [
+            "Property",
+            "dtmi:standard:class:Luminosity;2"
+          ],
+          "name": "quan_epsilon",
+          "schema": "float",
+          "unit": "dtmi:standard:unit:lumen;2"
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:quan_theta;1",
+        "@type": "Interface",
+        "contents": {
+          "@context": "dtmi:undefinedExtension:context;1",
+          "@type": [
+            "Property",
+            "dtmi:standard:class:Luminosity;2"
+          ],
+          "name": "quan_eta",
+          "schema": "integer",
+          "unit": "dtmi:standard:unit:lumen;2"
+        }
+      }
+    ]
+  }
+]

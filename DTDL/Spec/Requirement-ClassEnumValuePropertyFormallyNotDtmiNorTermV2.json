@@ -1,0 +1,47 @@
+﻿[
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:humpf_delta;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:humpf_gamma;1",
+          "@type": "Enum",
+          "valueSchema": "integer",
+          "enumValues": {
+            "enumValue": 1015,
+            "name": "humpf_beta",
+            "http://foo.com/bar": true
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:humpf_eta;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:humpf_zeta;1",
+          "@type": "Enum",
+          "valueSchema": "integer",
+          "enumValues": {
+            "@context": "dtmi:undefinedExtension:context;1",
+            "enumValue": 1016,
+            "name": "humpf_epsilon",
+            "http://foo.com/bar": true
+          }
+        }
+      }
+    ]
+  }
+]

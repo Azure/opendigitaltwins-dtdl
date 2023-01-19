@@ -1,0 +1,37 @@
+﻿[
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:sigma_mu;1",
+        "@type": [
+          "Interface",
+          "Foobar"
+        ],
+        "http://foo.com/bar": true
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": [
+          "dtmi:dtdl:context;3",
+          "dtmi:undefinedExtension:context;1"
+        ],
+        "@id": "dtmi:example:sigma_nu;1",
+        "@type": [
+          "Interface",
+          "Foobar"
+        ],
+        "http://foo.com/bar": true
+      }
+    ]
+  }
+]

@@ -1,0 +1,55 @@
+﻿[
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:kappa_yuzz;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:kappa_omega;1",
+          "@type": "Object",
+          "fields": {
+            "displayName": [
+              "kappa_phi"
+            ],
+            "dtmi:dtdl:property:displayName;2": [
+              "kappa_chi"
+            ],
+            "name": "kappa_psi",
+            "schema": "dateTime"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:kappa_glikk;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:kappa_fuddle;1",
+          "@type": "Object",
+          "fields": {
+            "@context": "dtmi:undefinedExtension:context;1",
+            "displayName": [
+              "kappa_wum"
+            ],
+            "dtmi:dtdl:property:displayName;2": [
+              "kappa_um"
+            ],
+            "name": "kappa_humpf",
+            "schema": "double"
+          }
+        }
+      }
+    ]
+  }
+]

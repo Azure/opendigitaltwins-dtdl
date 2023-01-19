@@ -1,0 +1,46 @@
+﻿[
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:beta_kappa;1",
+        "@type": "Interface",
+        "extends": {
+          "@id": "dtmi:example:beta_iota;1",
+          "@type": "Interface",
+          "extends": "dtmi:ex:dependentRef;1"
+        }
+      }
+    ],
+    "expect": {
+      "unresolvedIdentifiers": [
+        "dtmi:ex:dependentRef;1"
+      ]
+    }
+  },
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:beta_mu;1",
+        "@type": "Interface",
+        "extends": {
+          "@id": "dtmi:example:beta_lambda;1",
+          "@type": "Interface",
+          "extends": [
+            "dtmi:ex:dependentRef;1"
+          ]
+        }
+      }
+    ],
+    "expect": {
+      "unresolvedIdentifiers": [
+        "dtmi:ex:dependentRef;1"
+      ]
+    }
+  }
+]

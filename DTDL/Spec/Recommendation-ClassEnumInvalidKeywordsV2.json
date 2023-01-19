@@ -1,0 +1,74 @@
+﻿[
+  {
+    "valid": true,
+    "desirable": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:gamma_alpha;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:beta_vroo;1",
+          "@type": "Enum",
+          "enumValues": [
+            {
+              "enumValue": 694,
+              "name": "beta_hi"
+            }
+          ],
+          "valueSchema": "integer",
+          "@value": 626
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "desirable": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:gamma_delta;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:gamma_beta;1",
+          "@type": "Enum",
+          "enumValues": [
+            {
+              "enumValue": 695,
+              "name": "gamma_gamma"
+            }
+          ],
+          "valueSchema": "integer",
+          "@language": "en"
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "desirable": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:gamma_eta;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:gamma_epsilon;1",
+          "@type": "Enum",
+          "enumValues": [
+            {
+              "enumValue": 696,
+              "name": "gamma_zeta"
+            }
+          ],
+          "valueSchema": "integer",
+          "@foobar": true
+        }
+      }
+    ]
+  }
+]

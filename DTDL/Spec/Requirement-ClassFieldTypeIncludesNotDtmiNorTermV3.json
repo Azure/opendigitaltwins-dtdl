@@ -1,0 +1,51 @@
+﻿[
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:thnad_gamma;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:thnad_beta;1",
+          "@type": "Object",
+          "fields": {
+            "@type": [
+              "Field",
+              "http://foo.com/bar"
+            ],
+            "name": "thnad_alpha",
+            "schema": "boolean"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:thnad_zeta;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:thnad_epsilon;1",
+          "@type": "Object",
+          "fields": {
+            "@context": "dtmi:undefinedExtension:context;1",
+            "@type": [
+              "Field",
+              "http://foo.com/bar"
+            ],
+            "name": "thnad_delta",
+            "schema": "date"
+          }
+        }
+      }
+    ]
+  }
+]

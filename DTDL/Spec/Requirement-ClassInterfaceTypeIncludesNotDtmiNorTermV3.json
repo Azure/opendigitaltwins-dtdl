@@ -1,0 +1,35 @@
+﻿[
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:epsilon_spazz;1",
+        "@type": [
+          "Interface",
+          "http://foo.com/bar"
+        ]
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": [
+          "dtmi:dtdl:context;3",
+          "dtmi:undefinedExtension:context;1"
+        ],
+        "@id": "dtmi:example:epsilon_floob;1",
+        "@type": [
+          "Interface",
+          "http://foo.com/bar"
+        ]
+      }
+    ]
+  }
+]

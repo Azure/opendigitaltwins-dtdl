@@ -1,0 +1,59 @@
+﻿[
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:theta_sigma;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:theta_omicron;1",
+          "@type": [
+            "Map",
+            "Foobar"
+          ],
+          "mapKey": {
+            "name": "theta_pi",
+            "schema": "string"
+          },
+          "mapValue": {
+            "name": "theta_rho",
+            "schema": "integer"
+          },
+          "foobar": {}
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:theta_chi;1",
+        "@type": "Interface",
+        "schemas": {
+          "@context": "dtmi:undefinedExtension:context;1",
+          "@id": "dtmi:example:theta_tau;1",
+          "@type": [
+            "Map",
+            "Foobar"
+          ],
+          "mapKey": {
+            "name": "theta_upsilon",
+            "schema": "string"
+          },
+          "mapValue": {
+            "name": "theta_phi",
+            "schema": "long"
+          },
+          "foobar": {}
+        }
+      }
+    ]
+  }
+]

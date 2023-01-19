@@ -1,0 +1,49 @@
+﻿[
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:chi_gamma;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:chi_beta;1",
+          "@type": "Enum",
+          "valueSchema": "integer",
+          "enumValues": {
+            "comment": "phi_vroo",
+            "dtmi:dtdl:property:comment;2": "phi_hi",
+            "enumValue": 934,
+            "name": "chi_alpha"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:chi_theta;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:chi_eta;1",
+          "@type": "Enum",
+          "valueSchema": "integer",
+          "enumValues": {
+            "@context": "dtmi:undefinedExtension:context;1",
+            "comment": "chi_delta",
+            "dtmi:dtdl:property:comment;2": "chi_epsilon",
+            "enumValue": 935,
+            "name": "chi_zeta"
+          }
+        }
+      }
+    ]
+  }
+]

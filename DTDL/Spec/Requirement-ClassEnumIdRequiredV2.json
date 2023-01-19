@@ -1,0 +1,94 @@
+﻿[
+  {
+    "valid": true,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:spazz_upsilon;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Property",
+          "name": "spazz_tau",
+          "schema": {
+            "@type": "Enum",
+            "enumValues": [
+              {
+                "enumValue": 527,
+                "name": "spazz_sigma"
+              }
+            ],
+            "valueSchema": "integer"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:spazz_psi;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:spazz_phi;1",
+          "@type": "Enum",
+          "enumValues": [
+            {
+              "enumValue": 528,
+              "name": "spazz_chi"
+            }
+          ],
+          "valueSchema": "integer"
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:spazz_yuzz;1",
+        "@type": "Interface",
+        "schemas": {
+          "@type": "Enum",
+          "enumValues": [
+            {
+              "enumValue": 529,
+              "name": "spazz_omega"
+            }
+          ],
+          "valueSchema": "integer"
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:spazz_um;1",
+        "@type": "Interface",
+        "schemas": {
+          "@context": "dtmi:undefinedExtension:context;1",
+          "@type": "Enum",
+          "enumValues": [
+            {
+              "enumValue": 530,
+              "name": "spazz_wum"
+            }
+          ],
+          "valueSchema": "integer"
+        }
+      }
+    ]
+  }
+]

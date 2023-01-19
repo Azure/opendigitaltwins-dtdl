@@ -1,0 +1,76 @@
+﻿[
+  {
+    "valid": true,
+    "desirable": true,
+    "options": [],
+    "input": [
+      {
+        "@context": [
+          "dtmi:dtdl:context;2"
+        ],
+        "@id": "dtmi:ex:id;1",
+        "@type": "Interface",
+        "contents": [
+          {
+            "@type": "Relationship",
+            "name": "foo",
+            "maxMultiplicity": {
+              "@value": 3,
+              "@type": "xsd:integer"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "desirable": false,
+    "options": [],
+    "input": [
+      {
+        "@context": [
+          "dtmi:dtdl:context;2"
+        ],
+        "@id": "dtmi:ex:id;1",
+        "@type": "Interface",
+        "contents": [
+          {
+            "@type": "Relationship",
+            "name": "foo",
+            "maxMultiplicity": {
+              "@value": 3,
+              "@type": "xsd:integer",
+              "@language": "en"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "desirable": false,
+    "options": [],
+    "input": [
+      {
+        "@context": [
+          "dtmi:dtdl:context;2"
+        ],
+        "@id": "dtmi:ex:id;1",
+        "@type": "Interface",
+        "contents": [
+          {
+            "@type": "Relationship",
+            "name": "foo",
+            "maxMultiplicity": {
+              "@value": 3,
+              "@type": "xsd:integer",
+              "@keyword": "goodbye"
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

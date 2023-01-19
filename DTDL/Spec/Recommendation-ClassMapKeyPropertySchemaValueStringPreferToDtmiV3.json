@@ -1,0 +1,50 @@
+﻿[
+  {
+    "valid": true,
+    "desirable": true,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:phi_fuddle;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:phi_um;1",
+          "@type": "Map",
+          "mapValue": {
+            "name": "phi_humpf",
+            "schema": "date"
+          },
+          "mapKey": {
+            "name": "phi_wum",
+            "schema": "string"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "desirable": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:phi_quan;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:phi_nuh;1",
+          "@type": "Map",
+          "mapValue": {
+            "name": "phi_snee",
+            "schema": "dateTime"
+          },
+          "mapKey": {
+            "name": "phi_glikk",
+            "schema": "dtmi:dtdl:instance:Schema:string;3"
+          }
+        }
+      }
+    ]
+  }
+]

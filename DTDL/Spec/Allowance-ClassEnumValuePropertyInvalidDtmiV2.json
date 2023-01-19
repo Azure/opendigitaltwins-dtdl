@@ -1,0 +1,27 @@
+﻿[
+  {
+    "valid": true,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:um_spazz;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:um_thnad;1",
+          "@type": "Enum",
+          "valueSchema": "integer",
+          "enumValues": {
+            "@type": [
+              "EnumValue",
+              "Foobar"
+            ],
+            "enumValue": 1011,
+            "name": "um_quan",
+            "dtmi:foo//bar": 626
+          }
+        }
+      }
+    ]
+  }
+]

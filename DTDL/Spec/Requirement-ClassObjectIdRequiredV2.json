@@ -1,0 +1,90 @@
+﻿[
+  {
+    "valid": true,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:floob_itch;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Property",
+          "name": "floob_flunn",
+          "schema": {
+            "@type": "Object",
+            "fields": [
+              {
+                "name": "floob_jogg",
+                "schema": "boolean"
+              }
+            ]
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:floob_hi;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:floob_yekk;1",
+          "@type": "Object",
+          "fields": [
+            {
+              "name": "floob_vroo",
+              "schema": "date"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:zatz_beta;1",
+        "@type": "Interface",
+        "schemas": {
+          "@type": "Object",
+          "fields": [
+            {
+              "name": "zatz_alpha",
+              "schema": "dateTime"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:zatz_delta;1",
+        "@type": "Interface",
+        "schemas": {
+          "@context": "dtmi:undefinedExtension:context;1",
+          "@type": "Object",
+          "fields": [
+            {
+              "name": "zatz_gamma",
+              "schema": "double"
+            }
+          ]
+        }
+      }
+    ]
+  }
+]

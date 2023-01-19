@@ -1,0 +1,53 @@
+﻿[
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:gamma_yuzz;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:gamma_psi;1",
+          "@type": "Map",
+          "mapKey": {
+            "name": "gamma_omega",
+            "schema": "string"
+          },
+          "mapValue": {
+            "name": "gamma_chi",
+            "schema": "long",
+            "dtmi:dtdl:property:schema;2": "string"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:gamma_fuddle;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:gamma_um;1",
+          "@type": "Map",
+          "mapKey": {
+            "name": "gamma_humpf",
+            "schema": "string"
+          },
+          "mapValue": {
+            "@context": "dtmi:undefinedExtension:context;1",
+            "name": "gamma_wum",
+            "schema": "time",
+            "dtmi:dtdl:property:schema;2": "boolean"
+          }
+        }
+      }
+    ]
+  }
+]

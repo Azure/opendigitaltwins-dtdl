@@ -1,0 +1,57 @@
+﻿[
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:lambda_zatz;1",
+        "@type": "Interface",
+        "contents": {
+          "@id": "dtmi:example:lambda_zatz;1",
+          "@type": "Property",
+          "name": "lambda_flunn",
+          "schema": {
+            "@id": "dtmi:example:lambda_zatz;1",
+            "@type": "Enum",
+            "valueSchema": "integer",
+            "enumValues": {
+              "@id": "dtmi:example:lambda_zatz;1",
+              "enumValue": 1333,
+              "name": "lambda_jogg"
+            }
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:lambda_itch;1",
+        "@type": "Interface",
+        "contents": {
+          "@id": "dtmi:example:lambda_itch;1",
+          "@type": "Property",
+          "name": "lambda_vroo",
+          "schema": {
+            "@id": "dtmi:example:lambda_itch;1",
+            "@type": "Enum",
+            "valueSchema": "integer",
+            "enumValues": {
+              "@context": "dtmi:undefinedExtension:context;1",
+              "@id": "dtmi:example:lambda_itch;1",
+              "enumValue": 1334,
+              "name": "lambda_yekk"
+            }
+          }
+        }
+      }
+    ]
+  }
+]

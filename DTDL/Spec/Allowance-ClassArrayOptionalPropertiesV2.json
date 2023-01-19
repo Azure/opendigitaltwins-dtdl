@@ -1,0 +1,89 @@
+﻿[
+  {
+    "valid": true,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:kappa_um;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Telemetry",
+          "name": "kappa_wum",
+          "schema": {
+            "@context": [],
+            "@type": "Array",
+            "elementSchema": "string"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:kappa_fuddle;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Telemetry",
+          "name": "kappa_humpf",
+          "schema": {
+            "@type": "Array",
+            "elementSchema": "time"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:kappa_nuh;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:kappa_glikk;1",
+          "@type": "Array",
+          "elementSchema": "boolean"
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:kappa_quan;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:kappa_snee;1",
+          "@type": "Array",
+          "elementSchema": "date"
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:kappa_spazz;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:kappa_thnad;1",
+          "@type": "Array",
+          "elementSchema": "dateTime"
+        }
+      }
+    ]
+  }
+]

@@ -1,0 +1,63 @@
+﻿[
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:jogg_iota;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:jogg_delta;1",
+          "@type": "Map",
+          "displayName": [
+            "jogg_epsilon"
+          ],
+          "dtmi:dtdl:property:displayName;2": [
+            "jogg_zeta"
+          ],
+          "mapKey": {
+            "name": "jogg_eta",
+            "schema": "string"
+          },
+          "mapValue": {
+            "name": "jogg_theta",
+            "schema": "string"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:jogg_omicron;1",
+        "@type": "Interface",
+        "schemas": {
+          "@context": "dtmi:undefinedExtension:context;1",
+          "@id": "dtmi:example:jogg_kappa;1",
+          "@type": "Map",
+          "displayName": [
+            "jogg_lambda"
+          ],
+          "dtmi:dtdl:property:displayName;2": [
+            "jogg_mu"
+          ],
+          "mapKey": {
+            "name": "jogg_nu",
+            "schema": "string"
+          },
+          "mapValue": {
+            "name": "jogg_xi",
+            "schema": "time"
+          }
+        }
+      }
+    ]
+  }
+]

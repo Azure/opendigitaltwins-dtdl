@@ -1,0 +1,138 @@
+﻿[
+  {
+    "valid": true,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:delta_itch;1",
+        "@type": "Interface",
+        "extends": {
+          "@id": "dtmi:example:delta_flunn;1",
+          "@type": "Interface",
+          "schemas": {
+            "@id": "dtmi:example:delta_jogg;1",
+            "@type": "Array",
+            "elementSchema": "duration"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:delta_hi;1",
+        "@type": "Interface",
+        "extends": {
+          "@id": "dtmi:example:delta_vroo;1",
+          "@type": "Interface",
+          "schemas": [
+            {
+              "@id": "dtmi:example:delta_yekk;1",
+              "@type": "Array",
+              "elementSchema": "float"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:epsilon_gamma;1",
+        "@type": "Interface",
+        "extends": {
+          "@id": "dtmi:example:epsilon_beta;1",
+          "@type": "Interface",
+          "schemas": {
+            "@id": "dtmi:example:epsilon_alpha;1",
+            "@type": "Array",
+            "elementSchema": "integer",
+            "@context": "dtmi:dtdl:context;3"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:epsilon_zeta;1",
+        "@type": "Interface",
+        "extends": {
+          "@context": "dtmi:undefinedExtension:context;1",
+          "@id": "dtmi:example:epsilon_epsilon;1",
+          "@type": "Interface",
+          "schemas": {
+            "@id": "dtmi:example:epsilon_delta;1",
+            "@type": "Array",
+            "elementSchema": "long",
+            "@context": "dtmi:dtdl:context;3"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:epsilon_theta;1",
+        "@type": "Interface",
+        "extends": {
+          "@id": "dtmi:example:epsilon_eta;1",
+          "@type": "Interface",
+          "schemas": []
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:epsilon_nu;1",
+        "@type": "Interface",
+        "extends": {
+          "@id": "dtmi:example:epsilon_mu;1",
+          "@type": "Interface",
+          "schemas": [
+            {
+              "@id": "dtmi:example:epsilon_iota;1",
+              "@type": "Array",
+              "elementSchema": "string"
+            },
+            {
+              "@id": "dtmi:example:epsilon_kappa;1",
+              "@type": "Enum",
+              "enumValues": [
+                {
+                  "enumValue": 1039,
+                  "name": "epsilon_lambda"
+                }
+              ],
+              "valueSchema": "integer"
+            }
+          ]
+        }
+      }
+    ]
+  }
+]

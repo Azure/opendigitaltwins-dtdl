@@ -1,0 +1,52 @@
+﻿[
+  {
+    "valid": true,
+    "desirable": true,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:yuzz_yuzz;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:yuzz_psi;1",
+          "@type": "Map",
+          "mapValue": {
+            "name": "yuzz_omega",
+            "schema": "integer"
+          },
+          "mapKey": {
+            "comment": "yuzz_phi",
+            "name": "yuzz_chi",
+            "schema": "string"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "desirable": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:yuzz_glikk;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:yuzz_humpf;1",
+          "@type": "Map",
+          "mapValue": {
+            "name": "yuzz_fuddle",
+            "schema": "long"
+          },
+          "mapKey": {
+            "dtmi:dtdl:property:comment;2": "yuzz_wum",
+            "name": "yuzz_um",
+            "schema": "string"
+          }
+        }
+      }
+    ]
+  }
+]

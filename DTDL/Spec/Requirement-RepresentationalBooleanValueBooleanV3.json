@@ -1,0 +1,278 @@
+﻿[
+  {
+    "valid": true,
+    "options": [],
+    "input": [
+      {
+        "@context": [
+          "dtmi:dtdl:context;3"
+        ],
+        "@id": "dtmi:ex:id;1",
+        "@type": "Interface",
+        "contents": [
+          {
+            "@type": "Property",
+            "name": "foo",
+            "schema": "string",
+            "writable": {
+              "@value": true
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": [
+          "dtmi:dtdl:context;3"
+        ],
+        "@id": "dtmi:ex:id;1",
+        "@type": "Interface",
+        "contents": [
+          {
+            "@type": "Property",
+            "name": "foo",
+            "schema": "string",
+            "writable": {
+              "@value": [
+                true
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": [
+          "dtmi:dtdl:context;3",
+          "dtmi:undefinedExtension:context;1"
+        ],
+        "@id": "dtmi:ex:id;1",
+        "@type": "Interface",
+        "contents": [
+          {
+            "@type": "Property",
+            "name": "foo",
+            "schema": "string",
+            "writable": {
+              "@value": [
+                true
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": [
+          "dtmi:dtdl:context;3"
+        ],
+        "@id": "dtmi:ex:id;1",
+        "@type": "Interface",
+        "contents": [
+          {
+            "@type": "Property",
+            "name": "foo",
+            "schema": "string",
+            "writable": {
+              "@value": {
+                "value": true
+              }
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": [
+          "dtmi:dtdl:context;3",
+          "dtmi:undefinedExtension:context;1"
+        ],
+        "@id": "dtmi:ex:id;1",
+        "@type": "Interface",
+        "contents": [
+          {
+            "@type": "Property",
+            "name": "foo",
+            "schema": "string",
+            "writable": {
+              "@value": {
+                "value": true
+              }
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": [
+          "dtmi:dtdl:context;3"
+        ],
+        "@id": "dtmi:ex:id;1",
+        "@type": "Interface",
+        "contents": [
+          {
+            "@type": "Property",
+            "name": "foo",
+            "schema": "string",
+            "writable": {
+              "@value": "foo"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": [
+          "dtmi:dtdl:context;3",
+          "dtmi:undefinedExtension:context;1"
+        ],
+        "@id": "dtmi:ex:id;1",
+        "@type": "Interface",
+        "contents": [
+          {
+            "@type": "Property",
+            "name": "foo",
+            "schema": "string",
+            "writable": {
+              "@value": "foo"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": [
+          "dtmi:dtdl:context;3"
+        ],
+        "@id": "dtmi:ex:id;1",
+        "@type": "Interface",
+        "contents": [
+          {
+            "@type": "Property",
+            "name": "foo",
+            "schema": "string",
+            "writable": {
+              "@value": null
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": [
+          "dtmi:dtdl:context;3",
+          "dtmi:undefinedExtension:context;1"
+        ],
+        "@id": "dtmi:ex:id;1",
+        "@type": "Interface",
+        "contents": [
+          {
+            "@type": "Property",
+            "name": "foo",
+            "schema": "string",
+            "writable": {
+              "@value": null
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": [
+          "dtmi:dtdl:context;3"
+        ],
+        "@id": "dtmi:ex:id;1",
+        "@type": "Interface",
+        "contents": [
+          {
+            "@type": "Property",
+            "name": "foo",
+            "schema": "string",
+            "writable": {
+              "@value": 626
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": [
+          "dtmi:dtdl:context;3",
+          "dtmi:undefinedExtension:context;1"
+        ],
+        "@id": "dtmi:ex:id;1",
+        "@type": "Interface",
+        "contents": [
+          {
+            "@type": "Property",
+            "name": "foo",
+            "schema": "string",
+            "writable": {
+              "@value": 626
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

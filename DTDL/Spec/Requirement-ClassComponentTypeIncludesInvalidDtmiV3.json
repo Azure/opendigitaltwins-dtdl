@@ -1,0 +1,49 @@
+﻿[
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:flunn_kappa;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": [
+            "Component",
+            "dtmi:foo//bar"
+          ],
+          "name": "flunn_theta",
+          "schema": {
+            "@id": "dtmi:example:flunn_iota;1",
+            "@type": "Interface"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:flunn_nu;1",
+        "@type": "Interface",
+        "contents": {
+          "@context": "dtmi:undefinedExtension:context;1",
+          "@type": [
+            "Component",
+            "dtmi:foo//bar"
+          ],
+          "name": "flunn_lambda",
+          "schema": {
+            "@id": "dtmi:example:flunn_mu;1",
+            "@type": "Interface"
+          }
+        }
+      }
+    ]
+  }
+]

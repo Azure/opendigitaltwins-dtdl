@@ -1,0 +1,57 @@
+﻿[
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:chi_alpha;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:phi_yekk;1",
+          "@type": [
+            "Map",
+            "dtmi:foo//bar"
+          ],
+          "mapKey": {
+            "name": "phi_vroo",
+            "schema": "string"
+          },
+          "mapValue": {
+            "name": "phi_hi",
+            "schema": "float"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:chi_epsilon;1",
+        "@type": "Interface",
+        "schemas": {
+          "@context": "dtmi:undefinedExtension:context;1",
+          "@id": "dtmi:example:chi_beta;1",
+          "@type": [
+            "Map",
+            "dtmi:foo//bar"
+          ],
+          "mapKey": {
+            "name": "chi_gamma",
+            "schema": "string"
+          },
+          "mapValue": {
+            "name": "chi_delta",
+            "schema": "integer"
+          }
+        }
+      }
+    ]
+  }
+]

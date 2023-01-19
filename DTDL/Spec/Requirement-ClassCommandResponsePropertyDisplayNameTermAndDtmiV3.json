@@ -1,0 +1,55 @@
+﻿[
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:thnad_snee;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Command",
+          "name": "thnad_nuh",
+          "response": {
+            "displayName": [
+              "thnad_humpf"
+            ],
+            "dtmi:dtdl:property:displayName;3": [
+              "thnad_fuddle"
+            ],
+            "name": "thnad_glikk",
+            "schema": "duration"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:thnad_zatz;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Command",
+          "name": "thnad_floob",
+          "response": {
+            "@context": "dtmi:undefinedExtension:context;1",
+            "displayName": [
+              "thnad_quan"
+            ],
+            "dtmi:dtdl:property:displayName;3": [
+              "thnad_thnad"
+            ],
+            "name": "thnad_spazz",
+            "schema": "float"
+          }
+        }
+      }
+    ]
+  }
+]

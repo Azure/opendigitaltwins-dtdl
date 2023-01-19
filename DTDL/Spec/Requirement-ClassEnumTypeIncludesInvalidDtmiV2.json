@@ -1,0 +1,55 @@
+﻿[
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:xi_spazz;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:xi_quan;1",
+          "@type": [
+            "Enum",
+            "dtmi:foo//bar"
+          ],
+          "enumValues": [
+            {
+              "enumValue": 88,
+              "name": "xi_thnad"
+            }
+          ],
+          "valueSchema": "integer"
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:xi_jogg;1",
+        "@type": "Interface",
+        "schemas": {
+          "@context": "dtmi:undefinedExtension:context;1",
+          "@id": "dtmi:example:xi_floob;1",
+          "@type": [
+            "Enum",
+            "dtmi:foo//bar"
+          ],
+          "enumValues": [
+            {
+              "enumValue": 89,
+              "name": "xi_zatz"
+            }
+          ],
+          "valueSchema": "integer"
+        }
+      }
+    ]
+  }
+]

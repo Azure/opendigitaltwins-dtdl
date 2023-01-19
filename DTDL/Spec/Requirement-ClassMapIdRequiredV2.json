@@ -1,0 +1,98 @@
+﻿[
+  {
+    "valid": true,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:omega_theta;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Property",
+          "name": "omega_eta",
+          "schema": {
+            "@type": "Map",
+            "mapKey": {
+              "name": "omega_epsilon",
+              "schema": "string"
+            },
+            "mapValue": {
+              "name": "omega_zeta",
+              "schema": "float"
+            }
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:omega_mu;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:omega_iota;1",
+          "@type": "Map",
+          "mapKey": {
+            "name": "omega_kappa",
+            "schema": "string"
+          },
+          "mapValue": {
+            "name": "omega_lambda",
+            "schema": "integer"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:omega_omicron;1",
+        "@type": "Interface",
+        "schemas": {
+          "@type": "Map",
+          "mapKey": {
+            "name": "omega_nu",
+            "schema": "string"
+          },
+          "mapValue": {
+            "name": "omega_xi",
+            "schema": "long"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:omega_sigma;1",
+        "@type": "Interface",
+        "schemas": {
+          "@context": "dtmi:undefinedExtension:context;1",
+          "@type": "Map",
+          "mapKey": {
+            "name": "omega_pi",
+            "schema": "string"
+          },
+          "mapValue": {
+            "name": "omega_rho",
+            "schema": "string"
+          }
+        }
+      }
+    ]
+  }
+]

@@ -1,0 +1,45 @@
+﻿[
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:lambda_wum;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:lambda_yuzz;1",
+          "@type": "Object",
+          "fields": {
+            "name": "lambda_omega",
+            "schema": "integer",
+            "dtmi:foo//bar": 626
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:lambda_fuddle;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:lambda_humpf;1",
+          "@type": "Object",
+          "fields": {
+            "@context": "dtmi:undefinedExtension:context;1",
+            "name": "lambda_um",
+            "schema": "long",
+            "dtmi:foo//bar": 626
+          }
+        }
+      }
+    ]
+  }
+]

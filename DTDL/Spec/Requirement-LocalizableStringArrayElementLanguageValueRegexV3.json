@@ -1,0 +1,138 @@
+﻿[
+  {
+    "valid": true,
+    "options": [],
+    "input": [
+      {
+        "@context": [
+          "dtmi:dtdl:context;3"
+        ],
+        "@id": "dtmi:ex:id;1",
+        "@type": "Interface",
+        "displayName": [
+          {
+            "@value": "foo",
+            "@language": "de"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "options": [],
+    "input": [
+      {
+        "@context": [
+          "dtmi:dtdl:context;3"
+        ],
+        "@id": "dtmi:ex:id;1",
+        "@type": "Interface",
+        "displayName": [
+          {
+            "@value": "foo",
+            "@language": "zh-Hant"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "options": [],
+    "input": [
+      {
+        "@context": [
+          "dtmi:dtdl:context;3"
+        ],
+        "@id": "dtmi:ex:id;1",
+        "@type": "Interface",
+        "displayName": [
+          {
+            "@value": "foo",
+            "@language": "zh-TW"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "options": [],
+    "input": [
+      {
+        "@context": [
+          "dtmi:dtdl:context;3"
+        ],
+        "@id": "dtmi:ex:id;1",
+        "@type": "Interface",
+        "displayName": [
+          {
+            "@value": "foo",
+            "@language": "fr-155"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "options": [],
+    "input": [
+      {
+        "@context": [
+          "dtmi:dtdl:context;3"
+        ],
+        "@id": "dtmi:ex:id;1",
+        "@type": "Interface",
+        "displayName": [
+          {
+            "@value": "foo",
+            "@language": "sr-Latn-RS"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": [
+          "dtmi:dtdl:context;3"
+        ],
+        "@id": "dtmi:ex:id;1",
+        "@type": "Interface",
+        "displayName": [
+          {
+            "@value": "foo",
+            "@language": "English"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": [
+          "dtmi:dtdl:context;3",
+          "dtmi:undefinedExtension:context;1"
+        ],
+        "@id": "dtmi:ex:id;1",
+        "@type": "Interface",
+        "displayName": [
+          {
+            "@value": "foo",
+            "@language": "English"
+          }
+        ]
+      }
+    ]
+  }
+]

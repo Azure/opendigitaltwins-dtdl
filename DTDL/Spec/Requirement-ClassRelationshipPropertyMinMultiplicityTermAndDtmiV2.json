@@ -1,0 +1,39 @@
+﻿[
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:zeta_jogg;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Relationship",
+          "minMultiplicity": 0,
+          "dtmi:dtdl:property:minMultiplicity;2": 0,
+          "name": "zeta_zatz"
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:zeta_itch;1",
+        "@type": "Interface",
+        "contents": {
+          "@context": "dtmi:undefinedExtension:context;1",
+          "@type": "Relationship",
+          "minMultiplicity": 0,
+          "dtmi:dtdl:property:minMultiplicity;2": 0,
+          "name": "zeta_flunn"
+        }
+      }
+    ]
+  }
+]

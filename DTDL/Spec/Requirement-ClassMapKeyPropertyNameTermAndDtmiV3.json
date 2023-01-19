@@ -1,0 +1,53 @@
+﻿[
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:mu_flunn;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:mu_zatz;1",
+          "@type": "Map",
+          "mapValue": {
+            "name": "mu_jogg",
+            "schema": "long"
+          },
+          "mapKey": {
+            "name": "mu_spazz",
+            "dtmi:dtdl:property:name;3": "mu_floob",
+            "schema": "string"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:nu_alpha;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:mu_vroo;1",
+          "@type": "Map",
+          "mapValue": {
+            "name": "mu_hi",
+            "schema": "string"
+          },
+          "mapKey": {
+            "@context": "dtmi:undefinedExtension:context;1",
+            "name": "mu_itch",
+            "dtmi:dtdl:property:name;3": "mu_yekk",
+            "schema": "string"
+          }
+        }
+      }
+    ]
+  }
+]

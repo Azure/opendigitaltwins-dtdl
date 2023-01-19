@@ -1,0 +1,42 @@
+﻿[
+  {
+    "valid": true,
+    "desirable": true,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:mu_wum;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Command",
+          "name": "mu_yuzz",
+          "request": {
+            "name": "mu_omega",
+            "schema": "long"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "desirable": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:mu_fuddle;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Command",
+          "name": "mu_humpf",
+          "request": {
+            "name": "mu_um",
+            "dtmi:dtdl:property:schema;2": "string"
+          }
+        }
+      }
+    ]
+  }
+]

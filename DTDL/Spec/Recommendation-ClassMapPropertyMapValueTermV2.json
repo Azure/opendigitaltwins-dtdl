@@ -1,0 +1,50 @@
+﻿[
+  {
+    "valid": true,
+    "desirable": true,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:phi_hi;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:phi_itch;1",
+          "@type": "Map",
+          "mapKey": {
+            "name": "phi_yekk",
+            "schema": "string"
+          },
+          "mapValue": {
+            "name": "phi_vroo",
+            "schema": "boolean"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "desirable": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:chi_delta;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:chi_alpha;1",
+          "@type": "Map",
+          "mapKey": {
+            "name": "chi_beta",
+            "schema": "string"
+          },
+          "dtmi:dtdl:property:mapValue;2": {
+            "name": "chi_gamma",
+            "schema": "date"
+          }
+        }
+      }
+    ]
+  }
+]

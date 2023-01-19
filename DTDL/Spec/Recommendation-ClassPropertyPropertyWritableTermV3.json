@@ -1,0 +1,38 @@
+﻿[
+  {
+    "valid": true,
+    "desirable": true,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:fuddle_phi;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Property",
+          "name": "fuddle_upsilon",
+          "schema": "time",
+          "writable": true
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "desirable": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:fuddle_psi;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Property",
+          "name": "fuddle_chi",
+          "schema": "boolean",
+          "dtmi:dtdl:property:writable;3": false
+        }
+      }
+    ]
+  }
+]

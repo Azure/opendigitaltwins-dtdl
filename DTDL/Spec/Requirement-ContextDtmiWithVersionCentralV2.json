@@ -1,0 +1,158 @@
+﻿[
+  {
+    "valid": true,
+    "options": [],
+    "input": [
+      {
+        "@context": [
+          "dtmi:dtdl:context;2"
+        ],
+        "@id": "dtmi:ex:id;1",
+        "@type": "Interface",
+        "contents": [
+          {
+            "@context": "dtmi:iotcentral:context;2",
+            "@type": "Telemetry",
+            "name": "thing",
+            "schema": "string"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": [
+          "dtmi:dtdl:context;2"
+        ],
+        "@id": "dtmi:ex:id;1",
+        "@type": "Interface",
+        "contents": [
+          {
+            "@context": "dtmi:iotcentral:context",
+            "@type": "Telemetry",
+            "name": "thing",
+            "schema": "string"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": [
+          "dtmi:dtdl:context;2",
+          "dtmi:undefinedExtension:context;1"
+        ],
+        "@id": "dtmi:ex:id;1",
+        "@type": "Interface",
+        "contents": [
+          {
+            "@context": "dtmi:iotcentral:context",
+            "@type": "Telemetry",
+            "name": "thing",
+            "schema": "string"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": [
+          "dtmi:dtdl:context;2"
+        ],
+        "@id": "dtmi:ex:id;1",
+        "@type": "Interface",
+        "contents": [
+          {
+            "@context": "http://iotcentral/context/2",
+            "@type": "Telemetry",
+            "name": "thing",
+            "schema": "string"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": [
+          "dtmi:dtdl:context;2",
+          "dtmi:undefinedExtension:context;1"
+        ],
+        "@id": "dtmi:ex:id;1",
+        "@type": "Interface",
+        "contents": [
+          {
+            "@context": "http://iotcentral/context/2",
+            "@type": "Telemetry",
+            "name": "thing",
+            "schema": "string"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": [
+          "dtmi:dtdl:context;2"
+        ],
+        "@id": "dtmi:ex:id;1",
+        "@type": "Interface",
+        "contents": [
+          {
+            "@context": "iotcentral;2",
+            "@type": "Telemetry",
+            "name": "thing",
+            "schema": "string"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": [
+          "dtmi:dtdl:context;2",
+          "dtmi:undefinedExtension:context;1"
+        ],
+        "@id": "dtmi:ex:id;1",
+        "@type": "Interface",
+        "contents": [
+          {
+            "@context": "iotcentral;2",
+            "@type": "Telemetry",
+            "name": "thing",
+            "schema": "string"
+          }
+        ]
+      }
+    ]
+  }
+]

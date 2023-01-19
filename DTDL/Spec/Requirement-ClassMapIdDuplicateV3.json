@@ -1,0 +1,61 @@
+﻿[
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:itch_eta;1",
+        "@type": "Interface",
+        "contents": {
+          "@id": "dtmi:example:itch_eta;1",
+          "@type": "Property",
+          "name": "itch_kappa",
+          "schema": {
+            "@id": "dtmi:example:itch_eta;1",
+            "@type": "Map",
+            "mapKey": {
+              "name": "itch_theta",
+              "schema": "string"
+            },
+            "mapValue": {
+              "name": "itch_iota",
+              "schema": "date"
+            }
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:itch_lambda;1",
+        "@type": "Interface",
+        "contents": {
+          "@id": "dtmi:example:itch_lambda;1",
+          "@type": "Property",
+          "name": "itch_xi",
+          "schema": {
+            "@context": "dtmi:undefinedExtension:context;1",
+            "@id": "dtmi:example:itch_lambda;1",
+            "@type": "Map",
+            "mapKey": {
+              "name": "itch_mu",
+              "schema": "string"
+            },
+            "mapValue": {
+              "name": "itch_nu",
+              "schema": "dateTime"
+            }
+          }
+        }
+      }
+    ]
+  }
+]

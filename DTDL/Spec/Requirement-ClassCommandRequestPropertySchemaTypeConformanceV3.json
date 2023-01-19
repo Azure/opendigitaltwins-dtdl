@@ -1,0 +1,710 @@
+﻿[
+  {
+    "valid": true,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:glikk_delta;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Command",
+          "name": "glikk_gamma",
+          "request": {
+            "name": "glikk_beta",
+            "schema": {
+              "@id": "dtmi:example:glikk_alpha;1",
+              "elementSchema": "string",
+              "@type": "Array"
+            }
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:glikk_iota;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Command",
+          "name": "glikk_theta",
+          "request": {
+            "name": "glikk_eta",
+            "schema": {
+              "@id": "dtmi:example:glikk_epsilon;1",
+              "name": "glikk_zeta",
+              "@type": "Command"
+            }
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:glikk_xi;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Command",
+          "name": "glikk_nu",
+          "request": {
+            "@context": "dtmi:undefinedExtension:context;1",
+            "name": "glikk_mu",
+            "schema": {
+              "@id": "dtmi:example:glikk_kappa;1",
+              "name": "glikk_lambda",
+              "@type": "Command"
+            }
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:glikk_tau;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Command",
+          "name": "glikk_sigma",
+          "request": {
+            "name": "glikk_rho",
+            "schema": {
+              "@id": "dtmi:example:glikk_omicron;1",
+              "name": "glikk_pi",
+              "schema": "time",
+              "@type": "CommandRequest"
+            }
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:glikk_omega;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Command",
+          "name": "glikk_psi",
+          "request": {
+            "@context": "dtmi:undefinedExtension:context;1",
+            "name": "glikk_chi",
+            "schema": {
+              "@id": "dtmi:example:glikk_upsilon;1",
+              "name": "glikk_phi",
+              "schema": "boolean",
+              "@type": "CommandRequest"
+            }
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:glikk_fuddle;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Command",
+          "name": "glikk_humpf",
+          "request": {
+            "name": "glikk_um",
+            "schema": {
+              "@id": "dtmi:example:glikk_yuzz;1",
+              "name": "glikk_wum",
+              "schema": "date",
+              "@type": "CommandResponse"
+            }
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:glikk_thnad;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Command",
+          "name": "glikk_quan",
+          "request": {
+            "@context": "dtmi:undefinedExtension:context;1",
+            "name": "glikk_snee",
+            "schema": {
+              "@id": "dtmi:example:glikk_glikk;1",
+              "name": "glikk_nuh",
+              "schema": "dateTime",
+              "@type": "CommandResponse"
+            }
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:glikk_itch;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Command",
+          "name": "glikk_flunn",
+          "request": {
+            "name": "glikk_jogg",
+            "schema": {
+              "@id": "dtmi:example:glikk_spazz;1",
+              "name": "glikk_floob",
+              "schema": {
+                "@id": "dtmi:example:glikk_zatz;1",
+                "@type": "Interface"
+              },
+              "@type": "Component"
+            }
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:nuh_gamma;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Command",
+          "name": "nuh_beta",
+          "request": {
+            "@context": "dtmi:undefinedExtension:context;1",
+            "name": "nuh_alpha",
+            "schema": {
+              "@id": "dtmi:example:glikk_yekk;1",
+              "name": "glikk_vroo",
+              "schema": {
+                "@id": "dtmi:example:glikk_hi;1",
+                "@type": "Interface"
+              },
+              "@type": "Component"
+            }
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:nuh_eta;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Command",
+          "name": "nuh_zeta",
+          "request": {
+            "name": "nuh_epsilon",
+            "schema": {
+              "@id": "dtmi:example:nuh_delta;1",
+              "valueSchema": "integer",
+              "@type": "Enum"
+            }
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:nuh_mu;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Command",
+          "name": "nuh_lambda",
+          "request": {
+            "name": "nuh_kappa",
+            "schema": {
+              "@id": "dtmi:example:nuh_theta;1",
+              "enumValue": 1113,
+              "name": "nuh_iota",
+              "@type": "EnumValue"
+            }
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:nuh_rho;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Command",
+          "name": "nuh_pi",
+          "request": {
+            "@context": "dtmi:undefinedExtension:context;1",
+            "name": "nuh_omicron",
+            "schema": {
+              "@id": "dtmi:example:nuh_nu;1",
+              "enumValue": 1114,
+              "name": "nuh_xi",
+              "@type": "EnumValue"
+            }
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:nuh_chi;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Command",
+          "name": "nuh_phi",
+          "request": {
+            "name": "nuh_upsilon",
+            "schema": {
+              "@id": "dtmi:example:nuh_sigma;1",
+              "name": "nuh_tau",
+              "schema": "double",
+              "@type": "Field"
+            }
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:nuh_um;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Command",
+          "name": "nuh_wum",
+          "request": {
+            "@context": "dtmi:undefinedExtension:context;1",
+            "name": "nuh_yuzz",
+            "schema": {
+              "@id": "dtmi:example:nuh_psi;1",
+              "name": "nuh_omega",
+              "schema": "duration",
+              "@type": "Field"
+            }
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:nuh_nuh;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Command",
+          "name": "nuh_glikk",
+          "request": {
+            "name": "nuh_fuddle",
+            "schema": {
+              "@id": "dtmi:example:nuh_humpf;1",
+              "@type": "Interface"
+            }
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:nuh_spazz;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Command",
+          "name": "nuh_thnad",
+          "request": {
+            "@context": "dtmi:undefinedExtension:context;1",
+            "name": "nuh_quan",
+            "schema": {
+              "@id": "dtmi:example:nuh_snee;1",
+              "@type": "Interface"
+            }
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:nuh_yekk;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Command",
+          "name": "nuh_itch",
+          "request": {
+            "name": "nuh_flunn",
+            "schema": {
+              "@id": "dtmi:example:nuh_floob;1",
+              "mapKey": {
+                "name": "nuh_zatz",
+                "schema": "string"
+              },
+              "mapValue": {
+                "name": "nuh_jogg",
+                "schema": "float"
+              },
+              "@type": "Map"
+            }
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:snee_gamma;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Command",
+          "name": "snee_beta",
+          "request": {
+            "name": "snee_alpha",
+            "schema": {
+              "@id": "dtmi:example:nuh_vroo;1",
+              "name": "nuh_hi",
+              "schema": "string",
+              "@type": "MapKey"
+            }
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:snee_theta;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Command",
+          "name": "snee_eta",
+          "request": {
+            "@context": "dtmi:undefinedExtension:context;1",
+            "name": "snee_zeta",
+            "schema": {
+              "@id": "dtmi:example:snee_delta;1",
+              "name": "snee_epsilon",
+              "schema": "string",
+              "@type": "MapKey"
+            }
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:snee_nu;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Command",
+          "name": "snee_mu",
+          "request": {
+            "name": "snee_lambda",
+            "schema": {
+              "@id": "dtmi:example:snee_iota;1",
+              "name": "snee_kappa",
+              "schema": "integer",
+              "@type": "MapValue"
+            }
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:snee_sigma;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Command",
+          "name": "snee_rho",
+          "request": {
+            "@context": "dtmi:undefinedExtension:context;1",
+            "name": "snee_pi",
+            "schema": {
+              "@id": "dtmi:example:snee_xi;1",
+              "name": "snee_omicron",
+              "schema": "long",
+              "@type": "MapValue"
+            }
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:snee_chi;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Command",
+          "name": "snee_phi",
+          "request": {
+            "name": "snee_upsilon",
+            "schema": {
+              "@id": "dtmi:example:snee_tau;1",
+              "@type": "Object"
+            }
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:snee_um;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Command",
+          "name": "snee_wum",
+          "request": {
+            "name": "snee_yuzz",
+            "schema": {
+              "@id": "dtmi:example:snee_psi;1",
+              "name": "snee_omega",
+              "schema": "string",
+              "@type": "Property"
+            }
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:snee_snee;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Command",
+          "name": "snee_nuh",
+          "request": {
+            "@context": "dtmi:undefinedExtension:context;1",
+            "name": "snee_glikk",
+            "schema": {
+              "@id": "dtmi:example:snee_humpf;1",
+              "name": "snee_fuddle",
+              "schema": "time",
+              "@type": "Property"
+            }
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:snee_zatz;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Command",
+          "name": "snee_floob",
+          "request": {
+            "name": "snee_spazz",
+            "schema": {
+              "@id": "dtmi:example:snee_quan;1",
+              "name": "snee_thnad",
+              "@type": "Relationship"
+            }
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:snee_vroo;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Command",
+          "name": "snee_yekk",
+          "request": {
+            "@context": "dtmi:undefinedExtension:context;1",
+            "name": "snee_itch",
+            "schema": {
+              "@id": "dtmi:example:snee_jogg;1",
+              "name": "snee_flunn",
+              "@type": "Relationship"
+            }
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:quan_delta;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Command",
+          "name": "quan_gamma",
+          "request": {
+            "name": "quan_beta",
+            "schema": {
+              "@id": "dtmi:example:snee_hi;1",
+              "name": "quan_alpha",
+              "schema": "boolean",
+              "@type": "Telemetry"
+            }
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:quan_iota;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Command",
+          "name": "quan_theta",
+          "request": {
+            "@context": "dtmi:undefinedExtension:context;1",
+            "name": "quan_eta",
+            "schema": {
+              "@id": "dtmi:example:quan_epsilon;1",
+              "name": "quan_zeta",
+              "schema": "date",
+              "@type": "Telemetry"
+            }
+          }
+        }
+      }
+    ]
+  }
+]

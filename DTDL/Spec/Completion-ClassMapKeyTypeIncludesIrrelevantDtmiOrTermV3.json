@@ -1,0 +1,116 @@
+﻿[
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:wum_jogg;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:wum_floob;1",
+          "@type": "Map",
+          "mapValue": {
+            "name": "wum_zatz",
+            "schema": "long"
+          },
+          "mapKey": {
+            "@type": [
+              "MapKey",
+              "dtmi:foo:bar;1"
+            ],
+            "name": "wum_spazz",
+            "schema": "string"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:wum_vroo;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:wum_itch;1",
+          "@type": "Map",
+          "mapValue": {
+            "name": "wum_yekk",
+            "schema": "string"
+          },
+          "mapKey": {
+            "@context": "dtmi:undefinedExtension:context;1",
+            "@type": [
+              "MapKey",
+              "dtmi:foo:bar;1"
+            ],
+            "name": "wum_flunn",
+            "schema": "string"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:um_gamma;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:um_alpha;1",
+          "@type": "Map",
+          "mapValue": {
+            "name": "um_beta",
+            "schema": "time"
+          },
+          "mapKey": {
+            "@type": [
+              "MapKey",
+              "boolean"
+            ],
+            "name": "wum_hi",
+            "schema": "string"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:um_eta;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:um_epsilon;1",
+          "@type": "Map",
+          "mapValue": {
+            "name": "um_zeta",
+            "schema": "boolean"
+          },
+          "mapKey": {
+            "@context": "dtmi:undefinedExtension:context;1",
+            "@type": [
+              "MapKey",
+              "boolean"
+            ],
+            "name": "um_delta",
+            "schema": "string"
+          }
+        }
+      }
+    ]
+  }
+]

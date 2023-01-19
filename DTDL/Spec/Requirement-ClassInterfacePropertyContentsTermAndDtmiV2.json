@@ -1,0 +1,53 @@
+﻿[
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:vroo_snee;1",
+        "@type": "Interface",
+        "contents": [
+          {
+            "@type": "Command",
+            "name": "vroo_quan"
+          }
+        ],
+        "dtmi:dtdl:property:contents;2": [
+          {
+            "@type": "Command",
+            "name": "vroo_thnad"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": [
+          "dtmi:dtdl:context;2",
+          "dtmi:undefinedExtension:context;1"
+        ],
+        "@id": "dtmi:example:vroo_spazz;1",
+        "@type": "Interface",
+        "contents": [
+          {
+            "@type": "Command",
+            "name": "vroo_floob"
+          }
+        ],
+        "dtmi:dtdl:property:contents;2": [
+          {
+            "@type": "Command",
+            "name": "vroo_zatz"
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,96 @@
+﻿[
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:theta_quan;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:theta_nuh;1",
+          "@type": "Map",
+          "mapValue": {
+            "name": "theta_snee",
+            "schema": "boolean"
+          },
+          "mapKey": {
+            "schema": "string"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:theta_floob;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:theta_thnad;1",
+          "@type": "Map",
+          "mapValue": {
+            "name": "theta_spazz",
+            "schema": "date"
+          },
+          "mapKey": {
+            "@context": "dtmi:undefinedExtension:context;1",
+            "schema": "string"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:theta_itch;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:theta_jogg;1",
+          "@type": "Map",
+          "mapValue": {
+            "name": "theta_flunn",
+            "schema": "dateTime"
+          },
+          "mapKey": {
+            "name": "theta_zatz"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:iota_alpha;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:theta_vroo;1",
+          "@type": "Map",
+          "mapValue": {
+            "name": "theta_hi",
+            "schema": "double"
+          },
+          "mapKey": {
+            "@context": "dtmi:undefinedExtension:context;1",
+            "name": "theta_yekk"
+          }
+        }
+      }
+    ]
+  }
+]

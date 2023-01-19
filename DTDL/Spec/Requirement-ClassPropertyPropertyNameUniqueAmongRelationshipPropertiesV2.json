@@ -1,0 +1,86 @@
+﻿[
+  {
+    "valid": true,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:iota_chi;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Relationship",
+          "name": "iota_phi",
+          "properties": [
+            {
+              "@type": "Property",
+              "schema": "float",
+              "name": "beta_iota"
+            },
+            {
+              "@type": "Property",
+              "schema": "integer",
+              "name": "beta_kappa"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:iota_omega;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Relationship",
+          "name": "iota_psi",
+          "properties": [
+            {
+              "@type": "Property",
+              "schema": "long",
+              "name": "beta_iota"
+            },
+            {
+              "@type": "Property",
+              "schema": "string",
+              "name": "beta_iota"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:iota_wum;1",
+        "@type": "Interface",
+        "contents": {
+          "@context": "dtmi:undefinedExtension:context;1",
+          "@type": "Relationship",
+          "name": "iota_yuzz",
+          "properties": [
+            {
+              "@type": "Property",
+              "schema": "time",
+              "name": "beta_iota"
+            },
+            {
+              "@type": "Property",
+              "schema": "boolean",
+              "name": "beta_iota"
+            }
+          ]
+        }
+      }
+    ]
+  }
+]

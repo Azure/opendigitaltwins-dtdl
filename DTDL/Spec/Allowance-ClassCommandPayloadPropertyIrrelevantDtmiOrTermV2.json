@@ -1,0 +1,50 @@
+﻿[
+  {
+    "valid": true,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:fuddle_nu;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Command",
+          "name": "fuddle_mu",
+          "request": {
+            "@type": [
+              "CommandPayload",
+              "Foobar"
+            ],
+            "name": "fuddle_lambda",
+            "schema": "integer",
+            "dtmi:foo:bar;1": 626
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:fuddle_pi;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Command",
+          "name": "fuddle_omicron",
+          "request": {
+            "@type": [
+              "CommandPayload",
+              "Foobar"
+            ],
+            "name": "fuddle_xi",
+            "schema": "long",
+            "boolean": null
+          }
+        }
+      }
+    ]
+  }
+]

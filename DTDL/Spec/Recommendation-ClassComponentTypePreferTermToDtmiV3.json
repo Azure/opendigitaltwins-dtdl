@@ -1,0 +1,42 @@
+﻿[
+  {
+    "valid": true,
+    "desirable": true,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:jogg_spazz;1",
+        "@type": "Interface",
+        "contents": {
+          "name": "jogg_quan",
+          "schema": {
+            "@id": "dtmi:example:jogg_thnad;1",
+            "@type": "Interface"
+          },
+          "@type": "Component"
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "desirable": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:jogg_jogg;1",
+        "@type": "Interface",
+        "contents": {
+          "name": "jogg_floob",
+          "schema": {
+            "@id": "dtmi:example:jogg_zatz;1",
+            "@type": "Interface"
+          },
+          "@type": "dtmi:dtdl:class:Component;3"
+        }
+      }
+    ]
+  }
+]

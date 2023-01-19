@@ -1,0 +1,56 @@
+﻿[
+  {
+    "valid": true,
+    "desirable": true,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:upsilon_flunn;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:upsilon_zatz;1",
+          "@type": "Map",
+          "mapKey": {
+            "name": "upsilon_jogg",
+            "schema": "string"
+          },
+          "mapValue": {
+            "description": [
+              "upsilon_spazz"
+            ],
+            "name": "upsilon_floob",
+            "schema": "double"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "desirable": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:phi_alpha;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:upsilon_vroo;1",
+          "@type": "Map",
+          "mapKey": {
+            "name": "upsilon_hi",
+            "schema": "string"
+          },
+          "mapValue": {
+            "dtmi:dtdl:property:description;2": [
+              "upsilon_itch"
+            ],
+            "name": "upsilon_yekk",
+            "schema": "duration"
+          }
+        }
+      }
+    ]
+  }
+]

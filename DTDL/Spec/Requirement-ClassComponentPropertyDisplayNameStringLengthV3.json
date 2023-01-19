@@ -1,0 +1,65 @@
+﻿[
+  {
+    "valid": true,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:pi_um;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Component",
+          "name": "pi_yuzz",
+          "schema": {
+            "@id": "dtmi:example:pi_wum;1",
+            "@type": "Interface"
+          },
+          "displayName": "SupercalifragilisticexpialidociousEvenThoughTheSoundOfItIsSometh"
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:pi_glikk;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Component",
+          "name": "pi_humpf",
+          "schema": {
+            "@id": "dtmi:example:pi_fuddle;1",
+            "@type": "Interface"
+          },
+          "displayName": "SupercalifragilisticexpialidociousEvenThoughTheSoundOfItIsSomethi"
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:pi_quan;1",
+        "@type": "Interface",
+        "contents": {
+          "@context": "dtmi:undefinedExtension:context;1",
+          "@type": "Component",
+          "name": "pi_nuh",
+          "schema": {
+            "@id": "dtmi:example:pi_snee;1",
+            "@type": "Interface"
+          },
+          "displayName": "SupercalifragilisticexpialidociousEvenThoughTheSoundOfItIsSomethi"
+        }
+      }
+    ]
+  }
+]

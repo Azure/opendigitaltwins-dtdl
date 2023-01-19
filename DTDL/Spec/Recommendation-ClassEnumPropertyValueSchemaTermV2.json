@@ -1,0 +1,48 @@
+﻿[
+  {
+    "valid": true,
+    "desirable": true,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:quan_zatz;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:quan_spazz;1",
+          "@type": "Enum",
+          "enumValues": [
+            {
+              "enumValue": 504,
+              "name": "quan_floob"
+            }
+          ],
+          "valueSchema": "integer"
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "desirable": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:quan_itch;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:quan_jogg;1",
+          "@type": "Enum",
+          "enumValues": [
+            {
+              "enumValue": 505,
+              "name": "quan_flunn"
+            }
+          ],
+          "dtmi:dtdl:property:valueSchema;2": "integer"
+        }
+      }
+    ]
+  }
+]

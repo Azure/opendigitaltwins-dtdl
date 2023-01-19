@@ -1,0 +1,53 @@
+﻿[
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:itch_flunn;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:itch_spazz;1",
+          "@type": "Enum",
+          "comment": "itch_floob",
+          "dtmi:dtdl:property:comment;2": "itch_zatz",
+          "enumValues": [
+            {
+              "enumValue": 626,
+              "name": "itch_jogg"
+            }
+          ],
+          "valueSchema": "integer"
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:yekk_alpha;1",
+        "@type": "Interface",
+        "schemas": {
+          "@context": "dtmi:undefinedExtension:context;1",
+          "@id": "dtmi:example:itch_itch;1",
+          "@type": "Enum",
+          "comment": "itch_yekk",
+          "dtmi:dtdl:property:comment;2": "itch_vroo",
+          "enumValues": [
+            {
+              "enumValue": 627,
+              "name": "itch_hi"
+            }
+          ],
+          "valueSchema": "integer"
+        }
+      }
+    ]
+  }
+]

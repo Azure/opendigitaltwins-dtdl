@@ -1,0 +1,25 @@
+﻿[
+  {
+    "valid": true,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:um_tau;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:um_pi;1",
+          "@type": "Map",
+          "dtmi:dtdl:property:mapKey;3": {
+            "name": "um_rho",
+            "schema": "string"
+          },
+          "mapValue": {
+            "name": "um_sigma",
+            "schema": "dateTime"
+          }
+        }
+      }
+    ]
+  }
+]

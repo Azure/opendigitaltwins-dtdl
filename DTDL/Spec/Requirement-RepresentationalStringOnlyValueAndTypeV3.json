@@ -1,0 +1,214 @@
+﻿[
+  {
+    "valid": true,
+    "options": [],
+    "input": [
+      {
+        "@context": [
+          "dtmi:dtdl:context;3"
+        ],
+        "@id": "dtmi:ex:id;1",
+        "@type": "Interface",
+        "comment": {
+          "@value": "hello",
+          "@type": "xsd:string"
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": [
+          "dtmi:dtdl:context;3"
+        ],
+        "@id": "dtmi:ex:id;1",
+        "@type": "Interface",
+        "comment": {
+          "@value": "hello",
+          "@type": "xsd:string",
+          "@id": "dtmi:ex:id;2"
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": [
+          "dtmi:dtdl:context;3",
+          "dtmi:undefinedExtension:context;1"
+        ],
+        "@id": "dtmi:ex:id;1",
+        "@type": "Interface",
+        "comment": {
+          "@value": "hello",
+          "@type": "xsd:string",
+          "@id": "dtmi:ex:id;2"
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": [
+          "dtmi:dtdl:context;3"
+        ],
+        "@id": "dtmi:ex:id;1",
+        "@type": "Interface",
+        "comment": {
+          "@value": "hello",
+          "@type": "xsd:string",
+          "@context": "dtmi:ex:context;1"
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": [
+          "dtmi:dtdl:context;3",
+          "dtmi:undefinedExtension:context;1"
+        ],
+        "@id": "dtmi:ex:id;1",
+        "@type": "Interface",
+        "comment": {
+          "@value": "hello",
+          "@type": "xsd:string",
+          "@context": "dtmi:ex:context;1"
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": [
+          "dtmi:dtdl:context;3"
+        ],
+        "@id": "dtmi:ex:id;1",
+        "@type": "Interface",
+        "comment": {
+          "@value": "hello",
+          "@type": "xsd:string",
+          "@graph": {}
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": [
+          "dtmi:dtdl:context;3",
+          "dtmi:undefinedExtension:context;1"
+        ],
+        "@id": "dtmi:ex:id;1",
+        "@type": "Interface",
+        "comment": {
+          "@value": "hello",
+          "@type": "xsd:string",
+          "@graph": {}
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": [
+          "dtmi:dtdl:context;3"
+        ],
+        "@id": "dtmi:ex:id;1",
+        "@type": "Interface",
+        "comment": {
+          "@value": "hello",
+          "@type": "xsd:string",
+          "@language": "en"
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": [
+          "dtmi:dtdl:context;3",
+          "dtmi:undefinedExtension:context;1"
+        ],
+        "@id": "dtmi:ex:id;1",
+        "@type": "Interface",
+        "comment": {
+          "@value": "hello",
+          "@type": "xsd:string",
+          "@language": "en"
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": [
+          "dtmi:dtdl:context;3"
+        ],
+        "@id": "dtmi:ex:id;1",
+        "@type": "Interface",
+        "comment": {
+          "@value": "hello",
+          "@type": "xsd:string",
+          "@keyword": "goodbye"
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": [
+          "dtmi:dtdl:context;3",
+          "dtmi:undefinedExtension:context;1"
+        ],
+        "@id": "dtmi:ex:id;1",
+        "@type": "Interface",
+        "comment": {
+          "@value": "hello",
+          "@type": "xsd:string",
+          "@keyword": "goodbye"
+        }
+      }
+    ]
+  }
+]

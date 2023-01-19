@@ -1,0 +1,55 @@
+﻿[
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:upsilon_mu;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:upsilon_lambda;1",
+          "@type": "Enum",
+          "valueSchema": "integer",
+          "enumValues": {
+            "@type": [
+              "EnumValue",
+              "Foobar"
+            ],
+            "enumValue": 1446,
+            "name": "upsilon_kappa",
+            "http://foo.com/bar": true
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:upsilon_omicron;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:upsilon_xi;1",
+          "@type": "Enum",
+          "valueSchema": "integer",
+          "enumValues": {
+            "@context": "dtmi:undefinedExtension:context;1",
+            "@type": [
+              "EnumValue",
+              "Foobar"
+            ],
+            "enumValue": 1447,
+            "name": "upsilon_nu",
+            "http://foo.com/bar": true
+          }
+        }
+      }
+    ]
+  }
+]

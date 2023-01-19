@@ -1,0 +1,30 @@
+﻿[
+  {
+    "valid": true,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:yuzz_floob;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:yuzz_thnad;1",
+          "@type": "Map",
+          "mapKey": {
+            "name": "yuzz_spazz",
+            "schema": "string"
+          },
+          "mapValue": {
+            "@type": [
+              "MapValue",
+              "Foobar"
+            ],
+            "name": "yuzz_quan",
+            "schema": "double",
+            "http://foo.com/bar": true
+          }
+        }
+      }
+    ]
+  }
+]

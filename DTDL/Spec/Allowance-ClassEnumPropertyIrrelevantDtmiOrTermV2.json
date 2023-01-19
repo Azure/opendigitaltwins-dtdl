@@ -1,0 +1,54 @@
+﻿[
+  {
+    "valid": true,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:gamma_kappa;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:gamma_theta;1",
+          "@type": [
+            "Enum",
+            "Foobar"
+          ],
+          "enumValues": [
+            {
+              "enumValue": 697,
+              "name": "gamma_iota"
+            }
+          ],
+          "valueSchema": "integer",
+          "dtmi:foo:bar;1": 626
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:gamma_nu;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:gamma_lambda;1",
+          "@type": [
+            "Enum",
+            "Foobar"
+          ],
+          "enumValues": [
+            {
+              "enumValue": 698,
+              "name": "gamma_mu"
+            }
+          ],
+          "valueSchema": "integer",
+          "boolean": null
+        }
+      }
+    ]
+  }
+]

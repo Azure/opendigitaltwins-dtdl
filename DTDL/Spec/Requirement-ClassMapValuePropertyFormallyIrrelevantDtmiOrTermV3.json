@@ -1,0 +1,104 @@
+﻿[
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:zatz_um;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:zatz_yuzz;1",
+          "@type": "Map",
+          "mapKey": {
+            "name": "zatz_wum",
+            "schema": "string"
+          },
+          "mapValue": {
+            "name": "zatz_omega",
+            "schema": "long",
+            "dtmi:foo:bar;1": 626
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:zatz_nuh;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:zatz_fuddle;1",
+          "@type": "Map",
+          "mapKey": {
+            "name": "zatz_glikk",
+            "schema": "string"
+          },
+          "mapValue": {
+            "@context": "dtmi:undefinedExtension:context;1",
+            "name": "zatz_humpf",
+            "schema": "string",
+            "dtmi:foo:bar;1": 626
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:zatz_spazz;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:zatz_quan;1",
+          "@type": "Map",
+          "mapKey": {
+            "name": "zatz_thnad",
+            "schema": "string"
+          },
+          "mapValue": {
+            "name": "zatz_snee",
+            "schema": "time",
+            "boolean": null
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:zatz_flunn;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:zatz_zatz;1",
+          "@type": "Map",
+          "mapKey": {
+            "name": "zatz_jogg",
+            "schema": "string"
+          },
+          "mapValue": {
+            "@context": "dtmi:undefinedExtension:context;1",
+            "name": "zatz_floob",
+            "schema": "boolean",
+            "boolean": null
+          }
+        }
+      }
+    ]
+  }
+]

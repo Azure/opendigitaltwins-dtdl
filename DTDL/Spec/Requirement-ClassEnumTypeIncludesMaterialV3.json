@@ -1,0 +1,144 @@
+﻿[
+  {
+    "valid": true,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:tau_itch;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:tau_flunn;1",
+          "valueSchema": "integer",
+          "@type": "Enum"
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:tau_vroo;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:tau_yekk;1",
+          "valueSchema": "integer",
+          "@type": [
+            "Enum"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:upsilon_alpha;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:tau_hi;1",
+          "valueSchema": "integer",
+          "@type": "dtmi:dtdl:class:Enum;3"
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:upsilon_gamma;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:upsilon_beta;1",
+          "valueSchema": "integer",
+          "@type": [
+            "dtmi:dtdl:class:Enum;3"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:upsilon_epsilon;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:upsilon_delta;1",
+          "valueSchema": "integer",
+          "@type": "Something"
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:upsilon_eta;1",
+        "@type": "Interface",
+        "schemas": {
+          "@context": "dtmi:undefinedExtension:context;1",
+          "@id": "dtmi:example:upsilon_zeta;1",
+          "valueSchema": "integer",
+          "@type": "Something"
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:upsilon_iota;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:upsilon_theta;1",
+          "valueSchema": "integer",
+          "@type": [
+            "Something"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:upsilon_lambda;1",
+        "@type": "Interface",
+        "schemas": {
+          "@context": "dtmi:undefinedExtension:context;1",
+          "@id": "dtmi:example:upsilon_kappa;1",
+          "valueSchema": "integer",
+          "@type": [
+            "Something"
+          ]
+        }
+      }
+    ]
+  }
+]

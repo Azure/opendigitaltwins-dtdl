@@ -1,0 +1,41 @@
+﻿[
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:humpf_spazz;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Property",
+          "name": "humpf_thnad",
+          "schema": "integer",
+          "writable": true,
+          "dtmi:dtdl:property:writable;2": false
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:humpf_zatz;1",
+        "@type": "Interface",
+        "contents": {
+          "@context": "dtmi:undefinedExtension:context;1",
+          "@type": "Property",
+          "name": "humpf_floob",
+          "schema": "long",
+          "writable": true,
+          "dtmi:dtdl:property:writable;2": false
+        }
+      }
+    ]
+  }
+]

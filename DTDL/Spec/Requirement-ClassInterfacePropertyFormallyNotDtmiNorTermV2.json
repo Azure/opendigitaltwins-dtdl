@@ -1,0 +1,31 @@
+﻿[
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:eta_zatz;1",
+        "@type": "Interface",
+        "http://foo.com/bar": true
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": [
+          "dtmi:dtdl:context;2",
+          "dtmi:undefinedExtension:context;1"
+        ],
+        "@id": "dtmi:example:eta_jogg;1",
+        "@type": "Interface",
+        "http://foo.com/bar": true
+      }
+    ]
+  }
+]

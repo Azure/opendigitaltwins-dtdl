@@ -1,0 +1,88 @@
+﻿[
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:jogg_zeta;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:jogg_epsilon;1",
+          "@type": [
+            "Enum",
+            "Foobar"
+          ],
+          "valueSchema": "integer",
+          "dtmi:foo:bar;1": 626
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:jogg_theta;1",
+        "@type": "Interface",
+        "schemas": {
+          "@context": "dtmi:undefinedExtension:context;1",
+          "@id": "dtmi:example:jogg_eta;1",
+          "@type": [
+            "Enum",
+            "Foobar"
+          ],
+          "valueSchema": "integer",
+          "dtmi:foo:bar;1": 626
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:jogg_kappa;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:jogg_iota;1",
+          "@type": [
+            "Enum",
+            "Foobar"
+          ],
+          "valueSchema": "integer",
+          "boolean": null
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:jogg_mu;1",
+        "@type": "Interface",
+        "schemas": {
+          "@context": "dtmi:undefinedExtension:context;1",
+          "@id": "dtmi:example:jogg_lambda;1",
+          "@type": [
+            "Enum",
+            "Foobar"
+          ],
+          "valueSchema": "integer",
+          "boolean": null
+        }
+      }
+    ]
+  }
+]

@@ -1,0 +1,57 @@
+﻿[
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:itch_theta;1",
+        "@type": "Interface",
+        "contents": {
+          "@id": "dtmi:example:itch_theta;1",
+          "@type": "Property",
+          "name": "itch_kappa",
+          "schema": {
+            "@id": "dtmi:example:itch_theta;1",
+            "@type": "Object",
+            "fields": [
+              {
+                "name": "itch_iota",
+                "schema": "boolean"
+              }
+            ]
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:itch_lambda;1",
+        "@type": "Interface",
+        "contents": {
+          "@id": "dtmi:example:itch_lambda;1",
+          "@type": "Property",
+          "name": "itch_nu",
+          "schema": {
+            "@context": "dtmi:undefinedExtension:context;1",
+            "@id": "dtmi:example:itch_lambda;1",
+            "@type": "Object",
+            "fields": [
+              {
+                "name": "itch_mu",
+                "schema": "date"
+              }
+            ]
+          }
+        }
+      }
+    ]
+  }
+]

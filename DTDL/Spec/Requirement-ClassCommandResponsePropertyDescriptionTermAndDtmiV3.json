@@ -1,0 +1,55 @@
+﻿[
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:snee_omicron;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Command",
+          "name": "snee_xi",
+          "response": {
+            "description": [
+              "snee_lambda"
+            ],
+            "dtmi:dtdl:property:description;3": [
+              "snee_mu"
+            ],
+            "name": "snee_nu",
+            "schema": "dateTime"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:snee_upsilon;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Command",
+          "name": "snee_tau",
+          "response": {
+            "@context": "dtmi:undefinedExtension:context;1",
+            "description": [
+              "snee_pi"
+            ],
+            "dtmi:dtdl:property:description;3": [
+              "snee_rho"
+            ],
+            "name": "snee_sigma",
+            "schema": "double"
+          }
+        }
+      }
+    ]
+  }
+]

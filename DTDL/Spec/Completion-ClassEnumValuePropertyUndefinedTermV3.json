@@ -1,0 +1,55 @@
+﻿[
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:upsilon_sigma;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:upsilon_rho;1",
+          "@type": "Enum",
+          "valueSchema": "integer",
+          "enumValues": {
+            "@type": [
+              "EnumValue",
+              "Foobar"
+            ],
+            "enumValue": 1448,
+            "name": "upsilon_pi",
+            "foobar": {}
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:upsilon_phi;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:upsilon_upsilon;1",
+          "@type": "Enum",
+          "valueSchema": "integer",
+          "enumValues": {
+            "@context": "dtmi:undefinedExtension:context;1",
+            "@type": [
+              "EnumValue",
+              "Foobar"
+            ],
+            "enumValue": 1449,
+            "name": "upsilon_tau",
+            "foobar": {}
+          }
+        }
+      }
+    ]
+  }
+]

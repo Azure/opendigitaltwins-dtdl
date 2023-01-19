@@ -1,0 +1,41 @@
+﻿[
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:xi_humpf;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:xi_yuzz;1",
+          "@type": "Array",
+          "comment": "xi_wum",
+          "dtmi:dtdl:property:comment;2": "xi_um",
+          "elementSchema": "integer"
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:xi_snee;1",
+        "@type": "Interface",
+        "schemas": {
+          "@context": "dtmi:undefinedExtension:context;1",
+          "@id": "dtmi:example:xi_fuddle;1",
+          "@type": "Array",
+          "comment": "xi_glikk",
+          "dtmi:dtdl:property:comment;2": "xi_nuh",
+          "elementSchema": "long"
+        }
+      }
+    ]
+  }
+]

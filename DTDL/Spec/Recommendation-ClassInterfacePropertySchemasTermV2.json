@@ -1,0 +1,40 @@
+﻿[
+  {
+    "valid": true,
+    "desirable": true,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:eta_mu;1",
+        "@type": "Interface",
+        "schemas": [
+          {
+            "@id": "dtmi:example:eta_nu;1",
+            "@type": "Array",
+            "elementSchema": "double"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "desirable": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:eta_xi;1",
+        "@type": "Interface",
+        "dtmi:dtdl:property:schemas;2": [
+          {
+            "@id": "dtmi:example:eta_omicron;1",
+            "@type": "Array",
+            "elementSchema": "duration"
+          }
+        ]
+      }
+    ]
+  }
+]

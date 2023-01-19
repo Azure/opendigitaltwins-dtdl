@@ -1,0 +1,57 @@
+﻿[
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:omega_upsilon;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:omega_tau;1",
+          "@type": "Enum",
+          "valueSchema": "integer",
+          "enumValues": {
+            "description": [
+              "omega_pi"
+            ],
+            "dtmi:dtdl:property:description;2": [
+              "omega_rho"
+            ],
+            "enumValue": 966,
+            "name": "omega_sigma"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:omega_yuzz;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:omega_omega;1",
+          "@type": "Enum",
+          "valueSchema": "integer",
+          "enumValues": {
+            "@context": "dtmi:undefinedExtension:context;1",
+            "description": [
+              "omega_phi"
+            ],
+            "dtmi:dtdl:property:description;2": [
+              "omega_chi"
+            ],
+            "enumValue": 967,
+            "name": "omega_psi"
+          }
+        }
+      }
+    ]
+  }
+]

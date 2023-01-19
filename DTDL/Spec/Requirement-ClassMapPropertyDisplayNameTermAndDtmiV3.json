@@ -1,0 +1,63 @@
+﻿[
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:zeta_xi;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:zeta_iota;1",
+          "@type": "Map",
+          "displayName": [
+            "zeta_kappa"
+          ],
+          "dtmi:dtdl:property:displayName;3": [
+            "zeta_lambda"
+          ],
+          "mapKey": {
+            "name": "zeta_mu",
+            "schema": "string"
+          },
+          "mapValue": {
+            "name": "zeta_nu",
+            "schema": "duration"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:zeta_upsilon;1",
+        "@type": "Interface",
+        "schemas": {
+          "@context": "dtmi:undefinedExtension:context;1",
+          "@id": "dtmi:example:zeta_omicron;1",
+          "@type": "Map",
+          "displayName": [
+            "zeta_pi"
+          ],
+          "dtmi:dtdl:property:displayName;3": [
+            "zeta_rho"
+          ],
+          "mapKey": {
+            "name": "zeta_sigma",
+            "schema": "string"
+          },
+          "mapValue": {
+            "name": "zeta_tau",
+            "schema": "float"
+          }
+        }
+      }
+    ]
+  }
+]

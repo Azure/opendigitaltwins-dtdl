@@ -1,0 +1,34 @@
+﻿[
+  {
+    "valid": true,
+    "desirable": true,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:snee_theta;1",
+        "@type": "Interface",
+        "contents": {
+          "name": "snee_eta",
+          "@type": "Relationship"
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "desirable": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:snee_kappa;1",
+        "@type": "Interface",
+        "contents": {
+          "name": "snee_iota",
+          "@type": "dtmi:dtdl:class:Relationship;3"
+        }
+      }
+    ]
+  }
+]

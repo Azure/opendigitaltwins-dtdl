@@ -1,0 +1,30 @@
+﻿[
+  {
+    "valid": true,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:yuzz_omega;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:yuzz_chi;1",
+          "@type": "Map",
+          "mapKey": {
+            "name": "yuzz_psi",
+            "schema": "string"
+          },
+          "mapValue": {
+            "@type": [
+              "MapValue",
+              "Foobar"
+            ],
+            "name": "yuzz_phi",
+            "schema": "boolean",
+            "dtmi:foo//bar": 626
+          }
+        }
+      }
+    ]
+  }
+]

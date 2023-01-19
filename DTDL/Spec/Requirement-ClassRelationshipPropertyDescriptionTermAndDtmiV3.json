@@ -1,0 +1,47 @@
+﻿[
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:vroo_gamma;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Relationship",
+          "description": [
+            "yekk_hi"
+          ],
+          "dtmi:dtdl:property:description;3": [
+            "vroo_alpha"
+          ],
+          "name": "vroo_beta"
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:vroo_eta;1",
+        "@type": "Interface",
+        "contents": {
+          "@context": "dtmi:undefinedExtension:context;1",
+          "@type": "Relationship",
+          "description": [
+            "vroo_delta"
+          ],
+          "dtmi:dtdl:property:description;3": [
+            "vroo_epsilon"
+          ],
+          "name": "vroo_zeta"
+        }
+      }
+    ]
+  }
+]

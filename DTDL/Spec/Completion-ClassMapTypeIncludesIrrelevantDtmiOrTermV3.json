@@ -1,0 +1,112 @@
+﻿[
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:phi_humpf;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:phi_yuzz;1",
+          "@type": [
+            "Map",
+            "dtmi:foo:bar;1"
+          ],
+          "mapKey": {
+            "name": "phi_wum",
+            "schema": "string"
+          },
+          "mapValue": {
+            "name": "phi_um",
+            "schema": "date"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:phi_snee;1",
+        "@type": "Interface",
+        "schemas": {
+          "@context": "dtmi:undefinedExtension:context;1",
+          "@id": "dtmi:example:phi_fuddle;1",
+          "@type": [
+            "Map",
+            "dtmi:foo:bar;1"
+          ],
+          "mapKey": {
+            "name": "phi_glikk",
+            "schema": "string"
+          },
+          "mapValue": {
+            "name": "phi_nuh",
+            "schema": "dateTime"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:phi_floob;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:phi_quan;1",
+          "@type": [
+            "Map",
+            "boolean"
+          ],
+          "mapKey": {
+            "name": "phi_thnad",
+            "schema": "string"
+          },
+          "mapValue": {
+            "name": "phi_spazz",
+            "schema": "double"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:phi_itch;1",
+        "@type": "Interface",
+        "schemas": {
+          "@context": "dtmi:undefinedExtension:context;1",
+          "@id": "dtmi:example:phi_zatz;1",
+          "@type": [
+            "Map",
+            "boolean"
+          ],
+          "mapKey": {
+            "name": "phi_jogg",
+            "schema": "string"
+          },
+          "mapValue": {
+            "name": "phi_flunn",
+            "schema": "duration"
+          }
+        }
+      }
+    ]
+  }
+]

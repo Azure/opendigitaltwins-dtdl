@@ -1,0 +1,42 @@
+﻿[
+  {
+    "valid": true,
+    "desirable": true,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:quan_um;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Command",
+          "name": "quan_wum",
+          "request": {
+            "name": "quan_yuzz",
+            "schema": "double"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "desirable": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:quan_glikk;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Command",
+          "name": "quan_fuddle",
+          "request": {
+            "name": "quan_humpf",
+            "dtmi:dtdl:property:schema;3": "duration"
+          }
+        }
+      }
+    ]
+  }
+]

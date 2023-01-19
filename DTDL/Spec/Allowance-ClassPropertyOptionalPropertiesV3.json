@@ -1,0 +1,107 @@
+﻿[
+  {
+    "valid": true,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:sigma_jogg;1",
+        "@type": "Interface",
+        "extends": {
+          "@id": "dtmi:example:sigma_zatz;1",
+          "@type": "Interface",
+          "contents": {
+            "@context": [],
+            "@type": "Property",
+            "name": "sigma_floob",
+            "schema": "time"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:sigma_yekk;1",
+        "@type": "Interface",
+        "extends": {
+          "@id": "dtmi:example:sigma_itch;1",
+          "@type": "Interface",
+          "contents": {
+            "@type": "Property",
+            "name": "sigma_flunn",
+            "schema": "boolean"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:sigma_hi;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Property",
+          "name": "sigma_vroo",
+          "schema": "date"
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:tau_beta;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Property",
+          "name": "tau_alpha",
+          "schema": "dateTime"
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:tau_delta;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Property",
+          "name": "tau_gamma",
+          "schema": "double"
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:tau_zeta;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Property",
+          "name": "tau_epsilon",
+          "schema": "duration"
+        }
+      }
+    ]
+  }
+]

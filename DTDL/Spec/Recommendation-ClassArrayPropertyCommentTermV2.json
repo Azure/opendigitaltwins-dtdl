@@ -1,0 +1,38 @@
+﻿[
+  {
+    "valid": true,
+    "desirable": true,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:xi_phi;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:xi_tau;1",
+          "@type": "Array",
+          "comment": "xi_upsilon",
+          "elementSchema": "duration"
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "desirable": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:xi_omega;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:xi_chi;1",
+          "@type": "Array",
+          "dtmi:dtdl:property:comment;2": "xi_psi",
+          "elementSchema": "float"
+        }
+      }
+    ]
+  }
+]

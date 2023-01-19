@@ -1,0 +1,34 @@
+﻿[
+  {
+    "valid": true,
+    "desirable": true,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:hi_lambda;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Command",
+          "name": "hi_kappa"
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "desirable": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:hi_nu;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Command",
+          "dtmi:dtdl:property:name;3": "hi_mu"
+        }
+      }
+    ]
+  }
+]

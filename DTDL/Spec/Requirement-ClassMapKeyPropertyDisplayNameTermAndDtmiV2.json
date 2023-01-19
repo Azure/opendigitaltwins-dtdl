@@ -1,0 +1,63 @@
+﻿[
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:snee_epsilon;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:snee_gamma;1",
+          "@type": "Map",
+          "mapValue": {
+            "name": "snee_delta",
+            "schema": "dateTime"
+          },
+          "mapKey": {
+            "displayName": [
+              "nuh_hi"
+            ],
+            "dtmi:dtdl:property:displayName;2": [
+              "snee_alpha"
+            ],
+            "name": "snee_beta",
+            "schema": "string"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:snee_lambda;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:snee_iota;1",
+          "@type": "Map",
+          "mapValue": {
+            "name": "snee_kappa",
+            "schema": "double"
+          },
+          "mapKey": {
+            "@context": "dtmi:undefinedExtension:context;1",
+            "displayName": [
+              "snee_zeta"
+            ],
+            "dtmi:dtdl:property:displayName;2": [
+              "snee_eta"
+            ],
+            "name": "snee_theta",
+            "schema": "string"
+          }
+        }
+      }
+    ]
+  }
+]

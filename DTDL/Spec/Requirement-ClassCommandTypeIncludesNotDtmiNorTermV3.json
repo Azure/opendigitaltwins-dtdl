@@ -1,0 +1,41 @@
+﻿[
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:yekk_thnad;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": [
+            "Command",
+            "http://foo.com/bar"
+          ],
+          "name": "yekk_quan"
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:yekk_floob;1",
+        "@type": "Interface",
+        "contents": {
+          "@context": "dtmi:undefinedExtension:context;1",
+          "@type": [
+            "Command",
+            "http://foo.com/bar"
+          ],
+          "name": "yekk_spazz"
+        }
+      }
+    ]
+  }
+]

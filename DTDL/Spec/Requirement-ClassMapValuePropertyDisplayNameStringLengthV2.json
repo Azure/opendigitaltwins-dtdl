@@ -1,0 +1,77 @@
+﻿[
+  {
+    "valid": true,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:psi_um;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:psi_yuzz;1",
+          "@type": "Map",
+          "mapKey": {
+            "name": "psi_wum",
+            "schema": "string"
+          },
+          "mapValue": {
+            "name": "psi_omega",
+            "schema": "date",
+            "displayName": "SupercalifragilisticexpialidociousEvenThoughTheSoundOfItIsSometh"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:psi_nuh;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:psi_fuddle;1",
+          "@type": "Map",
+          "mapKey": {
+            "name": "psi_glikk",
+            "schema": "string"
+          },
+          "mapValue": {
+            "name": "psi_humpf",
+            "schema": "dateTime",
+            "displayName": "SupercalifragilisticexpialidociousEvenThoughTheSoundOfItIsSomethi"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:psi_spazz;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:psi_quan;1",
+          "@type": "Map",
+          "mapKey": {
+            "name": "psi_thnad",
+            "schema": "string"
+          },
+          "mapValue": {
+            "@context": "dtmi:undefinedExtension:context;1",
+            "name": "psi_snee",
+            "schema": "double",
+            "displayName": "SupercalifragilisticexpialidociousEvenThoughTheSoundOfItIsSomethi"
+          }
+        }
+      }
+    ]
+  }
+]

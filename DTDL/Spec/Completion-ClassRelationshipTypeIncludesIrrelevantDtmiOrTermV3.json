@@ -1,0 +1,80 @@
+﻿[
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:snee_mu;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": [
+            "Relationship",
+            "dtmi:foo:bar;1"
+          ],
+          "name": "snee_lambda"
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:snee_xi;1",
+        "@type": "Interface",
+        "contents": {
+          "@context": "dtmi:undefinedExtension:context;1",
+          "@type": [
+            "Relationship",
+            "dtmi:foo:bar;1"
+          ],
+          "name": "snee_nu"
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:snee_pi;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": [
+            "Relationship",
+            "boolean"
+          ],
+          "name": "snee_omicron"
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:snee_sigma;1",
+        "@type": "Interface",
+        "contents": {
+          "@context": "dtmi:undefinedExtension:context;1",
+          "@type": [
+            "Relationship",
+            "boolean"
+          ],
+          "name": "snee_rho"
+        }
+      }
+    ]
+  }
+]

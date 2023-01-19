@@ -1,0 +1,47 @@
+﻿[
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:humpf_spazz;1",
+        "@type": "Interface",
+        "contents": {
+          "@id": "dtmi:example:humpf_spazz;1",
+          "@type": "Property",
+          "name": "humpf_floob",
+          "schema": {
+            "@id": "dtmi:example:humpf_spazz;1",
+            "@type": "Enum",
+            "valueSchema": "integer"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:humpf_zatz;1",
+        "@type": "Interface",
+        "contents": {
+          "@id": "dtmi:example:humpf_zatz;1",
+          "@type": "Property",
+          "name": "humpf_jogg",
+          "schema": {
+            "@context": "dtmi:undefinedExtension:context;1",
+            "@id": "dtmi:example:humpf_zatz;1",
+            "@type": "Enum",
+            "valueSchema": "integer"
+          }
+        }
+      }
+    ]
+  }
+]

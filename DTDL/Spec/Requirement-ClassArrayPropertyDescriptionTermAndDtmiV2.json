@@ -1,0 +1,49 @@
+﻿[
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:pi_nu;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:pi_kappa;1",
+          "@type": "Array",
+          "description": [
+            "pi_lambda"
+          ],
+          "dtmi:dtdl:property:description;2": [
+            "pi_mu"
+          ],
+          "elementSchema": "string"
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:pi_rho;1",
+        "@type": "Interface",
+        "schemas": {
+          "@context": "dtmi:undefinedExtension:context;1",
+          "@id": "dtmi:example:pi_xi;1",
+          "@type": "Array",
+          "description": [
+            "pi_omicron"
+          ],
+          "dtmi:dtdl:property:description;2": [
+            "pi_pi"
+          ],
+          "elementSchema": "time"
+        }
+      }
+    ]
+  }
+]

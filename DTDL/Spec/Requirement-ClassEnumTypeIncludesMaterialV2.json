@@ -1,0 +1,192 @@
+﻿[
+  {
+    "valid": true,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:nu_um;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:nu_yuzz;1",
+          "enumValues": [
+            {
+              "enumValue": 71,
+              "name": "nu_wum"
+            }
+          ],
+          "valueSchema": "integer",
+          "@type": "Enum"
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:nu_glikk;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:nu_humpf;1",
+          "enumValues": [
+            {
+              "enumValue": 72,
+              "name": "nu_fuddle"
+            }
+          ],
+          "valueSchema": "integer",
+          "@type": [
+            "Enum"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:nu_quan;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:nu_nuh;1",
+          "enumValues": [
+            {
+              "enumValue": 73,
+              "name": "nu_snee"
+            }
+          ],
+          "valueSchema": "integer",
+          "@type": "dtmi:dtdl:class:Enum;2"
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:nu_floob;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:nu_thnad;1",
+          "enumValues": [
+            {
+              "enumValue": 74,
+              "name": "nu_spazz"
+            }
+          ],
+          "valueSchema": "integer",
+          "@type": [
+            "dtmi:dtdl:class:Enum;2"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:nu_flunn;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:nu_zatz;1",
+          "enumValues": [
+            {
+              "enumValue": 75,
+              "name": "nu_jogg"
+            }
+          ],
+          "valueSchema": "integer",
+          "@type": "Something"
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:nu_vroo;1",
+        "@type": "Interface",
+        "schemas": {
+          "@context": "dtmi:undefinedExtension:context;1",
+          "@id": "dtmi:example:nu_itch;1",
+          "enumValues": [
+            {
+              "enumValue": 76,
+              "name": "nu_yekk"
+            }
+          ],
+          "valueSchema": "integer",
+          "@type": "Something"
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:xi_beta;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:nu_hi;1",
+          "enumValues": [
+            {
+              "enumValue": 77,
+              "name": "xi_alpha"
+            }
+          ],
+          "valueSchema": "integer",
+          "@type": [
+            "Something"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:xi_epsilon;1",
+        "@type": "Interface",
+        "schemas": {
+          "@context": "dtmi:undefinedExtension:context;1",
+          "@id": "dtmi:example:xi_gamma;1",
+          "enumValues": [
+            {
+              "enumValue": 78,
+              "name": "xi_delta"
+            }
+          ],
+          "valueSchema": "integer",
+          "@type": [
+            "Something"
+          ]
+        }
+      }
+    ]
+  }
+]

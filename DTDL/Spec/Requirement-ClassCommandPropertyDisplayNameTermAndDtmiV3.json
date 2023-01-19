@@ -1,0 +1,47 @@
+﻿[
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:xi_upsilon;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Command",
+          "displayName": [
+            "xi_rho"
+          ],
+          "dtmi:dtdl:property:displayName;3": [
+            "xi_sigma"
+          ],
+          "name": "xi_tau"
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:xi_omega;1",
+        "@type": "Interface",
+        "contents": {
+          "@context": "dtmi:undefinedExtension:context;1",
+          "@type": "Command",
+          "displayName": [
+            "xi_phi"
+          ],
+          "dtmi:dtdl:property:displayName;3": [
+            "xi_chi"
+          ],
+          "name": "xi_psi"
+        }
+      }
+    ]
+  }
+]

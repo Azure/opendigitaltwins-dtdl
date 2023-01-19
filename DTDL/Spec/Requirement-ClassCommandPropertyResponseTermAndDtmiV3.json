@@ -1,0 +1,51 @@
+﻿[
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:psi_epsilon;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Command",
+          "name": "psi_beta",
+          "response": {
+            "name": "psi_gamma",
+            "schema": "string"
+          },
+          "dtmi:dtdl:property:response;3": {
+            "name": "psi_delta",
+            "schema": "time"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:psi_iota;1",
+        "@type": "Interface",
+        "contents": {
+          "@context": "dtmi:undefinedExtension:context;1",
+          "@type": "Command",
+          "name": "psi_zeta",
+          "response": {
+            "name": "psi_eta",
+            "schema": "boolean"
+          },
+          "dtmi:dtdl:property:response;3": {
+            "name": "psi_theta",
+            "schema": "date"
+          }
+        }
+      }
+    ]
+  }
+]

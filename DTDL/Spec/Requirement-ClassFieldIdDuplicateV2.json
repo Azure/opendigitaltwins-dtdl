@@ -1,0 +1,55 @@
+﻿[
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:gamma_wum;1",
+        "@type": "Interface",
+        "contents": {
+          "@id": "dtmi:example:gamma_wum;1",
+          "@type": "Property",
+          "name": "gamma_humpf",
+          "schema": {
+            "@id": "dtmi:example:gamma_wum;1",
+            "@type": "Object",
+            "fields": {
+              "@id": "dtmi:example:gamma_wum;1",
+              "name": "gamma_um",
+              "schema": "time"
+            }
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:gamma_fuddle;1",
+        "@type": "Interface",
+        "contents": {
+          "@id": "dtmi:example:gamma_fuddle;1",
+          "@type": "Property",
+          "name": "gamma_nuh",
+          "schema": {
+            "@id": "dtmi:example:gamma_fuddle;1",
+            "@type": "Object",
+            "fields": {
+              "@context": "dtmi:undefinedExtension:context;1",
+              "@id": "dtmi:example:gamma_fuddle;1",
+              "name": "gamma_glikk",
+              "schema": "boolean"
+            }
+          }
+        }
+      }
+    ]
+  }
+]

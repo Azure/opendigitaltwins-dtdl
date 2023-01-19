@@ -1,0 +1,59 @@
+﻿[
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:chi_iota;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:chi_epsilon;1",
+          "@type": "Map",
+          "mapKey": {
+            "name": "chi_zeta",
+            "schema": "string"
+          },
+          "mapValue": {
+            "name": "chi_eta",
+            "schema": "dateTime"
+          },
+          "dtmi:dtdl:property:mapValue;2": {
+            "name": "chi_theta",
+            "schema": "double"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:chi_xi;1",
+        "@type": "Interface",
+        "schemas": {
+          "@context": "dtmi:undefinedExtension:context;1",
+          "@id": "dtmi:example:chi_kappa;1",
+          "@type": "Map",
+          "mapKey": {
+            "name": "chi_lambda",
+            "schema": "string"
+          },
+          "mapValue": {
+            "name": "chi_mu",
+            "schema": "duration"
+          },
+          "dtmi:dtdl:property:mapValue;2": {
+            "name": "chi_nu",
+            "schema": "float"
+          }
+        }
+      }
+    ]
+  }
+]

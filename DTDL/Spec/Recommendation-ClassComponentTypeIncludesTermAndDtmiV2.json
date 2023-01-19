@@ -1,0 +1,25 @@
+﻿[
+  {
+    "valid": true,
+    "desirable": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:snee_omicron;1",
+        "@type": "Interface",
+        "contents": {
+          "name": "snee_nu",
+          "schema": {
+            "@id": "dtmi:example:snee_xi;1",
+            "@type": "Interface"
+          },
+          "@type": [
+            "Component",
+            "dtmi:dtdl:class:Component;2"
+          ]
+        }
+      }
+    ]
+  }
+]

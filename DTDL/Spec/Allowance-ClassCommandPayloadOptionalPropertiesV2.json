@@ -1,0 +1,125 @@
+﻿[
+  {
+    "valid": true,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:mu_flunn;1",
+        "@type": "Interface",
+        "extends": {
+          "@id": "dtmi:example:mu_jogg;1",
+          "@type": "Interface",
+          "contents": {
+            "@type": "Command",
+            "name": "mu_zatz",
+            "request": {
+              "@context": [],
+              "name": "mu_floob",
+              "schema": "double"
+            }
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:mu_vroo;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Command",
+          "name": "mu_yekk",
+          "request": {
+            "name": "mu_itch",
+            "schema": "duration"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:nu_gamma;1",
+        "@type": "Interface",
+        "extends": {
+          "@id": "dtmi:example:nu_beta;1",
+          "@type": "Interface",
+          "contents": {
+            "@type": "Command",
+            "name": "nu_alpha",
+            "request": {
+              "name": "mu_hi",
+              "schema": "float"
+            }
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:nu_zeta;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Command",
+          "name": "nu_epsilon",
+          "request": {
+            "name": "nu_delta",
+            "schema": "integer"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:nu_iota;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Command",
+          "name": "nu_theta",
+          "request": {
+            "name": "nu_eta",
+            "schema": "long"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:nu_mu;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Command",
+          "name": "nu_lambda",
+          "request": {
+            "name": "nu_kappa",
+            "schema": "string"
+          }
+        }
+      }
+    ]
+  }
+]

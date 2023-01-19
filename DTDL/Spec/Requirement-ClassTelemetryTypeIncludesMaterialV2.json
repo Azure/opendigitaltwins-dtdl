@@ -1,0 +1,144 @@
+﻿[
+  {
+    "valid": true,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:jogg_glikk;1",
+        "@type": "Interface",
+        "contents": {
+          "name": "jogg_fuddle",
+          "schema": "duration",
+          "@type": "Telemetry"
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:jogg_snee;1",
+        "@type": "Interface",
+        "contents": {
+          "name": "jogg_nuh",
+          "schema": "float",
+          "@type": [
+            "Telemetry"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:jogg_thnad;1",
+        "@type": "Interface",
+        "contents": {
+          "name": "jogg_quan",
+          "schema": "integer",
+          "@type": "dtmi:dtdl:class:Telemetry;2"
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:jogg_floob;1",
+        "@type": "Interface",
+        "contents": {
+          "name": "jogg_spazz",
+          "schema": "long",
+          "@type": [
+            "dtmi:dtdl:class:Telemetry;2"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:jogg_jogg;1",
+        "@type": "Interface",
+        "contents": {
+          "name": "jogg_zatz",
+          "schema": "string",
+          "@type": "Something"
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:jogg_itch;1",
+        "@type": "Interface",
+        "contents": {
+          "@context": "dtmi:undefinedExtension:context;1",
+          "name": "jogg_flunn",
+          "schema": "time",
+          "@type": "Something"
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:jogg_vroo;1",
+        "@type": "Interface",
+        "contents": {
+          "name": "jogg_yekk",
+          "schema": "boolean",
+          "@type": [
+            "Something"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:flunn_alpha;1",
+        "@type": "Interface",
+        "contents": {
+          "@context": "dtmi:undefinedExtension:context;1",
+          "name": "jogg_hi",
+          "schema": "date",
+          "@type": [
+            "Something"
+          ]
+        }
+      }
+    ]
+  }
+]

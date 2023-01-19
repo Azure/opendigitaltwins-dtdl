@@ -1,0 +1,39 @@
+﻿[
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:hi_wum;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Relationship",
+          "comment": "hi_psi",
+          "dtmi:dtdl:property:comment;2": "hi_omega",
+          "name": "hi_yuzz"
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:hi_glikk;1",
+        "@type": "Interface",
+        "contents": {
+          "@context": "dtmi:undefinedExtension:context;1",
+          "@type": "Relationship",
+          "comment": "hi_um",
+          "dtmi:dtdl:property:comment;2": "hi_humpf",
+          "name": "hi_fuddle"
+        }
+      }
+    ]
+  }
+]

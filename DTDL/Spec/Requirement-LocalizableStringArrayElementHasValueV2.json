@@ -1,0 +1,55 @@
+﻿[
+  {
+    "valid": true,
+    "options": [],
+    "input": [
+      {
+        "@context": [
+          "dtmi:dtdl:context;2"
+        ],
+        "@id": "dtmi:ex:id;1",
+        "@type": "Interface",
+        "displayName": [
+          {
+            "@value": "hello"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": [
+          "dtmi:dtdl:context;2"
+        ],
+        "@id": "dtmi:ex:id;1",
+        "@type": "Interface",
+        "displayName": [
+          {}
+        ]
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": [
+          "dtmi:dtdl:context;2",
+          "dtmi:undefinedExtension:context;1"
+        ],
+        "@id": "dtmi:ex:id;1",
+        "@type": "Interface",
+        "displayName": [
+          {}
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,52 @@
+﻿[
+  {
+    "valid": true,
+    "desirable": true,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:wum_glikk;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:wum_humpf;1",
+          "@type": "Map",
+          "mapValue": {
+            "name": "wum_fuddle",
+            "schema": "float"
+          },
+          "mapKey": {
+            "name": "wum_um",
+            "schema": "string",
+            "@type": "MapKey"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "desirable": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:wum_thnad;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:wum_snee;1",
+          "@type": "Map",
+          "mapValue": {
+            "name": "wum_quan",
+            "schema": "integer"
+          },
+          "mapKey": {
+            "name": "wum_nuh",
+            "schema": "string",
+            "@type": "dtmi:dtdl:class:MapKey;3"
+          }
+        }
+      }
+    ]
+  }
+]

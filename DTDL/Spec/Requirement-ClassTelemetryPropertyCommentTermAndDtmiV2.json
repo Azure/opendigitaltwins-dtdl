@@ -1,0 +1,41 @@
+﻿[
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:mu_flunn;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Telemetry",
+          "comment": "mu_floob",
+          "dtmi:dtdl:property:comment;2": "mu_zatz",
+          "name": "mu_jogg",
+          "schema": "double"
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:mu_hi;1",
+        "@type": "Interface",
+        "contents": {
+          "@context": "dtmi:undefinedExtension:context;1",
+          "@type": "Telemetry",
+          "comment": "mu_itch",
+          "dtmi:dtdl:property:comment;2": "mu_yekk",
+          "name": "mu_vroo",
+          "schema": "duration"
+        }
+      }
+    ]
+  }
+]

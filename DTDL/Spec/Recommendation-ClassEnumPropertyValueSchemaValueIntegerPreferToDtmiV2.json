@@ -1,0 +1,44 @@
+﻿[
+  {
+    "valid": true,
+    "desirable": true,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:quan_chi;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:quan_phi;1",
+          "@type": "Enum",
+          "enumValues": {
+            "name": "quan_upsilon",
+            "enumValue": 3
+          },
+          "valueSchema": "integer"
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "desirable": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:quan_yuzz;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:quan_omega;1",
+          "@type": "Enum",
+          "enumValues": {
+            "name": "quan_psi",
+            "enumValue": 3
+          },
+          "valueSchema": "dtmi:dtdl:instance:Schema:integer;2"
+        }
+      }
+    ]
+  }
+]

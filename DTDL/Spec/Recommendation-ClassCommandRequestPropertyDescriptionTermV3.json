@@ -1,0 +1,48 @@
+﻿[
+  {
+    "valid": true,
+    "desirable": true,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:delta_psi;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Command",
+          "name": "delta_chi",
+          "request": {
+            "description": [
+              "delta_upsilon"
+            ],
+            "name": "delta_phi",
+            "schema": "integer"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "desirable": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:delta_um;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Command",
+          "name": "delta_wum",
+          "request": {
+            "dtmi:dtdl:property:description;3": [
+              "delta_omega"
+            ],
+            "name": "delta_yuzz",
+            "schema": "long"
+          }
+        }
+      }
+    ]
+  }
+]

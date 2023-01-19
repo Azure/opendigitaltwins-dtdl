@@ -1,0 +1,54 @@
+﻿[
+  {
+    "valid": true,
+    "desirable": true,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:beta_phi;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:beta_sigma;1",
+          "@type": "Enum",
+          "displayName": [
+            "beta_tau"
+          ],
+          "enumValues": [
+            {
+              "enumValue": 688,
+              "name": "beta_upsilon"
+            }
+          ],
+          "valueSchema": "integer"
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "desirable": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:beta_yuzz;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:beta_chi;1",
+          "@type": "Enum",
+          "dtmi:dtdl:property:displayName;2": [
+            "beta_psi"
+          ],
+          "enumValues": [
+            {
+              "enumValue": 689,
+              "name": "beta_omega"
+            }
+          ],
+          "valueSchema": "integer"
+        }
+      }
+    ]
+  }
+]

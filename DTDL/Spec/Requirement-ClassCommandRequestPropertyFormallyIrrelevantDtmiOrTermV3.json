@@ -1,0 +1,88 @@
+﻿[
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:theta_eta;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Command",
+          "name": "theta_zeta",
+          "request": {
+            "name": "theta_epsilon",
+            "schema": "duration",
+            "dtmi:foo:bar;1": 626
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:theta_kappa;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Command",
+          "name": "theta_iota",
+          "request": {
+            "@context": "dtmi:undefinedExtension:context;1",
+            "name": "theta_theta",
+            "schema": "float",
+            "dtmi:foo:bar;1": 626
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:theta_nu;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Command",
+          "name": "theta_mu",
+          "request": {
+            "name": "theta_lambda",
+            "schema": "integer",
+            "boolean": null
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:theta_pi;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Command",
+          "name": "theta_omicron",
+          "request": {
+            "@context": "dtmi:undefinedExtension:context;1",
+            "name": "theta_xi",
+            "schema": "long",
+            "boolean": null
+          }
+        }
+      }
+    ]
+  }
+]

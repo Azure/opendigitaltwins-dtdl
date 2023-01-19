@@ -1,0 +1,56 @@
+﻿[
+  {
+    "valid": true,
+    "desirable": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:sigma_theta;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:sigma_eta;1",
+          "@type": "Array",
+          "elementSchema": "duration",
+          "@value": 626
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "desirable": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:sigma_kappa;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:sigma_iota;1",
+          "@type": "Array",
+          "elementSchema": "float",
+          "@language": "en"
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "desirable": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:sigma_mu;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:sigma_lambda;1",
+          "@type": "Array",
+          "elementSchema": "integer",
+          "@foobar": true
+        }
+      }
+    ]
+  }
+]

@@ -1,0 +1,45 @@
+﻿[
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:flunn_snee;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:flunn_nuh;1",
+          "@type": [
+            "Array",
+            "Foobar"
+          ],
+          "elementSchema": "integer",
+          "http://foo.com/bar": true
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:flunn_thnad;1",
+        "@type": "Interface",
+        "schemas": {
+          "@context": "dtmi:undefinedExtension:context;1",
+          "@id": "dtmi:example:flunn_quan;1",
+          "@type": [
+            "Array",
+            "Foobar"
+          ],
+          "elementSchema": "long",
+          "http://foo.com/bar": true
+        }
+      }
+    ]
+  }
+]

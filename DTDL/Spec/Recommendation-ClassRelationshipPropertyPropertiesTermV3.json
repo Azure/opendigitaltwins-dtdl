@@ -1,0 +1,48 @@
+﻿[
+  {
+    "valid": true,
+    "desirable": true,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:eta_rho;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Relationship",
+          "name": "eta_omicron",
+          "properties": [
+            {
+              "@type": "Property",
+              "name": "eta_pi",
+              "schema": "boolean"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "desirable": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:eta_upsilon;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Relationship",
+          "name": "eta_sigma",
+          "dtmi:dtdl:property:properties;3": [
+            {
+              "@type": "Property",
+              "name": "eta_tau",
+              "schema": "date"
+            }
+          ]
+        }
+      }
+    ]
+  }
+]

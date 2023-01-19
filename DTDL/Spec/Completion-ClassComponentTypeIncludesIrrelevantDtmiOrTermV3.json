@@ -1,0 +1,96 @@
+﻿[
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:jogg_yekk;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": [
+            "Component",
+            "dtmi:foo:bar;1"
+          ],
+          "name": "jogg_flunn",
+          "schema": {
+            "@id": "dtmi:example:jogg_itch;1",
+            "@type": "Interface"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:flunn_alpha;1",
+        "@type": "Interface",
+        "contents": {
+          "@context": "dtmi:undefinedExtension:context;1",
+          "@type": [
+            "Component",
+            "dtmi:foo:bar;1"
+          ],
+          "name": "jogg_vroo",
+          "schema": {
+            "@id": "dtmi:example:jogg_hi;1",
+            "@type": "Interface"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:flunn_delta;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": [
+            "Component",
+            "boolean"
+          ],
+          "name": "flunn_beta",
+          "schema": {
+            "@id": "dtmi:example:flunn_gamma;1",
+            "@type": "Interface"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:flunn_eta;1",
+        "@type": "Interface",
+        "contents": {
+          "@context": "dtmi:undefinedExtension:context;1",
+          "@type": [
+            "Component",
+            "boolean"
+          ],
+          "name": "flunn_epsilon",
+          "schema": {
+            "@id": "dtmi:example:flunn_zeta;1",
+            "@type": "Interface"
+          }
+        }
+      }
+    ]
+  }
+]

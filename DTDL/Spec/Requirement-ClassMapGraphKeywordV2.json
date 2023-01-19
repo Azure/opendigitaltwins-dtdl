@@ -1,0 +1,53 @@
+﻿[
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:jogg_tau;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:jogg_pi;1",
+          "@type": "Map",
+          "mapKey": {
+            "name": "jogg_rho",
+            "schema": "string"
+          },
+          "mapValue": {
+            "name": "jogg_sigma",
+            "schema": "boolean"
+          },
+          "@graph": {}
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:jogg_psi;1",
+        "@type": "Interface",
+        "schemas": {
+          "@context": "dtmi:undefinedExtension:context;1",
+          "@id": "dtmi:example:jogg_upsilon;1",
+          "@type": "Map",
+          "mapKey": {
+            "name": "jogg_phi",
+            "schema": "string"
+          },
+          "mapValue": {
+            "name": "jogg_chi",
+            "schema": "date"
+          },
+          "@graph": {}
+        }
+      }
+    ]
+  }
+]

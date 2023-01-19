@@ -1,0 +1,56 @@
+﻿[
+  {
+    "valid": true,
+    "desirable": true,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:beta_itch;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:beta_floob;1",
+          "@type": "Map",
+          "description": [
+            "beta_zatz"
+          ],
+          "mapKey": {
+            "name": "beta_jogg",
+            "schema": "string"
+          },
+          "mapValue": {
+            "name": "beta_flunn",
+            "schema": "boolean"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "desirable": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:gamma_beta;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:beta_yekk;1",
+          "@type": "Map",
+          "dtmi:dtdl:property:description;3": [
+            "beta_vroo"
+          ],
+          "mapKey": {
+            "name": "beta_hi",
+            "schema": "string"
+          },
+          "mapValue": {
+            "name": "gamma_alpha",
+            "schema": "date"
+          }
+        }
+      }
+    ]
+  }
+]

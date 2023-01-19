@@ -1,0 +1,58 @@
+﻿[
+  {
+    "valid": true,
+    "desirable": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:wum_chi;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:wum_upsilon;1",
+          "@type": "Map",
+          "mapValue": {
+            "name": "wum_phi",
+            "schema": "double"
+          },
+          "mapKey": {
+            "name": "wum_tau",
+            "schema": "string",
+            "@type": [
+              "MapKey",
+              "MapKey"
+            ]
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "desirable": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:wum_wum;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:wum_omega;1",
+          "@type": "Map",
+          "mapValue": {
+            "name": "wum_yuzz",
+            "schema": "duration"
+          },
+          "mapKey": {
+            "name": "wum_psi",
+            "schema": "string",
+            "@type": [
+              "dtmi:dtdl:class:MapKey;3",
+              "dtmi:dtdl:class:MapKey;3"
+            ]
+          }
+        }
+      }
+    ]
+  }
+]

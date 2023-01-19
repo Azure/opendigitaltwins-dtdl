@@ -1,0 +1,52 @@
+﻿[
+  {
+    "valid": true,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:um_rho;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:um_pi;1",
+          "@type": "Enum",
+          "valueSchema": "integer",
+          "enumValues": {
+            "@type": [
+              "EnumValue",
+              "Foobar"
+            ],
+            "enumValue": 1005,
+            "name": "um_omicron",
+            "dtmi:foo:bar;1": 626
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:um_upsilon;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:um_tau;1",
+          "@type": "Enum",
+          "valueSchema": "integer",
+          "enumValues": {
+            "@type": [
+              "EnumValue",
+              "Foobar"
+            ],
+            "enumValue": 1006,
+            "name": "um_sigma",
+            "boolean": null
+          }
+        }
+      }
+    ]
+  }
+]

@@ -1,0 +1,50 @@
+﻿[
+  {
+    "valid": true,
+    "desirable": true,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:jogg_epsilon;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:jogg_gamma;1",
+          "@type": "Map",
+          "mapKey": {
+            "name": "jogg_delta",
+            "schema": "string"
+          },
+          "mapValue": {
+            "name": "jogg_beta",
+            "schema": "long"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "desirable": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:jogg_iota;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:jogg_eta;1",
+          "@type": "Map",
+          "mapKey": {
+            "name": "jogg_theta",
+            "schema": "string"
+          },
+          "mapValue": {
+            "dtmi:dtdl:property:name;2": "jogg_zeta",
+            "schema": "string"
+          }
+        }
+      }
+    ]
+  }
+]

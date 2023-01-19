@@ -1,0 +1,46 @@
+﻿[
+  {
+    "valid": true,
+    "desirable": true,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:spazz_mu;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:spazz_kappa;1",
+          "@type": "Object",
+          "fields": [
+            {
+              "name": "spazz_lambda",
+              "schema": "float"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "desirable": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:spazz_omicron;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:spazz_nu;1",
+          "@type": "Object",
+          "dtmi:dtdl:property:fields;2": [
+            {
+              "name": "spazz_xi",
+              "schema": "integer"
+            }
+          ]
+        }
+      }
+    ]
+  }
+]

@@ -1,0 +1,30 @@
+﻿[
+  {
+    "valid": true,
+    "desirable": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:wum_sigma;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:wum_pi;1",
+          "@type": "Map",
+          "mapValue": {
+            "name": "wum_rho",
+            "schema": "dateTime"
+          },
+          "mapKey": {
+            "name": "wum_omicron",
+            "schema": "string",
+            "@type": [
+              "MapKey",
+              "dtmi:dtdl:class:MapKey;3"
+            ]
+          }
+        }
+      }
+    ]
+  }
+]

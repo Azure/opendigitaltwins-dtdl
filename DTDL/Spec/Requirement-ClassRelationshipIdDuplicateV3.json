@@ -1,0 +1,45 @@
+﻿[
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:jogg_itch;1",
+        "@type": "Interface",
+        "extends": {
+          "@id": "dtmi:example:jogg_itch;1",
+          "@type": "Interface",
+          "contents": {
+            "@id": "dtmi:example:jogg_itch;1",
+            "@type": "Relationship",
+            "name": "jogg_yekk"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:jogg_vroo;1",
+        "@type": "Interface",
+        "extends": {
+          "@id": "dtmi:example:jogg_vroo;1",
+          "@type": "Interface",
+          "contents": {
+            "@context": "dtmi:undefinedExtension:context;1",
+            "@id": "dtmi:example:jogg_vroo;1",
+            "@type": "Relationship",
+            "name": "jogg_hi"
+          }
+        }
+      }
+    ]
+  }
+]

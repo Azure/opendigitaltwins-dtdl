@@ -1,0 +1,54 @@
+﻿[
+  {
+    "valid": true,
+    "desirable": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:xi_lambda;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:xi_iota;1",
+          "enumValues": [
+            {
+              "enumValue": 80,
+              "name": "xi_kappa"
+            }
+          ],
+          "valueSchema": "integer",
+          "@type": [
+            "Enum",
+            "Enum"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "desirable": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:xi_xi;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:xi_mu;1",
+          "enumValues": [
+            {
+              "enumValue": 81,
+              "name": "xi_nu"
+            }
+          ],
+          "valueSchema": "integer",
+          "@type": [
+            "dtmi:dtdl:class:Enum;2",
+            "dtmi:dtdl:class:Enum;2"
+          ]
+        }
+      }
+    ]
+  }
+]

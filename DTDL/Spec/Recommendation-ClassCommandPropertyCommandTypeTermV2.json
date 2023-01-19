@@ -1,0 +1,36 @@
+﻿[
+  {
+    "valid": true,
+    "desirable": true,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:nuh_snee;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Command",
+          "commandType": "asynchronous",
+          "name": "nuh_nuh"
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "desirable": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:nuh_thnad;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Command",
+          "dtmi:dtdl:property:commandType;2": "asynchronous",
+          "name": "nuh_quan"
+        }
+      }
+    ]
+  }
+]

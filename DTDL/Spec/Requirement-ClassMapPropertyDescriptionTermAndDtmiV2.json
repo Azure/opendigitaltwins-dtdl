@@ -1,0 +1,63 @@
+﻿[
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:spazz_gamma;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:thnad_yekk;1",
+          "@type": "Map",
+          "description": [
+            "thnad_vroo"
+          ],
+          "dtmi:dtdl:property:description;2": [
+            "thnad_hi"
+          ],
+          "mapKey": {
+            "name": "spazz_alpha",
+            "schema": "string"
+          },
+          "mapValue": {
+            "name": "spazz_beta",
+            "schema": "integer"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:spazz_iota;1",
+        "@type": "Interface",
+        "schemas": {
+          "@context": "dtmi:undefinedExtension:context;1",
+          "@id": "dtmi:example:spazz_delta;1",
+          "@type": "Map",
+          "description": [
+            "spazz_epsilon"
+          ],
+          "dtmi:dtdl:property:description;2": [
+            "spazz_zeta"
+          ],
+          "mapKey": {
+            "name": "spazz_eta",
+            "schema": "string"
+          },
+          "mapValue": {
+            "name": "spazz_theta",
+            "schema": "long"
+          }
+        }
+      }
+    ]
+  }
+]

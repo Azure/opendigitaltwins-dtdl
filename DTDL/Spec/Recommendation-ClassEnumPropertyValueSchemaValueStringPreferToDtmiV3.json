@@ -1,0 +1,44 @@
+﻿[
+  {
+    "valid": true,
+    "desirable": true,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:yuzz_spazz;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:yuzz_thnad;1",
+          "@type": "Enum",
+          "enumValues": {
+            "name": "yuzz_quan",
+            "enumValue": "beta_jogg"
+          },
+          "valueSchema": "string"
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "desirable": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:yuzz_jogg;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:yuzz_zatz;1",
+          "@type": "Enum",
+          "enumValues": {
+            "name": "yuzz_floob",
+            "enumValue": "beta_jogg"
+          },
+          "valueSchema": "dtmi:dtdl:instance:Schema:string;3"
+        }
+      }
+    ]
+  }
+]

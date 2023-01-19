@@ -1,0 +1,53 @@
+﻿[
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:kappa_theta;1",
+        "@type": "Interface",
+        "extends": {
+          "@id": "dtmi:example:kappa_theta;1",
+          "@type": "Interface",
+          "contents": {
+            "@id": "dtmi:example:kappa_theta;1",
+            "@type": "Component",
+            "name": "kappa_iota",
+            "schema": {
+              "@id": "dtmi:example:kappa_kappa;1",
+              "@type": "Interface"
+            }
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:kappa_lambda;1",
+        "@type": "Interface",
+        "extends": {
+          "@id": "dtmi:example:kappa_lambda;1",
+          "@type": "Interface",
+          "contents": {
+            "@context": "dtmi:undefinedExtension:context;1",
+            "@id": "dtmi:example:kappa_lambda;1",
+            "@type": "Component",
+            "name": "kappa_mu",
+            "schema": {
+              "@id": "dtmi:example:kappa_nu;1",
+              "@type": "Interface"
+            }
+          }
+        }
+      }
+    ]
+  }
+]

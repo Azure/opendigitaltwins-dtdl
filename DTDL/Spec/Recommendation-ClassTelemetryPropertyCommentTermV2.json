@@ -1,0 +1,38 @@
+﻿[
+  {
+    "valid": true,
+    "desirable": true,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:mu_snee;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Telemetry",
+          "comment": "mu_glikk",
+          "name": "mu_nuh",
+          "schema": "date"
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "desirable": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:mu_spazz;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Telemetry",
+          "dtmi:dtdl:property:comment;2": "mu_quan",
+          "name": "mu_thnad",
+          "schema": "dateTime"
+        }
+      }
+    ]
+  }
+]

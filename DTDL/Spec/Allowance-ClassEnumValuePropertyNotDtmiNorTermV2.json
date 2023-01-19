@@ -1,0 +1,27 @@
+﻿[
+  {
+    "valid": true,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:humpf_alpha;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:um_hi;1",
+          "@type": "Enum",
+          "valueSchema": "integer",
+          "enumValues": {
+            "@type": [
+              "EnumValue",
+              "Foobar"
+            ],
+            "enumValue": 1014,
+            "name": "um_vroo",
+            "http://foo.com/bar": true
+          }
+        }
+      }
+    ]
+  }
+]

@@ -1,0 +1,89 @@
+﻿[
+  {
+    "valid": true,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:nuh_pi;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Property",
+          "name": "nuh_omicron",
+          "schema": {
+            "@context": [],
+            "@type": "Array",
+            "elementSchema": "date"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:nuh_sigma;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Property",
+          "name": "nuh_rho",
+          "schema": {
+            "@type": "Array",
+            "elementSchema": "dateTime"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:nuh_upsilon;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:nuh_tau;1",
+          "@type": "Array",
+          "elementSchema": "double"
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:nuh_chi;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:nuh_phi;1",
+          "@type": "Array",
+          "elementSchema": "duration"
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:nuh_omega;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:nuh_psi;1",
+          "@type": "Array",
+          "elementSchema": "float"
+        }
+      }
+    ]
+  }
+]

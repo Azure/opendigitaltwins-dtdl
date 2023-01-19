@@ -1,0 +1,80 @@
+﻿[
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:yekk_chi;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": [
+            "Command",
+            "dtmi:foo:bar;1"
+          ],
+          "name": "yekk_phi"
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:yekk_omega;1",
+        "@type": "Interface",
+        "contents": {
+          "@context": "dtmi:undefinedExtension:context;1",
+          "@type": [
+            "Command",
+            "dtmi:foo:bar;1"
+          ],
+          "name": "yekk_psi"
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:yekk_wum;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": [
+            "Command",
+            "boolean"
+          ],
+          "name": "yekk_yuzz"
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:yekk_humpf;1",
+        "@type": "Interface",
+        "contents": {
+          "@context": "dtmi:undefinedExtension:context;1",
+          "@type": [
+            "Command",
+            "boolean"
+          ],
+          "name": "yekk_um"
+        }
+      }
+    ]
+  }
+]

@@ -1,0 +1,47 @@
+﻿[
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:lambda_sigma;1",
+        "@type": "Interface",
+        "extends": {
+          "@id": "dtmi:example:lambda_sigma;1",
+          "@type": "Interface",
+          "contents": {
+            "@id": "dtmi:example:lambda_sigma;1",
+            "@type": "Telemetry",
+            "name": "lambda_tau",
+            "schema": "duration"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:lambda_upsilon;1",
+        "@type": "Interface",
+        "extends": {
+          "@id": "dtmi:example:lambda_upsilon;1",
+          "@type": "Interface",
+          "contents": {
+            "@context": "dtmi:undefinedExtension:context;1",
+            "@id": "dtmi:example:lambda_upsilon;1",
+            "@type": "Telemetry",
+            "name": "lambda_phi",
+            "schema": "float"
+          }
+        }
+      }
+    ]
+  }
+]

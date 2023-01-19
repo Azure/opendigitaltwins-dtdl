@@ -1,0 +1,51 @@
+﻿[
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:vroo_pi;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:vroo_mu;1",
+          "@type": "Object",
+          "comment": "vroo_nu",
+          "dtmi:dtdl:property:comment;2": "vroo_xi",
+          "fields": [
+            {
+              "name": "vroo_omicron",
+              "schema": "time"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:vroo_phi;1",
+        "@type": "Interface",
+        "schemas": {
+          "@context": "dtmi:undefinedExtension:context;1",
+          "@id": "dtmi:example:vroo_rho;1",
+          "@type": "Object",
+          "comment": "vroo_sigma",
+          "dtmi:dtdl:property:comment;2": "vroo_tau",
+          "fields": [
+            {
+              "name": "vroo_upsilon",
+              "schema": "boolean"
+            }
+          ]
+        }
+      }
+    ]
+  }
+]

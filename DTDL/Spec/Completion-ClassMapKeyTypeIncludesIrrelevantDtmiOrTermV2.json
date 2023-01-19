@@ -1,0 +1,116 @@
+﻿[
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:pi_zeta;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:pi_delta;1",
+          "@type": "Map",
+          "mapValue": {
+            "name": "pi_epsilon",
+            "schema": "float"
+          },
+          "mapKey": {
+            "@type": [
+              "MapKey",
+              "dtmi:foo:bar;1"
+            ],
+            "name": "pi_gamma",
+            "schema": "string"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:pi_kappa;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:pi_theta;1",
+          "@type": "Map",
+          "mapValue": {
+            "name": "pi_iota",
+            "schema": "integer"
+          },
+          "mapKey": {
+            "@context": "dtmi:undefinedExtension:context;1",
+            "@type": [
+              "MapKey",
+              "dtmi:foo:bar;1"
+            ],
+            "name": "pi_eta",
+            "schema": "string"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:pi_xi;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:pi_mu;1",
+          "@type": "Map",
+          "mapValue": {
+            "name": "pi_nu",
+            "schema": "long"
+          },
+          "mapKey": {
+            "@type": [
+              "MapKey",
+              "boolean"
+            ],
+            "name": "pi_lambda",
+            "schema": "string"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:pi_sigma;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:pi_pi;1",
+          "@type": "Map",
+          "mapValue": {
+            "name": "pi_rho",
+            "schema": "string"
+          },
+          "mapKey": {
+            "@context": "dtmi:undefinedExtension:context;1",
+            "@type": [
+              "MapKey",
+              "boolean"
+            ],
+            "name": "pi_omicron",
+            "schema": "string"
+          }
+        }
+      }
+    ]
+  }
+]

@@ -1,0 +1,70 @@
+﻿[
+  {
+    "valid": true,
+    "desirable": true,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:kappa_iota;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:kappa_theta;1",
+          "@type": "Array",
+          "elementSchema": "date"
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "desirable": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:kappa_lambda;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:kappa_kappa;1",
+          "@type": "Array",
+          "elementSchema": "dtmi:dtdl:instance:Schema:date;2"
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "desirable": true,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:kappa_nu;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:kappa_mu;1",
+          "@type": "Array",
+          "elementSchema": "point"
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "desirable": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:kappa_omicron;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:kappa_xi;1",
+          "@type": "Array",
+          "elementSchema": "dtmi:standard:schema:geospatial:point;2"
+        }
+      }
+    ]
+  }
+]

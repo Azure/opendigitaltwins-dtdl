@@ -1,0 +1,77 @@
+﻿[
+  {
+    "valid": true,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:nuh_tau;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:nuh_rho;1",
+          "@type": "Map",
+          "mapValue": {
+            "name": "nuh_sigma",
+            "schema": "integer"
+          },
+          "mapKey": {
+            "name": "nuh_pi",
+            "schema": "string",
+            "displayName": "SupercalifragilisticexpialidociousEvenThoughTheSoundOfItIsSometh"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:nuh_psi;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:nuh_phi;1",
+          "@type": "Map",
+          "mapValue": {
+            "name": "nuh_chi",
+            "schema": "long"
+          },
+          "mapKey": {
+            "name": "nuh_upsilon",
+            "schema": "string",
+            "displayName": "SupercalifragilisticexpialidociousEvenThoughTheSoundOfItIsSomethi"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:nuh_um;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:nuh_yuzz;1",
+          "@type": "Map",
+          "mapValue": {
+            "name": "nuh_wum",
+            "schema": "string"
+          },
+          "mapKey": {
+            "@context": "dtmi:undefinedExtension:context;1",
+            "name": "nuh_omega",
+            "schema": "string",
+            "displayName": "SupercalifragilisticexpialidociousEvenThoughTheSoundOfItIsSomethi"
+          }
+        }
+      }
+    ]
+  }
+]

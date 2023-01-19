@@ -1,0 +1,37 @@
+﻿[
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:thnad_zeta;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Relationship",
+          "name": "thnad_delta",
+          "dtmi:dtdl:property:name;3": "thnad_epsilon"
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:thnad_iota;1",
+        "@type": "Interface",
+        "contents": {
+          "@context": "dtmi:undefinedExtension:context;1",
+          "@type": "Relationship",
+          "name": "thnad_eta",
+          "dtmi:dtdl:property:name;3": "thnad_theta"
+        }
+      }
+    ]
+  }
+]

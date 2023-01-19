@@ -1,0 +1,36 @@
+﻿[
+  {
+    "valid": true,
+    "desirable": true,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:epsilon_omicron;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Relationship",
+          "maxMultiplicity": 500,
+          "name": "epsilon_xi"
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "desirable": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:epsilon_rho;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Relationship",
+          "dtmi:dtdl:property:maxMultiplicity;2": 500,
+          "name": "epsilon_pi"
+        }
+      }
+    ]
+  }
+]

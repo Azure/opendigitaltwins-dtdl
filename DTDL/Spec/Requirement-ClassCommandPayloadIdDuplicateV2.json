@@ -1,0 +1,55 @@
+﻿[
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:phi_thnad;1",
+        "@type": "Interface",
+        "extends": {
+          "@id": "dtmi:example:phi_thnad;1",
+          "@type": "Interface",
+          "contents": {
+            "@id": "dtmi:example:phi_thnad;1",
+            "@type": "Command",
+            "name": "phi_floob",
+            "request": {
+              "@id": "dtmi:example:phi_thnad;1",
+              "name": "phi_spazz",
+              "schema": "integer"
+            }
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:phi_zatz;1",
+        "@type": "Interface",
+        "extends": {
+          "@id": "dtmi:example:phi_zatz;1",
+          "@type": "Interface",
+          "contents": {
+            "@id": "dtmi:example:phi_zatz;1",
+            "@type": "Command",
+            "name": "phi_flunn",
+            "request": {
+              "@context": "dtmi:undefinedExtension:context;1",
+              "@id": "dtmi:example:phi_zatz;1",
+              "name": "phi_jogg",
+              "schema": "long"
+            }
+          }
+        }
+      }
+    ]
+  }
+]

@@ -1,0 +1,77 @@
+﻿[
+  {
+    "valid": true,
+    "desirable": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:snee_psi;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:snee_phi;1",
+          "@type": "Map",
+          "mapValue": {
+            "name": "snee_chi",
+            "schema": "integer"
+          },
+          "mapKey": {
+            "name": "snee_upsilon",
+            "schema": "string",
+            "@value": 626
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "desirable": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:snee_um;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:snee_yuzz;1",
+          "@type": "Map",
+          "mapValue": {
+            "name": "snee_wum",
+            "schema": "long"
+          },
+          "mapKey": {
+            "name": "snee_omega",
+            "schema": "string",
+            "@language": "en"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "desirable": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:snee_nuh;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:snee_fuddle;1",
+          "@type": "Map",
+          "mapValue": {
+            "name": "snee_glikk",
+            "schema": "string"
+          },
+          "mapKey": {
+            "name": "snee_humpf",
+            "schema": "string",
+            "@foobar": true
+          }
+        }
+      }
+    ]
+  }
+]

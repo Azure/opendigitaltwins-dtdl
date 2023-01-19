@@ -1,0 +1,80 @@
+﻿[
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:upsilon_fuddle;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:upsilon_humpf;1",
+          "@type": "Object",
+          "fields": {
+            "schema": "dateTime"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:upsilon_nuh;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:upsilon_glikk;1",
+          "@type": "Object",
+          "fields": {
+            "@context": "dtmi:undefinedExtension:context;1",
+            "schema": "double"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:upsilon_thnad;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:upsilon_quan;1",
+          "@type": "Object",
+          "fields": {
+            "name": "upsilon_snee"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:upsilon_zatz;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:upsilon_floob;1",
+          "@type": "Object",
+          "fields": {
+            "@context": "dtmi:undefinedExtension:context;1",
+            "name": "upsilon_spazz"
+          }
+        }
+      }
+    ]
+  }
+]

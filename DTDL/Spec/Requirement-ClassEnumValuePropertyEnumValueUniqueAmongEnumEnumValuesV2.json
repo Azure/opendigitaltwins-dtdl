@@ -1,0 +1,164 @@
+﻿[
+  {
+    "valid": true,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:eta_wum;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:eta_yuzz;1",
+          "@type": "Enum",
+          "enumValues": [
+            {
+              "name": "eta_psi",
+              "enumValue": 6
+            },
+            {
+              "name": "eta_omega",
+              "enumValue": 7
+            }
+          ],
+          "valueSchema": "integer"
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:eta_glikk;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:eta_fuddle;1",
+          "@type": "Enum",
+          "enumValues": [
+            {
+              "name": "eta_um",
+              "enumValue": 6
+            },
+            {
+              "name": "eta_humpf",
+              "enumValue": 6
+            }
+          ],
+          "valueSchema": "integer"
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:eta_thnad;1",
+        "@type": "Interface",
+        "schemas": {
+          "@context": "dtmi:undefinedExtension:context;1",
+          "@id": "dtmi:example:eta_quan;1",
+          "@type": "Enum",
+          "enumValues": [
+            {
+              "name": "eta_nuh",
+              "enumValue": 6
+            },
+            {
+              "name": "eta_snee",
+              "enumValue": 6
+            }
+          ],
+          "valueSchema": "integer"
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:eta_jogg;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:eta_zatz;1",
+          "@type": "Enum",
+          "enumValues": [
+            {
+              "name": "eta_spazz",
+              "enumValue": "alpha_psi"
+            },
+            {
+              "name": "eta_floob",
+              "enumValue": "alpha_omega"
+            }
+          ],
+          "valueSchema": "string"
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:eta_vroo;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:eta_yekk;1",
+          "@type": "Enum",
+          "enumValues": [
+            {
+              "name": "eta_flunn",
+              "enumValue": "alpha_psi"
+            },
+            {
+              "name": "eta_itch",
+              "enumValue": "alpha_psi"
+            }
+          ],
+          "valueSchema": "string"
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:theta_gamma;1",
+        "@type": "Interface",
+        "schemas": {
+          "@context": "dtmi:undefinedExtension:context;1",
+          "@id": "dtmi:example:theta_beta;1",
+          "@type": "Enum",
+          "enumValues": [
+            {
+              "name": "eta_hi",
+              "enumValue": "alpha_psi"
+            },
+            {
+              "name": "theta_alpha",
+              "enumValue": "alpha_psi"
+            }
+          ],
+          "valueSchema": "string"
+        }
+      }
+    ]
+  }
+]

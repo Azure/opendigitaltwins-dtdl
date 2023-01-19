@@ -1,0 +1,58 @@
+﻿[
+  {
+    "valid": true,
+    "desirable": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:tau_upsilon;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:tau_sigma;1",
+          "@type": "Map",
+          "mapKey": {
+            "name": "tau_tau",
+            "schema": "string"
+          },
+          "mapValue": {
+            "name": "tau_rho",
+            "schema": "long",
+            "@type": [
+              "MapValue",
+              "MapValue"
+            ]
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "desirable": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:tau_omega;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:tau_chi;1",
+          "@type": "Map",
+          "mapKey": {
+            "name": "tau_psi",
+            "schema": "string"
+          },
+          "mapValue": {
+            "name": "tau_phi",
+            "schema": "string",
+            "@type": [
+              "dtmi:dtdl:class:MapValue;3",
+              "dtmi:dtdl:class:MapValue;3"
+            ]
+          }
+        }
+      }
+    ]
+  }
+]

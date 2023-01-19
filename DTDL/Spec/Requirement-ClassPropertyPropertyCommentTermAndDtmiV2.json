@@ -1,0 +1,41 @@
+﻿[
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:omega_gamma;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Property",
+          "comment": "psi_hi",
+          "dtmi:dtdl:property:comment;2": "omega_alpha",
+          "name": "omega_beta",
+          "schema": "dateTime"
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:omega_eta;1",
+        "@type": "Interface",
+        "contents": {
+          "@context": "dtmi:undefinedExtension:context;1",
+          "@type": "Property",
+          "comment": "omega_delta",
+          "dtmi:dtdl:property:comment;2": "omega_epsilon",
+          "name": "omega_zeta",
+          "schema": "double"
+        }
+      }
+    ]
+  }
+]
