@@ -1,0 +1,39 @@
+﻿[
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:pi_jogg;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Telemetry",
+          "name": "pi_floob",
+          "dtmi:dtdl:property:name;3": "pi_zatz",
+          "schema": "string"
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:pi_yekk;1",
+        "@type": "Interface",
+        "contents": {
+          "@context": "dtmi:undefinedExtension:context;1",
+          "@type": "Telemetry",
+          "name": "pi_flunn",
+          "dtmi:dtdl:property:name;3": "pi_itch",
+          "schema": "time"
+        }
+      }
+    ]
+  }
+]

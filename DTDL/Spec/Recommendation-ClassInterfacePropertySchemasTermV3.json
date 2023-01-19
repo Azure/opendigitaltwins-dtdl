@@ -1,0 +1,40 @@
+﻿[
+  {
+    "valid": true,
+    "desirable": true,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:rho_um;1",
+        "@type": "Interface",
+        "schemas": [
+          {
+            "@id": "dtmi:example:rho_humpf;1",
+            "@type": "Array",
+            "elementSchema": "dateTime"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "desirable": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:rho_fuddle;1",
+        "@type": "Interface",
+        "dtmi:dtdl:property:schemas;3": [
+          {
+            "@id": "dtmi:example:rho_glikk;1",
+            "@type": "Array",
+            "elementSchema": "double"
+          }
+        ]
+      }
+    ]
+  }
+]

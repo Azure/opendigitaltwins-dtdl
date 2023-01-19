@@ -1,0 +1,36 @@
+﻿[
+  {
+    "valid": true,
+    "desirable": true,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:iota_glikk;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Property",
+          "name": "iota_fuddle",
+          "schema": "dateTime"
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "desirable": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:iota_snee;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Property",
+          "dtmi:dtdl:property:name;2": "iota_nuh",
+          "schema": "double"
+        }
+      }
+    ]
+  }
+]

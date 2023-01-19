@@ -1,0 +1,72 @@
+﻿[
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:xi_upsilon;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Property",
+          "name": "xi_tau",
+          "schema": "point"
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:xi_chi;1",
+        "@type": "Interface",
+        "contents": {
+          "@context": "dtmi:undefinedExtension:context;1",
+          "@type": "Property",
+          "name": "xi_phi",
+          "schema": "point"
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:xi_omega;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Property",
+          "name": "xi_psi",
+          "schema": "dtmi:standard:schema:geospatial:point;2"
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:xi_wum;1",
+        "@type": "Interface",
+        "contents": {
+          "@context": "dtmi:undefinedExtension:context;1",
+          "@type": "Property",
+          "name": "xi_yuzz",
+          "schema": "dtmi:standard:schema:geospatial:point;2"
+        }
+      }
+    ]
+  }
+]

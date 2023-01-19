@@ -1,0 +1,37 @@
+﻿[
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:nu_omicron;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Relationship",
+          "name": "nu_xi",
+          "foobar": {}
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:nu_rho;1",
+        "@type": "Interface",
+        "contents": {
+          "@context": "dtmi:undefinedExtension:context;1",
+          "@type": "Relationship",
+          "name": "nu_pi",
+          "foobar": {}
+        }
+      }
+    ]
+  }
+]

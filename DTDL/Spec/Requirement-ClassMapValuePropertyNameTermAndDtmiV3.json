@@ -1,0 +1,53 @@
+﻿[
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:zeta_flunn;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:zeta_zatz;1",
+          "@type": "Map",
+          "mapKey": {
+            "name": "zeta_jogg",
+            "schema": "string"
+          },
+          "mapValue": {
+            "name": "zeta_spazz",
+            "dtmi:dtdl:property:name;3": "zeta_floob",
+            "schema": "boolean"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:eta_alpha;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:zeta_vroo;1",
+          "@type": "Map",
+          "mapKey": {
+            "name": "zeta_hi",
+            "schema": "string"
+          },
+          "mapValue": {
+            "@context": "dtmi:undefinedExtension:context;1",
+            "name": "zeta_itch",
+            "dtmi:dtdl:property:name;3": "zeta_yekk",
+            "schema": "date"
+          }
+        }
+      }
+    ]
+  }
+]

@@ -1,0 +1,39 @@
+﻿[
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:beta_epsilon;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Relationship",
+          "maxMultiplicity": 1473,
+          "dtmi:dtdl:property:maxMultiplicity;3": 1474,
+          "name": "beta_delta"
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:beta_eta;1",
+        "@type": "Interface",
+        "contents": {
+          "@context": "dtmi:undefinedExtension:context;1",
+          "@type": "Relationship",
+          "maxMultiplicity": 1475,
+          "dtmi:dtdl:property:maxMultiplicity;3": 1476,
+          "name": "beta_zeta"
+        }
+      }
+    ]
+  }
+]

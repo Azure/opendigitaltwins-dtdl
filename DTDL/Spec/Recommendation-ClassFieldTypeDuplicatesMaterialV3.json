@@ -1,0 +1,50 @@
+﻿[
+  {
+    "valid": true,
+    "desirable": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:quan_pi;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:quan_omicron;1",
+          "@type": "Object",
+          "fields": {
+            "name": "quan_xi",
+            "schema": "boolean",
+            "@type": [
+              "Field",
+              "Field"
+            ]
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "desirable": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:quan_tau;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:quan_sigma;1",
+          "@type": "Object",
+          "fields": {
+            "name": "quan_rho",
+            "schema": "date",
+            "@type": [
+              "dtmi:dtdl:class:Field;3",
+              "dtmi:dtdl:class:Field;3"
+            ]
+          }
+        }
+      }
+    ]
+  }
+]

@@ -1,0 +1,50 @@
+﻿[
+  {
+    "valid": true,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:floob_omega;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Relationship",
+          "name": "SupercalifragilisticexpialidociousEvenThoughTheSoundOfItIsSometh"
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:floob_yuzz;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Relationship",
+          "name": "SupercalifragilisticexpialidociousEvenThoughTheSoundOfItIsSomethi"
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:floob_wum;1",
+        "@type": "Interface",
+        "contents": {
+          "@context": "dtmi:undefinedExtension:context;1",
+          "@type": "Relationship",
+          "name": "SupercalifragilisticexpialidociousEvenThoughTheSoundOfItIsSomethi"
+        }
+      }
+    ]
+  }
+]

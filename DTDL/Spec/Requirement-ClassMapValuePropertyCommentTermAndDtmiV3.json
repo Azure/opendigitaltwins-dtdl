@@ -1,0 +1,55 @@
+﻿[
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:fuddle_hi;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:fuddle_yekk;1",
+          "@type": "Map",
+          "mapKey": {
+            "name": "fuddle_vroo",
+            "schema": "string"
+          },
+          "mapValue": {
+            "comment": "fuddle_jogg",
+            "dtmi:dtdl:property:comment;3": "fuddle_flunn",
+            "name": "fuddle_itch",
+            "schema": "time"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:glikk_zeta;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:glikk_delta;1",
+          "@type": "Map",
+          "mapKey": {
+            "name": "glikk_epsilon",
+            "schema": "string"
+          },
+          "mapValue": {
+            "@context": "dtmi:undefinedExtension:context;1",
+            "comment": "glikk_alpha",
+            "dtmi:dtdl:property:comment;3": "glikk_beta",
+            "name": "glikk_gamma",
+            "schema": "boolean"
+          }
+        }
+      }
+    ]
+  }
+]

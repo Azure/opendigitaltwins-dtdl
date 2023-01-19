@@ -1,0 +1,84 @@
+﻿[
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:mu_glikk;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": [
+            "Relationship",
+            "Foobar"
+          ],
+          "name": "mu_fuddle",
+          "dtmi:foo:bar;1": 626
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:mu_snee;1",
+        "@type": "Interface",
+        "contents": {
+          "@context": "dtmi:undefinedExtension:context;1",
+          "@type": [
+            "Relationship",
+            "Foobar"
+          ],
+          "name": "mu_nuh",
+          "dtmi:foo:bar;1": 626
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:mu_thnad;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": [
+            "Relationship",
+            "Foobar"
+          ],
+          "name": "mu_quan",
+          "boolean": null
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:mu_floob;1",
+        "@type": "Interface",
+        "contents": {
+          "@context": "dtmi:undefinedExtension:context;1",
+          "@type": [
+            "Relationship",
+            "Foobar"
+          ],
+          "name": "mu_spazz",
+          "boolean": null
+        }
+      }
+    ]
+  }
+]

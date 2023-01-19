@@ -1,0 +1,495 @@
+﻿[
+  {
+    "valid": true,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:zeta_beta;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:zeta_alpha;1",
+          "@type": "Enum",
+          "enumValues": {
+            "name": "epsilon_hi",
+            "enumValue": "hello"
+          },
+          "valueSchema": "string"
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:zeta_epsilon;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:zeta_delta;1",
+          "@type": "Enum",
+          "enumValues": {
+            "name": "zeta_gamma",
+            "enumValue": [
+              "hello"
+            ]
+          },
+          "valueSchema": "string"
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:zeta_theta;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:zeta_eta;1",
+          "@type": "Enum",
+          "enumValues": {
+            "name": "zeta_zeta",
+            "enumValue": {
+              "@value": "hello",
+              "@type": "xsd:string"
+            }
+          },
+          "valueSchema": "string"
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:zeta_lambda;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:zeta_kappa;1",
+          "@type": "Enum",
+          "enumValues": {
+            "name": "zeta_iota",
+            "enumValue": [
+              {
+                "@value": "hello",
+                "@type": "xsd:string"
+              }
+            ]
+          },
+          "valueSchema": "string"
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:zeta_xi;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:zeta_nu;1",
+          "@type": "Enum",
+          "enumValues": {
+            "name": "zeta_mu",
+            "enumValue": null
+          },
+          "valueSchema": "string"
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:zeta_rho;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:zeta_pi;1",
+          "@type": "Enum",
+          "enumValues": {
+            "@context": "dtmi:undefinedExtension:context;1",
+            "name": "zeta_omicron",
+            "enumValue": null
+          },
+          "valueSchema": "string"
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:zeta_upsilon;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:zeta_tau;1",
+          "@type": "Enum",
+          "enumValues": {
+            "name": "zeta_sigma",
+            "enumValue": true
+          },
+          "valueSchema": "string"
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:zeta_psi;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:zeta_chi;1",
+          "@type": "Enum",
+          "enumValues": {
+            "@context": "dtmi:undefinedExtension:context;1",
+            "name": "zeta_phi",
+            "enumValue": true
+          },
+          "valueSchema": "string"
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:zeta_wum;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:zeta_yuzz;1",
+          "@type": "Enum",
+          "enumValues": {
+            "name": "zeta_omega",
+            "enumValue": 626
+          },
+          "valueSchema": "string"
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:zeta_fuddle;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:zeta_humpf;1",
+          "@type": "Enum",
+          "enumValues": {
+            "@context": "dtmi:undefinedExtension:context;1",
+            "name": "zeta_um",
+            "enumValue": 626
+          },
+          "valueSchema": "string"
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:zeta_snee;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:zeta_nuh;1",
+          "@type": "Enum",
+          "enumValues": {
+            "name": "zeta_glikk",
+            "enumValue": [
+              null
+            ]
+          },
+          "valueSchema": "string"
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:zeta_spazz;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:zeta_thnad;1",
+          "@type": "Enum",
+          "enumValues": {
+            "@context": "dtmi:undefinedExtension:context;1",
+            "name": "zeta_quan",
+            "enumValue": [
+              null
+            ]
+          },
+          "valueSchema": "string"
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:zeta_jogg;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:zeta_zatz;1",
+          "@type": "Enum",
+          "enumValues": {
+            "name": "zeta_floob",
+            "enumValue": [
+              true
+            ]
+          },
+          "valueSchema": "string"
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:zeta_yekk;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:zeta_itch;1",
+          "@type": "Enum",
+          "enumValues": {
+            "@context": "dtmi:undefinedExtension:context;1",
+            "name": "zeta_flunn",
+            "enumValue": [
+              true
+            ]
+          },
+          "valueSchema": "string"
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:eta_alpha;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:zeta_hi;1",
+          "@type": "Enum",
+          "enumValues": {
+            "name": "zeta_vroo",
+            "enumValue": [
+              626
+            ]
+          },
+          "valueSchema": "string"
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:eta_delta;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:eta_gamma;1",
+          "@type": "Enum",
+          "enumValues": {
+            "@context": "dtmi:undefinedExtension:context;1",
+            "name": "eta_beta",
+            "enumValue": [
+              626
+            ]
+          },
+          "valueSchema": "string"
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:eta_eta;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:eta_zeta;1",
+          "@type": "Enum",
+          "enumValues": {
+            "name": "eta_epsilon",
+            "enumValue": {}
+          },
+          "valueSchema": "string"
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:eta_kappa;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:eta_iota;1",
+          "@type": "Enum",
+          "enumValues": {
+            "@context": "dtmi:undefinedExtension:context;1",
+            "name": "eta_theta",
+            "enumValue": {}
+          },
+          "valueSchema": "string"
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:eta_nu;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:eta_mu;1",
+          "@type": "Enum",
+          "enumValues": {
+            "name": "eta_lambda",
+            "enumValue": [
+              {}
+            ]
+          },
+          "valueSchema": "string"
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:eta_pi;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:eta_omicron;1",
+          "@type": "Enum",
+          "enumValues": {
+            "@context": "dtmi:undefinedExtension:context;1",
+            "name": "eta_xi",
+            "enumValue": [
+              {}
+            ]
+          },
+          "valueSchema": "string"
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:eta_tau;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:eta_sigma;1",
+          "@type": "Enum",
+          "enumValues": {
+            "name": "eta_rho",
+            "enumValue": []
+          },
+          "valueSchema": "string"
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:eta_chi;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:eta_phi;1",
+          "@type": "Enum",
+          "enumValues": {
+            "@context": "dtmi:undefinedExtension:context;1",
+            "name": "eta_upsilon",
+            "enumValue": []
+          },
+          "valueSchema": "string"
+        }
+      }
+    ]
+  }
+]

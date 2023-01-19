@@ -1,0 +1,66 @@
+﻿[
+  {
+    "valid": true,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:yekk_psi;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Property",
+          "name": "yekk_chi",
+          "schema": {
+            "@type": "Object"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:yekk_yuzz;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:yekk_omega;1",
+          "@type": "Object"
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:yekk_wum;1",
+        "@type": "Interface",
+        "schemas": {
+          "@type": "Object"
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:yekk_um;1",
+        "@type": "Interface",
+        "schemas": {
+          "@context": "dtmi:undefinedExtension:context;1",
+          "@type": "Object"
+        }
+      }
+    ]
+  }
+]

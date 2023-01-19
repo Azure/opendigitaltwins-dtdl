@@ -1,0 +1,40 @@
+﻿[
+  {
+    "valid": true,
+    "desirable": true,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:beta_delta;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Relationship",
+          "description": [
+            "beta_beta"
+          ],
+          "name": "beta_gamma"
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "desirable": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:beta_eta;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Relationship",
+          "dtmi:dtdl:property:description;2": [
+            "beta_epsilon"
+          ],
+          "name": "beta_zeta"
+        }
+      }
+    ]
+  }
+]

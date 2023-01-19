@@ -1,0 +1,65 @@
+﻿[
+  {
+    "valid": true,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:kappa_alpha;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Component",
+          "name": "iota_vroo",
+          "schema": {
+            "@id": "dtmi:example:iota_hi;1",
+            "@type": "Interface"
+          },
+          "displayName": "SupercalifragilisticexpialidociousEvenThoughTheSoundOfItIsSometh"
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:kappa_delta;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Component",
+          "name": "kappa_beta",
+          "schema": {
+            "@id": "dtmi:example:kappa_gamma;1",
+            "@type": "Interface"
+          },
+          "displayName": "SupercalifragilisticexpialidociousEvenThoughTheSoundOfItIsSomethi"
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:kappa_eta;1",
+        "@type": "Interface",
+        "contents": {
+          "@context": "dtmi:undefinedExtension:context;1",
+          "@type": "Component",
+          "name": "kappa_epsilon",
+          "schema": {
+            "@id": "dtmi:example:kappa_zeta;1",
+            "@type": "Interface"
+          },
+          "displayName": "SupercalifragilisticexpialidociousEvenThoughTheSoundOfItIsSomethi"
+        }
+      }
+    ]
+  }
+]

@@ -1,0 +1,61 @@
+﻿[
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:zatz_um;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:zatz_omega;1",
+          "@type": "Enum",
+          "enumValues": [
+            {
+              "enumValue": 1131,
+              "name": "zatz_yuzz"
+            }
+          ],
+          "dtmi:dtdl:property:enumValues;3": [
+            {
+              "enumValue": 1132,
+              "name": "zatz_wum"
+            }
+          ],
+          "valueSchema": "integer"
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:zatz_nuh;1",
+        "@type": "Interface",
+        "schemas": {
+          "@context": "dtmi:undefinedExtension:context;1",
+          "@id": "dtmi:example:zatz_humpf;1",
+          "@type": "Enum",
+          "enumValues": [
+            {
+              "enumValue": 1133,
+              "name": "zatz_fuddle"
+            }
+          ],
+          "dtmi:dtdl:property:enumValues;3": [
+            {
+              "enumValue": 1134,
+              "name": "zatz_glikk"
+            }
+          ],
+          "valueSchema": "integer"
+        }
+      }
+    ]
+  }
+]

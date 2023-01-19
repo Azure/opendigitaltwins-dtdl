@@ -1,0 +1,42 @@
+﻿[
+  {
+    "valid": true,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:upsilon_fuddle;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": [
+            "Telemetry",
+            "Area"
+          ],
+          "name": "upsilon_humpf",
+          "schema": "double",
+          "unit": "acre"
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:upsilon_nuh;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": [
+            "Telemetry",
+            "Area"
+          ],
+          "name": "upsilon_glikk",
+          "schema": "float",
+          "dtmi:dtdl:property:unit;2": "acre"
+        }
+      }
+    ]
+  }
+]

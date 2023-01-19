@@ -1,0 +1,56 @@
+﻿[
+  {
+    "valid": true,
+    "desirable": true,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:zatz_yekk;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:zatz_zatz;1",
+          "@type": "Map",
+          "displayName": [
+            "zatz_jogg"
+          ],
+          "mapKey": {
+            "name": "zatz_flunn",
+            "schema": "string"
+          },
+          "mapValue": {
+            "name": "zatz_itch",
+            "schema": "integer"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "desirable": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:jogg_gamma;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:zatz_vroo;1",
+          "@type": "Map",
+          "dtmi:dtdl:property:displayName;2": [
+            "zatz_hi"
+          ],
+          "mapKey": {
+            "name": "jogg_alpha",
+            "schema": "string"
+          },
+          "mapValue": {
+            "name": "jogg_beta",
+            "schema": "long"
+          }
+        }
+      }
+    ]
+  }
+]

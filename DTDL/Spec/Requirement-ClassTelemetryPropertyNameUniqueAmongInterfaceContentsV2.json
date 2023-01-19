@@ -1,0 +1,76 @@
+﻿[
+  {
+    "valid": true,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:yekk_sigma;1",
+        "@type": "Interface",
+        "contents": [
+          {
+            "@type": "Telemetry",
+            "schema": "string",
+            "name": "beta_rho"
+          },
+          {
+            "@type": "Telemetry",
+            "schema": "time",
+            "name": "beta_sigma"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:yekk_tau;1",
+        "@type": "Interface",
+        "contents": [
+          {
+            "@type": "Telemetry",
+            "schema": "boolean",
+            "name": "beta_rho"
+          },
+          {
+            "@type": "Telemetry",
+            "schema": "date",
+            "name": "beta_rho"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": [
+          "dtmi:dtdl:context;2",
+          "dtmi:undefinedExtension:context;1"
+        ],
+        "@id": "dtmi:example:yekk_upsilon;1",
+        "@type": "Interface",
+        "contents": [
+          {
+            "@type": "Telemetry",
+            "schema": "dateTime",
+            "name": "beta_rho"
+          },
+          {
+            "@type": "Telemetry",
+            "schema": "double",
+            "name": "beta_rho"
+          }
+        ]
+      }
+    ]
+  }
+]

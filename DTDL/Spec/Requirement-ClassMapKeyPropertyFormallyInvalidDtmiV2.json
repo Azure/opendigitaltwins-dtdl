@@ -1,0 +1,53 @@
+﻿[
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:quan_upsilon;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:quan_sigma;1",
+          "@type": "Map",
+          "mapValue": {
+            "name": "quan_tau",
+            "schema": "integer"
+          },
+          "mapKey": {
+            "name": "quan_rho",
+            "schema": "string",
+            "dtmi:foo//bar": 626
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:quan_omega;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:quan_chi;1",
+          "@type": "Map",
+          "mapValue": {
+            "name": "quan_psi",
+            "schema": "long"
+          },
+          "mapKey": {
+            "@context": "dtmi:undefinedExtension:context;1",
+            "name": "quan_phi",
+            "schema": "string",
+            "dtmi:foo//bar": 626
+          }
+        }
+      }
+    ]
+  }
+]

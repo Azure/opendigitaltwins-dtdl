@@ -1,0 +1,26 @@
+﻿[
+  {
+    "valid": true,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:fuddle_epsilon;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:fuddle_gamma;1",
+          "@type": [
+            "Object",
+            "Foobar"
+          ],
+          "fields": [
+            {
+              "name": "fuddle_delta",
+              "schema": "long"
+            }
+          ]
+        }
+      }
+    ]
+  }
+]

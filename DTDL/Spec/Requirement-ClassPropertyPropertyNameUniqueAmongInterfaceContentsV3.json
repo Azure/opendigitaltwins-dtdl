@@ -1,0 +1,76 @@
+﻿[
+  {
+    "valid": true,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:nu_chi;1",
+        "@type": "Interface",
+        "contents": [
+          {
+            "@type": "Property",
+            "schema": "dateTime",
+            "name": "gamma_yuzz"
+          },
+          {
+            "@type": "Property",
+            "schema": "double",
+            "name": "gamma_wum"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:nu_psi;1",
+        "@type": "Interface",
+        "contents": [
+          {
+            "@type": "Property",
+            "schema": "duration",
+            "name": "gamma_yuzz"
+          },
+          {
+            "@type": "Property",
+            "schema": "float",
+            "name": "gamma_yuzz"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": [
+          "dtmi:dtdl:context;3",
+          "dtmi:undefinedExtension:context;1"
+        ],
+        "@id": "dtmi:example:nu_omega;1",
+        "@type": "Interface",
+        "contents": [
+          {
+            "@type": "Property",
+            "schema": "integer",
+            "name": "gamma_yuzz"
+          },
+          {
+            "@type": "Property",
+            "schema": "long",
+            "name": "gamma_yuzz"
+          }
+        ]
+      }
+    ]
+  }
+]

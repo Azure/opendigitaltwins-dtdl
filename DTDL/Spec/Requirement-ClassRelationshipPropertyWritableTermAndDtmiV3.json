@@ -1,0 +1,39 @@
+﻿[
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:mu_kappa;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Relationship",
+          "name": "mu_iota",
+          "writable": false,
+          "dtmi:dtdl:property:writable;3": true
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:mu_mu;1",
+        "@type": "Interface",
+        "contents": {
+          "@context": "dtmi:undefinedExtension:context;1",
+          "@type": "Relationship",
+          "name": "mu_lambda",
+          "writable": false,
+          "dtmi:dtdl:property:writable;3": true
+        }
+      }
+    ]
+  }
+]

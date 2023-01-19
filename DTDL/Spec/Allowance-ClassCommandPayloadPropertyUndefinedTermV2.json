@@ -1,0 +1,26 @@
+﻿[
+  {
+    "valid": true,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:glikk_zeta;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Command",
+          "name": "glikk_epsilon",
+          "request": {
+            "@type": [
+              "CommandPayload",
+              "Foobar"
+            ],
+            "name": "glikk_delta",
+            "schema": "string",
+            "foobar": {}
+          }
+        }
+      }
+    ]
+  }
+]

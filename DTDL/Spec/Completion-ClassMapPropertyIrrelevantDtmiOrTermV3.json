@@ -1,0 +1,116 @@
+﻿[
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:eta_nu;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:eta_kappa;1",
+          "@type": [
+            "Map",
+            "Foobar"
+          ],
+          "mapKey": {
+            "name": "eta_lambda",
+            "schema": "string"
+          },
+          "mapValue": {
+            "name": "eta_mu",
+            "schema": "duration"
+          },
+          "dtmi:foo:bar;1": 626
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:eta_rho;1",
+        "@type": "Interface",
+        "schemas": {
+          "@context": "dtmi:undefinedExtension:context;1",
+          "@id": "dtmi:example:eta_xi;1",
+          "@type": [
+            "Map",
+            "Foobar"
+          ],
+          "mapKey": {
+            "name": "eta_omicron",
+            "schema": "string"
+          },
+          "mapValue": {
+            "name": "eta_pi",
+            "schema": "float"
+          },
+          "dtmi:foo:bar;1": 626
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:eta_phi;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:eta_sigma;1",
+          "@type": [
+            "Map",
+            "Foobar"
+          ],
+          "mapKey": {
+            "name": "eta_tau",
+            "schema": "string"
+          },
+          "mapValue": {
+            "name": "eta_upsilon",
+            "schema": "integer"
+          },
+          "boolean": null
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:eta_yuzz;1",
+        "@type": "Interface",
+        "schemas": {
+          "@context": "dtmi:undefinedExtension:context;1",
+          "@id": "dtmi:example:eta_chi;1",
+          "@type": [
+            "Map",
+            "Foobar"
+          ],
+          "mapKey": {
+            "name": "eta_psi",
+            "schema": "string"
+          },
+          "mapValue": {
+            "name": "eta_omega",
+            "schema": "long"
+          },
+          "boolean": null
+        }
+      }
+    ]
+  }
+]

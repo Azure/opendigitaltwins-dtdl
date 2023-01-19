@@ -1,0 +1,678 @@
+﻿[
+  {
+    "valid": true,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:rho_alpha;1",
+        "@type": "Interface",
+        "extends": {
+          "@id": "dtmi:example:pi_hi;1",
+          "@type": "Interface",
+          "contents": {
+            "@type": "Telemetry",
+            "name": "pi_vroo",
+            "schema": {
+              "@type": "Array",
+              "elementSchema": "boolean"
+            }
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:rho_delta;1",
+        "@type": "Interface",
+        "extends": {
+          "@id": "dtmi:example:rho_gamma;1",
+          "@type": "Interface",
+          "contents": {
+            "@type": "Telemetry",
+            "name": "rho_beta",
+            "schema": [
+              {
+                "@type": "Array",
+                "elementSchema": "date"
+              }
+            ]
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:rho_epsilon;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:ex:dependentRef;1",
+          "@type": "Array",
+          "elementSchema": "dateTime"
+        },
+        "contents": {
+          "@type": "Telemetry",
+          "name": "rho_zeta",
+          "schema": "dtmi:ex:dependentRef;1"
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:rho_eta;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:ex:dependentRef;1",
+          "@type": "Array",
+          "elementSchema": "double"
+        },
+        "contents": {
+          "@type": "Telemetry",
+          "name": "rho_theta",
+          "schema": [
+            "dtmi:ex:dependentRef;1"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:rho_mu;1",
+        "@type": "Interface",
+        "extends": {
+          "@id": "dtmi:example:rho_lambda;1",
+          "@type": "Interface",
+          "contents": {
+            "@type": "Telemetry",
+            "name": "rho_kappa",
+            "schema": {
+              "@id": "dtmi:example:rho_iota;1",
+              "@type": "Array",
+              "elementSchema": "duration",
+              "@context": "dtmi:dtdl:context;2"
+            }
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:rho_nu;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:ex:dependentRef;1",
+          "@type": "Array",
+          "elementSchema": "integer"
+        },
+        "contents": {
+          "@type": "Telemetry",
+          "name": "rho_xi",
+          "schema": [
+            {
+              "@type": "Array",
+              "elementSchema": "float"
+            },
+            "dtmi:ex:dependentRef;1"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:rho_omicron;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:ex:dependentRef;1",
+          "@type": "Array",
+          "elementSchema": "string"
+        },
+        "contents": {
+          "@context": "dtmi:undefinedExtension:context;1",
+          "@type": "Telemetry",
+          "name": "rho_pi",
+          "schema": [
+            {
+              "@type": "Array",
+              "elementSchema": "long"
+            },
+            "dtmi:ex:dependentRef;1"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:rho_sigma;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Telemetry",
+          "name": "rho_rho",
+          "schema": "dateTime"
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:rho_upsilon;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Telemetry",
+          "name": "rho_tau",
+          "schema": [
+            "dateTime"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:rho_chi;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Telemetry",
+          "name": "rho_phi",
+          "schema": "dtmi:dtdl:instance:Schema:dateTime;3"
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:rho_omega;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Telemetry",
+          "name": "rho_psi",
+          "schema": [
+            "dtmi:dtdl:instance:Schema:dateTime;3"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:rho_wum;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Telemetry",
+          "name": "rho_yuzz",
+          "schema": "point"
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:rho_humpf;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Telemetry",
+          "name": "rho_um",
+          "schema": [
+            "point"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:rho_glikk;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Telemetry",
+          "name": "rho_fuddle",
+          "schema": "dtmi:standard:schema:geospatial:point;3"
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:rho_snee;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Telemetry",
+          "name": "rho_nuh",
+          "schema": [
+            "dtmi:standard:schema:geospatial:point;3"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:rho_thnad;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Telemetry",
+          "name": "rho_quan",
+          "schema": "Foobar"
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:rho_floob;1",
+        "@type": "Interface",
+        "contents": {
+          "@context": "dtmi:undefinedExtension:context;1",
+          "@type": "Telemetry",
+          "name": "rho_spazz",
+          "schema": "Foobar"
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:rho_jogg;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Telemetry",
+          "name": "rho_zatz",
+          "schema": null
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:rho_itch;1",
+        "@type": "Interface",
+        "contents": {
+          "@context": "dtmi:undefinedExtension:context;1",
+          "@type": "Telemetry",
+          "name": "rho_flunn",
+          "schema": null
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:rho_vroo;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Telemetry",
+          "name": "rho_yekk",
+          "schema": true
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:sigma_alpha;1",
+        "@type": "Interface",
+        "contents": {
+          "@context": "dtmi:undefinedExtension:context;1",
+          "@type": "Telemetry",
+          "name": "rho_hi",
+          "schema": true
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:sigma_gamma;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Telemetry",
+          "name": "sigma_beta",
+          "schema": 626
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:sigma_epsilon;1",
+        "@type": "Interface",
+        "contents": {
+          "@context": "dtmi:undefinedExtension:context;1",
+          "@type": "Telemetry",
+          "name": "sigma_delta",
+          "schema": 626
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:sigma_eta;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Telemetry",
+          "name": "sigma_zeta",
+          "schema": [
+            null
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:sigma_iota;1",
+        "@type": "Interface",
+        "contents": {
+          "@context": "dtmi:undefinedExtension:context;1",
+          "@type": "Telemetry",
+          "name": "sigma_theta",
+          "schema": [
+            null
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:sigma_lambda;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Telemetry",
+          "name": "sigma_kappa",
+          "schema": [
+            true
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:sigma_nu;1",
+        "@type": "Interface",
+        "contents": {
+          "@context": "dtmi:undefinedExtension:context;1",
+          "@type": "Telemetry",
+          "name": "sigma_mu",
+          "schema": [
+            true
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:sigma_omicron;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Telemetry",
+          "name": "sigma_xi",
+          "schema": [
+            626
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:sigma_rho;1",
+        "@type": "Interface",
+        "contents": {
+          "@context": "dtmi:undefinedExtension:context;1",
+          "@type": "Telemetry",
+          "name": "sigma_pi",
+          "schema": [
+            626
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:sigma_tau;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Telemetry",
+          "name": "sigma_sigma",
+          "schema": {}
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:sigma_phi;1",
+        "@type": "Interface",
+        "contents": {
+          "@context": "dtmi:undefinedExtension:context;1",
+          "@type": "Telemetry",
+          "name": "sigma_upsilon",
+          "schema": {}
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:sigma_psi;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Telemetry",
+          "name": "sigma_chi",
+          "schema": [
+            {}
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:sigma_yuzz;1",
+        "@type": "Interface",
+        "contents": {
+          "@context": "dtmi:undefinedExtension:context;1",
+          "@type": "Telemetry",
+          "name": "sigma_omega",
+          "schema": [
+            {}
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:sigma_um;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Telemetry",
+          "name": "sigma_wum",
+          "schema": []
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:sigma_fuddle;1",
+        "@type": "Interface",
+        "contents": {
+          "@context": "dtmi:undefinedExtension:context;1",
+          "@type": "Telemetry",
+          "name": "sigma_humpf",
+          "schema": []
+        }
+      }
+    ]
+  }
+]

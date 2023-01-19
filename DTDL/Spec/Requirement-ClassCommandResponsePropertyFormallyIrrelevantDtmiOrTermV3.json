@@ -1,0 +1,88 @@
+﻿[
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:spazz_quan;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Command",
+          "name": "spazz_snee",
+          "response": {
+            "name": "spazz_nuh",
+            "schema": "string",
+            "dtmi:foo:bar;1": 626
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:spazz_floob;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Command",
+          "name": "spazz_spazz",
+          "response": {
+            "@context": "dtmi:undefinedExtension:context;1",
+            "name": "spazz_thnad",
+            "schema": "time",
+            "dtmi:foo:bar;1": 626
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:spazz_flunn;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Command",
+          "name": "spazz_jogg",
+          "response": {
+            "name": "spazz_zatz",
+            "schema": "boolean",
+            "boolean": null
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:spazz_vroo;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Command",
+          "name": "spazz_yekk",
+          "response": {
+            "@context": "dtmi:undefinedExtension:context;1",
+            "name": "spazz_itch",
+            "schema": "date",
+            "boolean": null
+          }
+        }
+      }
+    ]
+  }
+]

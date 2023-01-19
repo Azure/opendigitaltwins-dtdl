@@ -1,0 +1,59 @@
+﻿[
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:theta_glikk;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:theta_humpf;1",
+          "@type": "Map",
+          "mapKey": {
+            "name": "theta_fuddle",
+            "schema": "string"
+          },
+          "mapValue": {
+            "@type": [
+              "MapValue",
+              "dtmi:foo//bar"
+            ],
+            "name": "theta_um",
+            "schema": "duration"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:theta_thnad;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:theta_snee;1",
+          "@type": "Map",
+          "mapKey": {
+            "name": "theta_quan",
+            "schema": "string"
+          },
+          "mapValue": {
+            "@context": "dtmi:undefinedExtension:context;1",
+            "@type": [
+              "MapValue",
+              "dtmi:foo//bar"
+            ],
+            "name": "theta_nuh",
+            "schema": "float"
+          }
+        }
+      }
+    ]
+  }
+]

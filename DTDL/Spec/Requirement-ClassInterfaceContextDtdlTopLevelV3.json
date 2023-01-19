@@ -1,0 +1,54 @@
+﻿[
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@id": "dtmi:example:zeta_iota;1",
+        "@type": "Interface",
+        "@context": []
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@id": "dtmi:example:zeta_kappa;1",
+        "@type": "Interface",
+        "@context": "dtmi:dtdl:extension:quantitativeTypes;1"
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:zeta_mu;1",
+        "@type": "Interface",
+        "extends": {
+          "@id": "dtmi:example:zeta_lambda;1",
+          "@type": "Interface",
+          "@context": "dtmi:dtdl:extension:quantitativeTypes;1"
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "options": [],
+    "input": [
+      {
+        "@id": "dtmi:example:zeta_nu;1",
+        "@type": "Interface",
+        "@context": [
+          "dtmi:dtdl:context;3",
+          "dtmi:dtdl:extension:quantitativeTypes;1"
+        ]
+      }
+    ]
+  }
+]

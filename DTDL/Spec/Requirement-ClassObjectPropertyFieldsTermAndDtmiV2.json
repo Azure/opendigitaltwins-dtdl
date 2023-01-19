@@ -1,0 +1,59 @@
+﻿[
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:spazz_tau;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:spazz_pi;1",
+          "@type": "Object",
+          "fields": [
+            {
+              "name": "spazz_rho",
+              "schema": "long"
+            }
+          ],
+          "dtmi:dtdl:property:fields;2": [
+            {
+              "name": "spazz_sigma",
+              "schema": "string"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:spazz_psi;1",
+        "@type": "Interface",
+        "schemas": {
+          "@context": "dtmi:undefinedExtension:context;1",
+          "@id": "dtmi:example:spazz_upsilon;1",
+          "@type": "Object",
+          "fields": [
+            {
+              "name": "spazz_phi",
+              "schema": "time"
+            }
+          ],
+          "dtmi:dtdl:property:fields;2": [
+            {
+              "name": "spazz_chi",
+              "schema": "boolean"
+            }
+          ]
+        }
+      }
+    ]
+  }
+]

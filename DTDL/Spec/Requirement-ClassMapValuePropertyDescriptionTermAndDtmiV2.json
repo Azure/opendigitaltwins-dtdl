@@ -1,0 +1,63 @@
+﻿[
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:phi_eta;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:phi_epsilon;1",
+          "@type": "Map",
+          "mapKey": {
+            "name": "phi_zeta",
+            "schema": "string"
+          },
+          "mapValue": {
+            "description": [
+              "phi_beta"
+            ],
+            "dtmi:dtdl:property:description;2": [
+              "phi_gamma"
+            ],
+            "name": "phi_delta",
+            "schema": "float"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:phi_nu;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:phi_lambda;1",
+          "@type": "Map",
+          "mapKey": {
+            "name": "phi_mu",
+            "schema": "string"
+          },
+          "mapValue": {
+            "@context": "dtmi:undefinedExtension:context;1",
+            "description": [
+              "phi_theta"
+            ],
+            "dtmi:dtdl:property:description;2": [
+              "phi_iota"
+            ],
+            "name": "phi_kappa",
+            "schema": "integer"
+          }
+        }
+      }
+    ]
+  }
+]

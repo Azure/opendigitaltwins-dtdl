@@ -1,0 +1,25 @@
+﻿[
+  {
+    "valid": true,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:gamma_nu;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:gamma_lambda;1",
+          "@type": "Map",
+          "mapKey": {
+            "name": "gamma_mu",
+            "schema": "string"
+          },
+          "mapValue": {
+            "name": "gamma_kappa",
+            "dtmi:dtdl:property:schema;2": "duration"
+          }
+        }
+      }
+    ]
+  }
+]

@@ -1,0 +1,50 @@
+﻿[
+  {
+    "valid": true,
+    "desirable": true,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:pi_quan;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:pi_glikk;1",
+          "@type": "Map",
+          "mapKey": {
+            "name": "pi_nuh",
+            "schema": "string"
+          },
+          "mapValue": {
+            "name": "pi_snee",
+            "schema": "boolean"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "desirable": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:pi_zatz;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:pi_thnad;1",
+          "@type": "Map",
+          "dtmi:dtdl:property:mapKey;2": {
+            "name": "pi_spazz",
+            "schema": "string"
+          },
+          "mapValue": {
+            "name": "pi_floob",
+            "schema": "date"
+          }
+        }
+      }
+    ]
+  }
+]

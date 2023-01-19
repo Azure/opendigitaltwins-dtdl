@@ -1,0 +1,48 @@
+﻿[
+  {
+    "valid": true,
+    "desirable": true,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:wum_gamma;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:wum_alpha;1",
+          "@type": "Enum",
+          "enumValues": [
+            {
+              "enumValue": 407,
+              "name": "wum_beta"
+            }
+          ],
+          "valueSchema": "integer"
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "desirable": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:wum_zeta;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:wum_delta;1",
+          "@type": "Enum",
+          "dtmi:dtdl:property:enumValues;2": [
+            {
+              "enumValue": 408,
+              "name": "wum_epsilon"
+            }
+          ],
+          "valueSchema": "integer"
+        }
+      }
+    ]
+  }
+]

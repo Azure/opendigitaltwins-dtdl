@@ -1,0 +1,56 @@
+﻿[
+  {
+    "valid": true,
+    "desirable": true,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:humpf_nuh;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:humpf_fuddle;1",
+          "@type": "Map",
+          "mapValue": {
+            "name": "humpf_glikk",
+            "schema": "string"
+          },
+          "mapKey": {
+            "description": [
+              "humpf_um"
+            ],
+            "name": "humpf_humpf",
+            "schema": "string"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "desirable": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:humpf_floob;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:humpf_thnad;1",
+          "@type": "Map",
+          "mapValue": {
+            "name": "humpf_spazz",
+            "schema": "time"
+          },
+          "mapKey": {
+            "dtmi:dtdl:property:description;2": [
+              "humpf_snee"
+            ],
+            "name": "humpf_quan",
+            "schema": "string"
+          }
+        }
+      }
+    ]
+  }
+]

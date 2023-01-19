@@ -1,0 +1,65 @@
+﻿[
+  {
+    "valid": true,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:kappa_beta;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:kappa_alpha;1",
+          "@type": "Object",
+          "fields": {
+            "name": "iota_hi",
+            "schema": "integer",
+            "displayName": "SupercalifragilisticexpialidociousEvenThoughTheSoundOfItIsSometh"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:kappa_epsilon;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:kappa_delta;1",
+          "@type": "Object",
+          "fields": {
+            "name": "kappa_gamma",
+            "schema": "long",
+            "displayName": "SupercalifragilisticexpialidociousEvenThoughTheSoundOfItIsSomethi"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:kappa_theta;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:kappa_eta;1",
+          "@type": "Object",
+          "fields": {
+            "@context": "dtmi:undefinedExtension:context;1",
+            "name": "kappa_zeta",
+            "schema": "string",
+            "displayName": "SupercalifragilisticexpialidociousEvenThoughTheSoundOfItIsSomethi"
+          }
+        }
+      }
+    ]
+  }
+]

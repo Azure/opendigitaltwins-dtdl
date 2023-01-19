@@ -1,0 +1,61 @@
+﻿[
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:sigma_humpf;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:sigma_um;1",
+          "@type": "Enum",
+          "valueSchema": "integer",
+          "enumValues": []
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:sigma_glikk;1",
+        "@type": "Interface",
+        "schemas": {
+          "@context": "dtmi:undefinedExtension:context;1",
+          "@id": "dtmi:example:sigma_fuddle;1",
+          "@type": "Enum",
+          "valueSchema": "integer",
+          "enumValues": []
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:sigma_quan;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:sigma_snee;1",
+          "@type": "Enum",
+          "valueSchema": "integer",
+          "enumValues": [
+            {
+              "enumValue": 103,
+              "name": "sigma_nuh"
+            }
+          ]
+        }
+      }
+    ]
+  }
+]

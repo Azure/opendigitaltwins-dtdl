@@ -1,0 +1,63 @@
+﻿[
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:chi_yekk;1",
+        "@type": "Interface",
+        "contents": {
+          "@id": "dtmi:example:chi_yekk;1",
+          "@type": "Property",
+          "name": "psi_alpha",
+          "schema": {
+            "@id": "dtmi:example:chi_yekk;1",
+            "@type": "Map",
+            "mapValue": {
+              "name": "chi_hi",
+              "schema": "time"
+            },
+            "mapKey": {
+              "@id": "dtmi:example:chi_yekk;1",
+              "name": "chi_vroo",
+              "schema": "string"
+            }
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:psi_beta;1",
+        "@type": "Interface",
+        "contents": {
+          "@id": "dtmi:example:psi_beta;1",
+          "@type": "Property",
+          "name": "psi_epsilon",
+          "schema": {
+            "@id": "dtmi:example:psi_beta;1",
+            "@type": "Map",
+            "mapValue": {
+              "name": "psi_delta",
+              "schema": "boolean"
+            },
+            "mapKey": {
+              "@context": "dtmi:undefinedExtension:context;1",
+              "@id": "dtmi:example:psi_beta;1",
+              "name": "psi_gamma",
+              "schema": "string"
+            }
+          }
+        }
+      }
+    ]
+  }
+]

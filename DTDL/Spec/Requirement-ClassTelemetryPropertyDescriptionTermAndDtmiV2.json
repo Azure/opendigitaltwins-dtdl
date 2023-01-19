@@ -1,0 +1,49 @@
+﻿[
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:xi_omega;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Telemetry",
+          "description": [
+            "xi_phi"
+          ],
+          "dtmi:dtdl:property:description;2": [
+            "xi_chi"
+          ],
+          "name": "xi_psi",
+          "schema": "float"
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:xi_humpf;1",
+        "@type": "Interface",
+        "contents": {
+          "@context": "dtmi:undefinedExtension:context;1",
+          "@type": "Telemetry",
+          "description": [
+            "xi_yuzz"
+          ],
+          "dtmi:dtdl:property:description;2": [
+            "xi_wum"
+          ],
+          "name": "xi_um",
+          "schema": "integer"
+        }
+      }
+    ]
+  }
+]

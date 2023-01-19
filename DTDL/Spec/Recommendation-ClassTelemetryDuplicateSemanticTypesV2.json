@@ -1,0 +1,46 @@
+﻿[
+  {
+    "valid": true,
+    "desirable": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:flunn_nuh;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": [
+            "Telemetry",
+            "LuminousIntensity",
+            "LuminousIntensity"
+          ],
+          "name": "flunn_glikk",
+          "schema": "integer",
+          "unit": "candela"
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "desirable": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:flunn_quan;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": [
+            "Telemetry",
+            "dtmi:standard:class:LuminousIntensity;2",
+            "dtmi:standard:class:LuminousIntensity;2"
+          ],
+          "name": "flunn_snee",
+          "schema": "long",
+          "unit": "candela"
+        }
+      }
+    ]
+  }
+]

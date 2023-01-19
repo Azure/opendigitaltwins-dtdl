@@ -1,0 +1,45 @@
+﻿[
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:glikk_chi;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": [
+            "Property",
+            "Foobar"
+          ],
+          "name": "glikk_phi",
+          "schema": "date",
+          "http://foo.com/bar": true
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:glikk_omega;1",
+        "@type": "Interface",
+        "contents": {
+          "@context": "dtmi:undefinedExtension:context;1",
+          "@type": [
+            "Property",
+            "Foobar"
+          ],
+          "name": "glikk_psi",
+          "schema": "dateTime",
+          "http://foo.com/bar": true
+        }
+      }
+    ]
+  }
+]

@@ -1,0 +1,60 @@
+﻿[
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:eta_fuddle;1",
+        "@type": "Interface",
+        "dtmi:foo:bar;1": 626
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": [
+          "dtmi:dtdl:context;2",
+          "dtmi:undefinedExtension:context;1"
+        ],
+        "@id": "dtmi:example:eta_glikk;1",
+        "@type": "Interface",
+        "dtmi:foo:bar;1": 626
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:eta_nuh;1",
+        "@type": "Interface",
+        "boolean": null
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": [
+          "dtmi:dtdl:context;2",
+          "dtmi:undefinedExtension:context;1"
+        ],
+        "@id": "dtmi:example:eta_snee;1",
+        "@type": "Interface",
+        "boolean": null
+      }
+    ]
+  }
+]

@@ -1,0 +1,149 @@
+﻿{
+  "@context": [
+    "dtmi:dtdl:context;2",
+    "dtmi:iotcentral:context;2" ],
+  "@graph": [
+    {
+      "@id": "dtmi:iotcentral:documentation;2",
+      "@type": [ "dtmm:Documentation" ],
+      "dtmm:description": {
+        "en-US": "A set of semantic types and schema types used by IoT Central."
+      }
+    },
+    {
+      "@id": "dtmi:iotcentral:pragma;2",
+      "@type": [ "dtmm:Pragma" ],
+      "dtmm:implicitDtdlVersion": 2
+    },
+    {
+      "@id": "dtmi:iotcentral:restriction:global;2",
+      "@type": [ "dtmm:Global" ],
+      "dtmm:identifier": {
+        "@id": "dtmi:iotcentral:restriction:global:identifier;2",
+        "dtmm:reservedPrefix": [ "dtmi:iotcentral:" ]
+      }
+    },
+    {
+      "@id": "dtmi:iotcentral:class:State;2",
+      "@type": [ "rdfs:Class", "sh:NodeShape" ],
+      "dtmm:dtdlVersion": 2,
+      "rdfs:subClassOf": "SemanticType",
+      "sh:or": [
+        { "sh:class": "Property" },
+        { "sh:class": "Telemetry" }
+      ],
+      "sh:property": [
+        {
+          "@id": "dtmi:iotcentral:constraint:State:schema;2",
+          "sh:path": "schema",
+          "sh:class": "Enum"
+        }
+      ]
+    },
+    {
+      "@id": "dtmi:iotcentral:class:Event;2",
+      "@type": [ "rdfs:Class", "sh:NodeShape" ],
+      "dtmm:dtdlVersion": 2,
+      "rdfs:subClassOf": "SemanticType",
+      "sh:or": [
+        { "sh:class": "Property" },
+        { "sh:class": "Telemetry" }
+      ],
+      "sh:property": [
+        {
+          "@id": "dtmi:iotcentral:constraint:Event:schema;2",
+          "sh:path": "schema",
+          "sh:or": [
+            { "sh:class": "NumericSchema" },
+            { "sh:class": "String" }
+          ]
+        }
+      ]
+    },
+    {
+      "@id": "dtmi:iotcentral:class:Location;2",
+      "@type": [ "rdfs:Class", "sh:NodeShape" ],
+      "dtmm:dtdlVersion": 2,
+      "rdfs:subClassOf": "SemanticType",
+      "sh:or": [
+        { "sh:class": "Property" },
+        { "sh:class": "Telemetry" }
+      ],
+      "sh:property": [
+        {
+          "@id": "dtmi:iotcentral:constraint:Location:schema;2",
+          "sh:path": "schema",
+          "sh:in": [ "point", "multiPoint", "lineString", "multiLineString", "polygon", "multiPolygon", "geopoint" ]
+        }
+      ]
+    },
+    {
+      "@id": "dtmi:iotcentral:class:VelocityVector;2",
+      "@type": [ "rdfs:Class", "sh:NodeShape" ],
+      "dtmm:dtdlVersion": 2,
+      "rdfs:subClassOf": "SemanticType",
+      "sh:or": [
+        { "sh:class": "Property" },
+        { "sh:class": "Telemetry" }
+      ],
+      "dtmm:property": [
+        {
+          "@id": "dtmi:dtdl:property:unit;2",
+          "@type": "rdf:Property",
+          "rdfs:domain": "dtmi:iotcentral:class:VelocityVector;2"
+        }
+      ],
+      "sh:property": [
+        {
+          "@id": "dtmi:iotcentral:constraint:VelocityVector:unit;2",
+          "sh:path": "unit",
+          "sh:maxCount": 1,
+          "sh:class": "dtmi:standard:class:VelocityUnit;2",
+          "sh:nodeKind": "sh:BlankNodeOrIRI",
+          "dtmm:description": {
+            "en-US": "The unit type for data associated with the element."
+          }
+        },
+        {
+          "@id": "dtmi:iotcentral:constraint:VelocityVector:schema;2",
+          "sh:path": "schema",
+          "sh:in": [ "vector" ]
+        }
+      ]
+    },
+    {
+      "@id": "dtmi:iotcentral:class:AccelerationVector;2",
+      "@type": [ "rdfs:Class", "sh:NodeShape" ],
+      "dtmm:dtdlVersion": 2,
+      "rdfs:subClassOf": "SemanticType",
+      "sh:or": [
+        { "sh:class": "Property" },
+        { "sh:class": "Telemetry" }
+      ],
+      "dtmm:property": [
+        {
+          "@id": "dtmi:dtdl:property:unit;2",
+          "@type": "rdf:Property",
+          "rdfs:domain": "dtmi:iotcentral:class:AccelerationVector;2"
+        }
+      ],
+      "sh:property": [
+        {
+          "@id": "dtmi:iotcentral:constraint:AccelerationVector:unit;2",
+          "sh:path": "unit",
+          "sh:maxCount": 1,
+          "sh:class": "dtmi:standard:class:AccelerationUnit;2",
+          "sh:nodeKind": "sh:BlankNodeOrIRI",
+          "dtmm:description": {
+            "en-US": "The unit type for data associated with the element."
+          }
+        },
+        {
+          "@id": "dtmi:iotcentral:constraint:AccelerationVector:schema;2",
+          "sh:path": "schema",
+          "sh:in": [ "vector" ]
+        }
+      ]
+    }
+  ]
+}

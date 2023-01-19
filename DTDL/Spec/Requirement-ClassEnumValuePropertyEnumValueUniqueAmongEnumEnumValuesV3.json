@@ -1,0 +1,164 @@
+﻿[
+  {
+    "valid": true,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:vroo_kappa;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:vroo_iota;1",
+          "@type": "Enum",
+          "enumValues": [
+            {
+              "name": "vroo_eta",
+              "enumValue": 13
+            },
+            {
+              "name": "vroo_theta",
+              "enumValue": 14
+            }
+          ],
+          "valueSchema": "integer"
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:vroo_xi;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:vroo_nu;1",
+          "@type": "Enum",
+          "enumValues": [
+            {
+              "name": "vroo_lambda",
+              "enumValue": 13
+            },
+            {
+              "name": "vroo_mu",
+              "enumValue": 13
+            }
+          ],
+          "valueSchema": "integer"
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:vroo_sigma;1",
+        "@type": "Interface",
+        "schemas": {
+          "@context": "dtmi:undefinedExtension:context;1",
+          "@id": "dtmi:example:vroo_rho;1",
+          "@type": "Enum",
+          "enumValues": [
+            {
+              "name": "vroo_omicron",
+              "enumValue": 13
+            },
+            {
+              "name": "vroo_pi",
+              "enumValue": 13
+            }
+          ],
+          "valueSchema": "integer"
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:vroo_chi;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:vroo_phi;1",
+          "@type": "Enum",
+          "enumValues": [
+            {
+              "name": "vroo_tau",
+              "enumValue": "beta_vroo"
+            },
+            {
+              "name": "vroo_upsilon",
+              "enumValue": "beta_hi"
+            }
+          ],
+          "valueSchema": "string"
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:vroo_wum;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:vroo_yuzz;1",
+          "@type": "Enum",
+          "enumValues": [
+            {
+              "name": "vroo_psi",
+              "enumValue": "beta_vroo"
+            },
+            {
+              "name": "vroo_omega",
+              "enumValue": "beta_vroo"
+            }
+          ],
+          "valueSchema": "string"
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:vroo_glikk;1",
+        "@type": "Interface",
+        "schemas": {
+          "@context": "dtmi:undefinedExtension:context;1",
+          "@id": "dtmi:example:vroo_fuddle;1",
+          "@type": "Enum",
+          "enumValues": [
+            {
+              "name": "vroo_um",
+              "enumValue": "beta_vroo"
+            },
+            {
+              "name": "vroo_humpf",
+              "enumValue": "beta_vroo"
+            }
+          ],
+          "valueSchema": "string"
+        }
+      }
+    ]
+  }
+]

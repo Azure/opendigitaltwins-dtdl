@@ -1,0 +1,55 @@
+﻿[
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:um_quan;1",
+        "@type": "Interface",
+        "extends": {
+          "@id": "dtmi:example:um_quan;1",
+          "@type": "Interface",
+          "contents": {
+            "@id": "dtmi:example:um_quan;1",
+            "@type": "Command",
+            "name": "um_spazz",
+            "response": {
+              "@id": "dtmi:example:um_quan;1",
+              "name": "um_thnad",
+              "schema": "date"
+            }
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:um_floob;1",
+        "@type": "Interface",
+        "extends": {
+          "@id": "dtmi:example:um_floob;1",
+          "@type": "Interface",
+          "contents": {
+            "@id": "dtmi:example:um_floob;1",
+            "@type": "Command",
+            "name": "um_jogg",
+            "response": {
+              "@context": "dtmi:undefinedExtension:context;1",
+              "@id": "dtmi:example:um_floob;1",
+              "name": "um_zatz",
+              "schema": "dateTime"
+            }
+          }
+        }
+      }
+    ]
+  }
+]

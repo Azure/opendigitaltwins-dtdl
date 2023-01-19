@@ -1,0 +1,57 @@
+﻿[
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:chi_iota;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:chi_zeta;1",
+          "@type": [
+            "Map",
+            "http://foo.com/bar"
+          ],
+          "mapKey": {
+            "name": "chi_eta",
+            "schema": "string"
+          },
+          "mapValue": {
+            "name": "chi_theta",
+            "schema": "long"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:chi_nu;1",
+        "@type": "Interface",
+        "schemas": {
+          "@context": "dtmi:undefinedExtension:context;1",
+          "@id": "dtmi:example:chi_kappa;1",
+          "@type": [
+            "Map",
+            "http://foo.com/bar"
+          ],
+          "mapKey": {
+            "name": "chi_lambda",
+            "schema": "string"
+          },
+          "mapValue": {
+            "name": "chi_mu",
+            "schema": "string"
+          }
+        }
+      }
+    ]
+  }
+]

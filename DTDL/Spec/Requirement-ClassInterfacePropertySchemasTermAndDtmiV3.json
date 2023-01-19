@@ -1,0 +1,57 @@
+﻿[
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:rho_nuh;1",
+        "@type": "Interface",
+        "schemas": [
+          {
+            "@id": "dtmi:example:rho_snee;1",
+            "@type": "Array",
+            "elementSchema": "duration"
+          }
+        ],
+        "dtmi:dtdl:property:schemas;3": [
+          {
+            "@id": "dtmi:example:rho_quan;1",
+            "@type": "Array",
+            "elementSchema": "float"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": [
+          "dtmi:dtdl:context;3",
+          "dtmi:undefinedExtension:context;1"
+        ],
+        "@id": "dtmi:example:rho_thnad;1",
+        "@type": "Interface",
+        "schemas": [
+          {
+            "@id": "dtmi:example:rho_spazz;1",
+            "@type": "Array",
+            "elementSchema": "integer"
+          }
+        ],
+        "dtmi:dtdl:property:schemas;3": [
+          {
+            "@id": "dtmi:example:rho_floob;1",
+            "@type": "Array",
+            "elementSchema": "long"
+          }
+        ]
+      }
+    ]
+  }
+]

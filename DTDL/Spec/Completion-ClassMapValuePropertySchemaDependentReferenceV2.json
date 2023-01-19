@@ -1,0 +1,66 @@
+﻿[
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:vroo_epsilon;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Property",
+          "name": "vroo_delta",
+          "schema": {
+            "@type": "Map",
+            "mapKey": {
+              "name": "vroo_gamma",
+              "schema": "string"
+            },
+            "mapValue": {
+              "name": "vroo_beta",
+              "schema": "dtmi:ex:dependentRef;1"
+            }
+          }
+        }
+      }
+    ],
+    "expect": {
+      "unresolvedIdentifiers": [
+        "dtmi:ex:dependentRef;1"
+      ]
+    }
+  },
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:vroo_iota;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Property",
+          "name": "vroo_theta",
+          "schema": {
+            "@type": "Map",
+            "mapKey": {
+              "name": "vroo_eta",
+              "schema": "string"
+            },
+            "mapValue": {
+              "name": "vroo_zeta",
+              "schema": [
+                "dtmi:ex:dependentRef;1"
+              ]
+            }
+          }
+        }
+      }
+    ],
+    "expect": {
+      "unresolvedIdentifiers": [
+        "dtmi:ex:dependentRef;1"
+      ]
+    }
+  }
+]

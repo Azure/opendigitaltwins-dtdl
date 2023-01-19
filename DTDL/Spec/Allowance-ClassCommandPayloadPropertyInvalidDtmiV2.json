@@ -1,0 +1,26 @@
+﻿[
+  {
+    "valid": true,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:fuddle_nuh;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Command",
+          "name": "fuddle_glikk",
+          "request": {
+            "@type": [
+              "CommandPayload",
+              "Foobar"
+            ],
+            "name": "fuddle_fuddle",
+            "schema": "dateTime",
+            "dtmi:foo//bar": 626
+          }
+        }
+      }
+    ]
+  }
+]

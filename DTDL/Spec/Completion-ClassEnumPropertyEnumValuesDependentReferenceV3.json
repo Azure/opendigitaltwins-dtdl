@@ -1,0 +1,54 @@
+﻿[
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:thnad_phi;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Property",
+          "name": "thnad_upsilon",
+          "schema": {
+            "@type": "Enum",
+            "valueSchema": "integer",
+            "enumValues": "dtmi:ex:dependentRef;1"
+          }
+        }
+      }
+    ],
+    "expect": {
+      "unresolvedIdentifiers": [
+        "dtmi:ex:dependentRef;1"
+      ]
+    }
+  },
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:thnad_psi;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Property",
+          "name": "thnad_chi",
+          "schema": {
+            "@type": "Enum",
+            "valueSchema": "integer",
+            "enumValues": [
+              "dtmi:ex:dependentRef;1"
+            ]
+          }
+        }
+      }
+    ],
+    "expect": {
+      "unresolvedIdentifiers": [
+        "dtmi:ex:dependentRef;1"
+      ]
+    }
+  }
+]

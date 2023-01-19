@@ -1,0 +1,56 @@
+﻿[
+  {
+    "valid": true,
+    "desirable": true,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:flunn_itch;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:flunn_jogg;1",
+          "@type": "Map",
+          "mapValue": {
+            "name": "flunn_flunn",
+            "schema": "float"
+          },
+          "mapKey": {
+            "description": [
+              "flunn_floob"
+            ],
+            "name": "flunn_zatz",
+            "schema": "string"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "desirable": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:itch_beta;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:flunn_hi;1",
+          "@type": "Map",
+          "mapValue": {
+            "name": "itch_alpha",
+            "schema": "integer"
+          },
+          "mapKey": {
+            "dtmi:dtdl:property:description;3": [
+              "flunn_yekk"
+            ],
+            "name": "flunn_vroo",
+            "schema": "string"
+          }
+        }
+      }
+    ]
+  }
+]

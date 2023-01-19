@@ -1,0 +1,164 @@
+﻿[
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": [
+          "dtmi:dtdl:context;2"
+        ],
+        "@id": "dtmi:ex:id;1",
+        "@type": "Interface",
+        "extends": "dtmi:ex:id;1"
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": [
+          "dtmi:dtdl:context;2",
+          "dtmi:undefinedExtension:context;1"
+        ],
+        "@id": "dtmi:ex:id;1",
+        "@type": "Interface",
+        "extends": "dtmi:ex:id;1"
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "options": [],
+    "input": [
+      {
+        "@context": [
+          "dtmi:dtdl:context;2"
+        ],
+        "@id": "dtmi:ex:id;1",
+        "@type": "Interface",
+        "extends": {
+          "@id": "dtmi:ex:id;2",
+          "@type": "Interface"
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "options": [],
+    "input": [
+      [
+        {
+          "@context": [
+            "dtmi:dtdl:context;2"
+          ],
+          "@id": "dtmi:ex:id;1",
+          "@type": "Interface",
+          "extends": "dtmi:ex:id;2"
+        },
+        {
+          "@context": [
+            "dtmi:dtdl:context;2"
+          ],
+          "@id": "dtmi:ex:id;2",
+          "@type": "Interface"
+        }
+      ]
+    ]
+  },
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": [
+          "dtmi:dtdl:context;2"
+        ],
+        "@id": "dtmi:ex:id;1",
+        "@type": "Interface",
+        "extends": {
+          "@id": "dtmi:ex:id;2",
+          "@type": "Interface",
+          "extends": "dtmi:ex:id;1"
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": [
+          "dtmi:dtdl:context;2",
+          "dtmi:undefinedExtension:context;1"
+        ],
+        "@id": "dtmi:ex:id;1",
+        "@type": "Interface",
+        "extends": {
+          "@id": "dtmi:ex:id;2",
+          "@type": "Interface",
+          "extends": "dtmi:ex:id;1"
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      [
+        {
+          "@context": [
+            "dtmi:dtdl:context;2"
+          ],
+          "@id": "dtmi:ex:id;1",
+          "@type": "Interface",
+          "extends": "dtmi:ex:id;2"
+        },
+        {
+          "@context": [
+            "dtmi:dtdl:context;2"
+          ],
+          "@id": "dtmi:ex:id;2",
+          "@type": "Interface",
+          "extends": "dtmi:ex:id;1"
+        }
+      ]
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      [
+        {
+          "@context": [
+            "dtmi:dtdl:context;2",
+            "dtmi:undefinedExtension:context;1"
+          ],
+          "@id": "dtmi:ex:id;1",
+          "@type": "Interface",
+          "extends": "dtmi:ex:id;2"
+        },
+        {
+          "@context": [
+            "dtmi:dtdl:context;2",
+            "dtmi:undefinedExtension:context;1"
+          ],
+          "@id": "dtmi:ex:id;2",
+          "@type": "Interface",
+          "extends": "dtmi:ex:id;1"
+        }
+      ]
+    ]
+  }
+]

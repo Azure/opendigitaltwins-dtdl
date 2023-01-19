@@ -1,0 +1,64 @@
+﻿[
+  {
+    "valid": true,
+    "desirable": true,
+    "options": [],
+    "input": [
+      {
+        "@context": [
+          "dtmi:dtdl:context;2"
+        ],
+        "@id": "dtmi:ex:id;1",
+        "@type": "Interface",
+        "displayName": [
+          {
+            "@value": "hello",
+            "@language": "de"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "desirable": false,
+    "options": [],
+    "input": [
+      {
+        "@context": [
+          "dtmi:dtdl:context;2"
+        ],
+        "@id": "dtmi:ex:id;1",
+        "@type": "Interface",
+        "displayName": [
+          {
+            "@value": "hello",
+            "@language": "de",
+            "@type": "rdf:langString"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "desirable": false,
+    "options": [],
+    "input": [
+      {
+        "@context": [
+          "dtmi:dtdl:context;2"
+        ],
+        "@id": "dtmi:ex:id;1",
+        "@type": "Interface",
+        "displayName": [
+          {
+            "@value": "hello",
+            "@language": "de",
+            "@keyword": "goodbye"
+          }
+        ]
+      }
+    ]
+  }
+]

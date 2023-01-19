@@ -1,0 +1,94 @@
+﻿[
+  {
+    "valid": true,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:spazz_yuzz;1",
+        "@type": "Interface",
+        "contents": [
+          {
+            "@type": "Component",
+            "schema": {
+              "@id": "dtmi:example:spazz_psi;1",
+              "@type": "Interface"
+            },
+            "name": "alpha_xi"
+          },
+          {
+            "@type": "Component",
+            "schema": {
+              "@id": "dtmi:example:spazz_omega;1",
+              "@type": "Interface"
+            },
+            "name": "alpha_omicron"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:spazz_humpf;1",
+        "@type": "Interface",
+        "contents": [
+          {
+            "@type": "Component",
+            "schema": {
+              "@id": "dtmi:example:spazz_wum;1",
+              "@type": "Interface"
+            },
+            "name": "alpha_xi"
+          },
+          {
+            "@type": "Component",
+            "schema": {
+              "@id": "dtmi:example:spazz_um;1",
+              "@type": "Interface"
+            },
+            "name": "alpha_xi"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": [
+          "dtmi:dtdl:context;2",
+          "dtmi:undefinedExtension:context;1"
+        ],
+        "@id": "dtmi:example:spazz_nuh;1",
+        "@type": "Interface",
+        "contents": [
+          {
+            "@type": "Component",
+            "schema": {
+              "@id": "dtmi:example:spazz_fuddle;1",
+              "@type": "Interface"
+            },
+            "name": "alpha_xi"
+          },
+          {
+            "@type": "Component",
+            "schema": {
+              "@id": "dtmi:example:spazz_glikk;1",
+              "@type": "Interface"
+            },
+            "name": "alpha_xi"
+          }
+        ]
+      }
+    ]
+  }
+]

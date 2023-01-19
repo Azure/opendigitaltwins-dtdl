@@ -1,0 +1,52 @@
+﻿[
+  {
+    "valid": true,
+    "desirable": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:xi_phi;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:xi_upsilon;1",
+          "@type": "Enum",
+          "valueSchema": "integer",
+          "enumValues": {
+            "enumValue": 827,
+            "name": "xi_tau",
+            "@type": [
+              "EnumValue",
+              "EnumValue"
+            ]
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "desirable": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:xi_omega;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:xi_psi;1",
+          "@type": "Enum",
+          "valueSchema": "integer",
+          "enumValues": {
+            "enumValue": 828,
+            "name": "xi_chi",
+            "@type": [
+              "dtmi:dtdl:class:EnumValue;2",
+              "dtmi:dtdl:class:EnumValue;2"
+            ]
+          }
+        }
+      }
+    ]
+  }
+]

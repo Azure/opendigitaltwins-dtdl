@@ -1,0 +1,104 @@
+﻿[
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:snee_hi;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:snee_yekk;1",
+          "@type": "Map",
+          "mapValue": {
+            "name": "snee_vroo",
+            "schema": "date"
+          },
+          "mapKey": {
+            "name": "snee_itch",
+            "schema": "string",
+            "dtmi:foo:bar;1": 626
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:quan_delta;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:quan_beta;1",
+          "@type": "Map",
+          "mapValue": {
+            "name": "quan_gamma",
+            "schema": "dateTime"
+          },
+          "mapKey": {
+            "@context": "dtmi:undefinedExtension:context;1",
+            "name": "quan_alpha",
+            "schema": "string",
+            "dtmi:foo:bar;1": 626
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:quan_theta;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:quan_zeta;1",
+          "@type": "Map",
+          "mapValue": {
+            "name": "quan_eta",
+            "schema": "double"
+          },
+          "mapKey": {
+            "name": "quan_epsilon",
+            "schema": "string",
+            "boolean": null
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:quan_mu;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:quan_kappa;1",
+          "@type": "Map",
+          "mapValue": {
+            "name": "quan_lambda",
+            "schema": "duration"
+          },
+          "mapKey": {
+            "@context": "dtmi:undefinedExtension:context;1",
+            "name": "quan_iota",
+            "schema": "string",
+            "boolean": null
+          }
+        }
+      }
+    ]
+  }
+]

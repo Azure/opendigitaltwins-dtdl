@@ -1,0 +1,28 @@
+﻿[
+  {
+    "valid": true,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:gamma_zatz;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:gamma_spazz;1",
+          "@type": [
+            "Enum",
+            "Foobar"
+          ],
+          "enumValues": [
+            {
+              "enumValue": 706,
+              "name": "gamma_floob"
+            }
+          ],
+          "valueSchema": "integer",
+          "http://foo.com/bar": true
+        }
+      }
+    ]
+  }
+]

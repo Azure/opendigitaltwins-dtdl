@@ -1,0 +1,49 @@
+﻿[
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:quan_wum;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:quan_psi;1",
+          "@type": "Enum",
+          "displayName": [
+            "quan_omega"
+          ],
+          "dtmi:dtdl:property:displayName;3": [
+            "quan_yuzz"
+          ],
+          "valueSchema": "integer"
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:quan_glikk;1",
+        "@type": "Interface",
+        "schemas": {
+          "@context": "dtmi:undefinedExtension:context;1",
+          "@id": "dtmi:example:quan_um;1",
+          "@type": "Enum",
+          "displayName": [
+            "quan_humpf"
+          ],
+          "dtmi:dtdl:property:displayName;3": [
+            "quan_fuddle"
+          ],
+          "valueSchema": "integer"
+        }
+      }
+    ]
+  }
+]

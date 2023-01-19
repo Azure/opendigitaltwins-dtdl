@@ -1,0 +1,29 @@
+﻿[
+  {
+    "valid": true,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:pi_thnad;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:pi_snee;1",
+          "@type": "Map",
+          "mapValue": {
+            "name": "pi_quan",
+            "schema": "dateTime"
+          },
+          "mapKey": {
+            "@type": [
+              "MapKey",
+              "Foobar"
+            ],
+            "name": "pi_nuh",
+            "schema": "string"
+          }
+        }
+      }
+    ]
+  }
+]

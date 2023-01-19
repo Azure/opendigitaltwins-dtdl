@@ -1,0 +1,27 @@
+﻿[
+  {
+    "valid": true,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:omicron_alpha;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:xi_vroo;1",
+          "@type": [
+            "Enum",
+            "Foobar"
+          ],
+          "enumValues": [
+            {
+              "enumValue": 91,
+              "name": "xi_hi"
+            }
+          ],
+          "valueSchema": "integer"
+        }
+      }
+    ]
+  }
+]

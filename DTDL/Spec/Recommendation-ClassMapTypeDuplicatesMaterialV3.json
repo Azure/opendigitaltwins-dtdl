@@ -1,0 +1,56 @@
+﻿[
+  {
+    "valid": true,
+    "desirable": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:phi_mu;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:phi_iota;1",
+          "mapKey": {
+            "name": "phi_kappa",
+            "schema": "string"
+          },
+          "mapValue": {
+            "name": "phi_lambda",
+            "schema": "long"
+          },
+          "@type": [
+            "Map",
+            "Map"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "desirable": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:phi_pi;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:phi_nu;1",
+          "mapKey": {
+            "name": "phi_xi",
+            "schema": "string"
+          },
+          "mapValue": {
+            "name": "phi_omicron",
+            "schema": "string"
+          },
+          "@type": [
+            "dtmi:dtdl:class:Map;3",
+            "dtmi:dtdl:class:Map;3"
+          ]
+        }
+      }
+    ]
+  }
+]

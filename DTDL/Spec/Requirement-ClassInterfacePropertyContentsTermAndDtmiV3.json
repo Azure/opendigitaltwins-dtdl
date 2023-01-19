@@ -1,0 +1,53 @@
+﻿[
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:kappa_nu;1",
+        "@type": "Interface",
+        "contents": [
+          {
+            "@type": "Command",
+            "name": "kappa_xi"
+          }
+        ],
+        "dtmi:dtdl:property:contents;3": [
+          {
+            "@type": "Command",
+            "name": "kappa_omicron"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": [
+          "dtmi:dtdl:context;3",
+          "dtmi:undefinedExtension:context;1"
+        ],
+        "@id": "dtmi:example:kappa_pi;1",
+        "@type": "Interface",
+        "contents": [
+          {
+            "@type": "Command",
+            "name": "kappa_rho"
+          }
+        ],
+        "dtmi:dtdl:property:contents;3": [
+          {
+            "@type": "Command",
+            "name": "kappa_sigma"
+          }
+        ]
+      }
+    ]
+  }
+]

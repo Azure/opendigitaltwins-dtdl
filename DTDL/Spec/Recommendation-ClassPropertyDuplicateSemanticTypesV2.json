@@ -1,0 +1,46 @@
+﻿[
+  {
+    "valid": true,
+    "desirable": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:eta_nuh;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": [
+            "Property",
+            "Acceleration",
+            "Acceleration"
+          ],
+          "name": "eta_glikk",
+          "schema": "long",
+          "unit": "centimetrePerSecondSquared"
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "desirable": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:eta_quan;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": [
+            "Property",
+            "dtmi:standard:class:Acceleration;2",
+            "dtmi:standard:class:Acceleration;2"
+          ],
+          "name": "eta_snee",
+          "schema": "double",
+          "unit": "centimetrePerSecondSquared"
+        }
+      }
+    ]
+  }
+]

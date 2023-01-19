@@ -1,0 +1,54 @@
+﻿[
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:lambda_quan;1",
+        "@type": "Interface",
+        "extends": {
+          "@id": "dtmi:example:lambda_snee;1",
+          "@type": "Interface",
+          "contents": {
+            "@type": "Property",
+            "name": "lambda_nuh",
+            "schema": "dtmi:ex:dependentRef;1"
+          }
+        }
+      }
+    ],
+    "expect": {
+      "unresolvedIdentifiers": [
+        "dtmi:ex:dependentRef;1"
+      ]
+    }
+  },
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:lambda_floob;1",
+        "@type": "Interface",
+        "extends": {
+          "@id": "dtmi:example:lambda_spazz;1",
+          "@type": "Interface",
+          "contents": {
+            "@type": "Property",
+            "name": "lambda_thnad",
+            "schema": [
+              "dtmi:ex:dependentRef;1"
+            ]
+          }
+        }
+      }
+    ],
+    "expect": {
+      "unresolvedIdentifiers": [
+        "dtmi:ex:dependentRef;1"
+      ]
+    }
+  }
+]

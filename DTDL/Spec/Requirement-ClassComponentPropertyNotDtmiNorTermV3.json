@@ -1,0 +1,51 @@
+﻿[
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:sigma_wum;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": [
+            "Component",
+            "Foobar"
+          ],
+          "name": "sigma_omega",
+          "schema": {
+            "@id": "dtmi:example:sigma_yuzz;1",
+            "@type": "Interface"
+          },
+          "http://foo.com/bar": true
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:sigma_fuddle;1",
+        "@type": "Interface",
+        "contents": {
+          "@context": "dtmi:undefinedExtension:context;1",
+          "@type": [
+            "Component",
+            "Foobar"
+          ],
+          "name": "sigma_um",
+          "schema": {
+            "@id": "dtmi:example:sigma_humpf;1",
+            "@type": "Interface"
+          },
+          "http://foo.com/bar": true
+        }
+      }
+    ]
+  }
+]

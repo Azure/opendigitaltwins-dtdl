@@ -1,0 +1,51 @@
+﻿[
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:quan_hi;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:quan_yekk;1",
+          "@type": "Enum",
+          "enumValues": [
+            {
+              "enumValue": 506,
+              "name": "quan_vroo"
+            }
+          ],
+          "valueSchema": "integer",
+          "dtmi:dtdl:property:valueSchema;2": "integer"
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:thnad_gamma;1",
+        "@type": "Interface",
+        "schemas": {
+          "@context": "dtmi:undefinedExtension:context;1",
+          "@id": "dtmi:example:thnad_alpha;1",
+          "@type": "Enum",
+          "enumValues": [
+            {
+              "enumValue": 507,
+              "name": "thnad_beta"
+            }
+          ],
+          "valueSchema": "integer",
+          "dtmi:dtdl:property:valueSchema;2": "integer"
+        }
+      }
+    ]
+  }
+]

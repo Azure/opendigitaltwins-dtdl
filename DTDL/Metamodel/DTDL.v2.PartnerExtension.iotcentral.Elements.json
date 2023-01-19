@@ -1,0 +1,64 @@
+﻿[
+  {
+    "@context": [
+      "dtmi:dtdl:context;2",
+      "dtmi:iotcentral:context;2"
+    ],
+    "@id": "dtmi:iotcentral:schema:vector;2",
+    "@type": "Object",
+    "fields": [
+      {
+        "@id": "dtmi:iotcentral:schema:vector:x;2",
+        "@type": "Field",
+        "name": "x",
+        "schema": "double"
+      },
+      {
+        "@id": "dtmi:iotcentral:schema:vector:y;2",
+        "@type": "Field",
+        "name": "y",
+        "schema": "double"
+      },
+      {
+        "@id": "dtmi:iotcentral:schema:vector:z;2",
+        "@type": "Field",
+        "name": "z",
+        "schema": "double"
+      }
+    ],
+    "description": {
+      "en-US": "Three-dimensional vector"
+    }
+  },
+  {
+    "@context": [
+      "dtmi:dtdl:context;2",
+      "dtmi:iotcentral:context;2"
+    ],
+    "@id": "dtmi:iotcentral:schema:geopoint;2",
+    "@type": "Object",
+    "fields": [
+      {
+        "@id": "dtmi:iotcentral:schema:geopoint:lon;2",
+        "@type": "Field",
+        "name": "lon",
+        "schema": "double"
+      },
+      {
+        "@id": "dtmi:iotcentral:schema:geopoint:lat;2",
+        "@type": "Field",
+        "name": "lat",
+        "schema": "double"
+      },
+      {
+        "@id": "dtmi:iotcentral:schema:geopoint:alt;2",
+        "@type": "Field",
+        "name": "alt",
+        "schema": "double"
+      }
+    ],
+    "description": {
+      "en-US": "Geospatial point"
+    }
+  }
+]

@@ -1,0 +1,125 @@
+﻿[
+  {
+    "valid": true,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:sigma_psi;1",
+        "@type": "Interface",
+        "extends": {
+          "@id": "dtmi:example:sigma_chi;1",
+          "@type": "Interface",
+          "contents": {
+            "@type": "Command",
+            "name": "sigma_phi",
+            "response": {
+              "@context": [],
+              "name": "sigma_upsilon",
+              "schema": "double"
+            }
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:sigma_wum;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Command",
+          "name": "sigma_yuzz",
+          "response": {
+            "name": "sigma_omega",
+            "schema": "duration"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:sigma_glikk;1",
+        "@type": "Interface",
+        "extends": {
+          "@id": "dtmi:example:sigma_fuddle;1",
+          "@type": "Interface",
+          "contents": {
+            "@type": "Command",
+            "name": "sigma_humpf",
+            "response": {
+              "name": "sigma_um",
+              "schema": "float"
+            }
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:sigma_quan;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Command",
+          "name": "sigma_snee",
+          "response": {
+            "name": "sigma_nuh",
+            "schema": "integer"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:sigma_floob;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Command",
+          "name": "sigma_spazz",
+          "response": {
+            "name": "sigma_thnad",
+            "schema": "long"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:sigma_flunn;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Command",
+          "name": "sigma_jogg",
+          "response": {
+            "name": "sigma_zatz",
+            "schema": "string"
+          }
+        }
+      }
+    ]
+  }
+]

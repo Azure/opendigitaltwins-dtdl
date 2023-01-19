@@ -1,0 +1,50 @@
+﻿[
+  {
+    "valid": true,
+    "desirable": true,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:alpha_iota;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:alpha_eta;1",
+          "@type": "Map",
+          "mapValue": {
+            "name": "alpha_theta",
+            "schema": "float"
+          },
+          "mapKey": {
+            "name": "alpha_zeta",
+            "schema": "string"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "desirable": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:alpha_nu;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:alpha_lambda;1",
+          "@type": "Map",
+          "mapValue": {
+            "name": "alpha_mu",
+            "schema": "integer"
+          },
+          "mapKey": {
+            "dtmi:dtdl:property:name;2": "alpha_kappa",
+            "schema": "string"
+          }
+        }
+      }
+    ]
+  }
+]

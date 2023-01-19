@@ -1,0 +1,47 @@
+﻿[
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:psi_vroo;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Command",
+          "name": "psi_yekk",
+          "request": {
+            "comment": "psi_jogg",
+            "dtmi:dtdl:property:comment;2": "psi_flunn",
+            "name": "psi_itch",
+            "schema": "float"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:omega_delta;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Command",
+          "name": "omega_gamma",
+          "request": {
+            "@context": "dtmi:undefinedExtension:context;1",
+            "comment": "psi_hi",
+            "dtmi:dtdl:property:comment;2": "omega_alpha",
+            "name": "omega_beta",
+            "schema": "integer"
+          }
+        }
+      }
+    ]
+  }
+]

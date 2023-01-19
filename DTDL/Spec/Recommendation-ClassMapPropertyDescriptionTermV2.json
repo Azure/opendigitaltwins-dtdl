@@ -1,0 +1,56 @@
+﻿[
+  {
+    "valid": true,
+    "desirable": true,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:thnad_spazz;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:thnad_nuh;1",
+          "@type": "Map",
+          "description": [
+            "thnad_snee"
+          ],
+          "mapKey": {
+            "name": "thnad_quan",
+            "schema": "string"
+          },
+          "mapValue": {
+            "name": "thnad_thnad",
+            "schema": "duration"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "desirable": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:thnad_itch;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:thnad_floob;1",
+          "@type": "Map",
+          "dtmi:dtdl:property:description;2": [
+            "thnad_zatz"
+          ],
+          "mapKey": {
+            "name": "thnad_jogg",
+            "schema": "string"
+          },
+          "mapValue": {
+            "name": "thnad_flunn",
+            "schema": "float"
+          }
+        }
+      }
+    ]
+  }
+]

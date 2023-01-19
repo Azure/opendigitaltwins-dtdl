@@ -1,0 +1,48 @@
+﻿[
+  {
+    "valid": true,
+    "desirable": true,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:wum_eta;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Command",
+          "name": "wum_zeta",
+          "request": {
+            "description": [
+              "wum_delta"
+            ],
+            "name": "wum_epsilon",
+            "schema": "float"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "desirable": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:wum_lambda;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Command",
+          "name": "wum_kappa",
+          "request": {
+            "dtmi:dtdl:property:description;2": [
+              "wum_theta"
+            ],
+            "name": "wum_iota",
+            "schema": "integer"
+          }
+        }
+      }
+    ]
+  }
+]

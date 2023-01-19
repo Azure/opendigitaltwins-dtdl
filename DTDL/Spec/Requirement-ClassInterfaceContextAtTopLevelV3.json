@@ -1,0 +1,27 @@
+﻿[
+  {
+    "valid": true,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:zeta_eta;1",
+        "@type": "Interface",
+        "extends": {
+          "@id": "dtmi:example:zeta_zeta;1",
+          "@type": "Interface"
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@id": "dtmi:example:zeta_theta;1",
+        "@type": "Interface"
+      }
+    ]
+  }
+]

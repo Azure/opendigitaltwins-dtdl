@@ -1,0 +1,39 @@
+﻿[
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:phi_snee;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Telemetry",
+          "name": "phi_nuh",
+          "schema": "integer",
+          "dtmi:dtdl:property:schema;3": "long"
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:phi_thnad;1",
+        "@type": "Interface",
+        "contents": {
+          "@context": "dtmi:undefinedExtension:context;1",
+          "@type": "Telemetry",
+          "name": "phi_quan",
+          "schema": "string",
+          "dtmi:dtdl:property:schema;3": "time"
+        }
+      }
+    ]
+  }
+]

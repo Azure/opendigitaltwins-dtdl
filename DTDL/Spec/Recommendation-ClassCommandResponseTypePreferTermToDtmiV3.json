@@ -1,0 +1,44 @@
+﻿[
+  {
+    "valid": true,
+    "desirable": true,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:chi_eta;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Command",
+          "name": "chi_zeta",
+          "response": {
+            "name": "chi_epsilon",
+            "schema": "boolean",
+            "@type": "CommandResponse"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "desirable": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:chi_kappa;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Command",
+          "name": "chi_iota",
+          "response": {
+            "name": "chi_theta",
+            "schema": "date",
+            "@type": "dtmi:dtdl:class:CommandResponse;3"
+          }
+        }
+      }
+    ]
+  }
+]

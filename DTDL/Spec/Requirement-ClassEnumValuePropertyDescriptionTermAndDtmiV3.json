@@ -1,0 +1,57 @@
+﻿[
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:pi_tau;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:pi_sigma;1",
+          "@type": "Enum",
+          "valueSchema": "integer",
+          "enumValues": {
+            "description": [
+              "pi_omicron"
+            ],
+            "dtmi:dtdl:property:description;3": [
+              "pi_pi"
+            ],
+            "enumValue": 1394,
+            "name": "pi_rho"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:pi_omega;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:pi_psi;1",
+          "@type": "Enum",
+          "valueSchema": "integer",
+          "enumValues": {
+            "@context": "dtmi:undefinedExtension:context;1",
+            "description": [
+              "pi_upsilon"
+            ],
+            "dtmi:dtdl:property:description;3": [
+              "pi_phi"
+            ],
+            "enumValue": 1395,
+            "name": "pi_chi"
+          }
+        }
+      }
+    ]
+  }
+]

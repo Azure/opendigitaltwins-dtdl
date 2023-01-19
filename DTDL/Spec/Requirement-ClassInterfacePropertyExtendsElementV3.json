@@ -1,0 +1,151 @@
+﻿[
+  {
+    "valid": true,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:mu_nu;1",
+        "@type": "Interface",
+        "extends": {
+          "@id": "dtmi:example:mu_mu;1",
+          "@type": "Interface",
+          "extends": {
+            "@id": "dtmi:example:mu_lambda;1",
+            "@type": "Interface"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:mu_pi;1",
+        "@type": "Interface",
+        "extends": {
+          "@id": "dtmi:example:mu_omicron;1",
+          "@type": "Interface",
+          "extends": [
+            {
+              "@id": "dtmi:example:mu_xi;1",
+              "@type": "Interface"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "options": [],
+    "input": [
+      [
+        {
+          "@context": "dtmi:dtdl:context;3",
+          "@id": "dtmi:example:mu_sigma;1",
+          "@type": "Interface",
+          "extends": {
+            "@id": "dtmi:example:mu_rho;1",
+            "@type": "Interface",
+            "extends": "dtmi:ex:dependentRef;1"
+          }
+        },
+        {
+          "@context": "dtmi:dtdl:context;3",
+          "@id": "dtmi:ex:dependentRef;1",
+          "@type": "Interface"
+        }
+      ]
+    ]
+  },
+  {
+    "valid": true,
+    "options": [],
+    "input": [
+      [
+        {
+          "@context": "dtmi:dtdl:context;3",
+          "@id": "dtmi:example:mu_upsilon;1",
+          "@type": "Interface",
+          "extends": {
+            "@id": "dtmi:example:mu_tau;1",
+            "@type": "Interface",
+            "extends": [
+              "dtmi:ex:dependentRef;1"
+            ]
+          }
+        },
+        {
+          "@context": "dtmi:dtdl:context;3",
+          "@id": "dtmi:ex:dependentRef;1",
+          "@type": "Interface"
+        }
+      ]
+    ]
+  },
+  {
+    "valid": true,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:mu_psi;1",
+        "@type": "Interface",
+        "extends": {
+          "@id": "dtmi:example:mu_chi;1",
+          "@type": "Interface",
+          "extends": {
+            "@id": "dtmi:example:mu_phi;1",
+            "@type": "Interface",
+            "@context": "dtmi:dtdl:context;2"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:mu_yuzz;1",
+        "@type": "Interface",
+        "extends": {
+          "@id": "dtmi:example:mu_omega;1",
+          "@type": "Interface",
+          "extends": []
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:mu_fuddle;1",
+        "@type": "Interface",
+        "extends": {
+          "@id": "dtmi:example:mu_humpf;1",
+          "@type": "Interface",
+          "extends": [
+            {
+              "@id": "dtmi:example:mu_wum;1",
+              "@type": "Interface"
+            },
+            {
+              "@id": "dtmi:example:mu_um;1",
+              "@type": "Interface"
+            }
+          ]
+        }
+      }
+    ]
+  }
+]

@@ -1,0 +1,74 @@
+﻿[
+  {
+    "valid": true,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:floob_beta;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:spazz_hi;1",
+          "@type": "Map",
+          "mapKey": {
+            "name": "floob_alpha",
+            "schema": "string"
+          },
+          "mapValue": {
+            "schema": "string",
+            "name": "SupercalifragilisticexpialidociousEvenThoughTheSoundOfItIsSometh"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:floob_epsilon;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:floob_gamma;1",
+          "@type": "Map",
+          "mapKey": {
+            "name": "floob_delta",
+            "schema": "string"
+          },
+          "mapValue": {
+            "schema": "time",
+            "name": "SupercalifragilisticexpialidociousEvenThoughTheSoundOfItIsSomethi"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:floob_theta;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:floob_zeta;1",
+          "@type": "Map",
+          "mapKey": {
+            "name": "floob_eta",
+            "schema": "string"
+          },
+          "mapValue": {
+            "@context": "dtmi:undefinedExtension:context;1",
+            "schema": "boolean",
+            "name": "SupercalifragilisticexpialidociousEvenThoughTheSoundOfItIsSomethi"
+          }
+        }
+      }
+    ]
+  }
+]

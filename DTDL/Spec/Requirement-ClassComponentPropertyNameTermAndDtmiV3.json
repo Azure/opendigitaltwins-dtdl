@@ -1,0 +1,45 @@
+﻿[
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:vroo_sigma;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Component",
+          "name": "vroo_omicron",
+          "dtmi:dtdl:property:name;3": "vroo_pi",
+          "schema": {
+            "@id": "dtmi:example:vroo_rho;1",
+            "@type": "Interface"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:vroo_chi;1",
+        "@type": "Interface",
+        "contents": {
+          "@context": "dtmi:undefinedExtension:context;1",
+          "@type": "Component",
+          "name": "vroo_tau",
+          "dtmi:dtdl:property:name;3": "vroo_upsilon",
+          "schema": {
+            "@id": "dtmi:example:vroo_phi;1",
+            "@type": "Interface"
+          }
+        }
+      }
+    ]
+  }
+]

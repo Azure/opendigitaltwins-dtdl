@@ -1,0 +1,53 @@
+﻿[
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:alpha_sigma;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:alpha_pi;1",
+          "@type": "Map",
+          "mapValue": {
+            "name": "alpha_rho",
+            "schema": "long"
+          },
+          "mapKey": {
+            "name": "alpha_xi",
+            "dtmi:dtdl:property:name;2": "alpha_omicron",
+            "schema": "string"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:alpha_psi;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:alpha_phi;1",
+          "@type": "Map",
+          "mapValue": {
+            "name": "alpha_chi",
+            "schema": "string"
+          },
+          "mapKey": {
+            "@context": "dtmi:undefinedExtension:context;1",
+            "name": "alpha_tau",
+            "dtmi:dtdl:property:name;2": "alpha_upsilon",
+            "schema": "string"
+          }
+        }
+      }
+    ]
+  }
+]

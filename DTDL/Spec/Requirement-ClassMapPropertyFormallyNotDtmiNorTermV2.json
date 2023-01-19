@@ -1,0 +1,53 @@
+﻿[
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:flunn_floob;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:flunn_quan;1",
+          "@type": "Map",
+          "mapKey": {
+            "name": "flunn_thnad",
+            "schema": "string"
+          },
+          "mapValue": {
+            "name": "flunn_spazz",
+            "schema": "float"
+          },
+          "http://foo.com/bar": true
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:flunn_itch;1",
+        "@type": "Interface",
+        "schemas": {
+          "@context": "dtmi:undefinedExtension:context;1",
+          "@id": "dtmi:example:flunn_zatz;1",
+          "@type": "Map",
+          "mapKey": {
+            "name": "flunn_jogg",
+            "schema": "string"
+          },
+          "mapValue": {
+            "name": "flunn_flunn",
+            "schema": "integer"
+          },
+          "http://foo.com/bar": true
+        }
+      }
+    ]
+  }
+]

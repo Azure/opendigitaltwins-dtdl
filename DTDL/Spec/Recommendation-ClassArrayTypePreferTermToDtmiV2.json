@@ -1,0 +1,36 @@
+﻿[
+  {
+    "valid": true,
+    "desirable": true,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:epsilon_xi;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:epsilon_nu;1",
+          "elementSchema": "string",
+          "@type": "Array"
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "desirable": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:epsilon_pi;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:epsilon_omicron;1",
+          "elementSchema": "time",
+          "@type": "dtmi:dtdl:class:Array;2"
+        }
+      }
+    ]
+  }
+]

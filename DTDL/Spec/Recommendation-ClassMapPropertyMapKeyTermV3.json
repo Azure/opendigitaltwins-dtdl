@@ -1,0 +1,50 @@
+﻿[
+  {
+    "valid": true,
+    "desirable": true,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:um_psi;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:um_upsilon;1",
+          "@type": "Map",
+          "mapKey": {
+            "name": "um_phi",
+            "schema": "string"
+          },
+          "mapValue": {
+            "name": "um_chi",
+            "schema": "double"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "desirable": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:um_um;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:um_omega;1",
+          "@type": "Map",
+          "dtmi:dtdl:property:mapKey;3": {
+            "name": "um_yuzz",
+            "schema": "string"
+          },
+          "mapValue": {
+            "name": "um_wum",
+            "schema": "duration"
+          }
+        }
+      }
+    ]
+  }
+]

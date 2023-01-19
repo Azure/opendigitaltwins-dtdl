@@ -1,0 +1,50 @@
+﻿[
+  {
+    "valid": true,
+    "desirable": true,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:snee_flunn;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:snee_floob;1",
+          "@type": "Map",
+          "mapKey": {
+            "name": "snee_zatz",
+            "schema": "string"
+          },
+          "mapValue": {
+            "name": "snee_jogg",
+            "schema": "double"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "desirable": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:snee_hi;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:snee_itch;1",
+          "@type": "Map",
+          "mapKey": {
+            "name": "snee_yekk",
+            "schema": "string"
+          },
+          "dtmi:dtdl:property:mapValue;3": {
+            "name": "snee_vroo",
+            "schema": "duration"
+          }
+        }
+      }
+    ]
+  }
+]

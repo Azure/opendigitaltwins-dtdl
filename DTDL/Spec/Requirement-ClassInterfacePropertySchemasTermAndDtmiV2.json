@@ -1,0 +1,57 @@
+﻿[
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:eta_pi;1",
+        "@type": "Interface",
+        "schemas": [
+          {
+            "@id": "dtmi:example:eta_rho;1",
+            "@type": "Array",
+            "elementSchema": "float"
+          }
+        ],
+        "dtmi:dtdl:property:schemas;2": [
+          {
+            "@id": "dtmi:example:eta_sigma;1",
+            "@type": "Array",
+            "elementSchema": "integer"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": [
+          "dtmi:dtdl:context;2",
+          "dtmi:undefinedExtension:context;1"
+        ],
+        "@id": "dtmi:example:eta_tau;1",
+        "@type": "Interface",
+        "schemas": [
+          {
+            "@id": "dtmi:example:eta_upsilon;1",
+            "@type": "Array",
+            "elementSchema": "long"
+          }
+        ],
+        "dtmi:dtdl:property:schemas;2": [
+          {
+            "@id": "dtmi:example:eta_phi;1",
+            "@type": "Array",
+            "elementSchema": "string"
+          }
+        ]
+      }
+    ]
+  }
+]

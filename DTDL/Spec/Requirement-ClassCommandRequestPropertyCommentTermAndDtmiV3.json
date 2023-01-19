@@ -1,0 +1,47 @@
+﻿[
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:beta_omicron;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Command",
+          "name": "beta_xi",
+          "request": {
+            "comment": "beta_lambda",
+            "dtmi:dtdl:property:comment;3": "beta_mu",
+            "name": "beta_nu",
+            "schema": "integer"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:beta_upsilon;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Command",
+          "name": "beta_tau",
+          "request": {
+            "@context": "dtmi:undefinedExtension:context;1",
+            "comment": "beta_pi",
+            "dtmi:dtdl:property:comment;3": "beta_rho",
+            "name": "beta_sigma",
+            "schema": "long"
+          }
+        }
+      }
+    ]
+  }
+]

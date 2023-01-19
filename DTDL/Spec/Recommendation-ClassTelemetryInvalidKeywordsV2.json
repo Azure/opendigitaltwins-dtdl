@@ -1,0 +1,56 @@
+﻿[
+  {
+    "valid": true,
+    "desirable": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:pi_tau;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Telemetry",
+          "name": "pi_sigma",
+          "schema": "date",
+          "@value": 626
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "desirable": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:pi_phi;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Telemetry",
+          "name": "pi_upsilon",
+          "schema": "dateTime",
+          "@language": "en"
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "desirable": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:pi_psi;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Telemetry",
+          "name": "pi_chi",
+          "schema": "double",
+          "@foobar": true
+        }
+      }
+    ]
+  }
+]

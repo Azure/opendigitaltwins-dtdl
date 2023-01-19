@@ -1,0 +1,53 @@
+﻿[
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:thnad_alpha;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:quan_vroo;1",
+          "@type": "Map",
+          "mapValue": {
+            "name": "quan_hi",
+            "schema": "dateTime"
+          },
+          "mapKey": {
+            "name": "quan_yekk",
+            "schema": "string",
+            "foobar": {}
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:thnad_epsilon;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:thnad_gamma;1",
+          "@type": "Map",
+          "mapValue": {
+            "name": "thnad_delta",
+            "schema": "double"
+          },
+          "mapKey": {
+            "@context": "dtmi:undefinedExtension:context;1",
+            "name": "thnad_beta",
+            "schema": "string",
+            "foobar": {}
+          }
+        }
+      }
+    ]
+  }
+]

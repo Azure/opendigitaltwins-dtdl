@@ -1,0 +1,52 @@
+﻿[
+  {
+    "valid": true,
+    "desirable": true,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:floob_thnad;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:floob_snee;1",
+          "@type": "Map",
+          "mapValue": {
+            "name": "floob_quan",
+            "schema": "double"
+          },
+          "mapKey": {
+            "comment": "floob_glikk",
+            "name": "floob_nuh",
+            "schema": "string"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "desirable": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:floob_flunn;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:floob_zatz;1",
+          "@type": "Map",
+          "mapValue": {
+            "name": "floob_jogg",
+            "schema": "duration"
+          },
+          "mapKey": {
+            "dtmi:dtdl:property:comment;3": "floob_spazz",
+            "name": "floob_floob",
+            "schema": "string"
+          }
+        }
+      }
+    ]
+  }
+]

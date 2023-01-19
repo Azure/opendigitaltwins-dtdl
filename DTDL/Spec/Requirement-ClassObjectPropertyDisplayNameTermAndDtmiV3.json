@@ -1,0 +1,47 @@
+﻿[
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:epsilon_beta;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:delta_vroo;1",
+          "@type": "Object",
+          "displayName": [
+            "delta_hi"
+          ],
+          "dtmi:dtdl:property:displayName;3": [
+            "epsilon_alpha"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:epsilon_zeta;1",
+        "@type": "Interface",
+        "schemas": {
+          "@context": "dtmi:undefinedExtension:context;1",
+          "@id": "dtmi:example:epsilon_gamma;1",
+          "@type": "Object",
+          "displayName": [
+            "epsilon_delta"
+          ],
+          "dtmi:dtdl:property:displayName;3": [
+            "epsilon_epsilon"
+          ]
+        }
+      }
+    ]
+  }
+]

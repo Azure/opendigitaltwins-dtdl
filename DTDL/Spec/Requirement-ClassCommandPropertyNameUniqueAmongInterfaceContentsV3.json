@@ -1,0 +1,70 @@
+﻿[
+  {
+    "valid": true,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:hi_epsilon;1",
+        "@type": "Interface",
+        "contents": [
+          {
+            "@type": "Command",
+            "name": "beta_psi"
+          },
+          {
+            "@type": "Command",
+            "name": "beta_omega"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:hi_zeta;1",
+        "@type": "Interface",
+        "contents": [
+          {
+            "@type": "Command",
+            "name": "beta_psi"
+          },
+          {
+            "@type": "Command",
+            "name": "beta_psi"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": [
+          "dtmi:dtdl:context;3",
+          "dtmi:undefinedExtension:context;1"
+        ],
+        "@id": "dtmi:example:hi_eta;1",
+        "@type": "Interface",
+        "contents": [
+          {
+            "@type": "Command",
+            "name": "beta_psi"
+          },
+          {
+            "@type": "Command",
+            "name": "beta_psi"
+          }
+        ]
+      }
+    ]
+  }
+]

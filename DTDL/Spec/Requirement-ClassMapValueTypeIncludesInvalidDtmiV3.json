@@ -1,0 +1,59 @@
+﻿[
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:upsilon_iota;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:upsilon_eta;1",
+          "@type": "Map",
+          "mapKey": {
+            "name": "upsilon_theta",
+            "schema": "string"
+          },
+          "mapValue": {
+            "@type": [
+              "MapValue",
+              "dtmi:foo//bar"
+            ],
+            "name": "upsilon_zeta",
+            "schema": "float"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:upsilon_nu;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:upsilon_lambda;1",
+          "@type": "Map",
+          "mapKey": {
+            "name": "upsilon_mu",
+            "schema": "string"
+          },
+          "mapValue": {
+            "@context": "dtmi:undefinedExtension:context;1",
+            "@type": [
+              "MapValue",
+              "dtmi:foo//bar"
+            ],
+            "name": "upsilon_kappa",
+            "schema": "integer"
+          }
+        }
+      }
+    ]
+  }
+]

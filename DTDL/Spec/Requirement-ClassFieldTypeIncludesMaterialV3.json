@@ -1,0 +1,176 @@
+﻿[
+  {
+    "valid": true,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:snee_snee;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:snee_nuh;1",
+          "@type": "Object",
+          "fields": {
+            "name": "snee_glikk",
+            "schema": "date",
+            "@type": "Field"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:snee_spazz;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:snee_thnad;1",
+          "@type": "Object",
+          "fields": {
+            "name": "snee_quan",
+            "schema": "dateTime",
+            "@type": [
+              "Field"
+            ]
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:snee_jogg;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:snee_zatz;1",
+          "@type": "Object",
+          "fields": {
+            "name": "snee_floob",
+            "schema": "double",
+            "@type": "dtmi:dtdl:class:Field;3"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:snee_yekk;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:snee_itch;1",
+          "@type": "Object",
+          "fields": {
+            "name": "snee_flunn",
+            "schema": "duration",
+            "@type": [
+              "dtmi:dtdl:class:Field;3"
+            ]
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:quan_alpha;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:snee_hi;1",
+          "@type": "Object",
+          "fields": {
+            "name": "snee_vroo",
+            "schema": "float",
+            "@type": "Something"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:quan_delta;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:quan_gamma;1",
+          "@type": "Object",
+          "fields": {
+            "@context": "dtmi:undefinedExtension:context;1",
+            "name": "quan_beta",
+            "schema": "integer",
+            "@type": "Something"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:quan_eta;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:quan_zeta;1",
+          "@type": "Object",
+          "fields": {
+            "name": "quan_epsilon",
+            "schema": "long",
+            "@type": [
+              "Something"
+            ]
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:quan_kappa;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:quan_iota;1",
+          "@type": "Object",
+          "fields": {
+            "@context": "dtmi:undefinedExtension:context;1",
+            "name": "quan_theta",
+            "schema": "string",
+            "@type": [
+              "Something"
+            ]
+          }
+        }
+      }
+    ]
+  }
+]

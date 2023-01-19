@@ -1,0 +1,44 @@
+﻿[
+  {
+    "valid": true,
+    "desirable": true,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:fuddle_snee;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Command",
+          "name": "fuddle_nuh",
+          "response": {
+            "comment": "fuddle_fuddle",
+            "name": "fuddle_glikk",
+            "schema": "string"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "desirable": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:fuddle_floob;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Command",
+          "name": "fuddle_spazz",
+          "response": {
+            "dtmi:dtdl:property:comment;3": "fuddle_quan",
+            "name": "fuddle_thnad",
+            "schema": "time"
+          }
+        }
+      }
+    ]
+  }
+]

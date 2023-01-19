@@ -1,0 +1,36 @@
+﻿[
+  {
+    "valid": true,
+    "desirable": true,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:nuh_theta;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:nuh_eta;1",
+          "@type": "Array",
+          "elementSchema": "float"
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "desirable": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:nuh_kappa;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:nuh_iota;1",
+          "@type": "Array",
+          "dtmi:dtdl:property:elementSchema;3": "integer"
+        }
+      }
+    ]
+  }
+]

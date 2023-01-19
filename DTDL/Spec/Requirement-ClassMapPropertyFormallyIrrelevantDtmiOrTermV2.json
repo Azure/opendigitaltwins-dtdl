@@ -1,0 +1,104 @@
+﻿[
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:flunn_delta;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:flunn_alpha;1",
+          "@type": "Map",
+          "mapKey": {
+            "name": "flunn_beta",
+            "schema": "string"
+          },
+          "mapValue": {
+            "name": "flunn_gamma",
+            "schema": "long"
+          },
+          "dtmi:foo:bar;1": 626
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:flunn_theta;1",
+        "@type": "Interface",
+        "schemas": {
+          "@context": "dtmi:undefinedExtension:context;1",
+          "@id": "dtmi:example:flunn_epsilon;1",
+          "@type": "Map",
+          "mapKey": {
+            "name": "flunn_zeta",
+            "schema": "string"
+          },
+          "mapValue": {
+            "name": "flunn_eta",
+            "schema": "string"
+          },
+          "dtmi:foo:bar;1": 626
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:flunn_mu;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:flunn_iota;1",
+          "@type": "Map",
+          "mapKey": {
+            "name": "flunn_kappa",
+            "schema": "string"
+          },
+          "mapValue": {
+            "name": "flunn_lambda",
+            "schema": "time"
+          },
+          "boolean": null
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:flunn_pi;1",
+        "@type": "Interface",
+        "schemas": {
+          "@context": "dtmi:undefinedExtension:context;1",
+          "@id": "dtmi:example:flunn_nu;1",
+          "@type": "Map",
+          "mapKey": {
+            "name": "flunn_xi",
+            "schema": "string"
+          },
+          "mapValue": {
+            "name": "flunn_omicron",
+            "schema": "boolean"
+          },
+          "boolean": null
+        }
+      }
+    ]
+  }
+]

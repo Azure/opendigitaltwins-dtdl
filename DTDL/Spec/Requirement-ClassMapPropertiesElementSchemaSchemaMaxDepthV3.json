@@ -1,0 +1,223 @@
+﻿[
+  {
+    "valid": true,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:tau_omicron;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Property",
+          "name": "tau_xi",
+          "schema": {
+            "@type": "Map",
+            "mapKey": {
+              "name": "tau_nu",
+              "schema": "string"
+            },
+            "mapValue": {
+              "name": "tau_mu",
+              "schema": {
+                "@type": "Map",
+                "mapKey": {
+                  "name": "tau_lambda",
+                  "schema": "string"
+                },
+                "mapValue": {
+                  "name": "tau_kappa",
+                  "schema": {
+                    "@type": "Map",
+                    "mapKey": {
+                      "name": "tau_iota",
+                      "schema": "string"
+                    },
+                    "mapValue": {
+                      "name": "tau_theta",
+                      "schema": {
+                        "@type": "Map",
+                        "mapKey": {
+                          "name": "tau_eta",
+                          "schema": "string"
+                        },
+                        "mapValue": {
+                          "name": "tau_zeta",
+                          "schema": {
+                            "@type": "Map",
+                            "mapKey": {
+                              "name": "tau_delta",
+                              "schema": "string"
+                            },
+                            "mapValue": {
+                              "name": "tau_epsilon",
+                              "schema": "double"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:tau_fuddle;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Property",
+          "name": "tau_humpf",
+          "schema": {
+            "@type": "Map",
+            "mapKey": {
+              "name": "tau_um",
+              "schema": "string"
+            },
+            "mapValue": {
+              "name": "tau_wum",
+              "schema": {
+                "@type": "Map",
+                "mapKey": {
+                  "name": "tau_yuzz",
+                  "schema": "string"
+                },
+                "mapValue": {
+                  "name": "tau_omega",
+                  "schema": {
+                    "@type": "Map",
+                    "mapKey": {
+                      "name": "tau_psi",
+                      "schema": "string"
+                    },
+                    "mapValue": {
+                      "name": "tau_chi",
+                      "schema": {
+                        "@type": "Map",
+                        "mapKey": {
+                          "name": "tau_phi",
+                          "schema": "string"
+                        },
+                        "mapValue": {
+                          "name": "tau_upsilon",
+                          "schema": {
+                            "@type": "Map",
+                            "mapKey": {
+                              "name": "tau_tau",
+                              "schema": "string"
+                            },
+                            "mapValue": {
+                              "name": "tau_sigma",
+                              "schema": {
+                                "@type": "Map",
+                                "mapKey": {
+                                  "name": "tau_pi",
+                                  "schema": "string"
+                                },
+                                "mapValue": {
+                                  "name": "tau_rho",
+                                  "schema": "duration"
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:tau_hi;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Property",
+          "name": "tau_vroo",
+          "schema": {
+            "@context": "dtmi:undefinedExtension:context;1",
+            "@type": "Map",
+            "mapKey": {
+              "name": "tau_yekk",
+              "schema": "string"
+            },
+            "mapValue": {
+              "name": "tau_itch",
+              "schema": {
+                "@type": "Map",
+                "mapKey": {
+                  "name": "tau_flunn",
+                  "schema": "string"
+                },
+                "mapValue": {
+                  "name": "tau_jogg",
+                  "schema": {
+                    "@type": "Map",
+                    "mapKey": {
+                      "name": "tau_zatz",
+                      "schema": "string"
+                    },
+                    "mapValue": {
+                      "name": "tau_floob",
+                      "schema": {
+                        "@type": "Map",
+                        "mapKey": {
+                          "name": "tau_spazz",
+                          "schema": "string"
+                        },
+                        "mapValue": {
+                          "name": "tau_thnad",
+                          "schema": {
+                            "@type": "Map",
+                            "mapKey": {
+                              "name": "tau_quan",
+                              "schema": "string"
+                            },
+                            "mapValue": {
+                              "name": "tau_snee",
+                              "schema": {
+                                "@type": "Map",
+                                "mapKey": {
+                                  "name": "tau_glikk",
+                                  "schema": "string"
+                                },
+                                "mapValue": {
+                                  "name": "tau_nuh",
+                                  "schema": "float"
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    ]
+  }
+]

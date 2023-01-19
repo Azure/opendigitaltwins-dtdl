@@ -1,0 +1,38 @@
+﻿[
+  {
+    "valid": true,
+    "desirable": true,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:delta_humpf;1",
+        "@type": "Interface",
+        "extends": [
+          {
+            "@id": "dtmi:example:delta_fuddle;1",
+            "@type": "Interface"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "desirable": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:delta_glikk;1",
+        "@type": "Interface",
+        "dtmi:dtdl:property:extends;2": [
+          {
+            "@id": "dtmi:example:delta_nuh;1",
+            "@type": "Interface"
+          }
+        ]
+      }
+    ]
+  }
+]

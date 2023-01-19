@@ -1,0 +1,70 @@
+﻿[
+  {
+    "valid": true,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:lambda_chi;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Telemetry",
+          "name": "lambda_phi",
+          "schema": {
+            "@type": "Array",
+            "elementSchema": "long"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:lambda_omega;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:lambda_psi;1",
+          "@type": "Array",
+          "elementSchema": "string"
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:lambda_yuzz;1",
+        "@type": "Interface",
+        "schemas": {
+          "@type": "Array",
+          "elementSchema": "time"
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:lambda_wum;1",
+        "@type": "Interface",
+        "schemas": {
+          "@context": "dtmi:undefinedExtension:context;1",
+          "@type": "Array",
+          "elementSchema": "boolean"
+        }
+      }
+    ]
+  }
+]

@@ -1,0 +1,68 @@
+﻿[
+  {
+    "valid": true,
+    "desirable": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:um_theta;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:um_eta;1",
+          "@type": "Enum",
+          "valueSchema": "integer",
+          "enumValues": {
+            "enumValue": 1002,
+            "name": "um_zeta",
+            "@value": 626
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "desirable": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:um_lambda;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:um_kappa;1",
+          "@type": "Enum",
+          "valueSchema": "integer",
+          "enumValues": {
+            "enumValue": 1003,
+            "name": "um_iota",
+            "@language": "en"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "desirable": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:um_xi;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:um_nu;1",
+          "@type": "Enum",
+          "valueSchema": "integer",
+          "enumValues": {
+            "enumValue": 1004,
+            "name": "um_mu",
+            "@foobar": true
+          }
+        }
+      }
+    ]
+  }
+]

@@ -1,0 +1,473 @@
+﻿[
+  {
+    "valid": true,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:omega_wum;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Command",
+          "name": "omega_yuzz",
+          "request": {
+            "schema": "duration",
+            "name": "hello"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:omega_humpf;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Command",
+          "name": "omega_um",
+          "request": {
+            "schema": "float",
+            "name": [
+              "hello"
+            ]
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:omega_glikk;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Command",
+          "name": "omega_fuddle",
+          "request": {
+            "schema": "integer",
+            "name": {
+              "@value": "hello",
+              "@type": "xsd:string"
+            }
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:omega_snee;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Command",
+          "name": "omega_nuh",
+          "request": {
+            "schema": "long",
+            "name": [
+              {
+                "@value": "hello",
+                "@type": "xsd:string"
+              }
+            ]
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:omega_thnad;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Command",
+          "name": "omega_quan",
+          "request": {
+            "schema": "string",
+            "name": null
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:omega_floob;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Command",
+          "name": "omega_spazz",
+          "request": {
+            "@context": "dtmi:undefinedExtension:context;1",
+            "schema": "time",
+            "name": null
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:omega_jogg;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Command",
+          "name": "omega_zatz",
+          "request": {
+            "schema": "boolean",
+            "name": true
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:omega_itch;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Command",
+          "name": "omega_flunn",
+          "request": {
+            "@context": "dtmi:undefinedExtension:context;1",
+            "schema": "date",
+            "name": true
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:omega_vroo;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Command",
+          "name": "omega_yekk",
+          "request": {
+            "schema": "dateTime",
+            "name": 626
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:yuzz_alpha;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Command",
+          "name": "omega_hi",
+          "request": {
+            "@context": "dtmi:undefinedExtension:context;1",
+            "schema": "double",
+            "name": 626
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:yuzz_gamma;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Command",
+          "name": "yuzz_beta",
+          "request": {
+            "schema": "duration",
+            "name": [
+              null
+            ]
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:yuzz_epsilon;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Command",
+          "name": "yuzz_delta",
+          "request": {
+            "@context": "dtmi:undefinedExtension:context;1",
+            "schema": "float",
+            "name": [
+              null
+            ]
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:yuzz_eta;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Command",
+          "name": "yuzz_zeta",
+          "request": {
+            "schema": "integer",
+            "name": [
+              true
+            ]
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:yuzz_iota;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Command",
+          "name": "yuzz_theta",
+          "request": {
+            "@context": "dtmi:undefinedExtension:context;1",
+            "schema": "long",
+            "name": [
+              true
+            ]
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:yuzz_lambda;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Command",
+          "name": "yuzz_kappa",
+          "request": {
+            "schema": "string",
+            "name": [
+              626
+            ]
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:yuzz_nu;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Command",
+          "name": "yuzz_mu",
+          "request": {
+            "@context": "dtmi:undefinedExtension:context;1",
+            "schema": "time",
+            "name": [
+              626
+            ]
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:yuzz_omicron;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Command",
+          "name": "yuzz_xi",
+          "request": {
+            "schema": "boolean",
+            "name": {}
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:yuzz_rho;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Command",
+          "name": "yuzz_pi",
+          "request": {
+            "@context": "dtmi:undefinedExtension:context;1",
+            "schema": "date",
+            "name": {}
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:yuzz_tau;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Command",
+          "name": "yuzz_sigma",
+          "request": {
+            "schema": "dateTime",
+            "name": [
+              {}
+            ]
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:yuzz_phi;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Command",
+          "name": "yuzz_upsilon",
+          "request": {
+            "@context": "dtmi:undefinedExtension:context;1",
+            "schema": "double",
+            "name": [
+              {}
+            ]
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:yuzz_psi;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Command",
+          "name": "yuzz_chi",
+          "request": {
+            "schema": "duration",
+            "name": []
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:yuzz_yuzz;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Command",
+          "name": "yuzz_omega",
+          "request": {
+            "@context": "dtmi:undefinedExtension:context;1",
+            "schema": "float",
+            "name": []
+          }
+        }
+      }
+    ]
+  }
+]

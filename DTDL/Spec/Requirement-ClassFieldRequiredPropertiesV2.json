@@ -1,0 +1,80 @@
+﻿[
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:humpf_sigma;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:humpf_rho;1",
+          "@type": "Object",
+          "fields": {
+            "schema": "double"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:humpf_upsilon;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:humpf_tau;1",
+          "@type": "Object",
+          "fields": {
+            "@context": "dtmi:undefinedExtension:context;1",
+            "schema": "duration"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:humpf_psi;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:humpf_chi;1",
+          "@type": "Object",
+          "fields": {
+            "name": "humpf_phi"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:humpf_wum;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:humpf_yuzz;1",
+          "@type": "Object",
+          "fields": {
+            "@context": "dtmi:undefinedExtension:context;1",
+            "name": "humpf_omega"
+          }
+        }
+      }
+    ]
+  }
+]

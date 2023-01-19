@@ -1,0 +1,88 @@
+﻿[
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:lambda_kappa;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Component",
+          "name": "lambda_theta",
+          "schema": {
+            "@id": "dtmi:example:lambda_iota;1",
+            "@type": "Interface"
+          },
+          "dtmi:foo:bar;1": 626
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:lambda_nu;1",
+        "@type": "Interface",
+        "contents": {
+          "@context": "dtmi:undefinedExtension:context;1",
+          "@type": "Component",
+          "name": "lambda_lambda",
+          "schema": {
+            "@id": "dtmi:example:lambda_mu;1",
+            "@type": "Interface"
+          },
+          "dtmi:foo:bar;1": 626
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:lambda_pi;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Component",
+          "name": "lambda_xi",
+          "schema": {
+            "@id": "dtmi:example:lambda_omicron;1",
+            "@type": "Interface"
+          },
+          "boolean": null
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:lambda_tau;1",
+        "@type": "Interface",
+        "contents": {
+          "@context": "dtmi:undefinedExtension:context;1",
+          "@type": "Component",
+          "name": "lambda_rho",
+          "schema": {
+            "@id": "dtmi:example:lambda_sigma;1",
+            "@type": "Interface"
+          },
+          "boolean": null
+        }
+      }
+    ]
+  }
+]

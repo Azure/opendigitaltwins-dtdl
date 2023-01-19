@@ -1,0 +1,52 @@
+﻿[
+  {
+    "valid": true,
+    "desirable": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:zeta_epsilon;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:zeta_delta;1",
+          "@type": "Enum",
+          "valueSchema": "integer",
+          "enumValues": {
+            "enumValue": 1250,
+            "name": "zeta_gamma",
+            "@type": [
+              "EnumValue",
+              "EnumValue"
+            ]
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "desirable": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:zeta_theta;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:zeta_eta;1",
+          "@type": "Enum",
+          "valueSchema": "integer",
+          "enumValues": {
+            "enumValue": 1251,
+            "name": "zeta_zeta",
+            "@type": [
+              "dtmi:dtdl:class:EnumValue;3",
+              "dtmi:dtdl:class:EnumValue;3"
+            ]
+          }
+        }
+      }
+    ]
+  }
+]

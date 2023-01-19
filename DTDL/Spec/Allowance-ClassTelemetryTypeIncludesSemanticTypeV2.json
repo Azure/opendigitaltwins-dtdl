@@ -1,0 +1,42 @@
+﻿[
+  {
+    "valid": true,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:flunn_nu;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": [
+            "Telemetry",
+            "LuminousIntensity"
+          ],
+          "name": "flunn_mu",
+          "schema": "float",
+          "unit": "candela"
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:flunn_omicron;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": [
+            "Telemetry",
+            "dtmi:standard:class:LuminousIntensity;2"
+          ],
+          "name": "flunn_xi",
+          "schema": "integer",
+          "unit": "candela"
+        }
+      }
+    ]
+  }
+]

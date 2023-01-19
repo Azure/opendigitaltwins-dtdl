@@ -1,0 +1,48 @@
+﻿[
+  {
+    "valid": true,
+    "desirable": true,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:zatz_upsilon;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:zatz_sigma;1",
+          "@type": "Enum",
+          "enumValues": [
+            {
+              "enumValue": 1129,
+              "name": "zatz_tau"
+            }
+          ],
+          "valueSchema": "integer"
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "desirable": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:zatz_psi;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:zatz_phi;1",
+          "@type": "Enum",
+          "dtmi:dtdl:property:enumValues;3": [
+            {
+              "enumValue": 1130,
+              "name": "zatz_chi"
+            }
+          ],
+          "valueSchema": "integer"
+        }
+      }
+    ]
+  }
+]

@@ -1,0 +1,39 @@
+﻿[
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:eta_alpha;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Telemetry",
+          "name": "zeta_hi",
+          "schema": "float",
+          "dtmi:dtdl:property:schema;2": "integer"
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:eta_gamma;1",
+        "@type": "Interface",
+        "contents": {
+          "@context": "dtmi:undefinedExtension:context;1",
+          "@type": "Telemetry",
+          "name": "eta_beta",
+          "schema": "long",
+          "dtmi:dtdl:property:schema;2": "string"
+        }
+      }
+    ]
+  }
+]

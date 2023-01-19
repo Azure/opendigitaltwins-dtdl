@@ -1,0 +1,198 @@
+﻿[
+  {
+    "valid": true,
+    "options": [],
+    "input": [
+      {
+        "@context": [
+          "dtmi:dtdl:context;3"
+        ],
+        "@id": "dtmi:ex:id;1",
+        "@type": "Interface",
+        "contents": [
+          {
+            "@type": "Relationship",
+            "name": "foo",
+            "target": "dtmi:some:valid:identifier;3"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": [
+          "dtmi:dtdl:context;3"
+        ],
+        "@id": "dtmi:ex:id;1",
+        "@type": "Interface",
+        "contents": [
+          {
+            "@type": "Relationship",
+            "name": "foo",
+            "target": 626
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": [
+          "dtmi:dtdl:context;3",
+          "dtmi:undefinedExtension:context;1"
+        ],
+        "@id": "dtmi:ex:id;1",
+        "@type": "Interface",
+        "contents": [
+          {
+            "@type": "Relationship",
+            "name": "foo",
+            "target": 626
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": [
+          "dtmi:dtdl:context;3"
+        ],
+        "@id": "dtmi:ex:id;1",
+        "@type": "Interface",
+        "contents": [
+          {
+            "@type": "Relationship",
+            "name": "foo",
+            "target": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": [
+          "dtmi:dtdl:context;3",
+          "dtmi:undefinedExtension:context;1"
+        ],
+        "@id": "dtmi:ex:id;1",
+        "@type": "Interface",
+        "contents": [
+          {
+            "@type": "Relationship",
+            "name": "foo",
+            "target": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": [
+          "dtmi:dtdl:context;3"
+        ],
+        "@id": "dtmi:ex:id;1",
+        "@type": "Interface",
+        "contents": [
+          {
+            "@type": "Relationship",
+            "name": "foo",
+            "target": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": [
+          "dtmi:dtdl:context;3",
+          "dtmi:undefinedExtension:context;1"
+        ],
+        "@id": "dtmi:ex:id;1",
+        "@type": "Interface",
+        "contents": [
+          {
+            "@type": "Relationship",
+            "name": "foo",
+            "target": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": [
+          "dtmi:dtdl:context;3"
+        ],
+        "@id": "dtmi:ex:id;1",
+        "@type": "Interface",
+        "contents": [
+          {
+            "@type": "Relationship",
+            "name": "foo",
+            "target": {
+              "@value": "dtmi:apparently:valid:identifier;3"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": [
+          "dtmi:dtdl:context;3",
+          "dtmi:undefinedExtension:context;1"
+        ],
+        "@id": "dtmi:ex:id;1",
+        "@type": "Interface",
+        "contents": [
+          {
+            "@type": "Relationship",
+            "name": "foo",
+            "target": {
+              "@value": "dtmi:apparently:valid:identifier;3"
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

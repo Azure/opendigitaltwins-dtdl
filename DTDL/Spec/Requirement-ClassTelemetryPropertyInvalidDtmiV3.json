@@ -1,0 +1,45 @@
+﻿[
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:nuh_yekk;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": [
+            "Telemetry",
+            "Foobar"
+          ],
+          "name": "nuh_itch",
+          "schema": "time",
+          "dtmi:foo//bar": 626
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:nuh_hi;1",
+        "@type": "Interface",
+        "contents": {
+          "@context": "dtmi:undefinedExtension:context;1",
+          "@type": [
+            "Telemetry",
+            "Foobar"
+          ],
+          "name": "nuh_vroo",
+          "schema": "boolean",
+          "dtmi:foo//bar": 626
+        }
+      }
+    ]
+  }
+]

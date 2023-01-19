@@ -1,0 +1,47 @@
+﻿[
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:wum_mu;1",
+        "@type": "Interface",
+        "extends": {
+          "@id": "dtmi:example:wum_mu;1",
+          "@type": "Interface",
+          "contents": {
+            "@id": "dtmi:example:wum_mu;1",
+            "@type": "Telemetry",
+            "name": "wum_nu",
+            "schema": "string"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:wum_xi;1",
+        "@type": "Interface",
+        "extends": {
+          "@id": "dtmi:example:wum_xi;1",
+          "@type": "Interface",
+          "contents": {
+            "@context": "dtmi:undefinedExtension:context;1",
+            "@id": "dtmi:example:wum_xi;1",
+            "@type": "Telemetry",
+            "name": "wum_omicron",
+            "schema": "time"
+          }
+        }
+      }
+    ]
+  }
+]

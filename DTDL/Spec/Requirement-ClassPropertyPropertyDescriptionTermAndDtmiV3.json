@@ -1,0 +1,49 @@
+﻿[
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:wum_phi;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Property",
+          "description": [
+            "wum_sigma"
+          ],
+          "dtmi:dtdl:property:description;3": [
+            "wum_tau"
+          ],
+          "name": "wum_upsilon",
+          "schema": "time"
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:wum_yuzz;1",
+        "@type": "Interface",
+        "contents": {
+          "@context": "dtmi:undefinedExtension:context;1",
+          "@type": "Property",
+          "description": [
+            "wum_chi"
+          ],
+          "dtmi:dtdl:property:description;3": [
+            "wum_psi"
+          ],
+          "name": "wum_omega",
+          "schema": "boolean"
+        }
+      }
+    ]
+  }
+]

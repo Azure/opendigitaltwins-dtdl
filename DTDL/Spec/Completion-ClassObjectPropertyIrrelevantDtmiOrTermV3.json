@@ -1,0 +1,84 @@
+﻿[
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:iota_yuzz;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:iota_omega;1",
+          "@type": [
+            "Object",
+            "Foobar"
+          ],
+          "dtmi:foo:bar;1": 626
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:iota_um;1",
+        "@type": "Interface",
+        "schemas": {
+          "@context": "dtmi:undefinedExtension:context;1",
+          "@id": "dtmi:example:iota_wum;1",
+          "@type": [
+            "Object",
+            "Foobar"
+          ],
+          "dtmi:foo:bar;1": 626
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:iota_fuddle;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:iota_humpf;1",
+          "@type": [
+            "Object",
+            "Foobar"
+          ],
+          "boolean": null
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:iota_nuh;1",
+        "@type": "Interface",
+        "schemas": {
+          "@context": "dtmi:undefinedExtension:context;1",
+          "@id": "dtmi:example:iota_glikk;1",
+          "@type": [
+            "Object",
+            "Foobar"
+          ],
+          "boolean": null
+        }
+      }
+    ]
+  }
+]

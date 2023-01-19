@@ -1,0 +1,30 @@
+﻿[
+  {
+    "valid": true,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:quan_pi;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:quan_xi;1",
+          "@type": "Map",
+          "mapValue": {
+            "name": "quan_omicron",
+            "schema": "float"
+          },
+          "mapKey": {
+            "@type": [
+              "MapKey",
+              "Foobar"
+            ],
+            "name": "quan_nu",
+            "schema": "string",
+            "dtmi:foo//bar": 626
+          }
+        }
+      }
+    ]
+  }
+]

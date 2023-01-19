@@ -1,0 +1,53 @@
+﻿[
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:omega_psi;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:omega_phi;1",
+          "@type": "Map",
+          "mapKey": {
+            "name": "omega_chi",
+            "schema": "string"
+          },
+          "mapValue": {
+            "name": "omega_upsilon",
+            "schema": "time",
+            "@graph": {}
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:omega_um;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:omega_yuzz;1",
+          "@type": "Map",
+          "mapKey": {
+            "name": "omega_wum",
+            "schema": "string"
+          },
+          "mapValue": {
+            "@context": "dtmi:undefinedExtension:context;1",
+            "name": "omega_omega",
+            "schema": "boolean",
+            "@graph": {}
+          }
+        }
+      }
+    ]
+  }
+]

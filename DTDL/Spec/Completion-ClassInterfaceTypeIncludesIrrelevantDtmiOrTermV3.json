@@ -1,0 +1,68 @@
+﻿[
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:epsilon_fuddle;1",
+        "@type": [
+          "Interface",
+          "dtmi:foo:bar;1"
+        ]
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": [
+          "dtmi:dtdl:context;3",
+          "dtmi:undefinedExtension:context;1"
+        ],
+        "@id": "dtmi:example:epsilon_glikk;1",
+        "@type": [
+          "Interface",
+          "dtmi:foo:bar;1"
+        ]
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:epsilon_nuh;1",
+        "@type": [
+          "Interface",
+          "boolean"
+        ]
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": [
+          "dtmi:dtdl:context;3",
+          "dtmi:undefinedExtension:context;1"
+        ],
+        "@id": "dtmi:example:epsilon_snee;1",
+        "@type": [
+          "Interface",
+          "boolean"
+        ]
+      }
+    ]
+  }
+]

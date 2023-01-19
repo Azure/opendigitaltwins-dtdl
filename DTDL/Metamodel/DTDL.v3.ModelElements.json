@@ -1,0 +1,120 @@
+﻿[
+  {
+    "@context": "dtmi:dtdl:context;3",
+    "@id": "dtmi:dtdl:instance:Schema:boolean;3",
+    "@type": [ "Boolean", "Alias" ],
+    "aliasFor": "dtmi:dtdl:instance:Schema:boolean;2",
+    "displayName": "boolean",
+    "description": {
+      "en-US": "a boolean value"
+    }
+  },
+  {
+    "@context": "dtmi:dtdl:context;3",
+    "@id": "dtmi:dtdl:instance:Schema:double;3",
+    "@type": [ "Double", "Alias" ],
+    "aliasFor": "dtmi:dtdl:instance:Schema:double;2",
+    "displayName": "double",
+    "description": {
+      "en-US": "a finite numeric value that is expressible in IEEE 754 double-precision floating point format, conformant with xsd:double"
+    }
+  },
+  {
+    "@context": "dtmi:dtdl:context;3",
+    "@id": "dtmi:dtdl:instance:Schema:float;3",
+    "@type": [ "Float", "Alias" ],
+    "aliasFor": "dtmi:dtdl:instance:Schema:float;2",
+    "displayName": "float",
+    "description": {
+      "en-US": "a finite numeric value that is expressible in IEEE 754 single-precision floating point format, conformant with xsd:float"
+    }
+  },
+  {
+    "@context": "dtmi:dtdl:context;3",
+    "@id": "dtmi:dtdl:instance:Schema:integer;3",
+    "@type": [ "Integer", "Alias" ],
+    "aliasFor": "dtmi:dtdl:instance:Schema:integer;2",
+    "displayName": "integer",
+    "description": {
+      "en-US": "a signed integral numeric value that is expressible in 4 bytes"
+    }
+  },
+  {
+    "@context": "dtmi:dtdl:context;3",
+    "@id": "dtmi:dtdl:instance:Schema:long;3",
+    "@type": [ "Long", "Alias" ],
+    "aliasFor": "dtmi:dtdl:instance:Schema:long;2",
+    "displayName": "long",
+    "description": {
+      "en-US": "a signed integral numeric value that is expressible in 8 bytes"
+    }
+  },
+  {
+    "@context": "dtmi:dtdl:context;3",
+    "@id": "dtmi:dtdl:instance:Schema:date;3",
+    "@type": [ "Date", "Alias" ],
+    "aliasFor": "dtmi:dtdl:instance:Schema:date;2",
+    "displayName": "date",
+    "description": {
+      "en-US": "a date in ISO 8601 format, per [RFC 3339](https://tools.ietf.org/html/rfc3339)"
+    }
+  },
+  {
+    "@context": "dtmi:dtdl:context;3",
+    "@id": "dtmi:dtdl:instance:Schema:dateTime;3",
+    "@type": [ "DateTime", "Alias" ],
+    "aliasFor": "dtmi:dtdl:instance:Schema:dateTime;2",
+    "displayName": "dateTime",
+    "description": {
+      "en-US": "a date and time in ISO 8601 format, per [RFC 3339](https://tools.ietf.org/html/rfc3339)"
+    }
+  },
+  {
+    "@context": "dtmi:dtdl:context;3",
+    "@id": "dtmi:dtdl:instance:Schema:duration;3",
+    "@type": [ "Duration", "Alias" ],
+    "aliasFor": "dtmi:dtdl:instance:Schema:duration;2",
+    "displayName": "duration",
+    "description": {
+      "en-US": "a duration in ISO 8601 format"
+    }
+  },
+  {
+    "@context": "dtmi:dtdl:context;3",
+    "@id": "dtmi:dtdl:instance:Schema:time;3",
+    "@type": [ "Time", "Alias" ],
+    "aliasFor": "dtmi:dtdl:instance:Schema:time;2",
+    "displayName": "time",
+    "description": {
+      "en-US": "a time in ISO 8601 format, per [RFC 3339](https://tools.ietf.org/html/rfc3339)"
+    }
+  },
+  {
+    "@context": "dtmi:dtdl:context;3",
+    "@id": "dtmi:dtdl:instance:Schema:string;3",
+    "@type": [ "String", "Alias" ],
+    "aliasFor": "dtmi:dtdl:instance:Schema:string;2",
+    "displayName": "string",
+    "description": {
+      "en-US": "a UTF8 string"
+    }
+  },
+  {
+    "@context": "dtmi:dtdl:context;3",
+    "@id": "dtmi:dtdl:instance:CommandType:asynchronous;3",
+    "@type": "CommandType",
+    "displayName": "asynchronous",
+    "description": {
+      "en-US": "The command will complete sometime after control returns to the caller. After the command completes, the result and any outputs are available."
+    }
+  },
+  {
+    "@context": "dtmi:dtdl:context;3",
+    "@id": "dtmi:dtdl:instance:CommandType:synchronous;3",
+    "@type": "CommandType",
+    "displayName": "synchronous",
+    "description": {
+      "en-US": "The command will be complete when control returns to the caller. The result and any outputs are available immediately."
+    }
+  }
+]

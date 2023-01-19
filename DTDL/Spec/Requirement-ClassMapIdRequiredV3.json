@@ -1,0 +1,98 @@
+﻿[
+  {
+    "valid": true,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:spazz_delta;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Property",
+          "name": "spazz_gamma",
+          "schema": {
+            "@type": "Map",
+            "mapKey": {
+              "name": "spazz_alpha",
+              "schema": "string"
+            },
+            "mapValue": {
+              "name": "spazz_beta",
+              "schema": "string"
+            }
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:spazz_theta;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:spazz_epsilon;1",
+          "@type": "Map",
+          "mapKey": {
+            "name": "spazz_zeta",
+            "schema": "string"
+          },
+          "mapValue": {
+            "name": "spazz_eta",
+            "schema": "time"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:spazz_lambda;1",
+        "@type": "Interface",
+        "schemas": {
+          "@type": "Map",
+          "mapKey": {
+            "name": "spazz_iota",
+            "schema": "string"
+          },
+          "mapValue": {
+            "name": "spazz_kappa",
+            "schema": "boolean"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:spazz_xi;1",
+        "@type": "Interface",
+        "schemas": {
+          "@context": "dtmi:undefinedExtension:context;1",
+          "@type": "Map",
+          "mapKey": {
+            "name": "spazz_mu",
+            "schema": "string"
+          },
+          "mapValue": {
+            "name": "spazz_nu",
+            "schema": "date"
+          }
+        }
+      }
+    ]
+  }
+]

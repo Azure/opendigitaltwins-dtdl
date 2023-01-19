@@ -1,0 +1,104 @@
+﻿[
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:humpf_um;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:humpf_yuzz;1",
+          "@type": [
+            "Object",
+            "dtmi:foo:bar;1"
+          ],
+          "fields": [
+            {
+              "name": "humpf_wum",
+              "schema": "boolean"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:humpf_glikk;1",
+        "@type": "Interface",
+        "schemas": {
+          "@context": "dtmi:undefinedExtension:context;1",
+          "@id": "dtmi:example:humpf_humpf;1",
+          "@type": [
+            "Object",
+            "dtmi:foo:bar;1"
+          ],
+          "fields": [
+            {
+              "name": "humpf_fuddle",
+              "schema": "date"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:humpf_quan;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:humpf_nuh;1",
+          "@type": [
+            "Object",
+            "boolean"
+          ],
+          "fields": [
+            {
+              "name": "humpf_snee",
+              "schema": "dateTime"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:humpf_floob;1",
+        "@type": "Interface",
+        "schemas": {
+          "@context": "dtmi:undefinedExtension:context;1",
+          "@id": "dtmi:example:humpf_thnad;1",
+          "@type": [
+            "Object",
+            "boolean"
+          ],
+          "fields": [
+            {
+              "name": "humpf_spazz",
+              "schema": "double"
+            }
+          ]
+        }
+      }
+    ]
+  }
+]

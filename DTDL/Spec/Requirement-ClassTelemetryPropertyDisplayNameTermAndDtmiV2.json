@@ -1,0 +1,49 @@
+﻿[
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:pi_iota;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Telemetry",
+          "displayName": [
+            "pi_zeta"
+          ],
+          "dtmi:dtdl:property:displayName;2": [
+            "pi_eta"
+          ],
+          "name": "pi_theta",
+          "schema": "long"
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:pi_nu;1",
+        "@type": "Interface",
+        "contents": {
+          "@context": "dtmi:undefinedExtension:context;1",
+          "@type": "Telemetry",
+          "displayName": [
+            "pi_kappa"
+          ],
+          "dtmi:dtdl:property:displayName;2": [
+            "pi_lambda"
+          ],
+          "name": "pi_mu",
+          "schema": "string"
+        }
+      }
+    ]
+  }
+]

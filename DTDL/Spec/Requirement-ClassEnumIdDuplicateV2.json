@@ -1,0 +1,59 @@
+﻿[
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:jogg_nuh;1",
+        "@type": "Interface",
+        "contents": {
+          "@id": "dtmi:example:jogg_nuh;1",
+          "@type": "Property",
+          "name": "jogg_quan",
+          "schema": {
+            "@id": "dtmi:example:jogg_nuh;1",
+            "@type": "Enum",
+            "enumValues": [
+              {
+                "enumValue": 597,
+                "name": "jogg_snee"
+              }
+            ],
+            "valueSchema": "integer"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:jogg_thnad;1",
+        "@type": "Interface",
+        "contents": {
+          "@id": "dtmi:example:jogg_thnad;1",
+          "@type": "Property",
+          "name": "jogg_floob",
+          "schema": {
+            "@context": "dtmi:undefinedExtension:context;1",
+            "@id": "dtmi:example:jogg_thnad;1",
+            "@type": "Enum",
+            "enumValues": [
+              {
+                "enumValue": 598,
+                "name": "jogg_spazz"
+              }
+            ],
+            "valueSchema": "integer"
+          }
+        }
+      }
+    ]
+  }
+]

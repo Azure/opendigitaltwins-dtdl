@@ -1,0 +1,39 @@
+﻿[
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:iota_glikk;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Command",
+          "commandType": "asynchronous",
+          "dtmi:dtdl:property:commandType;3": "asynchronous",
+          "name": "iota_fuddle"
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:iota_snee;1",
+        "@type": "Interface",
+        "contents": {
+          "@context": "dtmi:undefinedExtension:context;1",
+          "@type": "Command",
+          "commandType": "asynchronous",
+          "dtmi:dtdl:property:commandType;3": "asynchronous",
+          "name": "iota_nuh"
+        }
+      }
+    ]
+  }
+]

@@ -1,0 +1,70 @@
+﻿[
+  {
+    "valid": true,
+    "desirable": true,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:gamma_omicron;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Telemetry",
+          "name": "gamma_xi",
+          "schema": "dateTime"
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "desirable": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:gamma_rho;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Telemetry",
+          "name": "gamma_pi",
+          "schema": "dtmi:dtdl:instance:Schema:dateTime;2"
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "desirable": true,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:gamma_tau;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Telemetry",
+          "name": "gamma_sigma",
+          "schema": "point"
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "desirable": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:gamma_phi;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Telemetry",
+          "name": "gamma_upsilon",
+          "schema": "dtmi:standard:schema:geospatial:point;2"
+        }
+      }
+    ]
+  }
+]

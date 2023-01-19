@@ -1,0 +1,42 @@
+﻿[
+  {
+    "valid": true,
+    "desirable": true,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:zatz_thnad;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:zatz_quan;1",
+          "@type": "Object",
+          "fields": {
+            "name": "zatz_snee",
+            "schema": "boolean"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "desirable": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:zatz_zatz;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:zatz_floob;1",
+          "@type": "Object",
+          "fields": {
+            "name": "zatz_spazz",
+            "dtmi:dtdl:property:schema;2": "date"
+          }
+        }
+      }
+    ]
+  }
+]

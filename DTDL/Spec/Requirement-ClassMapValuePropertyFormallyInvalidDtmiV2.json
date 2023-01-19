@@ -1,0 +1,53 @@
+﻿[
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:yuzz_humpf;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:yuzz_wum;1",
+          "@type": "Map",
+          "mapKey": {
+            "name": "yuzz_um",
+            "schema": "string"
+          },
+          "mapValue": {
+            "name": "yuzz_yuzz",
+            "schema": "date",
+            "dtmi:foo//bar": 626
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:yuzz_snee;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:yuzz_glikk;1",
+          "@type": "Map",
+          "mapKey": {
+            "name": "yuzz_nuh",
+            "schema": "string"
+          },
+          "mapValue": {
+            "@context": "dtmi:undefinedExtension:context;1",
+            "name": "yuzz_fuddle",
+            "schema": "dateTime",
+            "dtmi:foo//bar": 626
+          }
+        }
+      }
+    ]
+  }
+]

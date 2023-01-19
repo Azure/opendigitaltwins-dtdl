@@ -1,0 +1,52 @@
+﻿[
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:eta_glikk;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Telemetry",
+          "name": "eta_fuddle",
+          "schema": {
+            "@type": "Array",
+            "elementSchema": "dtmi:ex:dependentRef;1"
+          }
+        }
+      }
+    ],
+    "expect": {
+      "unresolvedIdentifiers": [
+        "dtmi:ex:dependentRef;1"
+      ]
+    }
+  },
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:eta_snee;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Telemetry",
+          "name": "eta_nuh",
+          "schema": {
+            "@type": "Array",
+            "elementSchema": [
+              "dtmi:ex:dependentRef;1"
+            ]
+          }
+        }
+      }
+    ],
+    "expect": {
+      "unresolvedIdentifiers": [
+        "dtmi:ex:dependentRef;1"
+      ]
+    }
+  }
+]

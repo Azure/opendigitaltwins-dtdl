@@ -1,0 +1,200 @@
+﻿[
+  {
+    "valid": true,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:iota_hi;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:iota_itch;1",
+          "mapKey": {
+            "name": "iota_yekk",
+            "schema": "string"
+          },
+          "mapValue": {
+            "name": "iota_vroo",
+            "schema": "time"
+          },
+          "@type": "Map"
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:kappa_delta;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:kappa_alpha;1",
+          "mapKey": {
+            "name": "kappa_beta",
+            "schema": "string"
+          },
+          "mapValue": {
+            "name": "kappa_gamma",
+            "schema": "boolean"
+          },
+          "@type": [
+            "Map"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:kappa_theta;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:kappa_epsilon;1",
+          "mapKey": {
+            "name": "kappa_zeta",
+            "schema": "string"
+          },
+          "mapValue": {
+            "name": "kappa_eta",
+            "schema": "date"
+          },
+          "@type": "dtmi:dtdl:class:Map;2"
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:kappa_mu;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:kappa_iota;1",
+          "mapKey": {
+            "name": "kappa_kappa",
+            "schema": "string"
+          },
+          "mapValue": {
+            "name": "kappa_lambda",
+            "schema": "dateTime"
+          },
+          "@type": [
+            "dtmi:dtdl:class:Map;2"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:kappa_pi;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:kappa_nu;1",
+          "mapKey": {
+            "name": "kappa_xi",
+            "schema": "string"
+          },
+          "mapValue": {
+            "name": "kappa_omicron",
+            "schema": "double"
+          },
+          "@type": "Something"
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:kappa_upsilon;1",
+        "@type": "Interface",
+        "schemas": {
+          "@context": "dtmi:undefinedExtension:context;1",
+          "@id": "dtmi:example:kappa_rho;1",
+          "mapKey": {
+            "name": "kappa_sigma",
+            "schema": "string"
+          },
+          "mapValue": {
+            "name": "kappa_tau",
+            "schema": "duration"
+          },
+          "@type": "Something"
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:kappa_omega;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:kappa_phi;1",
+          "mapKey": {
+            "name": "kappa_chi",
+            "schema": "string"
+          },
+          "mapValue": {
+            "name": "kappa_psi",
+            "schema": "float"
+          },
+          "@type": [
+            "Something"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:kappa_humpf;1",
+        "@type": "Interface",
+        "schemas": {
+          "@context": "dtmi:undefinedExtension:context;1",
+          "@id": "dtmi:example:kappa_yuzz;1",
+          "mapKey": {
+            "name": "kappa_wum",
+            "schema": "string"
+          },
+          "mapValue": {
+            "name": "kappa_um",
+            "schema": "integer"
+          },
+          "@type": [
+            "Something"
+          ]
+        }
+      }
+    ]
+  }
+]

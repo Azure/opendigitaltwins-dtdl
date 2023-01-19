@@ -1,0 +1,52 @@
+﻿[
+  {
+    "valid": true,
+    "desirable": true,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:theta_zeta;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:theta_delta;1",
+          "@type": "Map",
+          "mapKey": {
+            "name": "theta_epsilon",
+            "schema": "string"
+          },
+          "mapValue": {
+            "name": "theta_gamma",
+            "schema": "string",
+            "@type": "MapValue"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "desirable": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:theta_kappa;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:theta_theta;1",
+          "@type": "Map",
+          "mapKey": {
+            "name": "theta_iota",
+            "schema": "string"
+          },
+          "mapValue": {
+            "name": "theta_eta",
+            "schema": "time",
+            "@type": "dtmi:dtdl:class:MapValue;2"
+          }
+        }
+      }
+    ]
+  }
+]

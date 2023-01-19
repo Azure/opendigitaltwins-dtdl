@@ -1,0 +1,35 @@
+﻿[
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:epsilon_quan;1",
+        "@type": [
+          "Interface",
+          "dtmi:foo//bar"
+        ]
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": [
+          "dtmi:dtdl:context;3",
+          "dtmi:undefinedExtension:context;1"
+        ],
+        "@id": "dtmi:example:epsilon_thnad;1",
+        "@type": [
+          "Interface",
+          "dtmi:foo//bar"
+        ]
+      }
+    ]
+  }
+]

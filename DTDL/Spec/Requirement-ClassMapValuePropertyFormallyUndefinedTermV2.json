@@ -1,0 +1,53 @@
+﻿[
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:wum_iota;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:wum_eta;1",
+          "@type": "Map",
+          "mapKey": {
+            "name": "wum_theta",
+            "schema": "string"
+          },
+          "mapValue": {
+            "name": "wum_zeta",
+            "schema": "long",
+            "foobar": {}
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:wum_nu;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:wum_lambda;1",
+          "@type": "Map",
+          "mapKey": {
+            "name": "wum_mu",
+            "schema": "string"
+          },
+          "mapValue": {
+            "@context": "dtmi:undefinedExtension:context;1",
+            "name": "wum_kappa",
+            "schema": "string",
+            "foobar": {}
+          }
+        }
+      }
+    ]
+  }
+]

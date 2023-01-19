@@ -1,0 +1,45 @@
+﻿[
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:omega_chi;1",
+        "@type": "Interface",
+        "extends": {
+          "@id": "dtmi:example:omega_phi;1",
+          "@type": "Interface",
+          "contents": {
+            "@type": "Property",
+            "name": "omega_upsilon",
+            "schema": "point"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:omega_yuzz;1",
+        "@type": "Interface",
+        "extends": {
+          "@id": "dtmi:example:omega_omega;1",
+          "@type": "Interface",
+          "contents": {
+            "@context": "dtmi:undefinedExtension:context;1",
+            "@type": "Property",
+            "name": "omega_psi",
+            "schema": "point"
+          }
+        }
+      }
+    ]
+  }
+]

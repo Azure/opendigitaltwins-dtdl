@@ -1,0 +1,60 @@
+﻿[
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:psi_quan;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Property",
+          "name": "psi_snee",
+          "schema": {
+            "@type": "Map",
+            "mapValue": {
+              "name": "psi_nuh",
+              "schema": "double"
+            },
+            "mapKey": "dtmi:ex:dependentRef;1"
+          }
+        }
+      }
+    ],
+    "expect": {
+      "unresolvedIdentifiers": [
+        "dtmi:ex:dependentRef;1"
+      ]
+    }
+  },
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:psi_floob;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Property",
+          "name": "psi_spazz",
+          "schema": {
+            "@type": "Map",
+            "mapValue": {
+              "name": "psi_thnad",
+              "schema": "duration"
+            },
+            "mapKey": [
+              "dtmi:ex:dependentRef;1"
+            ]
+          }
+        }
+      }
+    ],
+    "expect": {
+      "unresolvedIdentifiers": [
+        "dtmi:ex:dependentRef;1"
+      ]
+    }
+  }
+]

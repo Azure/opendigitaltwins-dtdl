@@ -1,0 +1,100 @@
+﻿[
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:gamma_pi;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:gamma_xi;1",
+          "@type": "Enum",
+          "enumValues": [
+            {
+              "enumValue": 699,
+              "name": "gamma_omicron"
+            }
+          ],
+          "valueSchema": "integer",
+          "dtmi:foo:bar;1": 626
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:gamma_tau;1",
+        "@type": "Interface",
+        "schemas": {
+          "@context": "dtmi:undefinedExtension:context;1",
+          "@id": "dtmi:example:gamma_rho;1",
+          "@type": "Enum",
+          "enumValues": [
+            {
+              "enumValue": 700,
+              "name": "gamma_sigma"
+            }
+          ],
+          "valueSchema": "integer",
+          "dtmi:foo:bar;1": 626
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:gamma_chi;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:gamma_upsilon;1",
+          "@type": "Enum",
+          "enumValues": [
+            {
+              "enumValue": 701,
+              "name": "gamma_phi"
+            }
+          ],
+          "valueSchema": "integer",
+          "boolean": null
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:gamma_yuzz;1",
+        "@type": "Interface",
+        "schemas": {
+          "@context": "dtmi:undefinedExtension:context;1",
+          "@id": "dtmi:example:gamma_psi;1",
+          "@type": "Enum",
+          "enumValues": [
+            {
+              "enumValue": 702,
+              "name": "gamma_omega"
+            }
+          ],
+          "valueSchema": "integer",
+          "boolean": null
+        }
+      }
+    ]
+  }
+]

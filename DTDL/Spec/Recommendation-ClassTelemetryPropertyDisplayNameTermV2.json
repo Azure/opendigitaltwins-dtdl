@@ -1,0 +1,42 @@
+﻿[
+  {
+    "valid": true,
+    "desirable": true,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:pi_beta;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Telemetry",
+          "displayName": [
+            "omicron_hi"
+          ],
+          "name": "pi_alpha",
+          "schema": "float"
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "desirable": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:pi_epsilon;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Telemetry",
+          "dtmi:dtdl:property:displayName;2": [
+            "pi_gamma"
+          ],
+          "name": "pi_delta",
+          "schema": "integer"
+        }
+      }
+    ]
+  }
+]

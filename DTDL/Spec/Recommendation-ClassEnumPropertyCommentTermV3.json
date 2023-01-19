@@ -1,0 +1,38 @@
+﻿[
+  {
+    "valid": true,
+    "desirable": true,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:glikk_zeta;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:glikk_delta;1",
+          "@type": "Enum",
+          "comment": "glikk_epsilon",
+          "valueSchema": "integer"
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "desirable": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:glikk_iota;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:glikk_eta;1",
+          "@type": "Enum",
+          "dtmi:dtdl:property:comment;3": "glikk_theta",
+          "valueSchema": "integer"
+        }
+      }
+    ]
+  }
+]

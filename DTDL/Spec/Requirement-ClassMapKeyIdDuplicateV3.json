@@ -1,0 +1,63 @@
+﻿[
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:thnad_eta;1",
+        "@type": "Interface",
+        "contents": {
+          "@id": "dtmi:example:thnad_eta;1",
+          "@type": "Property",
+          "name": "thnad_kappa",
+          "schema": {
+            "@id": "dtmi:example:thnad_eta;1",
+            "@type": "Map",
+            "mapValue": {
+              "name": "thnad_iota",
+              "schema": "integer"
+            },
+            "mapKey": {
+              "@id": "dtmi:example:thnad_eta;1",
+              "name": "thnad_theta",
+              "schema": "string"
+            }
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:thnad_lambda;1",
+        "@type": "Interface",
+        "contents": {
+          "@id": "dtmi:example:thnad_lambda;1",
+          "@type": "Property",
+          "name": "thnad_xi",
+          "schema": {
+            "@id": "dtmi:example:thnad_lambda;1",
+            "@type": "Map",
+            "mapValue": {
+              "name": "thnad_nu",
+              "schema": "long"
+            },
+            "mapKey": {
+              "@context": "dtmi:undefinedExtension:context;1",
+              "@id": "dtmi:example:thnad_lambda;1",
+              "name": "thnad_mu",
+              "schema": "string"
+            }
+          }
+        }
+      }
+    ]
+  }
+]

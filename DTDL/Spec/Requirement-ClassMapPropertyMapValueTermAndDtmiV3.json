@@ -1,0 +1,59 @@
+﻿[
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:quan_epsilon;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:quan_alpha;1",
+          "@type": "Map",
+          "mapKey": {
+            "name": "quan_beta",
+            "schema": "string"
+          },
+          "mapValue": {
+            "name": "quan_gamma",
+            "schema": "float"
+          },
+          "dtmi:dtdl:property:mapValue;3": {
+            "name": "quan_delta",
+            "schema": "integer"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:quan_kappa;1",
+        "@type": "Interface",
+        "schemas": {
+          "@context": "dtmi:undefinedExtension:context;1",
+          "@id": "dtmi:example:quan_zeta;1",
+          "@type": "Map",
+          "mapKey": {
+            "name": "quan_eta",
+            "schema": "string"
+          },
+          "mapValue": {
+            "name": "quan_theta",
+            "schema": "long"
+          },
+          "dtmi:dtdl:property:mapValue;3": {
+            "name": "quan_iota",
+            "schema": "string"
+          }
+        }
+      }
+    ]
+  }
+]

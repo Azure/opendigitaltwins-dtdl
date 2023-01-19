@@ -1,0 +1,45 @@
+﻿[
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:sigma_jogg;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Component",
+          "name": "sigma_floob",
+          "schema": {
+            "@id": "dtmi:example:sigma_zatz;1",
+            "@type": "Interface"
+          },
+          "foobar": {}
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:sigma_yekk;1",
+        "@type": "Interface",
+        "contents": {
+          "@context": "dtmi:undefinedExtension:context;1",
+          "@type": "Component",
+          "name": "sigma_flunn",
+          "schema": {
+            "@id": "dtmi:example:sigma_itch;1",
+            "@type": "Interface"
+          },
+          "foobar": {}
+        }
+      }
+    ]
+  }
+]

@@ -1,0 +1,76 @@
+﻿[
+  {
+    "valid": true,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:pi_um;1",
+        "@type": "Interface",
+        "contents": [
+          {
+            "@type": "Telemetry",
+            "schema": "time",
+            "name": "gamma_spazz"
+          },
+          {
+            "@type": "Telemetry",
+            "schema": "boolean",
+            "name": "gamma_floob"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:pi_humpf;1",
+        "@type": "Interface",
+        "contents": [
+          {
+            "@type": "Telemetry",
+            "schema": "date",
+            "name": "gamma_spazz"
+          },
+          {
+            "@type": "Telemetry",
+            "schema": "dateTime",
+            "name": "gamma_spazz"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": [
+          "dtmi:dtdl:context;3",
+          "dtmi:undefinedExtension:context;1"
+        ],
+        "@id": "dtmi:example:pi_fuddle;1",
+        "@type": "Interface",
+        "contents": [
+          {
+            "@type": "Telemetry",
+            "schema": "double",
+            "name": "gamma_spazz"
+          },
+          {
+            "@type": "Telemetry",
+            "schema": "duration",
+            "name": "gamma_spazz"
+          }
+        ]
+      }
+    ]
+  }
+]

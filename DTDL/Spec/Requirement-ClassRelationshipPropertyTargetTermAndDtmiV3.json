@@ -1,0 +1,39 @@
+﻿[
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:kappa_thnad;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Relationship",
+          "name": "kappa_nuh",
+          "target": "dtmi:example:kappa_snee;1",
+          "dtmi:dtdl:property:target;3": "dtmi:example:kappa_quan;1"
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:kappa_jogg;1",
+        "@type": "Interface",
+        "contents": {
+          "@context": "dtmi:undefinedExtension:context;1",
+          "@type": "Relationship",
+          "name": "kappa_spazz",
+          "target": "dtmi:example:kappa_floob;1",
+          "dtmi:dtdl:property:target;3": "dtmi:example:kappa_zatz;1"
+        }
+      }
+    ]
+  }
+]

@@ -1,0 +1,50 @@
+﻿[
+  {
+    "valid": true,
+    "desirable": true,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:pi_kappa;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:pi_iota;1",
+          "@type": "Enum",
+          "valueSchema": "integer",
+          "enumValues": {
+            "description": [
+              "pi_eta"
+            ],
+            "enumValue": 1392,
+            "name": "pi_theta"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "desirable": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:pi_xi;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:pi_nu;1",
+          "@type": "Enum",
+          "valueSchema": "integer",
+          "enumValues": {
+            "dtmi:dtdl:property:description;3": [
+              "pi_lambda"
+            ],
+            "enumValue": 1393,
+            "name": "pi_mu"
+          }
+        }
+      }
+    ]
+  }
+]

@@ -1,0 +1,47 @@
+﻿[
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:quan_vroo;1",
+        "@type": "Interface",
+        "contents": {
+          "@id": "dtmi:example:quan_vroo;1",
+          "@type": "Property",
+          "name": "quan_hi",
+          "schema": {
+            "@id": "dtmi:example:quan_vroo;1",
+            "@type": "Array",
+            "elementSchema": "double"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:thnad_alpha;1",
+        "@type": "Interface",
+        "contents": {
+          "@id": "dtmi:example:thnad_alpha;1",
+          "@type": "Property",
+          "name": "thnad_beta",
+          "schema": {
+            "@context": "dtmi:undefinedExtension:context;1",
+            "@id": "dtmi:example:thnad_alpha;1",
+            "@type": "Array",
+            "elementSchema": "duration"
+          }
+        }
+      }
+    ]
+  }
+]

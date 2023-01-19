@@ -1,0 +1,53 @@
+﻿[
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:humpf_flunn;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:humpf_zatz;1",
+          "@type": [
+            "Object",
+            "dtmi:foo//bar"
+          ],
+          "fields": [
+            {
+              "name": "humpf_jogg",
+              "schema": "duration"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:humpf_vroo;1",
+        "@type": "Interface",
+        "schemas": {
+          "@context": "dtmi:undefinedExtension:context;1",
+          "@id": "dtmi:example:humpf_itch;1",
+          "@type": [
+            "Object",
+            "dtmi:foo//bar"
+          ],
+          "fields": [
+            {
+              "name": "humpf_yekk",
+              "schema": "float"
+            }
+          ]
+        }
+      }
+    ]
+  }
+]

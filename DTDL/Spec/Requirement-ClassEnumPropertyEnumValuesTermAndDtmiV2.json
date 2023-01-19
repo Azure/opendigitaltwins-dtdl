@@ -1,0 +1,61 @@
+﻿[
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:wum_kappa;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:wum_eta;1",
+          "@type": "Enum",
+          "enumValues": [
+            {
+              "enumValue": 409,
+              "name": "wum_theta"
+            }
+          ],
+          "dtmi:dtdl:property:enumValues;2": [
+            {
+              "enumValue": 410,
+              "name": "wum_iota"
+            }
+          ],
+          "valueSchema": "integer"
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:wum_xi;1",
+        "@type": "Interface",
+        "schemas": {
+          "@context": "dtmi:undefinedExtension:context;1",
+          "@id": "dtmi:example:wum_lambda;1",
+          "@type": "Enum",
+          "enumValues": [
+            {
+              "enumValue": 411,
+              "name": "wum_mu"
+            }
+          ],
+          "dtmi:dtdl:property:enumValues;2": [
+            {
+              "enumValue": 412,
+              "name": "wum_nu"
+            }
+          ],
+          "valueSchema": "integer"
+        }
+      }
+    ]
+  }
+]

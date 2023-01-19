@@ -1,0 +1,190 @@
+﻿[
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:gamma_delta;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:gamma_gamma;1",
+          "@type": "Object",
+          "fields": {
+            "@id": [
+              "dtmi:foo:bar;7"
+            ],
+            "name": "gamma_beta",
+            "schema": "date"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:gamma_eta;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:gamma_zeta;1",
+          "@type": "Object",
+          "fields": {
+            "@context": "dtmi:undefinedExtension:context;1",
+            "@id": [
+              "dtmi:foo:bar;7"
+            ],
+            "name": "gamma_epsilon",
+            "schema": "dateTime"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:gamma_kappa;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:gamma_iota;1",
+          "@type": "Object",
+          "fields": {
+            "@id": [
+              "dtmi:foo:bar;108675309"
+            ],
+            "name": "gamma_theta",
+            "schema": "double"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:gamma_nu;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:gamma_mu;1",
+          "@type": "Object",
+          "fields": {
+            "@context": "dtmi:undefinedExtension:context;1",
+            "@id": [
+              "dtmi:foo:bar;108675309"
+            ],
+            "name": "gamma_lambda",
+            "schema": "duration"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:gamma_pi;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:gamma_omicron;1",
+          "@type": "Object",
+          "fields": {
+            "@id": [
+              "dtmi:foo:bar;999999999"
+            ],
+            "name": "gamma_xi",
+            "schema": "float"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:gamma_tau;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:gamma_sigma;1",
+          "@type": "Object",
+          "fields": {
+            "@context": "dtmi:undefinedExtension:context;1",
+            "@id": [
+              "dtmi:foo:bar;999999999"
+            ],
+            "name": "gamma_rho",
+            "schema": "integer"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:gamma_chi;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:gamma_phi;1",
+          "@type": "Object",
+          "fields": {
+            "@id": [
+              "dtmi:foo;1"
+            ],
+            "name": "gamma_upsilon",
+            "schema": "long"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:gamma_yuzz;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:gamma_omega;1",
+          "@type": "Object",
+          "fields": {
+            "@context": "dtmi:undefinedExtension:context;1",
+            "@id": [
+              "dtmi:foo;1"
+            ],
+            "name": "gamma_psi",
+            "schema": "string"
+          }
+        }
+      }
+    ]
+  }
+]

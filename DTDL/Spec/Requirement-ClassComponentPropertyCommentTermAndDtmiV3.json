@@ -1,0 +1,47 @@
+﻿[
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:mu_pi;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Component",
+          "comment": "mu_mu",
+          "dtmi:dtdl:property:comment;3": "mu_nu",
+          "name": "mu_xi",
+          "schema": {
+            "@id": "dtmi:example:mu_omicron;1",
+            "@type": "Interface"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:mu_phi;1",
+        "@type": "Interface",
+        "contents": {
+          "@context": "dtmi:undefinedExtension:context;1",
+          "@type": "Component",
+          "comment": "mu_rho",
+          "dtmi:dtdl:property:comment;3": "mu_sigma",
+          "name": "mu_tau",
+          "schema": {
+            "@id": "dtmi:example:mu_upsilon;1",
+            "@type": "Interface"
+          }
+        }
+      }
+    ]
+  }
+]

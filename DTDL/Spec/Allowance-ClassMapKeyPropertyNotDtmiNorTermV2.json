@@ -1,0 +1,30 @@
+﻿[
+  {
+    "valid": true,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:quan_humpf;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:quan_wum;1",
+          "@type": "Map",
+          "mapValue": {
+            "name": "quan_um",
+            "schema": "string"
+          },
+          "mapKey": {
+            "@type": [
+              "MapKey",
+              "Foobar"
+            ],
+            "name": "quan_yuzz",
+            "schema": "string",
+            "http://foo.com/bar": true
+          }
+        }
+      }
+    ]
+  }
+]

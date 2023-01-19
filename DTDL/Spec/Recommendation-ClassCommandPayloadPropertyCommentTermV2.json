@@ -1,0 +1,44 @@
+﻿[
+  {
+    "valid": true,
+    "desirable": true,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:psi_quan;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Command",
+          "name": "psi_snee",
+          "request": {
+            "comment": "psi_glikk",
+            "name": "psi_nuh",
+            "schema": "double"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "desirable": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:psi_zatz;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Command",
+          "name": "psi_floob",
+          "request": {
+            "dtmi:dtdl:property:comment;2": "psi_thnad",
+            "name": "psi_spazz",
+            "schema": "duration"
+          }
+        }
+      }
+    ]
+  }
+]

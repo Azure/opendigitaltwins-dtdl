@@ -1,0 +1,59 @@
+﻿[
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:upsilon_rho;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:upsilon_omicron;1",
+          "@type": "Map",
+          "mapKey": {
+            "name": "upsilon_pi",
+            "schema": "string"
+          },
+          "mapValue": {
+            "@type": [
+              "MapValue",
+              "http://foo.com/bar"
+            ],
+            "name": "upsilon_xi",
+            "schema": "long"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:upsilon_phi;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:upsilon_tau;1",
+          "@type": "Map",
+          "mapKey": {
+            "name": "upsilon_upsilon",
+            "schema": "string"
+          },
+          "mapValue": {
+            "@context": "dtmi:undefinedExtension:context;1",
+            "@type": [
+              "MapValue",
+              "http://foo.com/bar"
+            ],
+            "name": "upsilon_sigma",
+            "schema": "string"
+          }
+        }
+      }
+    ]
+  }
+]

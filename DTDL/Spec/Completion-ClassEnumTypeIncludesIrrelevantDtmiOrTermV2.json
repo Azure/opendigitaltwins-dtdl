@@ -1,0 +1,108 @@
+﻿[
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:xi_psi;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:xi_phi;1",
+          "@type": [
+            "Enum",
+            "dtmi:foo:bar;1"
+          ],
+          "enumValues": [
+            {
+              "enumValue": 84,
+              "name": "xi_chi"
+            }
+          ],
+          "valueSchema": "integer"
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:xi_wum;1",
+        "@type": "Interface",
+        "schemas": {
+          "@context": "dtmi:undefinedExtension:context;1",
+          "@id": "dtmi:example:xi_omega;1",
+          "@type": [
+            "Enum",
+            "dtmi:foo:bar;1"
+          ],
+          "enumValues": [
+            {
+              "enumValue": 85,
+              "name": "xi_yuzz"
+            }
+          ],
+          "valueSchema": "integer"
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:xi_fuddle;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:xi_um;1",
+          "@type": [
+            "Enum",
+            "boolean"
+          ],
+          "enumValues": [
+            {
+              "enumValue": 86,
+              "name": "xi_humpf"
+            }
+          ],
+          "valueSchema": "integer"
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:xi_snee;1",
+        "@type": "Interface",
+        "schemas": {
+          "@context": "dtmi:undefinedExtension:context;1",
+          "@id": "dtmi:example:xi_glikk;1",
+          "@type": [
+            "Enum",
+            "boolean"
+          ],
+          "enumValues": [
+            {
+              "enumValue": 87,
+              "name": "xi_nuh"
+            }
+          ],
+          "valueSchema": "integer"
+        }
+      }
+    ]
+  }
+]

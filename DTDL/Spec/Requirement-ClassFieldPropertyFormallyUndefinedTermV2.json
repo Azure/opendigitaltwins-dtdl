@@ -1,0 +1,45 @@
+﻿[
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:mu_alpha;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:lambda_hi;1",
+          "@type": "Object",
+          "fields": {
+            "name": "lambda_vroo",
+            "schema": "dateTime",
+            "foobar": {}
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:mu_delta;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:mu_gamma;1",
+          "@type": "Object",
+          "fields": {
+            "@context": "dtmi:undefinedExtension:context;1",
+            "name": "mu_beta",
+            "schema": "double",
+            "foobar": {}
+          }
+        }
+      }
+    ]
+  }
+]

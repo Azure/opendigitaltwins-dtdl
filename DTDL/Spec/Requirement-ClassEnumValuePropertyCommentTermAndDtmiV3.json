@@ -1,0 +1,49 @@
+﻿[
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:xi_beta;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:xi_alpha;1",
+          "@type": "Enum",
+          "valueSchema": "integer",
+          "enumValues": {
+            "comment": "nu_yekk",
+            "dtmi:dtdl:property:comment;3": "nu_vroo",
+            "enumValue": 1362,
+            "name": "nu_hi"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:xi_eta;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:xi_zeta;1",
+          "@type": "Enum",
+          "valueSchema": "integer",
+          "enumValues": {
+            "@context": "dtmi:undefinedExtension:context;1",
+            "comment": "xi_gamma",
+            "dtmi:dtdl:property:comment;3": "xi_delta",
+            "enumValue": 1363,
+            "name": "xi_epsilon"
+          }
+        }
+      }
+    ]
+  }
+]

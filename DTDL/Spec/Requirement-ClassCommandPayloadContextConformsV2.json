@@ -1,0 +1,348 @@
+﻿[
+  {
+    "valid": true,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:nu_pi;1",
+        "@type": "Interface",
+        "extends": {
+          "@id": "dtmi:example:nu_omicron;1",
+          "@type": "Interface",
+          "contents": {
+            "@type": "Command",
+            "name": "nu_xi",
+            "request": {
+              "name": "nu_nu",
+              "schema": "time",
+              "@context": "dtmi:iotcentral:context;2"
+            }
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:nu_upsilon;1",
+        "@type": "Interface",
+        "extends": {
+          "@id": "dtmi:example:nu_tau;1",
+          "@type": "Interface",
+          "contents": {
+            "@type": "Command",
+            "name": "nu_sigma",
+            "request": {
+              "name": "nu_rho",
+              "schema": "boolean",
+              "@context": []
+            }
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:nu_omega;1",
+        "@type": "Interface",
+        "extends": {
+          "@id": "dtmi:example:nu_psi;1",
+          "@type": "Interface",
+          "contents": {
+            "@type": "Command",
+            "name": "nu_chi",
+            "request": {
+              "name": "nu_phi",
+              "schema": "date",
+              "@context": [
+                "dtmi:iotcentral:context;2"
+              ]
+            }
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:nu_humpf;1",
+        "@type": "Interface",
+        "extends": {
+          "@id": "dtmi:example:nu_um;1",
+          "@type": "Interface",
+          "contents": {
+            "@type": "Command",
+            "name": "nu_wum",
+            "request": {
+              "name": "nu_yuzz",
+              "schema": "dateTime",
+              "@context": null
+            }
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:nu_snee;1",
+        "@type": "Interface",
+        "extends": {
+          "@id": "dtmi:example:nu_nuh;1",
+          "@type": "Interface",
+          "contents": {
+            "@type": "Command",
+            "name": "nu_glikk",
+            "request": {
+              "name": "nu_fuddle",
+              "schema": "double",
+              "@context": 626
+            }
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:nu_floob;1",
+        "@type": "Interface",
+        "extends": {
+          "@id": "dtmi:example:nu_spazz;1",
+          "@type": "Interface",
+          "contents": {
+            "@type": "Command",
+            "name": "nu_thnad",
+            "request": {
+              "name": "nu_quan",
+              "schema": "duration",
+              "@context": true
+            }
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:nu_itch;1",
+        "@type": "Interface",
+        "extends": {
+          "@id": "dtmi:example:nu_flunn;1",
+          "@type": "Interface",
+          "contents": {
+            "@type": "Command",
+            "name": "nu_jogg",
+            "request": {
+              "name": "nu_zatz",
+              "schema": "float",
+              "@context": [
+                null
+              ]
+            }
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:xi_alpha;1",
+        "@type": "Interface",
+        "extends": {
+          "@id": "dtmi:example:nu_hi;1",
+          "@type": "Interface",
+          "contents": {
+            "@type": "Command",
+            "name": "nu_vroo",
+            "request": {
+              "name": "nu_yekk",
+              "schema": "integer",
+              "@context": [
+                626
+              ]
+            }
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:xi_epsilon;1",
+        "@type": "Interface",
+        "extends": {
+          "@id": "dtmi:example:xi_delta;1",
+          "@type": "Interface",
+          "contents": {
+            "@type": "Command",
+            "name": "xi_gamma",
+            "request": {
+              "name": "xi_beta",
+              "schema": "long",
+              "@context": [
+                true
+              ]
+            }
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:xi_iota;1",
+        "@type": "Interface",
+        "extends": {
+          "@id": "dtmi:example:xi_theta;1",
+          "@type": "Interface",
+          "contents": {
+            "@type": "Command",
+            "name": "xi_eta",
+            "request": {
+              "name": "xi_zeta",
+              "schema": "string",
+              "@context": {}
+            }
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:xi_nu;1",
+        "@type": "Interface",
+        "extends": {
+          "@id": "dtmi:example:xi_mu;1",
+          "@type": "Interface",
+          "contents": {
+            "@type": "Command",
+            "name": "xi_lambda",
+            "request": {
+              "name": "xi_kappa",
+              "schema": "time",
+              "@context": [
+                {}
+              ]
+            }
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:xi_rho;1",
+        "@type": "Interface",
+        "extends": {
+          "@id": "dtmi:example:xi_pi;1",
+          "@type": "Interface",
+          "contents": {
+            "@type": "Command",
+            "name": "xi_omicron",
+            "request": {
+              "name": "xi_xi",
+              "schema": "boolean",
+              "@context": "dtmi:iotcentral:context"
+            }
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:xi_phi;1",
+        "@type": "Interface",
+        "extends": {
+          "@id": "dtmi:example:xi_upsilon;1",
+          "@type": "Interface",
+          "contents": {
+            "@type": "Command",
+            "name": "xi_tau",
+            "request": {
+              "name": "xi_sigma",
+              "schema": "date",
+              "@context": "http://iotcentral/context/2"
+            }
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:xi_yuzz;1",
+        "@type": "Interface",
+        "extends": {
+          "@id": "dtmi:example:xi_omega;1",
+          "@type": "Interface",
+          "contents": {
+            "@type": "Command",
+            "name": "xi_psi",
+            "request": {
+              "name": "xi_chi",
+              "schema": "dateTime",
+              "@context": "iotcentral;2"
+            }
+          }
+        }
+      }
+    ]
+  }
+]

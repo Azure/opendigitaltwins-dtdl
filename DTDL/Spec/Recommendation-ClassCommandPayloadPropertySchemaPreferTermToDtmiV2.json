@@ -1,0 +1,82 @@
+﻿[
+  {
+    "valid": true,
+    "desirable": true,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:mu_lambda;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Command",
+          "name": "mu_kappa",
+          "request": {
+            "name": "mu_iota",
+            "schema": "double"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "desirable": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:mu_xi;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Command",
+          "name": "mu_nu",
+          "request": {
+            "name": "mu_mu",
+            "schema": "dtmi:dtdl:instance:Schema:double;2"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "desirable": true,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:mu_rho;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Command",
+          "name": "mu_pi",
+          "request": {
+            "name": "mu_omicron",
+            "schema": "point"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "desirable": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:mu_upsilon;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Command",
+          "name": "mu_tau",
+          "request": {
+            "name": "mu_sigma",
+            "schema": "dtmi:standard:schema:geospatial:point;2"
+          }
+        }
+      }
+    ]
+  }
+]

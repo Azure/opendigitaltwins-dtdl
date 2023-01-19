@@ -1,0 +1,50 @@
+﻿[
+  {
+    "valid": true,
+    "desirable": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:zatz_sigma;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Command",
+          "name": "zatz_rho",
+          "request": {
+            "name": "zatz_pi",
+            "schema": "duration",
+            "@type": [
+              "CommandRequest",
+              "CommandRequest"
+            ]
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "desirable": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:zatz_phi;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Command",
+          "name": "zatz_upsilon",
+          "request": {
+            "name": "zatz_tau",
+            "schema": "float",
+            "@type": [
+              "dtmi:dtdl:class:CommandRequest;3",
+              "dtmi:dtdl:class:CommandRequest;3"
+            ]
+          }
+        }
+      }
+    ]
+  }
+]

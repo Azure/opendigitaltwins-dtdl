@@ -1,0 +1,55 @@
+﻿[
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:nuh_itch;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:nuh_spazz;1",
+          "@type": "Map",
+          "comment": "nuh_floob",
+          "dtmi:dtdl:property:comment;2": "nuh_zatz",
+          "mapKey": {
+            "name": "nuh_jogg",
+            "schema": "string"
+          },
+          "mapValue": {
+            "name": "nuh_flunn",
+            "schema": "duration"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:snee_gamma;1",
+        "@type": "Interface",
+        "schemas": {
+          "@context": "dtmi:undefinedExtension:context;1",
+          "@id": "dtmi:example:nuh_yekk;1",
+          "@type": "Map",
+          "comment": "nuh_vroo",
+          "dtmi:dtdl:property:comment;2": "nuh_hi",
+          "mapKey": {
+            "name": "snee_alpha",
+            "schema": "string"
+          },
+          "mapValue": {
+            "name": "snee_beta",
+            "schema": "float"
+          }
+        }
+      }
+    ]
+  }
+]

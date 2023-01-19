@@ -1,0 +1,50 @@
+﻿[
+  {
+    "valid": true,
+    "desirable": true,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:xi_flunn;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:xi_zatz;1",
+          "@type": "Map",
+          "mapKey": {
+            "name": "xi_jogg",
+            "schema": "string"
+          },
+          "mapValue": {
+            "name": "xi_floob",
+            "schema": "integer"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "desirable": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:xi_hi;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:xi_yekk;1",
+          "@type": "Map",
+          "mapKey": {
+            "name": "xi_vroo",
+            "schema": "string"
+          },
+          "mapValue": {
+            "name": "xi_itch",
+            "dtmi:dtdl:property:schema;3": "long"
+          }
+        }
+      }
+    ]
+  }
+]

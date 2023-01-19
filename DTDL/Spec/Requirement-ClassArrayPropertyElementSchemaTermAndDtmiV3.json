@@ -1,0 +1,39 @@
+﻿[
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:nuh_mu;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:nuh_lambda;1",
+          "@type": "Array",
+          "elementSchema": "long",
+          "dtmi:dtdl:property:elementSchema;3": "string"
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:nuh_xi;1",
+        "@type": "Interface",
+        "schemas": {
+          "@context": "dtmi:undefinedExtension:context;1",
+          "@id": "dtmi:example:nuh_nu;1",
+          "@type": "Array",
+          "elementSchema": "time",
+          "dtmi:dtdl:property:elementSchema;3": "boolean"
+        }
+      }
+    ]
+  }
+]

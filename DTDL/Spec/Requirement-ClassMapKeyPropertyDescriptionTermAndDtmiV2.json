@@ -1,0 +1,63 @@
+﻿[
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:humpf_vroo;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:humpf_itch;1",
+          "@type": "Map",
+          "mapValue": {
+            "name": "humpf_yekk",
+            "schema": "boolean"
+          },
+          "mapKey": {
+            "description": [
+              "humpf_zatz"
+            ],
+            "dtmi:dtdl:property:description;2": [
+              "humpf_jogg"
+            ],
+            "name": "humpf_flunn",
+            "schema": "string"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:fuddle_epsilon;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:fuddle_gamma;1",
+          "@type": "Map",
+          "mapValue": {
+            "name": "fuddle_delta",
+            "schema": "date"
+          },
+          "mapKey": {
+            "@context": "dtmi:undefinedExtension:context;1",
+            "description": [
+              "humpf_hi"
+            ],
+            "dtmi:dtdl:property:description;2": [
+              "fuddle_alpha"
+            ],
+            "name": "fuddle_beta",
+            "schema": "string"
+          }
+        }
+      }
+    ]
+  }
+]

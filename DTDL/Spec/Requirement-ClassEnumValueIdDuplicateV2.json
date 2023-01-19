@@ -1,0 +1,57 @@
+﻿[
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:tau_jogg;1",
+        "@type": "Interface",
+        "contents": {
+          "@id": "dtmi:example:tau_jogg;1",
+          "@type": "Property",
+          "name": "tau_itch",
+          "schema": {
+            "@id": "dtmi:example:tau_jogg;1",
+            "@type": "Enum",
+            "valueSchema": "integer",
+            "enumValues": {
+              "@id": "dtmi:example:tau_jogg;1",
+              "enumValue": 905,
+              "name": "tau_flunn"
+            }
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:tau_yekk;1",
+        "@type": "Interface",
+        "contents": {
+          "@id": "dtmi:example:tau_yekk;1",
+          "@type": "Property",
+          "name": "tau_hi",
+          "schema": {
+            "@id": "dtmi:example:tau_yekk;1",
+            "@type": "Enum",
+            "valueSchema": "integer",
+            "enumValues": {
+              "@context": "dtmi:undefinedExtension:context;1",
+              "@id": "dtmi:example:tau_yekk;1",
+              "enumValue": 906,
+              "name": "tau_vroo"
+            }
+          }
+        }
+      }
+    ]
+  }
+]

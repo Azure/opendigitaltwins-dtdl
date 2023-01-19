@@ -1,0 +1,63 @@
+﻿[
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:eta_omega;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Relationship",
+          "name": "eta_phi",
+          "properties": [
+            {
+              "@type": "Property",
+              "name": "eta_chi",
+              "schema": "dateTime"
+            }
+          ],
+          "dtmi:dtdl:property:properties;3": [
+            {
+              "@type": "Property",
+              "name": "eta_psi",
+              "schema": "double"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:eta_humpf;1",
+        "@type": "Interface",
+        "contents": {
+          "@context": "dtmi:undefinedExtension:context;1",
+          "@type": "Relationship",
+          "name": "eta_yuzz",
+          "properties": [
+            {
+              "@type": "Property",
+              "name": "eta_wum",
+              "schema": "duration"
+            }
+          ],
+          "dtmi:dtdl:property:properties;3": [
+            {
+              "@type": "Property",
+              "name": "eta_um",
+              "schema": "float"
+            }
+          ]
+        }
+      }
+    ]
+  }
+]
