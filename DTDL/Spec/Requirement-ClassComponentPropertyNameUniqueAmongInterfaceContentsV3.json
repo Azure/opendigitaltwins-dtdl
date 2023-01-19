@@ -1,0 +1,94 @@
+﻿[
+  {
+    "valid": true,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:yekk_vroo;1",
+        "@type": "Interface",
+        "contents": [
+          {
+            "@type": "Component",
+            "schema": {
+              "@id": "dtmi:example:yekk_itch;1",
+              "@type": "Interface"
+            },
+            "name": "beta_thnad"
+          },
+          {
+            "@type": "Component",
+            "schema": {
+              "@id": "dtmi:example:yekk_yekk;1",
+              "@type": "Interface"
+            },
+            "name": "beta_spazz"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:vroo_beta;1",
+        "@type": "Interface",
+        "contents": [
+          {
+            "@type": "Component",
+            "schema": {
+              "@id": "dtmi:example:yekk_hi;1",
+              "@type": "Interface"
+            },
+            "name": "beta_thnad"
+          },
+          {
+            "@type": "Component",
+            "schema": {
+              "@id": "dtmi:example:vroo_alpha;1",
+              "@type": "Interface"
+            },
+            "name": "beta_thnad"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": [
+          "dtmi:dtdl:context;3",
+          "dtmi:undefinedExtension:context;1"
+        ],
+        "@id": "dtmi:example:vroo_epsilon;1",
+        "@type": "Interface",
+        "contents": [
+          {
+            "@type": "Component",
+            "schema": {
+              "@id": "dtmi:example:vroo_gamma;1",
+              "@type": "Interface"
+            },
+            "name": "beta_thnad"
+          },
+          {
+            "@type": "Component",
+            "schema": {
+              "@id": "dtmi:example:vroo_delta;1",
+              "@type": "Interface"
+            },
+            "name": "beta_thnad"
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,30 @@
+﻿[
+  {
+    "valid": true,
+    "desirable": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:eta_zatz;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:eta_spazz;1",
+          "@type": "Map",
+          "mapKey": {
+            "name": "eta_floob",
+            "schema": "string"
+          },
+          "mapValue": {
+            "name": "eta_thnad",
+            "schema": "float",
+            "@type": [
+              "MapValue",
+              "dtmi:dtdl:class:MapValue;2"
+            ]
+          }
+        }
+      }
+    ]
+  }
+]

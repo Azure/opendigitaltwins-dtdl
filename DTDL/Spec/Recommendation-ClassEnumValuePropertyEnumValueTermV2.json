@@ -1,0 +1,44 @@
+﻿[
+  {
+    "valid": true,
+    "desirable": true,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:theta_iota;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:theta_theta;1",
+          "@type": "Enum",
+          "valueSchema": "integer",
+          "enumValues": {
+            "enumValue": 715,
+            "name": "theta_eta"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "desirable": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:theta_mu;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:theta_lambda;1",
+          "@type": "Enum",
+          "valueSchema": "integer",
+          "enumValues": {
+            "dtmi:dtdl:property:enumValue;2": 716,
+            "name": "theta_kappa"
+          }
+        }
+      }
+    ]
+  }
+]

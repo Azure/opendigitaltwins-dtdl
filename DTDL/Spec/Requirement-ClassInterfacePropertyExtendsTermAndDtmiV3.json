@@ -1,0 +1,53 @@
+﻿[
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:omicron_alpha;1",
+        "@type": "Interface",
+        "extends": [
+          {
+            "@id": "dtmi:example:omicron_beta;1",
+            "@type": "Interface"
+          }
+        ],
+        "dtmi:dtdl:property:extends;3": [
+          {
+            "@id": "dtmi:example:omicron_gamma;1",
+            "@type": "Interface"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": [
+          "dtmi:dtdl:context;3",
+          "dtmi:undefinedExtension:context;1"
+        ],
+        "@id": "dtmi:example:omicron_delta;1",
+        "@type": "Interface",
+        "extends": [
+          {
+            "@id": "dtmi:example:omicron_epsilon;1",
+            "@type": "Interface"
+          }
+        ],
+        "dtmi:dtdl:property:extends;3": [
+          {
+            "@id": "dtmi:example:omicron_zeta;1",
+            "@type": "Interface"
+          }
+        ]
+      }
+    ]
+  }
+]

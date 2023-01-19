@@ -1,0 +1,348 @@
+﻿[
+  {
+    "valid": true,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:thnad_rho;1",
+        "@type": "Interface",
+        "extends": {
+          "@id": "dtmi:example:thnad_pi;1",
+          "@type": "Interface",
+          "contents": {
+            "@type": "Command",
+            "name": "thnad_omicron",
+            "request": {
+              "name": "thnad_xi",
+              "schema": "float",
+              "@context": "dtmi:dtdl:extension:quantitativeTypes;1"
+            }
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:thnad_phi;1",
+        "@type": "Interface",
+        "extends": {
+          "@id": "dtmi:example:thnad_upsilon;1",
+          "@type": "Interface",
+          "contents": {
+            "@type": "Command",
+            "name": "thnad_tau",
+            "request": {
+              "name": "thnad_sigma",
+              "schema": "integer",
+              "@context": []
+            }
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:thnad_yuzz;1",
+        "@type": "Interface",
+        "extends": {
+          "@id": "dtmi:example:thnad_omega;1",
+          "@type": "Interface",
+          "contents": {
+            "@type": "Command",
+            "name": "thnad_psi",
+            "request": {
+              "name": "thnad_chi",
+              "schema": "long",
+              "@context": [
+                "dtmi:dtdl:extension:quantitativeTypes;1"
+              ]
+            }
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:thnad_fuddle;1",
+        "@type": "Interface",
+        "extends": {
+          "@id": "dtmi:example:thnad_humpf;1",
+          "@type": "Interface",
+          "contents": {
+            "@type": "Command",
+            "name": "thnad_um",
+            "request": {
+              "name": "thnad_wum",
+              "schema": "string",
+              "@context": null
+            }
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:thnad_quan;1",
+        "@type": "Interface",
+        "extends": {
+          "@id": "dtmi:example:thnad_snee;1",
+          "@type": "Interface",
+          "contents": {
+            "@type": "Command",
+            "name": "thnad_nuh",
+            "request": {
+              "name": "thnad_glikk",
+              "schema": "time",
+              "@context": 626
+            }
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:thnad_zatz;1",
+        "@type": "Interface",
+        "extends": {
+          "@id": "dtmi:example:thnad_floob;1",
+          "@type": "Interface",
+          "contents": {
+            "@type": "Command",
+            "name": "thnad_spazz",
+            "request": {
+              "name": "thnad_thnad",
+              "schema": "boolean",
+              "@context": true
+            }
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:thnad_yekk;1",
+        "@type": "Interface",
+        "extends": {
+          "@id": "dtmi:example:thnad_itch;1",
+          "@type": "Interface",
+          "contents": {
+            "@type": "Command",
+            "name": "thnad_flunn",
+            "request": {
+              "name": "thnad_jogg",
+              "schema": "date",
+              "@context": [
+                null
+              ]
+            }
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:spazz_beta;1",
+        "@type": "Interface",
+        "extends": {
+          "@id": "dtmi:example:spazz_alpha;1",
+          "@type": "Interface",
+          "contents": {
+            "@type": "Command",
+            "name": "thnad_hi",
+            "request": {
+              "name": "thnad_vroo",
+              "schema": "dateTime",
+              "@context": [
+                626
+              ]
+            }
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:spazz_zeta;1",
+        "@type": "Interface",
+        "extends": {
+          "@id": "dtmi:example:spazz_epsilon;1",
+          "@type": "Interface",
+          "contents": {
+            "@type": "Command",
+            "name": "spazz_delta",
+            "request": {
+              "name": "spazz_gamma",
+              "schema": "double",
+              "@context": [
+                true
+              ]
+            }
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:spazz_kappa;1",
+        "@type": "Interface",
+        "extends": {
+          "@id": "dtmi:example:spazz_iota;1",
+          "@type": "Interface",
+          "contents": {
+            "@type": "Command",
+            "name": "spazz_theta",
+            "request": {
+              "name": "spazz_eta",
+              "schema": "duration",
+              "@context": {}
+            }
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:spazz_xi;1",
+        "@type": "Interface",
+        "extends": {
+          "@id": "dtmi:example:spazz_nu;1",
+          "@type": "Interface",
+          "contents": {
+            "@type": "Command",
+            "name": "spazz_mu",
+            "request": {
+              "name": "spazz_lambda",
+              "schema": "float",
+              "@context": [
+                {}
+              ]
+            }
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:spazz_sigma;1",
+        "@type": "Interface",
+        "extends": {
+          "@id": "dtmi:example:spazz_rho;1",
+          "@type": "Interface",
+          "contents": {
+            "@type": "Command",
+            "name": "spazz_pi",
+            "request": {
+              "name": "spazz_omicron",
+              "schema": "integer",
+              "@context": "dtmi:dtdl:extension:quantitativeTypes"
+            }
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:spazz_chi;1",
+        "@type": "Interface",
+        "extends": {
+          "@id": "dtmi:example:spazz_phi;1",
+          "@type": "Interface",
+          "contents": {
+            "@type": "Command",
+            "name": "spazz_upsilon",
+            "request": {
+              "name": "spazz_tau",
+              "schema": "long",
+              "@context": "http://dtdl/extension/quantitativeTypes/1"
+            }
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:spazz_wum;1",
+        "@type": "Interface",
+        "extends": {
+          "@id": "dtmi:example:spazz_yuzz;1",
+          "@type": "Interface",
+          "contents": {
+            "@type": "Command",
+            "name": "spazz_omega",
+            "request": {
+              "name": "spazz_psi",
+              "schema": "string",
+              "@context": "quantitativeTypes;1"
+            }
+          }
+        }
+      }
+    ]
+  }
+]

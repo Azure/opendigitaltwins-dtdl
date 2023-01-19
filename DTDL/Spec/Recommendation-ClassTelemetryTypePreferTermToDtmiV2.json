@@ -1,0 +1,36 @@
+﻿[
+  {
+    "valid": true,
+    "desirable": true,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:flunn_iota;1",
+        "@type": "Interface",
+        "contents": {
+          "name": "flunn_theta",
+          "schema": "float",
+          "@type": "Telemetry"
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "desirable": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:flunn_lambda;1",
+        "@type": "Interface",
+        "contents": {
+          "name": "flunn_kappa",
+          "schema": "integer",
+          "@type": "dtmi:dtdl:class:Telemetry;2"
+        }
+      }
+    ]
+  }
+]

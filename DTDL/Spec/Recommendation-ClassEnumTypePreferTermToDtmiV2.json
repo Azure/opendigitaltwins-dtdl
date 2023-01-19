@@ -1,0 +1,48 @@
+﻿[
+  {
+    "valid": true,
+    "desirable": true,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:xi_rho;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:xi_omicron;1",
+          "enumValues": [
+            {
+              "enumValue": 82,
+              "name": "xi_pi"
+            }
+          ],
+          "valueSchema": "integer",
+          "@type": "Enum"
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "desirable": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:xi_upsilon;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:xi_sigma;1",
+          "enumValues": [
+            {
+              "enumValue": 83,
+              "name": "xi_tau"
+            }
+          ],
+          "valueSchema": "integer",
+          "@type": "dtmi:dtdl:class:Enum;2"
+        }
+      }
+    ]
+  }
+]

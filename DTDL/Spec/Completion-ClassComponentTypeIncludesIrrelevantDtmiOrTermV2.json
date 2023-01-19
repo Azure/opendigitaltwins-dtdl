@@ -1,0 +1,96 @@
+﻿[
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:snee_glikk;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": [
+            "Component",
+            "dtmi:foo:bar;1"
+          ],
+          "name": "snee_humpf",
+          "schema": {
+            "@id": "dtmi:example:snee_fuddle;1",
+            "@type": "Interface"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:snee_quan;1",
+        "@type": "Interface",
+        "contents": {
+          "@context": "dtmi:undefinedExtension:context;1",
+          "@type": [
+            "Component",
+            "dtmi:foo:bar;1"
+          ],
+          "name": "snee_nuh",
+          "schema": {
+            "@id": "dtmi:example:snee_snee;1",
+            "@type": "Interface"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:snee_floob;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": [
+            "Component",
+            "boolean"
+          ],
+          "name": "snee_thnad",
+          "schema": {
+            "@id": "dtmi:example:snee_spazz;1",
+            "@type": "Interface"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:snee_flunn;1",
+        "@type": "Interface",
+        "contents": {
+          "@context": "dtmi:undefinedExtension:context;1",
+          "@type": [
+            "Component",
+            "boolean"
+          ],
+          "name": "snee_zatz",
+          "schema": {
+            "@id": "dtmi:example:snee_jogg;1",
+            "@type": "Interface"
+          }
+        }
+      }
+    ]
+  }
+]

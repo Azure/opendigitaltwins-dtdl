@@ -1,0 +1,57 @@
+﻿[
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:sigma_floob;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:sigma_spazz;1",
+          "@type": "Enum",
+          "valueSchema": "integer",
+          "enumValues": {
+            "displayName": [
+              "sigma_snee"
+            ],
+            "dtmi:dtdl:property:displayName;3": [
+              "sigma_quan"
+            ],
+            "enumValue": 1426,
+            "name": "sigma_thnad"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:sigma_yekk;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:sigma_itch;1",
+          "@type": "Enum",
+          "valueSchema": "integer",
+          "enumValues": {
+            "@context": "dtmi:undefinedExtension:context;1",
+            "displayName": [
+              "sigma_zatz"
+            ],
+            "dtmi:dtdl:property:displayName;3": [
+              "sigma_jogg"
+            ],
+            "enumValue": 1427,
+            "name": "sigma_flunn"
+          }
+        }
+      }
+    ]
+  }
+]

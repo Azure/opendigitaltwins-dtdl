@@ -1,0 +1,54 @@
+﻿[
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:omicron_quan;1",
+        "@type": "Interface",
+        "extends": {
+          "@id": "dtmi:example:omicron_snee;1",
+          "@type": "Interface",
+          "contents": {
+            "@type": "Property",
+            "name": "omicron_nuh",
+            "schema": "dtmi:ex:dependentRef;1"
+          }
+        }
+      }
+    ],
+    "expect": {
+      "unresolvedIdentifiers": [
+        "dtmi:ex:dependentRef;1"
+      ]
+    }
+  },
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:omicron_floob;1",
+        "@type": "Interface",
+        "extends": {
+          "@id": "dtmi:example:omicron_spazz;1",
+          "@type": "Interface",
+          "contents": {
+            "@type": "Property",
+            "name": "omicron_thnad",
+            "schema": [
+              "dtmi:ex:dependentRef;1"
+            ]
+          }
+        }
+      }
+    ],
+    "expect": {
+      "unresolvedIdentifiers": [
+        "dtmi:ex:dependentRef;1"
+      ]
+    }
+  }
+]

@@ -1,0 +1,49 @@
+﻿[
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:humpf_zeta;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Property",
+          "displayName": [
+            "humpf_gamma"
+          ],
+          "dtmi:dtdl:property:displayName;3": [
+            "humpf_delta"
+          ],
+          "name": "humpf_epsilon",
+          "schema": "date"
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:humpf_kappa;1",
+        "@type": "Interface",
+        "contents": {
+          "@context": "dtmi:undefinedExtension:context;1",
+          "@type": "Property",
+          "displayName": [
+            "humpf_eta"
+          ],
+          "dtmi:dtdl:property:displayName;3": [
+            "humpf_theta"
+          ],
+          "name": "humpf_iota",
+          "schema": "dateTime"
+        }
+      }
+    ]
+  }
+]

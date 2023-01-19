@@ -1,0 +1,50 @@
+﻿[
+  {
+    "valid": true,
+    "desirable": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:chi_alpha;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Command",
+          "name": "phi_hi",
+          "response": {
+            "name": "phi_vroo",
+            "schema": "string",
+            "@type": [
+              "CommandResponse",
+              "CommandResponse"
+            ]
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "desirable": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:chi_delta;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Command",
+          "name": "chi_gamma",
+          "response": {
+            "name": "chi_beta",
+            "schema": "time",
+            "@type": [
+              "dtmi:dtdl:class:CommandResponse;3",
+              "dtmi:dtdl:class:CommandResponse;3"
+            ]
+          }
+        }
+      }
+    ]
+  }
+]

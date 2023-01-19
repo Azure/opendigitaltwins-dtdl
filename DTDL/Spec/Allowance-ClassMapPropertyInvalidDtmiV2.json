@@ -1,0 +1,29 @@
+﻿[
+  {
+    "valid": true,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:flunn_upsilon;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:flunn_rho;1",
+          "@type": [
+            "Map",
+            "Foobar"
+          ],
+          "mapKey": {
+            "name": "flunn_sigma",
+            "schema": "string"
+          },
+          "mapValue": {
+            "name": "flunn_tau",
+            "schema": "date"
+          },
+          "dtmi:foo//bar": 626
+        }
+      }
+    ]
+  }
+]

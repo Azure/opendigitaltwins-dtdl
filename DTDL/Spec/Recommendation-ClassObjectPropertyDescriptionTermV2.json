@@ -1,0 +1,52 @@
+﻿[
+  {
+    "valid": true,
+    "desirable": true,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:alpha_omega;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:alpha_phi;1",
+          "@type": "Object",
+          "description": [
+            "alpha_chi"
+          ],
+          "fields": [
+            {
+              "name": "alpha_psi",
+              "schema": "time"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "desirable": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:alpha_humpf;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:alpha_yuzz;1",
+          "@type": "Object",
+          "dtmi:dtdl:property:description;2": [
+            "alpha_wum"
+          ],
+          "fields": [
+            {
+              "name": "alpha_um",
+              "schema": "boolean"
+            }
+          ]
+        }
+      }
+    ]
+  }
+]

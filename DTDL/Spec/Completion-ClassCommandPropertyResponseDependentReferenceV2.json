@@ -1,0 +1,54 @@
+﻿[
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:vroo_delta;1",
+        "@type": "Interface",
+        "extends": {
+          "@id": "dtmi:example:vroo_gamma;1",
+          "@type": "Interface",
+          "contents": {
+            "@type": "Command",
+            "name": "vroo_beta",
+            "response": "dtmi:ex:dependentRef;1"
+          }
+        }
+      }
+    ],
+    "expect": {
+      "unresolvedIdentifiers": [
+        "dtmi:ex:dependentRef;1"
+      ]
+    }
+  },
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:vroo_eta;1",
+        "@type": "Interface",
+        "extends": {
+          "@id": "dtmi:example:vroo_zeta;1",
+          "@type": "Interface",
+          "contents": {
+            "@type": "Command",
+            "name": "vroo_epsilon",
+            "response": [
+              "dtmi:ex:dependentRef;1"
+            ]
+          }
+        }
+      }
+    ],
+    "expect": {
+      "unresolvedIdentifiers": [
+        "dtmi:ex:dependentRef;1"
+      ]
+    }
+  }
+]

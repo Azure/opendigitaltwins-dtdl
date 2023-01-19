@@ -1,0 +1,63 @@
+﻿[
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:itch_theta;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:itch_zeta;1",
+          "@type": "Map",
+          "mapValue": {
+            "name": "itch_eta",
+            "schema": "long"
+          },
+          "mapKey": {
+            "description": [
+              "itch_gamma"
+            ],
+            "dtmi:dtdl:property:description;3": [
+              "itch_delta"
+            ],
+            "name": "itch_epsilon",
+            "schema": "string"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:itch_xi;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:itch_mu;1",
+          "@type": "Map",
+          "mapValue": {
+            "name": "itch_nu",
+            "schema": "string"
+          },
+          "mapKey": {
+            "@context": "dtmi:undefinedExtension:context;1",
+            "description": [
+              "itch_iota"
+            ],
+            "dtmi:dtdl:property:description;3": [
+              "itch_kappa"
+            ],
+            "name": "itch_lambda",
+            "schema": "string"
+          }
+        }
+      }
+    ]
+  }
+]

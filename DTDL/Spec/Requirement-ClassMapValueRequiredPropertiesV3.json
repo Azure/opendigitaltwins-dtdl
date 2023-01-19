@@ -1,0 +1,96 @@
+﻿[
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:beta_quan;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:beta_nuh;1",
+          "@type": "Map",
+          "mapKey": {
+            "name": "beta_snee",
+            "schema": "string"
+          },
+          "mapValue": {
+            "schema": "float"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:beta_floob;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:beta_thnad;1",
+          "@type": "Map",
+          "mapKey": {
+            "name": "beta_spazz",
+            "schema": "string"
+          },
+          "mapValue": {
+            "@context": "dtmi:undefinedExtension:context;1",
+            "schema": "integer"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:beta_itch;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:beta_jogg;1",
+          "@type": "Map",
+          "mapKey": {
+            "name": "beta_flunn",
+            "schema": "string"
+          },
+          "mapValue": {
+            "name": "beta_zatz"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:gamma_alpha;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:beta_vroo;1",
+          "@type": "Map",
+          "mapKey": {
+            "name": "beta_hi",
+            "schema": "string"
+          },
+          "mapValue": {
+            "@context": "dtmi:undefinedExtension:context;1",
+            "name": "beta_yekk"
+          }
+        }
+      }
+    ]
+  }
+]

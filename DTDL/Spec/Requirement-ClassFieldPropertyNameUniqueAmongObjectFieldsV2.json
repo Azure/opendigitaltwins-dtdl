@@ -1,0 +1,80 @@
+﻿[
+  {
+    "valid": true,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:glikk_vroo;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:glikk_yekk;1",
+          "@type": "Object",
+          "fields": [
+            {
+              "schema": "float",
+              "name": "alpha_glikk"
+            },
+            {
+              "schema": "integer",
+              "name": "alpha_nuh"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:nuh_alpha;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:glikk_hi;1",
+          "@type": "Object",
+          "fields": [
+            {
+              "schema": "long",
+              "name": "alpha_glikk"
+            },
+            {
+              "schema": "string",
+              "name": "alpha_glikk"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:nuh_gamma;1",
+        "@type": "Interface",
+        "schemas": {
+          "@context": "dtmi:undefinedExtension:context;1",
+          "@id": "dtmi:example:nuh_beta;1",
+          "@type": "Object",
+          "fields": [
+            {
+              "schema": "time",
+              "name": "alpha_glikk"
+            },
+            {
+              "schema": "boolean",
+              "name": "alpha_glikk"
+            }
+          ]
+        }
+      }
+    ]
+  }
+]

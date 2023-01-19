@@ -1,0 +1,49 @@
+﻿[
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:fuddle_sigma;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Telemetry",
+          "description": [
+            "fuddle_omicron"
+          ],
+          "dtmi:dtdl:property:description;3": [
+            "fuddle_pi"
+          ],
+          "name": "fuddle_rho",
+          "schema": "time"
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:fuddle_chi;1",
+        "@type": "Interface",
+        "contents": {
+          "@context": "dtmi:undefinedExtension:context;1",
+          "@type": "Telemetry",
+          "description": [
+            "fuddle_tau"
+          ],
+          "dtmi:dtdl:property:description;3": [
+            "fuddle_upsilon"
+          ],
+          "name": "fuddle_phi",
+          "schema": "boolean"
+        }
+      }
+    ]
+  }
+]

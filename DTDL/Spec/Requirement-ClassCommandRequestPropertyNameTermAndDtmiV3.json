@@ -1,0 +1,45 @@
+﻿[
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:um_theta;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Command",
+          "name": "um_eta",
+          "request": {
+            "name": "um_epsilon",
+            "dtmi:dtdl:property:name;3": "um_zeta",
+            "schema": "long"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:um_mu;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Command",
+          "name": "um_lambda",
+          "request": {
+            "@context": "dtmi:undefinedExtension:context;1",
+            "name": "um_iota",
+            "dtmi:dtdl:property:name;3": "um_kappa",
+            "schema": "string"
+          }
+        }
+      }
+    ]
+  }
+]

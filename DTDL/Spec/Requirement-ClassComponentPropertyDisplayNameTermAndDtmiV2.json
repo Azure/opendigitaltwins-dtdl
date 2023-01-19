@@ -1,0 +1,55 @@
+﻿[
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:kappa_omega;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Component",
+          "displayName": [
+            "kappa_upsilon"
+          ],
+          "dtmi:dtdl:property:displayName;2": [
+            "kappa_phi"
+          ],
+          "name": "kappa_chi",
+          "schema": {
+            "@id": "dtmi:example:kappa_psi;1",
+            "@type": "Interface"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:kappa_fuddle;1",
+        "@type": "Interface",
+        "contents": {
+          "@context": "dtmi:undefinedExtension:context;1",
+          "@type": "Component",
+          "displayName": [
+            "kappa_yuzz"
+          ],
+          "dtmi:dtdl:property:displayName;2": [
+            "kappa_wum"
+          ],
+          "name": "kappa_um",
+          "schema": {
+            "@id": "dtmi:example:kappa_humpf;1",
+            "@type": "Interface"
+          }
+        }
+      }
+    ]
+  }
+]

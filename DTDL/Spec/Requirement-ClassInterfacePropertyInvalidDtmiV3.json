@@ -1,0 +1,37 @@
+﻿[
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:sigma_kappa;1",
+        "@type": [
+          "Interface",
+          "Foobar"
+        ],
+        "dtmi:foo//bar": 626
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": [
+          "dtmi:dtdl:context;3",
+          "dtmi:undefinedExtension:context;1"
+        ],
+        "@id": "dtmi:example:sigma_lambda;1",
+        "@type": [
+          "Interface",
+          "Foobar"
+        ],
+        "dtmi:foo//bar": 626
+      }
+    ]
+  }
+]

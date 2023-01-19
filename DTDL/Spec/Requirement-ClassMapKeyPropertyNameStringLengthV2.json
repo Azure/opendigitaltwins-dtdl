@@ -1,0 +1,74 @@
+﻿[
+  {
+    "valid": true,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:vroo_zeta;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:vroo_delta;1",
+          "@type": "Map",
+          "mapValue": {
+            "name": "vroo_epsilon",
+            "schema": "integer"
+          },
+          "mapKey": {
+            "schema": "string",
+            "name": "SupercalifragilisticexpialidociousEvenThoughTheSoundOfItIsSometh"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:vroo_iota;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:vroo_eta;1",
+          "@type": "Map",
+          "mapValue": {
+            "name": "vroo_theta",
+            "schema": "long"
+          },
+          "mapKey": {
+            "schema": "string",
+            "name": "SupercalifragilisticexpialidociousEvenThoughTheSoundOfItIsSomethi"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:vroo_mu;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:vroo_kappa;1",
+          "@type": "Map",
+          "mapValue": {
+            "name": "vroo_lambda",
+            "schema": "string"
+          },
+          "mapKey": {
+            "@context": "dtmi:undefinedExtension:context;1",
+            "schema": "string",
+            "name": "SupercalifragilisticexpialidociousEvenThoughTheSoundOfItIsSomethi"
+          }
+        }
+      }
+    ]
+  }
+]

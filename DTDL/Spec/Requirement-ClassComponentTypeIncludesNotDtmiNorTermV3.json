@@ -1,0 +1,49 @@
+﻿[
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:flunn_pi;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": [
+            "Component",
+            "http://foo.com/bar"
+          ],
+          "name": "flunn_xi",
+          "schema": {
+            "@id": "dtmi:example:flunn_omicron;1",
+            "@type": "Interface"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:flunn_tau;1",
+        "@type": "Interface",
+        "contents": {
+          "@context": "dtmi:undefinedExtension:context;1",
+          "@type": [
+            "Component",
+            "http://foo.com/bar"
+          ],
+          "name": "flunn_rho",
+          "schema": {
+            "@id": "dtmi:example:flunn_sigma;1",
+            "@type": "Interface"
+          }
+        }
+      }
+    ]
+  }
+]

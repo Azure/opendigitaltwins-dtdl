@@ -1,0 +1,1097 @@
+﻿{
+  "@context": "dtmi:dtdl:context;3",
+  "@graph": [
+    {
+      "@id": "dtmi:dtdl:documentation:support;3",
+      "@type": [ "dtmm:Documentation" ],
+      "dtmm:childProperties": [
+        "dtmi:dtdl:property:enumValues;3"
+      ]
+    },
+    {
+      "@id": "dtmi:dtdl:restriction:global;3",
+      "@type": [ "dtmm:Global" ],
+      "dtmm:dtdlVersion": 3,
+      "dtmm:identifier": {
+        "@id": "dtmi:dtdl:restriction:global:identifier;3",
+        "sh:pattern": "^dtmi:[A-Za-z](?:[A-Za-z0-9_]*[A-Za-z0-9])?(?::[A-Za-z](?:[A-Za-z0-9_]*[A-Za-z0-9])?)*(?:;[1-9][0-9]{0,8}(?:\\.[1-9][0-9]{0,5})?)?$",
+        "sh:maxLength": 2048,
+        "dtmm:reservedPrefix": [ "dtmi:dtdl:", "dtmi:standard:" ]
+      },
+      "dtmm:partition": {
+        "dtmm:maxBytes": 1048576
+      },
+      "dtmm:localTerms": false,
+      "dtmm:dynamicExtensions": false,
+      "dtmm:restrictKeywords": true,
+      "dtmm:apocrypha": {
+        "dtmm:propertyNeedsCotype": true,
+        "dtmm:neverAllow": {
+          "dtmm:asCotype": [
+            "dtmm:notDtmiNorTerm",
+            "dtmm:invalidDtmi"
+          ],
+          "dtmm:asProperty": [
+            "dtmm:notDtmiNorTerm",
+            "dtmm:invalidDtmi"
+          ]
+        }
+      }
+    },
+    {
+      "@id": "dtmi:dtdl:class:Entity;3",
+      "@type": [ "rdfs:Class", "dtmm:Material", "dtmm:Abstract", "sh:NodeShape" ],
+      "dtmm:dtdlVersion": 3,
+      "dtmm:property": [
+        {
+          "@id": "dtmi:dtdl:property:displayName;3",
+          "@type": "rdf:Property",
+          "rdfs:domain": "dtmi:dtdl:class:Entity;3"
+        },
+        {
+          "@id": "dtmi:dtdl:property:description;3",
+          "@type": "rdf:Property",
+          "rdfs:domain": "dtmi:dtdl:class:Entity;3"
+        },
+        {
+          "@id": "dtmi:dtdl:property:comment;3",
+          "@type": "rdf:Property",
+          "rdfs:domain": "dtmi:dtdl:class:Entity;3"
+        },
+        {
+          "@id": "dtmi:dtdl:property:languageMajorVersion;3",
+          "@type": "rdf:Property",
+          "rdfs:domain": "dtmi:dtdl:class:Entity;3"
+        }
+      ],
+      "sh:property": [
+        {
+          "@id": "dtmi:dtdl:constraint:Entity:displayName;3",
+          "sh:path": "dtmi:dtdl:property:displayName;3",
+          "sh:uniqueLang": true,
+          "sh:datatype": "rdf:langString",
+          "sh:nodeKind": "sh:Literal",
+          "sh:maxLength": 64,
+          "dtmm:description": {
+            "en-US": "A localizable name for display."
+          }
+        },
+        {
+          "@id": "dtmi:dtdl:constraint:Entity:description;3",
+          "sh:path": "dtmi:dtdl:property:description;3",
+          "sh:uniqueLang": true,
+          "sh:datatype": "rdf:langString",
+          "sh:nodeKind": "sh:Literal",
+          "sh:maxLength": 512,
+          "dtmm:description": {
+            "en-US": "A localizable description for display."
+          }
+        },
+        {
+          "@id": "dtmi:dtdl:constraint:Entity:comment;3",
+          "sh:path": "dtmi:dtdl:property:comment;3",
+          "sh:maxCount": 1,
+          "sh:datatype": "xsd:string",
+          "sh:nodeKind": "sh:Literal",
+          "sh:maxLength": 512,
+          "dtmm:description": {
+            "en-US": "A comment for model authors."
+          }
+        },
+        {
+          "@id": "dtmi:dtdl:constraint:Entity:languageMajorVersion;3",
+          "sh:path": "dtmi:dtdl:property:languageMajorVersion;3",
+          "sh:minCount": 0,
+          "sh:maxCount": 0,
+          "sh:datatype": "xsd:integer",
+          "sh:nodeKind": "sh:Literal",
+          "dtmm:value": 3,
+          "dtmm:description": {
+            "en-US": "The major version of DTDL used to author this element."
+          }
+        }
+      ]
+    },
+    {
+      "@id": "dtmi:dtdl:class:Interface;3",
+      "@type": [ "rdfs:Class", "dtmm:Material", "dtmm:Partition", "sh:NodeShape" ],
+      "dtmm:dtdlVersion": 3,
+      "rdfs:subClassOf": "dtmi:dtdl:class:Entity;3",
+      "dtmm:property": [
+        {
+          "@id": "dtmi:dtdl:property:contents;3",
+          "@type": "rdf:Property",
+          "rdfs:domain": "dtmi:dtdl:class:Interface;3"
+        },
+        {
+          "@id": "dtmi:dtdl:property:extends;3",
+          "@type": "rdf:Property",
+          "rdfs:domain": "dtmi:dtdl:class:Interface;3"
+        },
+        {
+          "@id": "dtmi:dtdl:property:schemas;3",
+          "@type": "rdf:Property",
+          "rdfs:domain": "dtmi:dtdl:class:Interface;3"
+        }
+      ],
+      "sh:property": [
+        {
+          "@id": "dtmi:dtdl:constraint:Interface:contents;3",
+          "sh:path": "dtmi:dtdl:property:contents;3",
+          "sh:or": [
+            { "sh:class": "dtmi:dtdl:class:Content;3" },
+            { "sh:class": "dtmi:dtdl:class:Content;2" }
+          ],
+          "sh:nodeKind": "sh:BlankNodeOrIRI",
+          "dtmm:uniqueProperties": [ "dtmi:dtdl:property:name;3" ],
+          "dtmm:dtmiSegment": "dtmi:dtdl:property:name;3",
+          "dtmm:dictionaryKey": "dtmi:dtdl:property:name;3",
+          "dtmm:description": {
+            "en-US": "A set of elements that define the contents of this Interface."
+          }
+        },
+        {
+          "@id": "dtmi:dtdl:constraint:Interface:extends;3",
+          "sh:path": "dtmi:dtdl:property:extends;3",
+          "sh:or": [
+            { "sh:class": "dtmi:dtdl:class:Interface;3" },
+            { "sh:class": "dtmi:dtdl:class:Interface;2" }
+          ],
+          "sh:nodeKind": "sh:IRI",
+          "dtmm:description": {
+            "en-US": "A set of DTMIs that refer to Interfaces from which this Interface inherits contents. Interfaces can inherit from multiple Interfaces."
+          }
+        },
+        {
+          "@id": "dtmi:dtdl:constraint:Interface:schemas;3",
+          "sh:path": "dtmi:dtdl:property:schemas;3",
+          "sh:class": "ComplexSchema",
+          "sh:nodeKind": "sh:IRI",
+          "dtmm:description": {
+            "en-US": "A set of complex schema objects that are reusable within this Interface."
+          }
+        }
+      ],
+      "dtmm:identifier": {
+        "@id": "dtmi:dtdl:restriction:Interface:identifier;3",
+        "sh:maxLength": 128
+      },
+      "dtmm:descendants": [
+        {
+          "@id": "dtmi:dtdl:descendants:Interface:extends;3",
+          "dtmm:properties": [ "dtmi:dtdl:property:extends;3" ],
+          "dtmm:narrow": true,
+          "dtmm:importProperties": [ "dtmi:dtdl:property:contents;3" ],
+          "dtmm:maxCount": 1024,
+          "dtmm:maxDepth": 10
+        },
+        {
+          "@id": "dtmi:dtdl:descendants:Interface:contents;3",
+          "dtmm:properties": [
+            "dtmi:dtdl:property:contents;3",
+            "dtmi:dtdl:property:fields;3",
+            "dtmi:dtdl:property:enumValues;3",
+            "dtmi:dtdl:property:request;3",
+            "dtmi:dtdl:property:response;3",
+            "dtmi:dtdl:property:properties;3",
+            "dtmi:dtdl:property:schema;3",
+            "dtmi:dtdl:property:elementSchema;3",
+            "dtmi:dtdl:property:mapValue;3"
+          ],
+          "dtmm:narrow": true,
+          "dtmm:maxCount": 100000
+        }
+      ]
+    },
+    {
+      "@id": "dtmi:dtdl:class:NamedEntity;3",
+      "@type": [ "rdfs:Class", "dtmm:Material", "dtmm:Abstract", "sh:NodeShape" ],
+      "dtmm:dtdlVersion": 3,
+      "rdfs:subClassOf": "dtmi:dtdl:class:Entity;3",
+      "dtmm:property": [
+        {
+          "@id": "dtmi:dtdl:property:name;3",
+          "@type": "rdf:Property",
+          "rdfs:domain": "dtmi:dtdl:class:NamedEntity;3"
+        }
+      ],
+      "sh:property": [
+        {
+          "@id": "dtmi:dtdl:constraint:NamedEntity:name;3",
+          "sh:path": "dtmi:dtdl:property:name;3",
+          "sh:minCount": 1,
+          "sh:maxCount": 1,
+          "sh:datatype": "xsd:string",
+          "sh:nodeKind": "sh:Literal",
+          "sh:pattern": "^[A-Za-z](?:[A-Za-z0-9_]*[A-Za-z0-9])?$",
+          "dtmm:patternDesc": {
+            "en-US": "contains only alphanumerics and underscore, starting with a letter, ending with alphanumeric"
+          },
+          "sh:maxLength": 512,
+          "dtmm:description": {
+            "en-US": "The programming name of the element."
+          }
+        }
+      ]
+    },
+    {
+      "@id": "dtmi:dtdl:class:SchemaField;3",
+      "@type": [ "rdfs:Class", "dtmm:Material", "dtmm:Abstract", "sh:NodeShape" ],
+      "dtmm:dtdlVersion": 3,
+      "rdfs:subClassOf": "dtmi:dtdl:class:NamedEntity;3",
+      "dtmm:property": [
+        {
+          "@id": "dtmi:dtdl:property:schema;3",
+          "@type": "rdf:Property",
+          "rdfs:domain": "dtmi:dtdl:class:SchemaField;3"
+        }
+      ],
+      "sh:property": [
+        {
+          "@id": "dtmi:dtdl:constraint:SchemaField:schema;3",
+          "sh:path": "dtmi:dtdl:property:schema;3",
+          "sh:minCount": 1,
+          "sh:maxCount": 1,
+          "sh:or": [
+            { "sh:class": "dtmi:dtdl:class:Schema;3" },
+            { "sh:class": "dtmi:dtdl:class:Schema;2" }
+          ],
+          "sh:nodeKind": "sh:BlankNodeOrIRI",
+          "dtmm:description": {
+            "en-US": "The data type of the element, which is an instance of Schema."
+          }
+        }
+      ]
+    },
+    {
+      "@id": "dtmi:dtdl:class:Schema;3",
+      "@type": [ "rdfs:Class", "dtmm:Material", "dtmm:Abstract", "sh:NodeShape" ],
+      "dtmm:dtdlVersion": 3,
+      "rdfs:subClassOf": "dtmi:dtdl:class:Entity;3"
+    },
+    {
+      "@id": "dtmi:dtdl:class:PrimitiveSchema;3",
+      "@type": [ "rdfs:Class", "dtmm:Material", "dtmm:Abstract", "sh:NodeShape" ],
+      "dtmm:dtdlVersion": 3,
+      "rdfs:subClassOf": "dtmi:dtdl:class:Schema;3"
+    },
+    {
+      "@id": "dtmi:dtdl:class:Boolean;3",
+      "@type": [ "rdfs:Class", "dtmm:Material", "sh:NodeShape" ],
+      "dtmm:dtdlVersion": 3,
+      "rdfs:subClassOf": "dtmi:dtdl:class:PrimitiveSchema;3",
+      "dtmm:instance": {
+        "dtmm:jsonType": "dtmm:jsonBool",
+        "dtmm:authority": "JSON"
+      }
+    },
+    {
+      "@id": "dtmi:dtdl:class:NumericSchema;3",
+      "@type": [ "rdfs:Class", "dtmm:Material", "dtmm:Abstract", "sh:NodeShape" ],
+      "dtmm:dtdlVersion": 3,
+      "rdfs:subClassOf": "dtmi:dtdl:class:PrimitiveSchema;3"
+    },
+    {
+      "@id": "dtmi:dtdl:class:Double;3",
+      "@type": [ "rdfs:Class", "dtmm:Material", "sh:NodeShape" ],
+      "dtmm:dtdlVersion": 3,
+      "rdfs:subClassOf": "dtmi:dtdl:class:NumericSchema;3",
+      "dtmm:instance": {
+        "dtmm:jsonType": "dtmm:jsonNumber",
+        "sh:datatype": "xsd:double"
+      }
+    },
+    {
+      "@id": "dtmi:dtdl:class:Float;3",
+      "@type": [ "rdfs:Class", "dtmm:Material", "sh:NodeShape" ],
+      "dtmm:dtdlVersion": 3,
+      "rdfs:subClassOf": "dtmi:dtdl:class:NumericSchema;3",
+      "dtmm:instance": {
+        "dtmm:jsonType": "dtmm:jsonNumber",
+        "sh:datatype": "xsd:float"
+      }
+    },
+    {
+      "@id": "dtmi:dtdl:class:Integer;3",
+      "@type": [ "rdfs:Class", "dtmm:Material", "sh:NodeShape" ],
+      "dtmm:dtdlVersion": 3,
+      "rdfs:subClassOf": "dtmi:dtdl:class:NumericSchema;3",
+      "dtmm:instance": {
+        "dtmm:jsonType": "dtmm:jsonNumber",
+        "sh:datatype": "xsd:int"
+      }
+    },
+    {
+      "@id": "dtmi:dtdl:class:Long;3",
+      "@type": [ "rdfs:Class", "dtmm:Material", "sh:NodeShape" ],
+      "dtmm:dtdlVersion": 3,
+      "rdfs:subClassOf": "dtmi:dtdl:class:NumericSchema;3",
+      "dtmm:instance": {
+        "dtmm:jsonType": "dtmm:jsonNumber",
+        "sh:datatype": "xsd:long"
+      }
+    },
+    {
+      "@id": "dtmi:dtdl:class:TemporalSchema;3",
+      "@type": [ "rdfs:Class", "dtmm:Material", "dtmm:Abstract", "sh:NodeShape" ],
+      "dtmm:dtdlVersion": 3,
+      "rdfs:subClassOf": "dtmi:dtdl:class:PrimitiveSchema;3"
+    },
+    {
+      "@id": "dtmi:dtdl:class:Date;3",
+      "@type": [ "rdfs:Class", "dtmm:Material", "sh:NodeShape" ],
+      "dtmm:dtdlVersion": 3,
+      "rdfs:subClassOf": "dtmi:dtdl:class:TemporalSchema;3",
+      "dtmm:instance": {
+        "dtmm:jsonType": "dtmm:jsonString",
+        "sh:datatype": "xsd:date",
+        "sh:pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$",
+        "dtmm:authority": "RFC 3339"
+      }
+    },
+    {
+      "@id": "dtmi:dtdl:class:DateTime;3",
+      "@type": [ "rdfs:Class", "dtmm:Material", "sh:NodeShape" ],
+      "dtmm:dtdlVersion": 3,
+      "rdfs:subClassOf": "dtmi:dtdl:class:TemporalSchema;3",
+      "dtmm:instance": {
+        "dtmm:jsonType": "dtmm:jsonString",
+        "sh:datatype": "xsd:dateTime",
+        "sh:pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}T[0-9]{2}:[0-9]{2}:[0-9]{2}(?:\\.[0-9]+)?(?:Z|(?:\\+|\\-)[0-9]{2}:[0-9]{2})$",
+        "dtmm:authority": "RFC 3339"
+      }
+    },
+    {
+      "@id": "dtmi:dtdl:class:Duration;3",
+      "@type": [ "rdfs:Class", "dtmm:Material", "sh:NodeShape" ],
+      "dtmm:dtdlVersion": 3,
+      "rdfs:subClassOf": "dtmi:dtdl:class:TemporalSchema;3",
+      "dtmm:instance": {
+        "dtmm:jsonType": "dtmm:jsonString",
+        "sh:datatype": "xsd:duration",
+        "sh:pattern": "^P(?!$)(?:(?:(?:(?:\\d+Y)|(?:\\d+\\.\\d+Y$))?(?:(?:\\d+M)|(?:\\d+\\.\\d+M$))?)|(?:(?:(?:\\d+W)|(?:\\d+\\.\\d+W$))?))(?:(?:\\d+D)|(?:\\d+\\.\\d+D$))?(?:T(?!$)(?:(?:\\d+H)|(?:\\d+\\.\\d+H$))?(?:(?:\\d+M)|(?:\\d+\\.\\d+M$))?(?:\\d+(?:\\.\\d+)?S)?)?$",
+        "dtmm:authority": "ISO 8601"
+      }
+    },
+    {
+      "@id": "dtmi:dtdl:class:Time;3",
+      "@type": [ "rdfs:Class", "dtmm:Material", "sh:NodeShape" ],
+      "dtmm:dtdlVersion": 3,
+      "rdfs:subClassOf": "dtmi:dtdl:class:TemporalSchema;3",
+      "dtmm:instance": {
+        "dtmm:jsonType": "dtmm:jsonString",
+        "sh:datatype": "xsd:time",
+        "sh:pattern": "^[0-9]{2}:[0-9]{2}:[0-9]{2}(?:\\.[0-9]+)?(?:Z|(?:\\+|\\-)[0-9]{2}:[0-9]{2})$",
+        "dtmm:authority": "RFC 3339"
+      }
+    },
+    {
+      "@id": "dtmi:dtdl:class:String;3",
+      "@type": [ "rdfs:Class", "dtmm:Material", "sh:NodeShape" ],
+      "dtmm:dtdlVersion": 3,
+      "rdfs:subClassOf": "dtmi:dtdl:class:PrimitiveSchema;3",
+      "dtmm:instance": {
+        "dtmm:jsonType": "dtmm:jsonString",
+        "dtmm:authority": "JSON"
+      }
+    },
+    {
+      "@id": "dtmi:dtdl:class:ComplexSchema;3",
+      "@type": [ "rdfs:Class", "dtmm:Material", "dtmm:Abstract", "sh:NodeShape" ],
+      "dtmm:dtdlVersion": 3,
+      "rdfs:subClassOf": "dtmi:dtdl:class:Schema;3",
+      "dtmm:descendants": [
+        {
+          "@id": "dtmi:dtdl:restriction:ComplexSchema:depth;3",
+          "dtmm:properties": [ "dtmi:dtdl:property:elementSchema;3", "dtmi:dtdl:property:schema;3" ],
+          "dtmm:maxDepth": 5
+        }
+      ]
+    },
+    {
+      "@id": "dtmi:dtdl:class:Array;3",
+      "@type": [ "rdfs:Class", "dtmm:Material", "sh:NodeShape" ],
+      "dtmm:dtdlVersion": 3,
+      "rdfs:subClassOf": "dtmi:dtdl:class:ComplexSchema;3",
+      "dtmm:property": [
+        {
+          "@id": "dtmi:dtdl:property:elementSchema;3",
+          "@type": "rdf:Property",
+          "rdfs:domain": "dtmi:dtdl:class:Array;3"
+        }
+      ],
+      "sh:property": [
+        {
+          "@id": "dtmi:dtdl:constraint:Array:elementSchema;3",
+          "sh:path": "dtmi:dtdl:property:elementSchema;3",
+          "sh:minCount": 1,
+          "sh:maxCount": 1,
+          "sh:or": [
+            { "sh:class": "dtmi:dtdl:class:Schema;3" },
+            { "sh:class": "dtmi:dtdl:class:Schema;2" }
+          ],
+          "sh:nodeKind": "sh:BlankNodeOrIRI",
+          "dtmm:description": {
+            "en-US": "The data type of each element in the Array, which is an instance of Schema."
+          }
+        }
+      ],
+      "dtmm:instance": {
+        "dtmm:jsonType": "dtmm:jsonArray",
+        "dtmm:eachChild": {
+          "dtmm:instanceProperty": "dtmi:dtdl:property:elementSchema;3"
+        }
+      }
+    },
+    {
+      "@id": "dtmi:dtdl:class:Enum;3",
+      "@type": [ "rdfs:Class", "dtmm:Material", "sh:NodeShape" ],
+      "dtmm:dtdlVersion": 3,
+      "rdfs:subClassOf": "dtmi:dtdl:class:ComplexSchema;3",
+      "dtmm:property": [
+        {
+          "@id": "dtmi:dtdl:property:valueSchema;3",
+          "@type": "rdf:Property",
+          "rdfs:domain": "dtmi:dtdl:class:Enum;3"
+        },
+        {
+          "@id": "dtmi:dtdl:property:enumValues;3",
+          "@type": "rdf:Property",
+          "rdfs:domain": "dtmi:dtdl:class:Enum;3"
+        }
+      ],
+      "sh:property": [
+        {
+          "@id": "dtmi:dtdl:constraint:Enum:valueSchema;3",
+          "sh:path": "dtmi:dtdl:property:valueSchema;3",
+          "sh:minCount": 1,
+          "sh:maxCount": 1,
+          "sh:or": [
+            { "sh:class": "dtmi:dtdl:class:PrimitiveSchema;3" },
+            { "sh:class": "dtmi:dtdl:class:PrimitiveSchema;2" }
+          ],
+          "sh:in": [
+            "dtmi:dtdl:instance:Schema:integer;3",
+            "dtmi:dtdl:instance:Schema:integer;2",
+            "dtmi:dtdl:instance:Schema:string;3",
+            "dtmi:dtdl:instance:Schema:string;2"
+          ],
+          "sh:nodeKind": "sh:IRI",
+          "dtmm:description": {
+            "en-US": "The data type for the enumValues; all values must be of the same type."
+          }
+        },
+        {
+          "@id": "dtmi:dtdl:constraint:Enum:enumValues;3",
+          "sh:path": "dtmi:dtdl:property:enumValues;3",
+          "sh:class": "EnumValue",
+          "sh:nodeKind": "sh:BlankNodeOrIRI",
+          "dtmm:typeInferable": true,
+          "dtmm:uniqueProperties": [ "dtmi:dtdl:property:name;3", "dtmi:dtdl:property:enumValue;3" ],
+          "dtmm:dtmiSegment": "dtmi:dtdl:property:name;3",
+          "dtmm:description": {
+            "en-US": "A set of name/value mappings for the Enum."
+          }
+        }
+      ],
+      "dtmm:descendants": [
+        {
+          "@id": "dtmi:dtdl:restriction:Enum:enumValue:datatype;3",
+          "dtmm:properties": [ "dtmi:dtdl:property:enumValue;3" ],
+          "dtmm:datatypeProperty": "dtmi:dtdl:property:valueSchema;3"
+        }
+      ],
+      "dtmm:instance": {
+        "dtmm:instanceProperty": [
+          "dtmi:dtdl:property:valueSchema;3",
+          "dtmi:dtdl:property:enumValues;3"
+        ]
+      }
+    },
+    {
+      "@id": "dtmi:dtdl:class:EnumValue;3",
+      "@type": [ "rdfs:Class", "dtmm:Material", "sh:NodeShape" ],
+      "dtmm:dtdlVersion": 3,
+      "rdfs:subClassOf": "dtmi:dtdl:class:NamedEntity;3",
+      "dtmm:property": [
+        {
+          "@id": "dtmi:dtdl:property:enumValue;3",
+          "@type": "rdf:Property",
+          "rdfs:domain": "dtmi:dtdl:class:EnumValue;3"
+        }
+      ],
+      "sh:property": [
+        {
+          "@id": "dtmi:dtdl:constraint:EnumValue:enumValue;3",
+          "sh:path": "dtmi:dtdl:property:enumValue;3",
+          "sh:minCount": 1,
+          "sh:maxCount": 1,
+          "sh:nodeKind": "sh:Literal",
+          "dtmm:description": {
+            "en-US": "The on-the-wire value that maps to the EnumValue, which may be either an integer or a string."
+          }
+        }
+      ],
+      "dtmm:instance": {
+        "dtmm:hasValue": "dtmi:dtdl:property:enumValue;3"
+      }
+    },
+    {
+      "@id": "dtmi:dtdl:class:Map;3",
+      "@type": [ "rdfs:Class", "dtmm:Material", "sh:NodeShape" ],
+      "dtmm:dtdlVersion": 3,
+      "rdfs:subClassOf": "dtmi:dtdl:class:ComplexSchema;3",
+      "dtmm:property": [
+        {
+          "@id": "dtmi:dtdl:property:mapKey;3",
+          "@type": "rdf:Property",
+          "rdfs:domain": "dtmi:dtdl:class:Map;3"
+        },
+        {
+          "@id": "dtmi:dtdl:property:mapValue;3",
+          "@type": "rdf:Property",
+          "rdfs:domain": "dtmi:dtdl:class:Map;3"
+        }
+      ],
+      "sh:property": [
+        {
+          "@id": "dtmi:dtdl:constraint:Map:mapKey;3",
+          "sh:path": "dtmi:dtdl:property:mapKey;3",
+          "sh:minCount": 1,
+          "sh:maxCount": 1,
+          "sh:class": "MapKey",
+          "sh:nodeKind": "sh:BlankNodeOrIRI",
+          "dtmm:typeInferable": true,
+          "dtmm:description": {
+            "en-US": "A description of the keys in the Map."
+          }
+        },
+        {
+          "@id": "dtmi:dtdl:constraint:Map:mapValue;3",
+          "sh:path": "dtmi:dtdl:property:mapValue;3",
+          "sh:minCount": 1,
+          "sh:maxCount": 1,
+          "sh:class": "MapValue",
+          "sh:nodeKind": "sh:BlankNodeOrIRI",
+          "dtmm:typeInferable": true,
+          "dtmm:description": {
+            "en-US": "A description of the values in the Map."
+          }
+        }
+      ],
+      "dtmm:instance": {
+        "dtmm:jsonType": "dtmm:jsonObject",
+        "dtmm:eachChild": {
+          "dtmm:instanceProperty": "dtmi:dtdl:property:mapValue;3"
+        }
+      }
+    },
+    {
+      "@id": "dtmi:dtdl:class:MapKey;3",
+      "@type": [ "rdfs:Class", "dtmm:Material", "sh:NodeShape" ],
+      "dtmm:dtdlVersion": 3,
+      "rdfs:subClassOf": "dtmi:dtdl:class:NamedEntity;3",
+      "dtmm:property": [
+        {
+          "@id": "dtmi:dtdl:property:schema;3",
+          "@type": "rdf:Property",
+          "rdfs:domain": "dtmi:dtdl:class:MapKey;3"
+        }
+      ],
+      "sh:property": [
+        {
+          "@id": "dtmi:dtdl:constraint:MapKey:schema;3",
+          "sh:path": "dtmi:dtdl:property:schema;3",
+          "sh:minCount": 1,
+          "sh:maxCount": 1,
+          "sh:or": [
+            { "sh:class": "dtmi:dtdl:class:String;3" },
+            { "sh:class": "dtmi:dtdl:class:String;2" }
+          ],
+          "sh:in": [ "dtmi:dtdl:instance:Schema:string;3", "dtmi:dtdl:instance:Schema:string;2" ],
+          "sh:nodeKind": "sh:IRI",
+          "dtmm:description": {
+            "en-US": "The data type of the Map's key, which must be string."
+          }
+        }
+      ]
+    },
+    {
+      "@id": "dtmi:dtdl:class:MapValue;3",
+      "@type": [ "rdfs:Class", "dtmm:Material", "sh:NodeShape" ],
+      "dtmm:dtdlVersion": 3,
+      "rdfs:subClassOf": "dtmi:dtdl:class:SchemaField;3",
+      "dtmm:instance": {
+        "dtmm:jsonType": "dtmm:jsonProperty",
+        "dtmm:propertyValue": {
+          "dtmm:instanceProperty": "dtmi:dtdl:property:schema;3"
+        }
+      }
+    },
+    {
+      "@id": "dtmi:dtdl:class:Object;3",
+      "@type": [ "rdfs:Class", "dtmm:Material", "sh:NodeShape" ],
+      "dtmm:dtdlVersion": 3,
+      "rdfs:subClassOf": "dtmi:dtdl:class:ComplexSchema;3",
+      "dtmm:property": [
+        {
+          "@id": "dtmi:dtdl:property:fields;3",
+          "@type": "rdf:Property",
+          "rdfs:domain": "dtmi:dtdl:class:Object;3"
+        }
+      ],
+      "sh:property": [
+        {
+          "@id": "dtmi:dtdl:constraint:Object:fields;3",
+          "sh:path": "dtmi:dtdl:property:fields;3",
+          "sh:class": "Field",
+          "sh:nodeKind": "sh:BlankNodeOrIRI",
+          "dtmm:typeInferable": true,
+          "dtmm:uniqueProperties": [ "dtmi:dtdl:property:name;3" ],
+          "dtmm:dtmiSegment": "dtmi:dtdl:property:name;3",
+          "dtmm:description": {
+            "en-US": "A set of field descriptions, one for each field in the Object."
+          }
+        }
+      ],
+      "dtmm:instance": {
+        "dtmm:jsonType": "dtmm:jsonObject",
+        "dtmm:eachChild": {
+          "dtmm:instanceProperty": "dtmi:dtdl:property:fields;3"
+        }
+      }
+    },
+    {
+      "@id": "dtmi:dtdl:class:Field;3",
+      "@type": [ "rdfs:Class", "dtmm:Material", "sh:NodeShape" ],
+      "dtmm:dtdlVersion": 3,
+      "rdfs:subClassOf": "dtmi:dtdl:class:SchemaField;3",
+      "dtmm:instance": {
+        "dtmm:jsonType": "dtmm:jsonProperty",
+        "dtmm:propertyName": {
+          "dtmm:hasValue": "dtmi:dtdl:property:name;3"
+        },
+        "dtmm:propertyValue": {
+          "dtmm:instanceProperty": "dtmi:dtdl:property:schema;3"
+        }
+      }
+    },
+    {
+      "@id": "dtmi:dtdl:class:Content;3",
+      "@type": [ "rdfs:Class", "dtmm:Material", "dtmm:Abstract", "sh:NodeShape" ],
+      "dtmm:dtdlVersion": 3,
+      "rdfs:subClassOf": "dtmi:dtdl:class:NamedEntity;3"
+    },
+    {
+      "@id": "dtmi:dtdl:class:Component;3",
+      "@type": [ "rdfs:Class", "dtmm:Material", "sh:NodeShape" ],
+      "dtmm:dtdlVersion": 3,
+      "rdfs:subClassOf": "dtmi:dtdl:class:Content;3",
+      "dtmm:property": [
+        {
+          "@id": "dtmi:dtdl:property:schema;3",
+          "@type": "rdf:Property",
+          "rdfs:domain": "dtmi:dtdl:class:Component;3"
+        }
+      ],
+      "sh:property": [
+        {
+          "@id": "dtmi:dtdl:constraint:Component:schema;3",
+          "sh:path": "dtmi:dtdl:property:schema;3",
+          "sh:minCount": 1,
+          "sh:maxCount": 1,
+          "sh:or": [
+            { "sh:class": "dtmi:dtdl:class:Interface;3" },
+            { "sh:class": "dtmi:dtdl:class:Interface;2" }
+          ],
+          "sh:nodeKind": "sh:IRI",
+          "dtmm:description": {
+            "en-US": "The data type of the Component, which is an instance of Interface."
+          }
+        }
+      ],
+      "dtmm:descendants": [
+        {
+          "@id": "dtmi:dtdl:restriction:Component:contents:excludeComponent;3",
+          "dtmm:properties": [ "dtmi:dtdl:property:schema;3", "dtmi:dtdl:property:contents;3" ],
+          "dtmm:narrow": true,
+          "dtmm:excludeType": "Component"
+        }
+      ]
+    },
+    {
+      "@id": "dtmi:dtdl:class:Property;3",
+      "@type": [ "rdfs:Class", "dtmm:Material", "sh:NodeShape" ],
+      "dtmm:dtdlVersion": 3,
+      "rdfs:subClassOf": "dtmi:dtdl:class:Content;3",
+      "dtmm:property": [
+        {
+          "@id": "dtmi:dtdl:property:schema;3",
+          "@type": "rdf:Property",
+          "rdfs:domain": "dtmi:dtdl:class:Property;3"
+        },
+        {
+          "@id": "dtmi:dtdl:property:writable;3",
+          "@type": "rdf:Property",
+          "rdfs:domain": "dtmi:dtdl:class:Property;3"
+        }
+      ],
+      "sh:property": [
+        {
+          "@id": "dtmi:dtdl:constraint:Property:schema;3",
+          "sh:path": "dtmi:dtdl:property:schema;3",
+          "sh:minCount": 1,
+          "sh:maxCount": 1,
+          "sh:or": [
+            { "sh:class": "dtmi:dtdl:class:Schema;3" },
+            { "sh:class": "dtmi:dtdl:class:Schema;2" }
+          ],
+          "sh:nodeKind": "sh:BlankNodeOrIRI",
+          "dtmm:description": {
+            "en-US": "The data type of the Property, which is an instance of Schema."
+          }
+        },
+        {
+          "@id": "dtmi:dtdl:constraint:Property:writable;3",
+          "sh:path": "dtmi:dtdl:property:writable;3",
+          "sh:maxCount": 1,
+          "sh:datatype": "xsd:boolean",
+          "sh:nodeKind": "sh:Literal",
+          "dtmm:description": {
+            "en-US": "A boolean value that indicates whether the Property is writable or not. The default value is false, indicating the Property is read-only."
+          }
+        }
+      ]
+    },
+    {
+      "@id": "dtmi:dtdl:class:Telemetry;3",
+      "@type": [ "rdfs:Class", "dtmm:Material", "sh:NodeShape" ],
+      "dtmm:dtdlVersion": 3,
+      "rdfs:subClassOf": "dtmi:dtdl:class:Content;3",
+      "dtmm:property": [
+        {
+          "@id": "dtmi:dtdl:property:schema;3",
+          "@type": "rdf:Property",
+          "rdfs:domain": "dtmi:dtdl:class:Telemetry;3"
+        }
+      ],
+      "sh:property": [
+        {
+          "@id": "dtmi:dtdl:constraint:Telemetry:schema;3",
+          "sh:path": "dtmi:dtdl:property:schema;3",
+          "sh:minCount": 1,
+          "sh:maxCount": 1,
+          "sh:or": [
+            { "sh:class": "dtmi:dtdl:class:Schema;3" },
+            { "sh:class": "dtmi:dtdl:class:Schema;2" }
+          ],
+          "sh:nodeKind": "sh:BlankNodeOrIRI",
+          "dtmm:description": {
+            "en-US": "The data type of the Telemetry, which is an instance of Schema."
+          }
+        }
+      ]
+    },
+    {
+      "@id": "dtmi:dtdl:class:Command;3",
+      "@type": [ "rdfs:Class", "dtmm:Material", "sh:NodeShape" ],
+      "dtmm:dtdlVersion": 3,
+      "rdfs:subClassOf": "dtmi:dtdl:class:Content;3",
+      "dtmm:property": [
+        {
+          "@id": "dtmi:dtdl:property:request;3",
+          "@type": "rdf:Property",
+          "rdfs:domain": "dtmi:dtdl:class:Command;3"
+        },
+        {
+          "@id": "dtmi:dtdl:property:response;3",
+          "@type": "rdf:Property",
+          "rdfs:domain": "dtmi:dtdl:class:Command;3"
+        },
+        {
+          "@id": "dtmi:dtdl:property:commandType;3",
+          "@type": "rdf:Property",
+          "rdfs:domain": "dtmi:dtdl:class:Command;3"
+        }
+      ],
+      "sh:property": [
+        {
+          "@id": "dtmi:dtdl:constraint:Command:request;3",
+          "sh:path": "dtmi:dtdl:property:request;3",
+          "sh:maxCount": 1,
+          "sh:class": "CommandRequest",
+          "sh:nodeKind": "sh:BlankNodeOrIRI",
+          "dtmm:typeInferable": true,
+          "dtmm:description": {
+            "en-US": "A description of the input to the Command."
+          }
+        },
+        {
+          "@id": "dtmi:dtdl:constraint:Command:response;3",
+          "sh:path": "dtmi:dtdl:property:response;3",
+          "sh:maxCount": 1,
+          "sh:class": "CommandResponse",
+          "sh:nodeKind": "sh:BlankNodeOrIRI",
+          "dtmm:typeInferable": true,
+          "dtmm:description": {
+            "en-US": "A description of the output of the Command."
+          }
+        },
+        {
+          "@id": "dtmi:dtdl:constraint:Command:commandType;3",
+          "sh:path": "dtmi:dtdl:property:commandType;3",
+          "sh:maxCount": 1,
+          "sh:class": "CommandType",
+          "sh:in": [ "dtmi:dtdl:instance:CommandType:asynchronous;3", "dtmi:dtdl:instance:CommandType:synchronous;3" ],
+          "sh:nodeKind": "sh:IRI",
+          "dtmm:description": {
+            "en-US": "This property is deprecated. Either value, synchronous or asynchronous, has the same meaning: a command that starts execution within a configurable time and that completes execution within a configurable time."
+          },
+          "dtmm:deprecated": true,
+          "dtmm:hidden": true
+        }
+      ]
+    },
+    {
+      "@id": "dtmi:dtdl:class:CommandPayload;3",
+      "@type": [ "rdfs:Class", "dtmm:Material", "dtmm:Abstract", "sh:NodeShape" ],
+      "dtmm:dtdlVersion": 3,
+      "rdfs:subClassOf": "dtmi:dtdl:class:SchemaField;3"
+    },
+    {
+      "@id": "dtmi:dtdl:class:CommandRequest;3",
+      "@type": [ "rdfs:Class", "dtmm:Material", "sh:NodeShape" ],
+      "dtmm:dtdlVersion": 3,
+      "rdfs:subClassOf": "dtmi:dtdl:class:CommandPayload;3"
+    },
+    {
+      "@id": "dtmi:dtdl:class:CommandResponse;3",
+      "@type": [ "rdfs:Class", "dtmm:Material", "sh:NodeShape" ],
+      "dtmm:dtdlVersion": 3,
+      "rdfs:subClassOf": "dtmi:dtdl:class:CommandPayload;3"
+    },
+    {
+      "@id": "dtmi:dtdl:class:CommandType;3",
+      "@type": [ "rdfs:Class", "dtmm:Material", "sh:NodeShape" ],
+      "dtmm:dtdlVersion": 3,
+      "rdfs:subClassOf": "dtmi:dtdl:class:Entity;3"
+    },
+    {
+      "@id": "dtmi:dtdl:class:Relationship;3",
+      "@type": [ "rdfs:Class", "dtmm:Material", "sh:NodeShape" ],
+      "dtmm:dtdlVersion": 3,
+      "rdfs:subClassOf": "dtmi:dtdl:class:Content;3",
+      "dtmm:property": [
+        {
+          "@id": "dtmi:dtdl:property:maxMultiplicity;3",
+          "@type": "rdf:Property",
+          "rdfs:domain": "dtmi:dtdl:class:Relationship;3"
+        },
+        {
+          "@id": "dtmi:dtdl:property:minMultiplicity;3",
+          "@type": "rdf:Property",
+          "rdfs:domain": "dtmi:dtdl:class:Relationship;3"
+        },
+        {
+          "@id": "dtmi:dtdl:property:target;3",
+          "@type": "rdf:Property",
+          "rdfs:domain": "dtmi:dtdl:class:Relationship;3"
+        },
+        {
+          "@id": "dtmi:dtdl:property:properties;3",
+          "@type": "rdf:Property",
+          "rdfs:domain": "dtmi:dtdl:class:Relationship;3"
+        },
+        {
+          "@id": "dtmi:dtdl:property:writable;3",
+          "@type": "rdf:Property",
+          "rdfs:domain": "dtmi:dtdl:class:Relationship;3"
+        }
+      ],
+      "sh:property": [
+        {
+          "@id": "dtmi:dtdl:constraint:Relationship:maxMultiplicity;3",
+          "sh:path": "dtmi:dtdl:property:maxMultiplicity;3",
+          "sh:maxCount": 1,
+          "sh:datatype": "xsd:integer",
+          "sh:nodeKind": "sh:Literal",
+          "sh:minInclusive": 1,
+          "dtmm:description": {
+            "en-US": "The maximum multiplicity for the target of the Relationship; defaults to the maximum allowable value."
+          }
+        },
+        {
+          "@id": "dtmi:dtdl:constraint:Relationship:minMultiplicity;3",
+          "sh:path": "dtmi:dtdl:property:minMultiplicity;3",
+          "sh:maxCount": 1,
+          "sh:datatype": "xsd:integer",
+          "sh:nodeKind": "sh:Literal",
+          "sh:minInclusive": 0,
+          "sh:maxInclusive": 0,
+          "dtmm:description": {
+            "en-US": "The minimum multiplicity for the target of the Relationship; defaults to the minimum allowable value."
+          }
+        },
+        {
+          "@id": "dtmi:dtdl:constraint:Relationship:target;3",
+          "sh:path": "dtmi:dtdl:property:target;3",
+          "sh:maxCount": 1,
+          "sh:nodeKind": "sh:IRI",
+          "sh:pattern": "^dtmi:[A-Za-z](?:[A-Za-z0-9_]*[A-Za-z0-9])?(?::[A-Za-z](?:[A-Za-z0-9_]*[A-Za-z0-9])?)*(?:;[1-9][0-9]{0,8}(?:\\.[1-9][0-9]{0,5})?)?$",
+          "dtmm:patternDesc": {
+            "en-US": "must follow user DTMI syntax"
+          },
+          "sh:maxLength": 2048,
+          "dtmm:description": {
+            "en-US": "An Interface identifier. If no target is specified, each instance target is permitted to be any Interface."
+          }
+        },
+        {
+          "@id": "dtmi:dtdl:constraint:Relationship:properties;3",
+          "sh:path": "dtmi:dtdl:property:properties;3",
+          "sh:or": [
+            { "sh:class": "dtmi:dtdl:class:Property;3" },
+            { "sh:class": "dtmi:dtdl:class:Property;2" }
+          ],
+          "sh:nodeKind": "sh:BlankNodeOrIRI",
+          "dtmm:uniqueProperties": [ "dtmi:dtdl:property:name;3" ],
+          "dtmm:dtmiSegment": "dtmi:dtdl:property:name;3",
+          "dtmm:description": {
+            "en-US": "A set of Properties that define Relationship-specific state."
+          }
+        },
+        {
+          "@id": "dtmi:dtdl:constraint:Relationship:writable;3",
+          "sh:path": "dtmi:dtdl:property:writable;3",
+          "sh:maxCount": 1,
+          "sh:datatype": "xsd:boolean",
+          "sh:nodeKind": "sh:Literal",
+          "dtmm:description": {
+            "en-US": "A boolean value that indicates whether the Relationship is writable or not. The default value is false, indicating the Relationship is read-only."
+          }
+        }
+      ]
+    },
+    {
+      "@id": "dtmi:dtdl:class:Alias;3",
+      "@type": [ "rdfs:Class", "dtmm:Alias", "sh:NodeShape" ],
+      "dtmm:dtdlVersion": 3,
+      "sh:or": [
+        { "sh:class": "Entity" }
+      ],
+      "dtmm:property": [
+        {
+          "@id": "dtmi:dtdl:property:aliasFor;3",
+          "@type": "rdf:Property",
+          "rdfs:domain": "Alias"
+        }
+      ],
+      "sh:property": [
+        {
+          "@id": "dtmi:standard:constraint:Alias:aliasFor;3",
+          "sh:path": "aliasFor",
+          "sh:minCount": 1,
+          "sh:maxCount": 1,
+          "sh:class": "Entity",
+          "sh:nodeKind": "sh:BlankNodeOrIRI",
+          "dtmm:aliasFor": true
+        }
+      ]
+    },
+    {
+      "@id": "dtmi:dtdl:class:AdjunctType;3",
+      "@type": [ "rdfs:Class", "dtmm:Abstract", "dtmm:Extensible", "sh:NodeShape" ],
+      "dtmm:dtdlVersion": 3,
+      "sh:or": [
+        { "sh:class": "dtmi:dtdl:class:Entity;3" },
+        { "sh:class": "dtmi:dtdl:class:Entity;2" }
+      ]
+    },
+    {
+      "@id": "dtmi:dtdl:class:LatentType;3",
+      "@type": [ "rdfs:Class", "dtmm:Material", "dtmm:Abstract", "dtmm:Extensible", "sh:NodeShape" ],
+      "dtmm:dtdlVersion": 3,
+      "rdfs:subClassOf": "dtmi:dtdl:class:Entity;3"
+    },
+    {
+      "@id": "dtmi:dtdl:class:NamedLatentType;3",
+      "@type": [ "rdfs:Class", "dtmm:Material", "dtmm:Abstract", "dtmm:Extensible", "sh:NodeShape" ],
+      "dtmm:dtdlVersion": 3,
+      "rdfs:subClassOf": "dtmi:dtdl:class:NamedEntity;3"
+    },
+    {
+      "@id": "dtmi:dtdl:class:SemanticType;3",
+      "@type": [ "rdfs:Class", "dtmm:Abstract", "dtmm:Extensible", "sh:NodeShape" ],
+      "dtmm:remarks": [
+        "Intuitively, SemanticType should be a subclass of AdjunctType; however, there are implementation challenges with making it so.",
+        "In particular, both AdjunctType and SemanticType are dtmm:Extensible, so subclassing would create a hierarichal relationship between two extensible classes in the metamodel.",
+        "Theoretically, the dtmm:Extensible type could be removed from SemanticType;3, but since it is present on SemanticType;2, extensibility would differ across language versions.",
+        "Future versions of the metaparser might support either hierarchically related extensible classes or extensibility differences across language versions, but the DTDL v3 parser does not.",
+        "As a practical matter, usage of the extensible classes is not affected by this lack of hierarchical relationship:",
+        "Extension types that are semantic inherit from SemanticType; extension types that are not semantic inherit from other types."
+      ],
+      "dtmm:dtdlVersion": 3,
+      "sh:or": [
+        { "sh:class": "Relationship" },
+        { "sh:class": "Property" },
+        { "sh:class": "Telemetry" },
+        { "sh:class": "SchemaField" }
+      ]
+    },
+    {
+      "@id": "dtmi:dtdl:class:Unit;3",
+      "@type": [ "rdfs:Class", "dtmm:Material", "dtmm:Abstract", "dtmm:Extensible", "sh:NodeShape" ],
+      "dtmm:remarks": [
+        "Intuitively, Unit should be a subclass of LatentType, not of Entity; however, there are implementation challenges with making it so.",
+        "In particular, both LatentType and Unit are dtmm:Extensible, so subclassing would create a hierarichal relationship between two extensible classes in the metamodel.",
+        "Theoretically, the dtmm:Extensible type could be removed from Unit;3, but since it is present on Unit;2, extensibility would differ across language versions.",
+        "Future versions of the metaparser might support either hierarchically related extensible classes or extensibility differences across language versions, but the DTDL v3 parser does not.",
+        "As a practical matter, usage of the extensible classes is not affected by this lack of hierarchical relationship:",
+        "Latent types that are units inherit from Unit; latent types that are not units inherit from other types."
+      ],
+      "dtmm:dtdlVersion": 3,
+      "rdfs:subClassOf": "dtmi:dtdl:class:Entity;3",
+      "dtmm:property": [
+        {
+          "@id": "dtmi:dtdl:property:symbol;3",
+          "@type": "rdf:Property",
+          "rdfs:domain": "dtmi:dtdl:class:Unit;3"
+        }
+      ],
+      "sh:property": [
+        {
+          "@id": "dtmi:dtdl:constraint:Unit:symbol;3",
+          "sh:path": "dtmi:dtdl:property:symbol;3",
+          "sh:maxCount": 1,
+          "sh:datatype": "xsd:string",
+          "sh:nodeKind": "sh:Literal",
+          "dtmm:description": {
+            "en-US": "The symbol for the unit."
+          }
+        }
+      ]
+    },
+    {
+      "@id": "dtmi:dtdl:class:SemanticUnit;3",
+      "@type": [ "rdfs:Class", "dtmm:Abstract", "dtmm:Extensible", "sh:NodeShape" ],
+      "dtmm:remarks": [
+        "Intuitively, SemanticUnit should be a subclass of AdjunctType; however, there are implementation challenges with making it so.",
+        "See remarks above regarding SemanticType."
+      ],
+      "dtmm:dtdlVersion": 3,
+      "sh:or": [
+        { "sh:class": "Unit" }
+      ]
+    },
+    {
+      "@id": "dtmi:dtdl:class:UnitAttribute;3",
+      "@type": [ "rdfs:Class", "dtmm:Material", "dtmm:Abstract", "dtmm:Extensible", "sh:NodeShape" ],
+      "dtmm:remarks": [
+        "Intuitively, UnitAttribute should be a subclass of NamedLatentType, not of NamedEntity; however, there are implementation challenges with making it so.",
+        "See remarks above regarding Unit."
+      ],
+      "dtmm:dtdlVersion": 3,
+      "rdfs:subClassOf": "dtmi:dtdl:class:NamedEntity;3"
+    }
+  ]
+}

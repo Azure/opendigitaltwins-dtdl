@@ -1,0 +1,56 @@
+﻿[
+  {
+    "valid": true,
+    "desirable": true,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:omega_beta;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:psi_hi;1",
+          "@type": "Map",
+          "mapKey": {
+            "name": "omega_alpha",
+            "schema": "string"
+          },
+          "mapValue": {
+            "displayName": [
+              "psi_yekk"
+            ],
+            "name": "psi_vroo",
+            "schema": "float"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "desirable": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:omega_eta;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:omega_epsilon;1",
+          "@type": "Map",
+          "mapKey": {
+            "name": "omega_zeta",
+            "schema": "string"
+          },
+          "mapValue": {
+            "dtmi:dtdl:property:displayName;2": [
+              "omega_gamma"
+            ],
+            "name": "omega_delta",
+            "schema": "integer"
+          }
+        }
+      }
+    ]
+  }
+]

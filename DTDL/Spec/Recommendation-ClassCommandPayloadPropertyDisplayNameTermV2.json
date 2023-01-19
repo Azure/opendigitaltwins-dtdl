@@ -1,0 +1,48 @@
+﻿[
+  {
+    "valid": true,
+    "desirable": true,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:humpf_omega;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Command",
+          "name": "humpf_psi",
+          "request": {
+            "displayName": [
+              "humpf_phi"
+            ],
+            "name": "humpf_chi",
+            "schema": "long"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "desirable": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:humpf_humpf;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Command",
+          "name": "humpf_um",
+          "request": {
+            "dtmi:dtdl:property:displayName;2": [
+              "humpf_yuzz"
+            ],
+            "name": "humpf_wum",
+            "schema": "string"
+          }
+        }
+      }
+    ]
+  }
+]

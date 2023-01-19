@@ -1,0 +1,39 @@
+﻿[
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:kappa_psi;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:kappa_chi;1",
+          "@type": "Array",
+          "elementSchema": "duration",
+          "dtmi:dtdl:property:elementSchema;2": "float"
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:kappa_yuzz;1",
+        "@type": "Interface",
+        "schemas": {
+          "@context": "dtmi:undefinedExtension:context;1",
+          "@id": "dtmi:example:kappa_omega;1",
+          "@type": "Array",
+          "elementSchema": "integer",
+          "dtmi:dtdl:property:elementSchema;2": "long"
+        }
+      }
+    ]
+  }
+]

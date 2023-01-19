@@ -1,0 +1,48 @@
+﻿[
+  {
+    "valid": true,
+    "desirable": true,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:hi_phi;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:hi_upsilon;1",
+          "@type": "Object",
+          "fields": {
+            "description": [
+              "hi_sigma"
+            ],
+            "name": "hi_tau",
+            "schema": "dateTime"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "desirable": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:hi_yuzz;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:hi_omega;1",
+          "@type": "Object",
+          "fields": {
+            "dtmi:dtdl:property:description;3": [
+              "hi_chi"
+            ],
+            "name": "hi_psi",
+            "schema": "double"
+          }
+        }
+      }
+    ]
+  }
+]

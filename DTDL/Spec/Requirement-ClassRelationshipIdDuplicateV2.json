@@ -1,0 +1,45 @@
+﻿[
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:vroo_epsilon;1",
+        "@type": "Interface",
+        "extends": {
+          "@id": "dtmi:example:vroo_epsilon;1",
+          "@type": "Interface",
+          "contents": {
+            "@id": "dtmi:example:vroo_epsilon;1",
+            "@type": "Relationship",
+            "name": "vroo_zeta"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:vroo_eta;1",
+        "@type": "Interface",
+        "extends": {
+          "@id": "dtmi:example:vroo_eta;1",
+          "@type": "Interface",
+          "contents": {
+            "@context": "dtmi:undefinedExtension:context;1",
+            "@id": "dtmi:example:vroo_eta;1",
+            "@type": "Relationship",
+            "name": "vroo_theta"
+          }
+        }
+      }
+    ]
+  }
+]

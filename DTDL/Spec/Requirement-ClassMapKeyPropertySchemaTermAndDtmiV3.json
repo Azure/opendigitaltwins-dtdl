@@ -1,0 +1,53 @@
+﻿[
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:chi_zeta;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:chi_delta;1",
+          "@type": "Map",
+          "mapValue": {
+            "name": "chi_epsilon",
+            "schema": "integer"
+          },
+          "mapKey": {
+            "name": "chi_gamma",
+            "schema": "string",
+            "dtmi:dtdl:property:schema;3": "string"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:chi_kappa;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:chi_theta;1",
+          "@type": "Map",
+          "mapValue": {
+            "name": "chi_iota",
+            "schema": "long"
+          },
+          "mapKey": {
+            "@context": "dtmi:undefinedExtension:context;1",
+            "name": "chi_eta",
+            "schema": "string",
+            "dtmi:dtdl:property:schema;3": "string"
+          }
+        }
+      }
+    ]
+  }
+]

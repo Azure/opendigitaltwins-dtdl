@@ -1,0 +1,48 @@
+﻿[
+  {
+    "valid": true,
+    "desirable": true,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:nuh_zatz;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Relationship",
+          "name": "nuh_spazz",
+          "properties": [
+            {
+              "@type": "Property",
+              "name": "nuh_floob",
+              "schema": "string"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "desirable": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:nuh_itch;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Relationship",
+          "name": "nuh_jogg",
+          "dtmi:dtdl:property:properties;2": [
+            {
+              "@type": "Property",
+              "name": "nuh_flunn",
+              "schema": "time"
+            }
+          ]
+        }
+      }
+    ]
+  }
+]

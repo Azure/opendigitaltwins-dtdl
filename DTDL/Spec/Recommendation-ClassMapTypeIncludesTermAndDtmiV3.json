@@ -1,0 +1,29 @@
+﻿[
+  {
+    "valid": true,
+    "desirable": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:phi_theta;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:phi_epsilon;1",
+          "mapKey": {
+            "name": "phi_zeta",
+            "schema": "string"
+          },
+          "mapValue": {
+            "name": "phi_eta",
+            "schema": "integer"
+          },
+          "@type": [
+            "Map",
+            "dtmi:dtdl:class:Map;3"
+          ]
+        }
+      }
+    ]
+  }
+]

@@ -1,0 +1,116 @@
+﻿[
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:tau_floob;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:tau_thnad;1",
+          "@type": "Map",
+          "mapKey": {
+            "name": "tau_spazz",
+            "schema": "string"
+          },
+          "mapValue": {
+            "@type": [
+              "MapValue",
+              "dtmi:foo:bar;1"
+            ],
+            "name": "tau_quan",
+            "schema": "date"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:tau_itch;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:tau_jogg;1",
+          "@type": "Map",
+          "mapKey": {
+            "name": "tau_flunn",
+            "schema": "string"
+          },
+          "mapValue": {
+            "@context": "dtmi:undefinedExtension:context;1",
+            "@type": [
+              "MapValue",
+              "dtmi:foo:bar;1"
+            ],
+            "name": "tau_zatz",
+            "schema": "dateTime"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:upsilon_alpha;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:tau_vroo;1",
+          "@type": "Map",
+          "mapKey": {
+            "name": "tau_hi",
+            "schema": "string"
+          },
+          "mapValue": {
+            "@type": [
+              "MapValue",
+              "boolean"
+            ],
+            "name": "tau_yekk",
+            "schema": "double"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:upsilon_epsilon;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:upsilon_gamma;1",
+          "@type": "Map",
+          "mapKey": {
+            "name": "upsilon_delta",
+            "schema": "string"
+          },
+          "mapValue": {
+            "@context": "dtmi:undefinedExtension:context;1",
+            "@type": [
+              "MapValue",
+              "boolean"
+            ],
+            "name": "upsilon_beta",
+            "schema": "duration"
+          }
+        }
+      }
+    ]
+  }
+]

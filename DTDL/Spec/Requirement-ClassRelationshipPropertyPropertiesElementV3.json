@@ -1,0 +1,183 @@
+﻿[
+  {
+    "valid": true,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:gamma_nuh;1",
+        "@type": "Interface",
+        "extends": {
+          "@id": "dtmi:example:gamma_glikk;1",
+          "@type": "Interface",
+          "contents": {
+            "@type": "Relationship",
+            "name": "gamma_fuddle",
+            "properties": {
+              "@id": "dtmi:example:gamma_um;1",
+              "@type": "Property",
+              "name": "gamma_humpf",
+              "schema": "long"
+            }
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:gamma_floob;1",
+        "@type": "Interface",
+        "extends": {
+          "@id": "dtmi:example:gamma_spazz;1",
+          "@type": "Interface",
+          "contents": {
+            "@type": "Relationship",
+            "name": "gamma_thnad",
+            "properties": [
+              {
+                "@id": "dtmi:example:gamma_snee;1",
+                "@type": "Property",
+                "name": "gamma_quan",
+                "schema": "string"
+              }
+            ]
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:gamma_jogg;1",
+        "@type": "Interface",
+        "contents": [
+          {
+            "@id": "dtmi:ex:dependentRef;1",
+            "@type": "Property",
+            "name": "gamma_zatz",
+            "schema": "time"
+          },
+          {
+            "@type": "Relationship",
+            "name": "gamma_flunn",
+            "properties": "dtmi:ex:dependentRef;1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:gamma_yekk;1",
+        "@type": "Interface",
+        "contents": [
+          {
+            "@id": "dtmi:ex:dependentRef;1",
+            "@type": "Property",
+            "name": "gamma_itch",
+            "schema": "boolean"
+          },
+          {
+            "@type": "Relationship",
+            "name": "gamma_vroo",
+            "properties": [
+              "dtmi:ex:dependentRef;1"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:delta_delta;1",
+        "@type": "Interface",
+        "extends": {
+          "@id": "dtmi:example:delta_gamma;1",
+          "@type": "Interface",
+          "contents": {
+            "@type": "Relationship",
+            "name": "delta_beta",
+            "properties": {
+              "@id": "dtmi:example:gamma_hi;1",
+              "@type": "Property",
+              "name": "delta_alpha",
+              "schema": "date",
+              "@context": "dtmi:dtdl:context;2"
+            }
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:delta_eta;1",
+        "@type": "Interface",
+        "extends": {
+          "@id": "dtmi:example:delta_zeta;1",
+          "@type": "Interface",
+          "contents": {
+            "@type": "Relationship",
+            "name": "delta_epsilon",
+            "properties": []
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:delta_xi;1",
+        "@type": "Interface",
+        "extends": {
+          "@id": "dtmi:example:delta_nu;1",
+          "@type": "Interface",
+          "contents": {
+            "@type": "Relationship",
+            "name": "delta_mu",
+            "properties": [
+              {
+                "@id": "dtmi:example:delta_theta;1",
+                "@type": "Property",
+                "name": "delta_iota",
+                "schema": "dateTime"
+              },
+              {
+                "@id": "dtmi:example:delta_kappa;1",
+                "@type": "Property",
+                "name": "delta_lambda",
+                "schema": "double"
+              }
+            ]
+          }
+        }
+      }
+    ]
+  }
+]

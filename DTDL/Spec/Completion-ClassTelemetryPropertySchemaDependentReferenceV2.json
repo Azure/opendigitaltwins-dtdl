@@ -1,0 +1,54 @@
+﻿[
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:hi_spazz;1",
+        "@type": "Interface",
+        "extends": {
+          "@id": "dtmi:example:hi_thnad;1",
+          "@type": "Interface",
+          "contents": {
+            "@type": "Telemetry",
+            "name": "hi_quan",
+            "schema": "dtmi:ex:dependentRef;1"
+          }
+        }
+      }
+    ],
+    "expect": {
+      "unresolvedIdentifiers": [
+        "dtmi:ex:dependentRef;1"
+      ]
+    }
+  },
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:hi_jogg;1",
+        "@type": "Interface",
+        "extends": {
+          "@id": "dtmi:example:hi_zatz;1",
+          "@type": "Interface",
+          "contents": {
+            "@type": "Telemetry",
+            "name": "hi_floob",
+            "schema": [
+              "dtmi:ex:dependentRef;1"
+            ]
+          }
+        }
+      }
+    ],
+    "expect": {
+      "unresolvedIdentifiers": [
+        "dtmi:ex:dependentRef;1"
+      ]
+    }
+  }
+]

@@ -1,0 +1,48 @@
+﻿[
+  {
+    "valid": true,
+    "desirable": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:jogg_fuddle;1",
+        "@type": "Interface",
+        "contents": {
+          "name": "jogg_um",
+          "schema": {
+            "@id": "dtmi:example:jogg_humpf;1",
+            "@type": "Interface"
+          },
+          "@type": [
+            "Component",
+            "Component"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "desirable": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:jogg_snee;1",
+        "@type": "Interface",
+        "contents": {
+          "name": "jogg_glikk",
+          "schema": {
+            "@id": "dtmi:example:jogg_nuh;1",
+            "@type": "Interface"
+          },
+          "@type": [
+            "dtmi:dtdl:class:Component;3",
+            "dtmi:dtdl:class:Component;3"
+          ]
+        }
+      }
+    ]
+  }
+]

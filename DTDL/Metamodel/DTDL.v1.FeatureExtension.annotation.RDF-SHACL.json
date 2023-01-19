@@ -1,0 +1,54 @@
+﻿{
+  "@context": [
+    "dtmi:dtdl:context;3",
+    "dtmi:dtdl:extension:annotation;1"
+  ],
+  "@graph": [
+    {
+      "@id": "dtmi:dtdl:extension:annotation:v1:documentation",
+      "@type": [ "dtmm:Documentation" ],
+      "dtmm:description": {
+        "en-US": "Add custom metadata to a Property or a Telemetry."
+      }
+    },
+    {
+      "@id": "dtmi:dtdl:extension:annotation:v1:ValueAnnotation",
+      "@type": [ "rdfs:Class", "sh:NodeShape" ],
+      "rdfs:subClassOf": "AdjunctType",
+      "sh:or": [
+        { "sh:class": "Property" },
+        { "sh:class": "Telemetry" }
+      ],
+      "dtmm:property": [
+        {
+          "@id": "dtmi:dtdl:extension:annotation:v1:ValueAnnotation:annotates",
+          "@type": "rdf:Property",
+          "rdfs:domain": "ValueAnnotation"
+        }
+      ],
+      "sh:property": [
+        {
+          "sh:path": "annotates",
+          "sh:minCount": 1,
+          "sh:maxCount": 1,
+          "sh:datatype": "xsd:string",
+          "sh:nodeKind": "sh:Literal",
+          "dtmm:description": {
+            "en-US": "Name of a Property or Telemetry that is annotated."
+          }
+        }
+      ],
+      "dtmm:siblings": [
+        {
+          "dtmm:keyProperty": "name",
+          "dtmm:keyrefProperty": "annotates",
+          "sh:or": [
+            { "sh:class": "Property" },
+            { "sh:class": "Telemetry" }
+          ],
+          "sh:not": { "sh:class": "ValueAnnotation" }
+        }
+      ]
+    }
+  ]
+}

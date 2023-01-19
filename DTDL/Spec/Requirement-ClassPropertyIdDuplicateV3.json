@@ -1,0 +1,47 @@
+﻿[
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:psi_omicron;1",
+        "@type": "Interface",
+        "extends": {
+          "@id": "dtmi:example:psi_omicron;1",
+          "@type": "Interface",
+          "contents": {
+            "@id": "dtmi:example:psi_omicron;1",
+            "@type": "Property",
+            "name": "psi_pi",
+            "schema": "string"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:psi_rho;1",
+        "@type": "Interface",
+        "extends": {
+          "@id": "dtmi:example:psi_rho;1",
+          "@type": "Interface",
+          "contents": {
+            "@context": "dtmi:undefinedExtension:context;1",
+            "@id": "dtmi:example:psi_rho;1",
+            "@type": "Property",
+            "name": "psi_sigma",
+            "schema": "time"
+          }
+        }
+      }
+    ]
+  }
+]

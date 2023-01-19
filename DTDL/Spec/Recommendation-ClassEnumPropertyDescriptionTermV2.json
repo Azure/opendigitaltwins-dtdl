@@ -1,0 +1,54 @@
+﻿[
+  {
+    "valid": true,
+    "desirable": true,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:hi_delta;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:hi_alpha;1",
+          "@type": "Enum",
+          "description": [
+            "hi_beta"
+          ],
+          "enumValues": [
+            {
+              "enumValue": 656,
+              "name": "hi_gamma"
+            }
+          ],
+          "valueSchema": "integer"
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "desirable": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:hi_theta;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:hi_epsilon;1",
+          "@type": "Enum",
+          "dtmi:dtdl:property:description;2": [
+            "hi_zeta"
+          ],
+          "enumValues": [
+            {
+              "enumValue": 657,
+              "name": "hi_eta"
+            }
+          ],
+          "valueSchema": "integer"
+        }
+      }
+    ]
+  }
+]

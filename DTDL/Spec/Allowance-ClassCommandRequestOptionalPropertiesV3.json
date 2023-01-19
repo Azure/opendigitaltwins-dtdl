@@ -1,0 +1,125 @@
+﻿[
+  {
+    "valid": true,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:quan_itch;1",
+        "@type": "Interface",
+        "extends": {
+          "@id": "dtmi:example:quan_flunn;1",
+          "@type": "Interface",
+          "contents": {
+            "@type": "Command",
+            "name": "quan_jogg",
+            "request": {
+              "@context": [],
+              "name": "quan_zatz",
+              "schema": "time"
+            }
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:quan_hi;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Command",
+          "name": "quan_vroo",
+          "request": {
+            "name": "quan_yekk",
+            "schema": "boolean"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:thnad_delta;1",
+        "@type": "Interface",
+        "extends": {
+          "@id": "dtmi:example:thnad_gamma;1",
+          "@type": "Interface",
+          "contents": {
+            "@type": "Command",
+            "name": "thnad_beta",
+            "request": {
+              "name": "thnad_alpha",
+              "schema": "date"
+            }
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:thnad_eta;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Command",
+          "name": "thnad_zeta",
+          "request": {
+            "name": "thnad_epsilon",
+            "schema": "dateTime"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:thnad_kappa;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Command",
+          "name": "thnad_iota",
+          "request": {
+            "name": "thnad_theta",
+            "schema": "double"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:thnad_nu;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Command",
+          "name": "thnad_mu",
+          "request": {
+            "name": "thnad_lambda",
+            "schema": "duration"
+          }
+        }
+      }
+    ]
+  }
+]

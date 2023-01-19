@@ -1,0 +1,40 @@
+﻿[
+  {
+    "valid": true,
+    "desirable": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:snee_delta;1",
+        "@type": "Interface",
+        "contents": {
+          "name": "snee_gamma",
+          "@type": [
+            "Relationship",
+            "Relationship"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "desirable": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:snee_zeta;1",
+        "@type": "Interface",
+        "contents": {
+          "name": "snee_epsilon",
+          "@type": [
+            "dtmi:dtdl:class:Relationship;3",
+            "dtmi:dtdl:class:Relationship;3"
+          ]
+        }
+      }
+    ]
+  }
+]

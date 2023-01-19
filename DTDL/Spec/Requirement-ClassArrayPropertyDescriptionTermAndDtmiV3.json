@@ -1,0 +1,49 @@
+﻿[
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:zatz_epsilon;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:zatz_beta;1",
+          "@type": "Array",
+          "description": [
+            "zatz_gamma"
+          ],
+          "dtmi:dtdl:property:description;3": [
+            "zatz_delta"
+          ],
+          "elementSchema": "duration"
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:zatz_iota;1",
+        "@type": "Interface",
+        "schemas": {
+          "@context": "dtmi:undefinedExtension:context;1",
+          "@id": "dtmi:example:zatz_zeta;1",
+          "@type": "Array",
+          "description": [
+            "zatz_eta"
+          ],
+          "dtmi:dtdl:property:description;3": [
+            "zatz_theta"
+          ],
+          "elementSchema": "float"
+        }
+      }
+    ]
+  }
+]

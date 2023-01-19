@@ -1,0 +1,47 @@
+﻿[
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:yekk_nu;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:yekk_mu;1",
+          "@type": "Object",
+          "fields": {
+            "comment": "yekk_iota",
+            "dtmi:dtdl:property:comment;3": "yekk_kappa",
+            "name": "yekk_lambda",
+            "schema": "dateTime"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:yekk_sigma;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:yekk_rho;1",
+          "@type": "Object",
+          "fields": {
+            "@context": "dtmi:undefinedExtension:context;1",
+            "comment": "yekk_xi",
+            "dtmi:dtdl:property:comment;3": "yekk_omicron",
+            "name": "yekk_pi",
+            "schema": "double"
+          }
+        }
+      }
+    ]
+  }
+]

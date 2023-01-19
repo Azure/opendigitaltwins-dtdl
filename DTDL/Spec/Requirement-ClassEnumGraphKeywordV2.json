@@ -1,0 +1,51 @@
+﻿[
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:beta_jogg;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:beta_floob;1",
+          "@type": "Enum",
+          "enumValues": [
+            {
+              "enumValue": 692,
+              "name": "beta_zatz"
+            }
+          ],
+          "valueSchema": "integer",
+          "@graph": {}
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:beta_yekk;1",
+        "@type": "Interface",
+        "schemas": {
+          "@context": "dtmi:undefinedExtension:context;1",
+          "@id": "dtmi:example:beta_flunn;1",
+          "@type": "Enum",
+          "enumValues": [
+            {
+              "enumValue": 693,
+              "name": "beta_itch"
+            }
+          ],
+          "valueSchema": "integer",
+          "@graph": {}
+        }
+      }
+    ]
+  }
+]

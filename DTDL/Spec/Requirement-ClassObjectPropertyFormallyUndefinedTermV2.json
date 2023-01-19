@@ -1,0 +1,49 @@
+﻿[
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:epsilon_wum;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:epsilon_omega;1",
+          "@type": "Object",
+          "fields": [
+            {
+              "name": "epsilon_yuzz",
+              "schema": "double"
+            }
+          ],
+          "foobar": {}
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:epsilon_fuddle;1",
+        "@type": "Interface",
+        "schemas": {
+          "@context": "dtmi:undefinedExtension:context;1",
+          "@id": "dtmi:example:epsilon_um;1",
+          "@type": "Object",
+          "fields": [
+            {
+              "name": "epsilon_humpf",
+              "schema": "duration"
+            }
+          ],
+          "foobar": {}
+        }
+      }
+    ]
+  }
+]

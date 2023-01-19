@@ -1,0 +1,63 @@
+﻿[
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:snee_alpha;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Relationship",
+          "name": "nuh_yekk",
+          "properties": [
+            {
+              "@type": "Property",
+              "name": "nuh_vroo",
+              "schema": "boolean"
+            }
+          ],
+          "dtmi:dtdl:property:properties;2": [
+            {
+              "@type": "Property",
+              "name": "nuh_hi",
+              "schema": "date"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:snee_epsilon;1",
+        "@type": "Interface",
+        "contents": {
+          "@context": "dtmi:undefinedExtension:context;1",
+          "@type": "Relationship",
+          "name": "snee_beta",
+          "properties": [
+            {
+              "@type": "Property",
+              "name": "snee_gamma",
+              "schema": "dateTime"
+            }
+          ],
+          "dtmi:dtdl:property:properties;2": [
+            {
+              "@type": "Property",
+              "name": "snee_delta",
+              "schema": "double"
+            }
+          ]
+        }
+      }
+    ]
+  }
+]

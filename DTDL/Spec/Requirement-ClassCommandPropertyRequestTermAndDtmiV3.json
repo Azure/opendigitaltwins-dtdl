@@ -1,0 +1,51 @@
+﻿[
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:sigma_thnad;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Command",
+          "name": "sigma_nuh",
+          "request": {
+            "name": "sigma_snee",
+            "schema": "string"
+          },
+          "dtmi:dtdl:property:request;3": {
+            "name": "sigma_quan",
+            "schema": "time"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:sigma_jogg;1",
+        "@type": "Interface",
+        "contents": {
+          "@context": "dtmi:undefinedExtension:context;1",
+          "@type": "Command",
+          "name": "sigma_spazz",
+          "request": {
+            "name": "sigma_floob",
+            "schema": "boolean"
+          },
+          "dtmi:dtdl:property:request;3": {
+            "name": "sigma_zatz",
+            "schema": "date"
+          }
+        }
+      }
+    ]
+  }
+]

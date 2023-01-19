@@ -1,0 +1,112 @@
+﻿[
+  {
+    "valid": true,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:eta_jogg;1",
+        "@type": "Interface",
+        "extends": {
+          "@id": "dtmi:example:eta_zatz;1",
+          "@type": "Interface",
+          "contents": {
+            "@id": "dtmi:example:eta_spazz;1",
+            "@type": "Command",
+            "name": "eta_floob"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:eta_vroo;1",
+        "@type": "Interface",
+        "extends": {
+          "@id": "dtmi:example:eta_yekk;1",
+          "@type": "Interface",
+          "contents": [
+            {
+              "@id": "dtmi:example:eta_flunn;1",
+              "@type": "Command",
+              "name": "eta_itch"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:theta_gamma;1",
+        "@type": "Interface",
+        "extends": {
+          "@id": "dtmi:example:theta_beta;1",
+          "@type": "Interface",
+          "contents": {
+            "@id": "dtmi:example:eta_hi;1",
+            "@type": "Command",
+            "name": "theta_alpha",
+            "@context": "dtmi:dtdl:context;2"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:theta_epsilon;1",
+        "@type": "Interface",
+        "extends": {
+          "@id": "dtmi:example:theta_delta;1",
+          "@type": "Interface",
+          "contents": []
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:theta_mu;1",
+        "@type": "Interface",
+        "extends": {
+          "@id": "dtmi:example:theta_lambda;1",
+          "@type": "Interface",
+          "contents": [
+            {
+              "@id": "dtmi:example:theta_zeta;1",
+              "@type": "Command",
+              "name": "theta_eta"
+            },
+            {
+              "@id": "dtmi:example:theta_theta;1",
+              "@type": "Component",
+              "name": "theta_iota",
+              "schema": {
+                "@id": "dtmi:example:theta_kappa;1",
+                "@type": "Interface"
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+]

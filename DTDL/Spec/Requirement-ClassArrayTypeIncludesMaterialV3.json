@@ -1,0 +1,144 @@
+﻿[
+  {
+    "valid": true,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:yuzz_omega;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:yuzz_psi;1",
+          "elementSchema": "long",
+          "@type": "Array"
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:yuzz_wum;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:yuzz_yuzz;1",
+          "elementSchema": "string",
+          "@type": [
+            "Array"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:yuzz_humpf;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:yuzz_um;1",
+          "elementSchema": "time",
+          "@type": "dtmi:dtdl:class:Array;3"
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:yuzz_glikk;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:yuzz_fuddle;1",
+          "elementSchema": "boolean",
+          "@type": [
+            "dtmi:dtdl:class:Array;3"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:yuzz_snee;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:yuzz_nuh;1",
+          "elementSchema": "date",
+          "@type": "Something"
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:yuzz_thnad;1",
+        "@type": "Interface",
+        "schemas": {
+          "@context": "dtmi:undefinedExtension:context;1",
+          "@id": "dtmi:example:yuzz_quan;1",
+          "elementSchema": "dateTime",
+          "@type": "Something"
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:yuzz_floob;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:yuzz_spazz;1",
+          "elementSchema": "double",
+          "@type": [
+            "Something"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:yuzz_jogg;1",
+        "@type": "Interface",
+        "schemas": {
+          "@context": "dtmi:undefinedExtension:context;1",
+          "@id": "dtmi:example:yuzz_zatz;1",
+          "elementSchema": "duration",
+          "@type": [
+            "Something"
+          ]
+        }
+      }
+    ]
+  }
+]

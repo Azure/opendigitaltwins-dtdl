@@ -1,0 +1,88 @@
+﻿[
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:flunn_mu;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:flunn_lambda;1",
+          "@type": [
+            "Array",
+            "Foobar"
+          ],
+          "elementSchema": "integer",
+          "dtmi:foo:bar;1": 626
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:flunn_xi;1",
+        "@type": "Interface",
+        "schemas": {
+          "@context": "dtmi:undefinedExtension:context;1",
+          "@id": "dtmi:example:flunn_nu;1",
+          "@type": [
+            "Array",
+            "Foobar"
+          ],
+          "elementSchema": "long",
+          "dtmi:foo:bar;1": 626
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:flunn_pi;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:flunn_omicron;1",
+          "@type": [
+            "Array",
+            "Foobar"
+          ],
+          "elementSchema": "string",
+          "boolean": null
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:flunn_sigma;1",
+        "@type": "Interface",
+        "schemas": {
+          "@context": "dtmi:undefinedExtension:context;1",
+          "@id": "dtmi:example:flunn_rho;1",
+          "@type": [
+            "Array",
+            "Foobar"
+          ],
+          "elementSchema": "time",
+          "boolean": null
+        }
+      }
+    ]
+  }
+]

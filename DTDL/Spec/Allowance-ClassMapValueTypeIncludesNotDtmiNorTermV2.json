@@ -1,0 +1,29 @@
+﻿[
+  {
+    "valid": true,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:theta_jogg;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:theta_floob;1",
+          "@type": "Map",
+          "mapKey": {
+            "name": "theta_zatz",
+            "schema": "string"
+          },
+          "mapValue": {
+            "@type": [
+              "MapValue",
+              "http://foo.com/bar"
+            ],
+            "name": "theta_spazz",
+            "schema": "integer"
+          }
+        }
+      }
+    ]
+  }
+]

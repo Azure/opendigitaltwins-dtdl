@@ -1,0 +1,45 @@
+﻿[
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:kappa_snee;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Component",
+          "name": "kappa_glikk",
+          "schema": {
+            "@id": "dtmi:example:kappa_nuh;1",
+            "@type": "Interface"
+          },
+          "@graph": {}
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:kappa_spazz;1",
+        "@type": "Interface",
+        "contents": {
+          "@context": "dtmi:undefinedExtension:context;1",
+          "@type": "Component",
+          "name": "kappa_quan",
+          "schema": {
+            "@id": "dtmi:example:kappa_thnad;1",
+            "@type": "Interface"
+          },
+          "@graph": {}
+        }
+      }
+    ]
+  }
+]

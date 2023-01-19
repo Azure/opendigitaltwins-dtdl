@@ -1,0 +1,61 @@
+﻿[
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:fuddle_beta;1",
+        "@type": "Interface",
+        "contents": {
+          "@id": "dtmi:example:fuddle_beta;1",
+          "@type": "Property",
+          "name": "fuddle_epsilon",
+          "schema": {
+            "@id": "dtmi:example:fuddle_beta;1",
+            "@type": "Map",
+            "mapKey": {
+              "name": "fuddle_gamma",
+              "schema": "string"
+            },
+            "mapValue": {
+              "name": "fuddle_delta",
+              "schema": "float"
+            }
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:fuddle_zeta;1",
+        "@type": "Interface",
+        "contents": {
+          "@id": "dtmi:example:fuddle_zeta;1",
+          "@type": "Property",
+          "name": "fuddle_iota",
+          "schema": {
+            "@context": "dtmi:undefinedExtension:context;1",
+            "@id": "dtmi:example:fuddle_zeta;1",
+            "@type": "Map",
+            "mapKey": {
+              "name": "fuddle_eta",
+              "schema": "string"
+            },
+            "mapValue": {
+              "name": "fuddle_theta",
+              "schema": "integer"
+            }
+          }
+        }
+      }
+    ]
+  }
+]

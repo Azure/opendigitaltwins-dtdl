@@ -1,0 +1,42 @@
+﻿[
+  {
+    "valid": true,
+    "desirable": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:epsilon_kappa;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:epsilon_iota;1",
+          "elementSchema": "integer",
+          "@type": [
+            "Array",
+            "Array"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "desirable": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:epsilon_mu;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:epsilon_lambda;1",
+          "elementSchema": "long",
+          "@type": [
+            "dtmi:dtdl:class:Array;2",
+            "dtmi:dtdl:class:Array;2"
+          ]
+        }
+      }
+    ]
+  }
+]

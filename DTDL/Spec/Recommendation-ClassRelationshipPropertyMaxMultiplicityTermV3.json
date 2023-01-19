@@ -1,0 +1,36 @@
+﻿[
+  {
+    "valid": true,
+    "desirable": true,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:beta_alpha;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Relationship",
+          "maxMultiplicity": 1471,
+          "name": "alpha_hi"
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "desirable": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:beta_gamma;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Relationship",
+          "dtmi:dtdl:property:maxMultiplicity;3": 1472,
+          "name": "beta_beta"
+        }
+      }
+    ]
+  }
+]

@@ -1,0 +1,29 @@
+﻿{
+  "@context": [
+    "dtmi:dtdl:context;3",
+    "dtmi:dtdl:extension:streaming;1"
+  ],
+  "@graph": [
+    {
+      "@id": "dtmi:dtdl:extension:streaming:v1:documentation",
+      "@type": [ "dtmm:Documentation" ],
+      "dtmm:description": {
+        "en-US": "Designate a Property as having reduced durability guarantees, thereby lowering storage cost and increasing data ingestion."
+      }
+    },
+    {
+      "@id": "dtmi:dtdl:extension:streaming:v1:Streaming",
+      "@type": [ "rdfs:Class", "sh:NodeShape" ],
+      "rdfs:subClassOf": "AdjunctType",
+      "sh:or": [
+        { "sh:class": "dtmi:dtdl:class:Property;3" }
+      ],
+      "sh:property": [
+        {
+          "sh:path": "writable",
+          "sh:hasValue": false
+        }
+      ]
+    }
+  ]
+}

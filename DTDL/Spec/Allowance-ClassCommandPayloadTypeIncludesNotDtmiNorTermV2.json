@@ -1,0 +1,25 @@
+﻿[
+  {
+    "valid": true,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:rho_delta;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Command",
+          "name": "rho_gamma",
+          "request": {
+            "@type": [
+              "CommandPayload",
+              "http://foo.com/bar"
+            ],
+            "name": "rho_beta",
+            "schema": "string"
+          }
+        }
+      }
+    ]
+  }
+]

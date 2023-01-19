@@ -1,0 +1,57 @@
+﻿[
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:wum_zatz;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:wum_floob;1",
+          "@type": "Enum",
+          "valueSchema": "integer",
+          "enumValues": {
+            "displayName": [
+              "wum_quan"
+            ],
+            "dtmi:dtdl:property:displayName;2": [
+              "wum_thnad"
+            ],
+            "enumValue": 998,
+            "name": "wum_spazz"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:wum_vroo;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:wum_yekk;1",
+          "@type": "Enum",
+          "valueSchema": "integer",
+          "enumValues": {
+            "@context": "dtmi:undefinedExtension:context;1",
+            "displayName": [
+              "wum_jogg"
+            ],
+            "dtmi:dtdl:property:displayName;2": [
+              "wum_flunn"
+            ],
+            "enumValue": 999,
+            "name": "wum_itch"
+          }
+        }
+      }
+    ]
+  }
+]

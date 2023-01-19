@@ -1,0 +1,43 @@
+﻿[
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:wum_tau;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:wum_sigma;1",
+          "@type": [
+            "Array",
+            "http://foo.com/bar"
+          ],
+          "elementSchema": "integer"
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:wum_phi;1",
+        "@type": "Interface",
+        "schemas": {
+          "@context": "dtmi:undefinedExtension:context;1",
+          "@id": "dtmi:example:wum_upsilon;1",
+          "@type": [
+            "Array",
+            "http://foo.com/bar"
+          ],
+          "elementSchema": "long"
+        }
+      }
+    ]
+  }
+]

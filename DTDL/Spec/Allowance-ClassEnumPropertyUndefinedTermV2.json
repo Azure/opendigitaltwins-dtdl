@@ -1,0 +1,28 @@
+﻿[
+  {
+    "valid": true,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:delta_gamma;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:delta_alpha;1",
+          "@type": [
+            "Enum",
+            "Foobar"
+          ],
+          "enumValues": [
+            {
+              "enumValue": 709,
+              "name": "delta_beta"
+            }
+          ],
+          "valueSchema": "integer",
+          "foobar": {}
+        }
+      }
+    ]
+  }
+]

@@ -1,0 +1,82 @@
+﻿[
+  {
+    "valid": true,
+    "desirable": true,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:zatz_tau;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:zatz_sigma;1",
+          "@type": "Object",
+          "fields": {
+            "name": "zatz_rho",
+            "schema": "float"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "desirable": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:zatz_chi;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:zatz_phi;1",
+          "@type": "Object",
+          "fields": {
+            "name": "zatz_upsilon",
+            "schema": "dtmi:dtdl:instance:Schema:float;2"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "desirable": true,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:zatz_yuzz;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:zatz_omega;1",
+          "@type": "Object",
+          "fields": {
+            "name": "zatz_psi",
+            "schema": "point"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "desirable": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:zatz_humpf;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:zatz_um;1",
+          "@type": "Object",
+          "fields": {
+            "name": "zatz_wum",
+            "schema": "dtmi:standard:schema:geospatial:point;2"
+          }
+        }
+      }
+    ]
+  }
+]

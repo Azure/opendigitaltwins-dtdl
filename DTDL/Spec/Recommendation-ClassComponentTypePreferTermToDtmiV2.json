@@ -1,0 +1,42 @@
+﻿[
+  {
+    "valid": true,
+    "desirable": true,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:snee_omega;1",
+        "@type": "Interface",
+        "contents": {
+          "name": "snee_chi",
+          "schema": {
+            "@id": "dtmi:example:snee_psi;1",
+            "@type": "Interface"
+          },
+          "@type": "Component"
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "desirable": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:snee_um;1",
+        "@type": "Interface",
+        "contents": {
+          "name": "snee_yuzz",
+          "schema": {
+            "@id": "dtmi:example:snee_wum;1",
+            "@type": "Interface"
+          },
+          "@type": "dtmi:dtdl:class:Component;2"
+        }
+      }
+    ]
+  }
+]

@@ -1,0 +1,30 @@
+﻿[
+  {
+    "valid": true,
+    "desirable": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:tau_pi;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:tau_xi;1",
+          "@type": "Map",
+          "mapKey": {
+            "name": "tau_omicron",
+            "schema": "string"
+          },
+          "mapValue": {
+            "name": "tau_nu",
+            "schema": "integer",
+            "@type": [
+              "MapValue",
+              "dtmi:dtdl:class:MapValue;3"
+            ]
+          }
+        }
+      }
+    ]
+  }
+]

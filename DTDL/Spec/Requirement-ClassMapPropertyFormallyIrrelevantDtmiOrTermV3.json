@@ -1,0 +1,104 @@
+﻿[
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:eta_fuddle;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:eta_wum;1",
+          "@type": "Map",
+          "mapKey": {
+            "name": "eta_um",
+            "schema": "string"
+          },
+          "mapValue": {
+            "name": "eta_humpf",
+            "schema": "string"
+          },
+          "dtmi:foo:bar;1": 626
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:eta_quan;1",
+        "@type": "Interface",
+        "schemas": {
+          "@context": "dtmi:undefinedExtension:context;1",
+          "@id": "dtmi:example:eta_glikk;1",
+          "@type": "Map",
+          "mapKey": {
+            "name": "eta_nuh",
+            "schema": "string"
+          },
+          "mapValue": {
+            "name": "eta_snee",
+            "schema": "time"
+          },
+          "dtmi:foo:bar;1": 626
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:eta_zatz;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:eta_thnad;1",
+          "@type": "Map",
+          "mapKey": {
+            "name": "eta_spazz",
+            "schema": "string"
+          },
+          "mapValue": {
+            "name": "eta_floob",
+            "schema": "boolean"
+          },
+          "boolean": null
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:eta_yekk;1",
+        "@type": "Interface",
+        "schemas": {
+          "@context": "dtmi:undefinedExtension:context;1",
+          "@id": "dtmi:example:eta_jogg;1",
+          "@type": "Map",
+          "mapKey": {
+            "name": "eta_flunn",
+            "schema": "string"
+          },
+          "mapValue": {
+            "name": "eta_itch",
+            "schema": "date"
+          },
+          "boolean": null
+        }
+      }
+    ]
+  }
+]

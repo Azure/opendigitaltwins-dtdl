@@ -1,0 +1,56 @@
+﻿[
+  {
+    "valid": true,
+    "desirable": true,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:hi_gamma;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:hi_alpha;1",
+          "@type": "Map",
+          "mapValue": {
+            "name": "hi_beta",
+            "schema": "long"
+          },
+          "mapKey": {
+            "displayName": [
+              "vroo_vroo"
+            ],
+            "name": "vroo_hi",
+            "schema": "string"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "desirable": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:hi_theta;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:hi_zeta;1",
+          "@type": "Map",
+          "mapValue": {
+            "name": "hi_eta",
+            "schema": "string"
+          },
+          "mapKey": {
+            "dtmi:dtdl:property:displayName;3": [
+              "hi_delta"
+            ],
+            "name": "hi_epsilon",
+            "schema": "string"
+          }
+        }
+      }
+    ]
+  }
+]

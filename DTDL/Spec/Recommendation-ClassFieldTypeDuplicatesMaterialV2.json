@@ -1,0 +1,50 @@
+﻿[
+  {
+    "valid": true,
+    "desirable": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:yekk_iota;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:yekk_theta;1",
+          "@type": "Object",
+          "fields": {
+            "name": "yekk_eta",
+            "schema": "date",
+            "@type": [
+              "Field",
+              "Field"
+            ]
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "desirable": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:yekk_mu;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:yekk_lambda;1",
+          "@type": "Object",
+          "fields": {
+            "name": "yekk_kappa",
+            "schema": "dateTime",
+            "@type": [
+              "dtmi:dtdl:class:Field;2",
+              "dtmi:dtdl:class:Field;2"
+            ]
+          }
+        }
+      }
+    ]
+  }
+]

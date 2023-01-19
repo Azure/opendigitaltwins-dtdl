@@ -1,0 +1,61 @@
+﻿[
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:jogg_pi;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:jogg_xi;1",
+          "@type": "Map",
+          "mapKey": {
+            "name": "jogg_omicron",
+            "schema": "string"
+          },
+          "mapValue": {
+            "@type": [
+              "MapValue",
+              "Foobar"
+            ],
+            "name": "jogg_nu",
+            "schema": "float",
+            "foobar": {}
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:jogg_upsilon;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:jogg_sigma;1",
+          "@type": "Map",
+          "mapKey": {
+            "name": "jogg_tau",
+            "schema": "string"
+          },
+          "mapValue": {
+            "@context": "dtmi:undefinedExtension:context;1",
+            "@type": [
+              "MapValue",
+              "Foobar"
+            ],
+            "name": "jogg_rho",
+            "schema": "integer",
+            "foobar": {}
+          }
+        }
+      }
+    ]
+  }
+]

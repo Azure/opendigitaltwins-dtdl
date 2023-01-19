@@ -1,0 +1,63 @@
+﻿[
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:omega_nu;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:omega_lambda;1",
+          "@type": "Map",
+          "mapKey": {
+            "name": "omega_mu",
+            "schema": "string"
+          },
+          "mapValue": {
+            "displayName": [
+              "omega_theta"
+            ],
+            "dtmi:dtdl:property:displayName;2": [
+              "omega_iota"
+            ],
+            "name": "omega_kappa",
+            "schema": "long"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:omega_tau;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:omega_rho;1",
+          "@type": "Map",
+          "mapKey": {
+            "name": "omega_sigma",
+            "schema": "string"
+          },
+          "mapValue": {
+            "@context": "dtmi:undefinedExtension:context;1",
+            "displayName": [
+              "omega_xi"
+            ],
+            "dtmi:dtdl:property:displayName;2": [
+              "omega_omicron"
+            ],
+            "name": "omega_pi",
+            "schema": "string"
+          }
+        }
+      }
+    ]
+  }
+]

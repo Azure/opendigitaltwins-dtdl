@@ -1,0 +1,58 @@
+﻿[
+  {
+    "valid": true,
+    "desirable": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:omicron_quan;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:omicron_nuh;1",
+          "@type": "Map",
+          "mapValue": {
+            "name": "omicron_snee",
+            "schema": "date"
+          },
+          "mapKey": {
+            "name": "omicron_glikk",
+            "schema": "string",
+            "@type": [
+              "MapKey",
+              "MapKey"
+            ]
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "desirable": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:omicron_zatz;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:omicron_spazz;1",
+          "@type": "Map",
+          "mapValue": {
+            "name": "omicron_floob",
+            "schema": "dateTime"
+          },
+          "mapKey": {
+            "name": "omicron_thnad",
+            "schema": "string",
+            "@type": [
+              "dtmi:dtdl:class:MapKey;2",
+              "dtmi:dtdl:class:MapKey;2"
+            ]
+          }
+        }
+      }
+    ]
+  }
+]

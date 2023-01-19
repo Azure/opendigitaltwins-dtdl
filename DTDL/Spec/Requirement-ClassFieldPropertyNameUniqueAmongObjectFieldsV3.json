@@ -1,0 +1,80 @@
+﻿[
+  {
+    "valid": true,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:psi_kappa;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:psi_iota;1",
+          "@type": "Object",
+          "fields": [
+            {
+              "schema": "duration",
+              "name": "gamma_zeta"
+            },
+            {
+              "schema": "float",
+              "name": "gamma_eta"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:psi_mu;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:psi_lambda;1",
+          "@type": "Object",
+          "fields": [
+            {
+              "schema": "integer",
+              "name": "gamma_zeta"
+            },
+            {
+              "schema": "long",
+              "name": "gamma_zeta"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:psi_xi;1",
+        "@type": "Interface",
+        "schemas": {
+          "@context": "dtmi:undefinedExtension:context;1",
+          "@id": "dtmi:example:psi_nu;1",
+          "@type": "Object",
+          "fields": [
+            {
+              "schema": "string",
+              "name": "gamma_zeta"
+            },
+            {
+              "schema": "time",
+              "name": "gamma_zeta"
+            }
+          ]
+        }
+      }
+    ]
+  }
+]

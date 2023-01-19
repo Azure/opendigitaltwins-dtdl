@@ -1,0 +1,174 @@
+﻿[
+  {
+    "valid": true,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:alpha_snee;1",
+        "@type": "Interface",
+        "extends": {
+          "@id": "dtmi:example:alpha_nuh;1",
+          "@type": "Interface",
+          "extends": {
+            "@id": "dtmi:example:alpha_glikk;1",
+            "@type": "Interface"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:alpha_spazz;1",
+        "@type": "Interface",
+        "extends": {
+          "@id": "dtmi:example:alpha_thnad;1",
+          "@type": "Interface",
+          "extends": [
+            {
+              "@id": "dtmi:example:alpha_quan;1",
+              "@type": "Interface"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "options": [],
+    "input": [
+      [
+        {
+          "@context": "dtmi:dtdl:context;2",
+          "@id": "dtmi:example:alpha_zatz;1",
+          "@type": "Interface",
+          "extends": {
+            "@id": "dtmi:example:alpha_floob;1",
+            "@type": "Interface",
+            "extends": "dtmi:ex:dependentRef;1"
+          }
+        },
+        {
+          "@context": "dtmi:dtdl:context;2",
+          "@id": "dtmi:ex:dependentRef;1",
+          "@type": "Interface"
+        }
+      ]
+    ]
+  },
+  {
+    "valid": true,
+    "options": [],
+    "input": [
+      [
+        {
+          "@context": "dtmi:dtdl:context;2",
+          "@id": "dtmi:example:alpha_flunn;1",
+          "@type": "Interface",
+          "extends": {
+            "@id": "dtmi:example:alpha_jogg;1",
+            "@type": "Interface",
+            "extends": [
+              "dtmi:ex:dependentRef;1"
+            ]
+          }
+        },
+        {
+          "@context": "dtmi:dtdl:context;2",
+          "@id": "dtmi:ex:dependentRef;1",
+          "@type": "Interface"
+        }
+      ]
+    ]
+  },
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:alpha_vroo;1",
+        "@type": "Interface",
+        "extends": {
+          "@id": "dtmi:example:alpha_yekk;1",
+          "@type": "Interface",
+          "extends": {
+            "@id": "dtmi:example:alpha_itch;1",
+            "@type": "Interface",
+            "@context": "dtmi:dtdl:context;3"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:beta_beta;1",
+        "@type": "Interface",
+        "extends": {
+          "@context": "dtmi:undefinedExtension:context;1",
+          "@id": "dtmi:example:beta_alpha;1",
+          "@type": "Interface",
+          "extends": {
+            "@id": "dtmi:example:alpha_hi;1",
+            "@type": "Interface",
+            "@context": "dtmi:dtdl:context;3"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:beta_delta;1",
+        "@type": "Interface",
+        "extends": {
+          "@id": "dtmi:example:beta_gamma;1",
+          "@type": "Interface",
+          "extends": []
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:beta_theta;1",
+        "@type": "Interface",
+        "extends": {
+          "@id": "dtmi:example:beta_eta;1",
+          "@type": "Interface",
+          "extends": [
+            {
+              "@id": "dtmi:example:beta_epsilon;1",
+              "@type": "Interface"
+            },
+            {
+              "@id": "dtmi:example:beta_zeta;1",
+              "@type": "Interface"
+            }
+          ]
+        }
+      }
+    ]
+  }
+]

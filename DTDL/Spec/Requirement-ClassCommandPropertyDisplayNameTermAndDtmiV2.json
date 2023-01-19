@@ -1,0 +1,47 @@
+﻿[
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:floob_wum;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Command",
+          "displayName": [
+            "floob_psi"
+          ],
+          "dtmi:dtdl:property:displayName;2": [
+            "floob_omega"
+          ],
+          "name": "floob_yuzz"
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:floob_glikk;1",
+        "@type": "Interface",
+        "contents": {
+          "@context": "dtmi:undefinedExtension:context;1",
+          "@type": "Command",
+          "displayName": [
+            "floob_um"
+          ],
+          "dtmi:dtdl:property:displayName;2": [
+            "floob_humpf"
+          ],
+          "name": "floob_fuddle"
+        }
+      }
+    ]
+  }
+]

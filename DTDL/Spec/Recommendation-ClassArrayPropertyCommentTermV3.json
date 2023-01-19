@@ -1,0 +1,38 @@
+﻿[
+  {
+    "valid": true,
+    "desirable": true,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:spazz_nu;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:spazz_lambda;1",
+          "@type": "Array",
+          "comment": "spazz_mu",
+          "elementSchema": "boolean"
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "desirable": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:spazz_pi;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:spazz_xi;1",
+          "@type": "Array",
+          "dtmi:dtdl:property:comment;3": "spazz_omicron",
+          "elementSchema": "date"
+        }
+      }
+    ]
+  }
+]

@@ -1,0 +1,48 @@
+﻿[
+  {
+    "valid": true,
+    "desirable": true,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:snee_zeta;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Command",
+          "name": "snee_epsilon",
+          "response": {
+            "description": [
+              "snee_gamma"
+            ],
+            "name": "snee_delta",
+            "schema": "boolean"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "desirable": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:snee_kappa;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Command",
+          "name": "snee_iota",
+          "response": {
+            "dtmi:dtdl:property:description;3": [
+              "snee_eta"
+            ],
+            "name": "snee_theta",
+            "schema": "date"
+          }
+        }
+      }
+    ]
+  }
+]

@@ -1,0 +1,86 @@
+﻿[
+  {
+    "valid": true,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:nu_wum;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Relationship",
+          "name": "nu_yuzz",
+          "properties": [
+            {
+              "@type": "Property",
+              "schema": "string",
+              "name": "gamma_um"
+            },
+            {
+              "@type": "Property",
+              "schema": "time",
+              "name": "gamma_humpf"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:nu_humpf;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Relationship",
+          "name": "nu_um",
+          "properties": [
+            {
+              "@type": "Property",
+              "schema": "boolean",
+              "name": "gamma_um"
+            },
+            {
+              "@type": "Property",
+              "schema": "date",
+              "name": "gamma_um"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:nu_glikk;1",
+        "@type": "Interface",
+        "contents": {
+          "@context": "dtmi:undefinedExtension:context;1",
+          "@type": "Relationship",
+          "name": "nu_fuddle",
+          "properties": [
+            {
+              "@type": "Property",
+              "schema": "dateTime",
+              "name": "gamma_um"
+            },
+            {
+              "@type": "Property",
+              "schema": "double",
+              "name": "gamma_um"
+            }
+          ]
+        }
+      }
+    ]
+  }
+]

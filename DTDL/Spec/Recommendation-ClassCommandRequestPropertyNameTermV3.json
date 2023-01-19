@@ -1,0 +1,42 @@
+﻿[
+  {
+    "valid": true,
+    "desirable": true,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:um_alpha;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Command",
+          "name": "wum_hi",
+          "request": {
+            "name": "wum_vroo",
+            "schema": "float"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "desirable": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:um_delta;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Command",
+          "name": "um_gamma",
+          "request": {
+            "dtmi:dtdl:property:name;3": "um_beta",
+            "schema": "integer"
+          }
+        }
+      }
+    ]
+  }
+]

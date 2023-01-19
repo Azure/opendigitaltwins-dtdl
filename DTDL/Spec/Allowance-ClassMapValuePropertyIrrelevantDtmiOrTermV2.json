@@ -1,0 +1,58 @@
+﻿[
+  {
+    "valid": true,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:omega_hi;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:omega_yekk;1",
+          "@type": "Map",
+          "mapKey": {
+            "name": "omega_vroo",
+            "schema": "string"
+          },
+          "mapValue": {
+            "@type": [
+              "MapValue",
+              "Foobar"
+            ],
+            "name": "omega_itch",
+            "schema": "duration",
+            "dtmi:foo:bar;1": 626
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:yuzz_delta;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:yuzz_beta;1",
+          "@type": "Map",
+          "mapKey": {
+            "name": "yuzz_gamma",
+            "schema": "string"
+          },
+          "mapValue": {
+            "@type": [
+              "MapValue",
+              "Foobar"
+            ],
+            "name": "yuzz_alpha",
+            "schema": "float",
+            "boolean": null
+          }
+        }
+      }
+    ]
+  }
+]

@@ -1,0 +1,59 @@
+﻿[
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:alpha_quan;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:alpha_fuddle;1",
+          "@type": "Object",
+          "description": [
+            "alpha_glikk"
+          ],
+          "dtmi:dtdl:property:description;2": [
+            "alpha_nuh"
+          ],
+          "fields": [
+            {
+              "name": "alpha_snee",
+              "schema": "date"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:alpha_jogg;1",
+        "@type": "Interface",
+        "schemas": {
+          "@context": "dtmi:undefinedExtension:context;1",
+          "@id": "dtmi:example:alpha_thnad;1",
+          "@type": "Object",
+          "description": [
+            "alpha_spazz"
+          ],
+          "dtmi:dtdl:property:description;2": [
+            "alpha_floob"
+          ],
+          "fields": [
+            {
+              "name": "alpha_zatz",
+              "schema": "dateTime"
+            }
+          ]
+        }
+      }
+    ]
+  }
+]

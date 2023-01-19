@@ -1,0 +1,49 @@
+﻿[
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:nuh_gamma;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Telemetry",
+          "displayName": [
+            "glikk_hi"
+          ],
+          "dtmi:dtdl:property:displayName;3": [
+            "nuh_alpha"
+          ],
+          "name": "nuh_beta",
+          "schema": "date"
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:nuh_eta;1",
+        "@type": "Interface",
+        "contents": {
+          "@context": "dtmi:undefinedExtension:context;1",
+          "@type": "Telemetry",
+          "displayName": [
+            "nuh_delta"
+          ],
+          "dtmi:dtdl:property:displayName;3": [
+            "nuh_epsilon"
+          ],
+          "name": "nuh_zeta",
+          "schema": "dateTime"
+        }
+      }
+    ]
+  }
+]

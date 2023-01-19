@@ -1,0 +1,52 @@
+﻿[
+  {
+    "valid": true,
+    "desirable": true,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:vroo_thnad;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:vroo_glikk;1",
+          "@type": "Map",
+          "comment": "vroo_nuh",
+          "mapKey": {
+            "name": "vroo_snee",
+            "schema": "string"
+          },
+          "mapValue": {
+            "name": "vroo_quan",
+            "schema": "string"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "desirable": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:vroo_flunn;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:vroo_spazz;1",
+          "@type": "Map",
+          "dtmi:dtdl:property:comment;3": "vroo_floob",
+          "mapKey": {
+            "name": "vroo_zatz",
+            "schema": "string"
+          },
+          "mapValue": {
+            "name": "vroo_jogg",
+            "schema": "time"
+          }
+        }
+      }
+    ]
+  }
+]

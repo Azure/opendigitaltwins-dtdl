@@ -1,0 +1,55 @@
+﻿[
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:hi_eta;1",
+        "@type": "Interface",
+        "extends": {
+          "@id": "dtmi:example:hi_eta;1",
+          "@type": "Interface",
+          "contents": {
+            "@id": "dtmi:example:hi_eta;1",
+            "@type": "Command",
+            "name": "hi_iota",
+            "request": {
+              "@id": "dtmi:example:hi_eta;1",
+              "name": "hi_theta",
+              "schema": "long"
+            }
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:hi_kappa;1",
+        "@type": "Interface",
+        "extends": {
+          "@id": "dtmi:example:hi_kappa;1",
+          "@type": "Interface",
+          "contents": {
+            "@id": "dtmi:example:hi_kappa;1",
+            "@type": "Command",
+            "name": "hi_mu",
+            "request": {
+              "@context": "dtmi:undefinedExtension:context;1",
+              "@id": "dtmi:example:hi_kappa;1",
+              "name": "hi_lambda",
+              "schema": "string"
+            }
+          }
+        }
+      }
+    ]
+  }
+]

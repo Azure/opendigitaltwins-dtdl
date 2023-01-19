@@ -1,0 +1,52 @@
+﻿[
+  {
+    "valid": true,
+    "desirable": true,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:tau_humpf;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:tau_wum;1",
+          "@type": "Map",
+          "mapKey": {
+            "name": "tau_um",
+            "schema": "string"
+          },
+          "mapValue": {
+            "name": "tau_yuzz",
+            "schema": "time",
+            "@type": "MapValue"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "desirable": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:tau_snee;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:tau_glikk;1",
+          "@type": "Map",
+          "mapKey": {
+            "name": "tau_nuh",
+            "schema": "string"
+          },
+          "mapValue": {
+            "name": "tau_fuddle",
+            "schema": "boolean",
+            "@type": "dtmi:dtdl:class:MapValue;3"
+          }
+        }
+      }
+    ]
+  }
+]

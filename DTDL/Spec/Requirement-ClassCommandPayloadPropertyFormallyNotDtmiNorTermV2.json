@@ -1,0 +1,45 @@
+﻿[
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:fuddle_hi;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Command",
+          "name": "fuddle_vroo",
+          "request": {
+            "name": "fuddle_yekk",
+            "schema": "integer",
+            "http://foo.com/bar": true
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:glikk_gamma;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Command",
+          "name": "glikk_beta",
+          "request": {
+            "@context": "dtmi:undefinedExtension:context;1",
+            "name": "glikk_alpha",
+            "schema": "long",
+            "http://foo.com/bar": true
+          }
+        }
+      }
+    ]
+  }
+]

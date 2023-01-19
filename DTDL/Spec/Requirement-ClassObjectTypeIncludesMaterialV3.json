@@ -1,0 +1,136 @@
+﻿[
+  {
+    "valid": true,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:flunn_psi;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:flunn_chi;1",
+          "@type": "Object"
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:flunn_yuzz;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:flunn_omega;1",
+          "@type": [
+            "Object"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:flunn_um;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:flunn_wum;1",
+          "@type": "dtmi:dtdl:class:Object;3"
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:flunn_fuddle;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:flunn_humpf;1",
+          "@type": [
+            "dtmi:dtdl:class:Object;3"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:flunn_nuh;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:flunn_glikk;1",
+          "@type": "Something"
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:flunn_quan;1",
+        "@type": "Interface",
+        "schemas": {
+          "@context": "dtmi:undefinedExtension:context;1",
+          "@id": "dtmi:example:flunn_snee;1",
+          "@type": "Something"
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:flunn_spazz;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:flunn_thnad;1",
+          "@type": [
+            "Something"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:flunn_zatz;1",
+        "@type": "Interface",
+        "schemas": {
+          "@context": "dtmi:undefinedExtension:context;1",
+          "@id": "dtmi:example:flunn_floob;1",
+          "@type": [
+            "Something"
+          ]
+        }
+      }
+    ]
+  }
+]

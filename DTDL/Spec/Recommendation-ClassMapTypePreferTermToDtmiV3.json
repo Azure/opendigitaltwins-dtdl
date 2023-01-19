@@ -1,0 +1,50 @@
+﻿[
+  {
+    "valid": true,
+    "desirable": true,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:phi_upsilon;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:phi_rho;1",
+          "mapKey": {
+            "name": "phi_sigma",
+            "schema": "string"
+          },
+          "mapValue": {
+            "name": "phi_tau",
+            "schema": "time"
+          },
+          "@type": "Map"
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "desirable": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:phi_omega;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:phi_phi;1",
+          "mapKey": {
+            "name": "phi_chi",
+            "schema": "string"
+          },
+          "mapValue": {
+            "name": "phi_psi",
+            "schema": "boolean"
+          },
+          "@type": "dtmi:dtdl:class:Map;3"
+        }
+      }
+    ]
+  }
+]

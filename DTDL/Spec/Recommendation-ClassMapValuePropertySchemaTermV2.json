@@ -1,0 +1,50 @@
+﻿[
+  {
+    "valid": true,
+    "desirable": true,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:gamma_rho;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:gamma_omicron;1",
+          "@type": "Map",
+          "mapKey": {
+            "name": "gamma_pi",
+            "schema": "string"
+          },
+          "mapValue": {
+            "name": "gamma_xi",
+            "schema": "float"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "desirable": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:gamma_phi;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:gamma_tau;1",
+          "@type": "Map",
+          "mapKey": {
+            "name": "gamma_upsilon",
+            "schema": "string"
+          },
+          "mapValue": {
+            "name": "gamma_sigma",
+            "dtmi:dtdl:property:schema;2": "integer"
+          }
+        }
+      }
+    ]
+  }
+]

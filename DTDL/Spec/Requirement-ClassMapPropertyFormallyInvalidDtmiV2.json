@@ -1,0 +1,53 @@
+﻿[
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:flunn_omega;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:flunn_phi;1",
+          "@type": "Map",
+          "mapKey": {
+            "name": "flunn_chi",
+            "schema": "string"
+          },
+          "mapValue": {
+            "name": "flunn_psi",
+            "schema": "dateTime"
+          },
+          "dtmi:foo//bar": 626
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:flunn_humpf;1",
+        "@type": "Interface",
+        "schemas": {
+          "@context": "dtmi:undefinedExtension:context;1",
+          "@id": "dtmi:example:flunn_yuzz;1",
+          "@type": "Map",
+          "mapKey": {
+            "name": "flunn_wum",
+            "schema": "string"
+          },
+          "mapValue": {
+            "name": "flunn_um",
+            "schema": "double"
+          },
+          "dtmi:foo//bar": 626
+        }
+      }
+    ]
+  }
+]

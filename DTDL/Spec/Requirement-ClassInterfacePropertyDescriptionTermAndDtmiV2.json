@@ -1,0 +1,41 @@
+﻿[
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:hi_humpf;1",
+        "@type": "Interface",
+        "description": [
+          "hi_fuddle"
+        ],
+        "dtmi:dtdl:property:description;2": [
+          "hi_glikk"
+        ]
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": [
+          "dtmi:dtdl:context;2",
+          "dtmi:undefinedExtension:context;1"
+        ],
+        "@id": "dtmi:example:hi_nuh;1",
+        "@type": "Interface",
+        "description": [
+          "hi_snee"
+        ],
+        "dtmi:dtdl:property:description;2": [
+          "hi_quan"
+        ]
+      }
+    ]
+  }
+]

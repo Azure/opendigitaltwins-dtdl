@@ -1,0 +1,41 @@
+﻿[
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:glikk_nu;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:glikk_kappa;1",
+          "@type": "Enum",
+          "comment": "glikk_lambda",
+          "dtmi:dtdl:property:comment;3": "glikk_mu",
+          "valueSchema": "integer"
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:glikk_rho;1",
+        "@type": "Interface",
+        "schemas": {
+          "@context": "dtmi:undefinedExtension:context;1",
+          "@id": "dtmi:example:glikk_xi;1",
+          "@type": "Enum",
+          "comment": "glikk_omicron",
+          "dtmi:dtdl:property:comment;3": "glikk_pi",
+          "valueSchema": "integer"
+        }
+      }
+    ]
+  }
+]

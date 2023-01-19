@@ -1,0 +1,45 @@
+﻿[
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:glikk_iota;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Command",
+          "name": "glikk_theta",
+          "request": {
+            "name": "glikk_eta",
+            "schema": "time",
+            "foobar": {}
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:glikk_mu;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Command",
+          "name": "glikk_lambda",
+          "request": {
+            "@context": "dtmi:undefinedExtension:context;1",
+            "name": "glikk_kappa",
+            "schema": "boolean",
+            "foobar": {}
+          }
+        }
+      }
+    ]
+  }
+]

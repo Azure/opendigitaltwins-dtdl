@@ -1,0 +1,27 @@
+﻿[
+  {
+    "valid": true,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:nu_xi;1",
+        "@type": "Interface",
+        "extends": {
+          "@id": "dtmi:example:nu_nu;1",
+          "@type": "Interface"
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@id": "dtmi:example:nu_omicron;1",
+        "@type": "Interface"
+      }
+    ]
+  }
+]

@@ -1,0 +1,104 @@
+﻿[
+  {
+    "valid": true,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:phi_humpf;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Telemetry",
+          "name": "phi_um",
+          "schema": {
+            "@type": "Array",
+            "elementSchema": {
+              "@type": "Array",
+              "elementSchema": {
+                "@type": "Array",
+                "elementSchema": {
+                  "@type": "Array",
+                  "elementSchema": {
+                    "@type": "Array",
+                    "elementSchema": "boolean"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:phi_glikk;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Telemetry",
+          "name": "phi_fuddle",
+          "schema": {
+            "@type": "Array",
+            "elementSchema": {
+              "@type": "Array",
+              "elementSchema": {
+                "@type": "Array",
+                "elementSchema": {
+                  "@type": "Array",
+                  "elementSchema": {
+                    "@type": "Array",
+                    "elementSchema": {
+                      "@type": "Array",
+                      "elementSchema": "date"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:phi_snee;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Telemetry",
+          "name": "phi_nuh",
+          "schema": {
+            "@context": "dtmi:undefinedExtension:context;1",
+            "@type": "Array",
+            "elementSchema": {
+              "@type": "Array",
+              "elementSchema": {
+                "@type": "Array",
+                "elementSchema": {
+                  "@type": "Array",
+                  "elementSchema": {
+                    "@type": "Array",
+                    "elementSchema": {
+                      "@type": "Array",
+                      "elementSchema": "dateTime"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    ]
+  }
+]

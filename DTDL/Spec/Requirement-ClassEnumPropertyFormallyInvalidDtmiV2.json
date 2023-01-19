@@ -1,0 +1,51 @@
+﻿[
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:gamma_nuh;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:gamma_fuddle;1",
+          "@type": "Enum",
+          "enumValues": [
+            {
+              "enumValue": 704,
+              "name": "gamma_glikk"
+            }
+          ],
+          "valueSchema": "integer",
+          "dtmi:foo//bar": 626
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:gamma_thnad;1",
+        "@type": "Interface",
+        "schemas": {
+          "@context": "dtmi:undefinedExtension:context;1",
+          "@id": "dtmi:example:gamma_snee;1",
+          "@type": "Enum",
+          "enumValues": [
+            {
+              "enumValue": 705,
+              "name": "gamma_quan"
+            }
+          ],
+          "valueSchema": "integer",
+          "dtmi:foo//bar": 626
+        }
+      }
+    ]
+  }
+]

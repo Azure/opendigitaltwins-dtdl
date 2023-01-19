@@ -1,0 +1,72 @@
+﻿[
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:sigma_beta;1",
+        "@type": [
+          "Interface",
+          "Foobar"
+        ],
+        "dtmi:foo:bar;1": 626
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": [
+          "dtmi:dtdl:context;3",
+          "dtmi:undefinedExtension:context;1"
+        ],
+        "@id": "dtmi:example:sigma_gamma;1",
+        "@type": [
+          "Interface",
+          "Foobar"
+        ],
+        "dtmi:foo:bar;1": 626
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:sigma_delta;1",
+        "@type": [
+          "Interface",
+          "Foobar"
+        ],
+        "boolean": null
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": [
+          "dtmi:dtdl:context;3",
+          "dtmi:undefinedExtension:context;1"
+        ],
+        "@id": "dtmi:example:sigma_epsilon;1",
+        "@type": [
+          "Interface",
+          "Foobar"
+        ],
+        "boolean": null
+      }
+    ]
+  }
+]

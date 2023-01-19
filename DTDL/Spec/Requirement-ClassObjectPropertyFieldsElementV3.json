@@ -1,0 +1,208 @@
+﻿[
+  {
+    "valid": true,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:epsilon_kappa;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Property",
+          "name": "epsilon_iota",
+          "schema": {
+            "@type": "Object",
+            "fields": {
+              "@id": "dtmi:example:epsilon_eta;1",
+              "name": "epsilon_theta",
+              "schema": "time"
+            }
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:epsilon_xi;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Property",
+          "name": "epsilon_nu",
+          "schema": {
+            "@type": "Object",
+            "fields": [
+              {
+                "@id": "dtmi:example:epsilon_lambda;1",
+                "name": "epsilon_mu",
+                "schema": "boolean"
+              }
+            ]
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:epsilon_rho;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:epsilon_pi;1",
+          "@type": "Object",
+          "fields": {
+            "@id": "dtmi:ex:dependentRef;1",
+            "name": "epsilon_omicron",
+            "schema": "date"
+          }
+        },
+        "contents": {
+          "@type": "Property",
+          "name": "epsilon_sigma",
+          "schema": {
+            "@type": "Object",
+            "fields": "dtmi:ex:dependentRef;1"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:epsilon_phi;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:epsilon_upsilon;1",
+          "@type": "Object",
+          "fields": {
+            "@id": "dtmi:ex:dependentRef;1",
+            "name": "epsilon_tau",
+            "schema": "dateTime"
+          }
+        },
+        "contents": {
+          "@type": "Property",
+          "name": "epsilon_chi",
+          "schema": {
+            "@type": "Object",
+            "fields": [
+              "dtmi:ex:dependentRef;1"
+            ]
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:epsilon_wum;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Property",
+          "name": "epsilon_yuzz",
+          "schema": {
+            "@type": "Object",
+            "fields": {
+              "@id": "dtmi:example:epsilon_psi;1",
+              "name": "epsilon_omega",
+              "schema": "double",
+              "@context": "dtmi:dtdl:context;2"
+            }
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:epsilon_glikk;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Property",
+          "name": "epsilon_fuddle",
+          "schema": {
+            "@context": "dtmi:undefinedExtension:context;1",
+            "@type": "Object",
+            "fields": {
+              "@id": "dtmi:example:epsilon_um;1",
+              "name": "epsilon_humpf",
+              "schema": "duration",
+              "@context": "dtmi:dtdl:context;2"
+            }
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:epsilon_snee;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Property",
+          "name": "epsilon_nuh",
+          "schema": {
+            "@type": "Object",
+            "fields": []
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:epsilon_jogg;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Property",
+          "name": "epsilon_zatz",
+          "schema": {
+            "@type": "Object",
+            "fields": [
+              {
+                "@id": "dtmi:example:epsilon_quan;1",
+                "name": "epsilon_thnad",
+                "schema": "float"
+              },
+              {
+                "@id": "dtmi:example:epsilon_spazz;1",
+                "name": "epsilon_floob",
+                "schema": "integer"
+              }
+            ]
+          }
+        }
+      }
+    ]
+  }
+]

@@ -1,0 +1,52 @@
+﻿[
+  {
+    "valid": true,
+    "desirable": true,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:fuddle_snee;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:fuddle_glikk;1",
+          "@type": "Map",
+          "mapKey": {
+            "name": "fuddle_nuh",
+            "schema": "string"
+          },
+          "mapValue": {
+            "comment": "fuddle_humpf",
+            "name": "fuddle_fuddle",
+            "schema": "long"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "desirable": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:fuddle_zatz;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:fuddle_spazz;1",
+          "@type": "Map",
+          "mapKey": {
+            "name": "fuddle_floob",
+            "schema": "string"
+          },
+          "mapValue": {
+            "dtmi:dtdl:property:comment;3": "fuddle_quan",
+            "name": "fuddle_thnad",
+            "schema": "string"
+          }
+        }
+      }
+    ]
+  }
+]

@@ -1,0 +1,38 @@
+﻿[
+  {
+    "valid": true,
+    "desirable": true,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:humpf_nuh;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Property",
+          "name": "humpf_glikk",
+          "schema": "duration",
+          "writable": true
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "desirable": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:humpf_quan;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Property",
+          "name": "humpf_snee",
+          "schema": "float",
+          "dtmi:dtdl:property:writable;2": false
+        }
+      }
+    ]
+  }
+]

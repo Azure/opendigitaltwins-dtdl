@@ -1,0 +1,43 @@
+﻿[
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:mu_theta;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": [
+            "Property",
+            "http://foo.com/bar"
+          ],
+          "name": "mu_eta",
+          "schema": "string"
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:mu_kappa;1",
+        "@type": "Interface",
+        "contents": {
+          "@context": "dtmi:undefinedExtension:context;1",
+          "@type": [
+            "Property",
+            "http://foo.com/bar"
+          ],
+          "name": "mu_iota",
+          "schema": "time"
+        }
+      }
+    ]
+  }
+]

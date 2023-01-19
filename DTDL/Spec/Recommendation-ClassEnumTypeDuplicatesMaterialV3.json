@@ -1,0 +1,42 @@
+﻿[
+  {
+    "valid": true,
+    "desirable": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:upsilon_omicron;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:upsilon_xi;1",
+          "valueSchema": "integer",
+          "@type": [
+            "Enum",
+            "Enum"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "desirable": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:upsilon_rho;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:upsilon_pi;1",
+          "valueSchema": "integer",
+          "@type": [
+            "dtmi:dtdl:class:Enum;3",
+            "dtmi:dtdl:class:Enum;3"
+          ]
+        }
+      }
+    ]
+  }
+]

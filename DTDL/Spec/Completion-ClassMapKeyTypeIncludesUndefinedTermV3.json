@@ -1,0 +1,59 @@
+﻿[
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:um_um;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:um_yuzz;1",
+          "@type": "Map",
+          "mapValue": {
+            "name": "um_wum",
+            "schema": "float"
+          },
+          "mapKey": {
+            "@type": [
+              "MapKey",
+              "Foobar"
+            ],
+            "name": "um_omega",
+            "schema": "string"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:um_nuh;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:um_fuddle;1",
+          "@type": "Map",
+          "mapValue": {
+            "name": "um_glikk",
+            "schema": "integer"
+          },
+          "mapKey": {
+            "@context": "dtmi:undefinedExtension:context;1",
+            "@type": [
+              "MapKey",
+              "Foobar"
+            ],
+            "name": "um_humpf",
+            "schema": "string"
+          }
+        }
+      }
+    ]
+  }
+]

@@ -1,0 +1,50 @@
+﻿[
+  {
+    "valid": true,
+    "desirable": true,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:omega_lambda;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:omega_kappa;1",
+          "@type": "Enum",
+          "valueSchema": "integer",
+          "enumValues": {
+            "description": [
+              "omega_theta"
+            ],
+            "enumValue": 964,
+            "name": "omega_iota"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "desirable": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:omega_omicron;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:omega_xi;1",
+          "@type": "Enum",
+          "valueSchema": "integer",
+          "enumValues": {
+            "dtmi:dtdl:property:description;2": [
+              "omega_mu"
+            ],
+            "enumValue": 965,
+            "name": "omega_nu"
+          }
+        }
+      }
+    ]
+  }
+]

@@ -1,0 +1,36 @@
+﻿[
+  {
+    "valid": true,
+    "desirable": true,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:zeta_thnad;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Relationship",
+          "minMultiplicity": 0,
+          "name": "zeta_quan"
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "desirable": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:zeta_floob;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Relationship",
+          "dtmi:dtdl:property:minMultiplicity;2": 0,
+          "name": "zeta_spazz"
+        }
+      }
+    ]
+  }
+]

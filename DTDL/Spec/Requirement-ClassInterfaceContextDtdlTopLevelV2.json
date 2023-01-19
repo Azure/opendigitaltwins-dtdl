@@ -1,0 +1,54 @@
+﻿[
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@id": "dtmi:example:nu_pi;1",
+        "@type": "Interface",
+        "@context": []
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@id": "dtmi:example:nu_rho;1",
+        "@type": "Interface",
+        "@context": "dtmi:iotcentral:context;2"
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:nu_tau;1",
+        "@type": "Interface",
+        "extends": {
+          "@id": "dtmi:example:nu_sigma;1",
+          "@type": "Interface",
+          "@context": "dtmi:iotcentral:context;2"
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "options": [],
+    "input": [
+      {
+        "@id": "dtmi:example:nu_upsilon;1",
+        "@type": "Interface",
+        "@context": [
+          "dtmi:dtdl:context;2",
+          "dtmi:iotcentral:context;2"
+        ]
+      }
+    ]
+  }
+]

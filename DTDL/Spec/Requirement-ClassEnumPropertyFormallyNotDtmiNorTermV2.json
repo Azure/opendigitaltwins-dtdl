@@ -1,0 +1,51 @@
+﻿[
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:gamma_itch;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:gamma_jogg;1",
+          "@type": "Enum",
+          "enumValues": [
+            {
+              "enumValue": 707,
+              "name": "gamma_flunn"
+            }
+          ],
+          "valueSchema": "integer",
+          "http://foo.com/bar": true
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:gamma_hi;1",
+        "@type": "Interface",
+        "schemas": {
+          "@context": "dtmi:undefinedExtension:context;1",
+          "@id": "dtmi:example:gamma_yekk;1",
+          "@type": "Enum",
+          "enumValues": [
+            {
+              "enumValue": 708,
+              "name": "gamma_vroo"
+            }
+          ],
+          "valueSchema": "integer",
+          "http://foo.com/bar": true
+        }
+      }
+    ]
+  }
+]

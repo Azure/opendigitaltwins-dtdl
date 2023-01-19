@@ -1,0 +1,26 @@
+﻿[
+  {
+    "valid": true,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:fuddle_itch;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Command",
+          "name": "fuddle_flunn",
+          "request": {
+            "@type": [
+              "CommandPayload",
+              "Foobar"
+            ],
+            "name": "fuddle_jogg",
+            "schema": "float",
+            "http://foo.com/bar": true
+          }
+        }
+      }
+    ]
+  }
+]

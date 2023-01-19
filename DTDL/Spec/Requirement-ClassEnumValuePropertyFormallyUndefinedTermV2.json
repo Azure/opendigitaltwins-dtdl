@@ -1,0 +1,47 @@
+﻿[
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:humpf_nu;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:humpf_mu;1",
+          "@type": "Enum",
+          "valueSchema": "integer",
+          "enumValues": {
+            "enumValue": 1018,
+            "name": "humpf_lambda",
+            "foobar": {}
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:humpf_pi;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:humpf_omicron;1",
+          "@type": "Enum",
+          "valueSchema": "integer",
+          "enumValues": {
+            "@context": "dtmi:undefinedExtension:context;1",
+            "enumValue": 1019,
+            "name": "humpf_xi",
+            "foobar": {}
+          }
+        }
+      }
+    ]
+  }
+]

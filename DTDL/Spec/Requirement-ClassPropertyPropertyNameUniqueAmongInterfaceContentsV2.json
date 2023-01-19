@@ -1,0 +1,76 @@
+﻿[
+  {
+    "valid": true,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:iota_sigma;1",
+        "@type": "Interface",
+        "contents": [
+          {
+            "@type": "Property",
+            "schema": "time",
+            "name": "beta_eta"
+          },
+          {
+            "@type": "Property",
+            "schema": "boolean",
+            "name": "beta_theta"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:iota_tau;1",
+        "@type": "Interface",
+        "contents": [
+          {
+            "@type": "Property",
+            "schema": "date",
+            "name": "beta_eta"
+          },
+          {
+            "@type": "Property",
+            "schema": "dateTime",
+            "name": "beta_eta"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": [
+          "dtmi:dtdl:context;2",
+          "dtmi:undefinedExtension:context;1"
+        ],
+        "@id": "dtmi:example:iota_upsilon;1",
+        "@type": "Interface",
+        "contents": [
+          {
+            "@type": "Property",
+            "schema": "double",
+            "name": "beta_eta"
+          },
+          {
+            "@type": "Property",
+            "schema": "duration",
+            "name": "beta_eta"
+          }
+        ]
+      }
+    ]
+  }
+]

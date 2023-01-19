@@ -1,0 +1,42 @@
+﻿[
+  {
+    "valid": true,
+    "desirable": true,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:pi_zeta;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:pi_delta;1",
+          "@type": "Array",
+          "description": [
+            "pi_epsilon"
+          ],
+          "elementSchema": "integer"
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "desirable": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:pi_iota;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:pi_eta;1",
+          "@type": "Array",
+          "dtmi:dtdl:property:description;2": [
+            "pi_theta"
+          ],
+          "elementSchema": "long"
+        }
+      }
+    ]
+  }
+]

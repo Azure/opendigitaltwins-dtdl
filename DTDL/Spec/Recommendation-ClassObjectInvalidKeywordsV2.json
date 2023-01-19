@@ -1,0 +1,71 @@
+﻿[
+  {
+    "valid": true,
+    "desirable": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:delta_phi;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:delta_tau;1",
+          "@type": "Object",
+          "fields": [
+            {
+              "name": "delta_upsilon",
+              "schema": "long"
+            }
+          ],
+          "@value": 626
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "desirable": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:delta_omega;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:delta_chi;1",
+          "@type": "Object",
+          "fields": [
+            {
+              "name": "delta_psi",
+              "schema": "string"
+            }
+          ],
+          "@language": "en"
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "desirable": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:delta_um;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:delta_yuzz;1",
+          "@type": "Object",
+          "fields": [
+            {
+              "name": "delta_wum",
+              "schema": "time"
+            }
+          ],
+          "@foobar": true
+        }
+      }
+    ]
+  }
+]

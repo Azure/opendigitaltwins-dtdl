@@ -1,0 +1,50 @@
+﻿[
+  {
+    "valid": true,
+    "desirable": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:pi_rho;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Command",
+          "name": "pi_pi",
+          "request": {
+            "name": "pi_omicron",
+            "schema": "string",
+            "@type": [
+              "CommandPayload",
+              "CommandPayload"
+            ]
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "desirable": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:pi_upsilon;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Command",
+          "name": "pi_tau",
+          "request": {
+            "name": "pi_sigma",
+            "schema": "time",
+            "@type": [
+              "dtmi:dtdl:class:CommandPayload;2",
+              "dtmi:dtdl:class:CommandPayload;2"
+            ]
+          }
+        }
+      }
+    ]
+  }
+]

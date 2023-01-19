@@ -1,0 +1,34 @@
+﻿[
+  {
+    "valid": true,
+    "desirable": true,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:itch_beta;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:itch_alpha;1",
+          "@type": "Object"
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "desirable": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:itch_delta;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:itch_gamma;1",
+          "@type": "dtmi:dtdl:class:Object;3"
+        }
+      }
+    ]
+  }
+]

@@ -1,0 +1,67 @@
+﻿[
+  {
+    "valid": true,
+    "options": [],
+    "input": [
+      {
+        "@context": [
+          "dtmi:dtdl:context;3"
+        ],
+        "@id": "dtmi:ex:id;1",
+        "@type": "Interface",
+        "contents": [
+          {
+            "@context": "dtmi:dtdl:extension:quantitativeTypes;1",
+            "@type": "Telemetry",
+            "name": "thing",
+            "schema": "string"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": [
+          "dtmi:dtdl:context;3"
+        ],
+        "@id": "dtmi:ex:id;1",
+        "@type": "Interface",
+        "contents": [
+          {
+            "@context": "dtmi:arbitrary:context;1",
+            "@type": "Telemetry",
+            "name": "thing",
+            "schema": "string"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": [
+          "dtmi:dtdl:context;3"
+        ],
+        "@id": "dtmi:ex:id;1",
+        "@type": "Interface",
+        "contents": [
+          {
+            "@context": "dtmi:arbitrary:context;1",
+            "@type": "Telemetry",
+            "name": "thing",
+            "schema": "string"
+          }
+        ]
+      }
+    ]
+  }
+]

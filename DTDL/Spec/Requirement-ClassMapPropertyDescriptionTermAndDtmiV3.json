@@ -1,0 +1,63 @@
+﻿[
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:gamma_theta;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:gamma_gamma;1",
+          "@type": "Map",
+          "description": [
+            "gamma_delta"
+          ],
+          "dtmi:dtdl:property:description;3": [
+            "gamma_epsilon"
+          ],
+          "mapKey": {
+            "name": "gamma_zeta",
+            "schema": "string"
+          },
+          "mapValue": {
+            "name": "gamma_eta",
+            "schema": "dateTime"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:gamma_xi;1",
+        "@type": "Interface",
+        "schemas": {
+          "@context": "dtmi:undefinedExtension:context;1",
+          "@id": "dtmi:example:gamma_iota;1",
+          "@type": "Map",
+          "description": [
+            "gamma_kappa"
+          ],
+          "dtmi:dtdl:property:description;3": [
+            "gamma_lambda"
+          ],
+          "mapKey": {
+            "name": "gamma_mu",
+            "schema": "string"
+          },
+          "mapValue": {
+            "name": "gamma_nu",
+            "schema": "double"
+          }
+        }
+      }
+    ]
+  }
+]

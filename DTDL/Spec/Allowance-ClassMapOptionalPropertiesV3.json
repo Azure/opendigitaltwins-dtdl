@@ -1,0 +1,124 @@
+﻿[
+  {
+    "valid": true,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:quan_xi;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Property",
+          "name": "quan_nu",
+          "schema": {
+            "@context": [],
+            "@type": "Map",
+            "mapKey": {
+              "name": "quan_lambda",
+              "schema": "string"
+            },
+            "mapValue": {
+              "name": "quan_mu",
+              "schema": "time"
+            }
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:quan_sigma;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Property",
+          "name": "quan_rho",
+          "schema": {
+            "@type": "Map",
+            "mapKey": {
+              "name": "quan_omicron",
+              "schema": "string"
+            },
+            "mapValue": {
+              "name": "quan_pi",
+              "schema": "boolean"
+            }
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:quan_chi;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:quan_tau;1",
+          "@type": "Map",
+          "mapKey": {
+            "name": "quan_upsilon",
+            "schema": "string"
+          },
+          "mapValue": {
+            "name": "quan_phi",
+            "schema": "date"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:quan_wum;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:quan_psi;1",
+          "@type": "Map",
+          "mapKey": {
+            "name": "quan_omega",
+            "schema": "string"
+          },
+          "mapValue": {
+            "name": "quan_yuzz",
+            "schema": "dateTime"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:quan_glikk;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:quan_um;1",
+          "@type": "Map",
+          "mapKey": {
+            "name": "quan_humpf",
+            "schema": "string"
+          },
+          "mapValue": {
+            "name": "quan_fuddle",
+            "schema": "double"
+          }
+        }
+      }
+    ]
+  }
+]

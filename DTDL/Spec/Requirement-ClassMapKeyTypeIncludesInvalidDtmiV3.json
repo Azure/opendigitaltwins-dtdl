@@ -1,0 +1,59 @@
+﻿[
+  {
+    "valid": false,
+    "options": [],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:um_lambda;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:um_iota;1",
+          "@type": "Map",
+          "mapValue": {
+            "name": "um_kappa",
+            "schema": "date"
+          },
+          "mapKey": {
+            "@type": [
+              "MapKey",
+              "dtmi:foo//bar"
+            ],
+            "name": "um_theta",
+            "schema": "string"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:um_omicron;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:um_nu;1",
+          "@type": "Map",
+          "mapValue": {
+            "name": "um_xi",
+            "schema": "dateTime"
+          },
+          "mapKey": {
+            "@context": "dtmi:undefinedExtension:context;1",
+            "@type": [
+              "MapKey",
+              "dtmi:foo//bar"
+            ],
+            "name": "um_mu",
+            "schema": "string"
+          }
+        }
+      }
+    ]
+  }
+]
