@@ -421,7 +421,7 @@ The following members are [REQUIRED](../../Spec/Requirement-ClassCommandRequired
   * [SHALL NOT](../../Spec/Completion-ClassCommandTypeIncludesUndefinedTermV3.json) include any string that does not contain ":" and is not listed in the [Reserved strings](#reserved-strings) table and is not defined by an extension referenced in the active context. If the absence of such a string cannot be conclusively verified because the model is contextually incomplete, the element is considered to be *informally co-typed*.
 * name
   * Value [MUST](../../Spec/Requirement-ClassCommandPropertyNameStringV3.json) be a [representational string](#representational-string) or an array containing exactly one representational string.
-  * String value [MUST NOT](../../Spec/Requirement-ClassCommandPropertyNameStringLengthV3.json) be more than 64 characters in length.
+  * String value [MUST NOT](../../Spec/Requirement-ClassCommandPropertyNameStringLengthV3.json) be more than 512 characters in length.
   * String value [MUST](../../Spec/Requirement-ClassCommandPropertyNamePatternV3.json) match regular expression `^[A-Za-z](?:[A-Za-z0-9_]*[A-Za-z0-9])?$`.
   * String value [MUST](../../Spec/Requirement-ClassCommandPropertyNameUniqueAmongInterfaceContentsV3.json) be unique among the included values of "name" members of all elements included or referentially included in the "contents" member of any parent [Interface](#interface) element.
   * Member name [MAY](../../Spec/Allowance-ClassCommandPropertyNameDtmiV3.json) be expressed as "dtmi:dtdl:property:name;3" instead of "name", but "name" is [RECOMMENDED](../../Spec/Recommendation-ClassCommandPropertyNameTermV3.json).
@@ -501,7 +501,7 @@ The following members are [REQUIRED](../../Spec/Requirement-ClassCommandRequestR
 
 * name
   * Value [MUST](../../Spec/Requirement-ClassCommandRequestPropertyNameStringV3.json) be a [representational string](#representational-string) or an array containing exactly one representational string.
-  * String value [MUST NOT](../../Spec/Requirement-ClassCommandRequestPropertyNameStringLengthV3.json) be more than 64 characters in length.
+  * String value [MUST NOT](../../Spec/Requirement-ClassCommandRequestPropertyNameStringLengthV3.json) be more than 512 characters in length.
   * String value [MUST](../../Spec/Requirement-ClassCommandRequestPropertyNamePatternV3.json) match regular expression `^[A-Za-z](?:[A-Za-z0-9_]*[A-Za-z0-9])?$`.
   * Member name [MAY](../../Spec/Allowance-ClassCommandRequestPropertyNameDtmiV3.json) be expressed as "dtmi:dtdl:property:name;3" instead of "name", but "name" is [RECOMMENDED](../../Spec/Recommendation-ClassCommandRequestPropertyNameTermV3.json).
   * Member name [MUST NOT](../../Spec/Requirement-ClassCommandRequestPropertyNameTermAndDtmiV3.json) be expressed as both "name" and "dtmi:dtdl:property:name;3".
@@ -580,7 +580,7 @@ The following members are [REQUIRED](../../Spec/Requirement-ClassCommandResponse
 
 * name
   * Value [MUST](../../Spec/Requirement-ClassCommandResponsePropertyNameStringV3.json) be a [representational string](#representational-string) or an array containing exactly one representational string.
-  * String value [MUST NOT](../../Spec/Requirement-ClassCommandResponsePropertyNameStringLengthV3.json) be more than 64 characters in length.
+  * String value [MUST NOT](../../Spec/Requirement-ClassCommandResponsePropertyNameStringLengthV3.json) be more than 512 characters in length.
   * String value [MUST](../../Spec/Requirement-ClassCommandResponsePropertyNamePatternV3.json) match regular expression `^[A-Za-z](?:[A-Za-z0-9_]*[A-Za-z0-9])?$`.
   * Member name [MAY](../../Spec/Allowance-ClassCommandResponsePropertyNameDtmiV3.json) be expressed as "dtmi:dtdl:property:name;3" instead of "name", but "name" is [RECOMMENDED](../../Spec/Recommendation-ClassCommandResponsePropertyNameTermV3.json).
   * Member name [MUST NOT](../../Spec/Requirement-ClassCommandResponsePropertyNameTermAndDtmiV3.json) be expressed as both "name" and "dtmi:dtdl:property:name;3".
@@ -669,7 +669,7 @@ The following members are [REQUIRED](../../Spec/Requirement-ClassComponentRequir
   * [SHALL NOT](../../Spec/Completion-ClassComponentTypeIncludesUndefinedTermV3.json) include any string that does not contain ":" and is not listed in the [Reserved strings](#reserved-strings) table and is not defined by an extension referenced in the active context. If the absence of such a string cannot be conclusively verified because the model is contextually incomplete, the element is considered to be *informally co-typed*.
 * name
   * Value [MUST](../../Spec/Requirement-ClassComponentPropertyNameStringV3.json) be a [representational string](#representational-string) or an array containing exactly one representational string.
-  * String value [MUST NOT](../../Spec/Requirement-ClassComponentPropertyNameStringLengthV3.json) be more than 64 characters in length.
+  * String value [MUST NOT](../../Spec/Requirement-ClassComponentPropertyNameStringLengthV3.json) be more than 512 characters in length.
   * String value [MUST](../../Spec/Requirement-ClassComponentPropertyNamePatternV3.json) match regular expression `^[A-Za-z](?:[A-Za-z0-9_]*[A-Za-z0-9])?$`.
   * String value [MUST](../../Spec/Requirement-ClassComponentPropertyNameUniqueAmongInterfaceContentsV3.json) be unique among the included values of "name" members of all elements included or referentially included in the "contents" member of any parent [Interface](#interface) element.
   * Member name [MAY](../../Spec/Allowance-ClassComponentPropertyNameDtmiV3.json) be expressed as "dtmi:dtdl:property:name;3" instead of "name", but "name" is [RECOMMENDED](../../Spec/Recommendation-ClassComponentPropertyNameTermV3.json).
@@ -822,7 +822,7 @@ The following members are [REQUIRED](../../Spec/Requirement-ClassEnumValueRequir
   * Member name [MUST NOT](../../Spec/Requirement-ClassEnumValuePropertyEnumValueTermAndDtmiV3.json) be expressed as both "enumValue" and "dtmi:dtdl:property:enumValue;3".
 * name
   * Value [MUST](../../Spec/Requirement-ClassEnumValuePropertyNameStringV3.json) be a [representational string](#representational-string) or an array containing exactly one representational string.
-  * String value [MUST NOT](../../Spec/Requirement-ClassEnumValuePropertyNameStringLengthV3.json) be more than 64 characters in length.
+  * String value [MUST NOT](../../Spec/Requirement-ClassEnumValuePropertyNameStringLengthV3.json) be more than 512 characters in length.
   * String value [MUST](../../Spec/Requirement-ClassEnumValuePropertyNamePatternV3.json) match regular expression `^[A-Za-z](?:[A-Za-z0-9_]*[A-Za-z0-9])?$`.
   * String value [MUST](../../Spec/Requirement-ClassEnumValuePropertyNameUniqueAmongEnumEnumValuesV3.json) be unique among the included values of "name" members of all elements included or referentially included in the "enumValues" member of any parent [Enum](#enum) element.
   * Member name [MAY](../../Spec/Allowance-ClassEnumValuePropertyNameDtmiV3.json) be expressed as "dtmi:dtdl:property:name;3" instead of "name", but "name" is [RECOMMENDED](../../Spec/Recommendation-ClassEnumValuePropertyNameTermV3.json).
@@ -895,7 +895,7 @@ The following members are [REQUIRED](../../Spec/Requirement-ClassFieldRequiredPr
 
 * name
   * Value [MUST](../../Spec/Requirement-ClassFieldPropertyNameStringV3.json) be a [representational string](#representational-string) or an array containing exactly one representational string.
-  * String value [MUST NOT](../../Spec/Requirement-ClassFieldPropertyNameStringLengthV3.json) be more than 64 characters in length.
+  * String value [MUST NOT](../../Spec/Requirement-ClassFieldPropertyNameStringLengthV3.json) be more than 512 characters in length.
   * String value [MUST](../../Spec/Requirement-ClassFieldPropertyNamePatternV3.json) match regular expression `^[A-Za-z](?:[A-Za-z0-9_]*[A-Za-z0-9])?$`.
   * String value [MUST](../../Spec/Requirement-ClassFieldPropertyNameUniqueAmongObjectFieldsV3.json) be unique among the included values of "name" members of all elements included or referentially included in the "fields" member of any parent [Object](#object) element.
   * Member name [MAY](../../Spec/Allowance-ClassFieldPropertyNameDtmiV3.json) be expressed as "dtmi:dtdl:property:name;3" instead of "name", but "name" is [RECOMMENDED](../../Spec/Recommendation-ClassFieldPropertyNameTermV3.json).
@@ -1144,7 +1144,7 @@ The following members are [REQUIRED](../../Spec/Requirement-ClassMapKeyRequiredP
 
 * name
   * Value [MUST](../../Spec/Requirement-ClassMapKeyPropertyNameStringV3.json) be a [representational string](#representational-string) or an array containing exactly one representational string.
-  * String value [MUST NOT](../../Spec/Requirement-ClassMapKeyPropertyNameStringLengthV3.json) be more than 64 characters in length.
+  * String value [MUST NOT](../../Spec/Requirement-ClassMapKeyPropertyNameStringLengthV3.json) be more than 512 characters in length.
   * String value [MUST](../../Spec/Requirement-ClassMapKeyPropertyNamePatternV3.json) match regular expression `^[A-Za-z](?:[A-Za-z0-9_]*[A-Za-z0-9])?$`.
   * Member name [MAY](../../Spec/Allowance-ClassMapKeyPropertyNameDtmiV3.json) be expressed as "dtmi:dtdl:property:name;3" instead of "name", but "name" is [RECOMMENDED](../../Spec/Recommendation-ClassMapKeyPropertyNameTermV3.json).
   * Member name [MUST NOT](../../Spec/Requirement-ClassMapKeyPropertyNameTermAndDtmiV3.json) be expressed as both "name" and "dtmi:dtdl:property:name;3".
@@ -1226,7 +1226,7 @@ The following members are [REQUIRED](../../Spec/Requirement-ClassMapValueRequire
 
 * name
   * Value [MUST](../../Spec/Requirement-ClassMapValuePropertyNameStringV3.json) be a [representational string](#representational-string) or an array containing exactly one representational string.
-  * String value [MUST NOT](../../Spec/Requirement-ClassMapValuePropertyNameStringLengthV3.json) be more than 64 characters in length.
+  * String value [MUST NOT](../../Spec/Requirement-ClassMapValuePropertyNameStringLengthV3.json) be more than 512 characters in length.
   * String value [MUST](../../Spec/Requirement-ClassMapValuePropertyNamePatternV3.json) match regular expression `^[A-Za-z](?:[A-Za-z0-9_]*[A-Za-z0-9])?$`.
   * Member name [MAY](../../Spec/Allowance-ClassMapValuePropertyNameDtmiV3.json) be expressed as "dtmi:dtdl:property:name;3" instead of "name", but "name" is [RECOMMENDED](../../Spec/Recommendation-ClassMapValuePropertyNameTermV3.json).
   * Member name [MUST NOT](../../Spec/Requirement-ClassMapValuePropertyNameTermAndDtmiV3.json) be expressed as both "name" and "dtmi:dtdl:property:name;3".
@@ -1382,7 +1382,7 @@ The following members are [REQUIRED](../../Spec/Requirement-ClassPropertyRequire
   * [SHALL NOT](../../Spec/Completion-ClassPropertyTypeIncludesUndefinedTermV3.json) include any string that does not contain ":" and is not listed in the [Reserved strings](#reserved-strings) table and is not defined by an extension referenced in the active context. If the absence of such a string cannot be conclusively verified because the model is contextually incomplete, the element is considered to be *informally co-typed*.
 * name
   * Value [MUST](../../Spec/Requirement-ClassPropertyPropertyNameStringV3.json) be a [representational string](#representational-string) or an array containing exactly one representational string.
-  * String value [MUST NOT](../../Spec/Requirement-ClassPropertyPropertyNameStringLengthV3.json) be more than 64 characters in length.
+  * String value [MUST NOT](../../Spec/Requirement-ClassPropertyPropertyNameStringLengthV3.json) be more than 512 characters in length.
   * String value [MUST](../../Spec/Requirement-ClassPropertyPropertyNamePatternV3.json) match regular expression `^[A-Za-z](?:[A-Za-z0-9_]*[A-Za-z0-9])?$`.
   * String value [MUST](../../Spec/Requirement-ClassPropertyPropertyNameUniqueAmongInterfaceContentsV3.json) be unique among the included values of "name" members of all elements included or referentially included in the "contents" member of any parent [Interface](#interface) element.
   * String value [MUST](../../Spec/Requirement-ClassPropertyPropertyNameUniqueAmongRelationshipPropertiesV3.json) be unique among the included values of "name" members of all elements included or referentially included in the "properties" member of any parent [Relationship](#relationship) element.
@@ -1463,7 +1463,7 @@ The following members are [REQUIRED](../../Spec/Requirement-ClassRelationshipReq
   * [SHALL NOT](../../Spec/Completion-ClassRelationshipTypeIncludesUndefinedTermV3.json) include any string that does not contain ":" and is not listed in the [Reserved strings](#reserved-strings) table and is not defined by an extension referenced in the active context. If the absence of such a string cannot be conclusively verified because the model is contextually incomplete, the element is considered to be *informally co-typed*.
 * name
   * Value [MUST](../../Spec/Requirement-ClassRelationshipPropertyNameStringV3.json) be a [representational string](#representational-string) or an array containing exactly one representational string.
-  * String value [MUST NOT](../../Spec/Requirement-ClassRelationshipPropertyNameStringLengthV3.json) be more than 64 characters in length.
+  * String value [MUST NOT](../../Spec/Requirement-ClassRelationshipPropertyNameStringLengthV3.json) be more than 512 characters in length.
   * String value [MUST](../../Spec/Requirement-ClassRelationshipPropertyNamePatternV3.json) match regular expression `^[A-Za-z](?:[A-Za-z0-9_]*[A-Za-z0-9])?$`.
   * String value [MUST](../../Spec/Requirement-ClassRelationshipPropertyNameUniqueAmongInterfaceContentsV3.json) be unique among the included values of "name" members of all elements included or referentially included in the "contents" member of any parent [Interface](#interface) element.
   * Member name [MAY](../../Spec/Allowance-ClassRelationshipPropertyNameDtmiV3.json) be expressed as "dtmi:dtdl:property:name;3" instead of "name", but "name" is [RECOMMENDED](../../Spec/Recommendation-ClassRelationshipPropertyNameTermV3.json).
@@ -1558,7 +1558,7 @@ The following members are [REQUIRED](../../Spec/Requirement-ClassTelemetryRequir
   * [SHALL NOT](../../Spec/Completion-ClassTelemetryTypeIncludesUndefinedTermV3.json) include any string that does not contain ":" and is not listed in the [Reserved strings](#reserved-strings) table and is not defined by an extension referenced in the active context. If the absence of such a string cannot be conclusively verified because the model is contextually incomplete, the element is considered to be *informally co-typed*.
 * name
   * Value [MUST](../../Spec/Requirement-ClassTelemetryPropertyNameStringV3.json) be a [representational string](#representational-string) or an array containing exactly one representational string.
-  * String value [MUST NOT](../../Spec/Requirement-ClassTelemetryPropertyNameStringLengthV3.json) be more than 64 characters in length.
+  * String value [MUST NOT](../../Spec/Requirement-ClassTelemetryPropertyNameStringLengthV3.json) be more than 512 characters in length.
   * String value [MUST](../../Spec/Requirement-ClassTelemetryPropertyNamePatternV3.json) match regular expression `^[A-Za-z](?:[A-Za-z0-9_]*[A-Za-z0-9])?$`.
   * String value [MUST](../../Spec/Requirement-ClassTelemetryPropertyNameUniqueAmongInterfaceContentsV3.json) be unique among the included values of "name" members of all elements included or referentially included in the "contents" member of any parent [Interface](#interface) element.
   * Member name [MAY](../../Spec/Allowance-ClassTelemetryPropertyNameDtmiV3.json) be expressed as "dtmi:dtdl:property:name;3" instead of "name", but "name" is [RECOMMENDED](../../Spec/Recommendation-ClassTelemetryPropertyNameTermV3.json).

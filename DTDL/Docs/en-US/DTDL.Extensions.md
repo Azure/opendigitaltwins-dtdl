@@ -91,8 +91,8 @@ The chart below lists the feature extensions that are currently available.
 | Extension | Description | DTDL versions |
 | --- | --- | --- |
 | [QuantitativeTypes v1](./DTDL.quantitativeTypes.v1.md) | A set of standard semantic types, unit types, and units. | [3](./DTDL.v3.md) |
-| [Historization v1](./DTDL.historization.v1.md) | Record the historical sequence of values of a Property or Telemetry and the times at which values change. | [2](./DTDL.v2.md), [3](./DTDL.v3.md) |
-| [Streaming v1](./DTDL.streaming.v1.md) | Designate a Property as having reduced durability guarantees, thereby lowering storage cost and increasing data ingestion. | [2](./DTDL.v2.md), [3](./DTDL.v3.md) |
+| [Historization v1](./DTDL.historization.v1.md) | Record the historical sequence of values of a Property or Telemetry and the times at which values change. | [3](./DTDL.v3.md) |
+| [Streaming v1](./DTDL.streaming.v1.md) | Designate a Property as having reduced durability guarantees, thereby lowering storage cost and increasing data ingestion. | [3](./DTDL.v3.md) |
 | [Annotation v1](./DTDL.annotation.v1.md) | Add custom metadata to a Property or a Telemetry. | [3](./DTDL.v3.md) |
 
 ## Service and tool support of language extensions

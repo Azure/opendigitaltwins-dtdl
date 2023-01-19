@@ -191,6 +191,9 @@ The chart below lists constraints on properties of an element that is co-typed A
 
 ## IoT Central Schemas
 
+The extension defines schema types that are usable in any version of DTDL.
+The version restrictions described above apply only to co-types of adjunct types and not to uses of schema types in DTDL models.
+
 | Schema term | Description | Schema IRI |
 | --- | --- | --- |
 | `geopoint` | Geospatial point | dtmi:iotcentral:schema:geopoint;2 |

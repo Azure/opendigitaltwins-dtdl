@@ -1048,8 +1048,6 @@ The chart below lists the language extensions that are currently available for u
 | Extension | Category | Description |
 | --- | --- | --- |
 | [Iotcentral v2](./DTDL.iotcentral.v2.md) | partner | A set of semantic types and schema types used by IoT Central. |
-| [Historization v1](./DTDL.historization.v1.md) | feature | Record the historical sequence of values of a Property or Telemetry and the times at which values change. |
-| [Streaming v1](./DTDL.streaming.v1.md) | feature | Designate a Property as having reduced durability guarantees, thereby lowering storage cost and increasing data ingestion. |
 
 ## Changes from Version 1
 

@@ -212,7 +212,7 @@ The chart below lists the properties that Telemetry may have.
 | `comment` | optional | *string* | max 512 characters | A comment for model authors. |
 | `description` | optional | localizable *string* | max 512 characters | A localizable description for display. |
 | `displayName` | optional | localizable *string* | max 64 characters | A localizable name for display. |
-| `name` | required | *string* | max 64 characters; contains only alphanumerics and underscore, starting with a letter, ending with alphanumeric; must be unique for all contents in Interface | The programming name of the element. |
+| `name` | required | *string* | max 512 characters; contains only alphanumerics and underscore, starting with a letter, ending with alphanumeric; must be unique for all contents in Interface | The programming name of the element. |
 | `schema` | required | [Schema](#schema) |  | The data type of the Telemetry, which is an instance of Schema. |
 
 ### Telemetry examples
@@ -251,7 +251,7 @@ The chart below lists the properties that a DTDL Property may have.
 | `comment` | optional | *string* | max 512 characters | A comment for model authors. |
 | `description` | optional | localizable *string* | max 512 characters | A localizable description for display. |
 | `displayName` | optional | localizable *string* | max 64 characters | A localizable name for display. |
-| `name` | required | *string* | max 64 characters; contains only alphanumerics and underscore, starting with a letter, ending with alphanumeric; must be unique for all contents in Interface; must be unique for all properties in Relationship | The programming name of the element. |
+| `name` | required | *string* | max 512 characters; contains only alphanumerics and underscore, starting with a letter, ending with alphanumeric; must be unique for all contents in Interface; must be unique for all properties in Relationship | The programming name of the element. |
 | `schema` | required | [Schema](#schema) |  | The data type of the Property, which is an instance of Schema. |
 | `writable` | optional | *boolean* |  | A boolean value that indicates whether the Property is writable or not. The default value is false, indicating the Property is read-only. |
 
@@ -281,7 +281,7 @@ The chart below lists the properties that a DTDL Command may have.
 | `comment` | optional | *string* | max 512 characters | A comment for model authors. |
 | `description` | optional | localizable *string* | max 512 characters | A localizable description for display. |
 | `displayName` | optional | localizable *string* | max 64 characters | A localizable name for display. |
-| `name` | required | *string* | max 64 characters; contains only alphanumerics and underscore, starting with a letter, ending with alphanumeric; must be unique for all contents in Interface | The programming name of the element. |
+| `name` | required | *string* | max 512 characters; contains only alphanumerics and underscore, starting with a letter, ending with alphanumeric; must be unique for all contents in Interface | The programming name of the element. |
 | `request` | optional | [CommandRequest](#commandrequest) |  | A description of the input to the Command. |
 | `response` | optional | [CommandResponse](#commandresponse) |  | A description of the output of the Command. |
 
@@ -317,7 +317,7 @@ The chart below lists the properties that CommandRequest may have.
 | `comment` | optional | *string* | max 512 characters | A comment for model authors. |
 | `description` | optional | localizable *string* | max 512 characters | A localizable description for display. |
 | `displayName` | optional | localizable *string* | max 64 characters | A localizable name for display. |
-| `name` | required | *string* | max 64 characters; contains only alphanumerics and underscore, starting with a letter, ending with alphanumeric | The programming name of the element. |
+| `name` | required | *string* | max 512 characters; contains only alphanumerics and underscore, starting with a letter, ending with alphanumeric | The programming name of the element. |
 | `schema` | required | [Schema](#schema) |  | The data type of the element, which is an instance of Schema. |
 
 ### CommandResponse
@@ -333,7 +333,7 @@ The chart below lists the properties that CommandResponse may have.
 | `comment` | optional | *string* | max 512 characters | A comment for model authors. |
 | `description` | optional | localizable *string* | max 512 characters | A localizable description for display. |
 | `displayName` | optional | localizable *string* | max 64 characters | A localizable name for display. |
-| `name` | required | *string* | max 64 characters; contains only alphanumerics and underscore, starting with a letter, ending with alphanumeric | The programming name of the element. |
+| `name` | required | *string* | max 512 characters; contains only alphanumerics and underscore, starting with a letter, ending with alphanumeric | The programming name of the element. |
 | `schema` | required | [Schema](#schema) |  | The data type of the element, which is an instance of Schema. |
 
 ## Relationship
@@ -356,7 +356,7 @@ A Relationship has "by reference" semantics, so its validity does not depend on 
 | `displayName` | optional | localizable *string* | max 64 characters | A localizable name for display. |
 | `maxMultiplicity` | optional | *integer* | must be >= 1 | The maximum multiplicity for the target of the Relationship; defaults to the maximum allowable value. |
 | `minMultiplicity` | optional | *integer* | must be = 0 | The minimum multiplicity for the target of the Relationship; defaults to the minimum allowable value. |
-| `name` | required | *string* | max 64 characters; contains only alphanumerics and underscore, starting with a letter, ending with alphanumeric; must be unique for all contents in Interface | The programming name of the element. |
+| `name` | required | *string* | max 512 characters; contains only alphanumerics and underscore, starting with a letter, ending with alphanumeric; must be unique for all contents in Interface | The programming name of the element. |
 | `properties` | optional | set of [Properties](#property) |  | A set of Properties that define Relationship-specific state. |
 | `target` | optional | [DTMI](#digital-twin-model-identifier) | max 2048 characters; must follow user DTMI syntax | An Interface identifier. If no target is specified, each instance target is permitted to be any Interface. |
 | `writable` | optional | *boolean* |  | A boolean value that indicates whether the Relationship is writable or not. The default value is false, indicating the Relationship is read-only. |
@@ -422,7 +422,7 @@ The chart below lists the properties that a Component may have.
 | `comment` | optional | *string* | max 512 characters | A comment for model authors. |
 | `description` | optional | localizable *string* | max 512 characters | A localizable description for display. |
 | `displayName` | optional | localizable *string* | max 64 characters | A localizable name for display. |
-| `name` | required | *string* | max 64 characters; contains only alphanumerics and underscore, starting with a letter, ending with alphanumeric; must be unique for all contents in Interface | The programming name of the element. |
+| `name` | required | *string* | max 512 characters; contains only alphanumerics and underscore, starting with a letter, ending with alphanumeric; must be unique for all contents in Interface | The programming name of the element. |
 | `schema` | required | [Interface](#interface) | may not contain nested Component in hierarchy | The data type of the Component, which is an instance of Interface. |
 
 ### Component examples
@@ -566,7 +566,7 @@ The chart below lists the properties that an EnumValue may have.
 | `description` | optional | localizable *string* | max 512 characters | A localizable description for display. |
 | `displayName` | optional | localizable *string* | max 64 characters | A localizable name for display. |
 | `enumValue` | required | literal | must be unique for all enumValues in Enum | The on-the-wire value that maps to the EnumValue, which may be either an integer or a string. |
-| `name` | required | *string* | max 64 characters; contains only alphanumerics and underscore, starting with a letter, ending with alphanumeric; must be unique for all enumValues in Enum | The programming name of the element. |
+| `name` | required | *string* | max 512 characters; contains only alphanumerics and underscore, starting with a letter, ending with alphanumeric; must be unique for all enumValues in Enum | The programming name of the element. |
 
 ## Map
 
@@ -631,7 +631,7 @@ The chart below lists the properties that a MapKey may have.
 | `comment` | optional | *string* | max 512 characters | A comment for model authors. |
 | `description` | optional | localizable *string* | max 512 characters | A localizable description for display. |
 | `displayName` | optional | localizable *string* | max 64 characters | A localizable name for display. |
-| `name` | required | *string* | max 64 characters; contains only alphanumerics and underscore, starting with a letter, ending with alphanumeric | The programming name of the element. |
+| `name` | required | *string* | max 512 characters; contains only alphanumerics and underscore, starting with a letter, ending with alphanumeric | The programming name of the element. |
 | `schema` | required | [String](#string) | must be *string* | The data type of the Map's key, which must be string. |
 
 ### MapValue
@@ -647,7 +647,7 @@ The chart below lists the properties that a MapValue may have.
 | `comment` | optional | *string* | max 512 characters | A comment for model authors. |
 | `description` | optional | localizable *string* | max 512 characters | A localizable description for display. |
 | `displayName` | optional | localizable *string* | max 64 characters | A localizable name for display. |
-| `name` | required | *string* | max 64 characters; contains only alphanumerics and underscore, starting with a letter, ending with alphanumeric | The programming name of the element. |
+| `name` | required | *string* | max 512 characters; contains only alphanumerics and underscore, starting with a letter, ending with alphanumeric | The programming name of the element. |
 | `schema` | required | [Schema](#schema) | max depth of 5 levels when MapValue is the value of Map `mapValue` | The data type of the element, which is an instance of Schema. |
 
 ## Object
@@ -715,7 +715,7 @@ The chart below lists the properties that a Field may have.
 | `comment` | optional | *string* | max 512 characters | A comment for model authors. |
 | `description` | optional | localizable *string* | max 512 characters | A localizable description for display. |
 | `displayName` | optional | localizable *string* | max 64 characters | A localizable name for display. |
-| `name` | required | *string* | max 64 characters; contains only alphanumerics and underscore, starting with a letter, ending with alphanumeric; must be unique for all fields in Object | The programming name of the element. |
+| `name` | required | *string* | max 512 characters; contains only alphanumerics and underscore, starting with a letter, ending with alphanumeric; must be unique for all fields in Object | The programming name of the element. |
 | `schema` | required | [Schema](#schema) | max depth of 5 levels when Field is the value of Object `fields` | The data type of the element, which is an instance of Schema. |
 
 ## Geospatial Schemas

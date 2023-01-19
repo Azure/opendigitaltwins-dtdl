@@ -2,7 +2,7 @@
 
 **Version 1**
 
-**Usable in DTDL version 2 or 3**
+**Usable in DTDL version 3**
 
 Streaming is a DTDL language feature for indicating that a Property may be stored with reduced durability guarantees, thereby lowering storage cost and increasing data ingestion.
 If a service supports the Streaming extension, it recognizes and understands the Streaming adjunct type if the Streaming context is specified.
@@ -13,7 +13,7 @@ The context specifier for version 1 of the Streaming extension is "dtmi:dtdl:ext
 
 ## Streaming adjunct type
 
-The Streaming adjunct type can co-type a Property in DTDL version 2 or 3.
+The Streaming adjunct type can co-type a Property in DTDL version 3.
 There are no properties associated with the Streaming adjunct type; however, the value of the `writable` property must not be `true`.
 
 ## Streaming examples
@@ -25,7 +25,7 @@ The Property "serialNumber" is never updated after the initial value is set, so 
 ```json
 {
   "@context": [
-      "dtmi:dtdl:context;2",
+      "dtmi:dtdl:context;3",
       "dtmi:dtdl:extension:streaming;1"
   ],
    "@id":"dtmi:com:example:GasTurbine;1",
@@ -52,5 +52,5 @@ The chart below lists the versions of the Streaming extension that are currently
 
 | Extension | Context | DTDL versions |
 | --- | --- | --- |
-| [Streaming v1](./DTDL.streaming.v1.md) | dtmi:dtdl:extension:streaming;1 | [2](./DTDL.v2.md), [3](./DTDL.v3.md) |
+| [Streaming v1](./DTDL.streaming.v1.md) | dtmi:dtdl:extension:streaming;1 | [3](./DTDL.v3.md) |
 

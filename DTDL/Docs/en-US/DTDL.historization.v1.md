@@ -2,7 +2,7 @@
 
 **Version 1**
 
-**Usable in DTDL version 2 or 3**
+**Usable in DTDL version 3**
 
 Historization is a DTDL language feature for indicating that the historical sequence of values of a Property or a Telemetry should be recorded, as should the times at which the Property or Telemetry value changes.
 If a service supports the Historization extension, it recognizes and understands the Historized adjunct type if the Historization context is specified.
@@ -13,7 +13,7 @@ The context specifier for version 1 of the Historization extension is "dtmi:dtdl
 
 ## Historized adjunct type
 
-The Historized adjunct type can co-type a Property or a Telemetry in DTDL version 2 or 3.
+The Historized adjunct type can co-type a Property or a Telemetry in DTDL version 3.
 There are no properties associated with the Historized adjunct type.
 
 When a Property or a Telemetry in a model is co-typed Historized, the service will persist the Historized Property or Telemetry values and make them available for querying and analytics.
@@ -27,7 +27,7 @@ The following example shows an Interface with a single `contents` element named 
 ```json
 {
   "@context": [
-      "dtmi:dtdl:context;2",
+      "dtmi:dtdl:context;3",
       "dtmi:dtdl:extension:historization;1"
   ],
   "@id": "dtmi:com:example:Thermostat;1",
@@ -48,7 +48,8 @@ Applying the Historized adjunct type does not preclude the application of other 
 ```json
 {
   "@context": [
-      "dtmi:dtdl:context;2",
+      "dtmi:dtdl:context;3",
+      "dtmi:dtdl:extension:quantitativeTypes;1",
       "dtmi:dtdl:extension:historization;1"
   ],
   "@id": "dtmi:com:example:Thermostat;1",
@@ -71,5 +72,5 @@ The chart below lists the versions of the Historization extension that are curre
 
 | Extension | Context | DTDL versions |
 | --- | --- | --- |
-| [Historization v1](./DTDL.historization.v1.md) | dtmi:dtdl:extension:historization;1 | [2](./DTDL.v2.md), [3](./DTDL.v3.md) |
+| [Historization v1](./DTDL.historization.v1.md) | dtmi:dtdl:extension:historization;1 | [3](./DTDL.v3.md) |
 

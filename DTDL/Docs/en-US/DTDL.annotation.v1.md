@@ -84,8 +84,9 @@ If a particular Telemetry message does not include an annotation value, the valu
 If a particular message includes only an annotation but not an annotated value, the payload is valid but semantically meaningless.
 Such annotations do not apply to the next value, to the previous value, to the stream of values up until this point, or to any other data values.
 
-When a Property annotates a Telemetry, the annotation applies to the entire stream of Telemetry values for the duration of the annotating Property value.
-When a Property annotates another Property, the annotation applies to the values with which it is concurrent.
+When a Property annotates a Telemetry, the annotation applies to the entire stream of Telemetry values:
+When the annotating Property value is updated, the new value applies to all Telemetry values sent after the update occurs and before the Property value is updated again.
+When a Property annotates another Property, if both Properties are read concurrently, the value of the annotating Property applies to the value of the annotated Property.
 
 As the following example shows, the Property or Telemetry that is annotated need not be defined directly in the same Interface as the ValueAnnotation.
 When an Interface `extends` another Interface, the former can annotate a `contents` element that is defined in the latter, because the `extends` property imports the Property or Telemetry into the former's `contents`.
