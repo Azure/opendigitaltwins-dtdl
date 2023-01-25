@@ -33,8 +33,10 @@ The element named "currentTempAccuracy" has type Telemetry and co-type ValueAnno
 The adjunct type ValueAnnotation indicates that the Telemetry provides metadata, and the value of property `annotates` indicates that the metadata applies to the element named "currentTemp".
 Because this is a Telemetry, its values can be streamed synchronously with the values of the "currentTemp" Telemetry that it is annotating.
 
-The element named "currentTempNote" has type Property and co-type ValueAnnotation; this element provides a metadata string that describes the stream of temperature readings.
+The element named "currentTempLastCalibrated" has type Property and co-type ValueAnnotation; this element provides a metadata date value that indicates the date on which the temperature sensor was most recently calibrated.
 Because this is a Property, its value is not transmitted with every temperature reading, so this is appropriate for annotations that change infrequently.
+Moreover, because Telemetry messages and Property updates are not synchronized, it is generally not possible to precisely correlate a change in Property value with a particular point in the time series of Telemetry values.
+So, for the present example, "currentTemp" Telemetry values reported on the date indicated by the "currentTempLastCalibrated" Property might or might not reflect the most recent calibration.
 
 ```json
 {
@@ -60,9 +62,9 @@ Because this is a Property, its value is not transmitted with every temperature 
     },
     {
       "@type": [ "Property", "ValueAnnotation" ],
-      "name": "currentTempNote",
+      "name": "currentTempLastCalibrated",
       "annotates": "currentTemp",
-      "schema": "string",
+      "schema": "date",
       "writable": true
     }
   ]
@@ -85,7 +87,7 @@ If a particular message includes only an annotation but not an annotated value, 
 Such annotations do not apply to the next value, to the previous value, to the stream of values up until this point, or to any other data values.
 
 When a Property annotates a Telemetry, the annotation applies to the entire stream of Telemetry values:
-When the annotating Property value is updated, the new value applies to all Telemetry values sent after the update occurs and before the Property value is updated again.
+When the annotating Property value is updated, the new value applies to all Telemetry values sent after the update occurs and before the Property value is updated again; however, as mentioned above, the temporal correlation between Property updates and Telemetry values is quite loose, so care should be exercised in drawing inferences around the time a Property is changed.
 When a Property annotates another Property, if both Properties are read concurrently, the value of the annotating Property applies to the value of the annotated Property.
 
 As the following example shows, the Property or Telemetry that is annotated need not be defined directly in the same Interface as the ValueAnnotation.
@@ -127,9 +129,9 @@ When an Interface `extends` another Interface, the former can annotate a `conten
       },
       {
         "@type": [ "Property", "ValueAnnotation" ],
-        "name": "currentTempNote",
+        "name": "currentTempLastCalibrated",
         "annotates": "currentTemp",
-        "schema": "string",
+        "schema": "date",
         "writable": true
       }
     ]
