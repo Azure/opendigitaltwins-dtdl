@@ -1,6 +1,6 @@
-{
-  "@vocab": "http://azure.com/DigitalTwin/MetaModel/undefinedTerm/",
-  "dtmm": "http://azure.com/DigitalTwin/MetaModel/",
+﻿{
+  "@vocab": "http://azure.com/DigitalTwins/MetaModel/undefinedTerm/",
+  "dtmm": "http://azure.com/DigitalTwins/MetaModel/",
   "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
   "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
   "xsd": "http://www.w3.org/2001/XMLSchema#",
@@ -18,7 +18,6 @@
     "@type": "@vocab",
     "@container": "@list"
   },
-  "sh:hasValue": { "@type": "@vocab" },
   "sh:in": {
     "@type": "@vocab",
     "@container": "@list"
@@ -37,20 +36,39 @@
     "@container": "@list"
   },
   "dtmm:aka": { "@type": "@vocab" },
+  "dtmm:asCotype": { "@type": "@vocab" },
+  "dtmm:asProperty": { "@type": "@vocab" },
+  "dtmm:childProperties": {
+    "@type": "@vocab",
+    "@container": "@list"
+  },
   "dtmm:datatypeProperty": { "@type": "@vocab" },
+  "dtmm:description": {
+    "@container": "@language",
+    "@language": "en-US"
+  },
   "dtmm:dictionaryKey": { "@type": "@vocab" },
-  "dtmm:doppelganger": { "@type": "@vocab" },
   "dtmm:dtmiSegment": { "@type": "@vocab" },
   "dtmm:excludeType": { "@type": "@vocab" },
+  "dtmm:hasValue": { "@type": "@vocab" },
   "dtmm:importProperties": {
     "@type": "@vocab",
     "@container": "@list"
+  },
+  "dtmm:instanceProperty": {
+    "@type": "@vocab",
+    "@container": "@list"
+  },
+  "dtmm:jsonType": { "@type": "@vocab" },
+  "dtmm:patternDesc": {
+    "@container": "@language",
+    "@language": "en-US"
   },
   "dtmm:properties": {
     "@type": "@vocab",
     "@container": "@list"
   },
-  "dtmm:replaceWith": { "@type": "@vocab" },
+  "dtmm:reservedPrefix": { "@container": "@list" },
   "dtmm:uniqueProperties": {
     "@type": "@vocab",
     "@container": "@list"
@@ -228,6 +246,7 @@
     "@id": "dtmi:dtdl:property:fields;2",
     "@type": "@vocab"
   },
+  "languageMajorVersion": { "@id": "dtmi:dtdl:property:languageMajorVersion;2" },
   "mapKey": {
     "@id": "dtmi:dtdl:property:mapKey;2",
     "@type": "@vocab"
