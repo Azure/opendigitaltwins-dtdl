@@ -1,15 +1,62 @@
 # Digital Twins Definition Language
 
-The Digital Twins Definition Language (DTDL) is a language for describing models and interfaces for IoT digital twins. Digital twins are models of entities in the physical environment such as shipping containers, rooms, factory floors, or logical entities that participate in IoT solutions. Using DTDL to describe a digital twin's capabilities enables the IoT platform and IoT solutions to leverage the semantics of the entity.
+The Digital Twins Definition Language (DTDL) is a language for describing models and interfaces for IoT digital twins. Digital twins are models of entities in the physical environment such as shipping containers, rooms, factory floors, or logical entities that participate in IoT solutions. Using DTDL to describe a digital twin's capabilities enables the IoT solutions to leverage the semantics of the entity.
 
-DTDL is open to the community and Microsoft welcomes collaboration with customers, partners, and the industry. It is based on open W3C standards such as JSON-LD and RDF which allow for easier adoption across services and tooling.
+DTDL is open to the community and Microsoft welcomes collaboration with customers, partners, and the industry. It is based on open W3C standards such as [JSON-LD](https://json-ld.org/) and [RDF](https://www.w3.org/RDF/) which allow for easier adoption across services and tooling.
 
->Note: To converge the use of DTDL across Azure IoT Hub, Azure IoT Central, Azure Digital Twins, and other Azure services, DTDL is going to a set of breaking changes from v1 to v2.
+## DTDL Versions
 
-[Azure Digital Twins](https://azure.microsoft.com/services/digital-twins/) and [IoT Plug and Play Public preview refresh](https://docs.microsoft.com/azure/iot-pnp/overview-iot-plug-and-play-preview-updates) use [DTDL version 2](DTDL/v2/dtdlv2.md).
+DTDL has evolved over time, resulting in the next versions:
 
-## IoT Plug and Play
+|Version|Docs|Notes|
+|---|---|---|
+|v1-preview|[dtdlv1.md](./DTDL/v1-preview/dtdlv1.md)|Out of support|
+|v2|[DTDL.v2.md](./DTDL/v2/DTDL.v2.md)|Supported in ADT, IoTCentral and IoT Plug and Play|
+|v3-preview|[DTDL.v3.md](./DTDL/v3/DTDL.v3.md)|Supported in ADT as Preview|
 
-IoT Plug and Play simplifies IoT by allowing solution developers to integrate devices without writing any embedded code. At the center of IoT Plug and Play is a schema that describes device capabilities. The schema is structured as a set of interfaces comprised of properties (attributes like firmware version, or settings like fan speed), telemetry (sensor readings such as temperature, or events such as alerts), and commands the device can receive (such as reboot). Interfaces can be reused across devices to facilitate collaboration and speed development.
 
-IoT Plug and Play is open to the community and Microsoft welcomes collaboration with customers, partners, and the industry. There is no additional cost for using IoT Plug and Play and DTDL; standard rates for IoT Hub, IoT Central, and other Azure services will remain the same.
+## A Simple Example
+
+The next interface describes a thermostat reporting temperature as degreeCelsius:
+
+```json
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:com:example:Thermostat;1",
+  "@type": "Interface",
+  "displayName": "Thermostat",
+  "description": "Reports current temperature.",
+  "contents": [
+    {
+      "@type": [
+        "Telemetry",
+        "Temperature"
+      ],
+      "name": "temperature",
+      "displayName" : "Temperature",
+      "description" : "Temperature in degrees Celsius.",
+      "schema": "double",
+      "unit": "degreeCelsius"
+    }
+  ]
+}
+```
+
+## Services using DTDL
+
+- [Azure Digital Twins](https://azure.microsoft.com/products/digital-twins/)
+- [Azure IoT Plug and Play](https://aka.ms/iotpnp) 
+- [Azure Device Models Repository](https://aka.ms/dmr) 
+- [Azure IoT Central](https://azure.microsoft.com/products/iot-central)
+
+## Developer Tools for ADT
+
+- [DTDL Parser for .NET](https://aka.ms/dtdl-parser)
+- [VSCode DTDL extension](https://aka.ms/dtdl-vscode)
+- [Azure IoT Explorer](https://learn.microsoft.com/azure/iot-fundamentals/howto-use-iot-explorer)
+
+## Modeling Guides
+
+- [IoT Plug and Play modeling guide](https://learn.microsoft.com/azure/iot-develop/concepts-modeling-guide)
+- [ADT modeling guide](https://learn.microsoft.com/azure/digital-twins/concepts-models)
+- [DTDL ontologies](https://learn.microsoft.com/azure/digital-twins/concepts-ontologies)
