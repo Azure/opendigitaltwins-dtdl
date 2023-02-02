@@ -27,7 +27,7 @@ For example, a Property can be co-typed with the adjunct type Historized defined
 }
 ```
 
-Each language extension is identifed by a JSON-LD context specifier, which is a [DTMI](../../../DTMI/README.md).
+Each language extension is identifed by a JSON-LD context specifier, which is a [DTMI](../../DTMI/README.md).
 To use a language extension, a model's `@context` property includes the extension's context specifier in addition to the DTDL context specifier, as illustrated in the example above.
 The order of context specifiers is important; different versions of DTDL may have different sets of extensions available, so it is necessary to first declare the DTDL version with a DTDL context specifier before declaring any language extensions via extension context specifiers.
 
@@ -82,7 +82,7 @@ The chart below lists the partner extensions that are currently available.
 
 | Extension | Description | DTDL versions |
 | --- | --- | --- |
-| [Iotcentral v2](./DTDL.iotcentral.v2.md) | A set of semantic types and schema types used by IoT Central. | [2](./DTDL.v2.md) |
+| [Iotcentral v2](../v2/DTDL.iotcentral.v2.md) | A set of semantic types and schema types used by IoT Central. | [2](../v2/DTDL.v2.md) |
 
 ## Available feature extensions
 

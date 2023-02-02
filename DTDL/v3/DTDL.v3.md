@@ -892,7 +892,7 @@ Identifiers with the following prefixes are reserved by the DTDL language:
 * `dtmi:dtdl:`
 * `dtmi:standard:`
 
-For a full definition of DTMI, please see the [DTMI spec](../../../DTMI/README.md).
+For a full definition of DTMI, please see the [DTMI spec](../../DTMI/README.md).
 
 ### Internationalized Resource Identifier
 

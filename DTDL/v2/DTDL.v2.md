@@ -959,7 +959,7 @@ Identifiers with the following prefixes are reserved by the DTDL language:
 * `dtmi:dtdl:`
 * `dtmi:standard:`
 
-For a full definition of DTMI, please see the [DTMI spec](../../../DTMI/README.md).
+For a full definition of DTMI, please see the [DTMI spec](../../DTMI/README.md).
 
 ### Internationalized Resource Identifier
 
@@ -1042,7 +1042,7 @@ By contrast, if the undefined co-type "Commercial" were not present in the above
 
 ## Language extensions
 
-DTDL also supports a selection of [language extensions](./DTDL.Extensions.md), which offer additional functionality beyond what is provided by the core DTDL language.
+DTDL also supports a selection of [language extensions](../v3/DTDL.Extensions.md), which offer additional functionality beyond what is provided by the core DTDL language.
 The chart below lists the language extensions that are currently available for use with DTDL version 2.
 
 | Extension | Category | Description |
