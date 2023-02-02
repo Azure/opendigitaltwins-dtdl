@@ -87,13 +87,13 @@ Such restrictions may apply to all identifiers used in the artifact or standard,
 The following regular expression can be used to assess whether a string satisfies the DTMI syntax for user identifiers (modulo the 2048-character length restriction, which must be checked separately):
 
 ```regex
-^dtmi:[A-Za-z](?:[A-Za-z0-9_]*[A-Za-z0-9])?(?::[A-Za-z](?:[A-Za-z0-9_]*[A-Za-z0-9])?)*(?:;1-9][0-9]{0,8}(?:\\.[1-9][0-9]{0,5})?)?$
+^dtmi:[A-Za-z](?:[A-Za-z0-9_]*[A-Za-z0-9])?(?::[A-Za-z](?:[A-Za-z0-9_]*[A-Za-z0-9])?)*(?:;[1-9][0-9]{0,8}(?:\.[1-9][0-9]{0,5})?)?$
 ```
 
 The following regular expression can be used to assess whether a string satisfies the full DTMI syntax, including both user and system identifiers (modulo the 4096-character length restriction, which must be checked separately):
 
 ```regex
-^dtmi:(?:_+[A-Za-z0-9]|[A-Za-z])(?:[A-Za-z0-9_]*[A-Za-z0-9])?(?::(?:_+[A-Za-z0-9]|[A-Za-z])(?:[A-Za-z0-9_]*[A-Za-z0-9])?)*(?:;1-9][0-9]{0,8}(?:\\.[1-9][0-9]{0,5})?)?$
+^dtmi:(?:_+[A-Za-z0-9]|[A-Za-z])(?:[A-Za-z0-9_]*[A-Za-z0-9])?(?::(?:_+[A-Za-z0-9]|[A-Za-z])(?:[A-Za-z0-9_]*[A-Za-z0-9])?)*(?:;[1-9][0-9]{0,8}(?:\.[1-9][0-9]{0,5})?)?$
 ```
 
 ## Validation code in C
