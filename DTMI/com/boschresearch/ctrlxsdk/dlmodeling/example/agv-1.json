@@ -1,0 +1,28 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:com:boschresearch:ctrlxsdk:dlmodeling:example:agv;1",
+  "@type": "Interface",
+  "displayName": "agv",
+  "contents": [
+    {
+      "@type": "Component",
+      "name": "agv_drive_controller",
+      "schema": "dtmi:com:boschresearch:ctrlxsdk:dlmodeling:example:agv_drive_controller;1"    
+    },
+    {
+      "@type": "Component", 
+      "name": "front_drive", 
+      "schema": "dtmi:com:boschresearch:ctrlxsdk:dlmodeling:example:agv_drives;1"
+    },
+    {
+      "@type": "Component", 
+      "name": "rear_drive", 
+      "schema": "dtmi:com:boschresearch:ctrlxsdk:dlmodeling:example:agv_drives;1"
+    },
+    {
+      "@type": "Component", 
+      "name": "laser_scanner", 
+      "schema": "dtmi:com:boschresearch:ctrlxsdk:dlmodeling:example:laser_scanner_2d;1"
+    }
+  ]
+}

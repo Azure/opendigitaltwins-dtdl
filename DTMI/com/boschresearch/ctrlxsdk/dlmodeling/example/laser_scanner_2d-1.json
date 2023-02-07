@@ -1,0 +1,28 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:com:boschresearch:ctrlxsdk:dlmodeling:example:laser_scanner_2d;1",
+  "@type": "Interface",
+  "displayName": "laser_scanner_2d",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "raw_data",
+      "schema": {
+        "@type": "Array", 
+        "elementSchema": "float"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "switch_on",
+      "request": {
+        "name": "on",
+        "schema": "boolean"
+      }, 
+      "response": {
+        "name": "error_code", 
+        "schema": "integer"
+      }
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:com:boschresearch:ctrlxsdk:dlmodeling:example:agv_drive_controller;1",
+  "@type": "Interface",
+  "displayName": "agv_drive_controller",
+  "contents": [
+    {
+      "@type": "Property",
+      "writable": false,
+      "name": "current_location", 
+      "schema": {
+        "@type": "Object", 
+        "fields": [
+          {
+            "name": "x", 
+            "schema": "float"
+          },
+          {
+            "name": "y", 
+            "schema": "float"
+          },
+          {
+            "name": "zs", 
+            "schema": "float"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "drive_to",
+      "request": {
+        "name": "target",
+        "schema": {
+          "@type": "Object", 
+          "fields": [
+            {
+              "name": "x", 
+              "schema": "float"
+            },
+            {
+              "name": "y", 
+              "schema": "float"
+            },
+            {
+              "name": "zs", 
+              "schema": "float"
+            }
+          ]
+        }
+      }, 
+      "response": {
+        "name": "error_code", 
+        "schema": "integer"
+      }
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:com:boschresearch:ctrlxsdk:dlmodeling:device_information;1",
+  "@type": "Interface",
+  "displayName": "device_information",
+  "contents": [
+    {
+      "@type": "Property",
+      "writable": false,
+      "name": "device_info",
+      "schema": {
+        "@type": "Object", 
+        "fields": [
+          {
+            "name": "manufacturer", 
+            "schema": "string"
+          }, 
+          {
+            "name": "description", 
+            "schema": "string"
+          }, 
+          {
+            "name": "identification", 
+            "schema": "string"
+          }, 
+          {
+            "name": "date_of_production", 
+            "schema": {
+              "@type": "Object", 
+              "fields": [
+                {
+                  "name": "day_of_month", 
+                  "schema": "integer"
+                }, 
+                {
+                  "name": "month", 
+                  "schema": "integer"
+                }, 
+                {
+                  "name": "year", 
+                  "schema": "integer"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:com:boschresearch:ctrlxsdk:dlmodeling:example:motor;1",
+  "@type": "Interface",
+  "displayName": "motor",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "current_rpm",
+      "schema": "float"
+    },
+    {
+      "@type": "Command",
+      "name": "set_rpm",
+      "request": {
+        "name": "rpm",
+        "schema": "float"
+      }
+    }
+  ]
+}
