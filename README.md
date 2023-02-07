@@ -49,7 +49,7 @@ The next interface describes a thermostat reporting temperature as degreeCelsius
 - [Azure Device Models Repository](https://aka.ms/dmr) 
 - [Azure IoT Central](https://azure.microsoft.com/products/iot-central)
 
-## :hammer_and_wrench: Developer Tools for ADT
+## :hammer_and_wrench: Developer Tools for DTDL
 
 - [DTDL Parser for .NET](https://aka.ms/dtdl-parser)
 - [VSCode DTDL extension](https://aka.ms/dtdl-vscode)
