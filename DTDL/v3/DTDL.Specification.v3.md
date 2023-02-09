@@ -377,7 +377,7 @@ The following members are [OPTIONAL](spec/Allowance-ClassArrayOptionalProperties
   * Member name [MUST NOT](spec/Requirement-ClassArrayPropertyDescriptionTermAndDtmiV3.json) be expressed as both "description" and "dtmi:dtdl:property:description;3".
 * displayName
   * Value [MUST](spec/Requirement-ClassArrayPropertyDisplayNameLangStringV3.json) be a [localizable string](#localizable-string).
-  * Each string value [MUST NOT](spec/Requirement-ClassArrayPropertyDisplayNameStringLengthV3.json) be more than 64 characters in length.
+  * Each string value [MUST NOT](spec/Requirement-ClassArrayPropertyDisplayNameStringLengthV3.json) be more than 512 characters in length.
   * Member name [MAY](spec/Allowance-ClassArrayPropertyDisplayNameDtmiV3.json) be expressed as "dtmi:dtdl:property:displayName;3" instead of "displayName", but "displayName" is [RECOMMENDED](spec/Recommendation-ClassArrayPropertyDisplayNameTermV3.json).
   * Member name [MUST NOT](spec/Requirement-ClassArrayPropertyDisplayNameTermAndDtmiV3.json) be expressed as both "displayName" and "dtmi:dtdl:property:displayName;3".
 
@@ -451,7 +451,7 @@ The following members are [OPTIONAL](spec/Allowance-ClassCommandOptionalProperti
   * Member name [MUST NOT](spec/Requirement-ClassCommandPropertyDescriptionTermAndDtmiV3.json) be expressed as both "description" and "dtmi:dtdl:property:description;3".
 * displayName
   * Value [MUST](spec/Requirement-ClassCommandPropertyDisplayNameLangStringV3.json) be a [localizable string](#localizable-string).
-  * Each string value [MUST NOT](spec/Requirement-ClassCommandPropertyDisplayNameStringLengthV3.json) be more than 64 characters in length.
+  * Each string value [MUST NOT](spec/Requirement-ClassCommandPropertyDisplayNameStringLengthV3.json) be more than 512 characters in length.
   * Member name [MAY](spec/Allowance-ClassCommandPropertyDisplayNameDtmiV3.json) be expressed as "dtmi:dtdl:property:displayName;3" instead of "displayName", but "displayName" is [RECOMMENDED](spec/Recommendation-ClassCommandPropertyDisplayNameTermV3.json).
   * Member name [MUST NOT](spec/Requirement-ClassCommandPropertyDisplayNameTermAndDtmiV3.json) be expressed as both "displayName" and "dtmi:dtdl:property:displayName;3".
 * request
@@ -542,7 +542,7 @@ The following members are [OPTIONAL](spec/Allowance-ClassCommandRequestOptionalP
   * Member name [MUST NOT](spec/Requirement-ClassCommandRequestPropertyDescriptionTermAndDtmiV3.json) be expressed as both "description" and "dtmi:dtdl:property:description;3".
 * displayName
   * Value [MUST](spec/Requirement-ClassCommandRequestPropertyDisplayNameLangStringV3.json) be a [localizable string](#localizable-string).
-  * Each string value [MUST NOT](spec/Requirement-ClassCommandRequestPropertyDisplayNameStringLengthV3.json) be more than 64 characters in length.
+  * Each string value [MUST NOT](spec/Requirement-ClassCommandRequestPropertyDisplayNameStringLengthV3.json) be more than 512 characters in length.
   * Member name [MAY](spec/Allowance-ClassCommandRequestPropertyDisplayNameDtmiV3.json) be expressed as "dtmi:dtdl:property:displayName;3" instead of "displayName", but "displayName" is [RECOMMENDED](spec/Recommendation-ClassCommandRequestPropertyDisplayNameTermV3.json).
   * Member name [MUST NOT](spec/Requirement-ClassCommandRequestPropertyDisplayNameTermAndDtmiV3.json) be expressed as both "displayName" and "dtmi:dtdl:property:displayName;3".
 
@@ -621,7 +621,7 @@ The following members are [OPTIONAL](spec/Allowance-ClassCommandResponseOptional
   * Member name [MUST NOT](spec/Requirement-ClassCommandResponsePropertyDescriptionTermAndDtmiV3.json) be expressed as both "description" and "dtmi:dtdl:property:description;3".
 * displayName
   * Value [MUST](spec/Requirement-ClassCommandResponsePropertyDisplayNameLangStringV3.json) be a [localizable string](#localizable-string).
-  * Each string value [MUST NOT](spec/Requirement-ClassCommandResponsePropertyDisplayNameStringLengthV3.json) be more than 64 characters in length.
+  * Each string value [MUST NOT](spec/Requirement-ClassCommandResponsePropertyDisplayNameStringLengthV3.json) be more than 512 characters in length.
   * Member name [MAY](spec/Allowance-ClassCommandResponsePropertyDisplayNameDtmiV3.json) be expressed as "dtmi:dtdl:property:displayName;3" instead of "displayName", but "displayName" is [RECOMMENDED](spec/Recommendation-ClassCommandResponsePropertyDisplayNameTermV3.json).
   * Member name [MUST NOT](spec/Requirement-ClassCommandResponsePropertyDisplayNameTermAndDtmiV3.json) be expressed as both "displayName" and "dtmi:dtdl:property:displayName;3".
 
@@ -701,7 +701,7 @@ The following members are [OPTIONAL](spec/Allowance-ClassComponentOptionalProper
   * Member name [MUST NOT](spec/Requirement-ClassComponentPropertyDescriptionTermAndDtmiV3.json) be expressed as both "description" and "dtmi:dtdl:property:description;3".
 * displayName
   * Value [MUST](spec/Requirement-ClassComponentPropertyDisplayNameLangStringV3.json) be a [localizable string](#localizable-string).
-  * Each string value [MUST NOT](spec/Requirement-ClassComponentPropertyDisplayNameStringLengthV3.json) be more than 64 characters in length.
+  * Each string value [MUST NOT](spec/Requirement-ClassComponentPropertyDisplayNameStringLengthV3.json) be more than 512 characters in length.
   * Member name [MAY](spec/Allowance-ClassComponentPropertyDisplayNameDtmiV3.json) be expressed as "dtmi:dtdl:property:displayName;3" instead of "displayName", but "displayName" is [RECOMMENDED](spec/Recommendation-ClassComponentPropertyDisplayNameTermV3.json).
   * Member name [MUST NOT](spec/Requirement-ClassComponentPropertyDisplayNameTermAndDtmiV3.json) be expressed as both "displayName" and "dtmi:dtdl:property:displayName;3".
 
@@ -771,7 +771,7 @@ The following members are [OPTIONAL](spec/Allowance-ClassEnumOptionalPropertiesV
   * Member name [MUST NOT](spec/Requirement-ClassEnumPropertyDescriptionTermAndDtmiV3.json) be expressed as both "description" and "dtmi:dtdl:property:description;3".
 * displayName
   * Value [MUST](spec/Requirement-ClassEnumPropertyDisplayNameLangStringV3.json) be a [localizable string](#localizable-string).
-  * Each string value [MUST NOT](spec/Requirement-ClassEnumPropertyDisplayNameStringLengthV3.json) be more than 64 characters in length.
+  * Each string value [MUST NOT](spec/Requirement-ClassEnumPropertyDisplayNameStringLengthV3.json) be more than 512 characters in length.
   * Member name [MAY](spec/Allowance-ClassEnumPropertyDisplayNameDtmiV3.json) be expressed as "dtmi:dtdl:property:displayName;3" instead of "displayName", but "displayName" is [RECOMMENDED](spec/Recommendation-ClassEnumPropertyDisplayNameTermV3.json).
   * Member name [MUST NOT](spec/Requirement-ClassEnumPropertyDisplayNameTermAndDtmiV3.json) be expressed as both "displayName" and "dtmi:dtdl:property:displayName;3".
 * enumValues
@@ -857,7 +857,7 @@ The following members are [OPTIONAL](spec/Allowance-ClassEnumValueOptionalProper
   * Member name [MUST NOT](spec/Requirement-ClassEnumValuePropertyDescriptionTermAndDtmiV3.json) be expressed as both "description" and "dtmi:dtdl:property:description;3".
 * displayName
   * Value [MUST](spec/Requirement-ClassEnumValuePropertyDisplayNameLangStringV3.json) be a [localizable string](#localizable-string).
-  * Each string value [MUST NOT](spec/Requirement-ClassEnumValuePropertyDisplayNameStringLengthV3.json) be more than 64 characters in length.
+  * Each string value [MUST NOT](spec/Requirement-ClassEnumValuePropertyDisplayNameStringLengthV3.json) be more than 512 characters in length.
   * Member name [MAY](spec/Allowance-ClassEnumValuePropertyDisplayNameDtmiV3.json) be expressed as "dtmi:dtdl:property:displayName;3" instead of "displayName", but "displayName" is [RECOMMENDED](spec/Recommendation-ClassEnumValuePropertyDisplayNameTermV3.json).
   * Member name [MUST NOT](spec/Requirement-ClassEnumValuePropertyDisplayNameTermAndDtmiV3.json) be expressed as both "displayName" and "dtmi:dtdl:property:displayName;3".
 
@@ -938,7 +938,7 @@ The following members are [OPTIONAL](spec/Allowance-ClassFieldOptionalProperties
   * Member name [MUST NOT](spec/Requirement-ClassFieldPropertyDescriptionTermAndDtmiV3.json) be expressed as both "description" and "dtmi:dtdl:property:description;3".
 * displayName
   * Value [MUST](spec/Requirement-ClassFieldPropertyDisplayNameLangStringV3.json) be a [localizable string](#localizable-string).
-  * Each string value [MUST NOT](spec/Requirement-ClassFieldPropertyDisplayNameStringLengthV3.json) be more than 64 characters in length.
+  * Each string value [MUST NOT](spec/Requirement-ClassFieldPropertyDisplayNameStringLengthV3.json) be more than 512 characters in length.
   * Member name [MAY](spec/Allowance-ClassFieldPropertyDisplayNameDtmiV3.json) be expressed as "dtmi:dtdl:property:displayName;3" instead of "displayName", but "displayName" is [RECOMMENDED](spec/Recommendation-ClassFieldPropertyDisplayNameTermV3.json).
   * Member name [MUST NOT](spec/Requirement-ClassFieldPropertyDisplayNameTermAndDtmiV3.json) be expressed as both "displayName" and "dtmi:dtdl:property:displayName;3".
 
@@ -1006,7 +1006,7 @@ The following members are [OPTIONAL](spec/Allowance-ClassInterfaceOptionalProper
   * Member name [MUST NOT](spec/Requirement-ClassInterfacePropertyDescriptionTermAndDtmiV3.json) be expressed as both "description" and "dtmi:dtdl:property:description;3".
 * displayName
   * Value [MUST](spec/Requirement-ClassInterfacePropertyDisplayNameLangStringV3.json) be a [localizable string](#localizable-string).
-  * Each string value [MUST NOT](spec/Requirement-ClassInterfacePropertyDisplayNameStringLengthV3.json) be more than 64 characters in length.
+  * Each string value [MUST NOT](spec/Requirement-ClassInterfacePropertyDisplayNameStringLengthV3.json) be more than 512 characters in length.
   * Member name [MAY](spec/Allowance-ClassInterfacePropertyDisplayNameDtmiV3.json) be expressed as "dtmi:dtdl:property:displayName;3" instead of "displayName", but "displayName" is [RECOMMENDED](spec/Recommendation-ClassInterfacePropertyDisplayNameTermV3.json).
   * Member name [MUST NOT](spec/Requirement-ClassInterfacePropertyDisplayNameTermAndDtmiV3.json) be expressed as both "displayName" and "dtmi:dtdl:property:displayName;3".
 * extends
@@ -1102,7 +1102,7 @@ The following members are [OPTIONAL](spec/Allowance-ClassMapOptionalPropertiesV3
   * Member name [MUST NOT](spec/Requirement-ClassMapPropertyDescriptionTermAndDtmiV3.json) be expressed as both "description" and "dtmi:dtdl:property:description;3".
 * displayName
   * Value [MUST](spec/Requirement-ClassMapPropertyDisplayNameLangStringV3.json) be a [localizable string](#localizable-string).
-  * Each string value [MUST NOT](spec/Requirement-ClassMapPropertyDisplayNameStringLengthV3.json) be more than 64 characters in length.
+  * Each string value [MUST NOT](spec/Requirement-ClassMapPropertyDisplayNameStringLengthV3.json) be more than 512 characters in length.
   * Member name [MAY](spec/Allowance-ClassMapPropertyDisplayNameDtmiV3.json) be expressed as "dtmi:dtdl:property:displayName;3" instead of "displayName", but "displayName" is [RECOMMENDED](spec/Recommendation-ClassMapPropertyDisplayNameTermV3.json).
   * Member name [MUST NOT](spec/Requirement-ClassMapPropertyDisplayNameTermAndDtmiV3.json) be expressed as both "displayName" and "dtmi:dtdl:property:displayName;3".
 
@@ -1184,7 +1184,7 @@ The following members are [OPTIONAL](spec/Allowance-ClassMapKeyOptionalPropertie
   * Member name [MUST NOT](spec/Requirement-ClassMapKeyPropertyDescriptionTermAndDtmiV3.json) be expressed as both "description" and "dtmi:dtdl:property:description;3".
 * displayName
   * Value [MUST](spec/Requirement-ClassMapKeyPropertyDisplayNameLangStringV3.json) be a [localizable string](#localizable-string).
-  * Each string value [MUST NOT](spec/Requirement-ClassMapKeyPropertyDisplayNameStringLengthV3.json) be more than 64 characters in length.
+  * Each string value [MUST NOT](spec/Requirement-ClassMapKeyPropertyDisplayNameStringLengthV3.json) be more than 512 characters in length.
   * Member name [MAY](spec/Allowance-ClassMapKeyPropertyDisplayNameDtmiV3.json) be expressed as "dtmi:dtdl:property:displayName;3" instead of "displayName", but "displayName" is [RECOMMENDED](spec/Recommendation-ClassMapKeyPropertyDisplayNameTermV3.json).
   * Member name [MUST NOT](spec/Requirement-ClassMapKeyPropertyDisplayNameTermAndDtmiV3.json) be expressed as both "displayName" and "dtmi:dtdl:property:displayName;3".
 
@@ -1268,7 +1268,7 @@ The following members are [OPTIONAL](spec/Allowance-ClassMapValueOptionalPropert
   * Member name [MUST NOT](spec/Requirement-ClassMapValuePropertyDescriptionTermAndDtmiV3.json) be expressed as both "description" and "dtmi:dtdl:property:description;3".
 * displayName
   * Value [MUST](spec/Requirement-ClassMapValuePropertyDisplayNameLangStringV3.json) be a [localizable string](#localizable-string).
-  * Each string value [MUST NOT](spec/Requirement-ClassMapValuePropertyDisplayNameStringLengthV3.json) be more than 64 characters in length.
+  * Each string value [MUST NOT](spec/Requirement-ClassMapValuePropertyDisplayNameStringLengthV3.json) be more than 512 characters in length.
   * Member name [MAY](spec/Allowance-ClassMapValuePropertyDisplayNameDtmiV3.json) be expressed as "dtmi:dtdl:property:displayName;3" instead of "displayName", but "displayName" is [RECOMMENDED](spec/Recommendation-ClassMapValuePropertyDisplayNameTermV3.json).
   * Member name [MUST NOT](spec/Requirement-ClassMapValuePropertyDisplayNameTermAndDtmiV3.json) be expressed as both "displayName" and "dtmi:dtdl:property:displayName;3".
 
@@ -1331,7 +1331,7 @@ The following members are [OPTIONAL](spec/Allowance-ClassObjectOptionalPropertie
   * Member name [MUST NOT](spec/Requirement-ClassObjectPropertyDescriptionTermAndDtmiV3.json) be expressed as both "description" and "dtmi:dtdl:property:description;3".
 * displayName
   * Value [MUST](spec/Requirement-ClassObjectPropertyDisplayNameLangStringV3.json) be a [localizable string](#localizable-string).
-  * Each string value [MUST NOT](spec/Requirement-ClassObjectPropertyDisplayNameStringLengthV3.json) be more than 64 characters in length.
+  * Each string value [MUST NOT](spec/Requirement-ClassObjectPropertyDisplayNameStringLengthV3.json) be more than 512 characters in length.
   * Member name [MAY](spec/Allowance-ClassObjectPropertyDisplayNameDtmiV3.json) be expressed as "dtmi:dtdl:property:displayName;3" instead of "displayName", but "displayName" is [RECOMMENDED](spec/Recommendation-ClassObjectPropertyDisplayNameTermV3.json).
   * Member name [MUST NOT](spec/Requirement-ClassObjectPropertyDisplayNameTermAndDtmiV3.json) be expressed as both "displayName" and "dtmi:dtdl:property:displayName;3".
 * fields
@@ -1415,7 +1415,7 @@ The following members are [OPTIONAL](spec/Allowance-ClassPropertyOptionalPropert
   * Member name [MUST NOT](spec/Requirement-ClassPropertyPropertyDescriptionTermAndDtmiV3.json) be expressed as both "description" and "dtmi:dtdl:property:description;3".
 * displayName
   * Value [MUST](spec/Requirement-ClassPropertyPropertyDisplayNameLangStringV3.json) be a [localizable string](#localizable-string).
-  * Each string value [MUST NOT](spec/Requirement-ClassPropertyPropertyDisplayNameStringLengthV3.json) be more than 64 characters in length.
+  * Each string value [MUST NOT](spec/Requirement-ClassPropertyPropertyDisplayNameStringLengthV3.json) be more than 512 characters in length.
   * Member name [MAY](spec/Allowance-ClassPropertyPropertyDisplayNameDtmiV3.json) be expressed as "dtmi:dtdl:property:displayName;3" instead of "displayName", but "displayName" is [RECOMMENDED](spec/Recommendation-ClassPropertyPropertyDisplayNameTermV3.json).
   * Member name [MUST NOT](spec/Requirement-ClassPropertyPropertyDisplayNameTermAndDtmiV3.json) be expressed as both "displayName" and "dtmi:dtdl:property:displayName;3".
 * writable
@@ -1488,7 +1488,7 @@ The following members are [OPTIONAL](spec/Allowance-ClassRelationshipOptionalPro
   * Member name [MUST NOT](spec/Requirement-ClassRelationshipPropertyDescriptionTermAndDtmiV3.json) be expressed as both "description" and "dtmi:dtdl:property:description;3".
 * displayName
   * Value [MUST](spec/Requirement-ClassRelationshipPropertyDisplayNameLangStringV3.json) be a [localizable string](#localizable-string).
-  * Each string value [MUST NOT](spec/Requirement-ClassRelationshipPropertyDisplayNameStringLengthV3.json) be more than 64 characters in length.
+  * Each string value [MUST NOT](spec/Requirement-ClassRelationshipPropertyDisplayNameStringLengthV3.json) be more than 512 characters in length.
   * Member name [MAY](spec/Allowance-ClassRelationshipPropertyDisplayNameDtmiV3.json) be expressed as "dtmi:dtdl:property:displayName;3" instead of "displayName", but "displayName" is [RECOMMENDED](spec/Recommendation-ClassRelationshipPropertyDisplayNameTermV3.json).
   * Member name [MUST NOT](spec/Requirement-ClassRelationshipPropertyDisplayNameTermAndDtmiV3.json) be expressed as both "displayName" and "dtmi:dtdl:property:displayName;3".
 * maxMultiplicity
@@ -1590,7 +1590,7 @@ The following members are [OPTIONAL](spec/Allowance-ClassTelemetryOptionalProper
   * Member name [MUST NOT](spec/Requirement-ClassTelemetryPropertyDescriptionTermAndDtmiV3.json) be expressed as both "description" and "dtmi:dtdl:property:description;3".
 * displayName
   * Value [MUST](spec/Requirement-ClassTelemetryPropertyDisplayNameLangStringV3.json) be a [localizable string](#localizable-string).
-  * Each string value [MUST NOT](spec/Requirement-ClassTelemetryPropertyDisplayNameStringLengthV3.json) be more than 64 characters in length.
+  * Each string value [MUST NOT](spec/Requirement-ClassTelemetryPropertyDisplayNameStringLengthV3.json) be more than 512 characters in length.
   * Member name [MAY](spec/Allowance-ClassTelemetryPropertyDisplayNameDtmiV3.json) be expressed as "dtmi:dtdl:property:displayName;3" instead of "displayName", but "displayName" is [RECOMMENDED](spec/Recommendation-ClassTelemetryPropertyDisplayNameTermV3.json).
   * Member name [MUST NOT](spec/Requirement-ClassTelemetryPropertyDisplayNameTermAndDtmiV3.json) be expressed as both "displayName" and "dtmi:dtdl:property:displayName;3".
 

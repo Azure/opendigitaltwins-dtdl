@@ -70,7 +70,7 @@ The chart below lists the properties that may be part of an Interface.
 | `comment` | optional | *string* | max 512 characters | A comment for model authors. |
 | `contents` | optional | set of [Commands](#command), [Components](#component), [Properties](#property), [Relationships](#relationship), and [Telemetries](#telemetry) | max 100,000 elements in hierarchy, including those imported via `extends` | A set of elements that define the contents of this Interface. |
 | `description` | optional | localizable *string* | max 512 characters | A localizable description for display. |
-| `displayName` | optional | localizable *string* | max 64 characters | A localizable name for display. |
+| `displayName` | optional | localizable *string* | max 512 characters | A localizable name for display. |
 | `extends` | optional | set of [Interfaces](#interface) | max 1024 Interfaces in hierarchy; max depth of 10 levels | A set of DTMIs that refer to Interfaces from which this Interface inherits contents. Interfaces can inherit from multiple Interfaces. |
 | `schemas` | optional | set of [Arrays](#array), [Enums](#enum), [Maps](#map), and [Objects](#object) |  | A set of complex schema objects that are reusable within this Interface. |
 
@@ -211,7 +211,7 @@ The chart below lists the properties that Telemetry may have.
 | `@id` | optional | [DTMI](#digital-twin-model-identifier) | max 2048 characters | An identifer for the Telemetry. If no @id is provided, one will be assigned automatically. |
 | `comment` | optional | *string* | max 512 characters | A comment for model authors. |
 | `description` | optional | localizable *string* | max 512 characters | A localizable description for display. |
-| `displayName` | optional | localizable *string* | max 64 characters | A localizable name for display. |
+| `displayName` | optional | localizable *string* | max 512 characters | A localizable name for display. |
 | `name` | required | *string* | max 512 characters; contains only alphanumerics and underscore, starting with a letter, ending with alphanumeric; must be unique for all contents in Interface | The programming name of the element. |
 | `schema` | required | [Schema](#schema) |  | The data type of the Telemetry, which is an instance of Schema. |
 
@@ -250,7 +250,7 @@ The chart below lists the properties that a DTDL Property may have.
 | `@id` | optional | [DTMI](#digital-twin-model-identifier) | max 2048 characters | An identifer for the Property. If no @id is provided, one will be assigned automatically. |
 | `comment` | optional | *string* | max 512 characters | A comment for model authors. |
 | `description` | optional | localizable *string* | max 512 characters | A localizable description for display. |
-| `displayName` | optional | localizable *string* | max 64 characters | A localizable name for display. |
+| `displayName` | optional | localizable *string* | max 512 characters | A localizable name for display. |
 | `name` | required | *string* | max 512 characters; contains only alphanumerics and underscore, starting with a letter, ending with alphanumeric; must be unique for all contents in Interface; must be unique for all properties in Relationship | The programming name of the element. |
 | `schema` | required | [Schema](#schema) |  | The data type of the Property, which is an instance of Schema. |
 | `writable` | optional | *boolean* |  | A boolean value that indicates whether the Property is writable or not. The default value is false, indicating the Property is read-only. |
@@ -280,7 +280,7 @@ The chart below lists the properties that a DTDL Command may have.
 | `@id` | optional | [DTMI](#digital-twin-model-identifier) | max 2048 characters | An identifer for the Command. If no @id is provided, one will be assigned automatically. |
 | `comment` | optional | *string* | max 512 characters | A comment for model authors. |
 | `description` | optional | localizable *string* | max 512 characters | A localizable description for display. |
-| `displayName` | optional | localizable *string* | max 64 characters | A localizable name for display. |
+| `displayName` | optional | localizable *string* | max 512 characters | A localizable name for display. |
 | `name` | required | *string* | max 512 characters; contains only alphanumerics and underscore, starting with a letter, ending with alphanumeric; must be unique for all contents in Interface | The programming name of the element. |
 | `request` | optional | [CommandRequest](#commandrequest) |  | A description of the input to the Command. |
 | `response` | optional | [CommandResponse](#commandresponse) |  | A description of the output of the Command. |
@@ -316,7 +316,7 @@ The chart below lists the properties that CommandRequest may have.
 | `@id` | optional | [DTMI](#digital-twin-model-identifier) | max 2048 characters | An identifer for the CommandRequest. If no @id is provided, one will be assigned automatically. |
 | `comment` | optional | *string* | max 512 characters | A comment for model authors. |
 | `description` | optional | localizable *string* | max 512 characters | A localizable description for display. |
-| `displayName` | optional | localizable *string* | max 64 characters | A localizable name for display. |
+| `displayName` | optional | localizable *string* | max 512 characters | A localizable name for display. |
 | `name` | required | *string* | max 512 characters; contains only alphanumerics and underscore, starting with a letter, ending with alphanumeric | The programming name of the element. |
 | `schema` | required | [Schema](#schema) |  | The data type of the element, which is an instance of Schema. |
 
@@ -332,7 +332,7 @@ The chart below lists the properties that CommandResponse may have.
 | `@id` | optional | [DTMI](#digital-twin-model-identifier) | max 2048 characters | An identifer for the CommandResponse. If no @id is provided, one will be assigned automatically. |
 | `comment` | optional | *string* | max 512 characters | A comment for model authors. |
 | `description` | optional | localizable *string* | max 512 characters | A localizable description for display. |
-| `displayName` | optional | localizable *string* | max 64 characters | A localizable name for display. |
+| `displayName` | optional | localizable *string* | max 512 characters | A localizable name for display. |
 | `name` | required | *string* | max 512 characters; contains only alphanumerics and underscore, starting with a letter, ending with alphanumeric | The programming name of the element. |
 | `schema` | required | [Schema](#schema) |  | The data type of the element, which is an instance of Schema. |
 
@@ -353,7 +353,7 @@ A Relationship has "by reference" semantics, so its validity does not depend on 
 | `@id` | optional | [DTMI](#digital-twin-model-identifier) | max 2048 characters | An identifer for the Relationship. If no @id is provided, one will be assigned automatically. |
 | `comment` | optional | *string* | max 512 characters | A comment for model authors. |
 | `description` | optional | localizable *string* | max 512 characters | A localizable description for display. |
-| `displayName` | optional | localizable *string* | max 64 characters | A localizable name for display. |
+| `displayName` | optional | localizable *string* | max 512 characters | A localizable name for display. |
 | `maxMultiplicity` | optional | *integer* | must be >= 1 | The maximum multiplicity for the target of the Relationship; defaults to the maximum allowable value. |
 | `minMultiplicity` | optional | *integer* | must be = 0 | The minimum multiplicity for the target of the Relationship; defaults to the minimum allowable value. |
 | `name` | required | *string* | max 512 characters; contains only alphanumerics and underscore, starting with a letter, ending with alphanumeric; must be unique for all contents in Interface | The programming name of the element. |
@@ -421,7 +421,7 @@ The chart below lists the properties that a Component may have.
 | `@id` | optional | [DTMI](#digital-twin-model-identifier) | max 2048 characters | An identifer for the Component. If no @id is provided, one will be assigned automatically. |
 | `comment` | optional | *string* | max 512 characters | A comment for model authors. |
 | `description` | optional | localizable *string* | max 512 characters | A localizable description for display. |
-| `displayName` | optional | localizable *string* | max 64 characters | A localizable name for display. |
+| `displayName` | optional | localizable *string* | max 512 characters | A localizable name for display. |
 | `name` | required | *string* | max 512 characters; contains only alphanumerics and underscore, starting with a letter, ending with alphanumeric; must be unique for all contents in Interface | The programming name of the element. |
 | `schema` | required | [Interface](#interface) | may not contain nested Component in hierarchy | The data type of the Component, which is an instance of Interface. |
 
@@ -482,7 +482,7 @@ The chart below lists the properties that an Array may have.
 | `@id` | optional | [DTMI](#digital-twin-model-identifier) | max 2048 characters | An identifer for the Array. If no @id is provided, one will be assigned automatically. |
 | `comment` | optional | *string* | max 512 characters | A comment for model authors. |
 | `description` | optional | localizable *string* | max 512 characters | A localizable description for display. |
-| `displayName` | optional | localizable *string* | max 64 characters | A localizable name for display. |
+| `displayName` | optional | localizable *string* | max 512 characters | A localizable name for display. |
 | `elementSchema` | required | [Schema](#schema) | max depth of 5 levels | The data type of each element in the Array, which is an instance of Schema. |
 
 ### Array examples
@@ -517,7 +517,7 @@ The chart below lists the properties that an Enum may have.
 | `@id` | optional | [DTMI](#digital-twin-model-identifier) | max 2048 characters | An identifer for the Enum. If no @id is provided, one will be assigned automatically. |
 | `comment` | optional | *string* | max 512 characters | A comment for model authors. |
 | `description` | optional | localizable *string* | max 512 characters | A localizable description for display. |
-| `displayName` | optional | localizable *string* | max 64 characters | A localizable name for display. |
+| `displayName` | optional | localizable *string* | max 512 characters | A localizable name for display. |
 | `enumValues` | optional | set of [EnumValues](#enumvalue) |  | A set of name/value mappings for the Enum. |
 | `valueSchema` | required | [primitive schema](#primitive-schema) | must be *integer* or *string* | The data type for the enumValues; all values must be of the same type. |
 
@@ -564,7 +564,7 @@ The chart below lists the properties that an EnumValue may have.
 | `@id` | optional | [DTMI](#digital-twin-model-identifier) | max 2048 characters | An identifer for the EnumValue. If no @id is provided, one will be assigned automatically. |
 | `comment` | optional | *string* | max 512 characters | A comment for model authors. |
 | `description` | optional | localizable *string* | max 512 characters | A localizable description for display. |
-| `displayName` | optional | localizable *string* | max 64 characters | A localizable name for display. |
+| `displayName` | optional | localizable *string* | max 512 characters | A localizable name for display. |
 | `enumValue` | required | literal | must be unique for all enumValues in Enum | The on-the-wire value that maps to the EnumValue, which may be either an integer or a string. |
 | `name` | required | *string* | max 512 characters; contains only alphanumerics and underscore, starting with a letter, ending with alphanumeric; must be unique for all enumValues in Enum | The programming name of the element. |
 
@@ -582,7 +582,7 @@ The chart below lists the properties that a Map may have.
 | `@id` | optional | [DTMI](#digital-twin-model-identifier) | max 2048 characters | An identifer for the Map. If no @id is provided, one will be assigned automatically. |
 | `comment` | optional | *string* | max 512 characters | A comment for model authors. |
 | `description` | optional | localizable *string* | max 512 characters | A localizable description for display. |
-| `displayName` | optional | localizable *string* | max 64 characters | A localizable name for display. |
+| `displayName` | optional | localizable *string* | max 512 characters | A localizable name for display. |
 | `mapKey` | required | [MapKey](#mapkey) |  | A description of the keys in the Map. |
 | `mapValue` | required | [MapValue](#mapvalue) |  | A description of the values in the Map. |
 
@@ -630,7 +630,7 @@ The chart below lists the properties that a MapKey may have.
 | `@id` | optional | [DTMI](#digital-twin-model-identifier) | max 2048 characters | An identifer for the MapKey. If no @id is provided, one will be assigned automatically. |
 | `comment` | optional | *string* | max 512 characters | A comment for model authors. |
 | `description` | optional | localizable *string* | max 512 characters | A localizable description for display. |
-| `displayName` | optional | localizable *string* | max 64 characters | A localizable name for display. |
+| `displayName` | optional | localizable *string* | max 512 characters | A localizable name for display. |
 | `name` | required | *string* | max 512 characters; contains only alphanumerics and underscore, starting with a letter, ending with alphanumeric | The programming name of the element. |
 | `schema` | required | [String](#string) | must be *string* | The data type of the Map's key, which must be string. |
 
@@ -646,7 +646,7 @@ The chart below lists the properties that a MapValue may have.
 | `@id` | optional | [DTMI](#digital-twin-model-identifier) | max 2048 characters | An identifer for the MapValue. If no @id is provided, one will be assigned automatically. |
 | `comment` | optional | *string* | max 512 characters | A comment for model authors. |
 | `description` | optional | localizable *string* | max 512 characters | A localizable description for display. |
-| `displayName` | optional | localizable *string* | max 64 characters | A localizable name for display. |
+| `displayName` | optional | localizable *string* | max 512 characters | A localizable name for display. |
 | `name` | required | *string* | max 512 characters; contains only alphanumerics and underscore, starting with a letter, ending with alphanumeric | The programming name of the element. |
 | `schema` | required | [Schema](#schema) | max depth of 5 levels when MapValue is the value of Map `mapValue` | The data type of the element, which is an instance of Schema. |
 
@@ -663,7 +663,7 @@ The chart below lists the properties that an Object may have.
 | `@id` | optional | [DTMI](#digital-twin-model-identifier) | max 2048 characters | An identifer for the Object. If no @id is provided, one will be assigned automatically. |
 | `comment` | optional | *string* | max 512 characters | A comment for model authors. |
 | `description` | optional | localizable *string* | max 512 characters | A localizable description for display. |
-| `displayName` | optional | localizable *string* | max 64 characters | A localizable name for display. |
+| `displayName` | optional | localizable *string* | max 512 characters | A localizable name for display. |
 | `fields` | optional | set of [Fields](#field) |  | A set of field descriptions, one for each field in the Object. |
 
 ### Object examples
@@ -714,7 +714,7 @@ The chart below lists the properties that a Field may have.
 | `@id` | optional | [DTMI](#digital-twin-model-identifier) | max 2048 characters | An identifer for the Field. If no @id is provided, one will be assigned automatically. |
 | `comment` | optional | *string* | max 512 characters | A comment for model authors. |
 | `description` | optional | localizable *string* | max 512 characters | A localizable description for display. |
-| `displayName` | optional | localizable *string* | max 64 characters | A localizable name for display. |
+| `displayName` | optional | localizable *string* | max 512 characters | A localizable name for display. |
 | `name` | required | *string* | max 512 characters; contains only alphanumerics and underscore, starting with a letter, ending with alphanumeric; must be unique for all fields in Object | The programming name of the element. |
 | `schema` | required | [Schema](#schema) | max depth of 5 levels when Field is the value of Object `fields` | The data type of the element, which is an instance of Schema. |
 
@@ -770,7 +770,7 @@ The chart below lists the properties that Interface schemas may have.
 | `@id` | required | [DTMI](#digital-twin-model-identifier) | max 2048 characters | An identifer for the complex schema. |
 | `comment` | optional | *string* | max 512 characters | A comment for model authors. |
 | `description` | optional | localizable *string* | max 512 characters | A localizable description for display. |
-| `displayName` | optional | localizable *string* | max 64 characters | A localizable name for display. |
+| `displayName` | optional | localizable *string* | max 512 characters | A localizable name for display. |
 
 ### Interface schema examples
 
