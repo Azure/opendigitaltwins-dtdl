@@ -29,14 +29,20 @@ This indicates that the ValueAnnotation/Override should be regarded as metadata 
 
 The following example shows an Interface with two `contents` elements.
 The element named "currentTemp" has type Telemetry and co-type Temperature; this element provides a stream of temperature readings from the Sensor.
+The semantic type Temperature is defined in the [QuantitativeTypes](./DTDL.quantitativeTypes.v1.md) feature extension.
 
 The element named "currentTempUnit" has type Property and co-types ValueAnnotation and Override; this element provides a metadata value that overrides the `unit` property on the element named "currentTemp".
 The adjunct type ValueAnnotation indicates that the Property provides metadata, and the value of property `annotates` indicates that the metadata applies to the element named "currentTemp".
 The adjunct type Override indicates that the Property overrides a value of the annotated element, and the value of property `overrides` indicates that the overridden property is `unit`.
 
-The `schema` of "currentTempUnit" is TemperatureUnit.
-This must match the schema type of the `unit` property defined by the extension type that co-types the annotated element.
-Since "currentTemp" is co-typed with adjunct type Temperature, the schema type of `unit` is TemperatureUnit.
+The `schema` of "currentTempUnit" is TemperatureUnit, which &mdash; like the Temperature type &mdash; is defined in the [QuantitativeTypes](./DTDL.quantitativeTypes.v1.md) feature extension.
+Because "currentTempUnit" is overriding the `unit` property of "currentTemp", which has co-type Temperature, the `schema` of "currentTempUnit" must be approriate for the Temperature type.
+The table in the [QuantitativeTypes](./DTDL.quantitativeTypes.v1.md) documentation indicates which unit type (e.g., TemperatureUnit) corresponds to each semantic type (e.g., Temperature).
+This table also indicates the allowed unit values that can be specified in an instance of the model when overriding the `unit` property of the annotated element.
+
+> Note that the Overriding extension is not dependent upon the QuantitativeTypes extension, although all current use cases for Overriding involve QuantitativeTypes.
+The Overriding extension enables **any property** defined by **any extension** to be overridden by a Property.
+The `schema` of the overriding Property must match the schema type of the overridden property, just as the `schema` of "currentTempUnit" matches the schema type of the "currentTemp" `unit` property in the following example.
 
 ```json
 {
@@ -67,9 +73,19 @@ Since "currentTemp" is co-typed with adjunct type Temperature, the schema type o
 }
 ```
 
-> Note: The value of `unit` in the model can be regarded as a default value that applies when there is no value of the Override Property instance in the service.
-Therefore, a model should **not** use the Initialization feature to specify an initial value for an Override Property, as this would result in both initial and default declarations; this would be confusing to someone reading the model, especially if the initial and default values were different.
-To enforce this practice, the Override and Initialized adjunct types are not permitted to co-type the same element.
+To override the "currentTemp" `unit` property, an instance of this model specifies a value for "currentTempUnit".
+The allowed values are indicated by the table in the [QuantitativeTypes](./DTDL.quantitativeTypes.v1.md) documentation.
+The row for semantic type Temperature lists the unit values that may be specified in the instance, which are the same values that may be specified for the `unit` property in the model.
+The instance might, for example, contain the following content:
+
+```json
+{
+  "currentTempUnit": "degreeCelsius"
+}
+```
+
+The presence of a "currentTempUnit" value in the instance indicates that the value "degreeFahrenheit" specified by the model's `unit` property no longer applies.
+Instead, the value for the unit of "currentTemp" is "degreeCelsius" because this is specified in the instance, and the instance value overrides the model value.
 
 As the following example shows, the Property or Telemetry whose property is overridden need not be defined directly in the same Interface as the Override.
 When an Interface `extends` another Interface, the former can override a property of a `contents` element that is defined in the latter, because the `extends` property imports the Property or Telemetry into the former's `contents`.
