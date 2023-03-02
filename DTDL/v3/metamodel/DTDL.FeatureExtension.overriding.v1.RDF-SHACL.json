@@ -1,0 +1,73 @@
+﻿{
+  "@context": [
+    "dtmi:dtdl:context;3",
+    "dtmi:dtdl:extension:annotation;1",
+    "dtmi:dtdl:extension:overriding;1"
+  ],
+  "@graph": [
+    {
+      "@id": "dtmi:dtdl:extension:overriding:v1:documentation",
+      "@type": [ "dtmm:Documentation" ],
+      "dtmm:description": {
+        "en-US": "Override a model property with an instance value."
+      }
+    },
+    {
+      "@id": "dtmi:dtdl:extension:overriding:v1:Override",
+      "@type": [ "rdfs:Class", "sh:NodeShape" ],
+      "rdfs:subClassOf": "AdjunctType",
+      "sh:or": [
+        { "sh:class": "Property" }
+      ],
+      "sh:and": [
+        { "sh:class": "ValueAnnotation" }
+      ],
+      "sh:not": [
+        { "sh:class": "dtmi:dtdl:extension:initialization:v1:Initialized" }
+      ],
+      "dtmm:property": [
+        {
+          "@id": "dtmi:dtdl:extension:overriding:v1:Override:overrides",
+          "@type": "rdf:Property",
+          "rdfs:domain": "Override"
+        }
+      ],
+      "sh:property": [
+        {
+          "sh:path": "overrides",
+          "sh:minCount": 1,
+          "sh:maxCount": 1,
+          "sh:nodeKind": "sh:IRI",
+          "dtmm:description": {
+            "en-US": "Term or IRI of an extension property that is overridden."
+          }
+        }
+      ],
+      "dtmm:siblings": [
+        {
+          "dtmm:keyProperty": "name",
+          "dtmm:keyrefProperty": "annotates",
+          "sh:or": [
+            { "sh:class": "Property" },
+            { "sh:class": "Telemetry" }
+          ]
+        },
+        {
+          "dtmm:keyProperty": "name",
+          "dtmm:keyrefProperty": "annotates",
+          "dtmm:path": "overrides",
+          "dtmm:uniqueReference": true,
+          "dtmm:refersToProperty": {
+            "dtmm:isMaterial": false
+          }
+        },
+        {
+          "dtmm:keyProperty": "name",
+          "dtmm:keyrefProperty": "annotates",
+          "dtmm:path": "schema",
+          "dtmm:parentOfProperty": "overrides"
+        }
+      ]
+    }
+  ]
+}

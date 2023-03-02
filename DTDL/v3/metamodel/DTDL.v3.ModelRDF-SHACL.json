@@ -146,6 +146,28 @@
           "dtmm:uniqueProperties": [ "dtmi:dtdl:property:name;3" ],
           "dtmm:dtmiSegment": "dtmi:dtdl:property:name;3",
           "dtmm:dictionaryKey": "dtmi:dtdl:property:name;3",
+          "dtmm:synthesize": [
+            {
+              "dtmm:syntheticProp": "components",
+              "dtmm:breakoutSubtypes": [ "dtmi:dtdl:class:Component;2", "dtmi:dtdl:class:Component;3" ]
+            },
+            {
+              "dtmm:syntheticProp": "properties",
+              "dtmm:breakoutSubtypes": [ "dtmi:dtdl:class:Property;2", "dtmi:dtdl:class:Property;3" ]
+            },
+            {
+              "dtmm:syntheticProp": "telemetries",
+              "dtmm:breakoutSubtypes": [ "dtmi:dtdl:class:Telemetry;2", "dtmi:dtdl:class:Telemetry;3" ]
+            },
+            {
+              "dtmm:syntheticProp": "commands",
+              "dtmm:breakoutSubtypes": [ "dtmi:dtdl:class:Command;2", "dtmi:dtdl:class:Command;3" ]
+            },
+            {
+              "dtmm:syntheticProp": "relationships",
+              "dtmm:breakoutSubtypes": [ "dtmi:dtdl:class:Relationship;2", "dtmi:dtdl:class:Relationship;3" ]
+            }
+          ],
           "dtmm:description": {
             "en-US": "A set of elements that define the contents of this Interface."
           }
@@ -158,6 +180,12 @@
             { "sh:class": "dtmi:dtdl:class:Interface;2" }
           ],
           "sh:nodeKind": "sh:IRI",
+          "dtmm:synthesize": [
+            {
+              "dtmm:syntheticProp": "extendedBy",
+              "dtmm:reverseDirection": true
+            }
+          ],
           "dtmm:description": {
             "en-US": "A set of DTMIs that refer to Interfaces from which this Interface inherits contents. Interfaces can inherit from multiple Interfaces."
           }
