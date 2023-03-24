@@ -961,6 +961,40 @@ Identifiers with the following prefixes are reserved by the DTDL language:
 
 For a full definition of DTMI, please see the [DTMI spec](../../DTMI/README.md).
 
+### Automatic Identifier Assignment
+
+Every element in a DTDL model is identified by a DTMI.
+If a DTMI is not indicated directly in the model via an "@id" property, an identifier is assigned automatically.
+For reference in the subseqent description, consider the following model:
+
+```json
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:com:example:anInterface;1",
+  "@type": "Interface",
+  "contents": [
+    {
+      "@id": "dtmi:com:example:aTelemetry;1",
+      "@type": "Telemetry",
+      "name": "currentDistance",
+      "schema": {
+        "@id": "dtmi:com:example:doubleArray;1",
+        "@type": "Array",
+        "elementSchema": "double"
+      }
+    }
+  ]
+}
+```
+
+The algorithm for determining ID values is as follows:
+
+* If a model element has an "@id" property, this value is the ID of the element. For example, the ID of the Telemetry is "dtmi:com:example:aTelemetry;1", and the ID of the Array is "dtmi:com:example:doubleArray;1".
+* If a model element does not have an "@id" property, its ID is generated from (a) its parent's ID, (b) the property connecting it to its parent, and optionally (c) its name.
+* For properties that are singular, the algorithm takes the parent's DTMI and adds one segment before the version number which is the name of the property preceded by an underscore. So, if the Array above did not have the "@id" property, its ID would be "dtmi:com:example:aTelemetry:_schema;1".
+* For properties that are plural, the algorithm takes the parent's DTMI and adds two segments before the version number. The first added segment is the name of the property preceded by an underscore; the second added segment is the value of the "name" property preceded by two underscores. So, if the Telemetry above did not have the "@id" property, its ID would be "dtmi:com:example:anInterface:_contents:__currentDistance;1".
+* These rules apply recursively, so if neither the Telemetry nor the Array had an "@id" property, the ID of the Array would be "dtmi:com:example:anInterface:_contents:__currentDistance:_schema;1"
+
 ### Internationalized Resource Identifier
 
 DTDL uses Internationalized Resource Identifiers (IRIs) to refer to DTDL language elements (such as type names) as well as model-defined elements (such as schemas).
