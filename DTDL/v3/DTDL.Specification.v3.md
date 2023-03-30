@@ -209,7 +209,9 @@ Consequently, a DTDL model may be in one of four states:
 A service, tool, application, or library MAY exercise discretion regarding whether to accept or reject a model that is incomplete with indeterminate validity.
 It might accept all such models, reject all such models, base its acceptance or rejection on specific aspects of a model, or offer configuration options to control this behavior.
 Moreover, there is no obligation for consistency across models or over time.
-However, it is RECOMMENDED that acceptance/rejection decisions should be deterministic, and it is further RECOMMENDED that these decisions not become increasingingly strict over time, since this can lead to backward-compatibility issues.
+However, it is RECOMMENDED that acceptance/rejection decisions should be deterministic, and it is further RECOMMENDED that these decisions not become increasingly strict over time, since this can lead to backward-compatibility issues.
+
+For DTDL version 3 models, in the absence of considerations that motivate a different policy, it is RECOMMENDED that contextually incomplete models be rejected by default.
 
 When a member includes a dependent reference, the DTDL element whose "@id" member has a matching value is said to be *referentially included* in the member that includes the dependent reference.
 If no referentially included DTDL element is present in the model, the model is referentially incomplete.
