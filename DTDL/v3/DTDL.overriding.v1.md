@@ -1,4 +1,4 @@
-﻿# Overriding extension -- PREVIEW
+﻿# Overriding extension
 
 **Version 1**
 

@@ -1,4 +1,4 @@
-﻿# Annotation extension -- PREVIEW
+﻿# Annotation extension
 
 **Version 1**
 

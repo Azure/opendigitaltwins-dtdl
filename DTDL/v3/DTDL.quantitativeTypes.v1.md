@@ -1,4 +1,4 @@
-﻿# QuantitativeTypes extension -- PREVIEW
+﻿# QuantitativeTypes extension
 
 **Version 1**
 

@@ -1,4 +1,4 @@
-﻿# DTDL language extensions -- PREVIEW
+﻿# DTDL language extensions
 
 The Digital Twins Definition Language (DTDL) is made up of a set of metamodel classes.
 In addition to its native classes &mdash; Interface, Command, Component, Property, Relationship, and Telemetry &mdash; DTDL supports *language extensions* that define additional metamodel classes.
