@@ -1,4 +1,4 @@
-﻿# Historization extension -- PREVIEW
+﻿# Historization extension
 
 **Version 1**
 

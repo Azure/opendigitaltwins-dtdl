@@ -2470,9 +2470,10 @@ The following constraints and conditions apply to every DTDL v2 "@context" membe
 
 * Member value [MUST](spec/Requirement-ContextStringOrArrayCentralV2.json) be a string or an array of strings.
 * Each included string value [MUST](spec/Requirement-ContextDtmiWithVersionCentralV2.json) conform to the [Digital Twin Model Identifier](#digital-twin-model-identifier) syntax.
-* Each included string value other than "dtmi:dtdl:context;2" [SHALL](spec/Completion-ContextDefinedLanguageExtensionCentralV2.json) refer to a defined DTDL language extension.
+* Each included string value that does not begin with "dtmi:dtdl:context;" [SHALL](spec/Completion-ContextDefinedLanguageExtensionCentralV2.json) refer to a defined DTDL language extension.
 * Member [MUST](spec/Requirement-TopLevelDtdlContextV2.json) include string value "dtmi:dtdl:context;2" if member is in a top-level element.
-* If present, string value "dtmi:dtdl:context;2" [MUST](spec/Requirement-ContextDtdlFirstOrOnlyLessExceptionV2.json) be the only value or the first value in the array, with the following permitted but discouraged exception: If string value "dtmi:iotcentral:context;2" is present in the array, it may precede string value "dtmi:dtdl:context;2"; however, it [SHOULD NOT](spec/Recommendation-ContextDtdlFirstOrOnlyExceptionV2.json) .
+* If present, string value "dtmi:dtdl:context;2" [MUST](spec/Requirement-ContextDtdlPrecedesOrOnlyLessExceptionV2.json) be the only value or must precede in the array any values that do not begin with "dtmi:dtdl:context;", with the following permitted but discouraged exception: If string value "dtmi:iotcentral:context;2" is present in the array, it may precede string value "dtmi:dtdl:context;2"; however, it [SHOULD NOT](spec/Recommendation-ContextDtdlPrecedesOrOnlyExceptionV2.json) .
+* If present, string value "dtmi:dtdl:context;2" may be preceded in the array by one or more values that also begin with "dtmi:dtdl:context;" but [SHOULD NOT](spec/Recommendation-ContextDtdlOnlyOneV2.json).
 * Member [SHOULD NOT](spec/Recommendation-ContextUniqueValuesV2.json) include more than one instance of any given string value.
 
 The *de-versioned* value of a DTMI is the portion of the string value to the left of the semicolon.

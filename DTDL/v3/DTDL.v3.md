@@ -1,4 +1,4 @@
-﻿# Digital Twins Definition Language (DTDL) -- PREVIEW
+﻿# Digital Twins Definition Language (DTDL)
 
 **Version 3**
 

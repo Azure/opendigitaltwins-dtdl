@@ -1,4 +1,4 @@
-﻿# DTDL Language Specification -- PREVIEW
+﻿# DTDL Language Specification
 
 **Version 3**
 
@@ -1960,9 +1960,10 @@ The following constraints and conditions apply to every DTDL v3 "@context" membe
 
 * Member value [MUST](spec/Requirement-ContextStringOrArrayQuantV3.json) be a string or an array of strings.
 * Each included string value [MUST](spec/Requirement-ContextDtmiWithVersionQuantV3.json) conform to the [Digital Twin Model Identifier](#digital-twin-model-identifier) syntax, and it [MUST](spec/Requirement-ContextDtmiWithVersionQuantV3.json) contain a version number.
-* Each included string value other than "dtmi:dtdl:context;3" [SHALL](spec/Completion-ContextDefinedLanguageExtensionQuantV3.json) refer to a defined DTDL language extension.
+* Each included string value that does not begin with "dtmi:dtdl:context;" [SHALL](spec/Completion-ContextDefinedLanguageExtensionQuantV3.json) refer to a defined DTDL language extension.
 * Member [MUST](spec/Requirement-TopLevelDtdlContextV3.json) include string value "dtmi:dtdl:context;3" if member is in a top-level element.
-* If present, string value "dtmi:dtdl:context;3" [MUST](spec/Requirement-ContextDtdlFirstOrOnlyV3.json) be the only value or the first value in the array.
+* If present, string value "dtmi:dtdl:context;3" [MUST](spec/Requirement-ContextDtdlPrecedesOrOnlyV3.json) be the only value or must precede in the array any values that do not begin with "dtmi:dtdl:context;".
+* If present, string value "dtmi:dtdl:context;3" may be preceded in the array by one or more values that also begin with "dtmi:dtdl:context;" but [SHOULD NOT](spec/Recommendation-ContextDtdlOnlyOneV3.json).
 * Member [SHOULD NOT](spec/Recommendation-ContextUniqueValuesV3.json) include more than one instance of any given string value.
 
 The *de-versioned* value of a DTMI is the portion of the string value to the left of the semicolon.
