@@ -2,7 +2,9 @@
 
 **Version 2**
 
-This version of DTDL is used for [Azure Digital Twins](https://azure.microsoft.com/services/digital-twins/) and [IoT Plug and Play](https://aka.ms/iotpnp).
+This version of DTDL is used for [Azure Digital Twins](https://azure.microsoft.com/services/digital-twins/) and [IoT Plug and Play](https://aka.ms/iotpnp). 
+
+> Note: Since April 2023, DTDL v3 is the latest supported version in Azure products and services (except IoT Central)
 
 ## Table of Contents
 

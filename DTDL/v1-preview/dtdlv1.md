@@ -1,9 +1,10 @@
 # Digital Twin Definition Language
 **Preview, Version 1**
 
-This version of DTDL is used for IoT Plug and Play support in IoT Hub and IoT Central.
+This version of DTDL was used for IoT Plug and Play preview support in IoT Hub and IoT Central.
 
-If you are using Azure Digital Twins, refer to [DTDL version 2](../v2/dtdlv2.md).
+If you are using IoT Central, refer to [DTDL version 2](../v2/DTDL.v2.md).
+If you are using Azure Digital Twins, or Azure IoT Hub, refer to [DTDL version 3](../v3/DTDL.v3.md)
 
 ## Contents
 [CapabilityModel](#capabilitymodel)<br>
