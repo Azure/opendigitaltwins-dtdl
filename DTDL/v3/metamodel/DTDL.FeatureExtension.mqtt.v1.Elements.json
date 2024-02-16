@@ -1,0 +1,74 @@
+﻿[
+  {
+    "@context": [
+      "dtmi:dtdl:context;3",
+      "dtmi:dtdl:extension:mqtt;1"
+    ],
+    "@id": "dtmi:dtdl:extension:mqtt:v1:payloadFormat:avro",
+    "@type": "PayloadFormat",
+    "displayName": "AVRO",
+    "description": {
+      "en-US": "[Apache AVRO](https://avro.apache.org/docs/) data serialization format"
+    }
+  },
+  {
+    "@context": [
+      "dtmi:dtdl:context;3",
+      "dtmi:dtdl:extension:mqtt;1"
+    ],
+    "@id": "dtmi:dtdl:extension:mqtt:v1:payloadFormat:cbor",
+    "@type": "PayloadFormat",
+    "displayName": "CBOR",
+    "description": {
+      "en-US": "RFC 8949 Concise Binary Object Representation ([CBOR](https://cbor.io/)) data format"
+    }
+  },
+  {
+    "@context": [
+      "dtmi:dtdl:context;3",
+      "dtmi:dtdl:extension:mqtt;1"
+    ],
+    "@id": "dtmi:dtdl:extension:mqtt:v1:payloadFormat:json",
+    "@type": "PayloadFormat",
+    "displayName": "JSON",
+    "description": {
+      "en-US": "ECMA-404 JavaScript Object Notation ([JSON](https://www.json.org/json-en.html)) data interchange syntax"
+    }
+  },
+  {
+    "@context": [
+      "dtmi:dtdl:context;3",
+      "dtmi:dtdl:extension:mqtt;1"
+    ],
+    "@id": "dtmi:dtdl:extension:mqtt:v1:payloadFormat:proto2",
+    "@type": "PayloadFormat",
+    "displayName": "Protobuf v2",
+    "description": {
+      "en-US": "Google [Protocol Buffers](https://protobuf.dev/) data interchange format, [version 2](https://protobuf.dev/programming-guides/proto2/)"
+    }
+  },
+  {
+    "@context": [
+      "dtmi:dtdl:context;3",
+      "dtmi:dtdl:extension:mqtt;1"
+    ],
+    "@id": "dtmi:dtdl:extension:mqtt:v1:payloadFormat:proto3",
+    "@type": "PayloadFormat",
+    "displayName": "Protobuf v3",
+    "description": {
+      "en-US": "Google [Protocol Buffers](https://protobuf.dev/) data interchange format, [version 3](https://protobuf.dev/programming-guides/proto3/)"
+    }
+  },
+  {
+    "@context": [
+      "dtmi:dtdl:context;3",
+      "dtmi:dtdl:extension:mqtt;1"
+    ],
+    "@id": "dtmi:dtdl:extension:mqtt:v1:payloadFormat:raw",
+    "@type": "PayloadFormat",
+    "displayName": "raw",
+    "description": {
+      "en-US": "unserialized raw bytes"
+    }
+  }
+]
