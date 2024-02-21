@@ -41,6 +41,10 @@
           "sh:maxCount": 1,
           "sh:datatype": "xsd:string",
           "sh:nodeKind": "sh:Literal",
+          "sh:pattern": "^(?:(?:[!%-*,-.0-z|~][!$-*,-.0-z|~]*)|(?:{(?:[A-Za-z]+:)?[A-Za-z]+}))(?:\\/(?:(?:[!$-*,-.0-z|~]+)|(?:{(?:[A-Za-z]+:)?[A-Za-z]+})))*$",
+          "dtmm:patternDesc": {
+            "en-US": "slash-separated sequence of character-restricted labels and/or brace-enclosed tokens"
+          },
           "dtmm:description": {
             "en-US": "MQTT topic pattern on which a Telemetry or a collection of Telemetries is published."
           }
@@ -50,6 +54,10 @@
           "sh:maxCount": 1,
           "sh:datatype": "xsd:string",
           "sh:nodeKind": "sh:Literal",
+          "sh:pattern": "^(?:(?:[!%-*,-.0-z|~][!$-*,-.0-z|~]*)|(?:{(?:[A-Za-z]+:)?[A-Za-z]+}))(?:\\/(?:(?:[!$-*,-.0-z|~]+)|(?:{(?:[A-Za-z]+:)?[A-Za-z]+})))*$",
+          "dtmm:patternDesc": {
+            "en-US": "slash-separated sequence of character-restricted labels and/or brace-enclosed tokens"
+          },
           "dtmm:description": {
             "en-US": "MQTT topic pattern on which a Command request is published."
           }
@@ -58,18 +66,13 @@
           "sh:path": "payloadFormat",
           "sh:minCount": 1,
           "sh:maxCount": 1,
-          "sh:class": "PayloadFormat",
-          "sh:nodeKind": "sh:IRI",
+          "sh:datatype": "xsd:string",
+          "sh:nodeKind": "sh:Literal",
           "dtmm:description": {
             "en-US": "The format to use when serializing an instance to an MQTT payload."
           }
         }
       ]
-    },
-    {
-      "@id": "dtmi:dtdl:extension:mqtt:v1:PayloadFormat",
-      "@type": [ "rdfs:Class", "sh:NodeShape" ],
-      "rdfs:subClassOf": "LatentType"
     },
     {
       "@id": "dtmi:dtdl:extension:mqtt:v1:Idempotent",
