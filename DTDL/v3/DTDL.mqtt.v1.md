@@ -24,6 +24,9 @@ The chart below lists the additional properties that may be part of an element t
 
 When an Interface in a model is co-typed Mqtt, values of the above properties indicate the serialization format and MQTT topic pattern used for any instance of Interface contents when conveyed via an MQTT message.
 
+Note that the co-types on an Interface, and the additional properties added by these co-types, are not imported by an Interface that `extends` the Interface.
+Therefore, the properties above apply only to the Interface to which they are directly applied, not to any extending Interfaces.
+
 ### Topic Pattern
 
 MQTT topic pattern strings are restricted as follows.
@@ -76,6 +79,7 @@ Although index values can be generated automatically, the Indexed adjunct type i
 The following example shows an Interface with four `contents` elements, two Telemetries and two Commands.
 The "getSpeed" Command is co-typed Idempotent, so a single invocation of the Command might result in multiple executions due to message duplication in the network.
 By contranst, the "setColor" Command is not co-typed Idempotent, so a single invocation must result in a single execution, despite any message duplication.
+The "getSpeed" Command is also co-typed Cacheable and has a "ttl" property with value "PT15S", which is a duration of 15 seconds expressed in [ISO 8601 Duration](https://en.wikipedia.org/wiki/ISO_8601#Durations) format.
 
 ```json
 {
@@ -102,12 +106,71 @@ By contranst, the "setColor" Command is not co-typed Idempotent, so a single inv
       "description": "The color currently being applied."
     },
     {
-      "@type": [ "Command", "Idempotent" ],
+      "@type": [ "Command", "Idempotent", "Cacheable" ],
       "name": "getSpeed",
       "response": {
         "name": "mph",
         "schema": "integer"
+      },
+      "ttl": "PT15S"
+    },
+    {
+      "@type": "Command",
+      "name": "setColor",
+      "request": {
+        "name": "newColor",
+        "schema": "string"
+      },
+      "response": {
+        "name": "oldColor",
+        "schema": "string"
       }
+    }
+  ]
+}
+```
+
+The following example is identical to the previous one except for two changes.
+First, the `payloadFormat` is specified as "Protobuf/3" instead of "Avro/1.11.0".
+Second, each Telemetry element is co-typed Indexed, and it specifies a unique (within the Interface) positive integer value for the `index` property.
+
+The Protobuf format uses field indices instead of names in its on-wire representation.
+These indices can be generated automatically, but the example illustrates how the Indexed adjunct type can be used to set explicit index values if desired.
+
+```json
+{
+  "@context": [
+      "dtmi:dtdl:context;3",
+      "dtmi:dtdl:extension:mqtt;1"
+  ],
+  "@id": "dtmi:example:TestVehicle;1",
+  "@type": [ "Interface", "Mqtt" ],
+  "telemetryTopic": "vehicles/{modelId}/{senderId}/telemetry",
+  "commandTopic": "vehicles/{executorId}/command/{commandName}",
+  "payloadFormat": "Protobuf/3",
+  "contents": [
+    {
+      "@type": [ "Telemetry", "Indexed" ],
+      "name": "distance",
+      "schema": "double",
+      "description": "The total distance from the origin.",
+      "index": 3
+    },
+    {
+      "@type": [ "Telemetry", "Indexed" ],
+      "name": "color",
+      "schema": "string",
+      "description": "The color currently being applied.",
+      "index": 2
+    },
+    {
+      "@type": [ "Command", "Idempotent", "Cacheable" ],
+      "name": "getSpeed",
+      "response": {
+        "name": "mph",
+        "schema": "integer"
+      },
+      "ttl": "PT15S"
     },
     {
       "@type": "Command",
