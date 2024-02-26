@@ -990,6 +990,7 @@ The chart below lists the language extensions that are currently available for u
 | [Historization v1](./DTDL.historization.v1.md) | feature | Record the historical sequence of values of a Property or Telemetry and the times at which values change. |
 | [Annotation v1](./DTDL.annotation.v1.md) | feature | Add custom metadata to a Property or a Telemetry. |
 | [Overriding v1](./DTDL.overriding.v1.md) | feature | Override a model property with an instance value. |
+| [MQTT v1](./DTDL.mqtt.v1.md) | feature | Specify Interface properties to facilitate communication via the MQTT pub/sub protocol. |
 
 ## Changes from Version 2
 
