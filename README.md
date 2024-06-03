@@ -12,7 +12,7 @@ DTDL has evolved over time, resulting in the next versions:
 |---|---|---|
 |v1-preview|[dtdlv1.md](./DTDL/v1-preview/dtdlv1.md)|Out of support|
 |v2|[DTDL.v2.md](./DTDL/v2/DTDL.v2.md)|Supported in ADT, IoTCentral and IoT Plug and Play|
-|v3|[DTDL.v3.md](./DTDL/v3/DTDL.v3.md)|Supported in ADT|
+|v3|[DTDL.v3.md](./DTDL/v3/DTDL.v3.md)|Supported in ADT and IoT Plug and Play|
 
 
 ## :point_right: A Simple Example
