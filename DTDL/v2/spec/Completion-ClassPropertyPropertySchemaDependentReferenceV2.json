@@ -7,14 +7,14 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;2",
-        "@id": "dtmi:example:lambda_quan;1",
+        "@id": "dtmi:example:sigma_mu;1",
         "@type": "Interface",
         "extends": {
-          "@id": "dtmi:example:lambda_snee;1",
+          "@id": "dtmi:example:sigma_lambda;1",
           "@type": "Interface",
           "contents": {
             "@type": "Property",
-            "name": "lambda_nuh",
+            "name": "sigma_kappa",
             "schema": "dtmi:ex:dependentRef;1"
           }
         }
@@ -34,14 +34,14 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;2",
-        "@id": "dtmi:example:lambda_floob;1",
+        "@id": "dtmi:example:sigma_omicron;1",
         "@type": "Interface",
         "extends": {
-          "@id": "dtmi:example:lambda_spazz;1",
+          "@id": "dtmi:example:sigma_xi;1",
           "@type": "Interface",
           "contents": {
             "@type": "Property",
-            "name": "lambda_thnad",
+            "name": "sigma_nu",
             "schema": [
               "dtmi:ex:dependentRef;1"
             ]

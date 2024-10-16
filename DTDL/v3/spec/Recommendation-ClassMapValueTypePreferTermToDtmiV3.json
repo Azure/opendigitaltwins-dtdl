@@ -8,18 +8,18 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;3",
-        "@id": "dtmi:example:tau_humpf;1",
+        "@id": "dtmi:example:snee_gamma;1",
         "@type": "Interface",
         "schemas": {
-          "@id": "dtmi:example:tau_wum;1",
+          "@id": "dtmi:example:snee_alpha;1",
           "@type": "Map",
           "mapKey": {
-            "name": "tau_um",
+            "name": "snee_beta",
             "schema": "string"
           },
           "mapValue": {
-            "name": "tau_yuzz",
-            "schema": "time",
+            "name": "nuh_hi",
+            "schema": "date",
             "@type": "MapValue"
           }
         }
@@ -35,18 +35,18 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;3",
-        "@id": "dtmi:example:tau_snee;1",
+        "@id": "dtmi:example:snee_eta;1",
         "@type": "Interface",
         "schemas": {
-          "@id": "dtmi:example:tau_glikk;1",
+          "@id": "dtmi:example:snee_epsilon;1",
           "@type": "Map",
           "mapKey": {
-            "name": "tau_nuh",
+            "name": "snee_zeta",
             "schema": "string"
           },
           "mapValue": {
-            "name": "tau_fuddle",
-            "schema": "boolean",
+            "name": "snee_delta",
+            "schema": "dateTime",
             "@type": "dtmi:dtdl:class:MapValue;3"
           }
         }

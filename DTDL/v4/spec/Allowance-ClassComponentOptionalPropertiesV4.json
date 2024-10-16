@@ -1,0 +1,116 @@
+﻿[
+  {
+    "valid": true,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:phi_psi;1",
+        "@type": "Interface",
+        "extends": {
+          "@id": "dtmi:example:phi_chi;1",
+          "@type": "Interface",
+          "contents": {
+            "@context": [],
+            "@type": "Component",
+            "name": "phi_upsilon",
+            "schema": {
+              "@id": "dtmi:example:phi_phi;1",
+              "@type": "Interface"
+            }
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:phi_um;1",
+        "@type": "Interface",
+        "extends": {
+          "@id": "dtmi:example:phi_wum;1",
+          "@type": "Interface",
+          "contents": {
+            "@type": "Component",
+            "name": "phi_omega",
+            "schema": {
+              "@id": "dtmi:example:phi_yuzz;1",
+              "@type": "Interface"
+            }
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:phi_glikk;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Component",
+          "name": "phi_humpf",
+          "schema": {
+            "@id": "dtmi:example:phi_fuddle;1",
+            "@type": "Interface"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:phi_quan;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Component",
+          "name": "phi_nuh",
+          "schema": {
+            "@id": "dtmi:example:phi_snee;1",
+            "@type": "Interface"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:phi_floob;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Component",
+          "name": "phi_thnad",
+          "schema": {
+            "@id": "dtmi:example:phi_spazz;1",
+            "@type": "Interface"
+          }
+        }
+      }
+    ]
+  }
+]

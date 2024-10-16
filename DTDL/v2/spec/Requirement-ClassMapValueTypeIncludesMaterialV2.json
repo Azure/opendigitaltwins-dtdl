@@ -7,18 +7,18 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;2",
-        "@id": "dtmi:example:eta_epsilon;1",
+        "@id": "dtmi:example:nu_epsilon;1",
         "@type": "Interface",
         "schemas": {
-          "@id": "dtmi:example:eta_gamma;1",
+          "@id": "dtmi:example:nu_gamma;1",
           "@type": "Map",
           "mapKey": {
-            "name": "eta_delta",
+            "name": "nu_delta",
             "schema": "string"
           },
           "mapValue": {
-            "name": "eta_beta",
-            "schema": "long",
+            "name": "nu_beta",
+            "schema": "time",
             "@type": "MapValue"
           }
         }
@@ -33,18 +33,18 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;2",
-        "@id": "dtmi:example:eta_iota;1",
+        "@id": "dtmi:example:nu_iota;1",
         "@type": "Interface",
         "schemas": {
-          "@id": "dtmi:example:eta_eta;1",
+          "@id": "dtmi:example:nu_eta;1",
           "@type": "Map",
           "mapKey": {
-            "name": "eta_theta",
+            "name": "nu_theta",
             "schema": "string"
           },
           "mapValue": {
-            "name": "eta_zeta",
-            "schema": "string",
+            "name": "nu_zeta",
+            "schema": "boolean",
             "@type": [
               "MapValue"
             ]
@@ -61,18 +61,18 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;2",
-        "@id": "dtmi:example:eta_nu;1",
+        "@id": "dtmi:example:nu_nu;1",
         "@type": "Interface",
         "schemas": {
-          "@id": "dtmi:example:eta_lambda;1",
+          "@id": "dtmi:example:nu_lambda;1",
           "@type": "Map",
           "mapKey": {
-            "name": "eta_mu",
+            "name": "nu_mu",
             "schema": "string"
           },
           "mapValue": {
-            "name": "eta_kappa",
-            "schema": "time",
+            "name": "nu_kappa",
+            "schema": "date",
             "@type": "dtmi:dtdl:class:MapValue;2"
           }
         }
@@ -87,18 +87,18 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;2",
-        "@id": "dtmi:example:eta_rho;1",
+        "@id": "dtmi:example:nu_rho;1",
         "@type": "Interface",
         "schemas": {
-          "@id": "dtmi:example:eta_omicron;1",
+          "@id": "dtmi:example:nu_omicron;1",
           "@type": "Map",
           "mapKey": {
-            "name": "eta_pi",
+            "name": "nu_pi",
             "schema": "string"
           },
           "mapValue": {
-            "name": "eta_xi",
-            "schema": "boolean",
+            "name": "nu_xi",
+            "schema": "dateTime",
             "@type": [
               "dtmi:dtdl:class:MapValue;2"
             ]
@@ -115,18 +115,18 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;2",
-        "@id": "dtmi:example:eta_phi;1",
+        "@id": "dtmi:example:nu_phi;1",
         "@type": "Interface",
         "schemas": {
-          "@id": "dtmi:example:eta_tau;1",
+          "@id": "dtmi:example:nu_tau;1",
           "@type": "Map",
           "mapKey": {
-            "name": "eta_upsilon",
+            "name": "nu_upsilon",
             "schema": "string"
           },
           "mapValue": {
-            "name": "eta_sigma",
-            "schema": "date",
+            "name": "nu_sigma",
+            "schema": "double",
             "@type": "Something"
           }
         }
@@ -141,19 +141,19 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;2",
-        "@id": "dtmi:example:eta_yuzz;1",
+        "@id": "dtmi:example:nu_yuzz;1",
         "@type": "Interface",
         "schemas": {
-          "@id": "dtmi:example:eta_psi;1",
+          "@id": "dtmi:example:nu_psi;1",
           "@type": "Map",
           "mapKey": {
-            "name": "eta_omega",
+            "name": "nu_omega",
             "schema": "string"
           },
           "mapValue": {
             "@context": "dtmi:undefinedExtension:context;1",
-            "name": "eta_chi",
-            "schema": "dateTime",
+            "name": "nu_chi",
+            "schema": "duration",
             "@type": "Something"
           }
         }
@@ -168,18 +168,18 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;2",
-        "@id": "dtmi:example:eta_fuddle;1",
+        "@id": "dtmi:example:nu_fuddle;1",
         "@type": "Interface",
         "schemas": {
-          "@id": "dtmi:example:eta_um;1",
+          "@id": "dtmi:example:nu_um;1",
           "@type": "Map",
           "mapKey": {
-            "name": "eta_humpf",
+            "name": "nu_humpf",
             "schema": "string"
           },
           "mapValue": {
-            "name": "eta_wum",
-            "schema": "double",
+            "name": "nu_wum",
+            "schema": "float",
             "@type": [
               "Something"
             ]
@@ -196,19 +196,19 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;2",
-        "@id": "dtmi:example:eta_quan;1",
+        "@id": "dtmi:example:nu_quan;1",
         "@type": "Interface",
         "schemas": {
-          "@id": "dtmi:example:eta_nuh;1",
+          "@id": "dtmi:example:nu_nuh;1",
           "@type": "Map",
           "mapKey": {
-            "name": "eta_snee",
+            "name": "nu_snee",
             "schema": "string"
           },
           "mapValue": {
             "@context": "dtmi:undefinedExtension:context;1",
-            "name": "eta_glikk",
-            "schema": "duration",
+            "name": "nu_glikk",
+            "schema": "integer",
             "@type": [
               "Something"
             ]

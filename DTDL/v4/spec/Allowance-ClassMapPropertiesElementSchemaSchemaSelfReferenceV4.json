@@ -1,0 +1,31 @@
+﻿[
+  {
+    "valid": true,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:delta_phi;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Property",
+          "name": "delta_upsilon",
+          "schema": {
+            "@id": "dtmi:foo:epsilon_yuzz;1",
+            "@type": "Map",
+            "mapKey": {
+              "name": "delta_tau",
+              "schema": "string"
+            },
+            "mapValue": {
+              "name": "delta_sigma",
+              "schema": "dtmi:foo:epsilon_yuzz;1"
+            }
+          }
+        }
+      }
+    ]
+  }
+]

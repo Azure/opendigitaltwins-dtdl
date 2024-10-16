@@ -1,0 +1,60 @@
+﻿[
+  {
+    "valid": true,
+    "desirable": true,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:omega_upsilon;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:omega_pi;1",
+          "@type": "Map",
+          "description": [
+            "omega_rho"
+          ],
+          "mapKey": {
+            "name": "omega_sigma",
+            "schema": "string"
+          },
+          "mapValue": {
+            "name": "omega_tau",
+            "schema": "long"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "desirable": false,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:omega_yuzz;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:omega_phi;1",
+          "@type": "Map",
+          "dtmi:dtdl:property:description;4": [
+            "omega_chi"
+          ],
+          "mapKey": {
+            "name": "omega_psi",
+            "schema": "string"
+          },
+          "mapValue": {
+            "name": "omega_omega",
+            "schema": "short"
+          }
+        }
+      }
+    ]
+  }
+]

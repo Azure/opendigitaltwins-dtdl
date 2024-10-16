@@ -41,9 +41,9 @@ So, for the present example, "currentTemp" Telemetry values reported on the date
 ```json
 {
   "@context": [
-      "dtmi:dtdl:context;3",
-      "dtmi:dtdl:extension:quantitativeTypes;1",
-      "dtmi:dtdl:extension:annotation;1"
+    "dtmi:dtdl:context;3",
+    "dtmi:dtdl:extension:quantitativeTypes;1",
+    "dtmi:dtdl:extension:annotation;1"
   ],
   "@id": "dtmi:com:example:Sensor;1",
   "@type": "Interface",
@@ -115,9 +115,9 @@ When an Interface `extends` another Interface, the former can annotate a `conten
   },
   {
     "@context": [
-        "dtmi:dtdl:context;3",
-        "dtmi:dtdl:extension:quantitativeTypes;1",
-        "dtmi:dtdl:extension:annotation;1"
+      "dtmi:dtdl:context;3",
+      "dtmi:dtdl:extension:quantitativeTypes;1",
+      "dtmi:dtdl:extension:annotation;1"
     ],
     "@id": "dtmi:com:example:Sensor;1",
     "@type": "Interface",
@@ -148,4 +148,5 @@ The chart below lists the versions of the Annotation extension that are currentl
 | Extension | Context | DTDL versions |
 | --- | --- | --- |
 | [Annotation v1](./DTDL.annotation.v1.md) | dtmi:dtdl:extension:annotation;1 | [3](./DTDL.v3.md) |
+| [Annotation v2](../v4/DTDL.annotation.v2.md) | dtmi:dtdl:extension:annotation;2 | [3](./DTDL.v3.md), [4](../v4/DTDL.v4.md) |
 

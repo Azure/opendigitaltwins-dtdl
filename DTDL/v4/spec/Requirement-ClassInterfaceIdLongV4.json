@@ -1,0 +1,44 @@
+﻿[
+  {
+    "valid": true,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:When:in:the:Course:of:human:events:it:becomes:necessary:for:one:people:to:dissolve:the:political:bands:which:have:connect;1",
+        "@type": "Interface"
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:When:in:the:Course:of:human:events:it:becomes:necessary:for:one:people:to:dissolve:the:political:bands:which:have:connecte;1",
+        "@type": "Interface"
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": [
+          "dtmi:dtdl:context;4",
+          "dtmi:undefinedExtension:context;1"
+        ],
+        "@id": "dtmi:When:in:the:Course:of:human:events:it:becomes:necessary:for:one:people:to:dissolve:the:political:bands:which:have:connecte;1",
+        "@type": "Interface"
+      }
+    ]
+  }
+]

@@ -95,8 +95,8 @@ One Telemetry has a `schema` value of *integer*, and the other three have `schem
 ```json
 {
   "@context": [
-      "dtmi:dtdl:context;3",
-      "dtmi:dtdl:extension:quantitativeTypes;1"
+    "dtmi:dtdl:context;3",
+    "dtmi:dtdl:extension:quantitativeTypes;1"
   ],
   "@id": "dtmi:com:example:Sensor;1",
   "@type": "Interface",
@@ -135,8 +135,8 @@ Each field has a name, co-type, and unit that matches one of the separate Teleme
 ```json
 {
   "@context": [
-      "dtmi:dtdl:context;3",
-      "dtmi:dtdl:extension:quantitativeTypes;1"
+    "dtmi:dtdl:context;3",
+    "dtmi:dtdl:extension:quantitativeTypes;1"
   ],
   "@id": "dtmi:com:example:Sensor;1",
   "@type": "Interface",
@@ -185,4 +185,5 @@ The chart below lists the versions of the QuantitativeTypes extension that are c
 | Extension | Context | DTDL versions |
 | --- | --- | --- |
 | [QuantitativeTypes v1](./DTDL.quantitativeTypes.v1.md) | dtmi:dtdl:extension:quantitativeTypes;1 | [3](./DTDL.v3.md) |
+| [QuantitativeTypes v2](../v4/DTDL.quantitativeTypes.v2.md) | dtmi:dtdl:extension:quantitativeTypes;2 | [4](../v4/DTDL.v4.md) |
 

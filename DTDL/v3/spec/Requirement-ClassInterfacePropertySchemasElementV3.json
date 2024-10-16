@@ -7,15 +7,15 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;3",
-        "@id": "dtmi:example:omicron_iota;1",
+        "@id": "dtmi:example:wum_kappa;1",
         "@type": "Interface",
         "extends": {
-          "@id": "dtmi:example:omicron_theta;1",
+          "@id": "dtmi:example:wum_iota;1",
           "@type": "Interface",
           "schemas": {
-            "@id": "dtmi:example:omicron_eta;1",
+            "@id": "dtmi:example:wum_theta;1",
             "@type": "Array",
-            "elementSchema": "dateTime"
+            "elementSchema": "boolean"
           }
         }
       }
@@ -29,16 +29,16 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;3",
-        "@id": "dtmi:example:omicron_mu;1",
+        "@id": "dtmi:example:wum_nu;1",
         "@type": "Interface",
         "extends": {
-          "@id": "dtmi:example:omicron_lambda;1",
+          "@id": "dtmi:example:wum_mu;1",
           "@type": "Interface",
           "schemas": [
             {
-              "@id": "dtmi:example:omicron_kappa;1",
+              "@id": "dtmi:example:wum_lambda;1",
               "@type": "Array",
-              "elementSchema": "double"
+              "elementSchema": "date"
             }
           ]
         }
@@ -53,15 +53,15 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;3",
-        "@id": "dtmi:example:omicron_omicron;1",
+        "@id": "dtmi:example:wum_pi;1",
         "@type": "Interface",
         "extends": {
-          "@id": "dtmi:example:omicron_xi;1",
+          "@id": "dtmi:example:wum_omicron;1",
           "@type": "Interface",
           "schemas": {
-            "@id": "dtmi:example:omicron_nu;1",
+            "@id": "dtmi:example:wum_xi;1",
             "@type": "Array",
-            "elementSchema": "duration",
+            "elementSchema": "dateTime",
             "@context": "dtmi:dtdl:context;2"
           }
         }
@@ -76,17 +76,64 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;3",
-        "@id": "dtmi:example:omicron_sigma;1",
+        "@id": "dtmi:example:wum_tau;1",
         "@type": "Interface",
         "extends": {
           "@context": "dtmi:undefinedExtension:context;1",
-          "@id": "dtmi:example:omicron_rho;1",
+          "@id": "dtmi:example:wum_sigma;1",
           "@type": "Interface",
           "schemas": {
-            "@id": "dtmi:example:omicron_pi;1",
+            "@id": "dtmi:example:wum_rho;1",
             "@type": "Array",
-            "elementSchema": "float",
+            "elementSchema": "double",
             "@context": "dtmi:dtdl:context;2"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:wum_chi;1",
+        "@type": "Interface",
+        "extends": {
+          "@id": "dtmi:example:wum_phi;1",
+          "@type": "Interface",
+          "schemas": {
+            "@id": "dtmi:example:wum_upsilon;1",
+            "@type": "Array",
+            "elementSchema": "integer",
+            "@context": "dtmi:dtdl:context;4"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:wum_yuzz;1",
+        "@type": "Interface",
+        "extends": {
+          "@context": "dtmi:undefinedExtension:context;1",
+          "@id": "dtmi:example:wum_omega;1",
+          "@type": "Interface",
+          "schemas": {
+            "@id": "dtmi:example:wum_psi;1",
+            "@type": "Array",
+            "elementSchema": "long",
+            "@context": "dtmi:dtdl:context;4"
           }
         }
       }
@@ -100,10 +147,10 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;3",
-        "@id": "dtmi:example:omicron_upsilon;1",
+        "@id": "dtmi:example:wum_um;1",
         "@type": "Interface",
         "extends": {
-          "@id": "dtmi:example:omicron_tau;1",
+          "@id": "dtmi:example:wum_wum;1",
           "@type": "Interface",
           "schemas": []
         }
@@ -118,19 +165,19 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;3",
-        "@id": "dtmi:example:omicron_omega;1",
+        "@id": "dtmi:example:wum_nuh;1",
         "@type": "Interface",
         "extends": {
-          "@id": "dtmi:example:omicron_psi;1",
+          "@id": "dtmi:example:wum_glikk;1",
           "@type": "Interface",
           "schemas": [
             {
-              "@id": "dtmi:example:omicron_phi;1",
+              "@id": "dtmi:example:wum_humpf;1",
               "@type": "Array",
               "elementSchema": "integer"
             },
             {
-              "@id": "dtmi:example:omicron_chi;1",
+              "@id": "dtmi:example:wum_fuddle;1",
               "@type": "Enum",
               "valueSchema": "integer"
             }

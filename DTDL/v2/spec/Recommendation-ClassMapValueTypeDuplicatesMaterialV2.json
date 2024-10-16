@@ -8,18 +8,18 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;2",
-        "@id": "dtmi:example:eta_yekk;1",
+        "@id": "dtmi:example:nu_yekk;1",
         "@type": "Interface",
         "schemas": {
-          "@id": "dtmi:example:eta_flunn;1",
+          "@id": "dtmi:example:nu_flunn;1",
           "@type": "Map",
           "mapKey": {
-            "name": "eta_itch",
+            "name": "nu_itch",
             "schema": "string"
           },
           "mapValue": {
-            "name": "eta_jogg",
-            "schema": "integer",
+            "name": "nu_jogg",
+            "schema": "string",
             "@type": [
               "MapValue",
               "MapValue"
@@ -38,18 +38,18 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;2",
-        "@id": "dtmi:example:theta_beta;1",
+        "@id": "dtmi:example:xi_beta;1",
         "@type": "Interface",
         "schemas": {
-          "@id": "dtmi:example:eta_hi;1",
+          "@id": "dtmi:example:nu_hi;1",
           "@type": "Map",
           "mapKey": {
-            "name": "theta_alpha",
+            "name": "xi_alpha",
             "schema": "string"
           },
           "mapValue": {
-            "name": "eta_vroo",
-            "schema": "long",
+            "name": "nu_vroo",
+            "schema": "time",
             "@type": [
               "dtmi:dtdl:class:MapValue;2",
               "dtmi:dtdl:class:MapValue;2"

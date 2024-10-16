@@ -7,12 +7,12 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;2",
-        "@id": "dtmi:example:sigma_humpf;1",
+        "@id": "dtmi:example:upsilon_humpf;1",
         "@type": "Interface",
         "schemas": {
-          "@id": "dtmi:example:sigma_um;1",
+          "@id": "dtmi:example:upsilon_um;1",
           "@type": "Array",
-          "elementSchema": "duration",
+          "elementSchema": "integer",
           "dtmi:foo//bar": 626
         }
       }
@@ -26,13 +26,13 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;2",
-        "@id": "dtmi:example:sigma_glikk;1",
+        "@id": "dtmi:example:upsilon_glikk;1",
         "@type": "Interface",
         "schemas": {
           "@context": "dtmi:undefinedExtension:context;1",
-          "@id": "dtmi:example:sigma_fuddle;1",
+          "@id": "dtmi:example:upsilon_fuddle;1",
           "@type": "Array",
-          "elementSchema": "float",
+          "elementSchema": "long",
           "dtmi:foo//bar": 626
         }
       }

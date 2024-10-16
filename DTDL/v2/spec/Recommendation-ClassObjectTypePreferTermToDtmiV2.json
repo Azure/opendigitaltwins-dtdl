@@ -8,14 +8,14 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;2",
-        "@id": "dtmi:example:humpf_phi;1",
+        "@id": "dtmi:example:thnad_phi;1",
         "@type": "Interface",
         "schemas": {
-          "@id": "dtmi:example:humpf_tau;1",
+          "@id": "dtmi:example:thnad_tau;1",
           "fields": [
             {
-              "name": "humpf_upsilon",
-              "schema": "string"
+              "name": "thnad_upsilon",
+              "schema": "boolean"
             }
           ],
           "@type": "Object"
@@ -32,14 +32,14 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;2",
-        "@id": "dtmi:example:humpf_omega;1",
+        "@id": "dtmi:example:thnad_omega;1",
         "@type": "Interface",
         "schemas": {
-          "@id": "dtmi:example:humpf_chi;1",
+          "@id": "dtmi:example:thnad_chi;1",
           "fields": [
             {
-              "name": "humpf_psi",
-              "schema": "time"
+              "name": "thnad_psi",
+              "schema": "date"
             }
           ],
           "@type": "dtmi:dtdl:class:Object;2"

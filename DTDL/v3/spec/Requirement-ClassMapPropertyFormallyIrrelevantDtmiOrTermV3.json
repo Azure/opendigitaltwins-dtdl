@@ -7,18 +7,18 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;3",
-        "@id": "dtmi:example:eta_fuddle;1",
+        "@id": "dtmi:example:tau_phi;1",
         "@type": "Interface",
         "schemas": {
-          "@id": "dtmi:example:eta_wum;1",
+          "@id": "dtmi:example:tau_sigma;1",
           "@type": "Map",
           "mapKey": {
-            "name": "eta_um",
+            "name": "tau_tau",
             "schema": "string"
           },
           "mapValue": {
-            "name": "eta_humpf",
-            "schema": "string"
+            "name": "tau_upsilon",
+            "schema": "duration"
           },
           "dtmi:foo:bar;1": 626
         }
@@ -33,19 +33,19 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;3",
-        "@id": "dtmi:example:eta_quan;1",
+        "@id": "dtmi:example:tau_yuzz;1",
         "@type": "Interface",
         "schemas": {
           "@context": "dtmi:undefinedExtension:context;1",
-          "@id": "dtmi:example:eta_glikk;1",
+          "@id": "dtmi:example:tau_chi;1",
           "@type": "Map",
           "mapKey": {
-            "name": "eta_nuh",
+            "name": "tau_psi",
             "schema": "string"
           },
           "mapValue": {
-            "name": "eta_snee",
-            "schema": "time"
+            "name": "tau_omega",
+            "schema": "float"
           },
           "dtmi:foo:bar;1": 626
         }
@@ -60,18 +60,18 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;3",
-        "@id": "dtmi:example:eta_zatz;1",
+        "@id": "dtmi:example:tau_fuddle;1",
         "@type": "Interface",
         "schemas": {
-          "@id": "dtmi:example:eta_thnad;1",
+          "@id": "dtmi:example:tau_wum;1",
           "@type": "Map",
           "mapKey": {
-            "name": "eta_spazz",
+            "name": "tau_um",
             "schema": "string"
           },
           "mapValue": {
-            "name": "eta_floob",
-            "schema": "boolean"
+            "name": "tau_humpf",
+            "schema": "integer"
           },
           "boolean": null
         }
@@ -86,19 +86,19 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;3",
-        "@id": "dtmi:example:eta_yekk;1",
+        "@id": "dtmi:example:tau_quan;1",
         "@type": "Interface",
         "schemas": {
           "@context": "dtmi:undefinedExtension:context;1",
-          "@id": "dtmi:example:eta_jogg;1",
+          "@id": "dtmi:example:tau_glikk;1",
           "@type": "Map",
           "mapKey": {
-            "name": "eta_flunn",
+            "name": "tau_nuh",
             "schema": "string"
           },
           "mapValue": {
-            "name": "eta_itch",
-            "schema": "date"
+            "name": "tau_snee",
+            "schema": "long"
           },
           "boolean": null
         }

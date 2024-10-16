@@ -7,15 +7,15 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;3",
-        "@id": "dtmi:example:tau_iota;1",
+        "@id": "dtmi:example:snee_delta;1",
         "@type": "Interface",
         "extends": {
-          "@id": "dtmi:example:tau_theta;1",
+          "@id": "dtmi:example:snee_gamma;1",
           "@type": "Interface",
           "contents": {
             "@type": "Property",
-            "name": "tau_eta",
-            "schema": "float",
+            "name": "snee_beta",
+            "schema": "date",
             "@context": "dtmi:dtdl:extension:quantitativeTypes;1"
           }
         }
@@ -30,15 +30,15 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;3",
-        "@id": "dtmi:example:tau_mu;1",
+        "@id": "dtmi:example:snee_eta;1",
         "@type": "Interface",
         "extends": {
-          "@id": "dtmi:example:tau_lambda;1",
+          "@id": "dtmi:example:snee_zeta;1",
           "@type": "Interface",
           "contents": {
             "@type": "Property",
-            "name": "tau_kappa",
-            "schema": "integer",
+            "name": "snee_epsilon",
+            "schema": "dateTime",
             "@context": []
           }
         }
@@ -53,15 +53,15 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;3",
-        "@id": "dtmi:example:tau_omicron;1",
+        "@id": "dtmi:example:snee_kappa;1",
         "@type": "Interface",
         "extends": {
-          "@id": "dtmi:example:tau_xi;1",
+          "@id": "dtmi:example:snee_iota;1",
           "@type": "Interface",
           "contents": {
             "@type": "Property",
-            "name": "tau_nu",
-            "schema": "long",
+            "name": "snee_theta",
+            "schema": "double",
             "@context": [
               "dtmi:dtdl:extension:quantitativeTypes;1"
             ]
@@ -78,15 +78,15 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;3",
-        "@id": "dtmi:example:tau_sigma;1",
+        "@id": "dtmi:example:snee_nu;1",
         "@type": "Interface",
         "extends": {
-          "@id": "dtmi:example:tau_rho;1",
+          "@id": "dtmi:example:snee_mu;1",
           "@type": "Interface",
           "contents": {
             "@type": "Property",
-            "name": "tau_pi",
-            "schema": "string",
+            "name": "snee_lambda",
+            "schema": "duration",
             "@context": null
           }
         }
@@ -101,15 +101,15 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;3",
-        "@id": "dtmi:example:tau_phi;1",
+        "@id": "dtmi:example:snee_pi;1",
         "@type": "Interface",
         "extends": {
-          "@id": "dtmi:example:tau_upsilon;1",
+          "@id": "dtmi:example:snee_omicron;1",
           "@type": "Interface",
           "contents": {
             "@type": "Property",
-            "name": "tau_tau",
-            "schema": "time",
+            "name": "snee_xi",
+            "schema": "float",
             "@context": 626
           }
         }
@@ -124,15 +124,15 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;3",
-        "@id": "dtmi:example:tau_omega;1",
+        "@id": "dtmi:example:snee_tau;1",
         "@type": "Interface",
         "extends": {
-          "@id": "dtmi:example:tau_psi;1",
+          "@id": "dtmi:example:snee_sigma;1",
           "@type": "Interface",
           "contents": {
             "@type": "Property",
-            "name": "tau_chi",
-            "schema": "boolean",
+            "name": "snee_rho",
+            "schema": "integer",
             "@context": true
           }
         }
@@ -147,15 +147,15 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;3",
-        "@id": "dtmi:example:tau_um;1",
+        "@id": "dtmi:example:snee_chi;1",
         "@type": "Interface",
         "extends": {
-          "@id": "dtmi:example:tau_wum;1",
+          "@id": "dtmi:example:snee_phi;1",
           "@type": "Interface",
           "contents": {
             "@type": "Property",
-            "name": "tau_yuzz",
-            "schema": "date",
+            "name": "snee_upsilon",
+            "schema": "long",
             "@context": [
               null
             ]
@@ -172,15 +172,15 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;3",
-        "@id": "dtmi:example:tau_glikk;1",
+        "@id": "dtmi:example:snee_yuzz;1",
         "@type": "Interface",
         "extends": {
-          "@id": "dtmi:example:tau_fuddle;1",
+          "@id": "dtmi:example:snee_omega;1",
           "@type": "Interface",
           "contents": {
             "@type": "Property",
-            "name": "tau_humpf",
-            "schema": "dateTime",
+            "name": "snee_psi",
+            "schema": "string",
             "@context": [
               626
             ]
@@ -197,15 +197,15 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;3",
-        "@id": "dtmi:example:tau_quan;1",
+        "@id": "dtmi:example:snee_humpf;1",
         "@type": "Interface",
         "extends": {
-          "@id": "dtmi:example:tau_snee;1",
+          "@id": "dtmi:example:snee_um;1",
           "@type": "Interface",
           "contents": {
             "@type": "Property",
-            "name": "tau_nuh",
-            "schema": "double",
+            "name": "snee_wum",
+            "schema": "time",
             "@context": [
               true
             ]
@@ -222,15 +222,84 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;3",
-        "@id": "dtmi:example:tau_floob;1",
+        "@id": "dtmi:example:snee_nuh;1",
         "@type": "Interface",
         "extends": {
-          "@id": "dtmi:example:tau_spazz;1",
+          "@id": "dtmi:example:snee_glikk;1",
           "@type": "Interface",
           "contents": {
             "@type": "Property",
-            "name": "tau_thnad",
-            "schema": "duration",
+            "name": "snee_fuddle",
+            "schema": "boolean",
+            "@context": "dtmi:dtdl:extension:quantitativeTypes"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:snee_thnad;1",
+        "@type": "Interface",
+        "extends": {
+          "@id": "dtmi:example:snee_quan;1",
+          "@type": "Interface",
+          "contents": {
+            "@type": "Property",
+            "name": "snee_snee",
+            "schema": "date",
+            "@context": "http://dtdl/extension/quantitativeTypes/1"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:snee_zatz;1",
+        "@type": "Interface",
+        "extends": {
+          "@id": "dtmi:example:snee_floob;1",
+          "@type": "Interface",
+          "contents": {
+            "@type": "Property",
+            "name": "snee_spazz",
+            "schema": "dateTime",
+            "@context": "quantitativeTypes;1"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:snee_itch;1",
+        "@type": "Interface",
+        "extends": {
+          "@id": "dtmi:example:snee_flunn;1",
+          "@type": "Interface",
+          "contents": {
+            "@type": "Property",
+            "name": "snee_jogg",
+            "schema": "double",
             "@context": {}
           }
         }
@@ -245,14 +314,39 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;3",
-        "@id": "dtmi:example:tau_flunn;1",
+        "@id": "dtmi:example:snee_hi;1",
         "@type": "Interface",
         "extends": {
-          "@id": "dtmi:example:tau_jogg;1",
+          "@id": "dtmi:example:snee_vroo;1",
           "@type": "Interface",
           "contents": {
             "@type": "Property",
-            "name": "tau_zatz",
+            "name": "snee_yekk",
+            "schema": "duration",
+            "@context": {
+              "foo": "dtmi:foo:bar;1"
+            }
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:quan_gamma;1",
+        "@type": "Interface",
+        "extends": {
+          "@id": "dtmi:example:quan_beta;1",
+          "@type": "Interface",
+          "contents": {
+            "@type": "Property",
+            "name": "quan_alpha",
             "schema": "float",
             "@context": [
               {}
@@ -270,62 +364,20 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;3",
-        "@id": "dtmi:example:tau_vroo;1",
+        "@id": "dtmi:example:quan_zeta;1",
         "@type": "Interface",
         "extends": {
-          "@id": "dtmi:example:tau_yekk;1",
+          "@id": "dtmi:example:quan_epsilon;1",
           "@type": "Interface",
           "contents": {
             "@type": "Property",
-            "name": "tau_itch",
+            "name": "quan_delta",
             "schema": "integer",
-            "@context": "dtmi:dtdl:extension:quantitativeTypes"
-          }
-        }
-      }
-    ]
-  },
-  {
-    "valid": false,
-    "options": [
-      "DisallowUndefinedExtensions"
-    ],
-    "input": [
-      {
-        "@context": "dtmi:dtdl:context;3",
-        "@id": "dtmi:example:upsilon_beta;1",
-        "@type": "Interface",
-        "extends": {
-          "@id": "dtmi:example:upsilon_alpha;1",
-          "@type": "Interface",
-          "contents": {
-            "@type": "Property",
-            "name": "tau_hi",
-            "schema": "long",
-            "@context": "http://dtdl/extension/quantitativeTypes/1"
-          }
-        }
-      }
-    ]
-  },
-  {
-    "valid": false,
-    "options": [
-      "DisallowUndefinedExtensions"
-    ],
-    "input": [
-      {
-        "@context": "dtmi:dtdl:context;3",
-        "@id": "dtmi:example:upsilon_epsilon;1",
-        "@type": "Interface",
-        "extends": {
-          "@id": "dtmi:example:upsilon_delta;1",
-          "@type": "Interface",
-          "contents": {
-            "@type": "Property",
-            "name": "upsilon_gamma",
-            "schema": "string",
-            "@context": "quantitativeTypes;1"
+            "@context": [
+              {
+                "foo": "dtmi:foo:bar;1"
+              }
+            ]
           }
         }
       }

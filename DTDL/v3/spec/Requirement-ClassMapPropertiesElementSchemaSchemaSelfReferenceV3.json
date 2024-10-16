@@ -1,0 +1,61 @@
+﻿[
+  {
+    "valid": false,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:quan_yekk;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Property",
+          "name": "quan_itch",
+          "schema": {
+            "@id": "dtmi:foo:delta_beta;1",
+            "@type": "Map",
+            "mapKey": {
+              "name": "quan_flunn",
+              "schema": "string"
+            },
+            "mapValue": {
+              "name": "quan_jogg",
+              "schema": "dtmi:foo:delta_beta;1"
+            }
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:thnad_beta;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Property",
+          "name": "thnad_alpha",
+          "schema": {
+            "@context": "dtmi:undefinedExtension:context;1",
+            "@id": "dtmi:foo:delta_beta;1",
+            "@type": "Map",
+            "mapKey": {
+              "name": "quan_hi",
+              "schema": "string"
+            },
+            "mapValue": {
+              "name": "quan_vroo",
+              "schema": "dtmi:foo:delta_beta;1"
+            }
+          }
+        }
+      }
+    ]
+  }
+]

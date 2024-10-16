@@ -1,0 +1,21 @@
+﻿[
+  {
+    "valid": true,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:beta_psi;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:beta_phi;1",
+          "@type": "Array",
+          "dtmi:dtdl:property:comment;4": "beta_chi",
+          "elementSchema": "byte"
+        }
+      }
+    ]
+  }
+]

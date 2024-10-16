@@ -8,14 +8,14 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;3",
-        "@id": "dtmi:example:sigma_um;1",
+        "@id": "dtmi:example:um_beta;1",
         "@type": "Interface",
         "contents": {
           "@type": "Command",
-          "name": "sigma_yuzz",
+          "name": "wum_hi",
           "request": {
-            "name": "sigma_wum",
-            "schema": "integer"
+            "name": "um_alpha",
+            "schema": "boolean"
           }
         }
       }
@@ -30,14 +30,14 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;3",
-        "@id": "dtmi:example:sigma_glikk;1",
+        "@id": "dtmi:example:um_epsilon;1",
         "@type": "Interface",
         "contents": {
           "@type": "Command",
-          "name": "sigma_humpf",
+          "name": "um_gamma",
           "dtmi:dtdl:property:request;3": {
-            "name": "sigma_fuddle",
-            "schema": "long"
+            "name": "um_delta",
+            "schema": "date"
           }
         }
       }

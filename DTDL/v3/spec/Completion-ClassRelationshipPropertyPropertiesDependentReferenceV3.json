@@ -7,14 +7,14 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;3",
-        "@id": "dtmi:example:delta_rho;1",
+        "@id": "dtmi:example:rho_thnad;1",
         "@type": "Interface",
         "extends": {
-          "@id": "dtmi:example:delta_pi;1",
+          "@id": "dtmi:example:rho_quan;1",
           "@type": "Interface",
           "contents": {
             "@type": "Relationship",
-            "name": "delta_omicron",
+            "name": "rho_snee",
             "properties": "dtmi:ex:dependentRef;1"
           }
         }
@@ -34,14 +34,14 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;3",
-        "@id": "dtmi:example:delta_upsilon;1",
+        "@id": "dtmi:example:rho_zatz;1",
         "@type": "Interface",
         "extends": {
-          "@id": "dtmi:example:delta_tau;1",
+          "@id": "dtmi:example:rho_floob;1",
           "@type": "Interface",
           "contents": {
             "@type": "Relationship",
-            "name": "delta_sigma",
+            "name": "rho_spazz",
             "properties": [
               "dtmi:ex:dependentRef;1"
             ]

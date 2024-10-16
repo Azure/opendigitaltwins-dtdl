@@ -7,12 +7,12 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;2",
-        "@id": "dtmi:example:nu_beta;1",
+        "@id": "dtmi:example:upsilon_rho;1",
         "@type": "Interface",
         "contents": {
           "@type": "Telemetry",
-          "name": "nu_alpha",
-          "schema": "float",
+          "name": "upsilon_pi",
+          "schema": "long",
           "description": "hello"
         }
       }
@@ -26,12 +26,12 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;2",
-        "@id": "dtmi:example:nu_delta;1",
+        "@id": "dtmi:example:upsilon_tau;1",
         "@type": "Interface",
         "contents": {
           "@type": "Telemetry",
-          "name": "nu_gamma",
-          "schema": "integer",
+          "name": "upsilon_sigma",
+          "schema": "string",
           "description": [
             "hello"
           ]
@@ -47,12 +47,12 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;2",
-        "@id": "dtmi:example:nu_zeta;1",
+        "@id": "dtmi:example:upsilon_phi;1",
         "@type": "Interface",
         "contents": {
           "@type": "Telemetry",
-          "name": "nu_epsilon",
-          "schema": "long",
+          "name": "upsilon_upsilon",
+          "schema": "time",
           "description": {
             "en": "hello"
           }
@@ -68,12 +68,12 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;2",
-        "@id": "dtmi:example:nu_theta;1",
+        "@id": "dtmi:example:upsilon_psi;1",
         "@type": "Interface",
         "contents": {
           "@type": "Telemetry",
-          "name": "nu_eta",
-          "schema": "string",
+          "name": "upsilon_chi",
+          "schema": "boolean",
           "description": [
             {
               "@value": "hello",
@@ -92,12 +92,12 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;2",
-        "@id": "dtmi:example:nu_kappa;1",
+        "@id": "dtmi:example:upsilon_yuzz;1",
         "@type": "Interface",
         "contents": {
           "@type": "Telemetry",
-          "name": "nu_iota",
-          "schema": "time",
+          "name": "upsilon_omega",
+          "schema": "date",
           "description": {}
         }
       }
@@ -111,12 +111,12 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;2",
-        "@id": "dtmi:example:nu_mu;1",
+        "@id": "dtmi:example:upsilon_um;1",
         "@type": "Interface",
         "contents": {
           "@type": "Telemetry",
-          "name": "nu_lambda",
-          "schema": "boolean",
+          "name": "upsilon_wum",
+          "schema": "dateTime",
           "description": []
         }
       }
@@ -130,52 +130,13 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;2",
-        "@id": "dtmi:example:nu_xi;1",
+        "@id": "dtmi:example:upsilon_fuddle;1",
         "@type": "Interface",
         "contents": {
           "@type": "Telemetry",
-          "name": "nu_nu",
-          "schema": "date",
-          "description": null
-        }
-      }
-    ]
-  },
-  {
-    "valid": false,
-    "options": [
-      "AllowUndefinedExtensions"
-    ],
-    "input": [
-      {
-        "@context": "dtmi:dtdl:context;2",
-        "@id": "dtmi:example:nu_pi;1",
-        "@type": "Interface",
-        "contents": {
-          "@context": "dtmi:undefinedExtension:context;1",
-          "@type": "Telemetry",
-          "name": "nu_omicron",
-          "schema": "dateTime",
-          "description": null
-        }
-      }
-    ]
-  },
-  {
-    "valid": false,
-    "options": [
-      "DisallowUndefinedExtensions"
-    ],
-    "input": [
-      {
-        "@context": "dtmi:dtdl:context;2",
-        "@id": "dtmi:example:nu_sigma;1",
-        "@type": "Interface",
-        "contents": {
-          "@type": "Telemetry",
-          "name": "nu_rho",
+          "name": "upsilon_humpf",
           "schema": "double",
-          "description": true
+          "description": null
         }
       }
     ]
@@ -188,13 +149,52 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;2",
-        "@id": "dtmi:example:nu_upsilon;1",
+        "@id": "dtmi:example:upsilon_nuh;1",
         "@type": "Interface",
         "contents": {
           "@context": "dtmi:undefinedExtension:context;1",
           "@type": "Telemetry",
-          "name": "nu_tau",
+          "name": "upsilon_glikk",
           "schema": "duration",
+          "description": null
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:upsilon_quan;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Telemetry",
+          "name": "upsilon_snee",
+          "schema": "float",
+          "description": true
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:upsilon_spazz;1",
+        "@type": "Interface",
+        "contents": {
+          "@context": "dtmi:undefinedExtension:context;1",
+          "@type": "Telemetry",
+          "name": "upsilon_thnad",
+          "schema": "integer",
           "description": true
         }
       }
@@ -208,54 +208,13 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;2",
-        "@id": "dtmi:example:nu_chi;1",
+        "@id": "dtmi:example:upsilon_zatz;1",
         "@type": "Interface",
         "contents": {
           "@type": "Telemetry",
-          "name": "nu_phi",
-          "schema": "float",
-          "description": 626
-        }
-      }
-    ]
-  },
-  {
-    "valid": false,
-    "options": [
-      "AllowUndefinedExtensions"
-    ],
-    "input": [
-      {
-        "@context": "dtmi:dtdl:context;2",
-        "@id": "dtmi:example:nu_omega;1",
-        "@type": "Interface",
-        "contents": {
-          "@context": "dtmi:undefinedExtension:context;1",
-          "@type": "Telemetry",
-          "name": "nu_psi",
-          "schema": "integer",
-          "description": 626
-        }
-      }
-    ]
-  },
-  {
-    "valid": false,
-    "options": [
-      "DisallowUndefinedExtensions"
-    ],
-    "input": [
-      {
-        "@context": "dtmi:dtdl:context;2",
-        "@id": "dtmi:example:nu_wum;1",
-        "@type": "Interface",
-        "contents": {
-          "@type": "Telemetry",
-          "name": "nu_yuzz",
+          "name": "upsilon_floob",
           "schema": "long",
-          "description": [
-            null
-          ]
+          "description": 626
         }
       }
     ]
@@ -268,16 +227,14 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;2",
-        "@id": "dtmi:example:nu_humpf;1",
+        "@id": "dtmi:example:upsilon_flunn;1",
         "@type": "Interface",
         "contents": {
           "@context": "dtmi:undefinedExtension:context;1",
           "@type": "Telemetry",
-          "name": "nu_um",
+          "name": "upsilon_jogg",
           "schema": "string",
-          "description": [
-            null
-          ]
+          "description": 626
         }
       }
     ]
@@ -290,14 +247,14 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;2",
-        "@id": "dtmi:example:nu_glikk;1",
+        "@id": "dtmi:example:upsilon_yekk;1",
         "@type": "Interface",
         "contents": {
           "@type": "Telemetry",
-          "name": "nu_fuddle",
+          "name": "upsilon_itch",
           "schema": "time",
           "description": [
-            true
+            null
           ]
         }
       }
@@ -311,14 +268,57 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;2",
-        "@id": "dtmi:example:nu_snee;1",
+        "@id": "dtmi:example:upsilon_hi;1",
         "@type": "Interface",
         "contents": {
           "@context": "dtmi:undefinedExtension:context;1",
           "@type": "Telemetry",
-          "name": "nu_nuh",
+          "name": "upsilon_vroo",
           "schema": "boolean",
           "description": [
+            null
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:phi_beta;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Telemetry",
+          "name": "phi_alpha",
+          "schema": "date",
+          "description": [
+            true
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:phi_delta;1",
+        "@type": "Interface",
+        "contents": {
+          "@context": "dtmi:undefinedExtension:context;1",
+          "@type": "Telemetry",
+          "name": "phi_gamma",
+          "schema": "dateTime",
+          "description": [
             true
           ]
         }
@@ -333,56 +333,56 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;2",
-        "@id": "dtmi:example:nu_thnad;1",
+        "@id": "dtmi:example:phi_zeta;1",
         "@type": "Interface",
         "contents": {
           "@type": "Telemetry",
-          "name": "nu_quan",
-          "schema": "date",
-          "description": [
-            626
-          ]
-        }
-      }
-    ]
-  },
-  {
-    "valid": false,
-    "options": [
-      "AllowUndefinedExtensions"
-    ],
-    "input": [
-      {
-        "@context": "dtmi:dtdl:context;2",
-        "@id": "dtmi:example:nu_floob;1",
-        "@type": "Interface",
-        "contents": {
-          "@context": "dtmi:undefinedExtension:context;1",
-          "@type": "Telemetry",
-          "name": "nu_spazz",
-          "schema": "dateTime",
-          "description": [
-            626
-          ]
-        }
-      }
-    ]
-  },
-  {
-    "valid": false,
-    "options": [
-      "DisallowUndefinedExtensions"
-    ],
-    "input": [
-      {
-        "@context": "dtmi:dtdl:context;2",
-        "@id": "dtmi:example:nu_jogg;1",
-        "@type": "Interface",
-        "contents": {
-          "@type": "Telemetry",
-          "name": "nu_zatz",
+          "name": "phi_epsilon",
           "schema": "double",
           "description": [
+            626
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:phi_theta;1",
+        "@type": "Interface",
+        "contents": {
+          "@context": "dtmi:undefinedExtension:context;1",
+          "@type": "Telemetry",
+          "name": "phi_eta",
+          "schema": "duration",
+          "description": [
+            626
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:phi_kappa;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Telemetry",
+          "name": "phi_iota",
+          "schema": "float",
+          "description": [
             {}
           ]
         }
@@ -397,13 +397,13 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;2",
-        "@id": "dtmi:example:nu_itch;1",
+        "@id": "dtmi:example:phi_mu;1",
         "@type": "Interface",
         "contents": {
           "@context": "dtmi:undefinedExtension:context;1",
           "@type": "Telemetry",
-          "name": "nu_flunn",
-          "schema": "duration",
+          "name": "phi_lambda",
+          "schema": "integer",
           "description": [
             {}
           ]
@@ -419,12 +419,12 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;2",
-        "@id": "dtmi:example:nu_vroo;1",
+        "@id": "dtmi:example:phi_xi;1",
         "@type": "Interface",
         "contents": {
           "@type": "Telemetry",
-          "name": "nu_yekk",
-          "schema": "float",
+          "name": "phi_nu",
+          "schema": "long",
           "description": {
             "@value": "hello",
             "@language": "en"
@@ -441,13 +441,13 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;2",
-        "@id": "dtmi:example:xi_alpha;1",
+        "@id": "dtmi:example:phi_pi;1",
         "@type": "Interface",
         "contents": {
           "@context": "dtmi:undefinedExtension:context;1",
           "@type": "Telemetry",
-          "name": "nu_hi",
-          "schema": "integer",
+          "name": "phi_omicron",
+          "schema": "string",
           "description": {
             "@value": "hello",
             "@language": "en"
@@ -464,12 +464,12 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;2",
-        "@id": "dtmi:example:xi_gamma;1",
+        "@id": "dtmi:example:phi_sigma;1",
         "@type": "Interface",
         "contents": {
           "@type": "Telemetry",
-          "name": "xi_beta",
-          "schema": "long",
+          "name": "phi_rho",
+          "schema": "time",
           "description": [
             {
               "en": "hello"
@@ -487,13 +487,13 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;2",
-        "@id": "dtmi:example:xi_epsilon;1",
+        "@id": "dtmi:example:phi_upsilon;1",
         "@type": "Interface",
         "contents": {
           "@context": "dtmi:undefinedExtension:context;1",
           "@type": "Telemetry",
-          "name": "xi_delta",
-          "schema": "string",
+          "name": "phi_tau",
+          "schema": "boolean",
           "description": [
             {
               "en": "hello"

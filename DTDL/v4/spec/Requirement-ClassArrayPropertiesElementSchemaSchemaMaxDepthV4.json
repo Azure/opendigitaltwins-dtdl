@@ -1,0 +1,135 @@
+﻿[
+  {
+    "valid": true,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:pi_gamma;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Property",
+          "name": "pi_beta",
+          "schema": {
+            "@type": "Array",
+            "elementSchema": {
+              "@type": "Array",
+              "elementSchema": {
+                "@type": "Array",
+                "elementSchema": {
+                  "@type": "Array",
+                  "elementSchema": {
+                    "@type": "Array",
+                    "elementSchema": {
+                      "@type": "Array",
+                      "elementSchema": {
+                        "@type": "Array",
+                        "elementSchema": {
+                          "@type": "Array",
+                          "elementSchema": "boolean"
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:pi_epsilon;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Property",
+          "name": "pi_delta",
+          "schema": {
+            "@type": "Array",
+            "elementSchema": {
+              "@type": "Array",
+              "elementSchema": {
+                "@type": "Array",
+                "elementSchema": {
+                  "@type": "Array",
+                  "elementSchema": {
+                    "@type": "Array",
+                    "elementSchema": {
+                      "@type": "Array",
+                      "elementSchema": {
+                        "@type": "Array",
+                        "elementSchema": {
+                          "@type": "Array",
+                          "elementSchema": {
+                            "@type": "Array",
+                            "elementSchema": "byte"
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:pi_eta;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Property",
+          "name": "pi_zeta",
+          "schema": {
+            "@context": "dtmi:undefinedExtension:context;1",
+            "@type": "Array",
+            "elementSchema": {
+              "@type": "Array",
+              "elementSchema": {
+                "@type": "Array",
+                "elementSchema": {
+                  "@type": "Array",
+                  "elementSchema": {
+                    "@type": "Array",
+                    "elementSchema": {
+                      "@type": "Array",
+                      "elementSchema": {
+                        "@type": "Array",
+                        "elementSchema": {
+                          "@type": "Array",
+                          "elementSchema": {
+                            "@type": "Array",
+                            "elementSchema": "bytes"
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    ]
+  }
+]

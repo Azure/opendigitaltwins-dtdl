@@ -1,0 +1,26 @@
+﻿{
+  "@context": [
+    "dtmi:dtdl:context;4",
+    "dtmi:dtdl:extension:historization;2"
+  ],
+  "@graph": [
+    {
+      "@id": "dtmi:dtdl:extension:historization:v2:documentation",
+      "@type": [ "dtmm:Documentation" ],
+      "dtmm:description": {
+        "en-US": "Record the historical sequence of values of a Property or Telemetry and the times at which values change."
+      }
+    },
+    {
+      "@id": "dtmi:dtdl:extension:historization:v2:Historized",
+      "@type": [ "rdfs:Class", "sh:NodeShape" ],
+      "rdfs:subClassOf": "AdjunctType",
+      "sh:or": [
+        { "sh:class": "dtmi:dtdl:class:Property;3" },
+        { "sh:class": "dtmi:dtdl:class:Property;4" },
+        { "sh:class": "dtmi:dtdl:class:Telemetry;3" },
+        { "sh:class": "dtmi:dtdl:class:Telemetry;4" }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,225 @@
+﻿[
+  {
+    "valid": true,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:glikk_epsilon;1",
+        "@type": "Interface",
+        "extends": {
+          "@id": "dtmi:example:glikk_delta;1",
+          "@type": "Interface",
+          "contents": {
+            "@type": "Relationship",
+            "name": "glikk_gamma",
+            "properties": {
+              "@id": "dtmi:example:glikk_alpha;1",
+              "@type": "Property",
+              "name": "glikk_beta",
+              "schema": "time"
+            }
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:glikk_kappa;1",
+        "@type": "Interface",
+        "extends": {
+          "@id": "dtmi:example:glikk_iota;1",
+          "@type": "Interface",
+          "contents": {
+            "@type": "Relationship",
+            "name": "glikk_theta",
+            "properties": [
+              {
+                "@id": "dtmi:example:glikk_zeta;1",
+                "@type": "Property",
+                "name": "glikk_eta",
+                "schema": "unsignedByte"
+              }
+            ]
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:glikk_mu;1",
+        "@type": "Interface",
+        "contents": [
+          {
+            "@id": "dtmi:ex:dependentRef;1",
+            "@type": "Property",
+            "name": "glikk_lambda",
+            "schema": "unsignedInteger"
+          },
+          {
+            "@type": "Relationship",
+            "name": "glikk_nu",
+            "properties": "dtmi:ex:dependentRef;1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:glikk_omicron;1",
+        "@type": "Interface",
+        "contents": [
+          {
+            "@id": "dtmi:ex:dependentRef;1",
+            "@type": "Property",
+            "name": "glikk_xi",
+            "schema": "unsignedLong"
+          },
+          {
+            "@type": "Relationship",
+            "name": "glikk_pi",
+            "properties": [
+              "dtmi:ex:dependentRef;1"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:glikk_phi;1",
+        "@type": "Interface",
+        "extends": {
+          "@id": "dtmi:example:glikk_upsilon;1",
+          "@type": "Interface",
+          "contents": {
+            "@type": "Relationship",
+            "name": "glikk_tau",
+            "properties": {
+              "@id": "dtmi:example:glikk_rho;1",
+              "@type": "Property",
+              "name": "glikk_sigma",
+              "schema": "integer",
+              "@context": "dtmi:dtdl:context;2"
+            }
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:glikk_wum;1",
+        "@type": "Interface",
+        "extends": {
+          "@id": "dtmi:example:glikk_yuzz;1",
+          "@type": "Interface",
+          "contents": {
+            "@type": "Relationship",
+            "name": "glikk_omega",
+            "properties": {
+              "@id": "dtmi:example:glikk_chi;1",
+              "@type": "Property",
+              "name": "glikk_psi",
+              "schema": "long",
+              "@context": "dtmi:dtdl:context;3"
+            }
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:glikk_fuddle;1",
+        "@type": "Interface",
+        "extends": {
+          "@id": "dtmi:example:glikk_humpf;1",
+          "@type": "Interface",
+          "contents": {
+            "@type": "Relationship",
+            "name": "glikk_um",
+            "properties": []
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:glikk_floob;1",
+        "@type": "Interface",
+        "extends": {
+          "@id": "dtmi:example:glikk_spazz;1",
+          "@type": "Interface",
+          "contents": {
+            "@type": "Relationship",
+            "name": "glikk_thnad",
+            "properties": [
+              {
+                "@id": "dtmi:example:glikk_glikk;1",
+                "@type": "Property",
+                "name": "glikk_nuh",
+                "schema": "boolean"
+              },
+              {
+                "@id": "dtmi:example:glikk_snee;1",
+                "@type": "Property",
+                "name": "glikk_quan",
+                "schema": "byte"
+              }
+            ]
+          }
+        }
+      }
+    ]
+  }
+]

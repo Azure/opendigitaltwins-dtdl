@@ -8,19 +8,19 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;2",
-        "@id": "dtmi:example:rho_quan;1",
+        "@id": "dtmi:example:psi_quan;1",
         "@type": "Interface",
         "schemas": {
-          "@id": "dtmi:example:rho_nuh;1",
+          "@id": "dtmi:example:psi_nuh;1",
           "@type": "Map",
           "mapKey": {
-            "name": "rho_snee",
+            "name": "psi_snee",
             "schema": "string"
           },
           "mapValue": {
-            "comment": "rho_fuddle",
-            "name": "rho_glikk",
-            "schema": "date"
+            "comment": "psi_fuddle",
+            "name": "psi_glikk",
+            "schema": "double"
           }
         }
       }
@@ -35,19 +35,19 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;2",
-        "@id": "dtmi:example:rho_jogg;1",
+        "@id": "dtmi:example:psi_jogg;1",
         "@type": "Interface",
         "schemas": {
-          "@id": "dtmi:example:rho_floob;1",
+          "@id": "dtmi:example:psi_floob;1",
           "@type": "Map",
           "mapKey": {
-            "name": "rho_zatz",
+            "name": "psi_zatz",
             "schema": "string"
           },
           "mapValue": {
-            "dtmi:dtdl:property:comment;2": "rho_thnad",
-            "name": "rho_spazz",
-            "schema": "dateTime"
+            "dtmi:dtdl:property:comment;2": "psi_thnad",
+            "name": "psi_spazz",
+            "schema": "duration"
           }
         }
       }

@@ -1,0 +1,386 @@
+﻿[
+  {
+    "valid": true,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:epsilon_snee;1",
+        "@type": "Interface",
+        "extends": {
+          "@id": "dtmi:example:epsilon_nuh;1",
+          "@type": "Interface",
+          "contents": {
+            "@type": "Telemetry",
+            "name": "epsilon_glikk",
+            "schema": "string",
+            "@context": "dtmi:dtdl:extension:quantitativeTypes;1"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:epsilon_spazz;1",
+        "@type": "Interface",
+        "extends": {
+          "@id": "dtmi:example:epsilon_thnad;1",
+          "@type": "Interface",
+          "contents": {
+            "@type": "Telemetry",
+            "name": "epsilon_quan",
+            "schema": "time",
+            "@context": []
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:epsilon_jogg;1",
+        "@type": "Interface",
+        "extends": {
+          "@id": "dtmi:example:epsilon_zatz;1",
+          "@type": "Interface",
+          "contents": {
+            "@type": "Telemetry",
+            "name": "epsilon_floob",
+            "schema": "unsignedByte",
+            "@context": [
+              "dtmi:dtdl:extension:quantitativeTypes;1"
+            ]
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:epsilon_yekk;1",
+        "@type": "Interface",
+        "extends": {
+          "@id": "dtmi:example:epsilon_itch;1",
+          "@type": "Interface",
+          "contents": {
+            "@type": "Telemetry",
+            "name": "epsilon_flunn",
+            "schema": "unsignedInteger",
+            "@context": null
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:zeta_alpha;1",
+        "@type": "Interface",
+        "extends": {
+          "@id": "dtmi:example:epsilon_hi;1",
+          "@type": "Interface",
+          "contents": {
+            "@type": "Telemetry",
+            "name": "epsilon_vroo",
+            "schema": "unsignedLong",
+            "@context": 626
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:zeta_delta;1",
+        "@type": "Interface",
+        "extends": {
+          "@id": "dtmi:example:zeta_gamma;1",
+          "@type": "Interface",
+          "contents": {
+            "@type": "Telemetry",
+            "name": "zeta_beta",
+            "schema": "unsignedShort",
+            "@context": true
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:zeta_eta;1",
+        "@type": "Interface",
+        "extends": {
+          "@id": "dtmi:example:zeta_zeta;1",
+          "@type": "Interface",
+          "contents": {
+            "@type": "Telemetry",
+            "name": "zeta_epsilon",
+            "schema": "uuid",
+            "@context": [
+              null
+            ]
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:zeta_kappa;1",
+        "@type": "Interface",
+        "extends": {
+          "@id": "dtmi:example:zeta_iota;1",
+          "@type": "Interface",
+          "contents": {
+            "@type": "Telemetry",
+            "name": "zeta_theta",
+            "schema": "boolean",
+            "@context": [
+              626
+            ]
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:zeta_nu;1",
+        "@type": "Interface",
+        "extends": {
+          "@id": "dtmi:example:zeta_mu;1",
+          "@type": "Interface",
+          "contents": {
+            "@type": "Telemetry",
+            "name": "zeta_lambda",
+            "schema": "byte",
+            "@context": [
+              true
+            ]
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:zeta_pi;1",
+        "@type": "Interface",
+        "extends": {
+          "@id": "dtmi:example:zeta_omicron;1",
+          "@type": "Interface",
+          "contents": {
+            "@type": "Telemetry",
+            "name": "zeta_xi",
+            "schema": "bytes",
+            "@context": "dtmi:dtdl:extension:quantitativeTypes"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:zeta_tau;1",
+        "@type": "Interface",
+        "extends": {
+          "@id": "dtmi:example:zeta_sigma;1",
+          "@type": "Interface",
+          "contents": {
+            "@type": "Telemetry",
+            "name": "zeta_rho",
+            "schema": "date",
+            "@context": "http://dtdl/extension/quantitativeTypes/1"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:zeta_chi;1",
+        "@type": "Interface",
+        "extends": {
+          "@id": "dtmi:example:zeta_phi;1",
+          "@type": "Interface",
+          "contents": {
+            "@type": "Telemetry",
+            "name": "zeta_upsilon",
+            "schema": "dateTime",
+            "@context": "quantitativeTypes;1"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:zeta_yuzz;1",
+        "@type": "Interface",
+        "extends": {
+          "@id": "dtmi:example:zeta_omega;1",
+          "@type": "Interface",
+          "contents": {
+            "@type": "Telemetry",
+            "name": "zeta_psi",
+            "schema": "decimal",
+            "@context": {}
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:zeta_humpf;1",
+        "@type": "Interface",
+        "extends": {
+          "@id": "dtmi:example:zeta_um;1",
+          "@type": "Interface",
+          "contents": {
+            "@type": "Telemetry",
+            "name": "zeta_wum",
+            "schema": "double",
+            "@context": {
+              "foo": "dtmi:foo:bar;1"
+            }
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:zeta_nuh;1",
+        "@type": "Interface",
+        "extends": {
+          "@id": "dtmi:example:zeta_glikk;1",
+          "@type": "Interface",
+          "contents": {
+            "@type": "Telemetry",
+            "name": "zeta_fuddle",
+            "schema": "duration",
+            "@context": [
+              {}
+            ]
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:zeta_thnad;1",
+        "@type": "Interface",
+        "extends": {
+          "@id": "dtmi:example:zeta_quan;1",
+          "@type": "Interface",
+          "contents": {
+            "@type": "Telemetry",
+            "name": "zeta_snee",
+            "schema": "float",
+            "@context": [
+              {
+                "foo": "dtmi:foo:bar;1"
+              }
+            ]
+          }
+        }
+      }
+    ]
+  }
+]

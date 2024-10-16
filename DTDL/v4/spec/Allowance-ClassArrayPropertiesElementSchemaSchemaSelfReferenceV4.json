@@ -1,0 +1,24 @@
+﻿[
+  {
+    "valid": true,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:pi_iota;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Property",
+          "name": "pi_theta",
+          "schema": {
+            "@id": "dtmi:foo:epsilon_chi;1",
+            "@type": "Array",
+            "elementSchema": "dtmi:foo:epsilon_chi;1"
+          }
+        }
+      }
+    ]
+  }
+]

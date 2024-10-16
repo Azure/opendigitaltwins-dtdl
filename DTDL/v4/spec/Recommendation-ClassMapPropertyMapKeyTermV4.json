@@ -1,0 +1,54 @@
+﻿[
+  {
+    "valid": true,
+    "desirable": true,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:epsilon_humpf;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:epsilon_yuzz;1",
+          "@type": "Map",
+          "mapKey": {
+            "name": "epsilon_wum",
+            "schema": "string"
+          },
+          "mapValue": {
+            "name": "epsilon_um",
+            "schema": "integer"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "desirable": false,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:epsilon_snee;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:epsilon_fuddle;1",
+          "@type": "Map",
+          "dtmi:dtdl:property:mapKey;4": {
+            "name": "epsilon_glikk",
+            "schema": "string"
+          },
+          "mapValue": {
+            "name": "epsilon_nuh",
+            "schema": "long"
+          }
+        }
+      }
+    ]
+  }
+]

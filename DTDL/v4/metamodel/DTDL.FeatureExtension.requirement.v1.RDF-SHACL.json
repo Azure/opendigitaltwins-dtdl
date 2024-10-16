@@ -1,0 +1,24 @@
+﻿{
+  "@context": [
+    "dtmi:dtdl:context;4",
+    "dtmi:dtdl:extension:requirement;1"
+  ],
+  "@graph": [
+    {
+      "@id": "dtmi:dtdl:extension:requirement:v1:documentation",
+      "@type": [ "dtmm:Documentation" ],
+      "dtmm:description": {
+        "en-US": "Selectively designate one or more fields in an Object as required."
+      }
+    },
+    {
+      "@id": "dtmi:dtdl:extension:requirement:v1:Required",
+      "@type": [ "rdfs:Class", "sh:NodeShape" ],
+      "rdfs:subClassOf": "AdjunctType",
+      "sh:or": [
+        { "sh:class": "dtmi:dtdl:class:Field;4" },
+        { "sh:class": "dtmi:dtdl:class:Field;3" }
+      ]
+    }
+  ]
+}

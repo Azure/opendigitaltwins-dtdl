@@ -7,14 +7,14 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;2",
-        "@id": "dtmi:example:um_nuh;1",
+        "@id": "dtmi:example:quan_nuh;1",
         "@type": "Interface",
         "schemas": {
-          "@id": "dtmi:example:um_fuddle;1",
+          "@id": "dtmi:example:quan_fuddle;1",
           "fields": [
             {
-              "name": "um_glikk",
-              "schema": "long"
+              "name": "quan_glikk",
+              "schema": "time"
             }
           ],
           "@type": "Object"
@@ -30,14 +30,14 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;2",
-        "@id": "dtmi:example:um_thnad;1",
+        "@id": "dtmi:example:quan_thnad;1",
         "@type": "Interface",
         "schemas": {
-          "@id": "dtmi:example:um_snee;1",
+          "@id": "dtmi:example:quan_snee;1",
           "fields": [
             {
-              "name": "um_quan",
-              "schema": "string"
+              "name": "quan_quan",
+              "schema": "boolean"
             }
           ],
           "@type": [
@@ -55,14 +55,14 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;2",
-        "@id": "dtmi:example:um_zatz;1",
+        "@id": "dtmi:example:quan_zatz;1",
         "@type": "Interface",
         "schemas": {
-          "@id": "dtmi:example:um_spazz;1",
+          "@id": "dtmi:example:quan_spazz;1",
           "fields": [
             {
-              "name": "um_floob",
-              "schema": "time"
+              "name": "quan_floob",
+              "schema": "date"
             }
           ],
           "@type": "dtmi:dtdl:class:Object;2"
@@ -78,14 +78,14 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;2",
-        "@id": "dtmi:example:um_itch;1",
+        "@id": "dtmi:example:quan_itch;1",
         "@type": "Interface",
         "schemas": {
-          "@id": "dtmi:example:um_jogg;1",
+          "@id": "dtmi:example:quan_jogg;1",
           "fields": [
             {
-              "name": "um_flunn",
-              "schema": "boolean"
+              "name": "quan_flunn",
+              "schema": "dateTime"
             }
           ],
           "@type": [
@@ -103,14 +103,14 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;2",
-        "@id": "dtmi:example:um_hi;1",
+        "@id": "dtmi:example:quan_hi;1",
         "@type": "Interface",
         "schemas": {
-          "@id": "dtmi:example:um_yekk;1",
+          "@id": "dtmi:example:quan_yekk;1",
           "fields": [
             {
-              "name": "um_vroo",
-              "schema": "date"
+              "name": "quan_vroo",
+              "schema": "double"
             }
           ],
           "@type": "Something"
@@ -126,15 +126,15 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;2",
-        "@id": "dtmi:example:humpf_gamma;1",
+        "@id": "dtmi:example:thnad_gamma;1",
         "@type": "Interface",
         "schemas": {
           "@context": "dtmi:undefinedExtension:context;1",
-          "@id": "dtmi:example:humpf_alpha;1",
+          "@id": "dtmi:example:thnad_alpha;1",
           "fields": [
             {
-              "name": "humpf_beta",
-              "schema": "dateTime"
+              "name": "thnad_beta",
+              "schema": "duration"
             }
           ],
           "@type": "Something"
@@ -150,14 +150,14 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;2",
-        "@id": "dtmi:example:humpf_zeta;1",
+        "@id": "dtmi:example:thnad_zeta;1",
         "@type": "Interface",
         "schemas": {
-          "@id": "dtmi:example:humpf_delta;1",
+          "@id": "dtmi:example:thnad_delta;1",
           "fields": [
             {
-              "name": "humpf_epsilon",
-              "schema": "double"
+              "name": "thnad_epsilon",
+              "schema": "float"
             }
           ],
           "@type": [
@@ -175,15 +175,15 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;2",
-        "@id": "dtmi:example:humpf_iota;1",
+        "@id": "dtmi:example:thnad_iota;1",
         "@type": "Interface",
         "schemas": {
           "@context": "dtmi:undefinedExtension:context;1",
-          "@id": "dtmi:example:humpf_eta;1",
+          "@id": "dtmi:example:thnad_eta;1",
           "fields": [
             {
-              "name": "humpf_theta",
-              "schema": "duration"
+              "name": "thnad_theta",
+              "schema": "integer"
             }
           ],
           "@type": [

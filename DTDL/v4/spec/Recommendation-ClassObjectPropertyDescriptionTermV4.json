@@ -1,0 +1,44 @@
+﻿[
+  {
+    "valid": true,
+    "desirable": true,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:fuddle_gamma;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:fuddle_alpha;1",
+          "@type": "Object",
+          "description": [
+            "fuddle_beta"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "desirable": false,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:fuddle_zeta;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:fuddle_delta;1",
+          "@type": "Object",
+          "dtmi:dtdl:property:description;4": [
+            "fuddle_epsilon"
+          ]
+        }
+      }
+    ]
+  }
+]

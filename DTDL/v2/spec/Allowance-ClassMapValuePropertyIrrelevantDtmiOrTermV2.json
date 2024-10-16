@@ -7,13 +7,13 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;2",
-        "@id": "dtmi:example:omega_hi;1",
+        "@id": "dtmi:example:glikk_hi;1",
         "@type": "Interface",
         "schemas": {
-          "@id": "dtmi:example:omega_yekk;1",
+          "@id": "dtmi:example:glikk_yekk;1",
           "@type": "Map",
           "mapKey": {
-            "name": "omega_vroo",
+            "name": "glikk_vroo",
             "schema": "string"
           },
           "mapValue": {
@@ -21,8 +21,8 @@
               "MapValue",
               "Foobar"
             ],
-            "name": "omega_itch",
-            "schema": "duration",
+            "name": "glikk_itch",
+            "schema": "integer",
             "dtmi:foo:bar;1": 626
           }
         }
@@ -37,13 +37,13 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;2",
-        "@id": "dtmi:example:yuzz_delta;1",
+        "@id": "dtmi:example:nuh_delta;1",
         "@type": "Interface",
         "schemas": {
-          "@id": "dtmi:example:yuzz_beta;1",
+          "@id": "dtmi:example:nuh_beta;1",
           "@type": "Map",
           "mapKey": {
-            "name": "yuzz_gamma",
+            "name": "nuh_gamma",
             "schema": "string"
           },
           "mapValue": {
@@ -51,8 +51,8 @@
               "MapValue",
               "Foobar"
             ],
-            "name": "yuzz_alpha",
-            "schema": "float",
+            "name": "nuh_alpha",
+            "schema": "long",
             "boolean": null
           }
         }

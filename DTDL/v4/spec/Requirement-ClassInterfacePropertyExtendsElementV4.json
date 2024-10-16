@@ -1,0 +1,187 @@
+﻿[
+  {
+    "valid": true,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:snee_vroo;1",
+        "@type": "Interface",
+        "extends": {
+          "@id": "dtmi:example:snee_yekk;1",
+          "@type": "Interface",
+          "extends": {
+            "@id": "dtmi:example:snee_itch;1",
+            "@type": "Interface"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:quan_beta;1",
+        "@type": "Interface",
+        "extends": {
+          "@id": "dtmi:example:quan_alpha;1",
+          "@type": "Interface",
+          "extends": [
+            {
+              "@id": "dtmi:example:snee_hi;1",
+              "@type": "Interface"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      [
+        {
+          "@context": "dtmi:dtdl:context;4",
+          "@id": "dtmi:example:quan_delta;1",
+          "@type": "Interface",
+          "extends": {
+            "@id": "dtmi:example:quan_gamma;1",
+            "@type": "Interface",
+            "extends": "dtmi:ex:dependentRef;1"
+          }
+        },
+        {
+          "@context": "dtmi:dtdl:context;4",
+          "@id": "dtmi:ex:dependentRef;1",
+          "@type": "Interface"
+        }
+      ]
+    ]
+  },
+  {
+    "valid": true,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      [
+        {
+          "@context": "dtmi:dtdl:context;4",
+          "@id": "dtmi:example:quan_zeta;1",
+          "@type": "Interface",
+          "extends": {
+            "@id": "dtmi:example:quan_epsilon;1",
+            "@type": "Interface",
+            "extends": [
+              "dtmi:ex:dependentRef;1"
+            ]
+          }
+        },
+        {
+          "@context": "dtmi:dtdl:context;4",
+          "@id": "dtmi:ex:dependentRef;1",
+          "@type": "Interface"
+        }
+      ]
+    ]
+  },
+  {
+    "valid": true,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:quan_iota;1",
+        "@type": "Interface",
+        "extends": {
+          "@id": "dtmi:example:quan_theta;1",
+          "@type": "Interface",
+          "extends": {
+            "@id": "dtmi:example:quan_eta;1",
+            "@type": "Interface",
+            "@context": "dtmi:dtdl:context;2"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:quan_mu;1",
+        "@type": "Interface",
+        "extends": {
+          "@id": "dtmi:example:quan_lambda;1",
+          "@type": "Interface",
+          "extends": {
+            "@id": "dtmi:example:quan_kappa;1",
+            "@type": "Interface",
+            "@context": "dtmi:dtdl:context;3"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:quan_xi;1",
+        "@type": "Interface",
+        "extends": {
+          "@id": "dtmi:example:quan_nu;1",
+          "@type": "Interface",
+          "extends": []
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:quan_sigma;1",
+        "@type": "Interface",
+        "extends": {
+          "@id": "dtmi:example:quan_rho;1",
+          "@type": "Interface",
+          "extends": [
+            {
+              "@id": "dtmi:example:quan_omicron;1",
+              "@type": "Interface"
+            },
+            {
+              "@id": "dtmi:example:quan_pi;1",
+              "@type": "Interface"
+            }
+          ]
+        }
+      }
+    ]
+  }
+]

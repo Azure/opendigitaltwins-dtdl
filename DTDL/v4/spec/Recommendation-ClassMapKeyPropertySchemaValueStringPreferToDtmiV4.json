@@ -1,0 +1,54 @@
+﻿[
+  {
+    "valid": true,
+    "desirable": true,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:gamma_itch;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:gamma_jogg;1",
+          "@type": "Map",
+          "mapValue": {
+            "name": "gamma_flunn",
+            "schema": "unsignedByte"
+          },
+          "mapKey": {
+            "name": "gamma_zatz",
+            "schema": "string"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "desirable": false,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:delta_alpha;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:gamma_vroo;1",
+          "@type": "Map",
+          "mapValue": {
+            "name": "gamma_hi",
+            "schema": "unsignedInteger"
+          },
+          "mapKey": {
+            "name": "gamma_yekk",
+            "schema": "dtmi:dtdl:instance:Schema:string;4"
+          }
+        }
+      }
+    ]
+  }
+]

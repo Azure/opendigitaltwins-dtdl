@@ -1,0 +1,274 @@
+﻿[
+  {
+    "valid": true,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:rho_nu;1",
+        "@type": "Interface",
+        "extends": {
+          "@id": "dtmi:example:rho_mu;1",
+          "@type": "Interface",
+          "contents": {
+            "@type": "Component",
+            "name": "rho_lambda",
+            "schema": {
+              "@id": "dtmi:example:rho_kappa;1",
+              "@type": "Interface"
+            }
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:rho_rho;1",
+        "@type": "Interface",
+        "extends": {
+          "@id": "dtmi:example:rho_pi;1",
+          "@type": "Interface",
+          "contents": {
+            "@type": "Component",
+            "name": "rho_omicron",
+            "schema": [
+              {
+                "@id": "dtmi:example:rho_xi;1",
+                "@type": "Interface"
+              }
+            ]
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      [
+        {
+          "@context": "dtmi:dtdl:context;4",
+          "@id": "dtmi:example:rho_upsilon;1",
+          "@type": "Interface",
+          "extends": {
+            "@id": "dtmi:example:rho_tau;1",
+            "@type": "Interface",
+            "contents": {
+              "@type": "Component",
+              "name": "rho_sigma",
+              "schema": "dtmi:ex:dependentRef;1"
+            }
+          }
+        },
+        {
+          "@context": "dtmi:dtdl:context;4",
+          "@id": "dtmi:ex:dependentRef;1",
+          "@type": "Interface"
+        }
+      ]
+    ]
+  },
+  {
+    "valid": true,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      [
+        {
+          "@context": "dtmi:dtdl:context;4",
+          "@id": "dtmi:example:rho_psi;1",
+          "@type": "Interface",
+          "extends": {
+            "@id": "dtmi:example:rho_chi;1",
+            "@type": "Interface",
+            "contents": {
+              "@type": "Component",
+              "name": "rho_phi",
+              "schema": [
+                "dtmi:ex:dependentRef;1"
+              ]
+            }
+          }
+        },
+        {
+          "@context": "dtmi:dtdl:context;4",
+          "@id": "dtmi:ex:dependentRef;1",
+          "@type": "Interface"
+        }
+      ]
+    ]
+  },
+  {
+    "valid": true,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:rho_um;1",
+        "@type": "Interface",
+        "extends": {
+          "@id": "dtmi:example:rho_wum;1",
+          "@type": "Interface",
+          "contents": {
+            "@type": "Component",
+            "name": "rho_yuzz",
+            "schema": {
+              "@id": "dtmi:example:rho_omega;1",
+              "@type": "Interface",
+              "@context": "dtmi:dtdl:context;2"
+            }
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:rho_nuh;1",
+        "@type": "Interface",
+        "extends": {
+          "@id": "dtmi:example:rho_glikk;1",
+          "@type": "Interface",
+          "contents": {
+            "@type": "Component",
+            "name": "rho_fuddle",
+            "schema": {
+              "@id": "dtmi:example:rho_humpf;1",
+              "@type": "Interface",
+              "@context": "dtmi:dtdl:context;3"
+            }
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:rho_thnad;1",
+        "@type": "Interface",
+        "extends": {
+          "@id": "dtmi:example:rho_quan;1",
+          "@type": "Interface",
+          "contents": {
+            "@type": "Component",
+            "name": "rho_snee",
+            "schema": []
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:rho_zatz;1",
+        "@type": "Interface",
+        "extends": {
+          "@id": "dtmi:example:rho_floob;1",
+          "@type": "Interface",
+          "contents": {
+            "@context": "dtmi:undefinedExtension:context;1",
+            "@type": "Component",
+            "name": "rho_spazz",
+            "schema": []
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:rho_vroo;1",
+        "@type": "Interface",
+        "extends": {
+          "@id": "dtmi:example:rho_yekk;1",
+          "@type": "Interface",
+          "contents": {
+            "@type": "Component",
+            "name": "rho_itch",
+            "schema": [
+              {
+                "@id": "dtmi:example:rho_jogg;1",
+                "@type": "Interface"
+              },
+              {
+                "@id": "dtmi:example:rho_flunn;1",
+                "@type": "Interface"
+              }
+            ]
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:sigma_delta;1",
+        "@type": "Interface",
+        "extends": {
+          "@id": "dtmi:example:sigma_gamma;1",
+          "@type": "Interface",
+          "contents": {
+            "@context": "dtmi:undefinedExtension:context;1",
+            "@type": "Component",
+            "name": "sigma_beta",
+            "schema": [
+              {
+                "@id": "dtmi:example:rho_hi;1",
+                "@type": "Interface"
+              },
+              {
+                "@id": "dtmi:example:sigma_alpha;1",
+                "@type": "Interface"
+              }
+            ]
+          }
+        }
+      }
+    ]
+  }
+]

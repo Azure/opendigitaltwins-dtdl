@@ -7,18 +7,18 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;3",
-        "@id": "dtmi:example:chi_nuh;1",
+        "@id": "dtmi:example:snee_iota;1",
         "@type": "Interface",
         "contents": {
           "@type": "Command",
-          "name": "chi_glikk",
+          "name": "snee_theta",
           "response": {
             "@type": [
               "CommandResponse",
               "http://foo.com/bar"
             ],
-            "name": "chi_fuddle",
-            "schema": "string"
+            "name": "snee_eta",
+            "schema": "dateTime"
           }
         }
       }
@@ -32,19 +32,19 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;3",
-        "@id": "dtmi:example:chi_thnad;1",
+        "@id": "dtmi:example:snee_mu;1",
         "@type": "Interface",
         "contents": {
           "@type": "Command",
-          "name": "chi_quan",
+          "name": "snee_lambda",
           "response": {
             "@context": "dtmi:undefinedExtension:context;1",
             "@type": [
               "CommandResponse",
               "http://foo.com/bar"
             ],
-            "name": "chi_snee",
-            "schema": "time"
+            "name": "snee_kappa",
+            "schema": "double"
           }
         }
       }

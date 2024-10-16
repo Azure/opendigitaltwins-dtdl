@@ -8,18 +8,18 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;2",
-        "@id": "dtmi:example:omega_nuh;1",
+        "@id": "dtmi:example:glikk_nuh;1",
         "@type": "Interface",
         "schemas": {
-          "@id": "dtmi:example:omega_fuddle;1",
+          "@id": "dtmi:example:glikk_fuddle;1",
           "@type": "Map",
           "mapKey": {
-            "name": "omega_glikk",
+            "name": "glikk_glikk",
             "schema": "string"
           },
           "mapValue": {
-            "name": "omega_humpf",
-            "schema": "date",
+            "name": "glikk_humpf",
+            "schema": "double",
             "@value": 626
           }
         }
@@ -35,18 +35,18 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;2",
-        "@id": "dtmi:example:omega_spazz;1",
+        "@id": "dtmi:example:glikk_spazz;1",
         "@type": "Interface",
         "schemas": {
-          "@id": "dtmi:example:omega_quan;1",
+          "@id": "dtmi:example:glikk_quan;1",
           "@type": "Map",
           "mapKey": {
-            "name": "omega_thnad",
+            "name": "glikk_thnad",
             "schema": "string"
           },
           "mapValue": {
-            "name": "omega_snee",
-            "schema": "dateTime",
+            "name": "glikk_snee",
+            "schema": "duration",
             "@language": "en"
           }
         }
@@ -62,18 +62,18 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;2",
-        "@id": "dtmi:example:omega_flunn;1",
+        "@id": "dtmi:example:glikk_flunn;1",
         "@type": "Interface",
         "schemas": {
-          "@id": "dtmi:example:omega_zatz;1",
+          "@id": "dtmi:example:glikk_zatz;1",
           "@type": "Map",
           "mapKey": {
-            "name": "omega_jogg",
+            "name": "glikk_jogg",
             "schema": "string"
           },
           "mapValue": {
-            "name": "omega_floob",
-            "schema": "double",
+            "name": "glikk_floob",
+            "schema": "float",
             "@foobar": true
           }
         }

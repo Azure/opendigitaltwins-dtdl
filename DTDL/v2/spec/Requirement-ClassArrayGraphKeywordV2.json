@@ -7,12 +7,12 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;2",
-        "@id": "dtmi:example:sigma_delta;1",
+        "@id": "dtmi:example:upsilon_delta;1",
         "@type": "Interface",
         "schemas": {
-          "@id": "dtmi:example:sigma_gamma;1",
+          "@id": "dtmi:example:upsilon_gamma;1",
           "@type": "Array",
-          "elementSchema": "dateTime",
+          "elementSchema": "duration",
           "@graph": {}
         }
       }
@@ -26,13 +26,13 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;2",
-        "@id": "dtmi:example:sigma_zeta;1",
+        "@id": "dtmi:example:upsilon_zeta;1",
         "@type": "Interface",
         "schemas": {
           "@context": "dtmi:undefinedExtension:context;1",
-          "@id": "dtmi:example:sigma_epsilon;1",
+          "@id": "dtmi:example:upsilon_epsilon;1",
           "@type": "Array",
-          "elementSchema": "double",
+          "elementSchema": "float",
           "@graph": {}
         }
       }

@@ -8,20 +8,20 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;3",
-        "@id": "dtmi:example:flunn_itch;1",
+        "@id": "dtmi:example:theta_itch;1",
         "@type": "Interface",
         "schemas": {
-          "@id": "dtmi:example:flunn_jogg;1",
+          "@id": "dtmi:example:theta_jogg;1",
           "@type": "Map",
           "mapValue": {
-            "name": "flunn_flunn",
-            "schema": "float"
+            "name": "theta_flunn",
+            "schema": "double"
           },
           "mapKey": {
             "description": [
-              "flunn_floob"
+              "theta_floob"
             ],
-            "name": "flunn_zatz",
+            "name": "theta_zatz",
             "schema": "string"
           }
         }
@@ -37,20 +37,20 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;3",
-        "@id": "dtmi:example:itch_beta;1",
+        "@id": "dtmi:example:iota_beta;1",
         "@type": "Interface",
         "schemas": {
-          "@id": "dtmi:example:flunn_hi;1",
+          "@id": "dtmi:example:theta_hi;1",
           "@type": "Map",
           "mapValue": {
-            "name": "itch_alpha",
-            "schema": "integer"
+            "name": "iota_alpha",
+            "schema": "duration"
           },
           "mapKey": {
             "dtmi:dtdl:property:description;3": [
-              "flunn_yekk"
+              "theta_yekk"
             ],
-            "name": "flunn_vroo",
+            "name": "theta_vroo",
             "schema": "string"
           }
         }

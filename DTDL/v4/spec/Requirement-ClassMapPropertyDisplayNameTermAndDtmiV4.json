@@ -1,0 +1,65 @@
+﻿[
+  {
+    "valid": false,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:um_zatz;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:um_snee;1",
+          "@type": "Map",
+          "displayName": [
+            "um_quan"
+          ],
+          "dtmi:dtdl:property:displayName;4": [
+            "um_thnad"
+          ],
+          "mapKey": {
+            "name": "um_spazz",
+            "schema": "string"
+          },
+          "mapValue": {
+            "name": "um_floob",
+            "schema": "double"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:um_hi;1",
+        "@type": "Interface",
+        "schemas": {
+          "@context": "dtmi:undefinedExtension:context;1",
+          "@id": "dtmi:example:um_jogg;1",
+          "@type": "Map",
+          "displayName": [
+            "um_flunn"
+          ],
+          "dtmi:dtdl:property:displayName;4": [
+            "um_itch"
+          ],
+          "mapKey": {
+            "name": "um_yekk",
+            "schema": "string"
+          },
+          "mapValue": {
+            "name": "um_vroo",
+            "schema": "duration"
+          }
+        }
+      }
+    ]
+  }
+]

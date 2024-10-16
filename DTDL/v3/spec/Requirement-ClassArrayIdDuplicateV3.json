@@ -7,16 +7,16 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;3",
-        "@id": "dtmi:example:quan_vroo;1",
+        "@id": "dtmi:example:vroo_alpha;1",
         "@type": "Interface",
         "contents": {
-          "@id": "dtmi:example:quan_vroo;1",
+          "@id": "dtmi:example:vroo_alpha;1",
           "@type": "Property",
-          "name": "quan_hi",
+          "name": "vroo_beta",
           "schema": {
-            "@id": "dtmi:example:quan_vroo;1",
+            "@id": "dtmi:example:vroo_alpha;1",
             "@type": "Array",
-            "elementSchema": "double"
+            "elementSchema": "float"
           }
         }
       }
@@ -30,17 +30,17 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;3",
-        "@id": "dtmi:example:thnad_alpha;1",
+        "@id": "dtmi:example:vroo_gamma;1",
         "@type": "Interface",
         "contents": {
-          "@id": "dtmi:example:thnad_alpha;1",
+          "@id": "dtmi:example:vroo_gamma;1",
           "@type": "Property",
-          "name": "thnad_beta",
+          "name": "vroo_delta",
           "schema": {
             "@context": "dtmi:undefinedExtension:context;1",
-            "@id": "dtmi:example:thnad_alpha;1",
+            "@id": "dtmi:example:vroo_gamma;1",
             "@type": "Array",
-            "elementSchema": "duration"
+            "elementSchema": "integer"
           }
         }
       }

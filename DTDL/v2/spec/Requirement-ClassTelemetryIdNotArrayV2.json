@@ -7,57 +7,14 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;2",
-        "@id": "dtmi:example:lambda_gamma;1",
+        "@id": "dtmi:example:sigma_sigma;1",
         "@type": "Interface",
         "contents": {
           "@id": [
             "dtmi:foo:bar;7"
           ],
           "@type": "Telemetry",
-          "name": "lambda_beta",
-          "schema": "integer"
-        }
-      }
-    ]
-  },
-  {
-    "valid": false,
-    "options": [
-      "AllowUndefinedExtensions"
-    ],
-    "input": [
-      {
-        "@context": "dtmi:dtdl:context;2",
-        "@id": "dtmi:example:lambda_epsilon;1",
-        "@type": "Interface",
-        "contents": {
-          "@context": "dtmi:undefinedExtension:context;1",
-          "@id": [
-            "dtmi:foo:bar;7"
-          ],
-          "@type": "Telemetry",
-          "name": "lambda_delta",
-          "schema": "long"
-        }
-      }
-    ]
-  },
-  {
-    "valid": false,
-    "options": [
-      "DisallowUndefinedExtensions"
-    ],
-    "input": [
-      {
-        "@context": "dtmi:dtdl:context;2",
-        "@id": "dtmi:example:lambda_eta;1",
-        "@type": "Interface",
-        "contents": {
-          "@id": [
-            "dtmi:foo:bar;108675309"
-          ],
-          "@type": "Telemetry",
-          "name": "lambda_zeta",
+          "name": "sigma_rho",
           "schema": "string"
         }
       }
@@ -71,15 +28,15 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;2",
-        "@id": "dtmi:example:lambda_iota;1",
+        "@id": "dtmi:example:sigma_upsilon;1",
         "@type": "Interface",
         "contents": {
           "@context": "dtmi:undefinedExtension:context;1",
           "@id": [
-            "dtmi:foo:bar;108675309"
+            "dtmi:foo:bar;7"
           ],
           "@type": "Telemetry",
-          "name": "lambda_theta",
+          "name": "sigma_tau",
           "schema": "time"
         }
       }
@@ -93,14 +50,14 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;2",
-        "@id": "dtmi:example:lambda_lambda;1",
+        "@id": "dtmi:example:sigma_chi;1",
         "@type": "Interface",
         "contents": {
           "@id": [
-            "dtmi:foo:bar;999999999"
+            "dtmi:foo:bar;108675309"
           ],
           "@type": "Telemetry",
-          "name": "lambda_kappa",
+          "name": "sigma_phi",
           "schema": "boolean"
         }
       }
@@ -114,15 +71,15 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;2",
-        "@id": "dtmi:example:lambda_nu;1",
+        "@id": "dtmi:example:sigma_omega;1",
         "@type": "Interface",
         "contents": {
           "@context": "dtmi:undefinedExtension:context;1",
           "@id": [
-            "dtmi:foo:bar;999999999"
+            "dtmi:foo:bar;108675309"
           ],
           "@type": "Telemetry",
-          "name": "lambda_mu",
+          "name": "sigma_psi",
           "schema": "date"
         }
       }
@@ -136,14 +93,14 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;2",
-        "@id": "dtmi:example:lambda_omicron;1",
+        "@id": "dtmi:example:sigma_wum;1",
         "@type": "Interface",
         "contents": {
           "@id": [
-            "dtmi:foo;1"
+            "dtmi:foo:bar;999999999"
           ],
           "@type": "Telemetry",
-          "name": "lambda_xi",
+          "name": "sigma_yuzz",
           "schema": "dateTime"
         }
       }
@@ -157,7 +114,50 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;2",
-        "@id": "dtmi:example:lambda_rho;1",
+        "@id": "dtmi:example:sigma_humpf;1",
+        "@type": "Interface",
+        "contents": {
+          "@context": "dtmi:undefinedExtension:context;1",
+          "@id": [
+            "dtmi:foo:bar;999999999"
+          ],
+          "@type": "Telemetry",
+          "name": "sigma_um",
+          "schema": "double"
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:sigma_glikk;1",
+        "@type": "Interface",
+        "contents": {
+          "@id": [
+            "dtmi:foo;1"
+          ],
+          "@type": "Telemetry",
+          "name": "sigma_fuddle",
+          "schema": "duration"
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:sigma_snee;1",
         "@type": "Interface",
         "contents": {
           "@context": "dtmi:undefinedExtension:context;1",
@@ -165,8 +165,8 @@
             "dtmi:foo;1"
           ],
           "@type": "Telemetry",
-          "name": "lambda_pi",
-          "schema": "double"
+          "name": "sigma_nuh",
+          "schema": "float"
         }
       }
     ]

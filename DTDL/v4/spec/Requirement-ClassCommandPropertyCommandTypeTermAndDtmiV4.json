@@ -1,0 +1,41 @@
+﻿[
+  {
+    "valid": false,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:phi_hi;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Command",
+          "commandType": "asynchronous",
+          "dtmi:dtdl:property:commandType;4": "asynchronous",
+          "name": "phi_vroo"
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:chi_beta;1",
+        "@type": "Interface",
+        "contents": {
+          "@context": "dtmi:undefinedExtension:context;1",
+          "@type": "Command",
+          "commandType": "asynchronous",
+          "dtmi:dtdl:property:commandType;4": "asynchronous",
+          "name": "chi_alpha"
+        }
+      }
+    ]
+  }
+]

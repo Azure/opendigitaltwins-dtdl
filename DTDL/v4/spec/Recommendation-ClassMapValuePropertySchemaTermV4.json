@@ -1,0 +1,54 @@
+﻿[
+  {
+    "valid": true,
+    "desirable": true,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:itch_upsilon;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:itch_sigma;1",
+          "@type": "Map",
+          "mapKey": {
+            "name": "itch_tau",
+            "schema": "string"
+          },
+          "mapValue": {
+            "name": "itch_rho",
+            "schema": "long"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "desirable": false,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:itch_omega;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:itch_chi;1",
+          "@type": "Map",
+          "mapKey": {
+            "name": "itch_psi",
+            "schema": "string"
+          },
+          "mapValue": {
+            "name": "itch_phi",
+            "dtmi:dtdl:property:schema;4": "short"
+          }
+        }
+      }
+    ]
+  }
+]

@@ -1,0 +1,57 @@
+﻿[
+  {
+    "valid": false,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:rho_jogg;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Command",
+          "name": "rho_zatz",
+          "request": {
+            "description": [
+              "rho_thnad"
+            ],
+            "dtmi:dtdl:property:description;4": [
+              "rho_spazz"
+            ],
+            "name": "rho_floob",
+            "schema": "byte"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:rho_hi;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Command",
+          "name": "rho_vroo",
+          "request": {
+            "@context": "dtmi:undefinedExtension:context;1",
+            "description": [
+              "rho_flunn"
+            ],
+            "dtmi:dtdl:property:description;4": [
+              "rho_itch"
+            ],
+            "name": "rho_yekk",
+            "schema": "bytes"
+          }
+        }
+      }
+    ]
+  }
+]

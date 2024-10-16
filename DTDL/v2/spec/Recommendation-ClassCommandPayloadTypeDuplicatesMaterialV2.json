@@ -8,14 +8,14 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;2",
-        "@id": "dtmi:example:pi_rho;1",
+        "@id": "dtmi:example:tau_sigma;1",
         "@type": "Interface",
         "contents": {
           "@type": "Command",
-          "name": "pi_pi",
+          "name": "tau_rho",
           "request": {
-            "name": "pi_omicron",
-            "schema": "string",
+            "name": "tau_pi",
+            "schema": "integer",
             "@type": [
               "CommandPayload",
               "CommandPayload"
@@ -34,14 +34,14 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;2",
-        "@id": "dtmi:example:pi_upsilon;1",
+        "@id": "dtmi:example:tau_phi;1",
         "@type": "Interface",
         "contents": {
           "@type": "Command",
-          "name": "pi_tau",
+          "name": "tau_upsilon",
           "request": {
-            "name": "pi_sigma",
-            "schema": "time",
+            "name": "tau_tau",
+            "schema": "long",
             "@type": [
               "dtmi:dtdl:class:CommandPayload;2",
               "dtmi:dtdl:class:CommandPayload;2"

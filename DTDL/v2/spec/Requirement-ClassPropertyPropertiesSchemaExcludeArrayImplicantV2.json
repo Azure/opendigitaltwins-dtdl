@@ -7,14 +7,14 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;2",
-        "@id": "dtmi:example:omega_chi;1",
+        "@id": "dtmi:example:snee_xi;1",
         "@type": "Interface",
         "extends": {
-          "@id": "dtmi:example:omega_phi;1",
+          "@id": "dtmi:example:snee_nu;1",
           "@type": "Interface",
           "contents": {
             "@type": "Property",
-            "name": "omega_upsilon",
+            "name": "snee_mu",
             "schema": "point"
           }
         }
@@ -29,15 +29,15 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;2",
-        "@id": "dtmi:example:omega_yuzz;1",
+        "@id": "dtmi:example:snee_rho;1",
         "@type": "Interface",
         "extends": {
-          "@id": "dtmi:example:omega_omega;1",
+          "@id": "dtmi:example:snee_pi;1",
           "@type": "Interface",
           "contents": {
             "@context": "dtmi:undefinedExtension:context;1",
             "@type": "Property",
-            "name": "omega_psi",
+            "name": "snee_omicron",
             "schema": "point"
           }
         }

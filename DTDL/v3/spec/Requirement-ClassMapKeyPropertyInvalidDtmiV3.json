@@ -7,21 +7,21 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;3",
-        "@id": "dtmi:example:beta_beta;1",
+        "@id": "dtmi:example:xi_beta;1",
         "@type": "Interface",
         "schemas": {
-          "@id": "dtmi:example:alpha_hi;1",
+          "@id": "dtmi:example:nu_hi;1",
           "@type": "Map",
           "mapValue": {
-            "name": "beta_alpha",
-            "schema": "long"
+            "name": "xi_alpha",
+            "schema": "float"
           },
           "mapKey": {
             "@type": [
               "MapKey",
               "Foobar"
             ],
-            "name": "alpha_vroo",
+            "name": "nu_vroo",
             "schema": "string",
             "dtmi:foo//bar": 626
           }
@@ -37,14 +37,14 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;3",
-        "@id": "dtmi:example:beta_zeta;1",
+        "@id": "dtmi:example:xi_zeta;1",
         "@type": "Interface",
         "schemas": {
-          "@id": "dtmi:example:beta_delta;1",
+          "@id": "dtmi:example:xi_delta;1",
           "@type": "Map",
           "mapValue": {
-            "name": "beta_epsilon",
-            "schema": "string"
+            "name": "xi_epsilon",
+            "schema": "integer"
           },
           "mapKey": {
             "@context": "dtmi:undefinedExtension:context;1",
@@ -52,7 +52,7 @@
               "MapKey",
               "Foobar"
             ],
-            "name": "beta_gamma",
+            "name": "xi_gamma",
             "schema": "string",
             "dtmi:foo//bar": 626
           }

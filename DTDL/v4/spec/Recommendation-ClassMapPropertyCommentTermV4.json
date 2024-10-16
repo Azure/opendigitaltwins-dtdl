@@ -1,0 +1,56 @@
+﻿[
+  {
+    "valid": true,
+    "desirable": true,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:phi_xi;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:phi_kappa;1",
+          "@type": "Map",
+          "comment": "phi_lambda",
+          "mapKey": {
+            "name": "phi_mu",
+            "schema": "string"
+          },
+          "mapValue": {
+            "name": "phi_nu",
+            "schema": "unsignedLong"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "desirable": false,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:phi_tau;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:phi_omicron;1",
+          "@type": "Map",
+          "dtmi:dtdl:property:comment;4": "phi_pi",
+          "mapKey": {
+            "name": "phi_rho",
+            "schema": "string"
+          },
+          "mapValue": {
+            "name": "phi_sigma",
+            "schema": "unsignedShort"
+          }
+        }
+      }
+    ]
+  }
+]

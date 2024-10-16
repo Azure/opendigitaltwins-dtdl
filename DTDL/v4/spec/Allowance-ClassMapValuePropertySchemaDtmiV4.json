@@ -1,0 +1,27 @@
+﻿[
+  {
+    "valid": true,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:itch_pi;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:itch_xi;1",
+          "@type": "Map",
+          "mapKey": {
+            "name": "itch_omicron",
+            "schema": "string"
+          },
+          "mapValue": {
+            "name": "itch_nu",
+            "dtmi:dtdl:property:schema;4": "integer"
+          }
+        }
+      }
+    ]
+  }
+]

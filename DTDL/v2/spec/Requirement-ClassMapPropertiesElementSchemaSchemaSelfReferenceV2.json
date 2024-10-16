@@ -1,0 +1,61 @@
+﻿[
+  {
+    "valid": false,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:nuh_omicron;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Property",
+          "name": "nuh_xi",
+          "schema": {
+            "@id": "dtmi:foo:beta_chi;1",
+            "@type": "Map",
+            "mapKey": {
+              "name": "nuh_nu",
+              "schema": "string"
+            },
+            "mapValue": {
+              "name": "nuh_mu",
+              "schema": "dtmi:foo:beta_chi;1"
+            }
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:nuh_tau;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Property",
+          "name": "nuh_sigma",
+          "schema": {
+            "@context": "dtmi:undefinedExtension:context;1",
+            "@id": "dtmi:foo:beta_chi;1",
+            "@type": "Map",
+            "mapKey": {
+              "name": "nuh_rho",
+              "schema": "string"
+            },
+            "mapValue": {
+              "name": "nuh_pi",
+              "schema": "dtmi:foo:beta_chi;1"
+            }
+          }
+        }
+      }
+    ]
+  }
+]

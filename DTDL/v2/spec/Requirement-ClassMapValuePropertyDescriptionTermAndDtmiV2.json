@@ -7,24 +7,24 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;2",
-        "@id": "dtmi:example:phi_eta;1",
+        "@id": "dtmi:example:um_eta;1",
         "@type": "Interface",
         "schemas": {
-          "@id": "dtmi:example:phi_epsilon;1",
+          "@id": "dtmi:example:um_epsilon;1",
           "@type": "Map",
           "mapKey": {
-            "name": "phi_zeta",
+            "name": "um_zeta",
             "schema": "string"
           },
           "mapValue": {
             "description": [
-              "phi_beta"
+              "um_beta"
             ],
             "dtmi:dtdl:property:description;2": [
-              "phi_gamma"
+              "um_gamma"
             ],
-            "name": "phi_delta",
-            "schema": "float"
+            "name": "um_delta",
+            "schema": "long"
           }
         }
       }
@@ -38,25 +38,25 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;2",
-        "@id": "dtmi:example:phi_nu;1",
+        "@id": "dtmi:example:um_nu;1",
         "@type": "Interface",
         "schemas": {
-          "@id": "dtmi:example:phi_lambda;1",
+          "@id": "dtmi:example:um_lambda;1",
           "@type": "Map",
           "mapKey": {
-            "name": "phi_mu",
+            "name": "um_mu",
             "schema": "string"
           },
           "mapValue": {
             "@context": "dtmi:undefinedExtension:context;1",
             "description": [
-              "phi_theta"
+              "um_theta"
             ],
             "dtmi:dtdl:property:description;2": [
-              "phi_iota"
+              "um_iota"
             ],
-            "name": "phi_kappa",
-            "schema": "integer"
+            "name": "um_kappa",
+            "schema": "string"
           }
         }
       }

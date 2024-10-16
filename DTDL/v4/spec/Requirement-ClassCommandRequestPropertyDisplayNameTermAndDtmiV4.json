@@ -1,0 +1,57 @@
+﻿[
+  {
+    "valid": false,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:upsilon_mu;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Command",
+          "name": "upsilon_lambda",
+          "request": {
+            "displayName": [
+              "upsilon_theta"
+            ],
+            "dtmi:dtdl:property:displayName;4": [
+              "upsilon_iota"
+            ],
+            "name": "upsilon_kappa",
+            "schema": "unsignedByte"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:upsilon_rho;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Command",
+          "name": "upsilon_pi",
+          "request": {
+            "@context": "dtmi:undefinedExtension:context;1",
+            "displayName": [
+              "upsilon_nu"
+            ],
+            "dtmi:dtdl:property:displayName;4": [
+              "upsilon_xi"
+            ],
+            "name": "upsilon_omicron",
+            "schema": "unsignedInteger"
+          }
+        }
+      }
+    ]
+  }
+]

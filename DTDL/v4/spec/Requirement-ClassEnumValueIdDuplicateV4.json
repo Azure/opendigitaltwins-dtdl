@@ -1,0 +1,59 @@
+﻿[
+  {
+    "valid": false,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:snee_epsilon;1",
+        "@type": "Interface",
+        "contents": {
+          "@id": "dtmi:example:snee_epsilon;1",
+          "@type": "Property",
+          "name": "snee_eta",
+          "schema": {
+            "@id": "dtmi:example:snee_epsilon;1",
+            "@type": "Enum",
+            "valueSchema": "integer",
+            "enumValues": {
+              "@id": "dtmi:example:snee_epsilon;1",
+              "enumValue": 1736,
+              "name": "snee_zeta"
+            }
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:snee_theta;1",
+        "@type": "Interface",
+        "contents": {
+          "@id": "dtmi:example:snee_theta;1",
+          "@type": "Property",
+          "name": "snee_kappa",
+          "schema": {
+            "@id": "dtmi:example:snee_theta;1",
+            "@type": "Enum",
+            "valueSchema": "integer",
+            "enumValues": {
+              "@context": "dtmi:undefinedExtension:context;1",
+              "@id": "dtmi:example:snee_theta;1",
+              "enumValue": 1737,
+              "name": "snee_iota"
+            }
+          }
+        }
+      }
+    ]
+  }
+]

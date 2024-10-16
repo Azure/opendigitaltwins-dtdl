@@ -7,21 +7,21 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;3",
-        "@id": "dtmi:example:beta_sigma;1",
+        "@id": "dtmi:example:xi_sigma;1",
         "@type": "Interface",
         "schemas": {
-          "@id": "dtmi:example:beta_pi;1",
+          "@id": "dtmi:example:xi_pi;1",
           "@type": "Map",
           "mapValue": {
-            "name": "beta_rho",
-            "schema": "date"
+            "name": "xi_rho",
+            "schema": "time"
           },
           "mapKey": {
             "@type": [
               "MapKey",
               "Foobar"
             ],
-            "name": "beta_omicron",
+            "name": "xi_omicron",
             "schema": "string",
             "foobar": {}
           }
@@ -37,14 +37,14 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;3",
-        "@id": "dtmi:example:beta_chi;1",
+        "@id": "dtmi:example:xi_chi;1",
         "@type": "Interface",
         "schemas": {
-          "@id": "dtmi:example:beta_upsilon;1",
+          "@id": "dtmi:example:xi_upsilon;1",
           "@type": "Map",
           "mapValue": {
-            "name": "beta_phi",
-            "schema": "dateTime"
+            "name": "xi_phi",
+            "schema": "boolean"
           },
           "mapKey": {
             "@context": "dtmi:undefinedExtension:context;1",
@@ -52,7 +52,7 @@
               "MapKey",
               "Foobar"
             ],
-            "name": "beta_tau",
+            "name": "xi_tau",
             "schema": "string",
             "foobar": {}
           }

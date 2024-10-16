@@ -7,16 +7,16 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;3",
-        "@id": "dtmi:example:wum_mu;1",
+        "@id": "dtmi:example:flunn_hi;1",
         "@type": "Interface",
         "extends": {
-          "@id": "dtmi:example:wum_mu;1",
+          "@id": "dtmi:example:flunn_hi;1",
           "@type": "Interface",
           "contents": {
-            "@id": "dtmi:example:wum_mu;1",
+            "@id": "dtmi:example:flunn_hi;1",
             "@type": "Telemetry",
-            "name": "wum_nu",
-            "schema": "string"
+            "name": "itch_alpha",
+            "schema": "dateTime"
           }
         }
       }
@@ -30,17 +30,17 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;3",
-        "@id": "dtmi:example:wum_xi;1",
+        "@id": "dtmi:example:itch_beta;1",
         "@type": "Interface",
         "extends": {
-          "@id": "dtmi:example:wum_xi;1",
+          "@id": "dtmi:example:itch_beta;1",
           "@type": "Interface",
           "contents": {
             "@context": "dtmi:undefinedExtension:context;1",
-            "@id": "dtmi:example:wum_xi;1",
+            "@id": "dtmi:example:itch_beta;1",
             "@type": "Telemetry",
-            "name": "wum_omicron",
-            "schema": "time"
+            "name": "itch_gamma",
+            "schema": "double"
           }
         }
       }

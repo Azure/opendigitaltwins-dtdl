@@ -1,0 +1,65 @@
+﻿[
+  {
+    "valid": false,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:thnad_gamma;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Relationship",
+          "name": "quan_hi",
+          "properties": [
+            {
+              "@type": "Property",
+              "name": "thnad_alpha",
+              "schema": "byte"
+            }
+          ],
+          "dtmi:dtdl:property:properties;4": [
+            {
+              "@type": "Property",
+              "name": "thnad_beta",
+              "schema": "bytes"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:thnad_eta;1",
+        "@type": "Interface",
+        "contents": {
+          "@context": "dtmi:undefinedExtension:context;1",
+          "@type": "Relationship",
+          "name": "thnad_delta",
+          "properties": [
+            {
+              "@type": "Property",
+              "name": "thnad_epsilon",
+              "schema": "date"
+            }
+          ],
+          "dtmi:dtdl:property:properties;4": [
+            {
+              "@type": "Property",
+              "name": "thnad_zeta",
+              "schema": "dateTime"
+            }
+          ]
+        }
+      }
+    ]
+  }
+]

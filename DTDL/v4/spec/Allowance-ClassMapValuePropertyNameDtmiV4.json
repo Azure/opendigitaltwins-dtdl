@@ -1,0 +1,27 @@
+﻿[
+  {
+    "valid": true,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:snee_beta;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:nuh_hi;1",
+          "@type": "Map",
+          "mapKey": {
+            "name": "snee_alpha",
+            "schema": "string"
+          },
+          "mapValue": {
+            "dtmi:dtdl:property:name;4": "nuh_vroo",
+            "schema": "uuid"
+          }
+        }
+      }
+    ]
+  }
+]

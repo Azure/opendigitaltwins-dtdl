@@ -1,0 +1,106 @@
+﻿[
+  {
+    "valid": true,
+    "desirable": true,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:flunn_hi;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:flunn_yekk;1",
+          "@type": "Map",
+          "mapKey": {
+            "name": "flunn_vroo",
+            "schema": "string"
+          },
+          "mapValue": {
+            "name": "flunn_itch",
+            "schema": "integer"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "desirable": false,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:itch_delta;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:itch_beta;1",
+          "@type": "Map",
+          "mapKey": {
+            "name": "itch_gamma",
+            "schema": "string"
+          },
+          "mapValue": {
+            "name": "itch_alpha",
+            "schema": "dtmi:dtdl:instance:Schema:integer;4"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "desirable": true,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:itch_theta;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:itch_zeta;1",
+          "@type": "Map",
+          "mapKey": {
+            "name": "itch_eta",
+            "schema": "string"
+          },
+          "mapValue": {
+            "name": "itch_epsilon",
+            "schema": "point"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "desirable": false,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:itch_mu;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:itch_kappa;1",
+          "@type": "Map",
+          "mapKey": {
+            "name": "itch_lambda",
+            "schema": "string"
+          },
+          "mapValue": {
+            "name": "itch_iota",
+            "schema": "dtmi:standard:schema:geospatial:point;4"
+          }
+        }
+      }
+    ]
+  }
+]

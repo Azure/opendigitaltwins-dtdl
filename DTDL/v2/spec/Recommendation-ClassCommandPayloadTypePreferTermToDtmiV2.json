@@ -8,14 +8,14 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;2",
-        "@id": "dtmi:example:pi_psi;1",
+        "@id": "dtmi:example:tau_omega;1",
         "@type": "Interface",
         "contents": {
           "@type": "Command",
-          "name": "pi_chi",
+          "name": "tau_psi",
           "request": {
-            "name": "pi_phi",
-            "schema": "boolean",
+            "name": "tau_chi",
+            "schema": "string",
             "@type": "CommandPayload"
           }
         }
@@ -31,14 +31,14 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;2",
-        "@id": "dtmi:example:pi_wum;1",
+        "@id": "dtmi:example:tau_um;1",
         "@type": "Interface",
         "contents": {
           "@type": "Command",
-          "name": "pi_yuzz",
+          "name": "tau_wum",
           "request": {
-            "name": "pi_omega",
-            "schema": "date",
+            "name": "tau_yuzz",
+            "schema": "time",
             "@type": "dtmi:dtdl:class:CommandPayload;2"
           }
         }

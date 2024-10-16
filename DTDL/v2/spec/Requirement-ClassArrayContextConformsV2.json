@@ -7,11 +7,11 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;2",
-        "@id": "dtmi:example:kappa_zatz;1",
+        "@id": "dtmi:example:mu_quan;1",
         "@type": "Interface",
         "contents": {
           "@type": "Telemetry",
-          "name": "kappa_floob",
+          "name": "mu_snee",
           "schema": {
             "@type": "Array",
             "elementSchema": "double",
@@ -29,11 +29,11 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;2",
-        "@id": "dtmi:example:kappa_flunn;1",
+        "@id": "dtmi:example:mu_spazz;1",
         "@type": "Interface",
         "contents": {
           "@type": "Telemetry",
-          "name": "kappa_jogg",
+          "name": "mu_thnad",
           "schema": {
             "@type": "Array",
             "elementSchema": "duration",
@@ -51,11 +51,11 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;2",
-        "@id": "dtmi:example:kappa_yekk;1",
+        "@id": "dtmi:example:mu_zatz;1",
         "@type": "Interface",
         "contents": {
           "@type": "Telemetry",
-          "name": "kappa_itch",
+          "name": "mu_floob",
           "schema": {
             "@type": "Array",
             "elementSchema": "float",
@@ -75,11 +75,11 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;2",
-        "@id": "dtmi:example:kappa_hi;1",
+        "@id": "dtmi:example:mu_flunn;1",
         "@type": "Interface",
         "contents": {
           "@type": "Telemetry",
-          "name": "kappa_vroo",
+          "name": "mu_jogg",
           "schema": {
             "@type": "Array",
             "elementSchema": "integer",
@@ -97,11 +97,11 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;2",
-        "@id": "dtmi:example:lambda_beta;1",
+        "@id": "dtmi:example:mu_yekk;1",
         "@type": "Interface",
         "contents": {
           "@type": "Telemetry",
-          "name": "lambda_alpha",
+          "name": "mu_itch",
           "schema": {
             "@type": "Array",
             "elementSchema": "long",
@@ -119,11 +119,11 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;2",
-        "@id": "dtmi:example:lambda_delta;1",
+        "@id": "dtmi:example:mu_hi;1",
         "@type": "Interface",
         "contents": {
           "@type": "Telemetry",
-          "name": "lambda_gamma",
+          "name": "mu_vroo",
           "schema": {
             "@type": "Array",
             "elementSchema": "string",
@@ -141,11 +141,11 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;2",
-        "@id": "dtmi:example:lambda_zeta;1",
+        "@id": "dtmi:example:nu_beta;1",
         "@type": "Interface",
         "contents": {
           "@type": "Telemetry",
-          "name": "lambda_epsilon",
+          "name": "nu_alpha",
           "schema": {
             "@type": "Array",
             "elementSchema": "time",
@@ -165,11 +165,11 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;2",
-        "@id": "dtmi:example:lambda_theta;1",
+        "@id": "dtmi:example:nu_delta;1",
         "@type": "Interface",
         "contents": {
           "@type": "Telemetry",
-          "name": "lambda_eta",
+          "name": "nu_gamma",
           "schema": {
             "@type": "Array",
             "elementSchema": "boolean",
@@ -189,11 +189,11 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;2",
-        "@id": "dtmi:example:lambda_kappa;1",
+        "@id": "dtmi:example:nu_zeta;1",
         "@type": "Interface",
         "contents": {
           "@type": "Telemetry",
-          "name": "lambda_iota",
+          "name": "nu_epsilon",
           "schema": {
             "@type": "Array",
             "elementSchema": "date",
@@ -213,14 +213,80 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;2",
-        "@id": "dtmi:example:lambda_mu;1",
+        "@id": "dtmi:example:nu_theta;1",
         "@type": "Interface",
         "contents": {
           "@type": "Telemetry",
-          "name": "lambda_lambda",
+          "name": "nu_eta",
           "schema": {
             "@type": "Array",
             "elementSchema": "dateTime",
+            "@context": "dtmi:iotcentral:context"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:nu_kappa;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Telemetry",
+          "name": "nu_iota",
+          "schema": {
+            "@type": "Array",
+            "elementSchema": "double",
+            "@context": "http://iotcentral/context/2"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:nu_mu;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Telemetry",
+          "name": "nu_lambda",
+          "schema": {
+            "@type": "Array",
+            "elementSchema": "duration",
+            "@context": "iotcentral;2"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:nu_xi;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Telemetry",
+          "name": "nu_nu",
+          "schema": {
+            "@type": "Array",
+            "elementSchema": "float",
             "@context": {}
           }
         }
@@ -235,14 +301,38 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;2",
-        "@id": "dtmi:example:lambda_xi;1",
+        "@id": "dtmi:example:nu_pi;1",
         "@type": "Interface",
         "contents": {
           "@type": "Telemetry",
-          "name": "lambda_nu",
+          "name": "nu_omicron",
           "schema": {
             "@type": "Array",
-            "elementSchema": "double",
+            "elementSchema": "integer",
+            "@context": {
+              "foo": "dtmi:foo:bar;1"
+            }
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:nu_sigma;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Telemetry",
+          "name": "nu_rho",
+          "schema": {
+            "@type": "Array",
+            "elementSchema": "long",
             "@context": [
               {}
             ]
@@ -259,59 +349,19 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;2",
-        "@id": "dtmi:example:lambda_pi;1",
+        "@id": "dtmi:example:nu_upsilon;1",
         "@type": "Interface",
         "contents": {
           "@type": "Telemetry",
-          "name": "lambda_omicron",
+          "name": "nu_tau",
           "schema": {
             "@type": "Array",
-            "elementSchema": "duration",
-            "@context": "dtmi:iotcentral:context"
-          }
-        }
-      }
-    ]
-  },
-  {
-    "valid": false,
-    "options": [
-      "DisallowUndefinedExtensions"
-    ],
-    "input": [
-      {
-        "@context": "dtmi:dtdl:context;2",
-        "@id": "dtmi:example:lambda_sigma;1",
-        "@type": "Interface",
-        "contents": {
-          "@type": "Telemetry",
-          "name": "lambda_rho",
-          "schema": {
-            "@type": "Array",
-            "elementSchema": "float",
-            "@context": "http://iotcentral/context/2"
-          }
-        }
-      }
-    ]
-  },
-  {
-    "valid": false,
-    "options": [
-      "DisallowUndefinedExtensions"
-    ],
-    "input": [
-      {
-        "@context": "dtmi:dtdl:context;2",
-        "@id": "dtmi:example:lambda_upsilon;1",
-        "@type": "Interface",
-        "contents": {
-          "@type": "Telemetry",
-          "name": "lambda_tau",
-          "schema": {
-            "@type": "Array",
-            "elementSchema": "integer",
-            "@context": "iotcentral;2"
+            "elementSchema": "string",
+            "@context": [
+              {
+                "foo": "dtmi:foo:bar;1"
+              }
+            ]
           }
         }
       }

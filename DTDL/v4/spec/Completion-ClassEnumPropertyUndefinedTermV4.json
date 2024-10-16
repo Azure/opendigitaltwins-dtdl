@@ -1,0 +1,47 @@
+﻿[
+  {
+    "valid": false,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:omicron_spazz;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:omicron_thnad;1",
+          "@type": [
+            "Enum",
+            "Foobar"
+          ],
+          "valueSchema": "integer",
+          "foobar": {}
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:omicron_zatz;1",
+        "@type": "Interface",
+        "schemas": {
+          "@context": "dtmi:undefinedExtension:context;1",
+          "@id": "dtmi:example:omicron_floob;1",
+          "@type": [
+            "Enum",
+            "Foobar"
+          ],
+          "valueSchema": "integer",
+          "foobar": {}
+        }
+      }
+    ]
+  }
+]

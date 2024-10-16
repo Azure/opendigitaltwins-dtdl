@@ -1,0 +1,51 @@
+﻿[
+  {
+    "valid": false,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:delta_sigma;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:delta_omicron;1",
+          "@type": "Array",
+          "description": [
+            "delta_pi"
+          ],
+          "dtmi:dtdl:property:description;4": [
+            "delta_rho"
+          ],
+          "elementSchema": "unsignedShort"
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:delta_chi;1",
+        "@type": "Interface",
+        "schemas": {
+          "@context": "dtmi:undefinedExtension:context;1",
+          "@id": "dtmi:example:delta_tau;1",
+          "@type": "Array",
+          "description": [
+            "delta_upsilon"
+          ],
+          "dtmi:dtdl:property:description;4": [
+            "delta_phi"
+          ],
+          "elementSchema": "uuid"
+        }
+      }
+    ]
+  }
+]

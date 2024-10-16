@@ -1,0 +1,189 @@
+﻿{
+  "@context": [
+    "dtmi:dtdl:context;4",
+    "dtmi:dtdl:extension:mqtt;2"
+  ],
+  "@graph": [
+    {
+      "@id": "dtmi:dtdl:extension:mqtt:v2:documentation",
+      "@type": [ "dtmm:Documentation" ],
+      "dtmm:description": {
+        "en-US": "Specify Interface properties to facilitate communication via the MQTT pub/sub protocol."
+      }
+    },
+    {
+      "@id": "dtmi:dtdl:extension:mqtt:v2:Mqtt",
+      "@type": [ "rdfs:Class", "sh:NodeShape" ],
+      "rdfs:subClassOf": "AdjunctType",
+      "sh:or": [
+        { "sh:class": "dtmi:dtdl:class:Interface;3" },
+        { "sh:class": "dtmi:dtdl:class:Interface;4" }
+      ],
+      "dtmm:property": [
+        {
+          "@id": "dtmi:dtdl:extension:mqtt:v2:Mqtt:telemetryTopic",
+          "@type": "rdf:Property",
+          "rdfs:domain": "Mqtt"
+        },
+        {
+          "@id": "dtmi:dtdl:extension:mqtt:v2:Mqtt:commandTopic",
+          "@type": "rdf:Property",
+          "rdfs:domain": "Mqtt"
+        },
+        {
+          "@id": "dtmi:dtdl:extension:mqtt:v2:Mqtt:payloadFormat",
+          "@type": "rdf:Property",
+          "rdfs:domain": "Mqtt"
+        },
+        {
+          "@id": "dtmi:dtdl:extension:mqtt:v2:Mqtt:serviceGroupId",
+          "@type": "rdf:Property",
+          "rdfs:domain": "Mqtt"
+        }
+      ],
+      "sh:property": [
+        {
+          "sh:path": "telemetryTopic",
+          "sh:maxCount": 1,
+          "sh:datatype": "xsd:string",
+          "sh:nodeKind": "sh:Literal",
+          "sh:pattern": "^(?:(?:[!%-*,-.0-z|~][!$-*,-.0-z|~]*)|(?:{(?:[A-Za-z]+:)?[A-Za-z]+}))(?:\\/(?:(?:[!$-*,-.0-z|~]+)|(?:{(?:[A-Za-z]+:)?[A-Za-z]+})))*$",
+          "dtmm:patternDesc": {
+            "en-US": "slash-separated sequence of character-restricted labels and/or brace-enclosed tokens"
+          },
+          "dtmm:description": {
+            "en-US": "MQTT topic pattern on which a Telemetry or a collection of Telemetries is published."
+          }
+        },
+        {
+          "sh:path": "commandTopic",
+          "sh:maxCount": 1,
+          "sh:datatype": "xsd:string",
+          "sh:nodeKind": "sh:Literal",
+          "sh:pattern": "^(?:(?:[!%-*,-.0-z|~][!$-*,-.0-z|~]*)|(?:{(?:[A-Za-z]+:)?[A-Za-z]+}))(?:\\/(?:(?:[!$-*,-.0-z|~]+)|(?:{(?:[A-Za-z]+:)?[A-Za-z]+})))*$",
+          "dtmm:patternDesc": {
+            "en-US": "slash-separated sequence of character-restricted labels and/or brace-enclosed tokens"
+          },
+          "dtmm:description": {
+            "en-US": "MQTT topic pattern on which a Command request is published."
+          }
+        },
+        {
+          "sh:path": "payloadFormat",
+          "sh:minCount": 1,
+          "sh:maxCount": 1,
+          "sh:datatype": "xsd:string",
+          "sh:nodeKind": "sh:Literal",
+          "dtmm:description": {
+            "en-US": "The format to use when serializing an instance to an MQTT payload."
+          }
+        },
+        {
+          "sh:path": "serviceGroupId",
+          "sh:maxCount": 1,
+          "sh:datatype": "xsd:string",
+          "sh:nodeKind": "sh:Literal",
+          "sh:pattern": "^[!$-*,-.0-z|~]+$",
+          "dtmm:patternDesc": {
+            "en-US": "non-empty string of printable ASCII characters not including space, \", +, #, {, }, or /"
+          },
+          "dtmm:description": {
+            "en-US": "The service group ID for subscribing to Command topics when shared subscriptions are wanted."
+          }
+        }
+      ]
+    },
+    {
+      "@id": "dtmi:dtdl:extension:mqtt:v2:Transparent",
+      "@type": [ "rdfs:Class", "sh:NodeShape" ],
+      "rdfs:subClassOf": "AdjunctType",
+      "sh:or": [
+        { "sh:class": "dtmi:dtdl:class:CommandPayload;3" },
+        { "sh:class": "dtmi:dtdl:class:CommandPayload;4" }
+      ],
+      "sh:property": [
+        {
+          "sh:path": "schema",
+          "sh:or": [
+            { "sh:class": "dtmi:dtdl:class:Object;3" },
+            { "sh:class": "dtmi:dtdl:class:Object;4" }
+          ]
+        }
+      ]
+    },
+    {
+      "@id": "dtmi:dtdl:extension:mqtt:v2:Idempotent",
+      "@type": [ "rdfs:Class", "sh:NodeShape" ],
+      "rdfs:subClassOf": "AdjunctType",
+      "sh:or": [
+        { "sh:class": "dtmi:dtdl:class:Command;3" },
+        { "sh:class": "dtmi:dtdl:class:Command;4" }
+      ]
+    },
+    {
+      "@id": "dtmi:dtdl:extension:mqtt:v2:Cacheable",
+      "@type": [ "rdfs:Class", "sh:NodeShape" ],
+      "rdfs:subClassOf": "AdjunctType",
+      "sh:or": [
+        { "sh:class": "dtmi:dtdl:class:Command;3" },
+        { "sh:class": "dtmi:dtdl:class:Command;4" }
+      ],
+      "sh:and": [
+        { "sh:class": "Idempotent" }
+      ],
+      "dtmm:property": [
+        {
+          "@id": "dtmi:dtdl:extension:mqtt:v2:Cacheable:ttl",
+          "@type": "rdf:Property",
+          "rdfs:domain": "Cacheable"
+        }
+      ],
+      "sh:property": [
+        {
+          "sh:path": "ttl",
+          "sh:minCount": 1,
+          "sh:maxCount": 1,
+          "sh:datatype": "xsd:duration",
+          "sh:nodeKind": "sh:Literal",
+          "dtmm:description": {
+            "en-US": "Maximum duration for which a response to a Command instance may be reused as a response to other Command instances."
+          }
+        }
+      ]
+    },
+    {
+      "@id": "dtmi:dtdl:extension:mqtt:v2:Indexed",
+      "@type": [ "rdfs:Class", "sh:NodeShape" ],
+      "rdfs:subClassOf": "AdjunctType",
+      "sh:or": [
+        { "sh:class": "dtmi:dtdl:class:Telemetry;3" },
+        { "sh:class": "dtmi:dtdl:class:Telemetry;4" },
+        { "sh:class": "dtmi:dtdl:class:Field;3" },
+        { "sh:class": "dtmi:dtdl:class:Field;4" },
+        { "sh:class": "dtmi:dtdl:class:EnumValue;3" },
+        { "sh:class": "dtmi:dtdl:class:EnumValue;4" }
+      ],
+      "dtmm:property": [
+        {
+          "@id": "dtmi:dtdl:extension:mqtt:v2:Indexed:index",
+          "@type": "rdf:Property",
+          "rdfs:domain": "Indexed"
+        }
+      ],
+      "sh:property": [
+        {
+          "sh:path": "index",
+          "sh:minCount": 1,
+          "sh:maxCount": 1,
+          "sh:datatype": "xsd:integer",
+          "sh:nodeKind": "sh:Literal",
+          "sh:minInclusive": 1,
+          "dtmm:uniqueValue": true,
+          "dtmm:description": {
+            "en-US": "Index number to uniquely identify the serialized element within its parent container."
+          }
+        }
+      ]
+    }
+  ]
+}

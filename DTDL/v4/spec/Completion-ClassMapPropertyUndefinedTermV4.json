@@ -1,0 +1,61 @@
+﻿[
+  {
+    "valid": false,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:fuddle_yekk;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:fuddle_jogg;1",
+          "@type": [
+            "Map",
+            "Foobar"
+          ],
+          "mapKey": {
+            "name": "fuddle_flunn",
+            "schema": "string"
+          },
+          "mapValue": {
+            "name": "fuddle_itch",
+            "schema": "integer"
+          },
+          "foobar": {}
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:glikk_beta;1",
+        "@type": "Interface",
+        "schemas": {
+          "@context": "dtmi:undefinedExtension:context;1",
+          "@id": "dtmi:example:fuddle_vroo;1",
+          "@type": [
+            "Map",
+            "Foobar"
+          ],
+          "mapKey": {
+            "name": "fuddle_hi",
+            "schema": "string"
+          },
+          "mapValue": {
+            "name": "glikk_alpha",
+            "schema": "long"
+          },
+          "foobar": {}
+        }
+      }
+    ]
+  }
+]

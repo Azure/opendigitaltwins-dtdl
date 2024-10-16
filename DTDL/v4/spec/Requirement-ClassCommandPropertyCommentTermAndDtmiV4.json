@@ -1,0 +1,41 @@
+﻿[
+  {
+    "valid": false,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:psi_upsilon;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Command",
+          "comment": "psi_rho",
+          "dtmi:dtdl:property:comment;4": "psi_sigma",
+          "name": "psi_tau"
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:psi_omega;1",
+        "@type": "Interface",
+        "contents": {
+          "@context": "dtmi:undefinedExtension:context;1",
+          "@type": "Command",
+          "comment": "psi_phi",
+          "dtmi:dtdl:property:comment;4": "psi_chi",
+          "name": "psi_psi"
+        }
+      }
+    ]
+  }
+]

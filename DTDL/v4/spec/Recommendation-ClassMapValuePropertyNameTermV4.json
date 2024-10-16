@@ -1,0 +1,54 @@
+﻿[
+  {
+    "valid": true,
+    "desirable": true,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:snee_zeta;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:snee_delta;1",
+          "@type": "Map",
+          "mapKey": {
+            "name": "snee_epsilon",
+            "schema": "string"
+          },
+          "mapValue": {
+            "name": "snee_gamma",
+            "schema": "boolean"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "desirable": false,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:snee_kappa;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:snee_theta;1",
+          "@type": "Map",
+          "mapKey": {
+            "name": "snee_iota",
+            "schema": "string"
+          },
+          "mapValue": {
+            "dtmi:dtdl:property:name;4": "snee_eta",
+            "schema": "byte"
+          }
+        }
+      }
+    ]
+  }
+]
