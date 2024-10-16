@@ -7,17 +7,17 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;3",
-        "@id": "dtmi:example:alpha_fuddle;1",
+        "@id": "dtmi:example:nu_fuddle;1",
         "@type": "Interface",
         "schemas": {
-          "@id": "dtmi:example:alpha_um;1",
+          "@id": "dtmi:example:nu_um;1",
           "@type": "Map",
           "mapValue": {
-            "name": "alpha_humpf",
-            "schema": "double"
+            "name": "nu_humpf",
+            "schema": "date"
           },
           "mapKey": {
-            "name": "alpha_wum",
+            "name": "nu_wum",
             "schema": "string",
             "dtmi:foo:bar;1": 626
           }
@@ -33,18 +33,18 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;3",
-        "@id": "dtmi:example:alpha_quan;1",
+        "@id": "dtmi:example:nu_quan;1",
         "@type": "Interface",
         "schemas": {
-          "@id": "dtmi:example:alpha_nuh;1",
+          "@id": "dtmi:example:nu_nuh;1",
           "@type": "Map",
           "mapValue": {
-            "name": "alpha_snee",
-            "schema": "duration"
+            "name": "nu_snee",
+            "schema": "dateTime"
           },
           "mapKey": {
             "@context": "dtmi:undefinedExtension:context;1",
-            "name": "alpha_glikk",
+            "name": "nu_glikk",
             "schema": "string",
             "dtmi:foo:bar;1": 626
           }
@@ -60,17 +60,17 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;3",
-        "@id": "dtmi:example:alpha_zatz;1",
+        "@id": "dtmi:example:nu_zatz;1",
         "@type": "Interface",
         "schemas": {
-          "@id": "dtmi:example:alpha_spazz;1",
+          "@id": "dtmi:example:nu_spazz;1",
           "@type": "Map",
           "mapValue": {
-            "name": "alpha_floob",
-            "schema": "float"
+            "name": "nu_floob",
+            "schema": "double"
           },
           "mapKey": {
-            "name": "alpha_thnad",
+            "name": "nu_thnad",
             "schema": "string",
             "boolean": null
           }
@@ -86,18 +86,18 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;3",
-        "@id": "dtmi:example:alpha_yekk;1",
+        "@id": "dtmi:example:nu_yekk;1",
         "@type": "Interface",
         "schemas": {
-          "@id": "dtmi:example:alpha_flunn;1",
+          "@id": "dtmi:example:nu_flunn;1",
           "@type": "Map",
           "mapValue": {
-            "name": "alpha_itch",
-            "schema": "integer"
+            "name": "nu_itch",
+            "schema": "duration"
           },
           "mapKey": {
             "@context": "dtmi:undefinedExtension:context;1",
-            "name": "alpha_jogg",
+            "name": "nu_jogg",
             "schema": "string",
             "boolean": null
           }

@@ -7,13 +7,13 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;2",
-        "@id": "dtmi:example:theta_xi;1",
+        "@id": "dtmi:example:xi_xi;1",
         "@type": "Interface",
         "schemas": {
-          "@id": "dtmi:example:theta_mu;1",
+          "@id": "dtmi:example:xi_mu;1",
           "@type": "Map",
           "mapKey": {
-            "name": "theta_nu",
+            "name": "xi_nu",
             "schema": "string"
           },
           "mapValue": {
@@ -21,66 +21,7 @@
               "MapValue",
               "dtmi:foo:bar;1"
             ],
-            "name": "theta_lambda",
-            "schema": "boolean"
-          }
-        }
-      }
-    ]
-  },
-  {
-    "valid": true,
-    "options": [
-      "AllowUndefinedExtensions"
-    ],
-    "input": [
-      {
-        "@context": "dtmi:dtdl:context;2",
-        "@id": "dtmi:example:theta_sigma;1",
-        "@type": "Interface",
-        "schemas": {
-          "@id": "dtmi:example:theta_pi;1",
-          "@type": "Map",
-          "mapKey": {
-            "name": "theta_rho",
-            "schema": "string"
-          },
-          "mapValue": {
-            "@context": "dtmi:undefinedExtension:context;1",
-            "@type": [
-              "MapValue",
-              "dtmi:foo:bar;1"
-            ],
-            "name": "theta_omicron",
-            "schema": "date"
-          }
-        }
-      }
-    ]
-  },
-  {
-    "valid": false,
-    "options": [
-      "DisallowUndefinedExtensions"
-    ],
-    "input": [
-      {
-        "@context": "dtmi:dtdl:context;2",
-        "@id": "dtmi:example:theta_chi;1",
-        "@type": "Interface",
-        "schemas": {
-          "@id": "dtmi:example:theta_upsilon;1",
-          "@type": "Map",
-          "mapKey": {
-            "name": "theta_phi",
-            "schema": "string"
-          },
-          "mapValue": {
-            "@type": [
-              "MapValue",
-              "boolean"
-            ],
-            "name": "theta_tau",
+            "name": "xi_lambda",
             "schema": "dateTime"
           }
         }
@@ -95,13 +36,72 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;2",
-        "@id": "dtmi:example:theta_wum;1",
+        "@id": "dtmi:example:xi_sigma;1",
         "@type": "Interface",
         "schemas": {
-          "@id": "dtmi:example:theta_omega;1",
+          "@id": "dtmi:example:xi_pi;1",
           "@type": "Map",
           "mapKey": {
-            "name": "theta_yuzz",
+            "name": "xi_rho",
+            "schema": "string"
+          },
+          "mapValue": {
+            "@context": "dtmi:undefinedExtension:context;1",
+            "@type": [
+              "MapValue",
+              "dtmi:foo:bar;1"
+            ],
+            "name": "xi_omicron",
+            "schema": "double"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:xi_chi;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:xi_upsilon;1",
+          "@type": "Map",
+          "mapKey": {
+            "name": "xi_phi",
+            "schema": "string"
+          },
+          "mapValue": {
+            "@type": [
+              "MapValue",
+              "boolean"
+            ],
+            "name": "xi_tau",
+            "schema": "duration"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:xi_wum;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:xi_omega;1",
+          "@type": "Map",
+          "mapKey": {
+            "name": "xi_yuzz",
             "schema": "string"
           },
           "mapValue": {
@@ -110,8 +110,8 @@
               "MapValue",
               "boolean"
             ],
-            "name": "theta_psi",
-            "schema": "double"
+            "name": "xi_psi",
+            "schema": "float"
           }
         }
       }

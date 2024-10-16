@@ -7,14 +7,14 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;3",
-        "@id": "dtmi:example:thnad_thnad;1",
+        "@id": "dtmi:example:delta_spazz;1",
         "@type": "Interface",
         "extends": {
-          "@id": "dtmi:example:thnad_quan;1",
+          "@id": "dtmi:example:delta_thnad;1",
           "@type": "Interface",
           "contents": {
             "@type": "Relationship",
-            "name": "thnad_snee",
+            "name": "delta_quan",
             "@context": "dtmi:dtdl:extension:quantitativeTypes;1"
           }
         }
@@ -29,14 +29,14 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;3",
-        "@id": "dtmi:example:thnad_zatz;1",
+        "@id": "dtmi:example:delta_jogg;1",
         "@type": "Interface",
         "extends": {
-          "@id": "dtmi:example:thnad_floob;1",
+          "@id": "dtmi:example:delta_zatz;1",
           "@type": "Interface",
           "contents": {
             "@type": "Relationship",
-            "name": "thnad_spazz",
+            "name": "delta_floob",
             "@context": []
           }
         }
@@ -51,14 +51,14 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;3",
-        "@id": "dtmi:example:thnad_itch;1",
+        "@id": "dtmi:example:delta_yekk;1",
         "@type": "Interface",
         "extends": {
-          "@id": "dtmi:example:thnad_flunn;1",
+          "@id": "dtmi:example:delta_itch;1",
           "@type": "Interface",
           "contents": {
             "@type": "Relationship",
-            "name": "thnad_jogg",
+            "name": "delta_flunn",
             "@context": [
               "dtmi:dtdl:extension:quantitativeTypes;1"
             ]
@@ -75,14 +75,14 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;3",
-        "@id": "dtmi:example:thnad_hi;1",
+        "@id": "dtmi:example:epsilon_alpha;1",
         "@type": "Interface",
         "extends": {
-          "@id": "dtmi:example:thnad_vroo;1",
+          "@id": "dtmi:example:delta_hi;1",
           "@type": "Interface",
           "contents": {
             "@type": "Relationship",
-            "name": "thnad_yekk",
+            "name": "delta_vroo",
             "@context": null
           }
         }
@@ -97,14 +97,14 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;3",
-        "@id": "dtmi:example:spazz_gamma;1",
+        "@id": "dtmi:example:epsilon_delta;1",
         "@type": "Interface",
         "extends": {
-          "@id": "dtmi:example:spazz_beta;1",
+          "@id": "dtmi:example:epsilon_gamma;1",
           "@type": "Interface",
           "contents": {
             "@type": "Relationship",
-            "name": "spazz_alpha",
+            "name": "epsilon_beta",
             "@context": 626
           }
         }
@@ -119,14 +119,14 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;3",
-        "@id": "dtmi:example:spazz_zeta;1",
+        "@id": "dtmi:example:epsilon_eta;1",
         "@type": "Interface",
         "extends": {
-          "@id": "dtmi:example:spazz_epsilon;1",
+          "@id": "dtmi:example:epsilon_zeta;1",
           "@type": "Interface",
           "contents": {
             "@type": "Relationship",
-            "name": "spazz_delta",
+            "name": "epsilon_epsilon",
             "@context": true
           }
         }
@@ -141,14 +141,14 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;3",
-        "@id": "dtmi:example:spazz_iota;1",
+        "@id": "dtmi:example:epsilon_kappa;1",
         "@type": "Interface",
         "extends": {
-          "@id": "dtmi:example:spazz_theta;1",
+          "@id": "dtmi:example:epsilon_iota;1",
           "@type": "Interface",
           "contents": {
             "@type": "Relationship",
-            "name": "spazz_eta",
+            "name": "epsilon_theta",
             "@context": [
               null
             ]
@@ -165,14 +165,14 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;3",
-        "@id": "dtmi:example:spazz_mu;1",
+        "@id": "dtmi:example:epsilon_nu;1",
         "@type": "Interface",
         "extends": {
-          "@id": "dtmi:example:spazz_lambda;1",
+          "@id": "dtmi:example:epsilon_mu;1",
           "@type": "Interface",
           "contents": {
             "@type": "Relationship",
-            "name": "spazz_kappa",
+            "name": "epsilon_lambda",
             "@context": [
               626
             ]
@@ -189,14 +189,14 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;3",
-        "@id": "dtmi:example:spazz_omicron;1",
+        "@id": "dtmi:example:epsilon_pi;1",
         "@type": "Interface",
         "extends": {
-          "@id": "dtmi:example:spazz_xi;1",
+          "@id": "dtmi:example:epsilon_omicron;1",
           "@type": "Interface",
           "contents": {
             "@type": "Relationship",
-            "name": "spazz_nu",
+            "name": "epsilon_xi",
             "@context": [
               true
             ]
@@ -213,14 +213,80 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;3",
-        "@id": "dtmi:example:spazz_sigma;1",
+        "@id": "dtmi:example:epsilon_tau;1",
         "@type": "Interface",
         "extends": {
-          "@id": "dtmi:example:spazz_rho;1",
+          "@id": "dtmi:example:epsilon_sigma;1",
           "@type": "Interface",
           "contents": {
             "@type": "Relationship",
-            "name": "spazz_pi",
+            "name": "epsilon_rho",
+            "@context": "dtmi:dtdl:extension:quantitativeTypes"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:epsilon_chi;1",
+        "@type": "Interface",
+        "extends": {
+          "@id": "dtmi:example:epsilon_phi;1",
+          "@type": "Interface",
+          "contents": {
+            "@type": "Relationship",
+            "name": "epsilon_upsilon",
+            "@context": "http://dtdl/extension/quantitativeTypes/1"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:epsilon_yuzz;1",
+        "@type": "Interface",
+        "extends": {
+          "@id": "dtmi:example:epsilon_omega;1",
+          "@type": "Interface",
+          "contents": {
+            "@type": "Relationship",
+            "name": "epsilon_psi",
+            "@context": "quantitativeTypes;1"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:epsilon_humpf;1",
+        "@type": "Interface",
+        "extends": {
+          "@id": "dtmi:example:epsilon_um;1",
+          "@type": "Interface",
+          "contents": {
+            "@type": "Relationship",
+            "name": "epsilon_wum",
             "@context": {}
           }
         }
@@ -235,14 +301,38 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;3",
-        "@id": "dtmi:example:spazz_phi;1",
+        "@id": "dtmi:example:epsilon_nuh;1",
         "@type": "Interface",
         "extends": {
-          "@id": "dtmi:example:spazz_upsilon;1",
+          "@id": "dtmi:example:epsilon_glikk;1",
           "@type": "Interface",
           "contents": {
             "@type": "Relationship",
-            "name": "spazz_tau",
+            "name": "epsilon_fuddle",
+            "@context": {
+              "foo": "dtmi:foo:bar;1"
+            }
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:epsilon_thnad;1",
+        "@type": "Interface",
+        "extends": {
+          "@id": "dtmi:example:epsilon_quan;1",
+          "@type": "Interface",
+          "contents": {
+            "@type": "Relationship",
+            "name": "epsilon_snee",
             "@context": [
               {}
             ]
@@ -259,59 +349,19 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;3",
-        "@id": "dtmi:example:spazz_omega;1",
+        "@id": "dtmi:example:epsilon_zatz;1",
         "@type": "Interface",
         "extends": {
-          "@id": "dtmi:example:spazz_psi;1",
+          "@id": "dtmi:example:epsilon_floob;1",
           "@type": "Interface",
           "contents": {
             "@type": "Relationship",
-            "name": "spazz_chi",
-            "@context": "dtmi:dtdl:extension:quantitativeTypes"
-          }
-        }
-      }
-    ]
-  },
-  {
-    "valid": false,
-    "options": [
-      "DisallowUndefinedExtensions"
-    ],
-    "input": [
-      {
-        "@context": "dtmi:dtdl:context;3",
-        "@id": "dtmi:example:spazz_um;1",
-        "@type": "Interface",
-        "extends": {
-          "@id": "dtmi:example:spazz_wum;1",
-          "@type": "Interface",
-          "contents": {
-            "@type": "Relationship",
-            "name": "spazz_yuzz",
-            "@context": "http://dtdl/extension/quantitativeTypes/1"
-          }
-        }
-      }
-    ]
-  },
-  {
-    "valid": false,
-    "options": [
-      "DisallowUndefinedExtensions"
-    ],
-    "input": [
-      {
-        "@context": "dtmi:dtdl:context;3",
-        "@id": "dtmi:example:spazz_glikk;1",
-        "@type": "Interface",
-        "extends": {
-          "@id": "dtmi:example:spazz_fuddle;1",
-          "@type": "Interface",
-          "contents": {
-            "@type": "Relationship",
-            "name": "spazz_humpf",
-            "@context": "quantitativeTypes;1"
+            "name": "epsilon_spazz",
+            "@context": [
+              {
+                "foo": "dtmi:foo:bar;1"
+              }
+            ]
           }
         }
       }

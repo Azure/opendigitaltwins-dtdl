@@ -1,0 +1,29 @@
+﻿[
+  {
+    "valid": true,
+    "desirable": false,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:wum_nu;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:wum_mu;1",
+          "@type": "Enum",
+          "valueSchema": "integer",
+          "enumValues": {
+            "enumValue": 1652,
+            "name": "wum_lambda",
+            "@type": [
+              "EnumValue",
+              "dtmi:dtdl:class:EnumValue;4"
+            ]
+          }
+        }
+      }
+    ]
+  }
+]

@@ -7,15 +7,15 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;2",
-        "@id": "dtmi:example:omicron_beta;1",
+        "@id": "dtmi:example:tau_xi;1",
         "@type": "Interface",
         "extends": {
-          "@id": "dtmi:example:omicron_alpha;1",
+          "@id": "dtmi:example:tau_nu;1",
           "@type": "Interface",
           "contents": {
-            "@id": "dtmi:example:xi_vroo;1",
+            "@id": "dtmi:example:tau_lambda;1",
             "@type": "Command",
-            "name": "xi_hi"
+            "name": "tau_mu"
           }
         }
       }
@@ -29,16 +29,16 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;2",
-        "@id": "dtmi:example:omicron_zeta;1",
+        "@id": "dtmi:example:tau_sigma;1",
         "@type": "Interface",
         "extends": {
-          "@id": "dtmi:example:omicron_epsilon;1",
+          "@id": "dtmi:example:tau_rho;1",
           "@type": "Interface",
           "contents": [
             {
-              "@id": "dtmi:example:omicron_gamma;1",
+              "@id": "dtmi:example:tau_omicron;1",
               "@type": "Command",
-              "name": "omicron_delta"
+              "name": "tau_pi"
             }
           ]
         }
@@ -53,15 +53,15 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;2",
-        "@id": "dtmi:example:omicron_kappa;1",
+        "@id": "dtmi:example:tau_chi;1",
         "@type": "Interface",
         "extends": {
-          "@id": "dtmi:example:omicron_iota;1",
+          "@id": "dtmi:example:tau_phi;1",
           "@type": "Interface",
           "contents": {
-            "@id": "dtmi:example:omicron_eta;1",
+            "@id": "dtmi:example:tau_tau;1",
             "@type": "Command",
-            "name": "omicron_theta",
+            "name": "tau_upsilon",
             "@context": "dtmi:dtdl:context;3"
           }
         }
@@ -76,17 +76,64 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;2",
-        "@id": "dtmi:example:omicron_xi;1",
+        "@id": "dtmi:example:tau_wum;1",
         "@type": "Interface",
         "extends": {
           "@context": "dtmi:undefinedExtension:context;1",
-          "@id": "dtmi:example:omicron_nu;1",
+          "@id": "dtmi:example:tau_yuzz;1",
           "@type": "Interface",
           "contents": {
-            "@id": "dtmi:example:omicron_lambda;1",
+            "@id": "dtmi:example:tau_psi;1",
             "@type": "Command",
-            "name": "omicron_mu",
+            "name": "tau_omega",
             "@context": "dtmi:dtdl:context;3"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:tau_glikk;1",
+        "@type": "Interface",
+        "extends": {
+          "@id": "dtmi:example:tau_fuddle;1",
+          "@type": "Interface",
+          "contents": {
+            "@id": "dtmi:example:tau_um;1",
+            "@type": "Command",
+            "name": "tau_humpf",
+            "@context": "dtmi:dtdl:context;4"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:tau_thnad;1",
+        "@type": "Interface",
+        "extends": {
+          "@context": "dtmi:undefinedExtension:context;1",
+          "@id": "dtmi:example:tau_quan;1",
+          "@type": "Interface",
+          "contents": {
+            "@id": "dtmi:example:tau_nuh;1",
+            "@type": "Command",
+            "name": "tau_snee",
+            "@context": "dtmi:dtdl:context;4"
           }
         }
       }
@@ -100,10 +147,10 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;2",
-        "@id": "dtmi:example:omicron_pi;1",
+        "@id": "dtmi:example:tau_floob;1",
         "@type": "Interface",
         "extends": {
-          "@id": "dtmi:example:omicron_omicron;1",
+          "@id": "dtmi:example:tau_spazz;1",
           "@type": "Interface",
           "contents": []
         }
@@ -118,23 +165,23 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;2",
-        "@id": "dtmi:example:omicron_psi;1",
+        "@id": "dtmi:example:tau_hi;1",
         "@type": "Interface",
         "extends": {
-          "@id": "dtmi:example:omicron_chi;1",
+          "@id": "dtmi:example:tau_vroo;1",
           "@type": "Interface",
           "contents": [
             {
-              "@id": "dtmi:example:omicron_rho;1",
+              "@id": "dtmi:example:tau_zatz;1",
               "@type": "Command",
-              "name": "omicron_sigma"
+              "name": "tau_jogg"
             },
             {
-              "@id": "dtmi:example:omicron_tau;1",
+              "@id": "dtmi:example:tau_flunn;1",
               "@type": "Component",
-              "name": "omicron_upsilon",
+              "name": "tau_itch",
               "schema": {
-                "@id": "dtmi:example:omicron_phi;1",
+                "@id": "dtmi:example:tau_yekk;1",
                 "@type": "Interface"
               }
             }

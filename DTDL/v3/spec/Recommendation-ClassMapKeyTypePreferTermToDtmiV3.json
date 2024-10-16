@@ -8,17 +8,17 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;3",
-        "@id": "dtmi:example:wum_glikk;1",
+        "@id": "dtmi:example:jogg_glikk;1",
         "@type": "Interface",
         "schemas": {
-          "@id": "dtmi:example:wum_humpf;1",
+          "@id": "dtmi:example:jogg_humpf;1",
           "@type": "Map",
           "mapValue": {
-            "name": "wum_fuddle",
-            "schema": "float"
+            "name": "jogg_fuddle",
+            "schema": "double"
           },
           "mapKey": {
-            "name": "wum_um",
+            "name": "jogg_um",
             "schema": "string",
             "@type": "MapKey"
           }
@@ -35,17 +35,17 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;3",
-        "@id": "dtmi:example:wum_thnad;1",
+        "@id": "dtmi:example:jogg_thnad;1",
         "@type": "Interface",
         "schemas": {
-          "@id": "dtmi:example:wum_snee;1",
+          "@id": "dtmi:example:jogg_snee;1",
           "@type": "Map",
           "mapValue": {
-            "name": "wum_quan",
-            "schema": "integer"
+            "name": "jogg_quan",
+            "schema": "duration"
           },
           "mapKey": {
-            "name": "wum_nuh",
+            "name": "jogg_nuh",
             "schema": "string",
             "@type": "dtmi:dtdl:class:MapKey;3"
           }

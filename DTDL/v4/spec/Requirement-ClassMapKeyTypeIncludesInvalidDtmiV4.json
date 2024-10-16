@@ -1,0 +1,61 @@
+﻿[
+  {
+    "valid": false,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:iota_glikk;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:iota_humpf;1",
+          "@type": "Map",
+          "mapValue": {
+            "name": "iota_fuddle",
+            "schema": "boolean"
+          },
+          "mapKey": {
+            "@type": [
+              "MapKey",
+              "dtmi:foo//bar"
+            ],
+            "name": "iota_um",
+            "schema": "string"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:iota_thnad;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:iota_snee;1",
+          "@type": "Map",
+          "mapValue": {
+            "name": "iota_quan",
+            "schema": "byte"
+          },
+          "mapKey": {
+            "@context": "dtmi:undefinedExtension:context;1",
+            "@type": [
+              "MapKey",
+              "dtmi:foo//bar"
+            ],
+            "name": "iota_nuh",
+            "schema": "string"
+          }
+        }
+      }
+    ]
+  }
+]

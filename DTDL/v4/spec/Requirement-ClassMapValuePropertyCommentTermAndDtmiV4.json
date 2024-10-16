@@ -1,0 +1,57 @@
+﻿[
+  {
+    "valid": false,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:mu_snee;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:mu_glikk;1",
+          "@type": "Map",
+          "mapKey": {
+            "name": "mu_nuh",
+            "schema": "string"
+          },
+          "mapValue": {
+            "comment": "mu_um",
+            "dtmi:dtdl:property:comment;4": "mu_humpf",
+            "name": "mu_fuddle",
+            "schema": "dateTime"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:mu_jogg;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:mu_floob;1",
+          "@type": "Map",
+          "mapKey": {
+            "name": "mu_zatz",
+            "schema": "string"
+          },
+          "mapValue": {
+            "@context": "dtmi:undefinedExtension:context;1",
+            "comment": "mu_quan",
+            "dtmi:dtdl:property:comment;4": "mu_thnad",
+            "name": "mu_spazz",
+            "schema": "decimal"
+          }
+        }
+      }
+    ]
+  }
+]

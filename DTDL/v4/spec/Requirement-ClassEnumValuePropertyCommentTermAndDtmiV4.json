@@ -1,0 +1,51 @@
+﻿[
+  {
+    "valid": false,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:thnad_nu;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:thnad_mu;1",
+          "@type": "Enum",
+          "valueSchema": "integer",
+          "enumValues": {
+            "comment": "thnad_iota",
+            "dtmi:dtdl:property:comment;4": "thnad_kappa",
+            "enumValue": 1765,
+            "name": "thnad_lambda"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:thnad_sigma;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:thnad_rho;1",
+          "@type": "Enum",
+          "valueSchema": "integer",
+          "enumValues": {
+            "@context": "dtmi:undefinedExtension:context;1",
+            "comment": "thnad_xi",
+            "dtmi:dtdl:property:comment;4": "thnad_omicron",
+            "enumValue": 1766,
+            "name": "thnad_pi"
+          }
+        }
+      }
+    ]
+  }
+]

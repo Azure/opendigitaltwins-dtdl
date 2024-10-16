@@ -1,0 +1,58 @@
+﻿[
+  {
+    "valid": false,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:yekk_jogg;1",
+        "@type": "Interface",
+        "extends": {
+          "@id": "dtmi:example:yekk_zatz;1",
+          "@type": "Interface",
+          "contents": {
+            "@type": "Property",
+            "name": "yekk_floob",
+            "schema": "dtmi:ex:dependentRef;1"
+          }
+        }
+      }
+    ],
+    "expect": {
+      "unresolvedIdentifiers": [
+        "dtmi:ex:dependentRef;1"
+      ]
+    }
+  },
+  {
+    "valid": false,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:yekk_yekk;1",
+        "@type": "Interface",
+        "extends": {
+          "@id": "dtmi:example:yekk_itch;1",
+          "@type": "Interface",
+          "contents": {
+            "@type": "Property",
+            "name": "yekk_flunn",
+            "schema": [
+              "dtmi:ex:dependentRef;1"
+            ]
+          }
+        }
+      }
+    ],
+    "expect": {
+      "unresolvedIdentifiers": [
+        "dtmi:ex:dependentRef;1"
+      ]
+    }
+  }
+]

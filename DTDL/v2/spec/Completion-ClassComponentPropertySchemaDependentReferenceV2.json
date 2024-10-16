@@ -7,14 +7,14 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;2",
-        "@id": "dtmi:example:zatz_gamma;1",
+        "@id": "dtmi:example:itch_mu;1",
         "@type": "Interface",
         "extends": {
-          "@id": "dtmi:example:zatz_beta;1",
+          "@id": "dtmi:example:itch_lambda;1",
           "@type": "Interface",
           "contents": {
             "@type": "Component",
-            "name": "zatz_alpha",
+            "name": "itch_kappa",
             "schema": "dtmi:ex:dependentRef;1"
           }
         }
@@ -34,14 +34,14 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;2",
-        "@id": "dtmi:example:zatz_zeta;1",
+        "@id": "dtmi:example:itch_omicron;1",
         "@type": "Interface",
         "extends": {
-          "@id": "dtmi:example:zatz_epsilon;1",
+          "@id": "dtmi:example:itch_xi;1",
           "@type": "Interface",
           "contents": {
             "@type": "Component",
-            "name": "zatz_delta",
+            "name": "itch_nu",
             "schema": [
               "dtmi:ex:dependentRef;1"
             ]

@@ -7,17 +7,63 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;3",
-        "@id": "dtmi:example:quan_itch;1",
+        "@id": "dtmi:example:vroo_spazz;1",
         "@type": "Interface",
         "extends": {
-          "@id": "dtmi:example:quan_flunn;1",
+          "@id": "dtmi:example:vroo_thnad;1",
           "@type": "Interface",
           "contents": {
             "@type": "Command",
-            "name": "quan_jogg",
+            "name": "vroo_quan",
             "request": {
               "@context": [],
-              "name": "quan_zatz",
+              "name": "vroo_snee",
+              "schema": "long"
+            }
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:vroo_jogg;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Command",
+          "name": "vroo_zatz",
+          "request": {
+            "name": "vroo_floob",
+            "schema": "string"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:vroo_vroo;1",
+        "@type": "Interface",
+        "extends": {
+          "@id": "dtmi:example:vroo_yekk;1",
+          "@type": "Interface",
+          "contents": {
+            "@type": "Command",
+            "name": "vroo_itch",
+            "request": {
+              "name": "vroo_flunn",
               "schema": "time"
             }
           }
@@ -33,13 +79,13 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;3",
-        "@id": "dtmi:example:quan_hi;1",
+        "@id": "dtmi:example:hi_beta;1",
         "@type": "Interface",
         "contents": {
           "@type": "Command",
-          "name": "quan_vroo",
+          "name": "hi_alpha",
           "request": {
-            "name": "quan_yekk",
+            "name": "vroo_hi",
             "schema": "boolean"
           }
         }
@@ -54,18 +100,14 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;3",
-        "@id": "dtmi:example:thnad_delta;1",
+        "@id": "dtmi:example:hi_epsilon;1",
         "@type": "Interface",
-        "extends": {
-          "@id": "dtmi:example:thnad_gamma;1",
-          "@type": "Interface",
-          "contents": {
-            "@type": "Command",
-            "name": "thnad_beta",
-            "request": {
-              "name": "thnad_alpha",
-              "schema": "date"
-            }
+        "contents": {
+          "@type": "Command",
+          "name": "hi_delta",
+          "request": {
+            "name": "hi_gamma",
+            "schema": "date"
           }
         }
       }
@@ -79,56 +121,14 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;3",
-        "@id": "dtmi:example:thnad_eta;1",
+        "@id": "dtmi:example:hi_theta;1",
         "@type": "Interface",
         "contents": {
           "@type": "Command",
-          "name": "thnad_zeta",
+          "name": "hi_eta",
           "request": {
-            "name": "thnad_epsilon",
+            "name": "hi_zeta",
             "schema": "dateTime"
-          }
-        }
-      }
-    ]
-  },
-  {
-    "valid": true,
-    "options": [
-      "DisallowUndefinedExtensions"
-    ],
-    "input": [
-      {
-        "@context": "dtmi:dtdl:context;3",
-        "@id": "dtmi:example:thnad_kappa;1",
-        "@type": "Interface",
-        "contents": {
-          "@type": "Command",
-          "name": "thnad_iota",
-          "request": {
-            "name": "thnad_theta",
-            "schema": "double"
-          }
-        }
-      }
-    ]
-  },
-  {
-    "valid": true,
-    "options": [
-      "DisallowUndefinedExtensions"
-    ],
-    "input": [
-      {
-        "@context": "dtmi:dtdl:context;3",
-        "@id": "dtmi:example:thnad_nu;1",
-        "@type": "Interface",
-        "contents": {
-          "@type": "Command",
-          "name": "thnad_mu",
-          "request": {
-            "name": "thnad_lambda",
-            "schema": "duration"
           }
         }
       }

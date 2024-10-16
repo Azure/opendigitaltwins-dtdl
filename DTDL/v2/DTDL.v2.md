@@ -2,7 +2,7 @@
 
 **Version 2**
 
-This version of DTDL is used for [Azure Digital Twins](https://azure.microsoft.com/services/digital-twins/) and [IoT Plug and Play](https://aka.ms/iotpnp). 
+This version of DTDL is used for [Azure Digital Twins](https://azure.microsoft.com/services/digital-twins/) and [IoT Plug and Play](https://aka.ms/iotpnp).
 
 > Note: Since April 2023, DTDL v3 is the latest supported version in Azure products and services (except IoT Central)
 
@@ -55,6 +55,7 @@ For example, properties that are semantically annotated as "temperature" can be 
 When writing a digital twin definition, it's necessary to specify the version of DTDL being used.
 Because DTDL is based on JSON-LD, we use the JSON-LD context (the `@context` statement) to specify the version of DTDL being used.
 For DTDL version 2, the appropriate context specifier is "dtmi:dtdl:context;2".
+See the [Context](#context) section for more details.
 
 ## Interface
 
@@ -462,9 +463,9 @@ A full set of primitive data types are provided and can be specified directly as
 | `boolean` | a boolean value |
 | `date` | a date in ISO 8601 format, per [RFC 3339](https://tools.ietf.org/html/rfc3339) |
 | `dateTime` | a date and time in ISO 8601 format, per [RFC 3339](https://tools.ietf.org/html/rfc3339) |
-| `double` | a finite numeric value that is expressible in IEEE 754 double-precision floating point format, conformant with xsd:double |
+| `double` | a finite numeric value that is expressible in IEEE 754 double-precision floating point format, conformant with the numeric range of xsd:double |
 | `duration` | a duration in ISO 8601 format |
-| `float` | a finite numeric value that is expressible in IEEE 754 single-precision floating point format, conformant with xsd:float |
+| `float` | a finite numeric value that is expressible in IEEE 754 single-precision floating point format, conformant with the numeric range of xsd:float |
 | `integer` | a signed integral numeric value that is expressible in 4 bytes |
 | `long` | a signed integral numeric value that is expressible in 8 bytes |
 | `string` | a UTF8 string |
@@ -476,8 +477,9 @@ Complex schemas are designed for supporting complex data types made up of primit
 In DTDL v2, the complex schemas are [Array](#array), [Enum](#enum), [Map](#map), and [Object](#object).
 A complex schema can be specified directly as the value of a schema property or described in the Interface schemas set and referenced in a schema property.
 
-Complex schema definitions are recursive.
+Complex schema definitions are recursive but not self-referential.
 An Array's elementSchema may be Array, Enum, Map, Object, or any of the [primitive schema](#primitive-schema) types.
+However, the elementSchema must not refer to the Array itself or to another complex schema that refers to the Array.
 The same is true for a Map's mapValue's schema and an Object's field's schema.
 For DTDL v2, the maximum depth of nested complex schemas is 5 levels.
 
@@ -644,7 +646,7 @@ The chart below lists the properties that a MapKey may have.
 | `description` | optional | localizable *string* | max 512 characters | A localizable description for display. |
 | `displayName` | optional | localizable *string* | max 64 characters | A localizable name for display. |
 | `name` | required | *string* | max 64 characters; contains only alphanumerics and underscore, starting with a letter, ending with alphanumeric | The programming name of the element. |
-| `schema` | required | [String](#string) | must be *string* | The data type of the Map's key, which must be string. |
+| `schema` | required | [primitive schema](#primitive-schema) | must be *string* | The data type of the Map's key, which must be string. |
 
 ### MapValue
 
@@ -1007,7 +1009,7 @@ IRIs in DTDL are [JSON-LD IRIs](https://w3c.github.io/json-ld-syntax/#iris) and 
 Some string properties in models are meant for display and, therefore, support localization.
 Digital twin models use JSON-LD's string internationalization support for localization.
 Each localizable property (e.g. `displayName` and `description`) is defined to be a JSON-LD language map (`"@container": "@language"`).
-The keys of the language map must be language tag strings (see [BCP 47](https://tools.ietf.org/html/bcp47)).
+The keys of the language map must be language tag strings (see [BCP 47](https://www.rfc-editor.org/info/bcp47)).
 [ISO 639](https://www.loc.gov/standards/iso639-2/php/code_list.php) provides a list of language tags.
 The default language for DTDL documents is English.
 
@@ -1078,7 +1080,7 @@ By contrast, if the undefined co-type "Commercial" were not present in the above
 
 ## Language extensions
 
-DTDL also supports a selection of [language extensions](../v3/DTDL.Extensions.md), which offer additional functionality beyond what is provided by the core DTDL language.
+DTDL also supports a selection of [language extensions](../v4/DTDL.Extensions.md), which offer additional functionality beyond what is provided by the core DTDL language.
 The chart below lists the language extensions that are currently available for use with DTDL version 2.
 
 | Extension | Category | Description |
@@ -1103,7 +1105,7 @@ The chart below lists the language extensions that are currently available for u
 ## References
 
 * JSON-LD: JSON-LD 1.1 - https://json-ld.org/spec/latest/json-ld/
-* Language codes: BCP47 - https://tools.ietf.org/html/bcp47
+* Language codes: BCP47 - https://www.rfc-editor.org/info/bcp47
 * RDF (Resource Description Framework): RDF Concepts and Abstract Syntax - http://www.w3.org/TR/2014/REC-rdf11-concepts-20140225/
 * RDF Schema: RDF Schema 1.1 - http://www.w3.org/TR/rdf-schema/
 

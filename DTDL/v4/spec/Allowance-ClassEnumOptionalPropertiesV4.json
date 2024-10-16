@@ -1,0 +1,117 @@
+﻿[
+  {
+    "valid": true,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:beta_hi;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Property",
+          "name": "beta_vroo",
+          "schema": {
+            "@context": [],
+            "@type": "Enum",
+            "valueSchema": "integer"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:gamma_beta;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Property",
+          "name": "gamma_alpha",
+          "schema": {
+            "@type": "Enum",
+            "valueSchema": "integer"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:gamma_delta;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:gamma_gamma;1",
+          "@type": "Enum",
+          "valueSchema": "integer"
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:gamma_zeta;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:gamma_epsilon;1",
+          "@type": "Enum",
+          "valueSchema": "integer"
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:gamma_theta;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:gamma_eta;1",
+          "@type": "Enum",
+          "valueSchema": "integer"
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:gamma_kappa;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:gamma_iota;1",
+          "@type": "Enum",
+          "valueSchema": "integer"
+        }
+      }
+    ]
+  }
+]

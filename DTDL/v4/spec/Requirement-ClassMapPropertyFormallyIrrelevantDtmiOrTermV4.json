@@ -1,0 +1,108 @@
+﻿[
+  {
+    "valid": false,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:fuddle_iota;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:fuddle_zeta;1",
+          "@type": "Map",
+          "mapKey": {
+            "name": "fuddle_eta",
+            "schema": "string"
+          },
+          "mapValue": {
+            "name": "fuddle_theta",
+            "schema": "byte"
+          },
+          "dtmi:foo:bar;1": 626
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:fuddle_nu;1",
+        "@type": "Interface",
+        "schemas": {
+          "@context": "dtmi:undefinedExtension:context;1",
+          "@id": "dtmi:example:fuddle_kappa;1",
+          "@type": "Map",
+          "mapKey": {
+            "name": "fuddle_lambda",
+            "schema": "string"
+          },
+          "mapValue": {
+            "name": "fuddle_mu",
+            "schema": "bytes"
+          },
+          "dtmi:foo:bar;1": 626
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:fuddle_rho;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:fuddle_xi;1",
+          "@type": "Map",
+          "mapKey": {
+            "name": "fuddle_omicron",
+            "schema": "string"
+          },
+          "mapValue": {
+            "name": "fuddle_pi",
+            "schema": "date"
+          },
+          "boolean": null
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:fuddle_phi;1",
+        "@type": "Interface",
+        "schemas": {
+          "@context": "dtmi:undefinedExtension:context;1",
+          "@id": "dtmi:example:fuddle_sigma;1",
+          "@type": "Map",
+          "mapKey": {
+            "name": "fuddle_tau",
+            "schema": "string"
+          },
+          "mapValue": {
+            "name": "fuddle_upsilon",
+            "schema": "dateTime"
+          },
+          "boolean": null
+        }
+      }
+    ]
+  }
+]

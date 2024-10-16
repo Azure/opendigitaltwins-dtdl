@@ -30,7 +30,7 @@ It is based on [JSON-LD](https://json-ld.org/spec/FCGS/json-ld/20180607/), which
 DTDL can be understood and validated without knowing RDF or JSON-LD, and the present document specifies DTDL without reference to either of these other standards.
 DTDL cannot be readily understood without a basic knowledge of JSON; however, JSON syntax is fortunately straightforward, in marked contrast to the size, complexity, and subtlety of JSON-LD.
 
-Within this document, the key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "SHOULD NOT", "RECOMMENDED",  "MAY", and "OPTIONAL" are to be interpreted as described in IETF [RFC 2119](https://tools.ietf.org/search/rfc2119) as updated by [RFC 8174](https://tools.ietf.org/search/rfc8174), per [BCP 14](https://tools.ietf.org/search/bcp14).
+Within this document, the key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "SHOULD NOT", "RECOMMENDED",  "MAY", and "OPTIONAL" are to be interpreted as described in IETF [RFC 2119](https://www.rfc-editor.org/rfc/rfc2119) as updated by [RFC 8174](https://www.rfc-editor.org/rfc/rfc8174), per [BCP 14](https://www.rfc-editor.org/info/bcp14).
 Although these IETF documents make no distinction between the meaning of "MUST" and "SHALL", in the present document a violation of a "MUST" requirement indicates an **invalid** model, whereas a violation of a "SHALL" requirement indicates an **incomplete** model.
 See [Model completeness](#model-completeness) for a description of this distinction.
 
@@ -50,7 +50,7 @@ Following is a complete set of JSON terms with concise definitions:
 * value &mdash; an object OR array OR string OR number OR boolean OR null
 
 For brevity and simplicity, the definitions above &mdash; particularly for number and string &mdash; are succinct to the point of imprecision.
-See IETF [RFC 8259](https://tools.ietf.org/search/rfc8259) for more details on JSON syntax.
+See IETF [RFC 8259](https://www.rfc-editor.org/rfc/rfc8259) for more details on JSON syntax.
 Note that the term "boolean" is never used in the JSON spec; the paired terms "true" and "false" are always used instead.
 Another term not used in the JSON spec is "integer", which herein will mean an integral number expressible in 4 bytes.
 
@@ -168,8 +168,8 @@ If the definition of this extension is not known, the model is contextually inco
 ```json
 {
   "@context": [
-      "dtmi:dtdl:context;3",
-      "dtmi:example:someExtensionContext;1"
+    "dtmi:dtdl:context;3",
+    "dtmi:example:someExtensionContext;1"
   ],
   "@id": "dtmi:example:someInterface;1",
   "@type": "Interface",
@@ -328,10 +328,10 @@ Example:
 ```json
 {
   "@context": "dtmi:dtdl:context;3",
-  "@id": "dtmi:example:beta_upsilon;1",
+  "@id": "dtmi:example:beta_yuzz;1",
   "@type": "Interface",
   "schemas": {
-    "@id": "dtmi:example:beta_tau;1",
+    "@id": "dtmi:example:beta_omega;1",
     "@type": "Array",
     "elementSchema": "boolean"
   }
@@ -400,11 +400,11 @@ Example:
 ```json
 {
   "@context": "dtmi:dtdl:context;3",
-  "@id": "dtmi:example:beta_chi;1",
+  "@id": "dtmi:example:beta_um;1",
   "@type": "Interface",
   "contents": {
     "@type": "Command",
-    "name": "beta_phi"
+    "name": "beta_wum"
   }
 }
 ```
@@ -486,13 +486,13 @@ Example:
 ```json
 {
   "@context": "dtmi:dtdl:context;3",
-  "@id": "dtmi:example:beta_um;1",
+  "@id": "dtmi:example:beta_snee;1",
   "@type": "Interface",
   "contents": {
     "@type": "Command",
-    "name": "beta_wum",
+    "name": "beta_nuh",
     "request": {
-      "name": "beta_yuzz",
+      "name": "beta_glikk",
       "schema": "date"
     }
   }
@@ -565,13 +565,13 @@ Example:
 ```json
 {
   "@context": "dtmi:dtdl:context;3",
-  "@id": "dtmi:example:beta_glikk;1",
+  "@id": "dtmi:example:beta_spazz;1",
   "@type": "Interface",
   "contents": {
     "@type": "Command",
-    "name": "beta_fuddle",
+    "name": "beta_thnad",
     "response": {
-      "name": "beta_humpf",
+      "name": "beta_quan",
       "schema": "dateTime"
     }
   }
@@ -644,13 +644,13 @@ Example:
 ```json
 {
   "@context": "dtmi:dtdl:context;3",
-  "@id": "dtmi:example:beta_quan;1",
+  "@id": "dtmi:example:beta_jogg;1",
   "@type": "Interface",
   "contents": {
     "@type": "Component",
-    "name": "beta_nuh",
+    "name": "beta_floob",
     "schema": {
-      "@id": "dtmi:example:beta_snee;1",
+      "@id": "dtmi:example:beta_zatz;1",
       "@type": "Interface"
     }
   }
@@ -724,10 +724,10 @@ Example:
 ```json
 {
   "@context": "dtmi:dtdl:context;3",
-  "@id": "dtmi:example:beta_zatz;1",
+  "@id": "dtmi:example:beta_vroo;1",
   "@type": "Interface",
   "schemas": {
-    "@id": "dtmi:example:beta_floob;1",
+    "@id": "dtmi:example:beta_yekk;1",
     "@type": "Enum",
     "valueSchema": "integer"
   }
@@ -800,15 +800,15 @@ Example:
 ```json
 {
   "@context": "dtmi:dtdl:context;3",
-  "@id": "dtmi:example:beta_yekk;1",
+  "@id": "dtmi:example:gamma_gamma;1",
   "@type": "Interface",
   "schemas": {
-    "@id": "dtmi:example:beta_itch;1",
+    "@id": "dtmi:example:gamma_beta;1",
     "@type": "Enum",
     "valueSchema": "integer",
     "enumValues": {
       "enumValue": 11,
-      "name": "beta_flunn"
+      "name": "gamma_alpha"
     }
   }
 }
@@ -880,13 +880,13 @@ Example:
 ```json
 {
   "@context": "dtmi:dtdl:context;3",
-  "@id": "dtmi:example:gamma_epsilon;1",
+  "@id": "dtmi:example:gamma_kappa;1",
   "@type": "Interface",
   "schemas": {
-    "@id": "dtmi:example:gamma_delta;1",
+    "@id": "dtmi:example:gamma_iota;1",
     "@type": "Object",
     "fields": {
-      "name": "gamma_gamma",
+      "name": "gamma_theta",
       "schema": "double"
     }
   }
@@ -961,7 +961,7 @@ Example:
 ```json
 {
   "@context": "dtmi:dtdl:context;3",
-  "@id": "dtmi:example:gamma_theta;1",
+  "@id": "dtmi:example:gamma_nu;1",
   "@type": "Interface"
 }
 ```
@@ -1042,17 +1042,17 @@ Example:
 ```json
 {
   "@context": "dtmi:dtdl:context;3",
-  "@id": "dtmi:example:gamma_mu;1",
+  "@id": "dtmi:example:gamma_rho;1",
   "@type": "Interface",
   "schemas": {
-    "@id": "dtmi:example:gamma_iota;1",
+    "@id": "dtmi:example:gamma_xi;1",
     "@type": "Map",
     "mapKey": {
-      "name": "gamma_kappa",
+      "name": "gamma_omicron",
       "schema": "string"
     },
     "mapValue": {
-      "name": "gamma_lambda",
+      "name": "gamma_pi",
       "schema": "duration"
     }
   }
@@ -1125,17 +1125,17 @@ Example:
 ```json
 {
   "@context": "dtmi:dtdl:context;3",
-  "@id": "dtmi:example:gamma_pi;1",
+  "@id": "dtmi:example:gamma_phi;1",
   "@type": "Interface",
   "schemas": {
-    "@id": "dtmi:example:gamma_xi;1",
+    "@id": "dtmi:example:gamma_tau;1",
     "@type": "Map",
     "mapValue": {
-      "name": "gamma_omicron",
+      "name": "gamma_upsilon",
       "schema": "float"
     },
     "mapKey": {
-      "name": "gamma_nu",
+      "name": "gamma_sigma",
       "schema": "string"
     }
   }
@@ -1207,17 +1207,17 @@ Example:
 ```json
 {
   "@context": "dtmi:dtdl:context;3",
-  "@id": "dtmi:example:gamma_upsilon;1",
+  "@id": "dtmi:example:gamma_yuzz;1",
   "@type": "Interface",
   "schemas": {
-    "@id": "dtmi:example:gamma_sigma;1",
+    "@id": "dtmi:example:gamma_psi;1",
     "@type": "Map",
     "mapKey": {
-      "name": "gamma_tau",
+      "name": "gamma_omega",
       "schema": "string"
     },
     "mapValue": {
-      "name": "gamma_rho",
+      "name": "gamma_chi",
       "schema": "integer"
     }
   }
@@ -1291,10 +1291,10 @@ Example:
 ```json
 {
   "@context": "dtmi:dtdl:context;3",
-  "@id": "dtmi:example:gamma_chi;1",
+  "@id": "dtmi:example:gamma_um;1",
   "@type": "Interface",
   "schemas": {
-    "@id": "dtmi:example:gamma_phi;1",
+    "@id": "dtmi:example:gamma_wum;1",
     "@type": "Object"
   }
 }
@@ -1360,11 +1360,11 @@ Example:
 ```json
 {
   "@context": "dtmi:dtdl:context;3",
-  "@id": "dtmi:example:gamma_omega;1",
+  "@id": "dtmi:example:gamma_fuddle;1",
   "@type": "Interface",
   "contents": {
     "@type": "Property",
-    "name": "gamma_psi",
+    "name": "gamma_humpf",
     "schema": "long"
   }
 }
@@ -1442,11 +1442,11 @@ Example:
 ```json
 {
   "@context": "dtmi:dtdl:context;3",
-  "@id": "dtmi:example:gamma_glikk;1",
+  "@id": "dtmi:example:gamma_spazz;1",
   "@type": "Interface",
   "contents": {
     "@type": "Relationship",
-    "name": "gamma_fuddle"
+    "name": "gamma_thnad"
   }
 }
 ```
@@ -1536,11 +1536,11 @@ Example:
 ```json
 {
   "@context": "dtmi:dtdl:context;3",
-  "@id": "dtmi:example:gamma_thnad;1",
+  "@id": "dtmi:example:gamma_flunn;1",
   "@type": "Interface",
   "contents": {
     "@type": "Telemetry",
-    "name": "gamma_quan",
+    "name": "gamma_jogg",
     "schema": "string"
   }
 }
@@ -1612,12 +1612,16 @@ In addition to the direct requirements on members of various [DTDL elements](#dt
 Specifically:
 
 * There [MUST NOT](spec/Requirement-ClassArrayPropertiesElementSchemaSchemaMaxDepthV3.json) be more than 5 "elementSchema" or "schema" members in any path from a DTDL [Array](#array) element to another DTDL element.
+* There [MUST NOT](spec/Requirement-ClassArrayPropertiesElementSchemaSchemaSelfReferenceV3.json) be a path from a DTDL [Array](#array) element wherein some "elementSchema" or "schema" member referentially includes the DTDL Array element where the path begins.
 * There [MUST NOT](spec/Requirement-ClassComponentPropertiesSchemaContentsExcludeComponentV3.json) be a path of "schema" or "contents" members from any DTDL [Component](#component) element to any DTDL [Component](#component) element.
 * In the union of all paths of "extends" members rooted at a given DTDL [Interface](#interface) element, the total count of all values among all such members [MUST NOT](spec/Requirement-ClassInterfacePropertiesExtendsMaxCountV3.json) exceed 1024 values.
 * There [MUST NOT](spec/Requirement-ClassInterfacePropertiesExtendsMaxDepthV3.json) be more than 10 members in any path of "extends" members from a DTDL [Interface](#interface) element to another DTDL element.
+* There [MUST NOT](spec/Requirement-ClassInterfacePropertiesExtendsSelfReferenceV3.json) be a path of "extends" members from a DTDL [Interface](#interface) element to the DTDL Interface element where the path begins.
 * In the union of all paths of "contents" or "fields" or "enumValues" or "request" or "response" or "properties" or "schema" or "elementSchema" or "mapValue" members rooted at a given DTDL [Interface](#interface) element, including those imported via "extends", the total count of all values among all such members MUST NOT exceed 100000 values.
 * There [MUST NOT](spec/Requirement-ClassMapPropertiesElementSchemaSchemaMaxDepthV3.json) be more than 5 "elementSchema" or "schema" members in any path from a DTDL [Map](#map) element to another DTDL element.
+* There [MUST NOT](spec/Requirement-ClassMapPropertiesElementSchemaSchemaSelfReferenceV3.json) be a path from a DTDL [Map](#map) element wherein some "elementSchema" or "schema" member referentially includes the DTDL Map element where the path begins.
 * There [MUST NOT](spec/Requirement-ClassObjectPropertiesElementSchemaSchemaMaxDepthV3.json) be more than 5 "elementSchema" or "schema" members in any path from a DTDL [Object](#object) element to another DTDL element.
+* There [MUST NOT](spec/Requirement-ClassObjectPropertiesElementSchemaSchemaSelfReferenceV3.json) be a path from a DTDL [Object](#object) element wherein some "elementSchema" or "schema" member referentially includes the DTDL Object element where the path begins.
 
 The JSON text of each Interface definition is limited to 1 MiByte.
 This is the total number of bytes inclusive of the opening and closing curly braces for each Interface definition.
@@ -1958,7 +1962,8 @@ The particular circumstances that disallow these strings are explicitly designat
 Every [DTDL element](#dtdl-element) may have &mdash; and every top-level element **must** have &mdash; a "@context" member.
 The following constraints and conditions apply to every DTDL v3 "@context" member:
 
-* Member value [MUST](spec/Requirement-ContextStringOrArrayQuantV3.json) be a string or an array of strings.
+* Member value [MUST](spec/Requirement-ContextStringOrArrayQuantV3.json) be a string or an array.
+* If member value is an array, all elements [MUST](spec/Requirement-ContextArrayAllStringsV3.json) be strings.
 * Each included string value [MUST](spec/Requirement-ContextDtmiWithVersionQuantV3.json) conform to the [Digital Twin Model Identifier](#digital-twin-model-identifier) syntax, and it [MUST](spec/Requirement-ContextDtmiWithVersionQuantV3.json) contain a version number.
 * Each included string value that does not begin with "dtmi:dtdl:context;" [SHALL](spec/Completion-ContextDefinedLanguageExtensionQuantV3.json) refer to a defined DTDL language extension.
 * Member [MUST](spec/Requirement-TopLevelDtdlContextV3.json) include string value "dtmi:dtdl:context;3" if member is in a top-level element.
@@ -2054,8 +2059,8 @@ The active context of the DTDL Relationship element is the set { "dtmi:dtdl:cont
 ```json
 {
   "@context": [
-      "dtmi:dtdl:context;3",
-      "dtmi:ex:foo;2"
+    "dtmi:dtdl:context;3",
+    "dtmi:ex:foo;2"
   ],
   "@id": "dtmi:ex:anInterface;1",
   "@type": "Interface",

@@ -1,0 +1,47 @@
+﻿[
+  {
+    "valid": false,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:eta_tau;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:eta_sigma;1",
+          "@type": "Object",
+          "fields": {
+            "name": "eta_rho",
+            "schema": "integer",
+            "dtmi:dtdl:property:schema;4": "long"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:eta_chi;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:eta_phi;1",
+          "@type": "Object",
+          "fields": {
+            "@context": "dtmi:undefinedExtension:context;1",
+            "name": "eta_upsilon",
+            "schema": "short",
+            "dtmi:dtdl:property:schema;4": "string"
+          }
+        }
+      }
+    ]
+  }
+]

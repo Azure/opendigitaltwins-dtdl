@@ -7,17 +7,68 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;2",
-        "@id": "dtmi:example:pi_fuddle;1",
+        "@id": "dtmi:example:tau_glikk;1",
         "@type": "Interface",
         "contents": {
           "@type": "Command",
-          "name": "pi_humpf",
+          "name": "tau_fuddle",
           "request": {
             "@type": [
               "CommandPayload",
               "dtmi:foo:bar;1"
             ],
-            "name": "pi_um",
+            "name": "tau_humpf",
+            "schema": "boolean"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:tau_quan;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Command",
+          "name": "tau_snee",
+          "request": {
+            "@context": "dtmi:undefinedExtension:context;1",
+            "@type": [
+              "CommandPayload",
+              "dtmi:foo:bar;1"
+            ],
+            "name": "tau_nuh",
+            "schema": "date"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:tau_floob;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Command",
+          "name": "tau_spazz",
+          "request": {
+            "@type": [
+              "CommandPayload",
+              "boolean"
+            ],
+            "name": "tau_thnad",
             "schema": "dateTime"
           }
         }
@@ -32,70 +83,19 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;2",
-        "@id": "dtmi:example:pi_snee;1",
+        "@id": "dtmi:example:tau_flunn;1",
         "@type": "Interface",
         "contents": {
           "@type": "Command",
-          "name": "pi_nuh",
+          "name": "tau_jogg",
           "request": {
             "@context": "dtmi:undefinedExtension:context;1",
             "@type": [
               "CommandPayload",
-              "dtmi:foo:bar;1"
+              "boolean"
             ],
-            "name": "pi_glikk",
+            "name": "tau_zatz",
             "schema": "double"
-          }
-        }
-      }
-    ]
-  },
-  {
-    "valid": false,
-    "options": [
-      "DisallowUndefinedExtensions"
-    ],
-    "input": [
-      {
-        "@context": "dtmi:dtdl:context;2",
-        "@id": "dtmi:example:pi_spazz;1",
-        "@type": "Interface",
-        "contents": {
-          "@type": "Command",
-          "name": "pi_thnad",
-          "request": {
-            "@type": [
-              "CommandPayload",
-              "boolean"
-            ],
-            "name": "pi_quan",
-            "schema": "duration"
-          }
-        }
-      }
-    ]
-  },
-  {
-    "valid": true,
-    "options": [
-      "AllowUndefinedExtensions"
-    ],
-    "input": [
-      {
-        "@context": "dtmi:dtdl:context;2",
-        "@id": "dtmi:example:pi_jogg;1",
-        "@type": "Interface",
-        "contents": {
-          "@type": "Command",
-          "name": "pi_zatz",
-          "request": {
-            "@context": "dtmi:undefinedExtension:context;1",
-            "@type": [
-              "CommandPayload",
-              "boolean"
-            ],
-            "name": "pi_floob",
-            "schema": "float"
           }
         }
       }

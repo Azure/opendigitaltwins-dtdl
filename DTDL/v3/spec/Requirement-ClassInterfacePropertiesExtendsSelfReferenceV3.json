@@ -1,0 +1,39 @@
+﻿[
+  {
+    "valid": false,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:snee_flunn;1",
+        "@type": "Interface",
+        "extends": {
+          "@id": "dtmi:foo:delta_alpha;1",
+          "@type": "Interface",
+          "extends": "dtmi:foo:delta_alpha;1"
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:snee_itch;1",
+        "@type": "Interface",
+        "extends": {
+          "@context": "dtmi:undefinedExtension:context;1",
+          "@id": "dtmi:foo:delta_alpha;1",
+          "@type": "Interface",
+          "extends": "dtmi:foo:delta_alpha;1"
+        }
+      }
+    ]
+  }
+]

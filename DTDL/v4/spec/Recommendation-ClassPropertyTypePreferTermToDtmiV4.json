@@ -1,0 +1,40 @@
+﻿[
+  {
+    "valid": true,
+    "desirable": true,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:zatz_floob;1",
+        "@type": "Interface",
+        "contents": {
+          "name": "zatz_spazz",
+          "schema": "decimal",
+          "@type": "Property"
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "desirable": false,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:zatz_jogg;1",
+        "@type": "Interface",
+        "contents": {
+          "name": "zatz_zatz",
+          "schema": "double",
+          "@type": "dtmi:dtdl:class:Property;4"
+        }
+      }
+    ]
+  }
+]

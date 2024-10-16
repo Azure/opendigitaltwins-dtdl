@@ -8,14 +8,14 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;3",
-        "@id": "dtmi:example:chi_alpha;1",
+        "@id": "dtmi:example:nuh_chi;1",
         "@type": "Interface",
         "contents": {
           "@type": "Command",
-          "name": "phi_hi",
+          "name": "nuh_phi",
           "response": {
-            "name": "phi_vroo",
-            "schema": "string",
+            "name": "nuh_upsilon",
+            "schema": "dateTime",
             "@type": [
               "CommandResponse",
               "CommandResponse"
@@ -34,14 +34,14 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;3",
-        "@id": "dtmi:example:chi_delta;1",
+        "@id": "dtmi:example:nuh_yuzz;1",
         "@type": "Interface",
         "contents": {
           "@type": "Command",
-          "name": "chi_gamma",
+          "name": "nuh_omega",
           "response": {
-            "name": "chi_beta",
-            "schema": "time",
+            "name": "nuh_psi",
+            "schema": "double",
             "@type": [
               "dtmi:dtdl:class:CommandResponse;3",
               "dtmi:dtdl:class:CommandResponse;3"

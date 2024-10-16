@@ -1,0 +1,44 @@
+﻿[
+  {
+    "valid": true,
+    "desirable": true,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:glikk_nuh;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:glikk_fuddle;1",
+          "@type": "Object",
+          "displayName": [
+            "glikk_glikk"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "desirable": false,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:glikk_thnad;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:glikk_snee;1",
+          "@type": "Object",
+          "dtmi:dtdl:property:displayName;4": [
+            "glikk_quan"
+          ]
+        }
+      }
+    ]
+  }
+]

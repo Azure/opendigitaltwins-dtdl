@@ -1,0 +1,32 @@
+﻿[
+  {
+    "valid": true,
+    "desirable": false,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:theta_zatz;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:theta_spazz;1",
+          "@type": "Map",
+          "mapValue": {
+            "name": "theta_floob",
+            "schema": "long"
+          },
+          "mapKey": {
+            "name": "theta_thnad",
+            "schema": "string",
+            "@type": [
+              "MapKey",
+              "dtmi:dtdl:class:MapKey;4"
+            ]
+          }
+        }
+      }
+    ]
+  }
+]

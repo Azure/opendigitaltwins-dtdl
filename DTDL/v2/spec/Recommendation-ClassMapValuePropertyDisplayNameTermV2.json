@@ -8,21 +8,21 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;2",
-        "@id": "dtmi:example:omega_beta;1",
+        "@id": "dtmi:example:glikk_beta;1",
         "@type": "Interface",
         "schemas": {
-          "@id": "dtmi:example:psi_hi;1",
+          "@id": "dtmi:example:fuddle_hi;1",
           "@type": "Map",
           "mapKey": {
-            "name": "omega_alpha",
+            "name": "glikk_alpha",
             "schema": "string"
           },
           "mapValue": {
             "displayName": [
-              "psi_yekk"
+              "fuddle_yekk"
             ],
-            "name": "psi_vroo",
-            "schema": "float"
+            "name": "fuddle_vroo",
+            "schema": "long"
           }
         }
       }
@@ -37,21 +37,21 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;2",
-        "@id": "dtmi:example:omega_eta;1",
+        "@id": "dtmi:example:glikk_eta;1",
         "@type": "Interface",
         "schemas": {
-          "@id": "dtmi:example:omega_epsilon;1",
+          "@id": "dtmi:example:glikk_epsilon;1",
           "@type": "Map",
           "mapKey": {
-            "name": "omega_zeta",
+            "name": "glikk_zeta",
             "schema": "string"
           },
           "mapValue": {
             "dtmi:dtdl:property:displayName;2": [
-              "omega_gamma"
+              "glikk_gamma"
             ],
-            "name": "omega_delta",
-            "schema": "integer"
+            "name": "glikk_delta",
+            "schema": "string"
           }
         }
       }

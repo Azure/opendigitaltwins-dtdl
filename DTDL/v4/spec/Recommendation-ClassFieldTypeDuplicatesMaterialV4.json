@@ -1,0 +1,54 @@
+﻿[
+  {
+    "valid": true,
+    "desirable": false,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:kappa_zatz;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:kappa_floob;1",
+          "@type": "Object",
+          "fields": {
+            "name": "kappa_spazz",
+            "schema": "date",
+            "@type": [
+              "Field",
+              "Field"
+            ]
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "desirable": false,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:kappa_itch;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:kappa_flunn;1",
+          "@type": "Object",
+          "fields": {
+            "name": "kappa_jogg",
+            "schema": "dateTime",
+            "@type": [
+              "dtmi:dtdl:class:Field;4",
+              "dtmi:dtdl:class:Field;4"
+            ]
+          }
+        }
+      }
+    ]
+  }
+]

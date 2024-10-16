@@ -7,21 +7,21 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;2",
-        "@id": "dtmi:example:psi_itch;1",
+        "@id": "dtmi:example:fuddle_itch;1",
         "@type": "Interface",
         "schemas": {
-          "@id": "dtmi:example:psi_jogg;1",
+          "@id": "dtmi:example:fuddle_jogg;1",
           "@type": "Map",
           "mapKey": {
-            "name": "psi_flunn",
+            "name": "fuddle_flunn",
             "schema": "string"
           },
           "mapValue": {
             "dtmi:dtdl:property:displayName;2": [
-              "psi_floob"
+              "fuddle_floob"
             ],
-            "name": "psi_zatz",
-            "schema": "duration"
+            "name": "fuddle_zatz",
+            "schema": "integer"
           }
         }
       }

@@ -7,21 +7,21 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;3",
-        "@id": "dtmi:example:wum_jogg;1",
+        "@id": "dtmi:example:jogg_jogg;1",
         "@type": "Interface",
         "schemas": {
-          "@id": "dtmi:example:wum_floob;1",
+          "@id": "dtmi:example:jogg_floob;1",
           "@type": "Map",
           "mapValue": {
-            "name": "wum_zatz",
-            "schema": "long"
+            "name": "jogg_zatz",
+            "schema": "float"
           },
           "mapKey": {
             "@type": [
               "MapKey",
               "dtmi:foo:bar;1"
             ],
-            "name": "wum_spazz",
+            "name": "jogg_spazz",
             "schema": "string"
           }
         }
@@ -36,14 +36,14 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;3",
-        "@id": "dtmi:example:wum_vroo;1",
+        "@id": "dtmi:example:jogg_vroo;1",
         "@type": "Interface",
         "schemas": {
-          "@id": "dtmi:example:wum_itch;1",
+          "@id": "dtmi:example:jogg_itch;1",
           "@type": "Map",
           "mapValue": {
-            "name": "wum_yekk",
-            "schema": "string"
+            "name": "jogg_yekk",
+            "schema": "integer"
           },
           "mapKey": {
             "@context": "dtmi:undefinedExtension:context;1",
@@ -51,7 +51,7 @@
               "MapKey",
               "dtmi:foo:bar;1"
             ],
-            "name": "wum_flunn",
+            "name": "jogg_flunn",
             "schema": "string"
           }
         }
@@ -66,21 +66,21 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;3",
-        "@id": "dtmi:example:um_gamma;1",
+        "@id": "dtmi:example:flunn_gamma;1",
         "@type": "Interface",
         "schemas": {
-          "@id": "dtmi:example:um_alpha;1",
+          "@id": "dtmi:example:flunn_alpha;1",
           "@type": "Map",
           "mapValue": {
-            "name": "um_beta",
-            "schema": "time"
+            "name": "flunn_beta",
+            "schema": "long"
           },
           "mapKey": {
             "@type": [
               "MapKey",
               "boolean"
             ],
-            "name": "wum_hi",
+            "name": "jogg_hi",
             "schema": "string"
           }
         }
@@ -95,14 +95,14 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;3",
-        "@id": "dtmi:example:um_eta;1",
+        "@id": "dtmi:example:flunn_eta;1",
         "@type": "Interface",
         "schemas": {
-          "@id": "dtmi:example:um_epsilon;1",
+          "@id": "dtmi:example:flunn_epsilon;1",
           "@type": "Map",
           "mapValue": {
-            "name": "um_zeta",
-            "schema": "boolean"
+            "name": "flunn_zeta",
+            "schema": "string"
           },
           "mapKey": {
             "@context": "dtmi:undefinedExtension:context;1",
@@ -110,7 +110,7 @@
               "MapKey",
               "boolean"
             ],
-            "name": "um_delta",
+            "name": "flunn_delta",
             "schema": "string"
           }
         }

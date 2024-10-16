@@ -1,0 +1,156 @@
+﻿[
+  {
+    "valid": true,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:spazz_glikk;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:spazz_fuddle;1",
+          "elementSchema": "float",
+          "@type": "Array"
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:spazz_snee;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:spazz_nuh;1",
+          "elementSchema": "integer",
+          "@type": [
+            "Array"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:spazz_thnad;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:spazz_quan;1",
+          "elementSchema": "long",
+          "@type": "dtmi:dtdl:class:Array;4"
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:spazz_floob;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:spazz_spazz;1",
+          "elementSchema": "short",
+          "@type": [
+            "dtmi:dtdl:class:Array;4"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:spazz_jogg;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:spazz_zatz;1",
+          "elementSchema": "string",
+          "@type": "Something"
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:spazz_itch;1",
+        "@type": "Interface",
+        "schemas": {
+          "@context": "dtmi:undefinedExtension:context;1",
+          "@id": "dtmi:example:spazz_flunn;1",
+          "elementSchema": "time",
+          "@type": "Something"
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:spazz_vroo;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:spazz_yekk;1",
+          "elementSchema": "unsignedByte",
+          "@type": [
+            "Something"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:floob_alpha;1",
+        "@type": "Interface",
+        "schemas": {
+          "@context": "dtmi:undefinedExtension:context;1",
+          "@id": "dtmi:example:spazz_hi;1",
+          "elementSchema": "unsignedInteger",
+          "@type": [
+            "Something"
+          ]
+        }
+      }
+    ]
+  }
+]

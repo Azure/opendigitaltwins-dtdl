@@ -1,0 +1,64 @@
+﻿[
+  {
+    "valid": false,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:fuddle_zatz;1",
+        "@type": "Interface",
+        "extends": {
+          "@id": "dtmi:example:fuddle_floob;1",
+          "@type": "Interface",
+          "contents": {
+            "@type": "Command",
+            "name": "fuddle_spazz",
+            "response": {
+              "name": "fuddle_thnad",
+              "schema": "dtmi:ex:dependentRef;1"
+            }
+          }
+        }
+      }
+    ],
+    "expect": {
+      "unresolvedIdentifiers": [
+        "dtmi:ex:dependentRef;1"
+      ]
+    }
+  },
+  {
+    "valid": false,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:fuddle_yekk;1",
+        "@type": "Interface",
+        "extends": {
+          "@id": "dtmi:example:fuddle_itch;1",
+          "@type": "Interface",
+          "contents": {
+            "@type": "Command",
+            "name": "fuddle_flunn",
+            "response": {
+              "name": "fuddle_jogg",
+              "schema": [
+                "dtmi:ex:dependentRef;1"
+              ]
+            }
+          }
+        }
+      }
+    ],
+    "expect": {
+      "unresolvedIdentifiers": [
+        "dtmi:ex:dependentRef;1"
+      ]
+    }
+  }
+]

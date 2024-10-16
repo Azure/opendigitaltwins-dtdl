@@ -1,0 +1,56 @@
+﻿[
+  {
+    "valid": true,
+    "desirable": true,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:tau_kappa;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:tau_theta;1",
+          "@type": "Map",
+          "mapValue": {
+            "name": "tau_iota",
+            "schema": "duration"
+          },
+          "mapKey": {
+            "comment": "tau_zeta",
+            "name": "tau_eta",
+            "schema": "string"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "desirable": false,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:tau_omicron;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:tau_nu;1",
+          "@type": "Map",
+          "mapValue": {
+            "name": "tau_xi",
+            "schema": "float"
+          },
+          "mapKey": {
+            "dtmi:dtdl:property:comment;4": "tau_lambda",
+            "name": "tau_mu",
+            "schema": "string"
+          }
+        }
+      }
+    ]
+  }
+]

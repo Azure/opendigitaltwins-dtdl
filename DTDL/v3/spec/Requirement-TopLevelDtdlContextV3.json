@@ -99,5 +99,38 @@
         "@type": "Interface"
       }
     ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": [
+          "dtmi:dtdl:context;3#limitless",
+          "dtmi:dtdl:context;3#limits"
+        ],
+        "@id": "dtmi:ex:id;1",
+        "@type": "Interface"
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": [
+          "dtmi:dtdl:context;3#limitless",
+          "dtmi:dtdl:context;3#limits",
+          "dtmi:undefinedExtension:context;1"
+        ],
+        "@id": "dtmi:ex:id;1",
+        "@type": "Interface"
+      }
+    ]
   }
 ]

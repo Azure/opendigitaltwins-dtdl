@@ -1,0 +1,87 @@
+﻿[
+  {
+    "valid": true,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:chi_psi;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:chi_chi;1",
+          "@type": "Enum",
+          "valueSchema": "integer",
+          "enumValues": [
+            {
+              "enumValue": 1595,
+              "name": "delta_fuddle"
+            },
+            {
+              "enumValue": 1596,
+              "name": "delta_glikk"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:chi_yuzz;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:chi_omega;1",
+          "@type": "Enum",
+          "valueSchema": "integer",
+          "enumValues": [
+            {
+              "enumValue": 1597,
+              "name": "delta_fuddle"
+            },
+            {
+              "enumValue": 1598,
+              "name": "delta_fuddle"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:chi_um;1",
+        "@type": "Interface",
+        "schemas": {
+          "@context": "dtmi:undefinedExtension:context;1",
+          "@id": "dtmi:example:chi_wum;1",
+          "@type": "Enum",
+          "valueSchema": "integer",
+          "enumValues": [
+            {
+              "enumValue": 1599,
+              "name": "delta_fuddle"
+            },
+            {
+              "enumValue": 1600,
+              "name": "delta_fuddle"
+            }
+          ]
+        }
+      }
+    ]
+  }
+]

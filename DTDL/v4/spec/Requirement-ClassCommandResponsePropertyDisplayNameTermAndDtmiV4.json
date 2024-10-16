@@ -1,0 +1,57 @@
+﻿[
+  {
+    "valid": false,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:eta_omicron;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Command",
+          "name": "eta_xi",
+          "response": {
+            "displayName": [
+              "eta_lambda"
+            ],
+            "dtmi:dtdl:property:displayName;4": [
+              "eta_mu"
+            ],
+            "name": "eta_nu",
+            "schema": "bytes"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:eta_upsilon;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Command",
+          "name": "eta_tau",
+          "response": {
+            "@context": "dtmi:undefinedExtension:context;1",
+            "displayName": [
+              "eta_pi"
+            ],
+            "dtmi:dtdl:property:displayName;4": [
+              "eta_rho"
+            ],
+            "name": "eta_sigma",
+            "schema": "date"
+          }
+        }
+      }
+    ]
+  }
+]

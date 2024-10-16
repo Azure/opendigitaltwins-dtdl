@@ -7,17 +7,17 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;2",
-        "@id": "dtmi:example:iota_sigma;1",
+        "@id": "dtmi:example:omicron_snee;1",
         "@type": "Interface",
         "contents": [
           {
             "@type": "Property",
-            "schema": "time",
+            "schema": "float",
             "name": "beta_eta"
           },
           {
             "@type": "Property",
-            "schema": "boolean",
+            "schema": "integer",
             "name": "beta_theta"
           }
         ]
@@ -32,17 +32,17 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;2",
-        "@id": "dtmi:example:iota_tau;1",
+        "@id": "dtmi:example:omicron_quan;1",
         "@type": "Interface",
         "contents": [
           {
             "@type": "Property",
-            "schema": "date",
+            "schema": "long",
             "name": "beta_eta"
           },
           {
             "@type": "Property",
-            "schema": "dateTime",
+            "schema": "string",
             "name": "beta_eta"
           }
         ]
@@ -60,17 +60,17 @@
           "dtmi:dtdl:context;2",
           "dtmi:undefinedExtension:context;1"
         ],
-        "@id": "dtmi:example:iota_upsilon;1",
+        "@id": "dtmi:example:omicron_thnad;1",
         "@type": "Interface",
         "contents": [
           {
             "@type": "Property",
-            "schema": "double",
+            "schema": "time",
             "name": "beta_eta"
           },
           {
             "@type": "Property",
-            "schema": "duration",
+            "schema": "boolean",
             "name": "beta_eta"
           }
         ]

@@ -1,0 +1,30 @@
+﻿[
+  {
+    "valid": true,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:sigma_humpf;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:sigma_wum;1",
+          "@type": "Map",
+          "mapKey": {
+            "name": "sigma_um",
+            "schema": "string"
+          },
+          "mapValue": {
+            "dtmi:dtdl:property:displayName;4": [
+              "sigma_omega"
+            ],
+            "name": "sigma_yuzz",
+            "schema": "float"
+          }
+        }
+      }
+    ]
+  }
+]

@@ -1,0 +1,47 @@
+﻿[
+  {
+    "valid": false,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:quan_nuh;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Command",
+          "name": "quan_glikk",
+          "response": {
+            "name": "quan_fuddle",
+            "schema": "bytes",
+            "dtmi:dtdl:property:schema;4": "date"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:quan_thnad;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Command",
+          "name": "quan_quan",
+          "response": {
+            "@context": "dtmi:undefinedExtension:context;1",
+            "name": "quan_snee",
+            "schema": "dateTime",
+            "dtmi:dtdl:property:schema;4": "decimal"
+          }
+        }
+      }
+    ]
+  }
+]

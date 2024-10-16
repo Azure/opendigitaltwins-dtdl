@@ -7,13 +7,13 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;2",
-        "@id": "dtmi:example:wum_epsilon;1",
+        "@id": "dtmi:example:snee_epsilon;1",
         "@type": "Interface",
         "schemas": {
-          "@id": "dtmi:example:wum_gamma;1",
+          "@id": "dtmi:example:snee_gamma;1",
           "@type": "Map",
           "mapKey": {
-            "name": "wum_delta",
+            "name": "snee_delta",
             "schema": "string"
           },
           "mapValue": {
@@ -21,8 +21,8 @@
               "MapValue",
               "Foobar"
             ],
-            "name": "wum_beta",
-            "schema": "integer",
+            "name": "snee_beta",
+            "schema": "string",
             "foobar": {}
           }
         }

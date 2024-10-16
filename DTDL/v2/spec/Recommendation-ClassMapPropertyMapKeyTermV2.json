@@ -8,18 +8,18 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;2",
-        "@id": "dtmi:example:pi_quan;1",
+        "@id": "dtmi:example:phi_snee;1",
         "@type": "Interface",
         "schemas": {
-          "@id": "dtmi:example:pi_glikk;1",
+          "@id": "dtmi:example:phi_fuddle;1",
           "@type": "Map",
           "mapKey": {
-            "name": "pi_nuh",
+            "name": "phi_glikk",
             "schema": "string"
           },
           "mapValue": {
-            "name": "pi_snee",
-            "schema": "boolean"
+            "name": "phi_nuh",
+            "schema": "duration"
           }
         }
       }
@@ -34,18 +34,18 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;2",
-        "@id": "dtmi:example:pi_zatz;1",
+        "@id": "dtmi:example:phi_floob;1",
         "@type": "Interface",
         "schemas": {
-          "@id": "dtmi:example:pi_thnad;1",
+          "@id": "dtmi:example:phi_quan;1",
           "@type": "Map",
           "dtmi:dtdl:property:mapKey;2": {
-            "name": "pi_spazz",
+            "name": "phi_thnad",
             "schema": "string"
           },
           "mapValue": {
-            "name": "pi_floob",
-            "schema": "date"
+            "name": "phi_spazz",
+            "schema": "float"
           }
         }
       }

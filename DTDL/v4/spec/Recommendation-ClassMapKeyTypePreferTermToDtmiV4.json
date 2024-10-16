@@ -1,0 +1,56 @@
+﻿[
+  {
+    "valid": true,
+    "desirable": true,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:iota_zeta;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:iota_delta;1",
+          "@type": "Map",
+          "mapValue": {
+            "name": "iota_epsilon",
+            "schema": "time"
+          },
+          "mapKey": {
+            "name": "iota_gamma",
+            "schema": "string",
+            "@type": "MapKey"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "desirable": false,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:iota_kappa;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:iota_theta;1",
+          "@type": "Map",
+          "mapValue": {
+            "name": "iota_iota",
+            "schema": "unsignedByte"
+          },
+          "mapKey": {
+            "name": "iota_eta",
+            "schema": "string",
+            "@type": "dtmi:dtdl:class:MapKey;4"
+          }
+        }
+      }
+    ]
+  }
+]

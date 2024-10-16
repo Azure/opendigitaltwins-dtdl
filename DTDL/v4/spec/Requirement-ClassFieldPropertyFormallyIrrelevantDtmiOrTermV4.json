@@ -1,0 +1,92 @@
+﻿[
+  {
+    "valid": false,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:omega_wum;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:omega_yuzz;1",
+          "@type": "Object",
+          "fields": {
+            "name": "omega_omega",
+            "schema": "date",
+            "dtmi:foo:bar;1": 626
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:omega_fuddle;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:omega_humpf;1",
+          "@type": "Object",
+          "fields": {
+            "@context": "dtmi:undefinedExtension:context;1",
+            "name": "omega_um",
+            "schema": "dateTime",
+            "dtmi:foo:bar;1": 626
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:omega_snee;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:omega_nuh;1",
+          "@type": "Object",
+          "fields": {
+            "name": "omega_glikk",
+            "schema": "decimal",
+            "boolean": null
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:omega_spazz;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:omega_thnad;1",
+          "@type": "Object",
+          "fields": {
+            "@context": "dtmi:undefinedExtension:context;1",
+            "name": "omega_quan",
+            "schema": "double",
+            "boolean": null
+          }
+        }
+      }
+    ]
+  }
+]

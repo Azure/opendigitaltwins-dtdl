@@ -7,20 +7,20 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;3",
-        "@id": "dtmi:example:spazz_delta;1",
+        "@id": "dtmi:example:gamma_flunn;1",
         "@type": "Interface",
         "contents": {
           "@type": "Property",
-          "name": "spazz_gamma",
+          "name": "gamma_jogg",
           "schema": {
             "@type": "Map",
             "mapKey": {
-              "name": "spazz_alpha",
+              "name": "gamma_floob",
               "schema": "string"
             },
             "mapValue": {
-              "name": "spazz_beta",
-              "schema": "string"
+              "name": "gamma_zatz",
+              "schema": "duration"
             }
           }
         }
@@ -35,18 +35,18 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;3",
-        "@id": "dtmi:example:spazz_theta;1",
+        "@id": "dtmi:example:gamma_hi;1",
         "@type": "Interface",
         "schemas": {
-          "@id": "dtmi:example:spazz_epsilon;1",
+          "@id": "dtmi:example:gamma_itch;1",
           "@type": "Map",
           "mapKey": {
-            "name": "spazz_zeta",
+            "name": "gamma_yekk",
             "schema": "string"
           },
           "mapValue": {
-            "name": "spazz_eta",
-            "schema": "time"
+            "name": "gamma_vroo",
+            "schema": "float"
           }
         }
       }
@@ -60,17 +60,17 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;3",
-        "@id": "dtmi:example:spazz_lambda;1",
+        "@id": "dtmi:example:delta_gamma;1",
         "@type": "Interface",
         "schemas": {
           "@type": "Map",
           "mapKey": {
-            "name": "spazz_iota",
+            "name": "delta_alpha",
             "schema": "string"
           },
           "mapValue": {
-            "name": "spazz_kappa",
-            "schema": "boolean"
+            "name": "delta_beta",
+            "schema": "integer"
           }
         }
       }
@@ -84,18 +84,18 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;3",
-        "@id": "dtmi:example:spazz_xi;1",
+        "@id": "dtmi:example:delta_zeta;1",
         "@type": "Interface",
         "schemas": {
           "@context": "dtmi:undefinedExtension:context;1",
           "@type": "Map",
           "mapKey": {
-            "name": "spazz_mu",
+            "name": "delta_delta",
             "schema": "string"
           },
           "mapValue": {
-            "name": "spazz_nu",
-            "schema": "date"
+            "name": "delta_epsilon",
+            "schema": "long"
           }
         }
       }

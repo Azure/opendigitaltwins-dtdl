@@ -31,7 +31,7 @@ It is based on [JSON-LD](https://json-ld.org/spec/FCGS/json-ld/20180607/), which
 DTDL can be understood and validated without knowing RDF or JSON-LD, and the present document specifies DTDL without reference to either of these other standards.
 DTDL cannot be readily understood without a basic knowledge of JSON; however, JSON syntax is fortunately straightforward, in marked contrast to the size, complexity, and subtlety of JSON-LD.
 
-Within this document, the key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "SHOULD NOT", "RECOMMENDED",  "MAY", and "OPTIONAL" are to be interpreted as described in IETF [RFC 2119](https://tools.ietf.org/search/rfc2119) as updated by [RFC 8174](https://tools.ietf.org/search/rfc8174), per [BCP 14](https://tools.ietf.org/search/bcp14).
+Within this document, the key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "SHOULD NOT", "RECOMMENDED",  "MAY", and "OPTIONAL" are to be interpreted as described in IETF [RFC 2119](https://www.rfc-editor.org/rfc/rfc2119) as updated by [RFC 8174](https://www.rfc-editor.org/rfc/rfc8174), per [BCP 14](https://www.rfc-editor.org/info/bcp14).
 Although these IETF documents make no distinction between the meaning of "MUST" and "SHALL", in the present document a violation of a "MUST" requirement indicates an **invalid** model, whereas a violation of a "SHALL" requirement indicates an **incomplete** model.
 See [Model completeness](#model-completeness) for a description of this distinction.
 
@@ -51,7 +51,7 @@ Following is a complete set of JSON terms with concise definitions:
 * value &mdash; an object OR array OR string OR number OR boolean OR null
 
 For brevity and simplicity, the definitions above &mdash; particularly for number and string &mdash; are succinct to the point of imprecision.
-See IETF [RFC 8259](https://tools.ietf.org/search/rfc8259) for more details on JSON syntax.
+See IETF [RFC 8259](https://www.rfc-editor.org/rfc/rfc8259) for more details on JSON syntax.
 Note that the term "boolean" is never used in the JSON spec; the paired terms "true" and "false" are always used instead.
 Another term not used in the JSON spec is "integer", which herein will mean an integral number expressible in 4 bytes.
 
@@ -169,8 +169,8 @@ If the definition of this extension is not known, the model is contextually inco
 ```json
 {
   "@context": [
-      "dtmi:dtdl:context;2",
-      "dtmi:example:someExtensionContext;1"
+    "dtmi:dtdl:context;2",
+    "dtmi:example:someExtensionContext;1"
   ],
   "@id": "dtmi:example:someInterface;1",
   "@type": "Interface",
@@ -1628,10 +1628,14 @@ In addition to the direct requirements on members of various [DTDL elements](#dt
 Specifically:
 
 * There [MUST NOT](spec/Requirement-ClassArrayPropertiesElementSchemaSchemaMaxDepthV2.json) be more than 5 "elementSchema" or "schema" members in any path from a DTDL [Array](#array) element to another DTDL element.
+* There [MUST NOT](spec/Requirement-ClassArrayPropertiesElementSchemaSchemaSelfReferenceV2.json) be a path from a DTDL [Array](#array) element wherein some "elementSchema" or "schema" member referentially includes the DTDL Array element where the path begins.
 * There [MUST NOT](spec/Requirement-ClassComponentPropertiesSchemaContentsExcludeComponentV2.json) be a path of "schema" or "contents" members from any DTDL [Component](#component) element to any DTDL [Component](#component) element.
 * There [MUST NOT](spec/Requirement-ClassInterfacePropertiesExtendsMaxDepthV2.json) be more than 10 members in any path of "extends" members from a DTDL [Interface](#interface) element to another DTDL element.
+* There [MUST NOT](spec/Requirement-ClassInterfacePropertiesExtendsSelfReferenceV2.json) be a path of "extends" members from a DTDL [Interface](#interface) element to the DTDL Interface element where the path begins.
 * There [MUST NOT](spec/Requirement-ClassMapPropertiesElementSchemaSchemaMaxDepthV2.json) be more than 5 "elementSchema" or "schema" members in any path from a DTDL [Map](#map) element to another DTDL element.
+* There [MUST NOT](spec/Requirement-ClassMapPropertiesElementSchemaSchemaSelfReferenceV2.json) be a path from a DTDL [Map](#map) element wherein some "elementSchema" or "schema" member referentially includes the DTDL Map element where the path begins.
 * There [MUST NOT](spec/Requirement-ClassObjectPropertiesElementSchemaSchemaMaxDepthV2.json) be more than 5 "elementSchema" or "schema" members in any path from a DTDL [Object](#object) element to another DTDL element.
+* There [MUST NOT](spec/Requirement-ClassObjectPropertiesElementSchemaSchemaSelfReferenceV2.json) be a path from a DTDL [Object](#object) element wherein some "elementSchema" or "schema" member referentially includes the DTDL Object element where the path begins.
 * A DTDL [Property](#property) element [MUST NOT](spec/Requirement-ClassPropertyPropertiesSchemaExcludeArrayV2.json) be an ancestor of any DTDL element with a "schema" member that includes or referentially includes a DTDL [Array](#array) element.
 * A DTDL [Property](#property) element [MUST NOT](spec/Requirement-ClassPropertyPropertiesSchemaExcludeArrayImplicantV2.json) be an ancestor of any DTDL element with a "schema" member that includes any string from the [Geospatial schemas](#geospatial-schemas) table.
 
@@ -2495,8 +2499,8 @@ The active context of the DTDL Relationship element is the set { "dtmi:dtdl:cont
 ```json
 {
   "@context": [
-      "dtmi:dtdl:context;2",
-      "dtmi:ex:foo;2"
+    "dtmi:dtdl:context;2",
+    "dtmi:ex:foo;2"
   ],
   "@id": "dtmi:ex:anInterface;1",
   "@type": "Interface",

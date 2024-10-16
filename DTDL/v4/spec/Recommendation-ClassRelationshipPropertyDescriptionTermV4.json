@@ -1,0 +1,44 @@
+﻿[
+  {
+    "valid": true,
+    "desirable": true,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:yuzz_nu;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Relationship",
+          "description": [
+            "yuzz_lambda"
+          ],
+          "name": "yuzz_mu"
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "desirable": false,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:yuzz_pi;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Relationship",
+          "dtmi:dtdl:property:description;4": [
+            "yuzz_xi"
+          ],
+          "name": "yuzz_omicron"
+        }
+      }
+    ]
+  }
+]

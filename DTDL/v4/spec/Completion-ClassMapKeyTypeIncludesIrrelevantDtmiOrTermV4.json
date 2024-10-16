@@ -1,0 +1,120 @@
+﻿[
+  {
+    "valid": false,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:iota_xi;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:iota_mu;1",
+          "@type": "Map",
+          "mapValue": {
+            "name": "iota_nu",
+            "schema": "unsignedInteger"
+          },
+          "mapKey": {
+            "@type": [
+              "MapKey",
+              "dtmi:foo:bar;1"
+            ],
+            "name": "iota_lambda",
+            "schema": "string"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:iota_sigma;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:iota_pi;1",
+          "@type": "Map",
+          "mapValue": {
+            "name": "iota_rho",
+            "schema": "unsignedLong"
+          },
+          "mapKey": {
+            "@context": "dtmi:undefinedExtension:context;1",
+            "@type": [
+              "MapKey",
+              "dtmi:foo:bar;1"
+            ],
+            "name": "iota_omicron",
+            "schema": "string"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:iota_chi;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:iota_upsilon;1",
+          "@type": "Map",
+          "mapValue": {
+            "name": "iota_phi",
+            "schema": "unsignedShort"
+          },
+          "mapKey": {
+            "@type": [
+              "MapKey",
+              "boolean"
+            ],
+            "name": "iota_tau",
+            "schema": "string"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:iota_wum;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:iota_omega;1",
+          "@type": "Map",
+          "mapValue": {
+            "name": "iota_yuzz",
+            "schema": "uuid"
+          },
+          "mapKey": {
+            "@context": "dtmi:undefinedExtension:context;1",
+            "@type": [
+              "MapKey",
+              "boolean"
+            ],
+            "name": "iota_psi",
+            "schema": "string"
+          }
+        }
+      }
+    ]
+  }
+]

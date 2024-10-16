@@ -1,0 +1,120 @@
+﻿[
+  {
+    "valid": false,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:humpf_floob;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:humpf_quan;1",
+          "@type": [
+            "Map",
+            "Foobar"
+          ],
+          "mapKey": {
+            "name": "humpf_thnad",
+            "schema": "string"
+          },
+          "mapValue": {
+            "name": "humpf_spazz",
+            "schema": "unsignedLong"
+          },
+          "dtmi:foo:bar;1": 626
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:humpf_itch;1",
+        "@type": "Interface",
+        "schemas": {
+          "@context": "dtmi:undefinedExtension:context;1",
+          "@id": "dtmi:example:humpf_zatz;1",
+          "@type": [
+            "Map",
+            "Foobar"
+          ],
+          "mapKey": {
+            "name": "humpf_jogg",
+            "schema": "string"
+          },
+          "mapValue": {
+            "name": "humpf_flunn",
+            "schema": "unsignedShort"
+          },
+          "dtmi:foo:bar;1": 626
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:fuddle_alpha;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:humpf_yekk;1",
+          "@type": [
+            "Map",
+            "Foobar"
+          ],
+          "mapKey": {
+            "name": "humpf_vroo",
+            "schema": "string"
+          },
+          "mapValue": {
+            "name": "humpf_hi",
+            "schema": "uuid"
+          },
+          "boolean": null
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:fuddle_epsilon;1",
+        "@type": "Interface",
+        "schemas": {
+          "@context": "dtmi:undefinedExtension:context;1",
+          "@id": "dtmi:example:fuddle_beta;1",
+          "@type": [
+            "Map",
+            "Foobar"
+          ],
+          "mapKey": {
+            "name": "fuddle_gamma",
+            "schema": "string"
+          },
+          "mapValue": {
+            "name": "fuddle_delta",
+            "schema": "boolean"
+          },
+          "boolean": null
+        }
+      }
+    ]
+  }
+]

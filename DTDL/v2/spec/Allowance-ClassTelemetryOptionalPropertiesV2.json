@@ -7,15 +7,15 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;2",
-        "@id": "dtmi:example:eta_zeta;1",
+        "@id": "dtmi:example:xi_omicron;1",
         "@type": "Interface",
         "extends": {
-          "@id": "dtmi:example:eta_epsilon;1",
+          "@id": "dtmi:example:xi_xi;1",
           "@type": "Interface",
           "contents": {
             "@context": [],
             "@type": "Telemetry",
-            "name": "eta_delta",
+            "name": "xi_nu",
             "schema": "time"
           }
         }
@@ -30,14 +30,14 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;2",
-        "@id": "dtmi:example:eta_iota;1",
+        "@id": "dtmi:example:xi_sigma;1",
         "@type": "Interface",
         "extends": {
-          "@id": "dtmi:example:eta_theta;1",
+          "@id": "dtmi:example:xi_rho;1",
           "@type": "Interface",
           "contents": {
             "@type": "Telemetry",
-            "name": "eta_eta",
+            "name": "xi_pi",
             "schema": "boolean"
           }
         }
@@ -52,11 +52,11 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;2",
-        "@id": "dtmi:example:eta_lambda;1",
+        "@id": "dtmi:example:xi_upsilon;1",
         "@type": "Interface",
         "contents": {
           "@type": "Telemetry",
-          "name": "eta_kappa",
+          "name": "xi_tau",
           "schema": "date"
         }
       }
@@ -70,11 +70,11 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;2",
-        "@id": "dtmi:example:eta_nu;1",
+        "@id": "dtmi:example:xi_chi;1",
         "@type": "Interface",
         "contents": {
           "@type": "Telemetry",
-          "name": "eta_mu",
+          "name": "xi_phi",
           "schema": "dateTime"
         }
       }
@@ -88,11 +88,11 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;2",
-        "@id": "dtmi:example:eta_omicron;1",
+        "@id": "dtmi:example:xi_omega;1",
         "@type": "Interface",
         "contents": {
           "@type": "Telemetry",
-          "name": "eta_xi",
+          "name": "xi_psi",
           "schema": "double"
         }
       }

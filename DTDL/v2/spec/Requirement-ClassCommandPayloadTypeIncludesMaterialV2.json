@@ -7,14 +7,14 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;2",
-        "@id": "dtmi:example:omicron_quan;1",
+        "@id": "dtmi:example:sigma_thnad;1",
         "@type": "Interface",
         "contents": {
           "@type": "Command",
-          "name": "omicron_snee",
+          "name": "sigma_quan",
           "request": {
-            "name": "omicron_nuh",
-            "schema": "time",
+            "name": "sigma_snee",
+            "schema": "long",
             "@type": "CommandPayload"
           }
         }
@@ -29,14 +29,14 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;2",
-        "@id": "dtmi:example:omicron_floob;1",
+        "@id": "dtmi:example:sigma_zatz;1",
         "@type": "Interface",
         "contents": {
           "@type": "Command",
-          "name": "omicron_spazz",
+          "name": "sigma_floob",
           "request": {
-            "name": "omicron_thnad",
-            "schema": "boolean",
+            "name": "sigma_spazz",
+            "schema": "string",
             "@type": [
               "CommandPayload"
             ]
@@ -53,14 +53,14 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;2",
-        "@id": "dtmi:example:omicron_flunn;1",
+        "@id": "dtmi:example:sigma_itch;1",
         "@type": "Interface",
         "contents": {
           "@type": "Command",
-          "name": "omicron_jogg",
+          "name": "sigma_flunn",
           "request": {
-            "name": "omicron_zatz",
-            "schema": "date",
+            "name": "sigma_jogg",
+            "schema": "time",
             "@type": "dtmi:dtdl:class:CommandPayload;2"
           }
         }
@@ -75,14 +75,14 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;2",
-        "@id": "dtmi:example:omicron_vroo;1",
+        "@id": "dtmi:example:sigma_hi;1",
         "@type": "Interface",
         "contents": {
           "@type": "Command",
-          "name": "omicron_yekk",
+          "name": "sigma_vroo",
           "request": {
-            "name": "omicron_itch",
-            "schema": "dateTime",
+            "name": "sigma_yekk",
+            "schema": "boolean",
             "@type": [
               "dtmi:dtdl:class:CommandPayload;2"
             ]
@@ -99,14 +99,14 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;2",
-        "@id": "dtmi:example:pi_beta;1",
+        "@id": "dtmi:example:tau_gamma;1",
         "@type": "Interface",
         "contents": {
           "@type": "Command",
-          "name": "pi_alpha",
+          "name": "tau_beta",
           "request": {
-            "name": "omicron_hi",
-            "schema": "double",
+            "name": "tau_alpha",
+            "schema": "date",
             "@type": "Something"
           }
         }
@@ -121,15 +121,15 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;2",
-        "@id": "dtmi:example:pi_epsilon;1",
+        "@id": "dtmi:example:tau_zeta;1",
         "@type": "Interface",
         "contents": {
           "@type": "Command",
-          "name": "pi_delta",
+          "name": "tau_epsilon",
           "request": {
             "@context": "dtmi:undefinedExtension:context;1",
-            "name": "pi_gamma",
-            "schema": "duration",
+            "name": "tau_delta",
+            "schema": "dateTime",
             "@type": "Something"
           }
         }
@@ -144,14 +144,14 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;2",
-        "@id": "dtmi:example:pi_theta;1",
+        "@id": "dtmi:example:tau_iota;1",
         "@type": "Interface",
         "contents": {
           "@type": "Command",
-          "name": "pi_eta",
+          "name": "tau_theta",
           "request": {
-            "name": "pi_zeta",
-            "schema": "float",
+            "name": "tau_eta",
+            "schema": "double",
             "@type": [
               "Something"
             ]
@@ -168,15 +168,15 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;2",
-        "@id": "dtmi:example:pi_lambda;1",
+        "@id": "dtmi:example:tau_mu;1",
         "@type": "Interface",
         "contents": {
           "@type": "Command",
-          "name": "pi_kappa",
+          "name": "tau_lambda",
           "request": {
             "@context": "dtmi:undefinedExtension:context;1",
-            "name": "pi_iota",
-            "schema": "integer",
+            "name": "tau_kappa",
+            "schema": "duration",
             "@type": [
               "Something"
             ]

@@ -1,0 +1,43 @@
+﻿[
+  {
+    "valid": false,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:psi_eta;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:psi_zeta;1",
+          "@type": [
+            "Object",
+            "http://foo.com/bar"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:psi_iota;1",
+        "@type": "Interface",
+        "schemas": {
+          "@context": "dtmi:undefinedExtension:context;1",
+          "@id": "dtmi:example:psi_theta;1",
+          "@type": [
+            "Object",
+            "http://foo.com/bar"
+          ]
+        }
+      }
+    ]
+  }
+]

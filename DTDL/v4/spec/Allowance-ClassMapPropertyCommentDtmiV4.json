@@ -1,0 +1,28 @@
+﻿[
+  {
+    "valid": true,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:phi_iota;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:phi_epsilon;1",
+          "@type": "Map",
+          "dtmi:dtdl:property:comment;4": "phi_zeta",
+          "mapKey": {
+            "name": "phi_eta",
+            "schema": "string"
+          },
+          "mapValue": {
+            "name": "phi_theta",
+            "schema": "unsignedInteger"
+          }
+        }
+      }
+    ]
+  }
+]

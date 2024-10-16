@@ -8,15 +8,15 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;2",
-        "@id": "dtmi:example:pi_beta;1",
+        "@id": "dtmi:example:psi_rho;1",
         "@type": "Interface",
         "contents": {
           "@type": "Telemetry",
           "displayName": [
-            "omicron_hi"
+            "psi_omicron"
           ],
-          "name": "pi_alpha",
-          "schema": "float"
+          "name": "psi_pi",
+          "schema": "long"
         }
       }
     ]
@@ -30,15 +30,15 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;2",
-        "@id": "dtmi:example:pi_epsilon;1",
+        "@id": "dtmi:example:psi_upsilon;1",
         "@type": "Interface",
         "contents": {
           "@type": "Telemetry",
           "dtmi:dtdl:property:displayName;2": [
-            "pi_gamma"
+            "psi_sigma"
           ],
-          "name": "pi_delta",
-          "schema": "integer"
+          "name": "psi_tau",
+          "schema": "string"
         }
       }
     ]

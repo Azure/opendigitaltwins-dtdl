@@ -1,0 +1,49 @@
+﻿[
+  {
+    "valid": false,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:beta_omega;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Command",
+          "name": "beta_psi",
+          "response": {
+            "comment": "beta_upsilon",
+            "dtmi:dtdl:property:comment;4": "beta_phi",
+            "name": "beta_chi",
+            "schema": "unsignedByte"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:beta_fuddle;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Command",
+          "name": "beta_humpf",
+          "response": {
+            "@context": "dtmi:undefinedExtension:context;1",
+            "comment": "beta_yuzz",
+            "dtmi:dtdl:property:comment;4": "beta_wum",
+            "name": "beta_um",
+            "schema": "unsignedInteger"
+          }
+        }
+      }
+    ]
+  }
+]

@@ -8,18 +8,18 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;3",
-        "@id": "dtmi:example:floob_thnad;1",
+        "@id": "dtmi:example:epsilon_thnad;1",
         "@type": "Interface",
         "schemas": {
-          "@id": "dtmi:example:floob_snee;1",
+          "@id": "dtmi:example:epsilon_snee;1",
           "@type": "Map",
           "mapValue": {
-            "name": "floob_quan",
-            "schema": "double"
+            "name": "epsilon_quan",
+            "schema": "date"
           },
           "mapKey": {
-            "comment": "floob_glikk",
-            "name": "floob_nuh",
+            "comment": "epsilon_glikk",
+            "name": "epsilon_nuh",
             "schema": "string"
           }
         }
@@ -35,18 +35,18 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;3",
-        "@id": "dtmi:example:floob_flunn;1",
+        "@id": "dtmi:example:epsilon_flunn;1",
         "@type": "Interface",
         "schemas": {
-          "@id": "dtmi:example:floob_zatz;1",
+          "@id": "dtmi:example:epsilon_zatz;1",
           "@type": "Map",
           "mapValue": {
-            "name": "floob_jogg",
-            "schema": "duration"
+            "name": "epsilon_jogg",
+            "schema": "dateTime"
           },
           "mapKey": {
-            "dtmi:dtdl:property:comment;3": "floob_spazz",
-            "name": "floob_floob",
+            "dtmi:dtdl:property:comment;3": "epsilon_spazz",
+            "name": "epsilon_floob",
             "schema": "string"
           }
         }

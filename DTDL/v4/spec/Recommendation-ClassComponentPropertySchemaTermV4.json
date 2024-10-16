@@ -1,0 +1,46 @@
+﻿[
+  {
+    "valid": true,
+    "desirable": true,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:phi_theta;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Component",
+          "name": "phi_zeta",
+          "schema": {
+            "@id": "dtmi:example:phi_eta;1",
+            "@type": "Interface"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "desirable": false,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:phi_lambda;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Component",
+          "name": "phi_iota",
+          "dtmi:dtdl:property:schema;4": {
+            "@id": "dtmi:example:phi_kappa;1",
+            "@type": "Interface"
+          }
+        }
+      }
+    ]
+  }
+]

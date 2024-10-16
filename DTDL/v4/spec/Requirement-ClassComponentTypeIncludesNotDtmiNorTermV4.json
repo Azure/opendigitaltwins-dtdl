@@ -1,0 +1,51 @@
+﻿[
+  {
+    "valid": false,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:xi_gamma;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": [
+            "Component",
+            "http://foo.com/bar"
+          ],
+          "name": "xi_alpha",
+          "schema": {
+            "@id": "dtmi:example:xi_beta;1",
+            "@type": "Interface"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:xi_zeta;1",
+        "@type": "Interface",
+        "contents": {
+          "@context": "dtmi:undefinedExtension:context;1",
+          "@type": [
+            "Component",
+            "http://foo.com/bar"
+          ],
+          "name": "xi_delta",
+          "schema": {
+            "@id": "dtmi:example:xi_epsilon;1",
+            "@type": "Interface"
+          }
+        }
+      }
+    ]
+  }
+]

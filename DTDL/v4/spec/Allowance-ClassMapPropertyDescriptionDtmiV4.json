@@ -1,0 +1,30 @@
+﻿[
+  {
+    "valid": true,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:omega_omicron;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:omega_lambda;1",
+          "@type": "Map",
+          "dtmi:dtdl:property:description;4": [
+            "omega_mu"
+          ],
+          "mapKey": {
+            "name": "omega_nu",
+            "schema": "string"
+          },
+          "mapValue": {
+            "name": "omega_xi",
+            "schema": "integer"
+          }
+        }
+      }
+    ]
+  }
+]

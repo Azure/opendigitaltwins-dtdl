@@ -1,0 +1,54 @@
+﻿[
+  {
+    "valid": true,
+    "desirable": true,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:floob_phi;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:floob_upsilon;1",
+          "@type": "Enum",
+          "valueSchema": "integer",
+          "enumValues": {
+            "description": [
+              "floob_sigma"
+            ],
+            "enumValue": 1795,
+            "name": "floob_tau"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "desirable": false,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:floob_yuzz;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:floob_omega;1",
+          "@type": "Enum",
+          "valueSchema": "integer",
+          "enumValues": {
+            "dtmi:dtdl:property:description;4": [
+              "floob_chi"
+            ],
+            "enumValue": 1796,
+            "name": "floob_psi"
+          }
+        }
+      }
+    ]
+  }
+]

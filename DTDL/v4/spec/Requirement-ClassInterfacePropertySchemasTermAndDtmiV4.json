@@ -1,0 +1,59 @@
+﻿[
+  {
+    "valid": false,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:jogg_wum;1",
+        "@type": "Interface",
+        "schemas": [
+          {
+            "@id": "dtmi:example:jogg_um;1",
+            "@type": "Array",
+            "elementSchema": "string"
+          }
+        ],
+        "dtmi:dtdl:property:schemas;4": [
+          {
+            "@id": "dtmi:example:jogg_humpf;1",
+            "@type": "Array",
+            "elementSchema": "time"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": [
+          "dtmi:dtdl:context;4",
+          "dtmi:undefinedExtension:context;1"
+        ],
+        "@id": "dtmi:example:jogg_fuddle;1",
+        "@type": "Interface",
+        "schemas": [
+          {
+            "@id": "dtmi:example:jogg_glikk;1",
+            "@type": "Array",
+            "elementSchema": "unsignedByte"
+          }
+        ],
+        "dtmi:dtdl:property:schemas;4": [
+          {
+            "@id": "dtmi:example:jogg_nuh;1",
+            "@type": "Array",
+            "elementSchema": "unsignedInteger"
+          }
+        ]
+      }
+    ]
+  }
+]

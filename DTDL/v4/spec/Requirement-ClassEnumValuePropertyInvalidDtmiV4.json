@@ -1,0 +1,57 @@
+﻿[
+  {
+    "valid": false,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:itch_rho;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:itch_pi;1",
+          "@type": "Enum",
+          "valueSchema": "integer",
+          "enumValues": {
+            "@type": [
+              "EnumValue",
+              "Foobar"
+            ],
+            "enumValue": 1847,
+            "name": "itch_omicron",
+            "dtmi:foo//bar": 626
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:itch_upsilon;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:itch_tau;1",
+          "@type": "Enum",
+          "valueSchema": "integer",
+          "enumValues": {
+            "@context": "dtmi:undefinedExtension:context;1",
+            "@type": [
+              "EnumValue",
+              "Foobar"
+            ],
+            "enumValue": 1848,
+            "name": "itch_sigma",
+            "dtmi:foo//bar": 626
+          }
+        }
+      }
+    ]
+  }
+]

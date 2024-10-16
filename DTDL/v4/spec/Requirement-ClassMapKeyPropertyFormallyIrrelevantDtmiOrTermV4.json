@@ -1,0 +1,108 @@
+﻿[
+  {
+    "valid": false,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:um_epsilon;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:um_gamma;1",
+          "@type": "Map",
+          "mapValue": {
+            "name": "um_delta",
+            "schema": "short"
+          },
+          "mapKey": {
+            "name": "um_beta",
+            "schema": "string",
+            "dtmi:foo:bar;1": 626
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:um_iota;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:um_eta;1",
+          "@type": "Map",
+          "mapValue": {
+            "name": "um_theta",
+            "schema": "string"
+          },
+          "mapKey": {
+            "@context": "dtmi:undefinedExtension:context;1",
+            "name": "um_zeta",
+            "schema": "string",
+            "dtmi:foo:bar;1": 626
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:um_nu;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:um_lambda;1",
+          "@type": "Map",
+          "mapValue": {
+            "name": "um_mu",
+            "schema": "time"
+          },
+          "mapKey": {
+            "name": "um_kappa",
+            "schema": "string",
+            "boolean": null
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:um_rho;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:um_omicron;1",
+          "@type": "Map",
+          "mapValue": {
+            "name": "um_pi",
+            "schema": "unsignedByte"
+          },
+          "mapKey": {
+            "@context": "dtmi:undefinedExtension:context;1",
+            "name": "um_xi",
+            "schema": "string",
+            "boolean": null
+          }
+        }
+      }
+    ]
+  }
+]

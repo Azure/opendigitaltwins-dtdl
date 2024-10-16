@@ -1,0 +1,49 @@
+﻿[
+  {
+    "valid": false,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:glikk_jogg;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:glikk_spazz;1",
+          "@type": "Object",
+          "displayName": [
+            "glikk_floob"
+          ],
+          "dtmi:dtdl:property:displayName;4": [
+            "glikk_zatz"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:glikk_vroo;1",
+        "@type": "Interface",
+        "schemas": {
+          "@context": "dtmi:undefinedExtension:context;1",
+          "@id": "dtmi:example:glikk_flunn;1",
+          "@type": "Object",
+          "displayName": [
+            "glikk_itch"
+          ],
+          "dtmi:dtdl:property:displayName;4": [
+            "glikk_yekk"
+          ]
+        }
+      }
+    ]
+  }
+]

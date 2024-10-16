@@ -1,0 +1,61 @@
+﻿[
+  {
+    "valid": false,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:iota_jogg;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:iota_floob;1",
+          "@type": "Map",
+          "mapValue": {
+            "name": "iota_zatz",
+            "schema": "bytes"
+          },
+          "mapKey": {
+            "@type": [
+              "MapKey",
+              "http://foo.com/bar"
+            ],
+            "name": "iota_spazz",
+            "schema": "string"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:iota_vroo;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:iota_itch;1",
+          "@type": "Map",
+          "mapValue": {
+            "name": "iota_yekk",
+            "schema": "date"
+          },
+          "mapKey": {
+            "@context": "dtmi:undefinedExtension:context;1",
+            "@type": [
+              "MapKey",
+              "http://foo.com/bar"
+            ],
+            "name": "iota_flunn",
+            "schema": "string"
+          }
+        }
+      }
+    ]
+  }
+]

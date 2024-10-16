@@ -1,0 +1,48 @@
+﻿[
+  {
+    "valid": true,
+    "desirable": true,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:chi_quan;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:chi_snee;1",
+          "@type": "Enum",
+          "valueSchema": "integer",
+          "enumValues": {
+            "enumValue": 1602,
+            "name": "chi_nuh"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "desirable": false,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:chi_floob;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:chi_spazz;1",
+          "@type": "Enum",
+          "valueSchema": "integer",
+          "enumValues": {
+            "enumValue": 1603,
+            "dtmi:dtdl:property:name;4": "chi_thnad"
+          }
+        }
+      }
+    ]
+  }
+]

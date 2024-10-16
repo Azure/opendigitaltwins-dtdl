@@ -7,17 +7,17 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;3",
-        "@id": "dtmi:example:beta_wum;1",
+        "@id": "dtmi:example:xi_wum;1",
         "@type": "Interface",
         "schemas": {
-          "@id": "dtmi:example:beta_omega;1",
+          "@id": "dtmi:example:xi_omega;1",
           "@type": "Map",
           "mapValue": {
-            "name": "beta_yuzz",
-            "schema": "double"
+            "name": "xi_yuzz",
+            "schema": "date"
           },
           "mapKey": {
-            "name": "beta_psi",
+            "name": "xi_psi",
             "schema": "string",
             "foobar": {}
           }
@@ -33,18 +33,18 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;3",
-        "@id": "dtmi:example:beta_glikk;1",
+        "@id": "dtmi:example:xi_glikk;1",
         "@type": "Interface",
         "schemas": {
-          "@id": "dtmi:example:beta_humpf;1",
+          "@id": "dtmi:example:xi_humpf;1",
           "@type": "Map",
           "mapValue": {
-            "name": "beta_fuddle",
-            "schema": "duration"
+            "name": "xi_fuddle",
+            "schema": "dateTime"
           },
           "mapKey": {
             "@context": "dtmi:undefinedExtension:context;1",
-            "name": "beta_um",
+            "name": "xi_um",
             "schema": "string",
             "foobar": {}
           }

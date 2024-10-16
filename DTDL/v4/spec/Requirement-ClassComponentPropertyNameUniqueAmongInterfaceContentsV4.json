@@ -1,0 +1,98 @@
+﻿[
+  {
+    "valid": true,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:pi_fuddle;1",
+        "@type": "Interface",
+        "contents": [
+          {
+            "@type": "Component",
+            "schema": {
+              "@id": "dtmi:example:pi_um;1",
+              "@type": "Interface"
+            },
+            "name": "delta_tau"
+          },
+          {
+            "@type": "Component",
+            "schema": {
+              "@id": "dtmi:example:pi_humpf;1",
+              "@type": "Interface"
+            },
+            "name": "delta_upsilon"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:pi_snee;1",
+        "@type": "Interface",
+        "contents": [
+          {
+            "@type": "Component",
+            "schema": {
+              "@id": "dtmi:example:pi_glikk;1",
+              "@type": "Interface"
+            },
+            "name": "delta_tau"
+          },
+          {
+            "@type": "Component",
+            "schema": {
+              "@id": "dtmi:example:pi_nuh;1",
+              "@type": "Interface"
+            },
+            "name": "delta_tau"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": [
+          "dtmi:dtdl:context;4",
+          "dtmi:undefinedExtension:context;1"
+        ],
+        "@id": "dtmi:example:pi_spazz;1",
+        "@type": "Interface",
+        "contents": [
+          {
+            "@type": "Component",
+            "schema": {
+              "@id": "dtmi:example:pi_quan;1",
+              "@type": "Interface"
+            },
+            "name": "delta_tau"
+          },
+          {
+            "@type": "Component",
+            "schema": {
+              "@id": "dtmi:example:pi_thnad;1",
+              "@type": "Interface"
+            },
+            "name": "delta_tau"
+          }
+        ]
+      }
+    ]
+  }
+]

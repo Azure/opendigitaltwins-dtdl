@@ -1,0 +1,40 @@
+﻿[
+  {
+    "valid": true,
+    "desirable": true,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:yekk_tau;1",
+        "@type": "Interface",
+        "contents": {
+          "name": "yekk_sigma",
+          "schema": "unsignedShort",
+          "@type": "Telemetry"
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "desirable": false,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:yekk_phi;1",
+        "@type": "Interface",
+        "contents": {
+          "name": "yekk_upsilon",
+          "schema": "uuid",
+          "@type": "dtmi:dtdl:class:Telemetry;4"
+        }
+      }
+    ]
+  }
+]

@@ -1,0 +1,27 @@
+﻿[
+  {
+    "valid": true,
+    "desirable": false,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:nu_nu;1",
+        "@type": "Interface",
+        "contents": {
+          "name": "nu_lambda",
+          "schema": {
+            "@id": "dtmi:example:nu_mu;1",
+            "@type": "Interface"
+          },
+          "@type": [
+            "Component",
+            "dtmi:dtdl:class:Component;4"
+          ]
+        }
+      }
+    ]
+  }
+]

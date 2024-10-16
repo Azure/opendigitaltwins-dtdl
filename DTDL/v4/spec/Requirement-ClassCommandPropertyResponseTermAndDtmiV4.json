@@ -1,0 +1,53 @@
+﻿[
+  {
+    "valid": false,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:spazz_jogg;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Command",
+          "name": "spazz_spazz",
+          "response": {
+            "name": "spazz_floob",
+            "schema": "bytes"
+          },
+          "dtmi:dtdl:property:response;4": {
+            "name": "spazz_zatz",
+            "schema": "date"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:spazz_vroo;1",
+        "@type": "Interface",
+        "contents": {
+          "@context": "dtmi:undefinedExtension:context;1",
+          "@type": "Command",
+          "name": "spazz_flunn",
+          "response": {
+            "name": "spazz_itch",
+            "schema": "dateTime"
+          },
+          "dtmi:dtdl:property:response;4": {
+            "name": "spazz_yekk",
+            "schema": "decimal"
+          }
+        }
+      }
+    ]
+  }
+]

@@ -1,0 +1,57 @@
+﻿[
+  {
+    "valid": false,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:spazz_zeta;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Component",
+          "displayName": [
+            "spazz_beta"
+          ],
+          "dtmi:dtdl:property:displayName;4": [
+            "spazz_gamma"
+          ],
+          "name": "spazz_delta",
+          "schema": {
+            "@id": "dtmi:example:spazz_epsilon;1",
+            "@type": "Interface"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:spazz_lambda;1",
+        "@type": "Interface",
+        "contents": {
+          "@context": "dtmi:undefinedExtension:context;1",
+          "@type": "Component",
+          "displayName": [
+            "spazz_eta"
+          ],
+          "dtmi:dtdl:property:displayName;4": [
+            "spazz_theta"
+          ],
+          "name": "spazz_iota",
+          "schema": {
+            "@id": "dtmi:example:spazz_kappa;1",
+            "@type": "Interface"
+          }
+        }
+      }
+    ]
+  }
+]

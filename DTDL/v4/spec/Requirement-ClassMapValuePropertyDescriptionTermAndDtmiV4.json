@@ -1,0 +1,65 @@
+﻿[
+  {
+    "valid": false,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:omicron_jogg;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:omicron_floob;1",
+          "@type": "Map",
+          "mapKey": {
+            "name": "omicron_zatz",
+            "schema": "string"
+          },
+          "mapValue": {
+            "description": [
+              "omicron_quan"
+            ],
+            "dtmi:dtdl:property:description;4": [
+              "omicron_thnad"
+            ],
+            "name": "omicron_spazz",
+            "schema": "unsignedShort"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:pi_alpha;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:omicron_vroo;1",
+          "@type": "Map",
+          "mapKey": {
+            "name": "omicron_hi",
+            "schema": "string"
+          },
+          "mapValue": {
+            "@context": "dtmi:undefinedExtension:context;1",
+            "description": [
+              "omicron_flunn"
+            ],
+            "dtmi:dtdl:property:description;4": [
+              "omicron_itch"
+            ],
+            "name": "omicron_yekk",
+            "schema": "uuid"
+          }
+        }
+      }
+    ]
+  }
+]

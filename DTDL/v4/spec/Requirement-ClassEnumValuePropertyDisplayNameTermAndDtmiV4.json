@@ -1,0 +1,59 @@
+﻿[
+  {
+    "valid": false,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:flunn_delta;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:flunn_gamma;1",
+          "@type": "Enum",
+          "valueSchema": "integer",
+          "enumValues": {
+            "displayName": [
+              "jogg_hi"
+            ],
+            "dtmi:dtdl:property:displayName;4": [
+              "flunn_alpha"
+            ],
+            "enumValue": 1829,
+            "name": "flunn_beta"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:flunn_iota;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:flunn_theta;1",
+          "@type": "Enum",
+          "valueSchema": "integer",
+          "enumValues": {
+            "@context": "dtmi:undefinedExtension:context;1",
+            "displayName": [
+              "flunn_epsilon"
+            ],
+            "dtmi:dtdl:property:displayName;4": [
+              "flunn_zeta"
+            ],
+            "enumValue": 1830,
+            "name": "flunn_eta"
+          }
+        }
+      }
+    ]
+  }
+]

@@ -20,15 +20,15 @@ The chart below lists constraints on properties of a Property or a Telemetry tha
 
 | Property | Limits |
 | --- | --- |
-| `schema` | must have type [Enum](#enum) |
+| `schema` | must have type Enum |
 
 ### State examples
 
 ```json
 {
   "@context": [
-      "dtmi:dtdl:context;2",
-      "dtmi:iotcentral:context;2"
+    "dtmi:dtdl:context;2",
+    "dtmi:iotcentral:context;2"
   ],
   "@id": "dtmi:com:example:Monitor;1",
   "@type": "Interface",
@@ -70,8 +70,8 @@ The chart below lists constraints on properties of an element that is co-typed E
 ```json
 {
   "@context": [
-      "dtmi:dtdl:context;2",
-      "dtmi:iotcentral:context;2"
+    "dtmi:dtdl:context;2",
+    "dtmi:iotcentral:context;2"
   ],
   "@id": "dtmi:com:example:Alarm;1",
   "@type": "Interface",
@@ -100,8 +100,8 @@ The chart below lists constraints on properties of an element that is co-typed L
 ```json
 {
   "@context": [
-      "dtmi:dtdl:context;2",
-      "dtmi:iotcentral:context;2"
+    "dtmi:dtdl:context;2",
+    "dtmi:iotcentral:context;2"
   ],
   "@id": "dtmi:com:example:Tracker;1",
   "@type": "Interface",
@@ -136,8 +136,8 @@ The chart below lists constraints on properties of an element that is co-typed V
 ```json
 {
   "@context": [
-      "dtmi:dtdl:context;2",
-      "dtmi:iotcentral:context;2"
+    "dtmi:dtdl:context;2",
+    "dtmi:iotcentral:context;2"
   ],
   "@id": "dtmi:com:example:Speedometer;1",
   "@type": "Interface",
@@ -173,8 +173,8 @@ The chart below lists constraints on properties of an element that is co-typed A
 ```json
 {
   "@context": [
-      "dtmi:dtdl:context;2",
-      "dtmi:iotcentral:context;2"
+    "dtmi:dtdl:context;2",
+    "dtmi:iotcentral:context;2"
   ],
   "@id": "dtmi:com:example:Accelerometer;1",
   "@type": "Interface",
@@ -204,8 +204,8 @@ The version restrictions described above apply only to co-types of adjunct types
 ```json
 {
   "@context": [
-      "dtmi:dtdl:context;2",
-      "dtmi:iotcentral:context;2"
+    "dtmi:dtdl:context;2",
+    "dtmi:iotcentral:context;2"
   ],
   "@id": "dtmi:com:example:Locator;1",
   "@type": "Interface",

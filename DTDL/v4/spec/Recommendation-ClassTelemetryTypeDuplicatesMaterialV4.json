@@ -1,0 +1,46 @@
+﻿[
+  {
+    "valid": true,
+    "desirable": false,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:yekk_omicron;1",
+        "@type": "Interface",
+        "contents": {
+          "name": "yekk_xi",
+          "schema": "unsignedInteger",
+          "@type": [
+            "Telemetry",
+            "Telemetry"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "desirable": false,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:yekk_rho;1",
+        "@type": "Interface",
+        "contents": {
+          "name": "yekk_pi",
+          "schema": "unsignedLong",
+          "@type": [
+            "dtmi:dtdl:class:Telemetry;4",
+            "dtmi:dtdl:class:Telemetry;4"
+          ]
+        }
+      }
+    ]
+  }
+]

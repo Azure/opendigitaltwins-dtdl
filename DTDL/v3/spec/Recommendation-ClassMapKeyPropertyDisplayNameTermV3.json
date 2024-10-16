@@ -8,20 +8,20 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;3",
-        "@id": "dtmi:example:hi_gamma;1",
+        "@id": "dtmi:example:mu_gamma;1",
         "@type": "Interface",
         "schemas": {
-          "@id": "dtmi:example:hi_alpha;1",
+          "@id": "dtmi:example:mu_alpha;1",
           "@type": "Map",
           "mapValue": {
-            "name": "hi_beta",
-            "schema": "long"
+            "name": "mu_beta",
+            "schema": "float"
           },
           "mapKey": {
             "displayName": [
-              "vroo_vroo"
+              "lambda_vroo"
             ],
-            "name": "vroo_hi",
+            "name": "lambda_hi",
             "schema": "string"
           }
         }
@@ -37,20 +37,20 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;3",
-        "@id": "dtmi:example:hi_theta;1",
+        "@id": "dtmi:example:mu_theta;1",
         "@type": "Interface",
         "schemas": {
-          "@id": "dtmi:example:hi_zeta;1",
+          "@id": "dtmi:example:mu_zeta;1",
           "@type": "Map",
           "mapValue": {
-            "name": "hi_eta",
-            "schema": "string"
+            "name": "mu_eta",
+            "schema": "integer"
           },
           "mapKey": {
             "dtmi:dtdl:property:displayName;3": [
-              "hi_delta"
+              "mu_delta"
             ],
-            "name": "hi_epsilon",
+            "name": "mu_epsilon",
             "schema": "string"
           }
         }

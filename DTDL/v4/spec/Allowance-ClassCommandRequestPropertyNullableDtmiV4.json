@@ -1,0 +1,24 @@
+﻿[
+  {
+    "valid": true,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:chi_iota;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Command",
+          "name": "chi_theta",
+          "request": {
+            "name": "chi_eta",
+            "dtmi:dtdl:property:nullable;4": false,
+            "schema": "date"
+          }
+        }
+      }
+    ]
+  }
+]

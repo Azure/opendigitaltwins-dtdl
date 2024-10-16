@@ -1,0 +1,70 @@
+﻿[
+  {
+    "valid": false,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:spazz_yekk;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Property",
+          "name": "spazz_itch",
+          "schema": {
+            "@type": "Map",
+            "mapKey": {
+              "name": "spazz_flunn",
+              "schema": "string"
+            },
+            "mapValue": {
+              "name": "spazz_jogg",
+              "schema": "dtmi:ex:dependentRef;1"
+            }
+          }
+        }
+      }
+    ],
+    "expect": {
+      "unresolvedIdentifiers": [
+        "dtmi:ex:dependentRef;1"
+      ]
+    }
+  },
+  {
+    "valid": false,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:floob_beta;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Property",
+          "name": "floob_alpha",
+          "schema": {
+            "@type": "Map",
+            "mapKey": {
+              "name": "spazz_hi",
+              "schema": "string"
+            },
+            "mapValue": {
+              "name": "spazz_vroo",
+              "schema": [
+                "dtmi:ex:dependentRef;1"
+              ]
+            }
+          }
+        }
+      }
+    ],
+    "expect": {
+      "unresolvedIdentifiers": [
+        "dtmi:ex:dependentRef;1"
+      ]
+    }
+  }
+]

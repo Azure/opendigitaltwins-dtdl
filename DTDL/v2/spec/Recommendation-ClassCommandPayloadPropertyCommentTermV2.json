@@ -8,15 +8,15 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;2",
-        "@id": "dtmi:example:psi_quan;1",
+        "@id": "dtmi:example:wum_thnad;1",
         "@type": "Interface",
         "contents": {
           "@type": "Command",
-          "name": "psi_snee",
+          "name": "wum_quan",
           "request": {
-            "comment": "psi_glikk",
-            "name": "psi_nuh",
-            "schema": "double"
+            "comment": "wum_nuh",
+            "name": "wum_snee",
+            "schema": "date"
           }
         }
       }
@@ -31,15 +31,15 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;2",
-        "@id": "dtmi:example:psi_zatz;1",
+        "@id": "dtmi:example:wum_jogg;1",
         "@type": "Interface",
         "contents": {
           "@type": "Command",
-          "name": "psi_floob",
+          "name": "wum_zatz",
           "request": {
-            "dtmi:dtdl:property:comment;2": "psi_thnad",
-            "name": "psi_spazz",
-            "schema": "duration"
+            "dtmi:dtdl:property:comment;2": "wum_spazz",
+            "name": "wum_floob",
+            "schema": "dateTime"
           }
         }
       }

@@ -1,0 +1,28 @@
+﻿[
+  {
+    "valid": true,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:tau_epsilon;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:tau_gamma;1",
+          "@type": "Map",
+          "mapValue": {
+            "name": "tau_delta",
+            "schema": "double"
+          },
+          "mapKey": {
+            "dtmi:dtdl:property:comment;4": "tau_alpha",
+            "name": "tau_beta",
+            "schema": "string"
+          }
+        }
+      }
+    ]
+  }
+]

@@ -1,0 +1,44 @@
+﻿[
+  {
+    "valid": true,
+    "desirable": true,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:wum_wum;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Command",
+          "displayName": [
+            "wum_omega"
+          ],
+          "name": "wum_yuzz"
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "desirable": false,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:wum_fuddle;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Command",
+          "dtmi:dtdl:property:displayName;4": [
+            "wum_um"
+          ],
+          "name": "wum_humpf"
+        }
+      }
+    ]
+  }
+]

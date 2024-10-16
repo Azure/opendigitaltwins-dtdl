@@ -7,14 +7,14 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;3",
-        "@id": "dtmi:example:omicron_um;1",
+        "@id": "dtmi:example:omega_beta;1",
         "@type": "Interface",
         "extends": {
-          "@id": "dtmi:example:omicron_wum;1",
+          "@id": "dtmi:example:omega_alpha;1",
           "@type": "Interface",
           "contents": {
             "@type": "Command",
-            "name": "omicron_yuzz",
+            "name": "psi_hi",
             "request": "dtmi:ex:dependentRef;1"
           }
         }
@@ -34,14 +34,14 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;3",
-        "@id": "dtmi:example:omicron_glikk;1",
+        "@id": "dtmi:example:omega_epsilon;1",
         "@type": "Interface",
         "extends": {
-          "@id": "dtmi:example:omicron_fuddle;1",
+          "@id": "dtmi:example:omega_delta;1",
           "@type": "Interface",
           "contents": {
             "@type": "Command",
-            "name": "omicron_humpf",
+            "name": "omega_gamma",
             "request": [
               "dtmi:ex:dependentRef;1"
             ]

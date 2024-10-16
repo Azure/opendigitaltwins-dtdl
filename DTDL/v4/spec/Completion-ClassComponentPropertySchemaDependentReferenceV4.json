@@ -1,0 +1,58 @@
+﻿[
+  {
+    "valid": false,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:sigma_eta;1",
+        "@type": "Interface",
+        "extends": {
+          "@id": "dtmi:example:sigma_zeta;1",
+          "@type": "Interface",
+          "contents": {
+            "@type": "Component",
+            "name": "sigma_epsilon",
+            "schema": "dtmi:ex:dependentRef;1"
+          }
+        }
+      }
+    ],
+    "expect": {
+      "unresolvedIdentifiers": [
+        "dtmi:ex:dependentRef;1"
+      ]
+    }
+  },
+  {
+    "valid": false,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:sigma_kappa;1",
+        "@type": "Interface",
+        "extends": {
+          "@id": "dtmi:example:sigma_iota;1",
+          "@type": "Interface",
+          "contents": {
+            "@type": "Component",
+            "name": "sigma_theta",
+            "schema": [
+              "dtmi:ex:dependentRef;1"
+            ]
+          }
+        }
+      }
+    ],
+    "expect": {
+      "unresolvedIdentifiers": [
+        "dtmi:ex:dependentRef;1"
+      ]
+    }
+  }
+]

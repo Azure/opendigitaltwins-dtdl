@@ -1,0 +1,43 @@
+﻿[
+  {
+    "valid": false,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:theta_delta;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Property",
+          "comment": "theta_alpha",
+          "dtmi:dtdl:property:comment;4": "theta_beta",
+          "name": "theta_gamma",
+          "schema": "duration"
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:theta_theta;1",
+        "@type": "Interface",
+        "contents": {
+          "@context": "dtmi:undefinedExtension:context;1",
+          "@type": "Property",
+          "comment": "theta_epsilon",
+          "dtmi:dtdl:property:comment;4": "theta_zeta",
+          "name": "theta_eta",
+          "schema": "float"
+        }
+      }
+    ]
+  }
+]

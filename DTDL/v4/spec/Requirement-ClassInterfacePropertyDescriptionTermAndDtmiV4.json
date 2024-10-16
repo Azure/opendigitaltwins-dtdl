@@ -1,0 +1,43 @@
+﻿[
+  {
+    "valid": false,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:nuh_jogg;1",
+        "@type": "Interface",
+        "description": [
+          "nuh_flunn"
+        ],
+        "dtmi:dtdl:property:description;4": [
+          "nuh_itch"
+        ]
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": [
+          "dtmi:dtdl:context;4",
+          "dtmi:undefinedExtension:context;1"
+        ],
+        "@id": "dtmi:example:nuh_yekk;1",
+        "@type": "Interface",
+        "description": [
+          "nuh_vroo"
+        ],
+        "dtmi:dtdl:property:description;4": [
+          "nuh_hi"
+        ]
+      }
+    ]
+  }
+]

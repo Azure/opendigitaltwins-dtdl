@@ -7,16 +7,16 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;2",
-        "@id": "dtmi:example:nu_eta;1",
+        "@id": "dtmi:example:omicron_eta;1",
         "@type": "Interface",
         "contents": {
-          "@id": "dtmi:example:nu_eta;1",
+          "@id": "dtmi:example:omicron_eta;1",
           "@type": "Telemetry",
-          "name": "nu_theta",
+          "name": "omicron_theta",
           "schema": {
-            "@id": "dtmi:example:nu_eta;1",
+            "@id": "dtmi:example:omicron_eta;1",
             "@type": "Array",
-            "elementSchema": "long"
+            "elementSchema": "time"
           }
         }
       }
@@ -30,17 +30,17 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;2",
-        "@id": "dtmi:example:nu_iota;1",
+        "@id": "dtmi:example:omicron_iota;1",
         "@type": "Interface",
         "contents": {
-          "@id": "dtmi:example:nu_iota;1",
+          "@id": "dtmi:example:omicron_iota;1",
           "@type": "Telemetry",
-          "name": "nu_kappa",
+          "name": "omicron_kappa",
           "schema": {
             "@context": "dtmi:undefinedExtension:context;1",
-            "@id": "dtmi:example:nu_iota;1",
+            "@id": "dtmi:example:omicron_iota;1",
             "@type": "Array",
-            "elementSchema": "string"
+            "elementSchema": "boolean"
           }
         }
       }

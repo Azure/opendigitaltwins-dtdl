@@ -84,8 +84,8 @@ The "getSpeed" Command is also co-typed Cacheable and has a "ttl" property with 
 ```json
 {
   "@context": [
-      "dtmi:dtdl:context;3",
-      "dtmi:dtdl:extension:mqtt;1"
+    "dtmi:dtdl:context;3",
+    "dtmi:dtdl:extension:mqtt;1"
   ],
   "@id": "dtmi:example:TestVehicle;1",
   "@type": [ "Interface", "Mqtt" ],
@@ -140,8 +140,8 @@ These indices can be generated automatically, but the example illustrates how th
 ```json
 {
   "@context": [
-      "dtmi:dtdl:context;3",
-      "dtmi:dtdl:extension:mqtt;1"
+    "dtmi:dtdl:context;3",
+    "dtmi:dtdl:extension:mqtt;1"
   ],
   "@id": "dtmi:example:TestVehicle;1",
   "@type": [ "Interface", "Mqtt" ],
@@ -190,9 +190,10 @@ These indices can be generated automatically, but the example illustrates how th
 
 ## Feature versions
 
-The chart below lists the versions of the Annotation extension that are currently available.
+The chart below lists the versions of the Mqtt extension that are currently available.
 
 | Extension | Context | DTDL versions |
 | --- | --- | --- |
 | [MQTT v1](./DTDL.mqtt.v1.md) | dtmi:dtdl:extension:mqtt;1 | [3](./DTDL.v3.md) |
+| [MQTT v2](../v4/DTDL.mqtt.v2.md) | dtmi:dtdl:extension:mqtt;2 | [3](./DTDL.v3.md), [4](../v4/DTDL.v4.md) |
 

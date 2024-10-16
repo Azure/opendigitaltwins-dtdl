@@ -1,0 +1,53 @@
+﻿[
+  {
+    "valid": false,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:lambda_sigma;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:lambda_rho;1",
+          "@type": "Object",
+          "fields": {
+            "@type": [
+              "Field",
+              "dtmi:foo//bar"
+            ],
+            "name": "lambda_pi",
+            "schema": "short"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:lambda_phi;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:lambda_upsilon;1",
+          "@type": "Object",
+          "fields": {
+            "@context": "dtmi:undefinedExtension:context;1",
+            "@type": [
+              "Field",
+              "dtmi:foo//bar"
+            ],
+            "name": "lambda_tau",
+            "schema": "string"
+          }
+        }
+      }
+    ]
+  }
+]

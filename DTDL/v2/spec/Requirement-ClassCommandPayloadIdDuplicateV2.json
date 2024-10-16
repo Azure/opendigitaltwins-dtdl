@@ -7,19 +7,19 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;2",
-        "@id": "dtmi:example:phi_thnad;1",
+        "@id": "dtmi:example:omega_spazz;1",
         "@type": "Interface",
         "extends": {
-          "@id": "dtmi:example:phi_thnad;1",
+          "@id": "dtmi:example:omega_spazz;1",
           "@type": "Interface",
           "contents": {
-            "@id": "dtmi:example:phi_thnad;1",
+            "@id": "dtmi:example:omega_spazz;1",
             "@type": "Command",
-            "name": "phi_floob",
+            "name": "omega_zatz",
             "request": {
-              "@id": "dtmi:example:phi_thnad;1",
-              "name": "phi_spazz",
-              "schema": "integer"
+              "@id": "dtmi:example:omega_spazz;1",
+              "name": "omega_floob",
+              "schema": "duration"
             }
           }
         }
@@ -34,20 +34,20 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;2",
-        "@id": "dtmi:example:phi_zatz;1",
+        "@id": "dtmi:example:omega_jogg;1",
         "@type": "Interface",
         "extends": {
-          "@id": "dtmi:example:phi_zatz;1",
+          "@id": "dtmi:example:omega_jogg;1",
           "@type": "Interface",
           "contents": {
-            "@id": "dtmi:example:phi_zatz;1",
+            "@id": "dtmi:example:omega_jogg;1",
             "@type": "Command",
-            "name": "phi_flunn",
+            "name": "omega_itch",
             "request": {
               "@context": "dtmi:undefinedExtension:context;1",
-              "@id": "dtmi:example:phi_zatz;1",
-              "name": "phi_jogg",
-              "schema": "long"
+              "@id": "dtmi:example:omega_jogg;1",
+              "name": "omega_flunn",
+              "schema": "float"
             }
           }
         }

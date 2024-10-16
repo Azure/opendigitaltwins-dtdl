@@ -7,18 +7,18 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;2",
-        "@id": "dtmi:example:rho_yekk;1",
+        "@id": "dtmi:example:tau_yekk;1",
         "@type": "Interface",
         "schemas": {
-          "@id": "dtmi:example:rho_jogg;1",
+          "@id": "dtmi:example:tau_jogg;1",
           "@type": "Array",
           "displayName": [
-            "rho_flunn"
+            "tau_flunn"
           ],
           "dtmi:dtdl:property:displayName;2": [
-            "rho_itch"
+            "tau_itch"
           ],
-          "elementSchema": "boolean"
+          "elementSchema": "dateTime"
         }
       }
     ]
@@ -31,19 +31,19 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;2",
-        "@id": "dtmi:example:sigma_beta;1",
+        "@id": "dtmi:example:upsilon_beta;1",
         "@type": "Interface",
         "schemas": {
           "@context": "dtmi:undefinedExtension:context;1",
-          "@id": "dtmi:example:rho_vroo;1",
+          "@id": "dtmi:example:tau_vroo;1",
           "@type": "Array",
           "displayName": [
-            "rho_hi"
+            "tau_hi"
           ],
           "dtmi:dtdl:property:displayName;2": [
-            "sigma_alpha"
+            "upsilon_alpha"
           ],
-          "elementSchema": "date"
+          "elementSchema": "double"
         }
       }
     ]

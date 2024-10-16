@@ -1,0 +1,24 @@
+﻿[
+  {
+    "valid": true,
+    "desirable": false,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:floob_gamma;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:floob_beta;1",
+          "elementSchema": "unsignedLong",
+          "@type": [
+            "Array",
+            "dtmi:dtdl:class:Array;4"
+          ]
+        }
+      }
+    ]
+  }
+]

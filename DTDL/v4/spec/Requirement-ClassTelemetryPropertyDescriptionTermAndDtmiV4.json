@@ -1,0 +1,51 @@
+﻿[
+  {
+    "valid": false,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:nu_eta;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Telemetry",
+          "description": [
+            "nu_delta"
+          ],
+          "dtmi:dtdl:property:description;4": [
+            "nu_epsilon"
+          ],
+          "name": "nu_zeta",
+          "schema": "double"
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:nu_lambda;1",
+        "@type": "Interface",
+        "contents": {
+          "@context": "dtmi:undefinedExtension:context;1",
+          "@type": "Telemetry",
+          "description": [
+            "nu_theta"
+          ],
+          "dtmi:dtdl:property:description;4": [
+            "nu_iota"
+          ],
+          "name": "nu_kappa",
+          "schema": "duration"
+        }
+      }
+    ]
+  }
+]

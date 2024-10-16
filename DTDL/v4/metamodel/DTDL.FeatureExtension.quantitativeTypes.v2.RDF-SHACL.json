@@ -1,0 +1,794 @@
+﻿{
+  "@context": [
+    "dtmi:dtdl:context;4",
+    "dtmi:dtdl:extension:quantitativeTypes;2"
+  ],
+  "@graph": [
+    {
+      "@id": "dtmi:dtdl:extension:quantitativeTypes:v2:documentation",
+      "@type": [ "dtmm:Documentation" ],
+      "dtmm:description": {
+        "en-US": "A set of standard semantic types, unit types, and units."
+      }
+    },
+    {
+      "@id": "dtmi:dtdl:extension:quantitativeTypes:v2:class:RatioUnit",
+      "@type": [ "rdfs:Class", "sh:NodeShape" ],
+      "dtmm:dtdlVersion": 4,
+      "rdfs:subClassOf": "AdjunctType",
+      "sh:or": [
+        { "sh:class": "EnumValue" }
+      ],
+      "dtmm:property": [
+        {
+          "@id": "dtmi:dtdl:extension:quantitativeTypes:v2:property:topUnit",
+          "@type": "rdf:Property",
+          "rdfs:domain": "RatioUnit"
+        },
+        {
+          "@id": "dtmi:dtdl:extension:quantitativeTypes:v2:property:bottomUnit",
+          "@type": "rdf:Property",
+          "rdfs:domain": "RatioUnit"
+        }
+      ],
+      "sh:property": [
+        {
+          "sh:path": "topUnit",
+          "sh:minCount": 1,
+          "sh:maxCount": 1,
+          "sh:class": "EnumValue",
+          "sh:nodeKind": "sh:BlankNodeOrIRI"
+        },
+        {
+          "sh:path": "bottomUnit",
+          "sh:minCount": 1,
+          "sh:maxCount": 1,
+          "sh:class": "EnumValue",
+          "sh:nodeKind": "sh:BlankNodeOrIRI"
+        }
+      ]
+    },
+
+    {
+      "@id": "dtmi:dtdl:extension:quantitativeTypes:v2:class:UnitPrefix",
+      "@type": [ "rdfs:Class", "sh:NodeShape" ],
+      "dtmm:dtdlVersion": 4,
+      "rdfs:subClassOf": "AdjunctType",
+      "sh:or": [
+        { "sh:class": "EnumValue" }
+      ],
+      "dtmm:property": [
+        {
+          "@id": "dtmi:dtdl:property:symbol;4",
+          "@type": "rdf:Property",
+          "rdfs:domain": "UnitPrefix"
+        },
+        {
+          "@id": "dtmi:dtdl:property:exponent;4",
+          "@type": "rdf:Property",
+          "rdfs:domain": "UnitPrefix"
+        }
+      ],
+      "sh:property": [
+        {
+          "sh:path": "symbol",
+          "sh:minCount": 1,
+          "sh:maxCount": 1,
+          "sh:datatype": "xsd:string",
+          "sh:nodeKind": "sh:Literal"
+        },
+        {
+          "sh:path": "exponent",
+          "sh:minCount": 1,
+          "sh:maxCount": 1,
+          "sh:datatype": "xsd:integer",
+          "sh:nodeKind": "sh:Literal"
+        }
+      ]
+    },
+    {
+      "@id": "dtmi:dtdl:extension:quantitativeTypes:v2:class:DecimalUnit",
+      "@type": [ "rdfs:Class", "sh:NodeShape" ],
+      "dtmm:dtdlVersion": 4,
+      "rdfs:subClassOf": "AdjunctType",
+      "sh:or": [
+        { "sh:class": "EnumValue" }
+      ],
+      "dtmm:property": [
+        {
+          "@id": "dtmi:dtdl:extension:quantitativeTypes:v2:property:baseUnit",
+          "@type": "rdf:Property",
+          "rdfs:domain": "DecimalUnit"
+        },
+        {
+          "@id": "dtmi:dtdl:extension:quantitativeTypes:v2:property:prefix",
+          "@type": "rdf:Property",
+          "rdfs:domain": "DecimalUnit"
+        }
+      ],
+      "sh:property": [
+        {
+          "sh:path": "baseUnit",
+          "sh:minCount": 1,
+          "sh:maxCount": 1,
+          "sh:class": "EnumValue",
+          "sh:nodeKind": "sh:BlankNodeOrIRI"
+        },
+        {
+          "sh:path": "prefix",
+          "sh:maxCount": 1,
+          "sh:class": "EnumValue",
+          "sh:nodeKind": "sh:BlankNodeOrIRI"
+        }
+      ]
+    },
+
+    {
+      "@id": "dtmi:dtdl:extension:quantitativeTypes:v2:class:BinaryUnit",
+      "@type": [ "rdfs:Class", "sh:NodeShape" ],
+      "dtmm:dtdlVersion": 4,
+      "rdfs:subClassOf": "AdjunctType",
+      "dtmm:property": [
+        {
+          "@id": "dtmi:dtdl:extension:quantitativeTypes:v2:property:baseUnit",
+          "@type": "rdf:Property",
+          "rdfs:domain": "BinaryUnit"
+        },
+        {
+          "@id": "dtmi:dtdl:extension:quantitativeTypes:v2:property:prefix",
+          "@type": "rdf:Property",
+          "rdfs:domain": "BinaryUnit"
+        }
+      ],
+      "sh:property": [
+        {
+          "sh:path": "baseUnit",
+          "sh:minCount": 1,
+          "sh:maxCount": 1,
+          "sh:class": "EnumValue",
+          "sh:nodeKind": "sh:BlankNodeOrIRI"
+        },
+        {
+          "sh:path": "prefix",
+          "sh:maxCount": 1,
+          "sh:class": "EnumValue",
+          "sh:nodeKind": "sh:BlankNodeOrIRI"
+        }
+      ]
+    },
+
+    {
+      "@id": "dtmi:dtdl:extension:quantitativeTypes:v2:class:SymbolicUnit",
+      "@type": [ "rdfs:Class", "sh:NodeShape" ],
+      "dtmm:dtdlVersion": 4,
+      "rdfs:subClassOf": "AdjunctType",
+      "sh:or": [
+        { "sh:class": "EnumValue" }
+      ],
+      "dtmm:property": [
+        {
+          "@id": "dtmi:dtdl:property:symbol;4",
+          "@type": "rdf:Property",
+          "rdfs:domain": "SymbolicUnit"
+        }
+      ],
+      "sh:property": [
+        {
+          "sh:path": "symbol",
+          "sh:minCount": 1,
+          "sh:maxCount": 1,
+          "sh:datatype": "xsd:string",
+          "sh:nodeKind": "sh:Literal"
+        }
+      ]
+    },
+
+    {
+      "@id": "dtmi:dtdl:extension:quantitativeTypes:v2:class:QuantitativeType",
+      "@type": [ "rdfs:Class", "dtmm:Abstract", "sh:NodeShape" ],
+      "dtmm:dtdlVersion": 4,
+      "rdfs:subClassOf": "SemanticType",
+      "sh:or": [
+        { "sh:class": "dtmi:dtdl:class:Property;4" },
+        { "sh:class": "dtmi:dtdl:class:Telemetry;4" },
+        { "sh:class": "dtmi:dtdl:class:SchemaField;4" }
+      ],
+      "dtmm:property": [
+        {
+          "@id": "dtmi:dtdl:extension:quantitativeTypes:v2:property:unit",
+          "@type": "rdf:Property",
+          "rdfs:domain": "QuantitativeType"
+        }
+      ],
+      "sh:property": [
+        {
+          "sh:path": "unit",
+          "sh:minCount": 1,
+          "sh:maxCount": 1,
+          "sh:class": "EnumValue",
+          "sh:nodeKind": "sh:BlankNodeOrIRI",
+          "dtmm:description": {
+            "en-US": "The unit type for data associated with the element."
+          }
+        },
+        {
+          "sh:path": "schema",
+          "sh:class": "NumericSchema"
+        }
+      ]
+    },
+
+    {
+      "@id": "dtmi:dtdl:extension:quantitativeTypes:v2:class:Acceleration",
+      "@type": [ "rdfs:Class", "sh:NodeShape" ],
+      "rdfs:subClassOf": "QuantitativeType",
+      "sh:property": [
+        {
+          "sh:path": "unit",
+          "dtmm:childOf": "AccelerationUnit"
+        }
+      ]
+    },
+    {
+      "@id": "dtmi:dtdl:extension:quantitativeTypes:v2:class:Angle",
+      "@type": [ "rdfs:Class", "sh:NodeShape" ],
+      "rdfs:subClassOf": "QuantitativeType",
+      "sh:property": [
+        {
+          "sh:path": "unit",
+          "dtmm:childOf": "AngleUnit"
+        }
+      ]
+    },
+    {
+      "@id": "dtmi:dtdl:extension:quantitativeTypes:v2:class:AngularAcceleration",
+      "@type": [ "rdfs:Class", "sh:NodeShape" ],
+      "rdfs:subClassOf": "QuantitativeType",
+      "sh:property": [
+        {
+          "sh:path": "unit",
+          "dtmm:childOf": "AngularAccelerationUnit"
+        }
+      ]
+    },
+    {
+      "@id": "dtmi:dtdl:extension:quantitativeTypes:v2:class:AngularVelocity",
+      "@type": [ "rdfs:Class", "sh:NodeShape" ],
+      "rdfs:subClassOf": "QuantitativeType",
+      "sh:property": [
+        {
+          "sh:path": "unit",
+          "dtmm:childOf": "AngularVelocityUnit"
+        }
+      ]
+    },
+    {
+      "@id": "dtmi:dtdl:extension:quantitativeTypes:v2:class:ApparentEnergy",
+      "@type": [ "rdfs:Class", "sh:NodeShape" ],
+      "rdfs:subClassOf": "QuantitativeType",
+      "sh:property": [
+        {
+          "sh:path": "unit",
+          "dtmm:childOf": "ApparentEnergyUnit"
+        }
+      ]
+    },
+    {
+      "@id": "dtmi:dtdl:extension:quantitativeTypes:v2:class:ApparentPower",
+      "@type": [ "rdfs:Class", "sh:NodeShape" ],
+      "rdfs:subClassOf": "QuantitativeType",
+      "sh:property": [
+        {
+          "sh:path": "unit",
+          "dtmm:childOf": "ApparentPowerUnit"
+        }
+      ]
+    },
+    {
+      "@id": "dtmi:dtdl:extension:quantitativeTypes:v2:class:Area",
+      "@type": [ "rdfs:Class", "sh:NodeShape" ],
+      "rdfs:subClassOf": "QuantitativeType",
+      "sh:property": [
+        {
+          "sh:path": "unit",
+          "dtmm:childOf": "AreaUnit"
+        }
+      ]
+    },
+    {
+      "@id": "dtmi:dtdl:extension:quantitativeTypes:v2:class:Capacitance",
+      "@type": [ "rdfs:Class", "sh:NodeShape" ],
+      "rdfs:subClassOf": "QuantitativeType",
+      "sh:property": [
+        {
+          "sh:path": "unit",
+          "dtmm:childOf": "CapacitanceUnit"
+        }
+      ]
+    },
+    {
+      "@id": "dtmi:dtdl:extension:quantitativeTypes:v2:class:Concentration",
+      "@type": [ "rdfs:Class", "sh:NodeShape" ],
+      "rdfs:subClassOf": "QuantitativeType",
+      "sh:property": [
+        {
+          "sh:path": "unit",
+          "dtmm:childOf": "Unitless"
+        }
+      ]
+    },
+    {
+      "@id": "dtmi:dtdl:extension:quantitativeTypes:v2:class:Current",
+      "@type": [ "rdfs:Class", "sh:NodeShape" ],
+      "rdfs:subClassOf": "QuantitativeType",
+      "sh:property": [
+        {
+          "sh:path": "unit",
+          "dtmm:childOf": "CurrentUnit"
+        }
+      ]
+    },
+    {
+      "@id": "dtmi:dtdl:extension:quantitativeTypes:v2:class:DataRate",
+      "@type": [ "rdfs:Class", "sh:NodeShape" ],
+      "rdfs:subClassOf": "QuantitativeType",
+      "sh:property": [
+        {
+          "sh:path": "unit",
+          "dtmm:childOf": "DataRateUnit"
+        }
+      ]
+    },
+    {
+      "@id": "dtmi:dtdl:extension:quantitativeTypes:v2:class:DataSize",
+      "@type": [ "rdfs:Class", "sh:NodeShape" ],
+      "rdfs:subClassOf": "QuantitativeType",
+      "sh:property": [
+        {
+          "sh:path": "unit",
+          "dtmm:childOf": "DataSizeUnit"
+        }
+      ]
+    },
+    {
+      "@id": "dtmi:dtdl:extension:quantitativeTypes:v2:class:Density",
+      "@type": [ "rdfs:Class", "sh:NodeShape" ],
+      "rdfs:subClassOf": "QuantitativeType",
+      "sh:property": [
+        {
+          "sh:path": "unit",
+          "dtmm:childOf": "DensityUnit"
+        }
+      ]
+    },
+    {
+      "@id": "dtmi:dtdl:extension:quantitativeTypes:v2:class:Distance",
+      "@type": [ "rdfs:Class", "sh:NodeShape" ],
+      "rdfs:subClassOf": "QuantitativeType",
+      "sh:property": [
+        {
+          "sh:path": "unit",
+          "dtmm:childOf": "LengthUnit"
+        }
+      ]
+    },
+    {
+      "@id": "dtmi:dtdl:extension:quantitativeTypes:v2:class:ElectricCharge",
+      "@type": [ "rdfs:Class", "sh:NodeShape" ],
+      "rdfs:subClassOf": "QuantitativeType",
+      "sh:property": [
+        {
+          "sh:path": "unit",
+          "dtmm:childOf": "ChargeUnit"
+        }
+      ]
+    },
+    {
+      "@id": "dtmi:dtdl:extension:quantitativeTypes:v2:class:Energy",
+      "@type": [ "rdfs:Class", "sh:NodeShape" ],
+      "rdfs:subClassOf": "QuantitativeType",
+      "sh:property": [
+        {
+          "sh:path": "unit",
+          "dtmm:childOf": "EnergyUnit"
+        }
+      ]
+    },
+    {
+      "@id": "dtmi:dtdl:extension:quantitativeTypes:v2:class:EnergyRate",
+      "@type": [ "rdfs:Class", "sh:NodeShape" ],
+      "rdfs:subClassOf": "QuantitativeType",
+      "sh:property": [
+        {
+          "sh:path": "unit",
+          "dtmm:childOf": "PowerUnit"
+        }
+      ]
+    },
+    {
+      "@id": "dtmi:dtdl:extension:quantitativeTypes:v2:class:Force",
+      "@type": [ "rdfs:Class", "sh:NodeShape" ],
+      "rdfs:subClassOf": "QuantitativeType",
+      "sh:property": [
+        {
+          "sh:path": "unit",
+          "dtmm:childOf": "ForceUnit"
+        }
+      ]
+    },
+    {
+      "@id": "dtmi:dtdl:extension:quantitativeTypes:v2:class:Frequency",
+      "@type": [ "rdfs:Class", "sh:NodeShape" ],
+      "rdfs:subClassOf": "QuantitativeType",
+      "sh:property": [
+        {
+          "sh:path": "unit",
+          "dtmm:childOf": "FrequencyUnit"
+        }
+      ]
+    },
+    {
+      "@id": "dtmi:dtdl:extension:quantitativeTypes:v2:class:Humidity",
+      "@type": [ "rdfs:Class", "sh:NodeShape" ],
+      "rdfs:subClassOf": "QuantitativeType",
+      "sh:property": [
+        {
+          "sh:path": "unit",
+          "dtmm:childOf": "DensityUnit"
+        }
+      ]
+    },
+    {
+      "@id": "dtmi:dtdl:extension:quantitativeTypes:v2:class:Illuminance",
+      "@type": [ "rdfs:Class", "sh:NodeShape" ],
+      "rdfs:subClassOf": "QuantitativeType",
+      "sh:property": [
+        {
+          "sh:path": "unit",
+          "dtmm:childOf": "IlluminanceUnit"
+        }
+      ]
+    },
+    {
+      "@id": "dtmi:dtdl:extension:quantitativeTypes:v2:class:Inductance",
+      "@type": [ "rdfs:Class", "sh:NodeShape" ],
+      "rdfs:subClassOf": "QuantitativeType",
+      "sh:property": [
+        {
+          "sh:path": "unit",
+          "dtmm:childOf": "InductanceUnit"
+        }
+      ]
+    },
+    {
+      "@id": "dtmi:dtdl:extension:quantitativeTypes:v2:class:IonizingRadiationDose",
+      "@type": [ "rdfs:Class", "sh:NodeShape" ],
+      "rdfs:subClassOf": "QuantitativeType",
+      "sh:property": [
+        {
+          "sh:path": "unit",
+          "dtmm:childOf": "IonizingRadiationDoseUnit"
+        }
+      ]
+    },
+    {
+      "@id": "dtmi:dtdl:extension:quantitativeTypes:v2:class:Irradiance",
+      "@type": [ "rdfs:Class", "sh:NodeShape" ],
+      "rdfs:subClassOf": "QuantitativeType",
+      "sh:property": [
+        {
+          "sh:path": "unit",
+          "dtmm:childOf": "IrradianceUnit"
+        }
+      ]
+    },
+    {
+      "@id": "dtmi:dtdl:extension:quantitativeTypes:v2:class:Latitude",
+      "@type": [ "rdfs:Class", "sh:NodeShape" ],
+      "rdfs:subClassOf": "QuantitativeType",
+      "sh:property": [
+        {
+          "sh:path": "unit",
+          "dtmm:childOf": "AngleUnit"
+        }
+      ]
+    },
+    {
+      "@id": "dtmi:dtdl:extension:quantitativeTypes:v2:class:Longitude",
+      "@type": [ "rdfs:Class", "sh:NodeShape" ],
+      "rdfs:subClassOf": "QuantitativeType",
+      "sh:property": [
+        {
+          "sh:path": "unit",
+          "dtmm:childOf": "AngleUnit"
+        }
+      ]
+    },
+    {
+      "@id": "dtmi:dtdl:extension:quantitativeTypes:v2:class:Length",
+      "@type": [ "rdfs:Class", "sh:NodeShape" ],
+      "rdfs:subClassOf": "QuantitativeType",
+      "sh:property": [
+        {
+          "sh:path": "unit",
+          "dtmm:childOf": "LengthUnit"
+        }
+      ]
+    },
+    {
+      "@id": "dtmi:dtdl:extension:quantitativeTypes:v2:class:Luminance",
+      "@type": [ "rdfs:Class", "sh:NodeShape" ],
+      "rdfs:subClassOf": "QuantitativeType",
+      "sh:property": [
+        {
+          "sh:path": "unit",
+          "dtmm:childOf": "LuminanceUnit"
+        }
+      ]
+    },
+    {
+      "@id": "dtmi:dtdl:extension:quantitativeTypes:v2:class:Luminosity",
+      "@type": [ "rdfs:Class", "sh:NodeShape" ],
+      "rdfs:subClassOf": "QuantitativeType",
+      "sh:property": [
+        {
+          "sh:path": "unit",
+          "dtmm:childOf": "PowerUnit"
+        }
+      ]
+    },
+    {
+      "@id": "dtmi:dtdl:extension:quantitativeTypes:v2:class:LuminousFlux",
+      "@type": [ "rdfs:Class", "sh:NodeShape" ],
+      "rdfs:subClassOf": "QuantitativeType",
+      "sh:property": [
+        {
+          "sh:path": "unit",
+          "dtmm:childOf": "LuminousFluxUnit"
+        }
+      ]
+    },
+    {
+      "@id": "dtmi:dtdl:extension:quantitativeTypes:v2:class:LuminousIntensity",
+      "@type": [ "rdfs:Class", "sh:NodeShape" ],
+      "rdfs:subClassOf": "QuantitativeType",
+      "sh:property": [
+        {
+          "sh:path": "unit",
+          "dtmm:childOf": "LuminousIntensityUnit"
+        }
+      ]
+    },
+    {
+      "@id": "dtmi:dtdl:extension:quantitativeTypes:v2:class:MagneticFlux",
+      "@type": [ "rdfs:Class", "sh:NodeShape" ],
+      "rdfs:subClassOf": "QuantitativeType",
+      "sh:property": [
+        {
+          "sh:path": "unit",
+          "dtmm:childOf": "MagneticFluxUnit"
+        }
+      ]
+    },
+    {
+      "@id": "dtmi:dtdl:extension:quantitativeTypes:v2:class:MagneticInduction",
+      "@type": [ "rdfs:Class", "sh:NodeShape" ],
+      "rdfs:subClassOf": "QuantitativeType",
+      "sh:property": [
+        {
+          "sh:path": "unit",
+          "dtmm:childOf": "MagneticInductionUnit"
+        }
+      ]
+    },
+    {
+      "@id": "dtmi:dtdl:extension:quantitativeTypes:v2:class:Mass",
+      "@type": [ "rdfs:Class", "sh:NodeShape" ],
+      "rdfs:subClassOf": "QuantitativeType",
+      "sh:property": [
+        {
+          "sh:path": "unit",
+          "dtmm:childOf": "MassUnit"
+        }
+      ]
+    },
+    {
+      "@id": "dtmi:dtdl:extension:quantitativeTypes:v2:class:MassFlowRate",
+      "@type": [ "rdfs:Class", "sh:NodeShape" ],
+      "rdfs:subClassOf": "QuantitativeType",
+      "sh:property": [
+        {
+          "sh:path": "unit",
+          "dtmm:childOf": "MassFlowRateUnit"
+        }
+      ]
+    },
+    {
+      "@id": "dtmi:dtdl:extension:quantitativeTypes:v2:class:Power",
+      "@type": [ "rdfs:Class", "sh:NodeShape" ],
+      "rdfs:subClassOf": "QuantitativeType",
+      "sh:property": [
+        {
+          "sh:path": "unit",
+          "dtmm:childOf": "PowerUnit"
+        }
+      ]
+    },
+    {
+      "@id": "dtmi:dtdl:extension:quantitativeTypes:v2:class:Pressure",
+      "@type": [ "rdfs:Class", "sh:NodeShape" ],
+      "rdfs:subClassOf": "QuantitativeType",
+      "sh:property": [
+        {
+          "sh:path": "unit",
+          "dtmm:childOf": "PressureUnit"
+        }
+      ]
+    },
+    {
+      "@id": "dtmi:dtdl:extension:quantitativeTypes:v2:class:Radioactivity",
+      "@type": [ "rdfs:Class", "sh:NodeShape" ],
+      "rdfs:subClassOf": "QuantitativeType",
+      "sh:property": [
+        {
+          "sh:path": "unit",
+          "dtmm:childOf": "RadioactivityUnit"
+        }
+      ]
+    },
+    {
+      "@id": "dtmi:dtdl:extension:quantitativeTypes:v2:class:ReactiveEnergy",
+      "@type": [ "rdfs:Class", "sh:NodeShape" ],
+      "rdfs:subClassOf": "QuantitativeType",
+      "sh:property": [
+        {
+          "sh:path": "unit",
+          "dtmm:childOf": "ReactiveEnergyUnit"
+        }
+      ]
+    },
+    {
+      "@id": "dtmi:dtdl:extension:quantitativeTypes:v2:class:ReactivePower",
+      "@type": [ "rdfs:Class", "sh:NodeShape" ],
+      "rdfs:subClassOf": "QuantitativeType",
+      "sh:property": [
+        {
+          "sh:path": "unit",
+          "dtmm:childOf": "ReactivePowerUnit"
+        }
+      ]
+    },
+    {
+      "@id": "dtmi:dtdl:extension:quantitativeTypes:v2:class:RelativeDensity",
+      "@type": [ "rdfs:Class", "sh:NodeShape" ],
+      "rdfs:subClassOf": "QuantitativeType",
+      "sh:property": [
+        {
+          "sh:path": "unit",
+          "dtmm:childOf": "Unitless"
+        }
+      ]
+    },
+    {
+      "@id": "dtmi:dtdl:extension:quantitativeTypes:v2:class:RelativeHumidity",
+      "@type": [ "rdfs:Class", "sh:NodeShape" ],
+      "rdfs:subClassOf": "QuantitativeType",
+      "sh:property": [
+        {
+          "sh:path": "unit",
+          "dtmm:childOf": "Unitless"
+        }
+      ]
+    },
+    {
+      "@id": "dtmi:dtdl:extension:quantitativeTypes:v2:class:Resistance",
+      "@type": [ "rdfs:Class", "sh:NodeShape" ],
+      "rdfs:subClassOf": "QuantitativeType",
+      "sh:property": [
+        {
+          "sh:path": "unit",
+          "dtmm:childOf": "ResistanceUnit"
+        }
+      ]
+    },
+    {
+      "@id": "dtmi:dtdl:extension:quantitativeTypes:v2:class:SoundPressure",
+      "@type": [ "rdfs:Class", "sh:NodeShape" ],
+      "rdfs:subClassOf": "QuantitativeType",
+      "sh:property": [
+        {
+          "sh:path": "unit",
+          "dtmm:childOf": "SoundPressureUnit"
+        }
+      ]
+    },
+    {
+      "@id": "dtmi:dtdl:extension:quantitativeTypes:v2:class:Temperature",
+      "@type": [ "rdfs:Class", "sh:NodeShape" ],
+      "rdfs:subClassOf": "QuantitativeType",
+      "sh:property": [
+        {
+          "sh:path": "unit",
+          "dtmm:childOf": "TemperatureUnit"
+        }
+      ]
+    },
+    {
+      "@id": "dtmi:dtdl:extension:quantitativeTypes:v2:class:Thrust",
+      "@type": [ "rdfs:Class", "sh:NodeShape" ],
+      "rdfs:subClassOf": "QuantitativeType",
+      "sh:property": [
+        {
+          "sh:path": "unit",
+          "dtmm:childOf": "ForceUnit"
+        }
+      ]
+    },
+    {
+      "@id": "dtmi:dtdl:extension:quantitativeTypes:v2:class:TimeSpan",
+      "@type": [ "rdfs:Class", "sh:NodeShape" ],
+      "rdfs:subClassOf": "QuantitativeType",
+      "sh:property": [
+        {
+          "sh:path": "unit",
+          "dtmm:childOf": "TimeUnit"
+        }
+      ]
+    },
+    {
+      "@id": "dtmi:dtdl:extension:quantitativeTypes:v2:class:Torque",
+      "@type": [ "rdfs:Class", "sh:NodeShape" ],
+      "rdfs:subClassOf": "QuantitativeType",
+      "sh:property": [
+        {
+          "sh:path": "unit",
+          "dtmm:childOf": "TorqueUnit"
+        }
+      ]
+    },
+    {
+      "@id": "dtmi:dtdl:extension:quantitativeTypes:v2:class:Velocity",
+      "@type": [ "rdfs:Class", "sh:NodeShape" ],
+      "rdfs:subClassOf": "QuantitativeType",
+      "sh:property": [
+        {
+          "sh:path": "unit",
+          "dtmm:childOf": "VelocityUnit"
+        }
+      ]
+    },
+    {
+      "@id": "dtmi:dtdl:extension:quantitativeTypes:v2:class:Voltage",
+      "@type": [ "rdfs:Class", "sh:NodeShape" ],
+      "rdfs:subClassOf": "QuantitativeType",
+      "sh:property": [
+        {
+          "sh:path": "unit",
+          "dtmm:childOf": "VoltageUnit"
+        }
+      ]
+    },
+    {
+      "@id": "dtmi:dtdl:extension:quantitativeTypes:v2:class:Volume",
+      "@type": [ "rdfs:Class", "sh:NodeShape" ],
+      "rdfs:subClassOf": "QuantitativeType",
+      "sh:property": [
+        {
+          "sh:path": "unit",
+          "dtmm:childOf": "VolumeUnit"
+        }
+      ]
+    },
+    {
+      "@id": "dtmi:dtdl:extension:quantitativeTypes:v2:class:VolumeFlowRate",
+      "@type": [ "rdfs:Class", "sh:NodeShape" ],
+      "rdfs:subClassOf": "QuantitativeType",
+      "sh:property": [
+        {
+          "sh:path": "unit",
+          "dtmm:childOf": "VolumeFlowRateUnit"
+        }
+      ]
+    }
+  ]
+}

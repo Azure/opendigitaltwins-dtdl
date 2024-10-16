@@ -1,0 +1,23 @@
+﻿[
+  {
+    "valid": true,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:gamma_tau;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Command",
+          "name": "gamma_sigma",
+          "request": {
+            "name": "gamma_rho",
+            "dtmi:dtdl:property:schema;4": "short"
+          }
+        }
+      }
+    ]
+  }
+]

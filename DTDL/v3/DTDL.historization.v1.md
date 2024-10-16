@@ -27,8 +27,8 @@ The following example shows an Interface with a single `contents` element named 
 ```json
 {
   "@context": [
-      "dtmi:dtdl:context;3",
-      "dtmi:dtdl:extension:historization;1"
+    "dtmi:dtdl:context;3",
+    "dtmi:dtdl:extension:historization;1"
   ],
   "@id": "dtmi:com:example:Thermostat;1",
   "@type": "Interface",
@@ -48,9 +48,9 @@ Applying the Historized adjunct type does not preclude the application of other 
 ```json
 {
   "@context": [
-      "dtmi:dtdl:context;3",
-      "dtmi:dtdl:extension:quantitativeTypes;1",
-      "dtmi:dtdl:extension:historization;1"
+    "dtmi:dtdl:context;3",
+    "dtmi:dtdl:extension:quantitativeTypes;1",
+    "dtmi:dtdl:extension:historization;1"
   ],
   "@id": "dtmi:com:example:Thermostat;1",
   "@type": "Interface",
@@ -73,4 +73,5 @@ The chart below lists the versions of the Historization extension that are curre
 | Extension | Context | DTDL versions |
 | --- | --- | --- |
 | [Historization v1](./DTDL.historization.v1.md) | dtmi:dtdl:extension:historization;1 | [3](./DTDL.v3.md) |
+| [Historization v2](../v4/DTDL.historization.v2.md) | dtmi:dtdl:extension:historization;2 | [3](./DTDL.v3.md), [4](../v4/DTDL.v4.md) |
 

@@ -7,16 +7,61 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;2",
-        "@id": "dtmi:example:jogg_gamma;1",
+        "@id": "dtmi:example:vroo_epsilon;1",
         "@type": "Interface",
         "contents": {
           "@type": "Property",
-          "name": "jogg_beta",
+          "name": "vroo_delta",
           "schema": {
             "@type": "Object",
             "fields": {
               "@context": [],
-              "name": "jogg_alpha",
+              "name": "vroo_gamma",
+              "schema": "duration"
+            }
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:vroo_theta;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:vroo_eta;1",
+          "@type": "Object",
+          "fields": {
+            "name": "vroo_zeta",
+            "schema": "float"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:vroo_lambda;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Property",
+          "name": "vroo_kappa",
+          "schema": {
+            "@type": "Object",
+            "fields": {
+              "name": "vroo_iota",
               "schema": "integer"
             }
           }
@@ -32,13 +77,13 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;2",
-        "@id": "dtmi:example:jogg_zeta;1",
+        "@id": "dtmi:example:vroo_xi;1",
         "@type": "Interface",
         "schemas": {
-          "@id": "dtmi:example:jogg_epsilon;1",
+          "@id": "dtmi:example:vroo_nu;1",
           "@type": "Object",
           "fields": {
-            "name": "jogg_delta",
+            "name": "vroo_mu",
             "schema": "long"
           }
         }
@@ -53,17 +98,14 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;2",
-        "@id": "dtmi:example:jogg_iota;1",
+        "@id": "dtmi:example:vroo_rho;1",
         "@type": "Interface",
-        "contents": {
-          "@type": "Property",
-          "name": "jogg_theta",
-          "schema": {
-            "@type": "Object",
-            "fields": {
-              "name": "jogg_eta",
-              "schema": "string"
-            }
+        "schemas": {
+          "@id": "dtmi:example:vroo_pi;1",
+          "@type": "Object",
+          "fields": {
+            "name": "vroo_omicron",
+            "schema": "string"
           }
         }
       }
@@ -77,56 +119,14 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;2",
-        "@id": "dtmi:example:jogg_mu;1",
+        "@id": "dtmi:example:vroo_upsilon;1",
         "@type": "Interface",
         "schemas": {
-          "@id": "dtmi:example:jogg_lambda;1",
+          "@id": "dtmi:example:vroo_tau;1",
           "@type": "Object",
           "fields": {
-            "name": "jogg_kappa",
+            "name": "vroo_sigma",
             "schema": "time"
-          }
-        }
-      }
-    ]
-  },
-  {
-    "valid": true,
-    "options": [
-      "DisallowUndefinedExtensions"
-    ],
-    "input": [
-      {
-        "@context": "dtmi:dtdl:context;2",
-        "@id": "dtmi:example:jogg_omicron;1",
-        "@type": "Interface",
-        "schemas": {
-          "@id": "dtmi:example:jogg_xi;1",
-          "@type": "Object",
-          "fields": {
-            "name": "jogg_nu",
-            "schema": "boolean"
-          }
-        }
-      }
-    ]
-  },
-  {
-    "valid": true,
-    "options": [
-      "DisallowUndefinedExtensions"
-    ],
-    "input": [
-      {
-        "@context": "dtmi:dtdl:context;2",
-        "@id": "dtmi:example:jogg_sigma;1",
-        "@type": "Interface",
-        "schemas": {
-          "@id": "dtmi:example:jogg_rho;1",
-          "@type": "Object",
-          "fields": {
-            "name": "jogg_pi",
-            "schema": "date"
           }
         }
       }

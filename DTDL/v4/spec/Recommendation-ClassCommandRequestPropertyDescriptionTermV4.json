@@ -1,0 +1,52 @@
+﻿[
+  {
+    "valid": true,
+    "desirable": true,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:rho_fuddle;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Command",
+          "name": "rho_humpf",
+          "request": {
+            "description": [
+              "rho_wum"
+            ],
+            "name": "rho_um",
+            "schema": "uuid"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "desirable": false,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:rho_quan;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Command",
+          "name": "rho_snee",
+          "request": {
+            "dtmi:dtdl:property:description;4": [
+              "rho_glikk"
+            ],
+            "name": "rho_nuh",
+            "schema": "boolean"
+          }
+        }
+      }
+    ]
+  }
+]

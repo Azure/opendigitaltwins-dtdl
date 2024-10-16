@@ -1,0 +1,49 @@
+﻿[
+  {
+    "valid": false,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:yuzz_upsilon;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Relationship",
+          "description": [
+            "yuzz_rho"
+          ],
+          "dtmi:dtdl:property:description;4": [
+            "yuzz_sigma"
+          ],
+          "name": "yuzz_tau"
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:yuzz_omega;1",
+        "@type": "Interface",
+        "contents": {
+          "@context": "dtmi:undefinedExtension:context;1",
+          "@type": "Relationship",
+          "description": [
+            "yuzz_phi"
+          ],
+          "dtmi:dtdl:property:description;4": [
+            "yuzz_chi"
+          ],
+          "name": "yuzz_psi"
+        }
+      }
+    ]
+  }
+]

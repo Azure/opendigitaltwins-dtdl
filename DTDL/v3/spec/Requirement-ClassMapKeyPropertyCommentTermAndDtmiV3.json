@@ -7,19 +7,19 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;3",
-        "@id": "dtmi:example:zatz_beta;1",
+        "@id": "dtmi:example:zeta_beta;1",
         "@type": "Interface",
         "schemas": {
-          "@id": "dtmi:example:floob_hi;1",
+          "@id": "dtmi:example:epsilon_hi;1",
           "@type": "Map",
           "mapValue": {
-            "name": "zatz_alpha",
-            "schema": "float"
+            "name": "zeta_alpha",
+            "schema": "double"
           },
           "mapKey": {
-            "comment": "floob_itch",
-            "dtmi:dtdl:property:comment;3": "floob_yekk",
-            "name": "floob_vroo",
+            "comment": "epsilon_itch",
+            "dtmi:dtdl:property:comment;3": "epsilon_yekk",
+            "name": "epsilon_vroo",
             "schema": "string"
           }
         }
@@ -34,20 +34,20 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;3",
-        "@id": "dtmi:example:zatz_theta;1",
+        "@id": "dtmi:example:zeta_theta;1",
         "@type": "Interface",
         "schemas": {
-          "@id": "dtmi:example:zatz_zeta;1",
+          "@id": "dtmi:example:zeta_zeta;1",
           "@type": "Map",
           "mapValue": {
-            "name": "zatz_eta",
-            "schema": "integer"
+            "name": "zeta_eta",
+            "schema": "duration"
           },
           "mapKey": {
             "@context": "dtmi:undefinedExtension:context;1",
-            "comment": "zatz_gamma",
-            "dtmi:dtdl:property:comment;3": "zatz_delta",
-            "name": "zatz_epsilon",
+            "comment": "zeta_gamma",
+            "dtmi:dtdl:property:comment;3": "zeta_delta",
+            "name": "zeta_epsilon",
             "schema": "string"
           }
         }

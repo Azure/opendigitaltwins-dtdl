@@ -1,0 +1,54 @@
+﻿[
+  {
+    "valid": true,
+    "desirable": false,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:eta_omega;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Command",
+          "name": "eta_psi",
+          "request": {
+            "name": "eta_chi",
+            "schema": "integer",
+            "@type": [
+              "CommandRequest",
+              "CommandRequest"
+            ]
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "desirable": false,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:eta_um;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Command",
+          "name": "eta_wum",
+          "request": {
+            "name": "eta_yuzz",
+            "schema": "long",
+            "@type": [
+              "dtmi:dtdl:class:CommandRequest;4",
+              "dtmi:dtdl:class:CommandRequest;4"
+            ]
+          }
+        }
+      }
+    ]
+  }
+]

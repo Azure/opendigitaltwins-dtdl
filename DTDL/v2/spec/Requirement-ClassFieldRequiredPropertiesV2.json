@@ -7,13 +7,13 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;2",
-        "@id": "dtmi:example:humpf_sigma;1",
+        "@id": "dtmi:example:snee_mu;1",
         "@type": "Interface",
         "schemas": {
-          "@id": "dtmi:example:humpf_rho;1",
+          "@id": "dtmi:example:snee_lambda;1",
           "@type": "Object",
           "fields": {
-            "schema": "double"
+            "schema": "date"
           }
         }
       }
@@ -27,14 +27,14 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;2",
-        "@id": "dtmi:example:humpf_upsilon;1",
+        "@id": "dtmi:example:snee_xi;1",
         "@type": "Interface",
         "schemas": {
-          "@id": "dtmi:example:humpf_tau;1",
+          "@id": "dtmi:example:snee_nu;1",
           "@type": "Object",
           "fields": {
             "@context": "dtmi:undefinedExtension:context;1",
-            "schema": "duration"
+            "schema": "dateTime"
           }
         }
       }
@@ -48,13 +48,13 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;2",
-        "@id": "dtmi:example:humpf_psi;1",
+        "@id": "dtmi:example:snee_rho;1",
         "@type": "Interface",
         "schemas": {
-          "@id": "dtmi:example:humpf_chi;1",
+          "@id": "dtmi:example:snee_pi;1",
           "@type": "Object",
           "fields": {
-            "name": "humpf_phi"
+            "name": "snee_omicron"
           }
         }
       }
@@ -68,14 +68,14 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;2",
-        "@id": "dtmi:example:humpf_wum;1",
+        "@id": "dtmi:example:snee_upsilon;1",
         "@type": "Interface",
         "schemas": {
-          "@id": "dtmi:example:humpf_yuzz;1",
+          "@id": "dtmi:example:snee_tau;1",
           "@type": "Object",
           "fields": {
             "@context": "dtmi:undefinedExtension:context;1",
-            "name": "humpf_omega"
+            "name": "snee_sigma"
           }
         }
       }

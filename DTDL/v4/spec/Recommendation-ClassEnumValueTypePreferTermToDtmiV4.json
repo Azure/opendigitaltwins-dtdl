@@ -1,0 +1,50 @@
+﻿[
+  {
+    "valid": true,
+    "desirable": true,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:wum_chi;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:wum_phi;1",
+          "@type": "Enum",
+          "valueSchema": "integer",
+          "enumValues": {
+            "enumValue": 1655,
+            "name": "wum_upsilon",
+            "@type": "EnumValue"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "desirable": false,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:wum_yuzz;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:wum_omega;1",
+          "@type": "Enum",
+          "valueSchema": "integer",
+          "enumValues": {
+            "enumValue": 1656,
+            "name": "wum_psi",
+            "@type": "dtmi:dtdl:class:EnumValue;4"
+          }
+        }
+      }
+    ]
+  }
+]

@@ -1,0 +1,60 @@
+﻿[
+  {
+    "valid": true,
+    "desirable": true,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:omicron_um;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:omicron_yuzz;1",
+          "@type": "Map",
+          "mapKey": {
+            "name": "omicron_wum",
+            "schema": "string"
+          },
+          "mapValue": {
+            "description": [
+              "omicron_psi"
+            ],
+            "name": "omicron_omega",
+            "schema": "unsignedInteger"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "desirable": false,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:omicron_snee;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:omicron_glikk;1",
+          "@type": "Map",
+          "mapKey": {
+            "name": "omicron_nuh",
+            "schema": "string"
+          },
+          "mapValue": {
+            "dtmi:dtdl:property:description;4": [
+              "omicron_humpf"
+            ],
+            "name": "omicron_fuddle",
+            "schema": "unsignedLong"
+          }
+        }
+      }
+    ]
+  }
+]

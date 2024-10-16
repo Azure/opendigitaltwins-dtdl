@@ -1,0 +1,47 @@
+﻿[
+  {
+    "valid": false,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:gamma_humpf;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Command",
+          "name": "gamma_um",
+          "request": {
+            "name": "gamma_wum",
+            "schema": "unsignedByte",
+            "dtmi:dtdl:property:schema;4": "unsignedInteger"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:gamma_nuh;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Command",
+          "name": "gamma_glikk",
+          "request": {
+            "@context": "dtmi:undefinedExtension:context;1",
+            "name": "gamma_fuddle",
+            "schema": "unsignedLong",
+            "dtmi:dtdl:property:schema;4": "unsignedShort"
+          }
+        }
+      }
+    ]
+  }
+]

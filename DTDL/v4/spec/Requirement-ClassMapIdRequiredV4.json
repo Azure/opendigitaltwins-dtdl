@@ -1,0 +1,104 @@
+﻿[
+  {
+    "valid": true,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:nu_um;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Property",
+          "name": "nu_wum",
+          "schema": {
+            "@type": "Map",
+            "mapKey": {
+              "name": "nu_omega",
+              "schema": "string"
+            },
+            "mapValue": {
+              "name": "nu_yuzz",
+              "schema": "short"
+            }
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:nu_nuh;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:nu_humpf;1",
+          "@type": "Map",
+          "mapKey": {
+            "name": "nu_fuddle",
+            "schema": "string"
+          },
+          "mapValue": {
+            "name": "nu_glikk",
+            "schema": "string"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:nu_thnad;1",
+        "@type": "Interface",
+        "schemas": {
+          "@type": "Map",
+          "mapKey": {
+            "name": "nu_snee",
+            "schema": "string"
+          },
+          "mapValue": {
+            "name": "nu_quan",
+            "schema": "time"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:nu_zatz;1",
+        "@type": "Interface",
+        "schemas": {
+          "@context": "dtmi:undefinedExtension:context;1",
+          "@type": "Map",
+          "mapKey": {
+            "name": "nu_spazz",
+            "schema": "string"
+          },
+          "mapValue": {
+            "name": "nu_floob",
+            "schema": "unsignedByte"
+          }
+        }
+      }
+    ]
+  }
+]

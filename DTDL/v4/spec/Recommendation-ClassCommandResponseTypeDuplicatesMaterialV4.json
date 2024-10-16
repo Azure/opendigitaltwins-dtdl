@@ -1,0 +1,54 @@
+﻿[
+  {
+    "valid": true,
+    "desirable": false,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:zatz_um;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Command",
+          "name": "zatz_wum",
+          "response": {
+            "name": "zatz_yuzz",
+            "schema": "unsignedLong",
+            "@type": [
+              "CommandResponse",
+              "CommandResponse"
+            ]
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "desirable": false,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:zatz_glikk;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Command",
+          "name": "zatz_fuddle",
+          "response": {
+            "name": "zatz_humpf",
+            "schema": "unsignedShort",
+            "@type": [
+              "dtmi:dtdl:class:CommandResponse;4",
+              "dtmi:dtdl:class:CommandResponse;4"
+            ]
+          }
+        }
+      }
+    ]
+  }
+]

@@ -1,0 +1,65 @@
+﻿[
+  {
+    "valid": false,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:tau_alpha;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:sigma_vroo;1",
+          "@type": "Map",
+          "mapKey": {
+            "name": "sigma_hi",
+            "schema": "string"
+          },
+          "mapValue": {
+            "displayName": [
+              "sigma_flunn"
+            ],
+            "dtmi:dtdl:property:displayName;4": [
+              "sigma_itch"
+            ],
+            "name": "sigma_yekk",
+            "schema": "short"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:tau_eta;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:tau_epsilon;1",
+          "@type": "Map",
+          "mapKey": {
+            "name": "tau_zeta",
+            "schema": "string"
+          },
+          "mapValue": {
+            "@context": "dtmi:undefinedExtension:context;1",
+            "displayName": [
+              "tau_beta"
+            ],
+            "dtmi:dtdl:property:displayName;4": [
+              "tau_gamma"
+            ],
+            "name": "tau_delta",
+            "schema": "string"
+          }
+        }
+      }
+    ]
+  }
+]

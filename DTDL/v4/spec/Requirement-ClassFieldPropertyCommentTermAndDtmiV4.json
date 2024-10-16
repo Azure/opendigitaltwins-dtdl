@@ -1,0 +1,49 @@
+﻿[
+  {
+    "valid": false,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:sigma_thnad;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:sigma_quan;1",
+          "@type": "Object",
+          "fields": {
+            "comment": "sigma_glikk",
+            "dtmi:dtdl:property:comment;4": "sigma_nuh",
+            "name": "sigma_snee",
+            "schema": "byte"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:sigma_flunn;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:sigma_jogg;1",
+          "@type": "Object",
+          "fields": {
+            "@context": "dtmi:undefinedExtension:context;1",
+            "comment": "sigma_spazz",
+            "dtmi:dtdl:property:comment;4": "sigma_floob",
+            "name": "sigma_zatz",
+            "schema": "bytes"
+          }
+        }
+      }
+    ]
+  }
+]

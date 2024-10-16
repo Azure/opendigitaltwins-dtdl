@@ -7,64 +7,17 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;2",
-        "@id": "dtmi:example:wum_wum;1",
+        "@id": "dtmi:example:snee_wum;1",
         "@type": "Interface",
         "schemas": {
-          "@id": "dtmi:example:wum_omega;1",
+          "@id": "dtmi:example:snee_omega;1",
           "fields": [
             {
-              "name": "wum_yuzz",
-              "schema": "date"
-            }
-          ],
-          "@type": 626
-        }
-      }
-    ]
-  },
-  {
-    "valid": false,
-    "options": [
-      "AllowUndefinedExtensions"
-    ],
-    "input": [
-      {
-        "@context": "dtmi:dtdl:context;2",
-        "@id": "dtmi:example:wum_fuddle;1",
-        "@type": "Interface",
-        "schemas": {
-          "@context": "dtmi:undefinedExtension:context;1",
-          "@id": "dtmi:example:wum_um;1",
-          "fields": [
-            {
-              "name": "wum_humpf",
-              "schema": "dateTime"
-            }
-          ],
-          "@type": 626
-        }
-      }
-    ]
-  },
-  {
-    "valid": false,
-    "options": [
-      "DisallowUndefinedExtensions"
-    ],
-    "input": [
-      {
-        "@context": "dtmi:dtdl:context;2",
-        "@id": "dtmi:example:wum_snee;1",
-        "@type": "Interface",
-        "schemas": {
-          "@id": "dtmi:example:wum_glikk;1",
-          "fields": [
-            {
-              "name": "wum_nuh",
+              "name": "snee_yuzz",
               "schema": "double"
             }
           ],
-          "@type": null
+          "@type": 626
         }
       }
     ]
@@ -77,18 +30,18 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;2",
-        "@id": "dtmi:example:wum_spazz;1",
+        "@id": "dtmi:example:snee_fuddle;1",
         "@type": "Interface",
         "schemas": {
           "@context": "dtmi:undefinedExtension:context;1",
-          "@id": "dtmi:example:wum_quan;1",
+          "@id": "dtmi:example:snee_um;1",
           "fields": [
             {
-              "name": "wum_thnad",
+              "name": "snee_humpf",
               "schema": "duration"
             }
           ],
-          "@type": null
+          "@type": 626
         }
       }
     ]
@@ -101,17 +54,17 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;2",
-        "@id": "dtmi:example:wum_jogg;1",
+        "@id": "dtmi:example:snee_snee;1",
         "@type": "Interface",
         "schemas": {
-          "@id": "dtmi:example:wum_floob;1",
+          "@id": "dtmi:example:snee_glikk;1",
           "fields": [
             {
-              "name": "wum_zatz",
+              "name": "snee_nuh",
               "schema": "float"
             }
           ],
-          "@type": true
+          "@type": null
         }
       }
     ]
@@ -124,17 +77,64 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;2",
-        "@id": "dtmi:example:wum_yekk;1",
+        "@id": "dtmi:example:snee_spazz;1",
         "@type": "Interface",
         "schemas": {
           "@context": "dtmi:undefinedExtension:context;1",
-          "@id": "dtmi:example:wum_flunn;1",
+          "@id": "dtmi:example:snee_quan;1",
           "fields": [
             {
-              "name": "wum_itch",
+              "name": "snee_thnad",
               "schema": "integer"
             }
           ],
+          "@type": null
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:snee_jogg;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:snee_floob;1",
+          "fields": [
+            {
+              "name": "snee_zatz",
+              "schema": "long"
+            }
+          ],
+          "@type": true
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:snee_yekk;1",
+        "@type": "Interface",
+        "schemas": {
+          "@context": "dtmi:undefinedExtension:context;1",
+          "@id": "dtmi:example:snee_flunn;1",
+          "fields": [
+            {
+              "name": "snee_itch",
+              "schema": "string"
+            }
+          ],
           "@type": true
         }
       }
@@ -148,66 +148,17 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;2",
-        "@id": "dtmi:example:um_alpha;1",
+        "@id": "dtmi:example:quan_alpha;1",
         "@type": "Interface",
         "schemas": {
-          "@id": "dtmi:example:wum_vroo;1",
+          "@id": "dtmi:example:snee_vroo;1",
           "fields": [
             {
-              "name": "wum_hi",
-              "schema": "long"
-            }
-          ],
-          "@type": {}
-        }
-      }
-    ]
-  },
-  {
-    "valid": false,
-    "options": [
-      "AllowUndefinedExtensions"
-    ],
-    "input": [
-      {
-        "@context": "dtmi:dtdl:context;2",
-        "@id": "dtmi:example:um_delta;1",
-        "@type": "Interface",
-        "schemas": {
-          "@context": "dtmi:undefinedExtension:context;1",
-          "@id": "dtmi:example:um_beta;1",
-          "fields": [
-            {
-              "name": "um_gamma",
-              "schema": "string"
-            }
-          ],
-          "@type": {}
-        }
-      }
-    ]
-  },
-  {
-    "valid": false,
-    "options": [
-      "DisallowUndefinedExtensions"
-    ],
-    "input": [
-      {
-        "@context": "dtmi:dtdl:context;2",
-        "@id": "dtmi:example:um_eta;1",
-        "@type": "Interface",
-        "schemas": {
-          "@id": "dtmi:example:um_epsilon;1",
-          "fields": [
-            {
-              "name": "um_zeta",
+              "name": "snee_hi",
               "schema": "time"
             }
           ],
-          "@type": [
-            626
-          ]
+          "@type": {}
         }
       }
     ]
@@ -220,20 +171,18 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;2",
-        "@id": "dtmi:example:um_kappa;1",
+        "@id": "dtmi:example:quan_delta;1",
         "@type": "Interface",
         "schemas": {
           "@context": "dtmi:undefinedExtension:context;1",
-          "@id": "dtmi:example:um_theta;1",
+          "@id": "dtmi:example:quan_beta;1",
           "fields": [
             {
-              "name": "um_iota",
+              "name": "quan_gamma",
               "schema": "boolean"
             }
           ],
-          "@type": [
-            626
-          ]
+          "@type": {}
         }
       }
     ]
@@ -246,18 +195,18 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;2",
-        "@id": "dtmi:example:um_nu;1",
+        "@id": "dtmi:example:quan_eta;1",
         "@type": "Interface",
         "schemas": {
-          "@id": "dtmi:example:um_lambda;1",
+          "@id": "dtmi:example:quan_epsilon;1",
           "fields": [
             {
-              "name": "um_mu",
+              "name": "quan_zeta",
               "schema": "date"
             }
           ],
           "@type": [
-            null
+            626
           ]
         }
       }
@@ -271,18 +220,69 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;2",
-        "@id": "dtmi:example:um_pi;1",
+        "@id": "dtmi:example:quan_kappa;1",
         "@type": "Interface",
         "schemas": {
           "@context": "dtmi:undefinedExtension:context;1",
-          "@id": "dtmi:example:um_xi;1",
+          "@id": "dtmi:example:quan_theta;1",
           "fields": [
             {
-              "name": "um_omicron",
+              "name": "quan_iota",
               "schema": "dateTime"
             }
           ],
           "@type": [
+            626
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:quan_nu;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:quan_lambda;1",
+          "fields": [
+            {
+              "name": "quan_mu",
+              "schema": "double"
+            }
+          ],
+          "@type": [
+            null
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:quan_pi;1",
+        "@type": "Interface",
+        "schemas": {
+          "@context": "dtmi:undefinedExtension:context;1",
+          "@id": "dtmi:example:quan_xi;1",
+          "fields": [
+            {
+              "name": "quan_omicron",
+              "schema": "duration"
+            }
+          ],
+          "@type": [
             null
           ]
         }
@@ -297,14 +297,14 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;2",
-        "@id": "dtmi:example:um_tau;1",
+        "@id": "dtmi:example:quan_tau;1",
         "@type": "Interface",
         "schemas": {
-          "@id": "dtmi:example:um_rho;1",
+          "@id": "dtmi:example:quan_rho;1",
           "fields": [
             {
-              "name": "um_sigma",
-              "schema": "double"
+              "name": "quan_sigma",
+              "schema": "float"
             }
           ],
           "@type": [
@@ -322,15 +322,15 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;2",
-        "@id": "dtmi:example:um_chi;1",
+        "@id": "dtmi:example:quan_chi;1",
         "@type": "Interface",
         "schemas": {
           "@context": "dtmi:undefinedExtension:context;1",
-          "@id": "dtmi:example:um_upsilon;1",
+          "@id": "dtmi:example:quan_upsilon;1",
           "fields": [
             {
-              "name": "um_phi",
-              "schema": "duration"
+              "name": "quan_phi",
+              "schema": "integer"
             }
           ],
           "@type": [
@@ -348,14 +348,14 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;2",
-        "@id": "dtmi:example:um_yuzz;1",
+        "@id": "dtmi:example:quan_yuzz;1",
         "@type": "Interface",
         "schemas": {
-          "@id": "dtmi:example:um_psi;1",
+          "@id": "dtmi:example:quan_psi;1",
           "fields": [
             {
-              "name": "um_omega",
-              "schema": "float"
+              "name": "quan_omega",
+              "schema": "long"
             }
           ],
           "@type": [
@@ -373,15 +373,15 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;2",
-        "@id": "dtmi:example:um_humpf;1",
+        "@id": "dtmi:example:quan_humpf;1",
         "@type": "Interface",
         "schemas": {
           "@context": "dtmi:undefinedExtension:context;1",
-          "@id": "dtmi:example:um_wum;1",
+          "@id": "dtmi:example:quan_wum;1",
           "fields": [
             {
-              "name": "um_um",
-              "schema": "integer"
+              "name": "quan_um",
+              "schema": "string"
             }
           ],
           "@type": [

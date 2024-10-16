@@ -1,0 +1,53 @@
+﻿[
+  {
+    "valid": false,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:lambda_omega;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:lambda_psi;1",
+          "@type": "Object",
+          "fields": {
+            "@type": [
+              "Field",
+              "http://foo.com/bar"
+            ],
+            "name": "lambda_chi",
+            "schema": "time"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:lambda_um;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:lambda_wum;1",
+          "@type": "Object",
+          "fields": {
+            "@context": "dtmi:undefinedExtension:context;1",
+            "@type": [
+              "Field",
+              "http://foo.com/bar"
+            ],
+            "name": "lambda_yuzz",
+            "schema": "unsignedByte"
+          }
+        }
+      }
+    ]
+  }
+]

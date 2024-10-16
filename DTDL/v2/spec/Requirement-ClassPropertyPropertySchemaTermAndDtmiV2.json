@@ -7,13 +7,13 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;2",
-        "@id": "dtmi:example:sigma_zeta;1",
+        "@id": "dtmi:example:omega_humpf;1",
         "@type": "Interface",
         "contents": {
           "@type": "Property",
-          "name": "sigma_epsilon",
-          "schema": "double",
-          "dtmi:dtdl:property:schema;2": "duration"
+          "name": "omega_um",
+          "schema": "time",
+          "dtmi:dtdl:property:schema;2": "boolean"
         }
       }
     ]
@@ -26,14 +26,14 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;2",
-        "@id": "dtmi:example:sigma_theta;1",
+        "@id": "dtmi:example:omega_glikk;1",
         "@type": "Interface",
         "contents": {
           "@context": "dtmi:undefinedExtension:context;1",
           "@type": "Property",
-          "name": "sigma_eta",
-          "schema": "float",
-          "dtmi:dtdl:property:schema;2": "integer"
+          "name": "omega_fuddle",
+          "schema": "date",
+          "dtmi:dtdl:property:schema;2": "dateTime"
         }
       }
     ]

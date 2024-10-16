@@ -1,0 +1,35 @@
+﻿[
+  {
+    "valid": false,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:humpf_lambda;1",
+        "@type": "Interface",
+        "comment": "humpf_mu",
+        "dtmi:dtdl:property:comment;4": "humpf_nu"
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": [
+          "dtmi:dtdl:context;4",
+          "dtmi:undefinedExtension:context;1"
+        ],
+        "@id": "dtmi:example:humpf_xi;1",
+        "@type": "Interface",
+        "comment": "humpf_omicron",
+        "dtmi:dtdl:property:comment;4": "humpf_pi"
+      }
+    ]
+  }
+]

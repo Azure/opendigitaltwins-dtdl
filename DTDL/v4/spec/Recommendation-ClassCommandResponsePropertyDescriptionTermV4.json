@@ -1,0 +1,52 @@
+﻿[
+  {
+    "valid": true,
+    "desirable": true,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:delta_snee;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Command",
+          "name": "delta_nuh",
+          "response": {
+            "description": [
+              "delta_fuddle"
+            ],
+            "name": "delta_glikk",
+            "schema": "double"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "desirable": false,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:delta_floob;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Command",
+          "name": "delta_spazz",
+          "response": {
+            "dtmi:dtdl:property:description;4": [
+              "delta_quan"
+            ],
+            "name": "delta_thnad",
+            "schema": "duration"
+          }
+        }
+      }
+    ]
+  }
+]

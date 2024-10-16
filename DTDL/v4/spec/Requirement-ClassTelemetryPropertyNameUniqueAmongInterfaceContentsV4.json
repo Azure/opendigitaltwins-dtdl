@@ -1,0 +1,80 @@
+﻿[
+  {
+    "valid": true,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:hi_zeta;1",
+        "@type": "Interface",
+        "contents": [
+          {
+            "@type": "Telemetry",
+            "schema": "date",
+            "name": "epsilon_upsilon"
+          },
+          {
+            "@type": "Telemetry",
+            "schema": "dateTime",
+            "name": "epsilon_phi"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:hi_eta;1",
+        "@type": "Interface",
+        "contents": [
+          {
+            "@type": "Telemetry",
+            "schema": "decimal",
+            "name": "epsilon_upsilon"
+          },
+          {
+            "@type": "Telemetry",
+            "schema": "double",
+            "name": "epsilon_upsilon"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": [
+          "dtmi:dtdl:context;4",
+          "dtmi:undefinedExtension:context;1"
+        ],
+        "@id": "dtmi:example:hi_theta;1",
+        "@type": "Interface",
+        "contents": [
+          {
+            "@type": "Telemetry",
+            "schema": "duration",
+            "name": "epsilon_upsilon"
+          },
+          {
+            "@type": "Telemetry",
+            "schema": "float",
+            "name": "epsilon_upsilon"
+          }
+        ]
+      }
+    ]
+  }
+]

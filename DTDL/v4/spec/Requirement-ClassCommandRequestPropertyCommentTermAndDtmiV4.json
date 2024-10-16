@@ -1,0 +1,49 @@
+﻿[
+  {
+    "valid": false,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:omicron_phi;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Command",
+          "name": "omicron_upsilon",
+          "request": {
+            "comment": "omicron_rho",
+            "dtmi:dtdl:property:comment;4": "omicron_sigma",
+            "name": "omicron_tau",
+            "schema": "duration"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:omicron_wum;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Command",
+          "name": "omicron_yuzz",
+          "request": {
+            "@context": "dtmi:undefinedExtension:context;1",
+            "comment": "omicron_chi",
+            "dtmi:dtdl:property:comment;4": "omicron_psi",
+            "name": "omicron_omega",
+            "schema": "float"
+          }
+        }
+      }
+    ]
+  }
+]

@@ -1,0 +1,30 @@
+﻿[
+  {
+    "valid": true,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:um_phi;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:um_rho;1",
+          "@type": "Map",
+          "dtmi:dtdl:property:displayName;4": [
+            "um_sigma"
+          ],
+          "mapKey": {
+            "name": "um_tau",
+            "schema": "string"
+          },
+          "mapValue": {
+            "name": "um_upsilon",
+            "schema": "date"
+          }
+        }
+      }
+    ]
+  }
+]

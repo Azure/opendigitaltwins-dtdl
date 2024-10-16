@@ -1,0 +1,48 @@
+﻿[
+  {
+    "valid": true,
+    "desirable": true,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:beta_humpf;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:beta_um;1",
+          "@type": "Enum",
+          "enumValues": {
+            "name": "beta_wum",
+            "enumValue": "delta_psi"
+          },
+          "valueSchema": "string"
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "desirable": false,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:beta_nuh;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:beta_glikk;1",
+          "@type": "Enum",
+          "enumValues": {
+            "name": "beta_fuddle",
+            "enumValue": "delta_psi"
+          },
+          "valueSchema": "dtmi:dtdl:instance:Schema:string;4"
+        }
+      }
+    ]
+  }
+]

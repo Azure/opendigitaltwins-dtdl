@@ -1,0 +1,49 @@
+﻿[
+  {
+    "valid": false,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:iota_phi;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Command",
+          "name": "iota_upsilon",
+          "response": {
+            "name": "iota_tau",
+            "nullable": false,
+            "dtmi:dtdl:property:nullable;4": true,
+            "schema": "time"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:iota_omega;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Command",
+          "name": "iota_psi",
+          "response": {
+            "@context": "dtmi:undefinedExtension:context;1",
+            "name": "iota_chi",
+            "nullable": false,
+            "dtmi:dtdl:property:nullable;4": true,
+            "schema": "unsignedByte"
+          }
+        }
+      }
+    ]
+  }
+]

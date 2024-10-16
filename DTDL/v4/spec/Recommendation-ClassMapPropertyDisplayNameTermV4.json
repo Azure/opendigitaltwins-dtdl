@@ -1,0 +1,60 @@
+﻿[
+  {
+    "valid": true,
+    "desirable": true,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:um_wum;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:um_chi;1",
+          "@type": "Map",
+          "displayName": [
+            "um_psi"
+          ],
+          "mapKey": {
+            "name": "um_omega",
+            "schema": "string"
+          },
+          "mapValue": {
+            "name": "um_yuzz",
+            "schema": "dateTime"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "desirable": false,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:um_nuh;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:um_um;1",
+          "@type": "Map",
+          "dtmi:dtdl:property:displayName;4": [
+            "um_humpf"
+          ],
+          "mapKey": {
+            "name": "um_fuddle",
+            "schema": "string"
+          },
+          "mapValue": {
+            "name": "um_glikk",
+            "schema": "decimal"
+          }
+        }
+      }
+    ]
+  }
+]

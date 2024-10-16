@@ -1,0 +1,201 @@
+﻿[
+  {
+    "@context": "dtmi:dtdl:context;4",
+    "@id": "dtmi:dtdl:instance:Schema:boolean;4",
+    "@type": [ "Boolean", "Alias" ],
+    "aliasFor": "dtmi:dtdl:instance:Schema:boolean;3",
+    "displayName": "boolean",
+    "description": {
+      "en-US": "a boolean value"
+    }
+  },
+  {
+    "@context": "dtmi:dtdl:context;4",
+    "@id": "dtmi:dtdl:instance:Schema:byte;4",
+    "@type": [ "Byte" ],
+    "displayName": "byte",
+    "description": {
+      "en-US": "a signed integral numeric value that is expressible in 1 byte"
+    }
+  },
+  {
+    "@context": "dtmi:dtdl:context;4",
+    "@id": "dtmi:dtdl:instance:Schema:double;4",
+    "@type": [ "Double", "Alias" ],
+    "aliasFor": "dtmi:dtdl:instance:Schema:double;3",
+    "displayName": "double",
+    "description": {
+      "en-US": "a finite numeric value that is expressible in IEEE 754 double-precision floating point format, conformant with the numeric range of xsd:double"
+    }
+  },
+  {
+    "@context": "dtmi:dtdl:context;4",
+    "@id": "dtmi:dtdl:instance:Schema:float;4",
+    "@type": [ "Float", "Alias" ],
+    "aliasFor": "dtmi:dtdl:instance:Schema:float;3",
+    "displayName": "float",
+    "description": {
+      "en-US": "a finite numeric value that is expressible in IEEE 754 single-precision floating point format, conformant with the numeric range of xsd:float"
+    }
+  },
+  {
+    "@context": "dtmi:dtdl:context;4",
+    "@id": "dtmi:dtdl:instance:Schema:integer;4",
+    "@type": [ "Integer", "Alias" ],
+    "aliasFor": "dtmi:dtdl:instance:Schema:integer;3",
+    "displayName": "integer",
+    "description": {
+      "en-US": "a signed integral numeric value that is expressible in 4 bytes"
+    }
+  },
+  {
+    "@context": "dtmi:dtdl:context;4",
+    "@id": "dtmi:dtdl:instance:Schema:long;4",
+    "@type": [ "Long", "Alias" ],
+    "aliasFor": "dtmi:dtdl:instance:Schema:long;3",
+    "displayName": "long",
+    "description": {
+      "en-US": "a signed integral numeric value that is expressible in 8 bytes"
+    }
+  },
+  {
+    "@context": "dtmi:dtdl:context;4",
+    "@id": "dtmi:dtdl:instance:Schema:short;4",
+    "@type": [ "Short" ],
+    "displayName": "short",
+    "description": {
+      "en-US": "a signed integral numeric value that is expressible in 2 bytes"
+    }
+  },
+  {
+    "@context": "dtmi:dtdl:context;4",
+    "@id": "dtmi:dtdl:instance:Schema:unsignedByte;4",
+    "@type": [ "UnsignedByte" ],
+    "displayName": "unsignedByte",
+    "description": {
+      "en-US": "an unsigned integral numeric value that is expressible in 1 byte"
+    }
+  },
+  {
+    "@context": "dtmi:dtdl:context;4",
+    "@id": "dtmi:dtdl:instance:Schema:unsignedInteger;4",
+    "@type": [ "UnsignedInteger" ],
+    "displayName": "unsignedInteger",
+    "description": {
+      "en-US": "an unsigned integral numeric value that is expressible in 4 bytes"
+    }
+  },
+  {
+    "@context": "dtmi:dtdl:context;4",
+    "@id": "dtmi:dtdl:instance:Schema:unsignedLong;4",
+    "@type": [ "UnsignedLong" ],
+    "displayName": "unsignedLong",
+    "description": {
+      "en-US": "an unsigned integral numeric value that is expressible in 8 bytes"
+    }
+  },
+  {
+    "@context": "dtmi:dtdl:context;4",
+    "@id": "dtmi:dtdl:instance:Schema:unsignedShort;4",
+    "@type": [ "UnsignedShort" ],
+    "displayName": "unsignedShort",
+    "description": {
+      "en-US": "an unsigned integral numeric value that is expressible in 2 bytes"
+    }
+  },
+  {
+    "@context": "dtmi:dtdl:context;4",
+    "@id": "dtmi:dtdl:instance:Schema:decimal;4",
+    "@type": [ "Decimal" ],
+    "displayName": "decimal",
+    "description": {
+      "en-US": "a string of decimal digits with an optional decimal point and fractional component, optionally preceded by a sign"
+    }
+  },
+  {
+    "@context": "dtmi:dtdl:context;4",
+    "@id": "dtmi:dtdl:instance:Schema:date;4",
+    "@type": [ "Date", "Alias" ],
+    "aliasFor": "dtmi:dtdl:instance:Schema:date;3",
+    "displayName": "date",
+    "description": {
+      "en-US": "a date in ISO 8601 format, per [RFC 3339](https://tools.ietf.org/html/rfc3339)"
+    }
+  },
+  {
+    "@context": "dtmi:dtdl:context;4",
+    "@id": "dtmi:dtdl:instance:Schema:dateTime;4",
+    "@type": [ "DateTime", "Alias" ],
+    "aliasFor": "dtmi:dtdl:instance:Schema:dateTime;3",
+    "displayName": "dateTime",
+    "description": {
+      "en-US": "a date and time in ISO 8601 format, per [RFC 3339](https://tools.ietf.org/html/rfc3339)"
+    }
+  },
+  {
+    "@context": "dtmi:dtdl:context;4",
+    "@id": "dtmi:dtdl:instance:Schema:duration;4",
+    "@type": [ "Duration", "Alias" ],
+    "aliasFor": "dtmi:dtdl:instance:Schema:duration;3",
+    "displayName": "duration",
+    "description": {
+      "en-US": "a duration in ISO 8601 format"
+    }
+  },
+  {
+    "@context": "dtmi:dtdl:context;4",
+    "@id": "dtmi:dtdl:instance:Schema:time;4",
+    "@type": [ "Time", "Alias" ],
+    "aliasFor": "dtmi:dtdl:instance:Schema:time;3",
+    "displayName": "time",
+    "description": {
+      "en-US": "a time in ISO 8601 format, per [RFC 3339](https://tools.ietf.org/html/rfc3339)"
+    }
+  },
+  {
+    "@context": "dtmi:dtdl:context;4",
+    "@id": "dtmi:dtdl:instance:Schema:string;4",
+    "@type": [ "String", "Alias" ],
+    "aliasFor": "dtmi:dtdl:instance:Schema:string;3",
+    "displayName": "string",
+    "description": {
+      "en-US": "a UTF8 string"
+    }
+  },
+  {
+    "@context": "dtmi:dtdl:context;4",
+    "@id": "dtmi:dtdl:instance:Schema:bytes;4",
+    "@type": [ "Bytes" ],
+    "displayName": "bytes",
+    "description": {
+      "en-US": "an array of bytes"
+    }
+  },
+  {
+    "@context": "dtmi:dtdl:context;4",
+    "@id": "dtmi:dtdl:instance:Schema:uuid;4",
+    "@type": [ "Uuid" ],
+    "displayName": "uuid",
+    "description": {
+      "en-US": "a UUID string per RFC 9562"
+    }
+  },
+  {
+    "@context": "dtmi:dtdl:context;4",
+    "@id": "dtmi:dtdl:instance:CommandType:asynchronous;4",
+    "@type": "CommandType",
+    "displayName": "asynchronous",
+    "description": {
+      "en-US": "The command will complete sometime after control returns to the caller. After the command completes, the result and any outputs are available."
+    }
+  },
+  {
+    "@context": "dtmi:dtdl:context;4",
+    "@id": "dtmi:dtdl:instance:CommandType:synchronous;4",
+    "@type": "CommandType",
+    "displayName": "synchronous",
+    "description": {
+      "en-US": "The command will be complete when control returns to the caller. The result and any outputs are available immediately."
+    }
+  }
+]

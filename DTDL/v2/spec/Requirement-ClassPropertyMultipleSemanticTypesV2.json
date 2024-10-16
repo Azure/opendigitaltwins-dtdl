@@ -7,7 +7,7 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;2",
-        "@id": "dtmi:example:eta_rho;1",
+        "@id": "dtmi:example:nu_nuh;1",
         "@type": "Interface",
         "contents": {
           "@type": [
@@ -15,8 +15,8 @@
             "Acceleration",
             "Angle"
           ],
-          "name": "eta_pi",
-          "schema": "double"
+          "name": "nu_glikk",
+          "schema": "integer"
         }
       }
     ]
@@ -29,7 +29,7 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;2",
-        "@id": "dtmi:example:eta_tau;1",
+        "@id": "dtmi:example:nu_quan;1",
         "@type": "Interface",
         "contents": {
           "@context": "dtmi:undefinedExtension:context;1",
@@ -38,8 +38,8 @@
             "Acceleration",
             "Angle"
           ],
-          "name": "eta_sigma",
-          "schema": "float"
+          "name": "nu_snee",
+          "schema": "long"
         }
       }
     ]
@@ -52,7 +52,7 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;2",
-        "@id": "dtmi:example:eta_phi;1",
+        "@id": "dtmi:example:nu_spazz;1",
         "@type": "Interface",
         "contents": {
           "@type": [
@@ -60,54 +60,7 @@
             "Acceleration",
             "dtmi:standard:class:Angle;2"
           ],
-          "name": "eta_upsilon",
-          "schema": "integer",
-          "unit": "centimetrePerSecondSquared"
-        }
-      }
-    ]
-  },
-  {
-    "valid": false,
-    "options": [
-      "AllowUndefinedExtensions"
-    ],
-    "input": [
-      {
-        "@context": "dtmi:dtdl:context;2",
-        "@id": "dtmi:example:eta_psi;1",
-        "@type": "Interface",
-        "contents": {
-          "@context": "dtmi:undefinedExtension:context;1",
-          "@type": [
-            "Property",
-            "Acceleration",
-            "dtmi:standard:class:Angle;2"
-          ],
-          "name": "eta_chi",
-          "schema": "long",
-          "unit": "centimetrePerSecondSquared"
-        }
-      }
-    ]
-  },
-  {
-    "valid": false,
-    "options": [
-      "DisallowUndefinedExtensions"
-    ],
-    "input": [
-      {
-        "@context": "dtmi:dtdl:context;2",
-        "@id": "dtmi:example:eta_yuzz;1",
-        "@type": "Interface",
-        "contents": {
-          "@type": [
-            "Property",
-            "dtmi:standard:class:Acceleration;2",
-            "dtmi:standard:class:Angle;2"
-          ],
-          "name": "eta_omega",
+          "name": "nu_thnad",
           "schema": "double",
           "unit": "centimetrePerSecondSquared"
         }
@@ -122,7 +75,54 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;2",
-        "@id": "dtmi:example:eta_um;1",
+        "@id": "dtmi:example:nu_zatz;1",
+        "@type": "Interface",
+        "contents": {
+          "@context": "dtmi:undefinedExtension:context;1",
+          "@type": [
+            "Property",
+            "Acceleration",
+            "dtmi:standard:class:Angle;2"
+          ],
+          "name": "nu_floob",
+          "schema": "float",
+          "unit": "centimetrePerSecondSquared"
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:nu_flunn;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": [
+            "Property",
+            "dtmi:standard:class:Acceleration;2",
+            "dtmi:standard:class:Angle;2"
+          ],
+          "name": "nu_jogg",
+          "schema": "integer",
+          "unit": "centimetrePerSecondSquared"
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:nu_yekk;1",
         "@type": "Interface",
         "contents": {
           "@context": "dtmi:undefinedExtension:context;1",
@@ -131,8 +131,8 @@
             "dtmi:standard:class:Acceleration;2",
             "dtmi:standard:class:Angle;2"
           ],
-          "name": "eta_wum",
-          "schema": "float",
+          "name": "nu_itch",
+          "schema": "long",
           "unit": "centimetrePerSecondSquared"
         }
       }

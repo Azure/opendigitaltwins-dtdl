@@ -1,0 +1,27 @@
+﻿[
+  {
+    "valid": true,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:thnad_zeta;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:thnad_delta;1",
+          "@type": "Map",
+          "mapValue": {
+            "name": "thnad_epsilon",
+            "schema": "long"
+          },
+          "mapKey": {
+            "dtmi:dtdl:property:name;4": "thnad_gamma",
+            "schema": "string"
+          }
+        }
+      }
+    ]
+  }
+]

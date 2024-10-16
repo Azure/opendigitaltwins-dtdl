@@ -1,0 +1,116 @@
+﻿[
+  {
+    "valid": false,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:vroo_psi;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:vroo_upsilon;1",
+          "@type": [
+            "Map",
+            "dtmi:foo:bar;1"
+          ],
+          "mapKey": {
+            "name": "vroo_phi",
+            "schema": "string"
+          },
+          "mapValue": {
+            "name": "vroo_chi",
+            "schema": "short"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:vroo_um;1",
+        "@type": "Interface",
+        "schemas": {
+          "@context": "dtmi:undefinedExtension:context;1",
+          "@id": "dtmi:example:vroo_omega;1",
+          "@type": [
+            "Map",
+            "dtmi:foo:bar;1"
+          ],
+          "mapKey": {
+            "name": "vroo_yuzz",
+            "schema": "string"
+          },
+          "mapValue": {
+            "name": "vroo_wum",
+            "schema": "string"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:vroo_nuh;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:vroo_humpf;1",
+          "@type": [
+            "Map",
+            "boolean"
+          ],
+          "mapKey": {
+            "name": "vroo_fuddle",
+            "schema": "string"
+          },
+          "mapValue": {
+            "name": "vroo_glikk",
+            "schema": "time"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:vroo_spazz;1",
+        "@type": "Interface",
+        "schemas": {
+          "@context": "dtmi:undefinedExtension:context;1",
+          "@id": "dtmi:example:vroo_snee;1",
+          "@type": [
+            "Map",
+            "boolean"
+          ],
+          "mapKey": {
+            "name": "vroo_quan",
+            "schema": "string"
+          },
+          "mapValue": {
+            "name": "vroo_thnad",
+            "schema": "unsignedByte"
+          }
+        }
+      }
+    ]
+  }
+]

@@ -1,0 +1,57 @@
+﻿[
+  {
+    "valid": false,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:tau_phi;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:tau_tau;1",
+          "@type": "Map",
+          "mapValue": {
+            "name": "tau_upsilon",
+            "schema": "integer"
+          },
+          "mapKey": {
+            "comment": "tau_pi",
+            "dtmi:dtdl:property:comment;4": "tau_rho",
+            "name": "tau_sigma",
+            "schema": "string"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:tau_um;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:tau_yuzz;1",
+          "@type": "Map",
+          "mapValue": {
+            "name": "tau_wum",
+            "schema": "long"
+          },
+          "mapKey": {
+            "@context": "dtmi:undefinedExtension:context;1",
+            "comment": "tau_chi",
+            "dtmi:dtdl:property:comment;4": "tau_psi",
+            "name": "tau_omega",
+            "schema": "string"
+          }
+        }
+      }
+    ]
+  }
+]

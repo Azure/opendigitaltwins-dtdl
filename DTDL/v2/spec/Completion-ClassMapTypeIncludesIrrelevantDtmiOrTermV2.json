@@ -7,77 +7,20 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;2",
-        "@id": "dtmi:example:lambda_iota;1",
+        "@id": "dtmi:example:omicron_yekk;1",
         "@type": "Interface",
         "schemas": {
-          "@id": "dtmi:example:lambda_zeta;1",
+          "@id": "dtmi:example:omicron_jogg;1",
           "@type": [
             "Map",
             "dtmi:foo:bar;1"
           ],
           "mapKey": {
-            "name": "lambda_eta",
+            "name": "omicron_flunn",
             "schema": "string"
           },
           "mapValue": {
-            "name": "lambda_theta",
-            "schema": "dateTime"
-          }
-        }
-      }
-    ]
-  },
-  {
-    "valid": true,
-    "options": [
-      "AllowUndefinedExtensions"
-    ],
-    "input": [
-      {
-        "@context": "dtmi:dtdl:context;2",
-        "@id": "dtmi:example:lambda_nu;1",
-        "@type": "Interface",
-        "schemas": {
-          "@context": "dtmi:undefinedExtension:context;1",
-          "@id": "dtmi:example:lambda_kappa;1",
-          "@type": [
-            "Map",
-            "dtmi:foo:bar;1"
-          ],
-          "mapKey": {
-            "name": "lambda_lambda",
-            "schema": "string"
-          },
-          "mapValue": {
-            "name": "lambda_mu",
-            "schema": "double"
-          }
-        }
-      }
-    ]
-  },
-  {
-    "valid": false,
-    "options": [
-      "DisallowUndefinedExtensions"
-    ],
-    "input": [
-      {
-        "@context": "dtmi:dtdl:context;2",
-        "@id": "dtmi:example:lambda_rho;1",
-        "@type": "Interface",
-        "schemas": {
-          "@id": "dtmi:example:lambda_xi;1",
-          "@type": [
-            "Map",
-            "boolean"
-          ],
-          "mapKey": {
-            "name": "lambda_omicron",
-            "schema": "string"
-          },
-          "mapValue": {
-            "name": "lambda_pi",
+            "name": "omicron_itch",
             "schema": "duration"
           }
         }
@@ -92,22 +35,79 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;2",
-        "@id": "dtmi:example:lambda_phi;1",
+        "@id": "dtmi:example:pi_beta;1",
         "@type": "Interface",
         "schemas": {
           "@context": "dtmi:undefinedExtension:context;1",
-          "@id": "dtmi:example:lambda_sigma;1",
+          "@id": "dtmi:example:omicron_vroo;1",
+          "@type": [
+            "Map",
+            "dtmi:foo:bar;1"
+          ],
+          "mapKey": {
+            "name": "omicron_hi",
+            "schema": "string"
+          },
+          "mapValue": {
+            "name": "pi_alpha",
+            "schema": "float"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:pi_zeta;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:pi_gamma;1",
           "@type": [
             "Map",
             "boolean"
           ],
           "mapKey": {
-            "name": "lambda_tau",
+            "name": "pi_delta",
             "schema": "string"
           },
           "mapValue": {
-            "name": "lambda_upsilon",
-            "schema": "float"
+            "name": "pi_epsilon",
+            "schema": "integer"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:pi_kappa;1",
+        "@type": "Interface",
+        "schemas": {
+          "@context": "dtmi:undefinedExtension:context;1",
+          "@id": "dtmi:example:pi_eta;1",
+          "@type": [
+            "Map",
+            "boolean"
+          ],
+          "mapKey": {
+            "name": "pi_theta",
+            "schema": "string"
+          },
+          "mapValue": {
+            "name": "pi_iota",
+            "schema": "long"
           }
         }
       }

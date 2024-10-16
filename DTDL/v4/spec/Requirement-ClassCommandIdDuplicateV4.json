@@ -1,0 +1,47 @@
+﻿[
+  {
+    "valid": false,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:omicron_chi;1",
+        "@type": "Interface",
+        "extends": {
+          "@id": "dtmi:example:omicron_chi;1",
+          "@type": "Interface",
+          "contents": {
+            "@id": "dtmi:example:omicron_chi;1",
+            "@type": "Command",
+            "name": "omicron_psi"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:omicron_omega;1",
+        "@type": "Interface",
+        "extends": {
+          "@id": "dtmi:example:omicron_omega;1",
+          "@type": "Interface",
+          "contents": {
+            "@context": "dtmi:undefinedExtension:context;1",
+            "@id": "dtmi:example:omicron_omega;1",
+            "@type": "Command",
+            "name": "omicron_yuzz"
+          }
+        }
+      }
+    ]
+  }
+]

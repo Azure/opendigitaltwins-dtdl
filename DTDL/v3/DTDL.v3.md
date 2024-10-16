@@ -48,6 +48,7 @@ When a digital twin is modeled using the DTDL, its behaviors are defined using t
 When writing a digital twin definition, it's necessary to specify the version of DTDL being used.
 Because DTDL is based on JSON-LD, we use the JSON-LD context (the `@context` statement) to specify the version of DTDL being used.
 For DTDL version 3, the appropriate context specifier is "dtmi:dtdl:context;3".
+See the [Context](#context) section for more details.
 
 ## Interface
 
@@ -450,9 +451,9 @@ A full set of primitive data types are provided and can be specified directly as
 | `boolean` | a boolean value |
 | `date` | a date in ISO 8601 format, per [RFC 3339](https://tools.ietf.org/html/rfc3339) |
 | `dateTime` | a date and time in ISO 8601 format, per [RFC 3339](https://tools.ietf.org/html/rfc3339) |
-| `double` | a finite numeric value that is expressible in IEEE 754 double-precision floating point format, conformant with xsd:double |
+| `double` | a finite numeric value that is expressible in IEEE 754 double-precision floating point format, conformant with the numeric range of xsd:double |
 | `duration` | a duration in ISO 8601 format |
-| `float` | a finite numeric value that is expressible in IEEE 754 single-precision floating point format, conformant with xsd:float |
+| `float` | a finite numeric value that is expressible in IEEE 754 single-precision floating point format, conformant with the numeric range of xsd:float |
 | `integer` | a signed integral numeric value that is expressible in 4 bytes |
 | `long` | a signed integral numeric value that is expressible in 8 bytes |
 | `string` | a UTF8 string |
@@ -464,8 +465,9 @@ Complex schemas are designed for supporting complex data types made up of primit
 In DTDL v3, the complex schemas are [Array](#array), [Enum](#enum), [Map](#map), and [Object](#object).
 A complex schema can be specified directly as the value of a schema property or described in the Interface schemas set and referenced in a schema property.
 
-Complex schema definitions are recursive.
+Complex schema definitions are recursive but not self-referential.
 An Array's elementSchema may be Array, Enum, Map, Object, or any of the [primitive schema](#primitive-schema) types.
+However, the elementSchema must not refer to the Array itself or to another complex schema that refers to the Array.
 The same is true for a Map's mapValue's schema and an Object's field's schema.
 For DTDL v3, the maximum depth of nested complex schemas is 5 levels.
 
@@ -632,7 +634,7 @@ The chart below lists the properties that a MapKey may have.
 | `description` | optional | localizable *string* | max 512 characters | A localizable description for display. |
 | `displayName` | optional | localizable *string* | max 512 characters | A localizable name for display. |
 | `name` | required | *string* | max 512 characters; contains only alphanumerics and underscore, starting with a letter, ending with alphanumeric | The programming name of the element. |
-| `schema` | required | [String](#string) | must be *string* | The data type of the Map's key, which must be string. |
+| `schema` | required | [primitive schema](#primitive-schema) | must be *string* | The data type of the Map's key, which must be string. |
 
 ### MapValue
 
@@ -938,7 +940,7 @@ IRIs in DTDL are [JSON-LD IRIs](https://w3c.github.io/json-ld-syntax/#iris) and 
 Some string properties in models are meant for display and, therefore, support localization.
 Digital twin models use JSON-LD's string internationalization support for localization.
 Each localizable property (e.g. `displayName` and `description`) is defined to be a JSON-LD language map (`"@container": "@language"`).
-The keys of the language map must be language tag strings (see [BCP 47](https://tools.ietf.org/html/bcp47)).
+The keys of the language map must be language tag strings (see [BCP 47](https://www.rfc-editor.org/info/bcp47)).
 [ISO 639](https://www.loc.gov/standards/iso639-2/php/code_list.php) provides a list of language tags.
 The default language for DTDL documents is English.
 
@@ -988,9 +990,14 @@ The chart below lists the language extensions that are currently available for u
 | --- | --- | --- |
 | [QuantitativeTypes v1](./DTDL.quantitativeTypes.v1.md) | feature | A set of standard semantic types, unit types, and units. |
 | [Historization v1](./DTDL.historization.v1.md) | feature | Record the historical sequence of values of a Property or Telemetry and the times at which values change. |
+| [Historization v2](../v4/DTDL.historization.v2.md) | feature | Record the historical sequence of values of a Property or Telemetry and the times at which values change. |
 | [Annotation v1](./DTDL.annotation.v1.md) | feature | Add custom metadata to a Property or a Telemetry. |
+| [Annotation v2](../v4/DTDL.annotation.v2.md) | feature | Add custom metadata to a Property or a Telemetry. |
 | [Overriding v1](./DTDL.overriding.v1.md) | feature | Override a model property with an instance value. |
+| [Overriding v2](../v4/DTDL.overriding.v2.md) | feature | Override a model property with an instance value. |
 | [MQTT v1](./DTDL.mqtt.v1.md) | feature | Specify Interface properties to facilitate communication via the MQTT pub/sub protocol. |
+| [MQTT v2](../v4/DTDL.mqtt.v2.md) | feature | Specify Interface properties to facilitate communication via the MQTT pub/sub protocol. |
+| [Requirement v1](../v4/DTDL.requirement.v1.md) | feature | Selectively designate one or more fields in an Object as required. |
 
 ## Changes from Version 2
 

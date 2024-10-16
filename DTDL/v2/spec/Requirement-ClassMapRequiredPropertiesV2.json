@@ -7,62 +7,16 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;2",
-        "@id": "dtmi:example:theta_beta;1",
+        "@id": "dtmi:example:mu_thnad;1",
         "@type": "Interface",
         "schemas": {
-          "@id": "dtmi:example:eta_vroo;1",
+          "@id": "dtmi:example:mu_nuh;1",
           "mapKey": {
-            "name": "eta_hi",
+            "name": "mu_snee",
             "schema": "string"
           },
           "mapValue": {
-            "name": "theta_alpha",
-            "schema": "time"
-          }
-        }
-      }
-    ]
-  },
-  {
-    "valid": false,
-    "options": [
-      "AllowUndefinedExtensions"
-    ],
-    "input": [
-      {
-        "@context": "dtmi:dtdl:context;2",
-        "@id": "dtmi:example:theta_zeta;1",
-        "@type": "Interface",
-        "schemas": {
-          "@context": "dtmi:undefinedExtension:context;1",
-          "@id": "dtmi:example:theta_gamma;1",
-          "mapKey": {
-            "name": "theta_delta",
-            "schema": "string"
-          },
-          "mapValue": {
-            "name": "theta_epsilon",
-            "schema": "boolean"
-          }
-        }
-      }
-    ]
-  },
-  {
-    "valid": false,
-    "options": [
-      "DisallowUndefinedExtensions"
-    ],
-    "input": [
-      {
-        "@context": "dtmi:dtdl:context;2",
-        "@id": "dtmi:example:theta_iota;1",
-        "@type": "Interface",
-        "schemas": {
-          "@id": "dtmi:example:theta_eta;1",
-          "@type": "Map",
-          "mapValue": {
-            "name": "theta_theta",
+            "name": "mu_quan",
             "schema": "date"
           }
         }
@@ -77,14 +31,17 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;2",
-        "@id": "dtmi:example:theta_mu;1",
+        "@id": "dtmi:example:mu_jogg;1",
         "@type": "Interface",
         "schemas": {
           "@context": "dtmi:undefinedExtension:context;1",
-          "@id": "dtmi:example:theta_kappa;1",
-          "@type": "Map",
+          "@id": "dtmi:example:mu_spazz;1",
+          "mapKey": {
+            "name": "mu_floob",
+            "schema": "string"
+          },
           "mapValue": {
-            "name": "theta_lambda",
+            "name": "mu_zatz",
             "schema": "dateTime"
           }
         }
@@ -99,13 +56,56 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;2",
-        "@id": "dtmi:example:theta_omicron;1",
+        "@id": "dtmi:example:mu_yekk;1",
         "@type": "Interface",
         "schemas": {
-          "@id": "dtmi:example:theta_nu;1",
+          "@id": "dtmi:example:mu_flunn;1",
+          "@type": "Map",
+          "mapValue": {
+            "name": "mu_itch",
+            "schema": "double"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:nu_alpha;1",
+        "@type": "Interface",
+        "schemas": {
+          "@context": "dtmi:undefinedExtension:context;1",
+          "@id": "dtmi:example:mu_vroo;1",
+          "@type": "Map",
+          "mapValue": {
+            "name": "mu_hi",
+            "schema": "duration"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:nu_delta;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:nu_beta;1",
           "@type": "Map",
           "mapKey": {
-            "name": "theta_xi",
+            "name": "nu_gamma",
             "schema": "string"
           }
         }
@@ -120,14 +120,14 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;2",
-        "@id": "dtmi:example:theta_sigma;1",
+        "@id": "dtmi:example:nu_eta;1",
         "@type": "Interface",
         "schemas": {
           "@context": "dtmi:undefinedExtension:context;1",
-          "@id": "dtmi:example:theta_pi;1",
+          "@id": "dtmi:example:nu_epsilon;1",
           "@type": "Map",
           "mapKey": {
-            "name": "theta_rho",
+            "name": "nu_zeta",
             "schema": "string"
           }
         }

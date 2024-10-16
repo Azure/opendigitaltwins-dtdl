@@ -7,22 +7,22 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;3",
-        "@id": "dtmi:example:eta_epsilon;1",
+        "@id": "dtmi:example:tau_epsilon;1",
         "@type": "Interface",
         "contents": {
           "@type": "Property",
-          "name": "eta_delta",
+          "name": "tau_delta",
           "schema": {
             "@type": "Map",
             "mapKey": {
-              "name": "eta_gamma",
+              "name": "tau_gamma",
               "schema": "string"
             },
             "mapValue": {
-              "name": "eta_beta",
+              "name": "tau_beta",
               "schema": {
                 "@type": "Array",
-                "elementSchema": "dateTime"
+                "elementSchema": "boolean"
               }
             }
           }
@@ -38,23 +38,23 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;3",
-        "@id": "dtmi:example:eta_iota;1",
+        "@id": "dtmi:example:tau_iota;1",
         "@type": "Interface",
         "contents": {
           "@type": "Property",
-          "name": "eta_theta",
+          "name": "tau_theta",
           "schema": {
             "@type": "Map",
             "mapKey": {
-              "name": "eta_eta",
+              "name": "tau_eta",
               "schema": "string"
             },
             "mapValue": {
-              "name": "eta_zeta",
+              "name": "tau_zeta",
               "schema": [
                 {
                   "@type": "Array",
-                  "elementSchema": "double"
+                  "elementSchema": "date"
                 }
               ]
             }
@@ -71,24 +71,24 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;3",
-        "@id": "dtmi:example:eta_kappa;1",
+        "@id": "dtmi:example:tau_kappa;1",
         "@type": "Interface",
         "schemas": {
           "@id": "dtmi:ex:dependentRef;1",
           "@type": "Array",
-          "elementSchema": "duration"
+          "elementSchema": "dateTime"
         },
         "contents": {
           "@type": "Property",
-          "name": "eta_nu",
+          "name": "tau_nu",
           "schema": {
             "@type": "Map",
             "mapKey": {
-              "name": "eta_mu",
+              "name": "tau_mu",
               "schema": "string"
             },
             "mapValue": {
-              "name": "eta_lambda",
+              "name": "tau_lambda",
               "schema": "dtmi:ex:dependentRef;1"
             }
           }
@@ -104,24 +104,24 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;3",
-        "@id": "dtmi:example:eta_xi;1",
+        "@id": "dtmi:example:tau_xi;1",
         "@type": "Interface",
         "schemas": {
           "@id": "dtmi:ex:dependentRef;1",
           "@type": "Array",
-          "elementSchema": "float"
+          "elementSchema": "double"
         },
         "contents": {
           "@type": "Property",
-          "name": "eta_rho",
+          "name": "tau_rho",
           "schema": {
             "@type": "Map",
             "mapKey": {
-              "name": "eta_pi",
+              "name": "tau_pi",
               "schema": "string"
             },
             "mapValue": {
-              "name": "eta_omicron",
+              "name": "tau_omicron",
               "schema": [
                 "dtmi:ex:dependentRef;1"
               ]
@@ -139,23 +139,23 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;3",
-        "@id": "dtmi:example:eta_chi;1",
+        "@id": "dtmi:example:tau_chi;1",
         "@type": "Interface",
         "contents": {
           "@type": "Property",
-          "name": "eta_phi",
+          "name": "tau_phi",
           "schema": {
             "@type": "Map",
             "mapKey": {
-              "name": "eta_upsilon",
+              "name": "tau_upsilon",
               "schema": "string"
             },
             "mapValue": {
-              "name": "eta_tau",
+              "name": "tau_tau",
               "schema": {
-                "@id": "dtmi:example:eta_sigma;1",
+                "@id": "dtmi:example:tau_sigma;1",
                 "@type": "Array",
-                "elementSchema": "integer",
+                "elementSchema": "duration",
                 "@context": "dtmi:dtdl:context;2"
               }
             }
@@ -172,7 +172,74 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;3",
-        "@id": "dtmi:example:eta_psi;1",
+        "@id": "dtmi:example:tau_um;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Property",
+          "name": "tau_wum",
+          "schema": {
+            "@type": "Map",
+            "mapKey": {
+              "name": "tau_yuzz",
+              "schema": "string"
+            },
+            "mapValue": {
+              "name": "tau_omega",
+              "schema": {
+                "@id": "dtmi:example:tau_psi;1",
+                "@type": "Array",
+                "elementSchema": "decimal",
+                "@context": "dtmi:dtdl:context;4"
+              }
+            }
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:tau_snee;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Property",
+          "name": "tau_nuh",
+          "schema": {
+            "@type": "Map",
+            "mapKey": {
+              "name": "tau_glikk",
+              "schema": "string"
+            },
+            "mapValue": {
+              "@context": "dtmi:undefinedExtension:context;1",
+              "name": "tau_fuddle",
+              "schema": {
+                "@id": "dtmi:example:tau_humpf;1",
+                "@type": "Array",
+                "elementSchema": "double",
+                "@context": "dtmi:dtdl:context;4"
+              }
+            }
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:tau_quan;1",
         "@type": "Interface",
         "schemas": {
           "@id": "dtmi:ex:dependentRef;1",
@@ -181,15 +248,15 @@
         },
         "contents": {
           "@type": "Property",
-          "name": "eta_wum",
+          "name": "tau_floob",
           "schema": {
             "@type": "Map",
             "mapKey": {
-              "name": "eta_yuzz",
+              "name": "tau_spazz",
               "schema": "string"
             },
             "mapValue": {
-              "name": "eta_omega",
+              "name": "tau_thnad",
               "schema": [
                 {
                   "@type": "Array",
@@ -211,7 +278,7 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;3",
-        "@id": "dtmi:example:eta_um;1",
+        "@id": "dtmi:example:tau_zatz;1",
         "@type": "Interface",
         "schemas": {
           "@id": "dtmi:ex:dependentRef;1",
@@ -220,16 +287,16 @@
         },
         "contents": {
           "@type": "Property",
-          "name": "eta_glikk",
+          "name": "tau_itch",
           "schema": {
             "@type": "Map",
             "mapKey": {
-              "name": "eta_fuddle",
+              "name": "tau_flunn",
               "schema": "string"
             },
             "mapValue": {
               "@context": "dtmi:undefinedExtension:context;1",
-              "name": "eta_humpf",
+              "name": "tau_jogg",
               "schema": [
                 {
                   "@type": "Array",
@@ -251,17 +318,17 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;3",
-        "@id": "dtmi:example:eta_thnad;1",
+        "@id": "dtmi:example:upsilon_alpha;1",
         "@type": "Interface",
         "schemas": {
-          "@id": "dtmi:example:eta_snee;1",
+          "@id": "dtmi:example:tau_vroo;1",
           "@type": "Map",
           "mapKey": {
-            "name": "eta_quan",
+            "name": "tau_hi",
             "schema": "string"
           },
           "mapValue": {
-            "name": "eta_nuh",
+            "name": "tau_yekk",
             "schema": "string"
           }
         }
@@ -276,17 +343,17 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;3",
-        "@id": "dtmi:example:eta_jogg;1",
+        "@id": "dtmi:example:upsilon_epsilon;1",
         "@type": "Interface",
         "schemas": {
-          "@id": "dtmi:example:eta_floob;1",
+          "@id": "dtmi:example:upsilon_gamma;1",
           "@type": "Map",
           "mapKey": {
-            "name": "eta_zatz",
+            "name": "upsilon_delta",
             "schema": "string"
           },
           "mapValue": {
-            "name": "eta_spazz",
+            "name": "upsilon_beta",
             "schema": [
               "string"
             ]
@@ -303,17 +370,17 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;3",
-        "@id": "dtmi:example:eta_vroo;1",
+        "@id": "dtmi:example:upsilon_iota;1",
         "@type": "Interface",
         "schemas": {
-          "@id": "dtmi:example:eta_itch;1",
+          "@id": "dtmi:example:upsilon_eta;1",
           "@type": "Map",
           "mapKey": {
-            "name": "eta_yekk",
+            "name": "upsilon_theta",
             "schema": "string"
           },
           "mapValue": {
-            "name": "eta_flunn",
+            "name": "upsilon_zeta",
             "schema": "dtmi:dtdl:instance:Schema:string;3"
           }
         }
@@ -328,17 +395,17 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;3",
-        "@id": "dtmi:example:theta_gamma;1",
+        "@id": "dtmi:example:upsilon_nu;1",
         "@type": "Interface",
         "schemas": {
-          "@id": "dtmi:example:theta_alpha;1",
+          "@id": "dtmi:example:upsilon_lambda;1",
           "@type": "Map",
           "mapKey": {
-            "name": "theta_beta",
+            "name": "upsilon_mu",
             "schema": "string"
           },
           "mapValue": {
-            "name": "eta_hi",
+            "name": "upsilon_kappa",
             "schema": [
               "dtmi:dtdl:instance:Schema:string;3"
             ]
@@ -355,17 +422,17 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;3",
-        "@id": "dtmi:example:theta_eta;1",
+        "@id": "dtmi:example:upsilon_rho;1",
         "@type": "Interface",
         "schemas": {
-          "@id": "dtmi:example:theta_epsilon;1",
+          "@id": "dtmi:example:upsilon_omicron;1",
           "@type": "Map",
           "mapKey": {
-            "name": "theta_zeta",
+            "name": "upsilon_pi",
             "schema": "string"
           },
           "mapValue": {
-            "name": "theta_delta",
+            "name": "upsilon_xi",
             "schema": "point"
           }
         }
@@ -380,17 +447,17 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;3",
-        "@id": "dtmi:example:theta_lambda;1",
+        "@id": "dtmi:example:upsilon_phi;1",
         "@type": "Interface",
         "schemas": {
-          "@id": "dtmi:example:theta_iota;1",
+          "@id": "dtmi:example:upsilon_tau;1",
           "@type": "Map",
           "mapKey": {
-            "name": "theta_kappa",
+            "name": "upsilon_upsilon",
             "schema": "string"
           },
           "mapValue": {
-            "name": "theta_theta",
+            "name": "upsilon_sigma",
             "schema": [
               "point"
             ]
@@ -407,17 +474,17 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;3",
-        "@id": "dtmi:example:theta_omicron;1",
+        "@id": "dtmi:example:upsilon_yuzz;1",
         "@type": "Interface",
         "schemas": {
-          "@id": "dtmi:example:theta_nu;1",
+          "@id": "dtmi:example:upsilon_psi;1",
           "@type": "Map",
           "mapKey": {
-            "name": "theta_xi",
+            "name": "upsilon_omega",
             "schema": "string"
           },
           "mapValue": {
-            "name": "theta_mu",
+            "name": "upsilon_chi",
             "schema": "dtmi:standard:schema:geospatial:point;3"
           }
         }
@@ -432,17 +499,17 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;3",
-        "@id": "dtmi:example:theta_tau;1",
+        "@id": "dtmi:example:upsilon_fuddle;1",
         "@type": "Interface",
         "schemas": {
-          "@id": "dtmi:example:theta_rho;1",
+          "@id": "dtmi:example:upsilon_um;1",
           "@type": "Map",
           "mapKey": {
-            "name": "theta_sigma",
+            "name": "upsilon_humpf",
             "schema": "string"
           },
           "mapValue": {
-            "name": "theta_pi",
+            "name": "upsilon_wum",
             "schema": [
               "dtmi:standard:schema:geospatial:point;3"
             ]
@@ -459,17 +526,17 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;3",
-        "@id": "dtmi:example:theta_psi;1",
+        "@id": "dtmi:example:upsilon_quan;1",
         "@type": "Interface",
         "schemas": {
-          "@id": "dtmi:example:theta_phi;1",
+          "@id": "dtmi:example:upsilon_nuh;1",
           "@type": "Map",
           "mapKey": {
-            "name": "theta_chi",
+            "name": "upsilon_snee",
             "schema": "string"
           },
           "mapValue": {
-            "name": "theta_upsilon",
+            "name": "upsilon_glikk",
             "schema": "Foobar"
           }
         }
@@ -484,18 +551,18 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;3",
-        "@id": "dtmi:example:theta_um;1",
+        "@id": "dtmi:example:upsilon_zatz;1",
         "@type": "Interface",
         "schemas": {
-          "@id": "dtmi:example:theta_yuzz;1",
+          "@id": "dtmi:example:upsilon_spazz;1",
           "@type": "Map",
           "mapKey": {
-            "name": "theta_wum",
+            "name": "upsilon_floob",
             "schema": "string"
           },
           "mapValue": {
             "@context": "dtmi:undefinedExtension:context;1",
-            "name": "theta_omega",
+            "name": "upsilon_thnad",
             "schema": "Foobar"
           }
         }
@@ -510,17 +577,17 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;3",
-        "@id": "dtmi:example:theta_nuh;1",
+        "@id": "dtmi:example:upsilon_yekk;1",
         "@type": "Interface",
         "schemas": {
-          "@id": "dtmi:example:theta_fuddle;1",
+          "@id": "dtmi:example:upsilon_flunn;1",
           "@type": "Map",
           "mapKey": {
-            "name": "theta_glikk",
+            "name": "upsilon_itch",
             "schema": "string"
           },
           "mapValue": {
-            "name": "theta_humpf",
+            "name": "upsilon_jogg",
             "schema": null
           }
         }
@@ -535,18 +602,18 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;3",
-        "@id": "dtmi:example:theta_spazz;1",
+        "@id": "dtmi:example:phi_beta;1",
         "@type": "Interface",
         "schemas": {
-          "@id": "dtmi:example:theta_quan;1",
+          "@id": "dtmi:example:upsilon_hi;1",
           "@type": "Map",
           "mapKey": {
-            "name": "theta_thnad",
+            "name": "phi_alpha",
             "schema": "string"
           },
           "mapValue": {
             "@context": "dtmi:undefinedExtension:context;1",
-            "name": "theta_snee",
+            "name": "upsilon_vroo",
             "schema": null
           }
         }
@@ -561,17 +628,17 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;3",
-        "@id": "dtmi:example:theta_flunn;1",
+        "@id": "dtmi:example:phi_zeta;1",
         "@type": "Interface",
         "schemas": {
-          "@id": "dtmi:example:theta_zatz;1",
+          "@id": "dtmi:example:phi_delta;1",
           "@type": "Map",
           "mapKey": {
-            "name": "theta_jogg",
+            "name": "phi_epsilon",
             "schema": "string"
           },
           "mapValue": {
-            "name": "theta_floob",
+            "name": "phi_gamma",
             "schema": true
           }
         }
@@ -586,18 +653,18 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;3",
-        "@id": "dtmi:example:theta_hi;1",
+        "@id": "dtmi:example:phi_kappa;1",
         "@type": "Interface",
         "schemas": {
-          "@id": "dtmi:example:theta_yekk;1",
+          "@id": "dtmi:example:phi_theta;1",
           "@type": "Map",
           "mapKey": {
-            "name": "theta_vroo",
+            "name": "phi_iota",
             "schema": "string"
           },
           "mapValue": {
             "@context": "dtmi:undefinedExtension:context;1",
-            "name": "theta_itch",
+            "name": "phi_eta",
             "schema": true
           }
         }
@@ -612,17 +679,17 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;3",
-        "@id": "dtmi:example:iota_delta;1",
+        "@id": "dtmi:example:phi_xi;1",
         "@type": "Interface",
         "schemas": {
-          "@id": "dtmi:example:iota_beta;1",
+          "@id": "dtmi:example:phi_mu;1",
           "@type": "Map",
           "mapKey": {
-            "name": "iota_gamma",
+            "name": "phi_nu",
             "schema": "string"
           },
           "mapValue": {
-            "name": "iota_alpha",
+            "name": "phi_lambda",
             "schema": 626
           }
         }
@@ -637,18 +704,18 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;3",
-        "@id": "dtmi:example:iota_theta;1",
+        "@id": "dtmi:example:phi_sigma;1",
         "@type": "Interface",
         "schemas": {
-          "@id": "dtmi:example:iota_zeta;1",
+          "@id": "dtmi:example:phi_pi;1",
           "@type": "Map",
           "mapKey": {
-            "name": "iota_eta",
+            "name": "phi_rho",
             "schema": "string"
           },
           "mapValue": {
             "@context": "dtmi:undefinedExtension:context;1",
-            "name": "iota_epsilon",
+            "name": "phi_omicron",
             "schema": 626
           }
         }
@@ -663,17 +730,17 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;3",
-        "@id": "dtmi:example:iota_mu;1",
+        "@id": "dtmi:example:phi_chi;1",
         "@type": "Interface",
         "schemas": {
-          "@id": "dtmi:example:iota_kappa;1",
+          "@id": "dtmi:example:phi_upsilon;1",
           "@type": "Map",
           "mapKey": {
-            "name": "iota_lambda",
+            "name": "phi_phi",
             "schema": "string"
           },
           "mapValue": {
-            "name": "iota_iota",
+            "name": "phi_tau",
             "schema": [
               null
             ]
@@ -690,18 +757,18 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;3",
-        "@id": "dtmi:example:iota_pi;1",
+        "@id": "dtmi:example:phi_wum;1",
         "@type": "Interface",
         "schemas": {
-          "@id": "dtmi:example:iota_xi;1",
+          "@id": "dtmi:example:phi_omega;1",
           "@type": "Map",
           "mapKey": {
-            "name": "iota_omicron",
+            "name": "phi_yuzz",
             "schema": "string"
           },
           "mapValue": {
             "@context": "dtmi:undefinedExtension:context;1",
-            "name": "iota_nu",
+            "name": "phi_psi",
             "schema": [
               null
             ]
@@ -718,17 +785,17 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;3",
-        "@id": "dtmi:example:iota_upsilon;1",
+        "@id": "dtmi:example:phi_glikk;1",
         "@type": "Interface",
         "schemas": {
-          "@id": "dtmi:example:iota_sigma;1",
+          "@id": "dtmi:example:phi_humpf;1",
           "@type": "Map",
           "mapKey": {
-            "name": "iota_tau",
+            "name": "phi_fuddle",
             "schema": "string"
           },
           "mapValue": {
-            "name": "iota_rho",
+            "name": "phi_um",
             "schema": [
               true
             ]
@@ -745,18 +812,18 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;3",
-        "@id": "dtmi:example:iota_omega;1",
+        "@id": "dtmi:example:phi_thnad;1",
         "@type": "Interface",
         "schemas": {
-          "@id": "dtmi:example:iota_chi;1",
+          "@id": "dtmi:example:phi_snee;1",
           "@type": "Map",
           "mapKey": {
-            "name": "iota_psi",
+            "name": "phi_quan",
             "schema": "string"
           },
           "mapValue": {
             "@context": "dtmi:undefinedExtension:context;1",
-            "name": "iota_phi",
+            "name": "phi_nuh",
             "schema": [
               true
             ]
@@ -773,17 +840,17 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;3",
-        "@id": "dtmi:example:iota_humpf;1",
+        "@id": "dtmi:example:phi_jogg;1",
         "@type": "Interface",
         "schemas": {
-          "@id": "dtmi:example:iota_wum;1",
+          "@id": "dtmi:example:phi_floob;1",
           "@type": "Map",
           "mapKey": {
-            "name": "iota_um",
+            "name": "phi_zatz",
             "schema": "string"
           },
           "mapValue": {
-            "name": "iota_yuzz",
+            "name": "phi_spazz",
             "schema": [
               626
             ]
@@ -800,18 +867,18 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;3",
-        "@id": "dtmi:example:iota_snee;1",
+        "@id": "dtmi:example:phi_vroo;1",
         "@type": "Interface",
         "schemas": {
-          "@id": "dtmi:example:iota_glikk;1",
+          "@id": "dtmi:example:phi_itch;1",
           "@type": "Map",
           "mapKey": {
-            "name": "iota_nuh",
+            "name": "phi_yekk",
             "schema": "string"
           },
           "mapValue": {
             "@context": "dtmi:undefinedExtension:context;1",
-            "name": "iota_fuddle",
+            "name": "phi_flunn",
             "schema": [
               626
             ]
@@ -828,17 +895,17 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;3",
-        "@id": "dtmi:example:iota_floob;1",
+        "@id": "dtmi:example:chi_gamma;1",
         "@type": "Interface",
         "schemas": {
-          "@id": "dtmi:example:iota_thnad;1",
+          "@id": "dtmi:example:chi_alpha;1",
           "@type": "Map",
           "mapKey": {
-            "name": "iota_spazz",
+            "name": "chi_beta",
             "schema": "string"
           },
           "mapValue": {
-            "name": "iota_quan",
+            "name": "phi_hi",
             "schema": {}
           }
         }
@@ -853,18 +920,18 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;3",
-        "@id": "dtmi:example:iota_itch;1",
+        "@id": "dtmi:example:chi_eta;1",
         "@type": "Interface",
         "schemas": {
-          "@id": "dtmi:example:iota_jogg;1",
+          "@id": "dtmi:example:chi_epsilon;1",
           "@type": "Map",
           "mapKey": {
-            "name": "iota_flunn",
+            "name": "chi_zeta",
             "schema": "string"
           },
           "mapValue": {
             "@context": "dtmi:undefinedExtension:context;1",
-            "name": "iota_zatz",
+            "name": "chi_delta",
             "schema": {}
           }
         }
@@ -879,17 +946,17 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;3",
-        "@id": "dtmi:example:kappa_alpha;1",
+        "@id": "dtmi:example:chi_lambda;1",
         "@type": "Interface",
         "schemas": {
-          "@id": "dtmi:example:iota_vroo;1",
+          "@id": "dtmi:example:chi_iota;1",
           "@type": "Map",
           "mapKey": {
-            "name": "iota_hi",
+            "name": "chi_kappa",
             "schema": "string"
           },
           "mapValue": {
-            "name": "iota_yekk",
+            "name": "chi_theta",
             "schema": [
               {}
             ]
@@ -906,18 +973,18 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;3",
-        "@id": "dtmi:example:kappa_epsilon;1",
+        "@id": "dtmi:example:chi_omicron;1",
         "@type": "Interface",
         "schemas": {
-          "@id": "dtmi:example:kappa_gamma;1",
+          "@id": "dtmi:example:chi_nu;1",
           "@type": "Map",
           "mapKey": {
-            "name": "kappa_delta",
+            "name": "chi_xi",
             "schema": "string"
           },
           "mapValue": {
             "@context": "dtmi:undefinedExtension:context;1",
-            "name": "kappa_beta",
+            "name": "chi_mu",
             "schema": [
               {}
             ]
@@ -934,17 +1001,17 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;3",
-        "@id": "dtmi:example:kappa_iota;1",
+        "@id": "dtmi:example:chi_tau;1",
         "@type": "Interface",
         "schemas": {
-          "@id": "dtmi:example:kappa_eta;1",
+          "@id": "dtmi:example:chi_rho;1",
           "@type": "Map",
           "mapKey": {
-            "name": "kappa_theta",
+            "name": "chi_sigma",
             "schema": "string"
           },
           "mapValue": {
-            "name": "kappa_zeta",
+            "name": "chi_pi",
             "schema": []
           }
         }
@@ -959,18 +1026,18 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;3",
-        "@id": "dtmi:example:kappa_nu;1",
+        "@id": "dtmi:example:chi_psi;1",
         "@type": "Interface",
         "schemas": {
-          "@id": "dtmi:example:kappa_lambda;1",
+          "@id": "dtmi:example:chi_phi;1",
           "@type": "Map",
           "mapKey": {
-            "name": "kappa_mu",
+            "name": "chi_chi",
             "schema": "string"
           },
           "mapValue": {
             "@context": "dtmi:undefinedExtension:context;1",
-            "name": "kappa_kappa",
+            "name": "chi_upsilon",
             "schema": []
           }
         }

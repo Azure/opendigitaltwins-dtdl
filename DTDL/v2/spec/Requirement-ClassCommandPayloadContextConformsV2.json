@@ -7,17 +7,17 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;2",
-        "@id": "dtmi:example:nu_pi;1",
+        "@id": "dtmi:example:pi_iota;1",
         "@type": "Interface",
         "extends": {
-          "@id": "dtmi:example:nu_omicron;1",
+          "@id": "dtmi:example:pi_theta;1",
           "@type": "Interface",
           "contents": {
             "@type": "Command",
-            "name": "nu_xi",
+            "name": "pi_eta",
             "request": {
-              "name": "nu_nu",
-              "schema": "time",
+              "name": "pi_zeta",
+              "schema": "float",
               "@context": "dtmi:iotcentral:context;2"
             }
           }
@@ -33,17 +33,17 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;2",
-        "@id": "dtmi:example:nu_upsilon;1",
+        "@id": "dtmi:example:pi_nu;1",
         "@type": "Interface",
         "extends": {
-          "@id": "dtmi:example:nu_tau;1",
+          "@id": "dtmi:example:pi_mu;1",
           "@type": "Interface",
           "contents": {
             "@type": "Command",
-            "name": "nu_sigma",
+            "name": "pi_lambda",
             "request": {
-              "name": "nu_rho",
-              "schema": "boolean",
+              "name": "pi_kappa",
+              "schema": "integer",
               "@context": []
             }
           }
@@ -59,17 +59,17 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;2",
-        "@id": "dtmi:example:nu_omega;1",
+        "@id": "dtmi:example:pi_rho;1",
         "@type": "Interface",
         "extends": {
-          "@id": "dtmi:example:nu_psi;1",
+          "@id": "dtmi:example:pi_pi;1",
           "@type": "Interface",
           "contents": {
             "@type": "Command",
-            "name": "nu_chi",
+            "name": "pi_omicron",
             "request": {
-              "name": "nu_phi",
-              "schema": "date",
+              "name": "pi_xi",
+              "schema": "long",
               "@context": [
                 "dtmi:iotcentral:context;2"
               ]
@@ -87,17 +87,17 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;2",
-        "@id": "dtmi:example:nu_humpf;1",
+        "@id": "dtmi:example:pi_phi;1",
         "@type": "Interface",
         "extends": {
-          "@id": "dtmi:example:nu_um;1",
+          "@id": "dtmi:example:pi_upsilon;1",
           "@type": "Interface",
           "contents": {
             "@type": "Command",
-            "name": "nu_wum",
+            "name": "pi_tau",
             "request": {
-              "name": "nu_yuzz",
-              "schema": "dateTime",
+              "name": "pi_sigma",
+              "schema": "string",
               "@context": null
             }
           }
@@ -113,17 +113,17 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;2",
-        "@id": "dtmi:example:nu_snee;1",
+        "@id": "dtmi:example:pi_yuzz;1",
         "@type": "Interface",
         "extends": {
-          "@id": "dtmi:example:nu_nuh;1",
+          "@id": "dtmi:example:pi_omega;1",
           "@type": "Interface",
           "contents": {
             "@type": "Command",
-            "name": "nu_glikk",
+            "name": "pi_psi",
             "request": {
-              "name": "nu_fuddle",
-              "schema": "double",
+              "name": "pi_chi",
+              "schema": "time",
               "@context": 626
             }
           }
@@ -139,17 +139,17 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;2",
-        "@id": "dtmi:example:nu_floob;1",
+        "@id": "dtmi:example:pi_fuddle;1",
         "@type": "Interface",
         "extends": {
-          "@id": "dtmi:example:nu_spazz;1",
+          "@id": "dtmi:example:pi_humpf;1",
           "@type": "Interface",
           "contents": {
             "@type": "Command",
-            "name": "nu_thnad",
+            "name": "pi_um",
             "request": {
-              "name": "nu_quan",
-              "schema": "duration",
+              "name": "pi_wum",
+              "schema": "boolean",
               "@context": true
             }
           }
@@ -165,17 +165,17 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;2",
-        "@id": "dtmi:example:nu_itch;1",
+        "@id": "dtmi:example:pi_quan;1",
         "@type": "Interface",
         "extends": {
-          "@id": "dtmi:example:nu_flunn;1",
+          "@id": "dtmi:example:pi_snee;1",
           "@type": "Interface",
           "contents": {
             "@type": "Command",
-            "name": "nu_jogg",
+            "name": "pi_nuh",
             "request": {
-              "name": "nu_zatz",
-              "schema": "float",
+              "name": "pi_glikk",
+              "schema": "date",
               "@context": [
                 null
               ]
@@ -193,17 +193,17 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;2",
-        "@id": "dtmi:example:xi_alpha;1",
+        "@id": "dtmi:example:pi_zatz;1",
         "@type": "Interface",
         "extends": {
-          "@id": "dtmi:example:nu_hi;1",
+          "@id": "dtmi:example:pi_floob;1",
           "@type": "Interface",
           "contents": {
             "@type": "Command",
-            "name": "nu_vroo",
+            "name": "pi_spazz",
             "request": {
-              "name": "nu_yekk",
-              "schema": "integer",
+              "name": "pi_thnad",
+              "schema": "dateTime",
               "@context": [
                 626
               ]
@@ -221,17 +221,17 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;2",
-        "@id": "dtmi:example:xi_epsilon;1",
+        "@id": "dtmi:example:pi_yekk;1",
         "@type": "Interface",
         "extends": {
-          "@id": "dtmi:example:xi_delta;1",
+          "@id": "dtmi:example:pi_itch;1",
           "@type": "Interface",
           "contents": {
             "@type": "Command",
-            "name": "xi_gamma",
+            "name": "pi_flunn",
             "request": {
-              "name": "xi_beta",
-              "schema": "long",
+              "name": "pi_jogg",
+              "schema": "double",
               "@context": [
                 true
               ]
@@ -249,17 +249,95 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;2",
-        "@id": "dtmi:example:xi_iota;1",
+        "@id": "dtmi:example:rho_beta;1",
         "@type": "Interface",
         "extends": {
-          "@id": "dtmi:example:xi_theta;1",
+          "@id": "dtmi:example:rho_alpha;1",
           "@type": "Interface",
           "contents": {
             "@type": "Command",
-            "name": "xi_eta",
+            "name": "pi_hi",
             "request": {
-              "name": "xi_zeta",
-              "schema": "string",
+              "name": "pi_vroo",
+              "schema": "duration",
+              "@context": "dtmi:iotcentral:context"
+            }
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:rho_zeta;1",
+        "@type": "Interface",
+        "extends": {
+          "@id": "dtmi:example:rho_epsilon;1",
+          "@type": "Interface",
+          "contents": {
+            "@type": "Command",
+            "name": "rho_delta",
+            "request": {
+              "name": "rho_gamma",
+              "schema": "float",
+              "@context": "http://iotcentral/context/2"
+            }
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:rho_kappa;1",
+        "@type": "Interface",
+        "extends": {
+          "@id": "dtmi:example:rho_iota;1",
+          "@type": "Interface",
+          "contents": {
+            "@type": "Command",
+            "name": "rho_theta",
+            "request": {
+              "name": "rho_eta",
+              "schema": "integer",
+              "@context": "iotcentral;2"
+            }
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:rho_xi;1",
+        "@type": "Interface",
+        "extends": {
+          "@id": "dtmi:example:rho_nu;1",
+          "@type": "Interface",
+          "contents": {
+            "@type": "Command",
+            "name": "rho_mu",
+            "request": {
+              "name": "rho_lambda",
+              "schema": "long",
               "@context": {}
             }
           }
@@ -275,16 +353,44 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;2",
-        "@id": "dtmi:example:xi_nu;1",
+        "@id": "dtmi:example:rho_sigma;1",
         "@type": "Interface",
         "extends": {
-          "@id": "dtmi:example:xi_mu;1",
+          "@id": "dtmi:example:rho_rho;1",
           "@type": "Interface",
           "contents": {
             "@type": "Command",
-            "name": "xi_lambda",
+            "name": "rho_pi",
             "request": {
-              "name": "xi_kappa",
+              "name": "rho_omicron",
+              "schema": "string",
+              "@context": {
+                "foo": "dtmi:foo:bar;1"
+              }
+            }
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:rho_chi;1",
+        "@type": "Interface",
+        "extends": {
+          "@id": "dtmi:example:rho_phi;1",
+          "@type": "Interface",
+          "contents": {
+            "@type": "Command",
+            "name": "rho_upsilon",
+            "request": {
+              "name": "rho_tau",
               "schema": "time",
               "@context": [
                 {}
@@ -303,70 +409,22 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;2",
-        "@id": "dtmi:example:xi_rho;1",
+        "@id": "dtmi:example:rho_wum;1",
         "@type": "Interface",
         "extends": {
-          "@id": "dtmi:example:xi_pi;1",
+          "@id": "dtmi:example:rho_yuzz;1",
           "@type": "Interface",
           "contents": {
             "@type": "Command",
-            "name": "xi_omicron",
+            "name": "rho_omega",
             "request": {
-              "name": "xi_xi",
+              "name": "rho_psi",
               "schema": "boolean",
-              "@context": "dtmi:iotcentral:context"
-            }
-          }
-        }
-      }
-    ]
-  },
-  {
-    "valid": false,
-    "options": [
-      "DisallowUndefinedExtensions"
-    ],
-    "input": [
-      {
-        "@context": "dtmi:dtdl:context;2",
-        "@id": "dtmi:example:xi_phi;1",
-        "@type": "Interface",
-        "extends": {
-          "@id": "dtmi:example:xi_upsilon;1",
-          "@type": "Interface",
-          "contents": {
-            "@type": "Command",
-            "name": "xi_tau",
-            "request": {
-              "name": "xi_sigma",
-              "schema": "date",
-              "@context": "http://iotcentral/context/2"
-            }
-          }
-        }
-      }
-    ]
-  },
-  {
-    "valid": false,
-    "options": [
-      "DisallowUndefinedExtensions"
-    ],
-    "input": [
-      {
-        "@context": "dtmi:dtdl:context;2",
-        "@id": "dtmi:example:xi_yuzz;1",
-        "@type": "Interface",
-        "extends": {
-          "@id": "dtmi:example:xi_omega;1",
-          "@type": "Interface",
-          "contents": {
-            "@type": "Command",
-            "name": "xi_psi",
-            "request": {
-              "name": "xi_chi",
-              "schema": "dateTime",
-              "@context": "iotcentral;2"
+              "@context": [
+                {
+                  "foo": "dtmi:foo:bar;1"
+                }
+              ]
             }
           }
         }

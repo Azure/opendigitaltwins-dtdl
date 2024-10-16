@@ -1,0 +1,51 @@
+﻿[
+  {
+    "valid": false,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:xi_spazz;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Telemetry",
+          "displayName": [
+            "xi_snee"
+          ],
+          "dtmi:dtdl:property:displayName;4": [
+            "xi_quan"
+          ],
+          "name": "xi_thnad",
+          "schema": "boolean"
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:xi_flunn;1",
+        "@type": "Interface",
+        "contents": {
+          "@context": "dtmi:undefinedExtension:context;1",
+          "@type": "Telemetry",
+          "displayName": [
+            "xi_floob"
+          ],
+          "dtmi:dtdl:property:displayName;4": [
+            "xi_zatz"
+          ],
+          "name": "xi_jogg",
+          "schema": "byte"
+        }
+      }
+    ]
+  }
+]
