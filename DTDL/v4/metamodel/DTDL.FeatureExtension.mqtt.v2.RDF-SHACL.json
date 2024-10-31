@@ -36,7 +36,12 @@
           "rdfs:domain": "Mqtt"
         },
         {
-          "@id": "dtmi:dtdl:extension:mqtt:v2:Mqtt:serviceGroupId",
+          "@id": "dtmi:dtdl:extension:mqtt:v2:Mqtt:telemServiceGroupId",
+          "@type": "rdf:Property",
+          "rdfs:domain": "Mqtt"
+        },
+        {
+          "@id": "dtmi:dtdl:extension:mqtt:v2:Mqtt:cmdServiceGroupId",
           "@type": "rdf:Property",
           "rdfs:domain": "Mqtt"
         }
@@ -79,7 +84,20 @@
           }
         },
         {
-          "sh:path": "serviceGroupId",
+          "sh:path": "telemServiceGroupId",
+          "sh:maxCount": 1,
+          "sh:datatype": "xsd:string",
+          "sh:nodeKind": "sh:Literal",
+          "sh:pattern": "^[!$-*,-.0-z|~]+$",
+          "dtmm:patternDesc": {
+            "en-US": "non-empty string of printable ASCII characters not including space, \", +, #, {, }, or /"
+          },
+          "dtmm:description": {
+            "en-US": "The service group ID for subscribing to Telemetry topics when shared subscriptions are wanted."
+          }
+        },
+        {
+          "sh:path": "cmdServiceGroupId",
           "sh:maxCount": 1,
           "sh:datatype": "xsd:string",
           "sh:nodeKind": "sh:Literal",

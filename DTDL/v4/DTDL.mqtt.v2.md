@@ -18,10 +18,11 @@ The chart below lists the additional properties that may be part of an element t
 
 | Property | Required | Data type | Limits | Description |
 | --- | --- | --- | --- | --- |
+| `cmdServiceGroupId` | optional | *string* | non-empty string of printable ASCII characters not including space, ", +, #, {, }, or / | The service group ID for subscribing to Command topics when shared subscriptions are wanted. |
 | `commandTopic` | optional | *string* | slash-separated sequence of character-restricted labels and/or brace-enclosed tokens | MQTT topic pattern on which a Command request is published. |
 | `payloadFormat` | required | *string* |  | The format to use when serializing an instance to an MQTT payload. |
-| `serviceGroupId` | optional | *string* | non-empty string of printable ASCII characters not including space, ", +, #, {, }, or / | The service group ID for subscribing to Command topics when shared subscriptions are wanted. |
 | `telemetryTopic` | optional | *string* | slash-separated sequence of character-restricted labels and/or brace-enclosed tokens | MQTT topic pattern on which a Telemetry or a collection of Telemetries is published. |
+| `telemServiceGroupId` | optional | *string* | non-empty string of printable ASCII characters not including space, ", +, #, {, }, or / | The service group ID for subscribing to Telemetry topics when shared subscriptions are wanted. |
 
 When an Interface in a model is co-typed Mqtt, values of the above properties indicate the serialization format and MQTT topic pattern used for any instance of Interface contents when conveyed via an MQTT message.
 
@@ -331,7 +332,7 @@ The following example is not valid becuse the `schema` of the request is "string
 
 * [DTDL v4](./DTDL.v4.md) is now supported.
 * The [Transparent](#transparent-adjunct-type) adjunct type has been added.
-* The "serviceGroupId" property has been added to to the [Mqtt](#mqtt-adjunct-type) adjunct type.
+* The "telemServiceGroupId" and "cmdServiceGroupId" properties have been added to to the [Mqtt](#mqtt-adjunct-type) adjunct type.
 
 ## Feature versions
 
@@ -339,6 +340,6 @@ The chart below lists the versions of the Mqtt extension that are currently avai
 
 | Extension | Context | DTDL versions |
 | --- | --- | --- |
-| [MQTT v1](../v3/DTDL.mqtt.v1.md) | dtmi:dtdl:extension:mqtt;1 | [3](../v3/DTDL.v3.md) |
-| [MQTT v2](./DTDL.mqtt.v2.md) | dtmi:dtdl:extension:mqtt;2 | [3](../v3/DTDL.v3.md), [4](./DTDL.v4.md) |
+| [MQTT v1](./DTDL.mqtt.v1.md) | dtmi:dtdl:extension:mqtt;1 | [3](./DTDL.v3.md) |
+| [MQTT v2](./DTDL.mqtt.v2.md) | dtmi:dtdl:extension:mqtt;2 | [3](./DTDL.v3.md), [4](./DTDL.v4.md) |
 
