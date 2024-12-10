@@ -32,6 +32,25 @@
     ]
   },
   {
+    "valid": true,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "acceptableLimits": [
+      "dtmi:dtdl:limits:onvif"
+    ],
+    "input": [
+      {
+        "@context": [
+          "dtmi:dtdl:context;4#limitless",
+          "dtmi:dtdl:limits:onvif;1"
+        ],
+        "@id": "dtmi:ex:id;1",
+        "@type": "Interface"
+      }
+    ]
+  },
+  {
     "valid": false,
     "options": [
       "DisallowUndefinedExtensions"

@@ -1,0 +1,84 @@
+﻿{
+  "@context": [
+    "dtmi:dtdl:context;4",
+    "dtmi:dtdl:limits:onvif;1"
+  ],
+  "@graph": [
+    {
+      "@id": "dtmi:dtdl:limits:onvif:v1:documentation",
+      "@type": [ "dtmm:Documentation" ],
+      "dtmm:description": {
+        "en-US": "Increased limits that support translating ONVIF WSDL definitions into DTDL."
+      }
+    },
+    {
+      "@id": "dtmi:dtdl:restriction:global;4",
+      "@type": [ "dtmm:Global" ],
+      "dtmm:dtdlVersion": 4,
+      "dtmm:identifier": {
+        "sh:maxLength": 512
+      },
+      "dtmm:partition": {
+        "dtmm:maxBytes": 1048576
+      }
+    },
+    {
+      "@id": "dtmi:dtdl:class:Entity;4",
+      "sh:property": [
+        {
+          "sh:path": "displayName",
+          "sh:maxLength": 512
+        },
+        {
+          "sh:path": "description",
+          "sh:maxLength": 4096
+        },
+        {
+          "sh:path": "comment",
+          "sh:maxLength": 512
+        }
+      ]
+    },
+    {
+      "@id": "dtmi:dtdl:class:ComplexSchema;4",
+      "dtmm:descendants": [
+        {
+          "dtmm:properties": [
+            "elementSchema",
+            "schema"
+          ],
+          "dtmm:maxDepth": 24
+        }
+      ]
+    },
+    {
+      "@id": "dtmi:dtdl:class:Interface;4",
+      "dtmm:identifier": {
+        "sh:maxLength": 256
+      },
+      "dtmm:descendants": [
+        {
+          "dtmm:properties": [ "extends" ],
+          "dtmm:narrow": true,
+          "dtmm:maxCount": 1024,
+          "dtmm:maxDepth": 12
+        },
+        {
+          "dtmm:properties": [
+            "contents",
+            "fields",
+            "enumValues",
+            "request",
+            "response",
+            "properties",
+            "schema",
+            "elementSchema",
+            "mapValue"
+          ],
+          "dtmm:narrow": true,
+          "dtmm:maxCount": 100000
+        }
+      ]
+    }
+  ]
+}

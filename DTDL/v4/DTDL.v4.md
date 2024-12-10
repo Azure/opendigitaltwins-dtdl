@@ -1041,6 +1041,7 @@ The chart below lists the language extensions that are currently available for u
 | [Overriding v2](./DTDL.overriding.v2.md) | feature | Override a model property with an instance value. |
 | [MQTT v2](./DTDL.mqtt.v2.md) | feature | Specify Interface properties to facilitate communication via the MQTT pub/sub protocol. |
 | [Requirement v1](./DTDL.requirement.v1.md) | feature | Selectively designate one or more fields in an Object as required. |
+| [Onvif v1](./DTDL.onvif.v1.md) | limits | Increased limits that support translating ONVIF WSDL definitions into DTDL. |
 
 ## Changes from Version 3
 

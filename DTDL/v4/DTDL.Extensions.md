@@ -84,7 +84,7 @@ Conseqently, an additional context for the QuantitativeTypes extension is also s
 Limit extensions do not add new adjunct types to a DTDL model.
 Instead, a limit extension defines increased values for one or more numerical limits on DTDL property values.
 For example, in [DTDL v4](./DTDL.v4.md), the maximum depth of nested [complex schemas](./DTDL.v4.md#complex-schema) is 8 levels.
-A limit extension could increase this maximum depth to some value greater than 8.
+The [Onvif](./DTDL.onvif.v1.md) limit extension increases this maximum depth to 24 levels.
 
 Although extensions can add definitions to the DTDL language, they cannot remove any core language definitions.
 Therefore, for a model to use a limit extension, the model must include only the portion of the core language definitions that do not define any limits.
@@ -94,7 +94,7 @@ This is done by using a DTDL context specifier with a fragment that indicates th
 {
   "@context": [
     "dtmi:dtdl:context;4#limitless",
-    "dtmi:dtdl:limits:hypothetical;1"
+    "dtmi:dtdl:limits:onvif;1"
   ],
   "@id": "dtmi:com:example:Sampler;1",
   "@type": "Interface",
@@ -147,6 +147,7 @@ The chart below lists the limit extensions that are currently available.
 
 | Extension | Description | DTDL versions |
 | --- | --- | --- |
+| [Onvif v1](./DTDL.onvif.v1.md) | Increased limits that support translating ONVIF WSDL definitions into DTDL. | [4](./DTDL.v4.md) |
 
 ## Service and tool support of language extensions
 

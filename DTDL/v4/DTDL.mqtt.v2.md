@@ -340,6 +340,6 @@ The chart below lists the versions of the Mqtt extension that are currently avai
 
 | Extension | Context | DTDL versions |
 | --- | --- | --- |
-| [MQTT v1](./DTDL.mqtt.v1.md) | dtmi:dtdl:extension:mqtt;1 | [3](./DTDL.v3.md) |
-| [MQTT v2](./DTDL.mqtt.v2.md) | dtmi:dtdl:extension:mqtt;2 | [3](./DTDL.v3.md), [4](./DTDL.v4.md) |
+| [MQTT v1](../v3/DTDL.mqtt.v1.md) | dtmi:dtdl:extension:mqtt;1 | [3](../v3/DTDL.v3.md) |
+| [MQTT v2](./DTDL.mqtt.v2.md) | dtmi:dtdl:extension:mqtt;2 | [3](../v3/DTDL.v3.md), [4](./DTDL.v4.md) |
 
