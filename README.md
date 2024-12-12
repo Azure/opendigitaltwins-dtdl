@@ -22,8 +22,8 @@ The next interface describes a thermostat reporting temperature as degreeCelsius
 ```json
 {
   "@context": [
-    "dtmi:dtdl:context;3",
-    "dtmi:dtdl:extension:quantitativeTypes;1"
+    "dtmi:dtdl:context;4",
+    "dtmi:dtdl:extension:quantitativeTypes;2"
   ],
   "@id": "dtmi:com:example:Thermostat;1",
   "@type": "Interface",
