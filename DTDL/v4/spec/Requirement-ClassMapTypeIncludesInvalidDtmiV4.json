@@ -1,0 +1,59 @@
+﻿[
+  {
+    "valid": false,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:vroo_flunn;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:vroo_floob;1",
+          "@type": [
+            "Map",
+            "dtmi:foo//bar"
+          ],
+          "mapKey": {
+            "name": "vroo_zatz",
+            "schema": "string"
+          },
+          "mapValue": {
+            "name": "vroo_jogg",
+            "schema": "unsignedInteger"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:vroo_hi;1",
+        "@type": "Interface",
+        "schemas": {
+          "@context": "dtmi:undefinedExtension:context;1",
+          "@id": "dtmi:example:vroo_itch;1",
+          "@type": [
+            "Map",
+            "dtmi:foo//bar"
+          ],
+          "mapKey": {
+            "name": "vroo_yekk",
+            "schema": "string"
+          },
+          "mapValue": {
+            "name": "vroo_vroo",
+            "schema": "unsignedLong"
+          }
+        }
+      }
+    ]
+  }
+]

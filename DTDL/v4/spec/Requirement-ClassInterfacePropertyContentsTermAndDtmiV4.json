@@ -1,0 +1,55 @@
+﻿[
+  {
+    "valid": false,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:glikk_vroo;1",
+        "@type": "Interface",
+        "contents": [
+          {
+            "@type": "Command",
+            "name": "glikk_hi"
+          }
+        ],
+        "dtmi:dtdl:property:contents;4": [
+          {
+            "@type": "Command",
+            "name": "nuh_alpha"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": [
+          "dtmi:dtdl:context;4",
+          "dtmi:undefinedExtension:context;1"
+        ],
+        "@id": "dtmi:example:nuh_beta;1",
+        "@type": "Interface",
+        "contents": [
+          {
+            "@type": "Command",
+            "name": "nuh_gamma"
+          }
+        ],
+        "dtmi:dtdl:property:contents;4": [
+          {
+            "@type": "Command",
+            "name": "nuh_delta"
+          }
+        ]
+      }
+    ]
+  }
+]

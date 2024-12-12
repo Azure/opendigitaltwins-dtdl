@@ -7,12 +7,12 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;2",
-        "@id": "dtmi:example:lambda_psi;1",
+        "@id": "dtmi:example:sigma_jogg;1",
         "@type": "Interface",
         "contents": {
           "@type": "Telemetry",
-          "name": "lambda_chi",
-          "schema": "integer",
+          "name": "sigma_zatz",
+          "schema": "string",
           "comment": "hello"
         }
       }
@@ -26,12 +26,12 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;2",
-        "@id": "dtmi:example:lambda_yuzz;1",
+        "@id": "dtmi:example:sigma_itch;1",
         "@type": "Interface",
         "contents": {
           "@type": "Telemetry",
-          "name": "lambda_omega",
-          "schema": "long",
+          "name": "sigma_flunn",
+          "schema": "time",
           "comment": [
             "hello"
           ]
@@ -47,12 +47,12 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;2",
-        "@id": "dtmi:example:lambda_um;1",
+        "@id": "dtmi:example:sigma_vroo;1",
         "@type": "Interface",
         "contents": {
           "@type": "Telemetry",
-          "name": "lambda_wum",
-          "schema": "string",
+          "name": "sigma_yekk",
+          "schema": "boolean",
           "comment": {
             "@value": "hello",
             "@type": "xsd:string"
@@ -69,12 +69,12 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;2",
-        "@id": "dtmi:example:lambda_fuddle;1",
+        "@id": "dtmi:example:tau_alpha;1",
         "@type": "Interface",
         "contents": {
           "@type": "Telemetry",
-          "name": "lambda_humpf",
-          "schema": "time",
+          "name": "sigma_hi",
+          "schema": "date",
           "comment": [
             {
               "@value": "hello",
@@ -93,12 +93,12 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;2",
-        "@id": "dtmi:example:lambda_nuh;1",
+        "@id": "dtmi:example:tau_gamma;1",
         "@type": "Interface",
         "contents": {
           "@type": "Telemetry",
-          "name": "lambda_glikk",
-          "schema": "boolean",
+          "name": "tau_beta",
+          "schema": "dateTime",
           "comment": []
         }
       }
@@ -112,52 +112,13 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;2",
-        "@id": "dtmi:example:lambda_quan;1",
+        "@id": "dtmi:example:tau_epsilon;1",
         "@type": "Interface",
         "contents": {
           "@type": "Telemetry",
-          "name": "lambda_snee",
-          "schema": "date",
-          "comment": null
-        }
-      }
-    ]
-  },
-  {
-    "valid": false,
-    "options": [
-      "AllowUndefinedExtensions"
-    ],
-    "input": [
-      {
-        "@context": "dtmi:dtdl:context;2",
-        "@id": "dtmi:example:lambda_spazz;1",
-        "@type": "Interface",
-        "contents": {
-          "@context": "dtmi:undefinedExtension:context;1",
-          "@type": "Telemetry",
-          "name": "lambda_thnad",
-          "schema": "dateTime",
-          "comment": null
-        }
-      }
-    ]
-  },
-  {
-    "valid": false,
-    "options": [
-      "DisallowUndefinedExtensions"
-    ],
-    "input": [
-      {
-        "@context": "dtmi:dtdl:context;2",
-        "@id": "dtmi:example:lambda_zatz;1",
-        "@type": "Interface",
-        "contents": {
-          "@type": "Telemetry",
-          "name": "lambda_floob",
+          "name": "tau_delta",
           "schema": "double",
-          "comment": true
+          "comment": null
         }
       }
     ]
@@ -170,13 +131,52 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;2",
-        "@id": "dtmi:example:lambda_flunn;1",
+        "@id": "dtmi:example:tau_eta;1",
         "@type": "Interface",
         "contents": {
           "@context": "dtmi:undefinedExtension:context;1",
           "@type": "Telemetry",
-          "name": "lambda_jogg",
+          "name": "tau_zeta",
           "schema": "duration",
+          "comment": null
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:tau_iota;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Telemetry",
+          "name": "tau_theta",
+          "schema": "float",
+          "comment": true
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:tau_lambda;1",
+        "@type": "Interface",
+        "contents": {
+          "@context": "dtmi:undefinedExtension:context;1",
+          "@type": "Telemetry",
+          "name": "tau_kappa",
+          "schema": "integer",
           "comment": true
         }
       }
@@ -190,54 +190,13 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;2",
-        "@id": "dtmi:example:lambda_yekk;1",
+        "@id": "dtmi:example:tau_nu;1",
         "@type": "Interface",
         "contents": {
           "@type": "Telemetry",
-          "name": "lambda_itch",
-          "schema": "float",
-          "comment": 626
-        }
-      }
-    ]
-  },
-  {
-    "valid": false,
-    "options": [
-      "AllowUndefinedExtensions"
-    ],
-    "input": [
-      {
-        "@context": "dtmi:dtdl:context;2",
-        "@id": "dtmi:example:lambda_hi;1",
-        "@type": "Interface",
-        "contents": {
-          "@context": "dtmi:undefinedExtension:context;1",
-          "@type": "Telemetry",
-          "name": "lambda_vroo",
-          "schema": "integer",
-          "comment": 626
-        }
-      }
-    ]
-  },
-  {
-    "valid": false,
-    "options": [
-      "DisallowUndefinedExtensions"
-    ],
-    "input": [
-      {
-        "@context": "dtmi:dtdl:context;2",
-        "@id": "dtmi:example:mu_beta;1",
-        "@type": "Interface",
-        "contents": {
-          "@type": "Telemetry",
-          "name": "mu_alpha",
+          "name": "tau_mu",
           "schema": "long",
-          "comment": [
-            null
-          ]
+          "comment": 626
         }
       }
     ]
@@ -250,16 +209,14 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;2",
-        "@id": "dtmi:example:mu_delta;1",
+        "@id": "dtmi:example:tau_omicron;1",
         "@type": "Interface",
         "contents": {
           "@context": "dtmi:undefinedExtension:context;1",
           "@type": "Telemetry",
-          "name": "mu_gamma",
+          "name": "tau_xi",
           "schema": "string",
-          "comment": [
-            null
-          ]
+          "comment": 626
         }
       }
     ]
@@ -272,14 +229,14 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;2",
-        "@id": "dtmi:example:mu_zeta;1",
+        "@id": "dtmi:example:tau_rho;1",
         "@type": "Interface",
         "contents": {
           "@type": "Telemetry",
-          "name": "mu_epsilon",
+          "name": "tau_pi",
           "schema": "time",
           "comment": [
-            true
+            null
           ]
         }
       }
@@ -293,14 +250,57 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;2",
-        "@id": "dtmi:example:mu_theta;1",
+        "@id": "dtmi:example:tau_tau;1",
         "@type": "Interface",
         "contents": {
           "@context": "dtmi:undefinedExtension:context;1",
           "@type": "Telemetry",
-          "name": "mu_eta",
+          "name": "tau_sigma",
           "schema": "boolean",
           "comment": [
+            null
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:tau_phi;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Telemetry",
+          "name": "tau_upsilon",
+          "schema": "date",
+          "comment": [
+            true
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:tau_psi;1",
+        "@type": "Interface",
+        "contents": {
+          "@context": "dtmi:undefinedExtension:context;1",
+          "@type": "Telemetry",
+          "name": "tau_chi",
+          "schema": "dateTime",
+          "comment": [
             true
           ]
         }
@@ -315,55 +315,55 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;2",
-        "@id": "dtmi:example:mu_kappa;1",
+        "@id": "dtmi:example:tau_yuzz;1",
         "@type": "Interface",
         "contents": {
           "@type": "Telemetry",
-          "name": "mu_iota",
-          "schema": "date",
-          "comment": [
-            626
-          ]
-        }
-      }
-    ]
-  },
-  {
-    "valid": false,
-    "options": [
-      "AllowUndefinedExtensions"
-    ],
-    "input": [
-      {
-        "@context": "dtmi:dtdl:context;2",
-        "@id": "dtmi:example:mu_mu;1",
-        "@type": "Interface",
-        "contents": {
-          "@context": "dtmi:undefinedExtension:context;1",
-          "@type": "Telemetry",
-          "name": "mu_lambda",
-          "schema": "dateTime",
-          "comment": [
-            626
-          ]
-        }
-      }
-    ]
-  },
-  {
-    "valid": false,
-    "options": [
-      "DisallowUndefinedExtensions"
-    ],
-    "input": [
-      {
-        "@context": "dtmi:dtdl:context;2",
-        "@id": "dtmi:example:mu_xi;1",
-        "@type": "Interface",
-        "contents": {
-          "@type": "Telemetry",
-          "name": "mu_nu",
+          "name": "tau_omega",
           "schema": "double",
+          "comment": [
+            626
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:tau_um;1",
+        "@type": "Interface",
+        "contents": {
+          "@context": "dtmi:undefinedExtension:context;1",
+          "@type": "Telemetry",
+          "name": "tau_wum",
+          "schema": "duration",
+          "comment": [
+            626
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:tau_fuddle;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Telemetry",
+          "name": "tau_humpf",
+          "schema": "float",
           "comment": {}
         }
       }
@@ -377,13 +377,13 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;2",
-        "@id": "dtmi:example:mu_pi;1",
+        "@id": "dtmi:example:tau_nuh;1",
         "@type": "Interface",
         "contents": {
           "@context": "dtmi:undefinedExtension:context;1",
           "@type": "Telemetry",
-          "name": "mu_omicron",
-          "schema": "duration",
+          "name": "tau_glikk",
+          "schema": "integer",
           "comment": {}
         }
       }
@@ -397,12 +397,12 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;2",
-        "@id": "dtmi:example:mu_sigma;1",
+        "@id": "dtmi:example:tau_quan;1",
         "@type": "Interface",
         "contents": {
           "@type": "Telemetry",
-          "name": "mu_rho",
-          "schema": "float",
+          "name": "tau_snee",
+          "schema": "long",
           "comment": [
             {}
           ]
@@ -418,13 +418,13 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;2",
-        "@id": "dtmi:example:mu_upsilon;1",
+        "@id": "dtmi:example:tau_spazz;1",
         "@type": "Interface",
         "contents": {
           "@context": "dtmi:undefinedExtension:context;1",
           "@type": "Telemetry",
-          "name": "mu_tau",
-          "schema": "integer",
+          "name": "tau_thnad",
+          "schema": "string",
           "comment": [
             {}
           ]

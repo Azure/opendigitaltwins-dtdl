@@ -7,10 +7,10 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;3",
-        "@id": "dtmi:example:zeta_omicron;1",
+        "@id": "dtmi:example:pi_yekk;1",
         "@type": "Interface",
         "extends": {
-          "@id": "dtmi:example:zeta_xi;1",
+          "@id": "dtmi:example:pi_itch;1",
           "@type": "Interface",
           "@context": "dtmi:dtdl:extension:quantitativeTypes;1"
         }
@@ -25,10 +25,10 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;3",
-        "@id": "dtmi:example:zeta_rho;1",
+        "@id": "dtmi:example:pi_hi;1",
         "@type": "Interface",
         "extends": {
-          "@id": "dtmi:example:zeta_pi;1",
+          "@id": "dtmi:example:pi_vroo;1",
           "@type": "Interface",
           "@context": []
         }
@@ -43,10 +43,10 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;3",
-        "@id": "dtmi:example:zeta_tau;1",
+        "@id": "dtmi:example:rho_beta;1",
         "@type": "Interface",
         "extends": {
-          "@id": "dtmi:example:zeta_sigma;1",
+          "@id": "dtmi:example:rho_alpha;1",
           "@type": "Interface",
           "@context": [
             "dtmi:dtdl:extension:quantitativeTypes;1"
@@ -63,10 +63,10 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;3",
-        "@id": "dtmi:example:zeta_phi;1",
+        "@id": "dtmi:example:rho_delta;1",
         "@type": "Interface",
         "extends": {
-          "@id": "dtmi:example:zeta_upsilon;1",
+          "@id": "dtmi:example:rho_gamma;1",
           "@type": "Interface",
           "@context": null
         }
@@ -81,10 +81,10 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;3",
-        "@id": "dtmi:example:zeta_psi;1",
+        "@id": "dtmi:example:rho_zeta;1",
         "@type": "Interface",
         "extends": {
-          "@id": "dtmi:example:zeta_chi;1",
+          "@id": "dtmi:example:rho_epsilon;1",
           "@type": "Interface",
           "@context": 626
         }
@@ -99,10 +99,10 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;3",
-        "@id": "dtmi:example:zeta_yuzz;1",
+        "@id": "dtmi:example:rho_theta;1",
         "@type": "Interface",
         "extends": {
-          "@id": "dtmi:example:zeta_omega;1",
+          "@id": "dtmi:example:rho_eta;1",
           "@type": "Interface",
           "@context": true
         }
@@ -117,10 +117,10 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;3",
-        "@id": "dtmi:example:zeta_um;1",
+        "@id": "dtmi:example:rho_kappa;1",
         "@type": "Interface",
         "extends": {
-          "@id": "dtmi:example:zeta_wum;1",
+          "@id": "dtmi:example:rho_iota;1",
           "@type": "Interface",
           "@context": [
             null
@@ -137,10 +137,10 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;3",
-        "@id": "dtmi:example:zeta_fuddle;1",
+        "@id": "dtmi:example:rho_mu;1",
         "@type": "Interface",
         "extends": {
-          "@id": "dtmi:example:zeta_humpf;1",
+          "@id": "dtmi:example:rho_lambda;1",
           "@type": "Interface",
           "@context": [
             626
@@ -157,10 +157,10 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;3",
-        "@id": "dtmi:example:zeta_nuh;1",
+        "@id": "dtmi:example:rho_xi;1",
         "@type": "Interface",
         "extends": {
-          "@id": "dtmi:example:zeta_glikk;1",
+          "@id": "dtmi:example:rho_nu;1",
           "@type": "Interface",
           "@context": [
             true
@@ -177,10 +177,64 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;3",
-        "@id": "dtmi:example:zeta_quan;1",
+        "@id": "dtmi:example:rho_pi;1",
         "@type": "Interface",
         "extends": {
-          "@id": "dtmi:example:zeta_snee;1",
+          "@id": "dtmi:example:rho_omicron;1",
+          "@type": "Interface",
+          "@context": "dtmi:dtdl:extension:quantitativeTypes"
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:rho_sigma;1",
+        "@type": "Interface",
+        "extends": {
+          "@id": "dtmi:example:rho_rho;1",
+          "@type": "Interface",
+          "@context": "http://dtdl/extension/quantitativeTypes/1"
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:rho_upsilon;1",
+        "@type": "Interface",
+        "extends": {
+          "@id": "dtmi:example:rho_tau;1",
+          "@type": "Interface",
+          "@context": "quantitativeTypes;1"
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:rho_chi;1",
+        "@type": "Interface",
+        "extends": {
+          "@id": "dtmi:example:rho_phi;1",
           "@type": "Interface",
           "@context": {}
         }
@@ -195,10 +249,30 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;3",
-        "@id": "dtmi:example:zeta_spazz;1",
+        "@id": "dtmi:example:rho_omega;1",
         "@type": "Interface",
         "extends": {
-          "@id": "dtmi:example:zeta_thnad;1",
+          "@id": "dtmi:example:rho_psi;1",
+          "@type": "Interface",
+          "@context": {
+            "foo": "dtmi:foo:bar;1"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:rho_wum;1",
+        "@type": "Interface",
+        "extends": {
+          "@id": "dtmi:example:rho_yuzz;1",
           "@type": "Interface",
           "@context": [
             {}
@@ -215,48 +289,16 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;3",
-        "@id": "dtmi:example:zeta_zatz;1",
+        "@id": "dtmi:example:rho_humpf;1",
         "@type": "Interface",
         "extends": {
-          "@id": "dtmi:example:zeta_floob;1",
+          "@id": "dtmi:example:rho_um;1",
           "@type": "Interface",
-          "@context": "dtmi:dtdl:extension:quantitativeTypes"
-        }
-      }
-    ]
-  },
-  {
-    "valid": false,
-    "options": [
-      "DisallowUndefinedExtensions"
-    ],
-    "input": [
-      {
-        "@context": "dtmi:dtdl:context;3",
-        "@id": "dtmi:example:zeta_flunn;1",
-        "@type": "Interface",
-        "extends": {
-          "@id": "dtmi:example:zeta_jogg;1",
-          "@type": "Interface",
-          "@context": "http://dtdl/extension/quantitativeTypes/1"
-        }
-      }
-    ]
-  },
-  {
-    "valid": false,
-    "options": [
-      "DisallowUndefinedExtensions"
-    ],
-    "input": [
-      {
-        "@context": "dtmi:dtdl:context;3",
-        "@id": "dtmi:example:zeta_yekk;1",
-        "@type": "Interface",
-        "extends": {
-          "@id": "dtmi:example:zeta_itch;1",
-          "@type": "Interface",
-          "@context": "quantitativeTypes;1"
+          "@context": [
+            {
+              "foo": "dtmi:foo:bar;1"
+            }
+          ]
         }
       }
     ]

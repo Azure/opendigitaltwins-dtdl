@@ -7,14 +7,14 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;2",
-        "@id": "dtmi:example:eta_sigma;1",
+        "@id": "dtmi:example:xi_um;1",
         "@type": "Interface",
         "extends": {
-          "@id": "dtmi:example:eta_rho;1",
+          "@id": "dtmi:example:xi_wum;1",
           "@type": "Interface",
           "contents": {
             "@type": "Telemetry",
-            "name": "eta_pi",
+            "name": "xi_yuzz",
             "schema": "duration",
             "@context": "dtmi:iotcentral:context;2"
           }
@@ -30,14 +30,14 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;2",
-        "@id": "dtmi:example:eta_phi;1",
+        "@id": "dtmi:example:xi_glikk;1",
         "@type": "Interface",
         "extends": {
-          "@id": "dtmi:example:eta_upsilon;1",
+          "@id": "dtmi:example:xi_fuddle;1",
           "@type": "Interface",
           "contents": {
             "@type": "Telemetry",
-            "name": "eta_tau",
+            "name": "xi_humpf",
             "schema": "float",
             "@context": []
           }
@@ -53,14 +53,14 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;2",
-        "@id": "dtmi:example:eta_omega;1",
+        "@id": "dtmi:example:xi_quan;1",
         "@type": "Interface",
         "extends": {
-          "@id": "dtmi:example:eta_psi;1",
+          "@id": "dtmi:example:xi_snee;1",
           "@type": "Interface",
           "contents": {
             "@type": "Telemetry",
-            "name": "eta_chi",
+            "name": "xi_nuh",
             "schema": "integer",
             "@context": [
               "dtmi:iotcentral:context;2"
@@ -78,14 +78,14 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;2",
-        "@id": "dtmi:example:eta_um;1",
+        "@id": "dtmi:example:xi_floob;1",
         "@type": "Interface",
         "extends": {
-          "@id": "dtmi:example:eta_wum;1",
+          "@id": "dtmi:example:xi_spazz;1",
           "@type": "Interface",
           "contents": {
             "@type": "Telemetry",
-            "name": "eta_yuzz",
+            "name": "xi_thnad",
             "schema": "long",
             "@context": null
           }
@@ -101,14 +101,14 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;2",
-        "@id": "dtmi:example:eta_glikk;1",
+        "@id": "dtmi:example:xi_flunn;1",
         "@type": "Interface",
         "extends": {
-          "@id": "dtmi:example:eta_fuddle;1",
+          "@id": "dtmi:example:xi_jogg;1",
           "@type": "Interface",
           "contents": {
             "@type": "Telemetry",
-            "name": "eta_humpf",
+            "name": "xi_zatz",
             "schema": "string",
             "@context": 626
           }
@@ -124,14 +124,14 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;2",
-        "@id": "dtmi:example:eta_quan;1",
+        "@id": "dtmi:example:xi_vroo;1",
         "@type": "Interface",
         "extends": {
-          "@id": "dtmi:example:eta_snee;1",
+          "@id": "dtmi:example:xi_yekk;1",
           "@type": "Interface",
           "contents": {
             "@type": "Telemetry",
-            "name": "eta_nuh",
+            "name": "xi_itch",
             "schema": "time",
             "@context": true
           }
@@ -147,14 +147,14 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;2",
-        "@id": "dtmi:example:eta_floob;1",
+        "@id": "dtmi:example:omicron_beta;1",
         "@type": "Interface",
         "extends": {
-          "@id": "dtmi:example:eta_spazz;1",
+          "@id": "dtmi:example:omicron_alpha;1",
           "@type": "Interface",
           "contents": {
             "@type": "Telemetry",
-            "name": "eta_thnad",
+            "name": "xi_hi",
             "schema": "boolean",
             "@context": [
               null
@@ -172,14 +172,14 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;2",
-        "@id": "dtmi:example:eta_flunn;1",
+        "@id": "dtmi:example:omicron_epsilon;1",
         "@type": "Interface",
         "extends": {
-          "@id": "dtmi:example:eta_jogg;1",
+          "@id": "dtmi:example:omicron_delta;1",
           "@type": "Interface",
           "contents": {
             "@type": "Telemetry",
-            "name": "eta_zatz",
+            "name": "omicron_gamma",
             "schema": "date",
             "@context": [
               626
@@ -197,14 +197,14 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;2",
-        "@id": "dtmi:example:eta_vroo;1",
+        "@id": "dtmi:example:omicron_theta;1",
         "@type": "Interface",
         "extends": {
-          "@id": "dtmi:example:eta_yekk;1",
+          "@id": "dtmi:example:omicron_eta;1",
           "@type": "Interface",
           "contents": {
             "@type": "Telemetry",
-            "name": "eta_itch",
+            "name": "omicron_zeta",
             "schema": "dateTime",
             "@context": [
               true
@@ -222,15 +222,84 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;2",
-        "@id": "dtmi:example:theta_beta;1",
+        "@id": "dtmi:example:omicron_lambda;1",
         "@type": "Interface",
         "extends": {
-          "@id": "dtmi:example:theta_alpha;1",
+          "@id": "dtmi:example:omicron_kappa;1",
           "@type": "Interface",
           "contents": {
             "@type": "Telemetry",
-            "name": "eta_hi",
+            "name": "omicron_iota",
             "schema": "double",
+            "@context": "dtmi:iotcentral:context"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:omicron_xi;1",
+        "@type": "Interface",
+        "extends": {
+          "@id": "dtmi:example:omicron_nu;1",
+          "@type": "Interface",
+          "contents": {
+            "@type": "Telemetry",
+            "name": "omicron_mu",
+            "schema": "duration",
+            "@context": "http://iotcentral/context/2"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:omicron_rho;1",
+        "@type": "Interface",
+        "extends": {
+          "@id": "dtmi:example:omicron_pi;1",
+          "@type": "Interface",
+          "contents": {
+            "@type": "Telemetry",
+            "name": "omicron_omicron",
+            "schema": "float",
+            "@context": "iotcentral;2"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:omicron_upsilon;1",
+        "@type": "Interface",
+        "extends": {
+          "@id": "dtmi:example:omicron_tau;1",
+          "@type": "Interface",
+          "contents": {
+            "@type": "Telemetry",
+            "name": "omicron_sigma",
+            "schema": "integer",
             "@context": {}
           }
         }
@@ -245,15 +314,40 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;2",
-        "@id": "dtmi:example:theta_epsilon;1",
+        "@id": "dtmi:example:omicron_psi;1",
         "@type": "Interface",
         "extends": {
-          "@id": "dtmi:example:theta_delta;1",
+          "@id": "dtmi:example:omicron_chi;1",
           "@type": "Interface",
           "contents": {
             "@type": "Telemetry",
-            "name": "theta_gamma",
-            "schema": "duration",
+            "name": "omicron_phi",
+            "schema": "long",
+            "@context": {
+              "foo": "dtmi:foo:bar;1"
+            }
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:omicron_wum;1",
+        "@type": "Interface",
+        "extends": {
+          "@id": "dtmi:example:omicron_yuzz;1",
+          "@type": "Interface",
+          "contents": {
+            "@type": "Telemetry",
+            "name": "omicron_omega",
+            "schema": "string",
             "@context": [
               {}
             ]
@@ -270,62 +364,20 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;2",
-        "@id": "dtmi:example:theta_theta;1",
+        "@id": "dtmi:example:omicron_fuddle;1",
         "@type": "Interface",
         "extends": {
-          "@id": "dtmi:example:theta_eta;1",
+          "@id": "dtmi:example:omicron_humpf;1",
           "@type": "Interface",
           "contents": {
             "@type": "Telemetry",
-            "name": "theta_zeta",
-            "schema": "float",
-            "@context": "dtmi:iotcentral:context"
-          }
-        }
-      }
-    ]
-  },
-  {
-    "valid": false,
-    "options": [
-      "DisallowUndefinedExtensions"
-    ],
-    "input": [
-      {
-        "@context": "dtmi:dtdl:context;2",
-        "@id": "dtmi:example:theta_lambda;1",
-        "@type": "Interface",
-        "extends": {
-          "@id": "dtmi:example:theta_kappa;1",
-          "@type": "Interface",
-          "contents": {
-            "@type": "Telemetry",
-            "name": "theta_iota",
-            "schema": "integer",
-            "@context": "http://iotcentral/context/2"
-          }
-        }
-      }
-    ]
-  },
-  {
-    "valid": false,
-    "options": [
-      "DisallowUndefinedExtensions"
-    ],
-    "input": [
-      {
-        "@context": "dtmi:dtdl:context;2",
-        "@id": "dtmi:example:theta_xi;1",
-        "@type": "Interface",
-        "extends": {
-          "@id": "dtmi:example:theta_nu;1",
-          "@type": "Interface",
-          "contents": {
-            "@type": "Telemetry",
-            "name": "theta_mu",
-            "schema": "long",
-            "@context": "iotcentral;2"
+            "name": "omicron_um",
+            "schema": "time",
+            "@context": [
+              {
+                "foo": "dtmi:foo:bar;1"
+              }
+            ]
           }
         }
       }

@@ -7,16 +7,16 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;2",
-        "@id": "dtmi:example:psi_vroo;1",
+        "@id": "dtmi:example:wum_hi;1",
         "@type": "Interface",
         "contents": {
           "@type": "Command",
-          "name": "psi_yekk",
+          "name": "wum_vroo",
           "request": {
-            "comment": "psi_jogg",
-            "dtmi:dtdl:property:comment;2": "psi_flunn",
-            "name": "psi_itch",
-            "schema": "float"
+            "comment": "wum_flunn",
+            "dtmi:dtdl:property:comment;2": "wum_itch",
+            "name": "wum_yekk",
+            "schema": "double"
           }
         }
       }
@@ -30,17 +30,17 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;2",
-        "@id": "dtmi:example:omega_delta;1",
+        "@id": "dtmi:example:um_epsilon;1",
         "@type": "Interface",
         "contents": {
           "@type": "Command",
-          "name": "omega_gamma",
+          "name": "um_delta",
           "request": {
             "@context": "dtmi:undefinedExtension:context;1",
-            "comment": "psi_hi",
-            "dtmi:dtdl:property:comment;2": "omega_alpha",
-            "name": "omega_beta",
-            "schema": "integer"
+            "comment": "um_alpha",
+            "dtmi:dtdl:property:comment;2": "um_beta",
+            "name": "um_gamma",
+            "schema": "duration"
           }
         }
       }

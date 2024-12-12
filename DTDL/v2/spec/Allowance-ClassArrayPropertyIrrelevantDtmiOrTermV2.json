@@ -7,15 +7,15 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;2",
-        "@id": "dtmi:example:sigma_xi;1",
+        "@id": "dtmi:example:upsilon_xi;1",
         "@type": "Interface",
         "schemas": {
-          "@id": "dtmi:example:sigma_nu;1",
+          "@id": "dtmi:example:upsilon_nu;1",
           "@type": [
             "Array",
             "Foobar"
           ],
-          "elementSchema": "long",
+          "elementSchema": "time",
           "dtmi:foo:bar;1": 626
         }
       }
@@ -29,15 +29,15 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;2",
-        "@id": "dtmi:example:sigma_pi;1",
+        "@id": "dtmi:example:upsilon_pi;1",
         "@type": "Interface",
         "schemas": {
-          "@id": "dtmi:example:sigma_omicron;1",
+          "@id": "dtmi:example:upsilon_omicron;1",
           "@type": [
             "Array",
             "Foobar"
           ],
-          "elementSchema": "string",
+          "elementSchema": "boolean",
           "boolean": null
         }
       }

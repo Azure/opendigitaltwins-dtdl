@@ -1,0 +1,54 @@
+﻿[
+  {
+    "valid": true,
+    "desirable": true,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:delta_iota;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:delta_eta;1",
+          "@type": "Map",
+          "mapValue": {
+            "name": "delta_theta",
+            "schema": "unsignedShort"
+          },
+          "mapKey": {
+            "name": "delta_zeta",
+            "schema": "string"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "desirable": false,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:delta_nu;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:delta_lambda;1",
+          "@type": "Map",
+          "mapValue": {
+            "name": "delta_mu",
+            "schema": "uuid"
+          },
+          "mapKey": {
+            "name": "delta_kappa",
+            "dtmi:dtdl:property:schema;4": "string"
+          }
+        }
+      }
+    ]
+  }
+]

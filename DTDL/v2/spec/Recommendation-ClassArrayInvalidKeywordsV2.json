@@ -8,12 +8,12 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;2",
-        "@id": "dtmi:example:sigma_theta;1",
+        "@id": "dtmi:example:upsilon_theta;1",
         "@type": "Interface",
         "schemas": {
-          "@id": "dtmi:example:sigma_eta;1",
+          "@id": "dtmi:example:upsilon_eta;1",
           "@type": "Array",
-          "elementSchema": "duration",
+          "elementSchema": "integer",
           "@value": 626
         }
       }
@@ -28,12 +28,12 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;2",
-        "@id": "dtmi:example:sigma_kappa;1",
+        "@id": "dtmi:example:upsilon_kappa;1",
         "@type": "Interface",
         "schemas": {
-          "@id": "dtmi:example:sigma_iota;1",
+          "@id": "dtmi:example:upsilon_iota;1",
           "@type": "Array",
-          "elementSchema": "float",
+          "elementSchema": "long",
           "@language": "en"
         }
       }
@@ -48,12 +48,12 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;2",
-        "@id": "dtmi:example:sigma_mu;1",
+        "@id": "dtmi:example:upsilon_mu;1",
         "@type": "Interface",
         "schemas": {
-          "@id": "dtmi:example:sigma_lambda;1",
+          "@id": "dtmi:example:upsilon_lambda;1",
           "@type": "Array",
-          "elementSchema": "integer",
+          "elementSchema": "string",
           "@foobar": true
         }
       }

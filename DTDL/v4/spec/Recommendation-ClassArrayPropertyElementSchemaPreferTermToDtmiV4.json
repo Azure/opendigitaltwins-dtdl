@@ -1,0 +1,78 @@
+﻿[
+  {
+    "valid": true,
+    "desirable": true,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:yekk_eta;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:yekk_zeta;1",
+          "@type": "Array",
+          "elementSchema": "byte"
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "desirable": false,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:yekk_iota;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:yekk_theta;1",
+          "@type": "Array",
+          "elementSchema": "dtmi:dtdl:instance:Schema:byte;4"
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "desirable": true,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:yekk_lambda;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:yekk_kappa;1",
+          "@type": "Array",
+          "elementSchema": "point"
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "desirable": false,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:yekk_nu;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:yekk_mu;1",
+          "@type": "Array",
+          "elementSchema": "dtmi:standard:schema:geospatial:point;4"
+        }
+      }
+    ]
+  }
+]

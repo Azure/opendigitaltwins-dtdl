@@ -1,0 +1,65 @@
+﻿[
+  {
+    "valid": false,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:yuzz_quan;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:yuzz_nuh;1",
+          "@type": "Map",
+          "mapValue": {
+            "name": "yuzz_snee",
+            "schema": "unsignedLong"
+          },
+          "mapKey": {
+            "displayName": [
+              "yuzz_humpf"
+            ],
+            "dtmi:dtdl:property:displayName;4": [
+              "yuzz_fuddle"
+            ],
+            "name": "yuzz_glikk",
+            "schema": "string"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:yuzz_flunn;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:yuzz_zatz;1",
+          "@type": "Map",
+          "mapValue": {
+            "name": "yuzz_jogg",
+            "schema": "unsignedShort"
+          },
+          "mapKey": {
+            "@context": "dtmi:undefinedExtension:context;1",
+            "displayName": [
+              "yuzz_thnad"
+            ],
+            "dtmi:dtdl:property:displayName;4": [
+              "yuzz_spazz"
+            ],
+            "name": "yuzz_floob",
+            "schema": "string"
+          }
+        }
+      }
+    ]
+  }
+]

@@ -1,0 +1,38 @@
+﻿[
+  {
+    "valid": true,
+    "desirable": true,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:omicron_tau;1",
+        "@type": "Interface",
+        "contents": {
+          "name": "omicron_sigma",
+          "@type": "Relationship"
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "desirable": false,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:omicron_phi;1",
+        "@type": "Interface",
+        "contents": {
+          "name": "omicron_upsilon",
+          "@type": "dtmi:dtdl:class:Relationship;4"
+        }
+      }
+    ]
+  }
+]

@@ -7,14 +7,14 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;2",
-        "@id": "dtmi:example:lambda_chi;1",
+        "@id": "dtmi:example:nu_chi;1",
         "@type": "Interface",
         "contents": {
           "@type": "Telemetry",
-          "name": "lambda_phi",
+          "name": "nu_phi",
           "schema": {
             "@type": "Array",
-            "elementSchema": "long"
+            "elementSchema": "time"
           }
         }
       }
@@ -28,12 +28,12 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;2",
-        "@id": "dtmi:example:lambda_omega;1",
+        "@id": "dtmi:example:nu_omega;1",
         "@type": "Interface",
         "schemas": {
-          "@id": "dtmi:example:lambda_psi;1",
+          "@id": "dtmi:example:nu_psi;1",
           "@type": "Array",
-          "elementSchema": "string"
+          "elementSchema": "boolean"
         }
       }
     ]
@@ -46,11 +46,11 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;2",
-        "@id": "dtmi:example:lambda_yuzz;1",
+        "@id": "dtmi:example:nu_yuzz;1",
         "@type": "Interface",
         "schemas": {
           "@type": "Array",
-          "elementSchema": "time"
+          "elementSchema": "date"
         }
       }
     ]
@@ -63,12 +63,12 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;2",
-        "@id": "dtmi:example:lambda_wum;1",
+        "@id": "dtmi:example:nu_wum;1",
         "@type": "Interface",
         "schemas": {
           "@context": "dtmi:undefinedExtension:context;1",
           "@type": "Array",
-          "elementSchema": "boolean"
+          "elementSchema": "dateTime"
         }
       }
     ]

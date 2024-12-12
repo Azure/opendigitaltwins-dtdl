@@ -7,21 +7,21 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;3",
-        "@id": "dtmi:example:eta_nu;1",
+        "@id": "dtmi:example:tau_epsilon;1",
         "@type": "Interface",
         "schemas": {
-          "@id": "dtmi:example:eta_kappa;1",
+          "@id": "dtmi:example:tau_beta;1",
           "@type": [
             "Map",
             "Foobar"
           ],
           "mapKey": {
-            "name": "eta_lambda",
+            "name": "tau_gamma",
             "schema": "string"
           },
           "mapValue": {
-            "name": "eta_mu",
-            "schema": "duration"
+            "name": "tau_delta",
+            "schema": "boolean"
           },
           "dtmi:foo:bar;1": 626
         }
@@ -36,22 +36,22 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;3",
-        "@id": "dtmi:example:eta_rho;1",
+        "@id": "dtmi:example:tau_iota;1",
         "@type": "Interface",
         "schemas": {
           "@context": "dtmi:undefinedExtension:context;1",
-          "@id": "dtmi:example:eta_xi;1",
+          "@id": "dtmi:example:tau_zeta;1",
           "@type": [
             "Map",
             "Foobar"
           ],
           "mapKey": {
-            "name": "eta_omicron",
+            "name": "tau_eta",
             "schema": "string"
           },
           "mapValue": {
-            "name": "eta_pi",
-            "schema": "float"
+            "name": "tau_theta",
+            "schema": "date"
           },
           "dtmi:foo:bar;1": 626
         }
@@ -66,21 +66,21 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;3",
-        "@id": "dtmi:example:eta_phi;1",
+        "@id": "dtmi:example:tau_nu;1",
         "@type": "Interface",
         "schemas": {
-          "@id": "dtmi:example:eta_sigma;1",
+          "@id": "dtmi:example:tau_kappa;1",
           "@type": [
             "Map",
             "Foobar"
           ],
           "mapKey": {
-            "name": "eta_tau",
+            "name": "tau_lambda",
             "schema": "string"
           },
           "mapValue": {
-            "name": "eta_upsilon",
-            "schema": "integer"
+            "name": "tau_mu",
+            "schema": "dateTime"
           },
           "boolean": null
         }
@@ -95,22 +95,22 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;3",
-        "@id": "dtmi:example:eta_yuzz;1",
+        "@id": "dtmi:example:tau_rho;1",
         "@type": "Interface",
         "schemas": {
           "@context": "dtmi:undefinedExtension:context;1",
-          "@id": "dtmi:example:eta_chi;1",
+          "@id": "dtmi:example:tau_xi;1",
           "@type": [
             "Map",
             "Foobar"
           ],
           "mapKey": {
-            "name": "eta_psi",
+            "name": "tau_omicron",
             "schema": "string"
           },
           "mapValue": {
-            "name": "eta_omega",
-            "schema": "long"
+            "name": "tau_pi",
+            "schema": "double"
           },
           "boolean": null
         }

@@ -1,0 +1,28 @@
+﻿[
+  {
+    "valid": true,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:mu_pi;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:mu_xi;1",
+          "@type": "Map",
+          "mapKey": {
+            "name": "mu_omicron",
+            "schema": "string"
+          },
+          "mapValue": {
+            "dtmi:dtdl:property:comment;4": "mu_mu",
+            "name": "mu_nu",
+            "schema": "byte"
+          }
+        }
+      }
+    ]
+  }
+]

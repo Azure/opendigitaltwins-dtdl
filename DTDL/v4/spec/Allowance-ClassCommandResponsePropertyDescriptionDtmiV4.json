@@ -1,0 +1,26 @@
+﻿[
+  {
+    "valid": true,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:delta_humpf;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Command",
+          "name": "delta_um",
+          "response": {
+            "dtmi:dtdl:property:description;4": [
+              "delta_yuzz"
+            ],
+            "name": "delta_wum",
+            "schema": "decimal"
+          }
+        }
+      }
+    ]
+  }
+]

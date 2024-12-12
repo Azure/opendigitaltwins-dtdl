@@ -1,0 +1,63 @@
+﻿[
+  {
+    "valid": false,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:sigma_glikk;1",
+        "@type": "Interface",
+        "contents": {
+          "@id": "dtmi:example:sigma_glikk;1",
+          "@type": "Property",
+          "name": "sigma_quan",
+          "schema": {
+            "@id": "dtmi:example:sigma_glikk;1",
+            "@type": "Map",
+            "mapKey": {
+              "name": "sigma_nuh",
+              "schema": "string"
+            },
+            "mapValue": {
+              "name": "sigma_snee",
+              "schema": "float"
+            }
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:sigma_thnad;1",
+        "@type": "Interface",
+        "contents": {
+          "@id": "dtmi:example:sigma_thnad;1",
+          "@type": "Property",
+          "name": "sigma_zatz",
+          "schema": {
+            "@context": "dtmi:undefinedExtension:context;1",
+            "@id": "dtmi:example:sigma_thnad;1",
+            "@type": "Map",
+            "mapKey": {
+              "name": "sigma_spazz",
+              "schema": "string"
+            },
+            "mapValue": {
+              "name": "sigma_floob",
+              "schema": "integer"
+            }
+          }
+        }
+      }
+    ]
+  }
+]

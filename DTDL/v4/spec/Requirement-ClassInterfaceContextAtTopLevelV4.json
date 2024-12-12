@@ -1,0 +1,31 @@
+﻿[
+  {
+    "valid": true,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:wum_humpf;1",
+        "@type": "Interface",
+        "extends": {
+          "@id": "dtmi:example:wum_um;1",
+          "@type": "Interface"
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@id": "dtmi:example:wum_fuddle;1",
+        "@type": "Interface"
+      }
+    ]
+  }
+]

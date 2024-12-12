@@ -1,0 +1,23 @@
+﻿[
+  {
+    "valid": true,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:kappa_nu;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:kappa_lambda;1",
+          "@type": "Enum",
+          "dtmi:dtdl:property:displayName;4": [
+            "kappa_mu"
+          ],
+          "valueSchema": "integer"
+        }
+      }
+    ]
+  }
+]

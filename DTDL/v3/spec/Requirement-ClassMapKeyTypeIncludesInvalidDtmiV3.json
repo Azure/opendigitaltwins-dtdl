@@ -7,21 +7,21 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;3",
-        "@id": "dtmi:example:um_lambda;1",
+        "@id": "dtmi:example:flunn_lambda;1",
         "@type": "Interface",
         "schemas": {
-          "@id": "dtmi:example:um_iota;1",
+          "@id": "dtmi:example:flunn_iota;1",
           "@type": "Map",
           "mapValue": {
-            "name": "um_kappa",
-            "schema": "date"
+            "name": "flunn_kappa",
+            "schema": "time"
           },
           "mapKey": {
             "@type": [
               "MapKey",
               "dtmi:foo//bar"
             ],
-            "name": "um_theta",
+            "name": "flunn_theta",
             "schema": "string"
           }
         }
@@ -36,14 +36,14 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;3",
-        "@id": "dtmi:example:um_omicron;1",
+        "@id": "dtmi:example:flunn_omicron;1",
         "@type": "Interface",
         "schemas": {
-          "@id": "dtmi:example:um_nu;1",
+          "@id": "dtmi:example:flunn_nu;1",
           "@type": "Map",
           "mapValue": {
-            "name": "um_xi",
-            "schema": "dateTime"
+            "name": "flunn_xi",
+            "schema": "boolean"
           },
           "mapKey": {
             "@context": "dtmi:undefinedExtension:context;1",
@@ -51,7 +51,7 @@
               "MapKey",
               "dtmi:foo//bar"
             ],
-            "name": "um_mu",
+            "name": "flunn_mu",
             "schema": "string"
           }
         }

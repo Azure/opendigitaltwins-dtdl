@@ -1,0 +1,46 @@
+﻿[
+  {
+    "valid": true,
+    "desirable": true,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:nu_chi;1",
+        "@type": "Interface",
+        "contents": {
+          "name": "nu_upsilon",
+          "schema": {
+            "@id": "dtmi:example:nu_phi;1",
+            "@type": "Interface"
+          },
+          "@type": "Component"
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "desirable": false,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:nu_yuzz;1",
+        "@type": "Interface",
+        "contents": {
+          "name": "nu_psi",
+          "schema": {
+            "@id": "dtmi:example:nu_omega;1",
+            "@type": "Interface"
+          },
+          "@type": "dtmi:dtdl:class:Component;4"
+        }
+      }
+    ]
+  }
+]

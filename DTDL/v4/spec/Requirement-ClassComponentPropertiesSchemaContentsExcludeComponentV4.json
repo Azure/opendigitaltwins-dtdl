@@ -1,0 +1,69 @@
+﻿[
+  {
+    "valid": false,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:pi_omicron;1",
+        "@type": "Interface",
+        "extends": {
+          "@id": "dtmi:example:pi_xi;1",
+          "@type": "Interface",
+          "contents": {
+            "@type": "Component",
+            "name": "pi_nu",
+            "schema": {
+              "@id": "dtmi:example:pi_mu;1",
+              "@type": "Interface",
+              "contents": {
+                "@type": "Component",
+                "name": "pi_kappa",
+                "schema": {
+                  "@id": "dtmi:example:pi_lambda;1",
+                  "@type": "Interface"
+                }
+              }
+            }
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:pi_phi;1",
+        "@type": "Interface",
+        "extends": {
+          "@id": "dtmi:example:pi_upsilon;1",
+          "@type": "Interface",
+          "contents": {
+            "@context": "dtmi:undefinedExtension:context;1",
+            "@type": "Component",
+            "name": "pi_tau",
+            "schema": {
+              "@id": "dtmi:example:pi_sigma;1",
+              "@type": "Interface",
+              "contents": {
+                "@type": "Component",
+                "name": "pi_pi",
+                "schema": {
+                  "@id": "dtmi:example:pi_rho;1",
+                  "@type": "Interface"
+                }
+              }
+            }
+          }
+        }
+      }
+    ]
+  }
+]

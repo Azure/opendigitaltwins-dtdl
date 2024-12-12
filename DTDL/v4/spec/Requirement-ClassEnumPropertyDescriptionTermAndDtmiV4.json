@@ -1,0 +1,51 @@
+﻿[
+  {
+    "valid": false,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:theta_jogg;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:theta_spazz;1",
+          "@type": "Enum",
+          "description": [
+            "theta_floob"
+          ],
+          "dtmi:dtdl:property:description;4": [
+            "theta_zatz"
+          ],
+          "valueSchema": "integer"
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:theta_vroo;1",
+        "@type": "Interface",
+        "schemas": {
+          "@context": "dtmi:undefinedExtension:context;1",
+          "@id": "dtmi:example:theta_flunn;1",
+          "@type": "Enum",
+          "description": [
+            "theta_itch"
+          ],
+          "dtmi:dtdl:property:description;4": [
+            "theta_yekk"
+          ],
+          "valueSchema": "integer"
+        }
+      }
+    ]
+  }
+]

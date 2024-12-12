@@ -1,0 +1,46 @@
+﻿[
+  {
+    "valid": true,
+    "desirable": true,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:hi_nuh;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:hi_glikk;1",
+          "@type": "Object",
+          "fields": {
+            "name": "hi_fuddle",
+            "schema": "unsignedLong"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "desirable": false,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:hi_thnad;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:hi_quan;1",
+          "@type": "Object",
+          "fields": {
+            "dtmi:dtdl:property:name;4": "hi_snee",
+            "schema": "unsignedShort"
+          }
+        }
+      }
+    ]
+  }
+]

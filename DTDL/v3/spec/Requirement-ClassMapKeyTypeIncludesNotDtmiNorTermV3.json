@@ -7,21 +7,21 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;3",
-        "@id": "dtmi:example:um_tau;1",
+        "@id": "dtmi:example:flunn_tau;1",
         "@type": "Interface",
         "schemas": {
-          "@id": "dtmi:example:um_rho;1",
+          "@id": "dtmi:example:flunn_rho;1",
           "@type": "Map",
           "mapValue": {
-            "name": "um_sigma",
-            "schema": "double"
+            "name": "flunn_sigma",
+            "schema": "date"
           },
           "mapKey": {
             "@type": [
               "MapKey",
               "http://foo.com/bar"
             ],
-            "name": "um_pi",
+            "name": "flunn_pi",
             "schema": "string"
           }
         }
@@ -36,14 +36,14 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;3",
-        "@id": "dtmi:example:um_psi;1",
+        "@id": "dtmi:example:flunn_psi;1",
         "@type": "Interface",
         "schemas": {
-          "@id": "dtmi:example:um_phi;1",
+          "@id": "dtmi:example:flunn_phi;1",
           "@type": "Map",
           "mapValue": {
-            "name": "um_chi",
-            "schema": "duration"
+            "name": "flunn_chi",
+            "schema": "dateTime"
           },
           "mapKey": {
             "@context": "dtmi:undefinedExtension:context;1",
@@ -51,7 +51,7 @@
               "MapKey",
               "http://foo.com/bar"
             ],
-            "name": "um_upsilon",
+            "name": "flunn_upsilon",
             "schema": "string"
           }
         }

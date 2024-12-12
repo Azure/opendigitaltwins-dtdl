@@ -7,11 +7,11 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;3",
-        "@id": "dtmi:example:wum_tau;1",
+        "@id": "dtmi:example:floob_nu;1",
         "@type": "Interface",
         "contents": {
           "@type": "Property",
-          "name": "wum_sigma",
+          "name": "floob_mu",
           "schema": {
             "@type": "Enum",
             "valueSchema": "integer",
@@ -29,11 +29,11 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;3",
-        "@id": "dtmi:example:wum_phi;1",
+        "@id": "dtmi:example:floob_omicron;1",
         "@type": "Interface",
         "contents": {
           "@type": "Property",
-          "name": "wum_upsilon",
+          "name": "floob_xi",
           "schema": {
             "@type": "Enum",
             "valueSchema": "integer",
@@ -51,11 +51,11 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;3",
-        "@id": "dtmi:example:wum_psi;1",
+        "@id": "dtmi:example:floob_rho;1",
         "@type": "Interface",
         "contents": {
           "@type": "Property",
-          "name": "wum_chi",
+          "name": "floob_pi",
           "schema": {
             "@type": "Enum",
             "valueSchema": "integer",
@@ -75,11 +75,11 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;3",
-        "@id": "dtmi:example:wum_yuzz;1",
+        "@id": "dtmi:example:floob_tau;1",
         "@type": "Interface",
         "contents": {
           "@type": "Property",
-          "name": "wum_omega",
+          "name": "floob_sigma",
           "schema": {
             "@type": "Enum",
             "valueSchema": "integer",
@@ -97,11 +97,11 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;3",
-        "@id": "dtmi:example:wum_um;1",
+        "@id": "dtmi:example:floob_phi;1",
         "@type": "Interface",
         "contents": {
           "@type": "Property",
-          "name": "wum_wum",
+          "name": "floob_upsilon",
           "schema": {
             "@type": "Enum",
             "valueSchema": "integer",
@@ -119,11 +119,11 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;3",
-        "@id": "dtmi:example:wum_fuddle;1",
+        "@id": "dtmi:example:floob_psi;1",
         "@type": "Interface",
         "contents": {
           "@type": "Property",
-          "name": "wum_humpf",
+          "name": "floob_chi",
           "schema": {
             "@type": "Enum",
             "valueSchema": "integer",
@@ -141,11 +141,11 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;3",
-        "@id": "dtmi:example:wum_nuh;1",
+        "@id": "dtmi:example:floob_yuzz;1",
         "@type": "Interface",
         "contents": {
           "@type": "Property",
-          "name": "wum_glikk",
+          "name": "floob_omega",
           "schema": {
             "@type": "Enum",
             "valueSchema": "integer",
@@ -165,11 +165,11 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;3",
-        "@id": "dtmi:example:wum_quan;1",
+        "@id": "dtmi:example:floob_um;1",
         "@type": "Interface",
         "contents": {
           "@type": "Property",
-          "name": "wum_snee",
+          "name": "floob_wum",
           "schema": {
             "@type": "Enum",
             "valueSchema": "integer",
@@ -189,11 +189,11 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;3",
-        "@id": "dtmi:example:wum_spazz;1",
+        "@id": "dtmi:example:floob_fuddle;1",
         "@type": "Interface",
         "contents": {
           "@type": "Property",
-          "name": "wum_thnad",
+          "name": "floob_humpf",
           "schema": {
             "@type": "Enum",
             "valueSchema": "integer",
@@ -213,11 +213,77 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;3",
-        "@id": "dtmi:example:wum_zatz;1",
+        "@id": "dtmi:example:floob_nuh;1",
         "@type": "Interface",
         "contents": {
           "@type": "Property",
-          "name": "wum_floob",
+          "name": "floob_glikk",
+          "schema": {
+            "@type": "Enum",
+            "valueSchema": "integer",
+            "@context": "dtmi:dtdl:extension:quantitativeTypes"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:floob_quan;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Property",
+          "name": "floob_snee",
+          "schema": {
+            "@type": "Enum",
+            "valueSchema": "integer",
+            "@context": "http://dtdl/extension/quantitativeTypes/1"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:floob_spazz;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Property",
+          "name": "floob_thnad",
+          "schema": {
+            "@type": "Enum",
+            "valueSchema": "integer",
+            "@context": "quantitativeTypes;1"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:floob_zatz;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Property",
+          "name": "floob_floob",
           "schema": {
             "@type": "Enum",
             "valueSchema": "integer",
@@ -235,11 +301,35 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;3",
-        "@id": "dtmi:example:wum_flunn;1",
+        "@id": "dtmi:example:floob_flunn;1",
         "@type": "Interface",
         "contents": {
           "@type": "Property",
-          "name": "wum_jogg",
+          "name": "floob_jogg",
+          "schema": {
+            "@type": "Enum",
+            "valueSchema": "integer",
+            "@context": {
+              "foo": "dtmi:foo:bar;1"
+            }
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:floob_yekk;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Property",
+          "name": "floob_itch",
           "schema": {
             "@type": "Enum",
             "valueSchema": "integer",
@@ -259,59 +349,19 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;3",
-        "@id": "dtmi:example:wum_yekk;1",
+        "@id": "dtmi:example:floob_hi;1",
         "@type": "Interface",
         "contents": {
           "@type": "Property",
-          "name": "wum_itch",
+          "name": "floob_vroo",
           "schema": {
             "@type": "Enum",
             "valueSchema": "integer",
-            "@context": "dtmi:dtdl:extension:quantitativeTypes"
-          }
-        }
-      }
-    ]
-  },
-  {
-    "valid": false,
-    "options": [
-      "DisallowUndefinedExtensions"
-    ],
-    "input": [
-      {
-        "@context": "dtmi:dtdl:context;3",
-        "@id": "dtmi:example:wum_hi;1",
-        "@type": "Interface",
-        "contents": {
-          "@type": "Property",
-          "name": "wum_vroo",
-          "schema": {
-            "@type": "Enum",
-            "valueSchema": "integer",
-            "@context": "http://dtdl/extension/quantitativeTypes/1"
-          }
-        }
-      }
-    ]
-  },
-  {
-    "valid": false,
-    "options": [
-      "DisallowUndefinedExtensions"
-    ],
-    "input": [
-      {
-        "@context": "dtmi:dtdl:context;3",
-        "@id": "dtmi:example:um_beta;1",
-        "@type": "Interface",
-        "contents": {
-          "@type": "Property",
-          "name": "um_alpha",
-          "schema": {
-            "@type": "Enum",
-            "valueSchema": "integer",
-            "@context": "quantitativeTypes;1"
+            "@context": [
+              {
+                "foo": "dtmi:foo:bar;1"
+              }
+            ]
           }
         }
       }

@@ -1,0 +1,20 @@
+﻿[
+  {
+    "valid": true,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:zatz_gamma;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Relationship",
+          "name": "zatz_alpha",
+          "dtmi:dtdl:property:target;4": "dtmi:example:zatz_beta;1"
+        }
+      }
+    ]
+  }
+]

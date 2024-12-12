@@ -7,18 +7,18 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;3",
-        "@id": "dtmi:example:delta_psi;1",
+        "@id": "dtmi:example:omicron_zeta;1",
         "@type": "Interface",
         "schemas": {
-          "@id": "dtmi:example:delta_chi;1",
+          "@id": "dtmi:example:omicron_epsilon;1",
           "@type": "Object",
           "fields": {
             "@type": [
               "Field",
               "Foobar"
             ],
-            "name": "delta_phi",
-            "schema": "integer",
+            "name": "omicron_delta",
+            "schema": "duration",
             "http://foo.com/bar": true
           }
         }
@@ -33,10 +33,10 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;3",
-        "@id": "dtmi:example:delta_wum;1",
+        "@id": "dtmi:example:omicron_iota;1",
         "@type": "Interface",
         "schemas": {
-          "@id": "dtmi:example:delta_yuzz;1",
+          "@id": "dtmi:example:omicron_theta;1",
           "@type": "Object",
           "fields": {
             "@context": "dtmi:undefinedExtension:context;1",
@@ -44,8 +44,8 @@
               "Field",
               "Foobar"
             ],
-            "name": "delta_omega",
-            "schema": "long",
+            "name": "omicron_eta",
+            "schema": "float",
             "http://foo.com/bar": true
           }
         }

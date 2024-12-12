@@ -1,0 +1,265 @@
+﻿{
+  "@vocab": "http://azure.com/DigitalTwins/MetaModel/undefinedTerm/",
+  "dtmm": "http://azure.com/DigitalTwins/MetaModel/",
+  "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+  "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+  "xsd": "http://www.w3.org/2001/XMLSchema#",
+  "sh": "http://www.w3.org/ns/shacl#",
+  "rdfs:Class": { "@type": "@vocab" },
+  "rdfs:subClassOf": { "@type": "@vocab" },
+  "rdfs:domain": { "@type": "@vocab" },
+  "sh:targetClass": { "@type": "@vocab" },
+  "sh:datatype": { "@type": "@vocab" },
+  "sh:lessThan": { "@type": "@vocab" },
+  "sh:lessThanOrEquals": { "@type": "@vocab" },
+  "sh:class": { "@type": "@vocab" },
+  "sh:nodeKind": { "@type": "@vocab" },
+  "sh:path": {
+    "@type": "@vocab",
+    "@container": "@list"
+  },
+  "sh:in": {
+    "@type": "@vocab",
+    "@container": "@list"
+  },
+  "sh:and": { "@container": "@list" },
+  "sh:or": { "@container": "@list" },
+  "sh:not": { "@type": "@vocab" },
+  "sh:alternativePath": {
+    "@type": "@vocab",
+    "@container": "@list"
+  },
+  "sh:inversePath": { "@type": "@vocab" },
+  "sh:zeroOrMorePath": { "@type": "@vocab" },
+  "sh:oneOrMorePath": { "@type": "@vocab" },
+  "sh:zeroOrOnePath": { "@type": "@vocab" },
+  "sh:ignoredProperties": {
+    "@type": "@vocab",
+    "@container": "@list"
+  },
+  "dtmm:aka": { "@type": "@vocab" },
+  "dtmm:asCotype": { "@type": "@vocab" },
+  "dtmm:asProperty": { "@type": "@vocab" },
+  "dtmm:breakoutSubtypes": {
+    "@type": "@vocab",
+    "@container": "@list"
+  },
+  "dtmm:childOf": { "@type": "@vocab" },
+  "dtmm:childProperties": {
+    "@type": "@vocab",
+    "@container": "@list"
+  },
+  "dtmm:classOfProperty": { "@type": "@vocab" },
+  "dtmm:datatypeProperty": { "@type": "@vocab" },
+  "dtmm:description": {
+    "@container": "@language",
+    "@language": "en-US"
+  },
+  "dtmm:dictionaryKey": { "@type": "@vocab" },
+  "dtmm:dtmiSegment": { "@type": "@vocab" },
+  "dtmm:excludeType": { "@type": "@vocab" },
+  "dtmm:hasValue": { "@type": "@vocab" },
+  "dtmm:importProperties": {
+    "@type": "@vocab",
+    "@container": "@list"
+  },
+  "dtmm:instanceProperty": {
+    "@type": "@vocab",
+    "@container": "@list"
+  },
+  "dtmm:jsonType": { "@type": "@vocab" },
+  "dtmm:keyProperty": { "@type": "@vocab" },
+  "dtmm:keyrefProperty": { "@type": "@vocab" },
+  "dtmm:path": { "@type": "@vocab" },
+  "dtmm:refersToProperty": { "@type": "@vocab" },
+  "dtmm:parentOfProperty": { "@type": "@vocab" },
+  "dtmm:patternDesc": {
+    "@container": "@language",
+    "@language": "en-US"
+  },
+  "dtmm:properties": {
+    "@type": "@vocab",
+    "@container": "@list"
+  },
+  "dtmm:relation": { "@type": "@vocab" },
+  "dtmm:reservedPrefix": { "@container": "@list" },
+  "dtmm:uniqueProperties": {
+    "@type": "@vocab",
+    "@container": "@list"
+  },
+
+  "DtdlExtension": { "@id": "dtmi:dtdl:meta:DtdlExtension;4" },
+  "metamodel": { "@id": "dtmi:dtdl:meta:metamodel;4" },
+  "model": { "@id": "dtmi:dtdl:meta:model;4" },
+
+  "AdjunctType": { "@id": "dtmi:dtdl:class:AdjunctType;4" },
+  "Alias": { "@id": "dtmi:dtdl:class:Alias;4" },
+  "Array": { "@id": "dtmi:dtdl:class:Array;4" },
+  "Boolean": { "@id": "dtmi:dtdl:class:Boolean;4" },
+  "Byte": { "@id": "dtmi:dtdl:class:Byte;4" },
+  "Bytes": { "@id": "dtmi:dtdl:class:Bytes;4" },
+  "ComplexSchema": { "@id": "dtmi:dtdl:class:ComplexSchema;4" },
+  "Command": { "@id": "dtmi:dtdl:class:Command;4" },
+  "CommandPayload": { "@id": "dtmi:dtdl:class:CommandPayload;4" },
+  "CommandRequest": { "@id": "dtmi:dtdl:class:CommandRequest;4" },
+  "CommandResponse": { "@id": "dtmi:dtdl:class:CommandResponse;4" },
+  "CommandType": { "@id": "dtmi:dtdl:class:CommandType;4" },
+  "Component": { "@id": "dtmi:dtdl:class:Component;4" },
+  "Content": { "@id": "dtmi:dtdl:class:Content;4" },
+  "Date": { "@id": "dtmi:dtdl:class:Date;4" },
+  "DateTime": { "@id": "dtmi:dtdl:class:DateTime;4" },
+  "Decimal": { "@id": "dtmi:dtdl:class:Decimal;4" },
+  "Double": { "@id": "dtmi:dtdl:class:Double;4" },
+  "Duration": { "@id": "dtmi:dtdl:class:Duration;4" },
+  "Entity": { "@id": "dtmi:dtdl:class:Entity;4" },
+  "Enum": { "@id": "dtmi:dtdl:class:Enum;4" },
+  "EnumValue": { "@id": "dtmi:dtdl:class:EnumValue;4" },
+  "Field": { "@id": "dtmi:dtdl:class:Field;4" },
+  "Float": { "@id": "dtmi:dtdl:class:Float;4" },
+  "Integer": { "@id": "dtmi:dtdl:class:Integer;4" },
+  "Interface": { "@id": "dtmi:dtdl:class:Interface;4" },
+  "LatentType": { "@id": "dtmi:dtdl:class:LatentType;4" },
+  "Long": { "@id": "dtmi:dtdl:class:Long;4" },
+  "Map": { "@id": "dtmi:dtdl:class:Map;4" },
+  "MapKey": { "@id": "dtmi:dtdl:class:MapKey;4" },
+  "MapValue": { "@id": "dtmi:dtdl:class:MapValue;4" },
+  "NamedEntity": { "@id": "dtmi:dtdl:class:NamedEntity;4" },
+  "NamedLatentType": { "@id": "dtmi:dtdl:class:NamedLatentType;4" },
+  "NumericSchema": { "@id": "dtmi:dtdl:class:NumericSchema;4" },
+  "Object": { "@id": "dtmi:dtdl:class:Object;4" },
+  "PrimitiveSchema": { "@id": "dtmi:dtdl:class:PrimitiveSchema;4" },
+  "Property": { "@id": "dtmi:dtdl:class:Property;4" },
+  "Relationship": { "@id": "dtmi:dtdl:class:Relationship;4" },
+  "Schema": { "@id": "dtmi:dtdl:class:Schema;4" },
+  "SchemaField": { "@id": "dtmi:dtdl:class:SchemaField;4" },
+  "SemanticType": { "@id": "dtmi:dtdl:class:SemanticType;4" },
+  "SemanticUnit": { "@id": "dtmi:dtdl:class:SemanticUnit;4" },
+  "Short": { "@id": "dtmi:dtdl:class:Short;4" },
+  "String": { "@id": "dtmi:dtdl:class:String;4" },
+  "Telemetry": { "@id": "dtmi:dtdl:class:Telemetry;4" },
+  "TemporalSchema": { "@id": "dtmi:dtdl:class:TemporalSchema;4" },
+  "Time": { "@id": "dtmi:dtdl:class:Time;4" },
+  "Unit": { "@id": "dtmi:dtdl:class:Unit;4" },
+  "UnsignedByte": { "@id": "dtmi:dtdl:class:UnsignedByte;4" },
+  "UnsignedInteger": { "@id": "dtmi:dtdl:class:UnsignedInteger;4" },
+  "UnsignedLong": { "@id": "dtmi:dtdl:class:UnsignedLong;4" },
+  "UnsignedShort": { "@id": "dtmi:dtdl:class:UnsignedShort;4" },
+  "UnitAttribute": { "@id": "dtmi:dtdl:class:UnitAttribute;4" },
+  "Uuid": { "@id": "dtmi:dtdl:class:Uuid;4" },
+
+  "aliasFor": {
+    "@id": "dtmi:dtdl:property:aliasFor;4",
+    "@type": "@vocab"
+  },
+  "commandType": {
+    "@id": "dtmi:dtdl:property:commandType;4",
+    "@type": "@vocab"
+  },
+  "comment": { "@id": "dtmi:dtdl:property:comment;4" },
+  "contents": {
+    "@id": "dtmi:dtdl:property:contents;4",
+    "@type": "@vocab"
+  },
+  "description": {
+    "@id": "dtmi:dtdl:property:description;4",
+    "@container": "@language",
+    "@language": "en"
+  },
+  "displayName": {
+    "@id": "dtmi:dtdl:property:displayName;4",
+    "@container": "@language",
+    "@language": "en"
+  },
+  "elementSchema": {
+    "@id": "dtmi:dtdl:property:elementSchema;4",
+    "@type": "@vocab"
+  },
+  "enumValue": { "@id": "dtmi:dtdl:property:enumValue;4" },
+  "enumValues": {
+    "@id": "dtmi:dtdl:property:enumValues;4",
+    "@type": "@vocab"
+  },
+  "exponent": { "@id": "dtmi:dtdl:property:exponent;4" },
+  "extends": {
+    "@id": "dtmi:dtdl:property:extends;4",
+    "@type": "@vocab"
+  },
+  "fields": {
+    "@id": "dtmi:dtdl:property:fields;4",
+    "@type": "@vocab"
+  },
+  "languageMajorVersion": { "@id": "dtmi:dtdl:property:languageMajorVersion;4" },
+  "mapKey": {
+    "@id": "dtmi:dtdl:property:mapKey;4",
+    "@type": "@vocab"
+  },
+  "mapValue": {
+    "@id": "dtmi:dtdl:property:mapValue;4",
+    "@type": "@vocab"
+  },
+  "maxMultiplicity": { "@id": "dtmi:dtdl:property:maxMultiplicity;4" },
+  "minMultiplicity": { "@id": "dtmi:dtdl:property:minMultiplicity;4" },
+  "name": { "@id": "dtmi:dtdl:property:name;4" },
+  "nullable": { "@id": "dtmi:dtdl:property:nullable;4" },
+  "properties": {
+    "@id": "dtmi:dtdl:property:properties;4",
+    "@type": "@vocab"
+  },
+  "request": {
+    "@id": "dtmi:dtdl:property:request;4",
+    "@type": "@vocab"
+  },
+  "response": {
+    "@id": "dtmi:dtdl:property:response;4",
+    "@type": "@vocab"
+  },
+  "schema": {
+    "@id": "dtmi:dtdl:property:schema;4",
+    "@type": "@vocab"
+  },
+  "schemas": {
+    "@id": "dtmi:dtdl:property:schemas;4",
+    "@type": "@vocab"
+  },
+  "symbol": { "@id": "dtmi:dtdl:property:symbol;4" },
+  "target": {
+    "@id": "dtmi:dtdl:property:target;4",
+    "@type": "@vocab"
+  },
+  "valueSchema": {
+    "@id": "dtmi:dtdl:property:valueSchema;4",
+    "@type": "@vocab"
+  },
+  "writable": { "@id": "dtmi:dtdl:property:writable;4" },
+
+  "asynchronous": { "@id": "dtmi:dtdl:instance:CommandType:asynchronous;4" },
+  "synchronous": { "@id": "dtmi:dtdl:instance:CommandType:synchronous;4" },
+  "boolean": { "@id": "dtmi:dtdl:instance:Schema:boolean;4" },
+  "byte": { "@id": "dtmi:dtdl:instance:Schema:byte;4" },
+  "bytes": { "@id": "dtmi:dtdl:instance:Schema:bytes;4" },
+  "date": { "@id": "dtmi:dtdl:instance:Schema:date;4" },
+  "dateTime": { "@id": "dtmi:dtdl:instance:Schema:dateTime;4" },
+  "decimal": { "@id": "dtmi:dtdl:instance:Schema:decimal;4" },
+  "double": { "@id": "dtmi:dtdl:instance:Schema:double;4" },
+  "duration": { "@id": "dtmi:dtdl:instance:Schema:duration;4" },
+  "float": { "@id": "dtmi:dtdl:instance:Schema:float;4" },
+  "integer": { "@id": "dtmi:dtdl:instance:Schema:integer;4" },
+  "long": { "@id": "dtmi:dtdl:instance:Schema:long;4" },
+  "short": { "@id": "dtmi:dtdl:instance:Schema:short;4" },
+  "string": { "@id": "dtmi:dtdl:instance:Schema:string;4" },
+  "time": { "@id": "dtmi:dtdl:instance:Schema:time;4" },
+  "unsignedByte": { "@id": "dtmi:dtdl:instance:Schema:unsignedByte;4" },
+  "unsignedInteger": { "@id": "dtmi:dtdl:instance:Schema:unsignedInteger;4" },
+  "unsignedLong": { "@id": "dtmi:dtdl:instance:Schema:unsignedLong;4" },
+  "unsignedShort": { "@id": "dtmi:dtdl:instance:Schema:unsignedShort;4" },
+  "uuid": { "@id": "dtmi:dtdl:instance:Schema:uuid;4" },
+
+  "point": { "@id": "dtmi:standard:schema:geospatial:point;4" },
+  "multiPoint": { "@id": "dtmi:standard:schema:geospatial:multiPoint;4" },
+  "lineString": { "@id": "dtmi:standard:schema:geospatial:lineString;4" },
+  "multiLineString": { "@id": "dtmi:standard:schema:geospatial:multiLineString;4" },
+  "polygon": { "@id": "dtmi:standard:schema:geospatial:polygon;4" },
+  "multiPolygon": { "@id": "dtmi:standard:schema:geospatial:multiPolygon;4" },
+
+  "scaledDecimal": { "@id": "dtmi:standard:schema:scaledDecimal;4" }
+}

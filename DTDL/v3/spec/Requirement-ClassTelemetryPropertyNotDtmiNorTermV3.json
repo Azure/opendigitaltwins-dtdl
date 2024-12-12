@@ -7,15 +7,15 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;3",
-        "@id": "dtmi:example:snee_beta;1",
+        "@id": "dtmi:example:beta_quan;1",
         "@type": "Interface",
         "contents": {
           "@type": [
             "Telemetry",
             "Foobar"
           ],
-          "name": "snee_alpha",
-          "schema": "date",
+          "name": "beta_snee",
+          "schema": "float",
           "http://foo.com/bar": true
         }
       }
@@ -29,7 +29,7 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;3",
-        "@id": "dtmi:example:snee_delta;1",
+        "@id": "dtmi:example:beta_spazz;1",
         "@type": "Interface",
         "contents": {
           "@context": "dtmi:undefinedExtension:context;1",
@@ -37,8 +37,8 @@
             "Telemetry",
             "Foobar"
           ],
-          "name": "snee_gamma",
-          "schema": "dateTime",
+          "name": "beta_thnad",
+          "schema": "integer",
           "http://foo.com/bar": true
         }
       }

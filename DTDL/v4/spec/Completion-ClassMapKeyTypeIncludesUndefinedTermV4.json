@@ -1,0 +1,61 @@
+﻿[
+  {
+    "valid": false,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:kappa_gamma;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:kappa_alpha;1",
+          "@type": "Map",
+          "mapValue": {
+            "name": "kappa_beta",
+            "schema": "dateTime"
+          },
+          "mapKey": {
+            "@type": [
+              "MapKey",
+              "Foobar"
+            ],
+            "name": "iota_hi",
+            "schema": "string"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:kappa_eta;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:kappa_epsilon;1",
+          "@type": "Map",
+          "mapValue": {
+            "name": "kappa_zeta",
+            "schema": "decimal"
+          },
+          "mapKey": {
+            "@context": "dtmi:undefinedExtension:context;1",
+            "@type": [
+              "MapKey",
+              "Foobar"
+            ],
+            "name": "kappa_delta",
+            "schema": "string"
+          }
+        }
+      }
+    ]
+  }
+]

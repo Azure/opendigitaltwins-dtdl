@@ -7,12 +7,12 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;2",
-        "@id": "dtmi:example:chi_glikk;1",
+        "@id": "dtmi:example:fuddle_omicron;1",
         "@type": "Interface",
         "contents": {
           "@type": "Property",
-          "name": "chi_fuddle",
-          "schema": "float",
+          "name": "fuddle_xi",
+          "schema": "double",
           "comment": "hello"
         }
       }
@@ -26,12 +26,12 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;2",
-        "@id": "dtmi:example:chi_snee;1",
+        "@id": "dtmi:example:fuddle_rho;1",
         "@type": "Interface",
         "contents": {
           "@type": "Property",
-          "name": "chi_nuh",
-          "schema": "integer",
+          "name": "fuddle_pi",
+          "schema": "duration",
           "comment": [
             "hello"
           ]
@@ -47,12 +47,12 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;2",
-        "@id": "dtmi:example:chi_thnad;1",
+        "@id": "dtmi:example:fuddle_tau;1",
         "@type": "Interface",
         "contents": {
           "@type": "Property",
-          "name": "chi_quan",
-          "schema": "long",
+          "name": "fuddle_sigma",
+          "schema": "float",
           "comment": {
             "@value": "hello",
             "@type": "xsd:string"
@@ -69,12 +69,12 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;2",
-        "@id": "dtmi:example:chi_floob;1",
+        "@id": "dtmi:example:fuddle_phi;1",
         "@type": "Interface",
         "contents": {
           "@type": "Property",
-          "name": "chi_spazz",
-          "schema": "string",
+          "name": "fuddle_upsilon",
+          "schema": "integer",
           "comment": [
             {
               "@value": "hello",
@@ -93,12 +93,12 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;2",
-        "@id": "dtmi:example:chi_jogg;1",
+        "@id": "dtmi:example:fuddle_psi;1",
         "@type": "Interface",
         "contents": {
           "@type": "Property",
-          "name": "chi_zatz",
-          "schema": "time",
+          "name": "fuddle_chi",
+          "schema": "long",
           "comment": []
         }
       }
@@ -112,13 +112,52 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;2",
-        "@id": "dtmi:example:chi_itch;1",
+        "@id": "dtmi:example:fuddle_yuzz;1",
         "@type": "Interface",
         "contents": {
           "@type": "Property",
-          "name": "chi_flunn",
+          "name": "fuddle_omega",
+          "schema": "string",
+          "comment": null
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:fuddle_um;1",
+        "@type": "Interface",
+        "contents": {
+          "@context": "dtmi:undefinedExtension:context;1",
+          "@type": "Property",
+          "name": "fuddle_wum",
+          "schema": "time",
+          "comment": null
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:fuddle_fuddle;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Property",
+          "name": "fuddle_humpf",
           "schema": "boolean",
-          "comment": null
+          "comment": true
         }
       }
     ]
@@ -131,14 +170,14 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;2",
-        "@id": "dtmi:example:chi_vroo;1",
+        "@id": "dtmi:example:fuddle_nuh;1",
         "@type": "Interface",
         "contents": {
           "@context": "dtmi:undefinedExtension:context;1",
           "@type": "Property",
-          "name": "chi_yekk",
+          "name": "fuddle_glikk",
           "schema": "date",
-          "comment": null
+          "comment": true
         }
       }
     ]
@@ -151,13 +190,13 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;2",
-        "@id": "dtmi:example:psi_alpha;1",
+        "@id": "dtmi:example:fuddle_quan;1",
         "@type": "Interface",
         "contents": {
           "@type": "Property",
-          "name": "chi_hi",
+          "name": "fuddle_snee",
           "schema": "dateTime",
-          "comment": true
+          "comment": 626
         }
       }
     ]
@@ -170,14 +209,14 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;2",
-        "@id": "dtmi:example:psi_gamma;1",
+        "@id": "dtmi:example:fuddle_spazz;1",
         "@type": "Interface",
         "contents": {
           "@context": "dtmi:undefinedExtension:context;1",
           "@type": "Property",
-          "name": "psi_beta",
+          "name": "fuddle_thnad",
           "schema": "double",
-          "comment": true
+          "comment": 626
         }
       }
     ]
@@ -190,13 +229,15 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;2",
-        "@id": "dtmi:example:psi_epsilon;1",
+        "@id": "dtmi:example:fuddle_zatz;1",
         "@type": "Interface",
         "contents": {
           "@type": "Property",
-          "name": "psi_delta",
+          "name": "fuddle_floob",
           "schema": "duration",
-          "comment": 626
+          "comment": [
+            null
+          ]
         }
       }
     ]
@@ -209,14 +250,16 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;2",
-        "@id": "dtmi:example:psi_eta;1",
+        "@id": "dtmi:example:fuddle_flunn;1",
         "@type": "Interface",
         "contents": {
           "@context": "dtmi:undefinedExtension:context;1",
           "@type": "Property",
-          "name": "psi_zeta",
+          "name": "fuddle_jogg",
           "schema": "float",
-          "comment": 626
+          "comment": [
+            null
+          ]
         }
       }
     ]
@@ -229,14 +272,14 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;2",
-        "@id": "dtmi:example:psi_iota;1",
+        "@id": "dtmi:example:fuddle_yekk;1",
         "@type": "Interface",
         "contents": {
           "@type": "Property",
-          "name": "psi_theta",
+          "name": "fuddle_itch",
           "schema": "integer",
           "comment": [
-            null
+            true
           ]
         }
       }
@@ -250,15 +293,15 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;2",
-        "@id": "dtmi:example:psi_lambda;1",
+        "@id": "dtmi:example:fuddle_hi;1",
         "@type": "Interface",
         "contents": {
           "@context": "dtmi:undefinedExtension:context;1",
           "@type": "Property",
-          "name": "psi_kappa",
+          "name": "fuddle_vroo",
           "schema": "long",
           "comment": [
-            null
+            true
           ]
         }
       }
@@ -272,14 +315,14 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;2",
-        "@id": "dtmi:example:psi_nu;1",
+        "@id": "dtmi:example:glikk_beta;1",
         "@type": "Interface",
         "contents": {
           "@type": "Property",
-          "name": "psi_mu",
+          "name": "glikk_alpha",
           "schema": "string",
           "comment": [
-            true
+            626
           ]
         }
       }
@@ -293,15 +336,15 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;2",
-        "@id": "dtmi:example:psi_omicron;1",
+        "@id": "dtmi:example:glikk_delta;1",
         "@type": "Interface",
         "contents": {
           "@context": "dtmi:undefinedExtension:context;1",
           "@type": "Property",
-          "name": "psi_xi",
+          "name": "glikk_gamma",
           "schema": "time",
           "comment": [
-            true
+            626
           ]
         }
       }
@@ -315,15 +358,13 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;2",
-        "@id": "dtmi:example:psi_rho;1",
+        "@id": "dtmi:example:glikk_zeta;1",
         "@type": "Interface",
         "contents": {
           "@type": "Property",
-          "name": "psi_pi",
+          "name": "glikk_epsilon",
           "schema": "boolean",
-          "comment": [
-            626
-          ]
+          "comment": {}
         }
       }
     ]
@@ -336,16 +377,14 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;2",
-        "@id": "dtmi:example:psi_tau;1",
+        "@id": "dtmi:example:glikk_theta;1",
         "@type": "Interface",
         "contents": {
           "@context": "dtmi:undefinedExtension:context;1",
           "@type": "Property",
-          "name": "psi_sigma",
+          "name": "glikk_eta",
           "schema": "date",
-          "comment": [
-            626
-          ]
+          "comment": {}
         }
       }
     ]
@@ -358,51 +397,12 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;2",
-        "@id": "dtmi:example:psi_phi;1",
+        "@id": "dtmi:example:glikk_kappa;1",
         "@type": "Interface",
         "contents": {
           "@type": "Property",
-          "name": "psi_upsilon",
+          "name": "glikk_iota",
           "schema": "dateTime",
-          "comment": {}
-        }
-      }
-    ]
-  },
-  {
-    "valid": false,
-    "options": [
-      "AllowUndefinedExtensions"
-    ],
-    "input": [
-      {
-        "@context": "dtmi:dtdl:context;2",
-        "@id": "dtmi:example:psi_psi;1",
-        "@type": "Interface",
-        "contents": {
-          "@context": "dtmi:undefinedExtension:context;1",
-          "@type": "Property",
-          "name": "psi_chi",
-          "schema": "double",
-          "comment": {}
-        }
-      }
-    ]
-  },
-  {
-    "valid": false,
-    "options": [
-      "DisallowUndefinedExtensions"
-    ],
-    "input": [
-      {
-        "@context": "dtmi:dtdl:context;2",
-        "@id": "dtmi:example:psi_yuzz;1",
-        "@type": "Interface",
-        "contents": {
-          "@type": "Property",
-          "name": "psi_omega",
-          "schema": "duration",
           "comment": [
             {}
           ]
@@ -418,13 +418,13 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;2",
-        "@id": "dtmi:example:psi_um;1",
+        "@id": "dtmi:example:glikk_mu;1",
         "@type": "Interface",
         "contents": {
           "@context": "dtmi:undefinedExtension:context;1",
           "@type": "Property",
-          "name": "psi_wum",
-          "schema": "float",
+          "name": "glikk_lambda",
+          "schema": "double",
           "comment": [
             {}
           ]

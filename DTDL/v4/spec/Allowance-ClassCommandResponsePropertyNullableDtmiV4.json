@@ -1,0 +1,24 @@
+﻿[
+  {
+    "valid": true,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:iota_mu;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Command",
+          "name": "iota_lambda",
+          "response": {
+            "name": "iota_kappa",
+            "dtmi:dtdl:property:nullable;4": true,
+            "schema": "long"
+          }
+        }
+      }
+    ]
+  }
+]

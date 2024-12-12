@@ -7,14 +7,14 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;3",
-        "@id": "dtmi:example:snee_lambda;1",
+        "@id": "dtmi:example:itch_nu;1",
         "@type": "Interface",
         "contents": {
           "@type": "Property",
-          "name": "snee_kappa",
+          "name": "itch_mu",
           "schema": {
             "@type": "Array",
-            "elementSchema": "boolean"
+            "elementSchema": "dateTime"
           }
         }
       }
@@ -28,12 +28,12 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;3",
-        "@id": "dtmi:example:snee_nu;1",
+        "@id": "dtmi:example:itch_omicron;1",
         "@type": "Interface",
         "schemas": {
-          "@id": "dtmi:example:snee_mu;1",
+          "@id": "dtmi:example:itch_xi;1",
           "@type": "Array",
-          "elementSchema": "date"
+          "elementSchema": "double"
         }
       }
     ]
@@ -46,11 +46,11 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;3",
-        "@id": "dtmi:example:snee_xi;1",
+        "@id": "dtmi:example:itch_pi;1",
         "@type": "Interface",
         "schemas": {
           "@type": "Array",
-          "elementSchema": "dateTime"
+          "elementSchema": "duration"
         }
       }
     ]
@@ -63,12 +63,12 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;3",
-        "@id": "dtmi:example:snee_omicron;1",
+        "@id": "dtmi:example:itch_rho;1",
         "@type": "Interface",
         "schemas": {
           "@context": "dtmi:undefinedExtension:context;1",
           "@type": "Array",
-          "elementSchema": "double"
+          "elementSchema": "float"
         }
       }
     ]

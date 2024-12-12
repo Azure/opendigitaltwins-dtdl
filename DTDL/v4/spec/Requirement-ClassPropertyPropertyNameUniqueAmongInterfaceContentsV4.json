@@ -1,0 +1,80 @@
+﻿[
+  {
+    "valid": true,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:flunn_psi;1",
+        "@type": "Interface",
+        "contents": [
+          {
+            "@type": "Property",
+            "schema": "long",
+            "name": "epsilon_kappa"
+          },
+          {
+            "@type": "Property",
+            "schema": "short",
+            "name": "epsilon_lambda"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:flunn_omega;1",
+        "@type": "Interface",
+        "contents": [
+          {
+            "@type": "Property",
+            "schema": "string",
+            "name": "epsilon_kappa"
+          },
+          {
+            "@type": "Property",
+            "schema": "time",
+            "name": "epsilon_kappa"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": [
+          "dtmi:dtdl:context;4",
+          "dtmi:undefinedExtension:context;1"
+        ],
+        "@id": "dtmi:example:flunn_yuzz;1",
+        "@type": "Interface",
+        "contents": [
+          {
+            "@type": "Property",
+            "schema": "unsignedByte",
+            "name": "epsilon_kappa"
+          },
+          {
+            "@type": "Property",
+            "schema": "unsignedInteger",
+            "name": "epsilon_kappa"
+          }
+        ]
+      }
+    ]
+  }
+]

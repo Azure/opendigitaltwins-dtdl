@@ -1,0 +1,49 @@
+﻿[
+  {
+    "valid": false,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:chi_itch;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:chi_flunn;1",
+          "@type": "Enum",
+          "valueSchema": "integer",
+          "enumValues": {
+            "enumValue": 1604,
+            "name": "chi_zatz",
+            "dtmi:dtdl:property:name;4": "chi_jogg"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:psi_alpha;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:chi_hi;1",
+          "@type": "Enum",
+          "valueSchema": "integer",
+          "enumValues": {
+            "@context": "dtmi:undefinedExtension:context;1",
+            "enumValue": 1605,
+            "name": "chi_yekk",
+            "dtmi:dtdl:property:name;4": "chi_vroo"
+          }
+        }
+      }
+    ]
+  }
+]

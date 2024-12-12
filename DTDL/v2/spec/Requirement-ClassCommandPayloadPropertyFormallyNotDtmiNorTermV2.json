@@ -7,14 +7,14 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;2",
-        "@id": "dtmi:example:fuddle_hi;1",
+        "@id": "dtmi:example:quan_alpha;1",
         "@type": "Interface",
         "contents": {
           "@type": "Command",
-          "name": "fuddle_vroo",
+          "name": "snee_hi",
           "request": {
-            "name": "fuddle_yekk",
-            "schema": "integer",
+            "name": "snee_vroo",
+            "schema": "duration",
             "http://foo.com/bar": true
           }
         }
@@ -29,15 +29,15 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;2",
-        "@id": "dtmi:example:glikk_gamma;1",
+        "@id": "dtmi:example:quan_delta;1",
         "@type": "Interface",
         "contents": {
           "@type": "Command",
-          "name": "glikk_beta",
+          "name": "quan_gamma",
           "request": {
             "@context": "dtmi:undefinedExtension:context;1",
-            "name": "glikk_alpha",
-            "schema": "long",
+            "name": "quan_beta",
+            "schema": "float",
             "http://foo.com/bar": true
           }
         }

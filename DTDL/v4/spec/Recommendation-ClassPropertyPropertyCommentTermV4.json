@@ -1,0 +1,42 @@
+﻿[
+  {
+    "valid": true,
+    "desirable": true,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:eta_itch;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Property",
+          "comment": "eta_jogg",
+          "name": "eta_flunn",
+          "schema": "decimal"
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "desirable": false,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:eta_hi;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Property",
+          "dtmi:dtdl:property:comment;4": "eta_yekk",
+          "name": "eta_vroo",
+          "schema": "double"
+        }
+      }
+    ]
+  }
+]

@@ -1,0 +1,54 @@
+﻿[
+  {
+    "valid": true,
+    "desirable": true,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:jogg_jogg;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:jogg_zatz;1",
+          "@type": "Enum",
+          "valueSchema": "integer",
+          "enumValues": {
+            "displayName": [
+              "jogg_spazz"
+            ],
+            "enumValue": 1827,
+            "name": "jogg_floob"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "desirable": false,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:jogg_vroo;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:jogg_yekk;1",
+          "@type": "Enum",
+          "valueSchema": "integer",
+          "enumValues": {
+            "dtmi:dtdl:property:displayName;4": [
+              "jogg_flunn"
+            ],
+            "enumValue": 1828,
+            "name": "jogg_itch"
+          }
+        }
+      }
+    ]
+  }
+]

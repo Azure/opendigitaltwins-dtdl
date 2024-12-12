@@ -7,13 +7,13 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;2",
-        "@id": "dtmi:example:theta_glikk;1",
+        "@id": "dtmi:example:xi_glikk;1",
         "@type": "Interface",
         "schemas": {
-          "@id": "dtmi:example:theta_humpf;1",
+          "@id": "dtmi:example:xi_humpf;1",
           "@type": "Map",
           "mapKey": {
-            "name": "theta_fuddle",
+            "name": "xi_fuddle",
             "schema": "string"
           },
           "mapValue": {
@@ -21,8 +21,8 @@
               "MapValue",
               "dtmi:foo//bar"
             ],
-            "name": "theta_um",
-            "schema": "duration"
+            "name": "xi_um",
+            "schema": "integer"
           }
         }
       }
@@ -36,13 +36,13 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;2",
-        "@id": "dtmi:example:theta_thnad;1",
+        "@id": "dtmi:example:xi_thnad;1",
         "@type": "Interface",
         "schemas": {
-          "@id": "dtmi:example:theta_snee;1",
+          "@id": "dtmi:example:xi_snee;1",
           "@type": "Map",
           "mapKey": {
-            "name": "theta_quan",
+            "name": "xi_quan",
             "schema": "string"
           },
           "mapValue": {
@@ -51,8 +51,8 @@
               "MapValue",
               "dtmi:foo//bar"
             ],
-            "name": "theta_nuh",
-            "schema": "float"
+            "name": "xi_nuh",
+            "schema": "long"
           }
         }
       }

@@ -25,6 +25,12 @@ The chart below lists the additional properties that may be part of an element t
 When a Property in a model is co-typed ValueAnnotation and Override, the value of the `annotates` property specifies the `name` of another Property or Telemetry within the `contents` of the same Interface, and the value of the `overrides` property specifies an extension property on this other Property or Telemetry.
 This indicates that the ValueAnnotation/Override should be regarded as metadata for the element referenced by `annotates`, and further that this metadata overrides the value of the extension property indicated by `overrides`.
 
+## Extension version constraint
+
+The Overriding extension places a constraint on the version of the extension that defines property values that are overridden.
+Specifically, the property-defining extension must be defined using the same version of DTDL that is used for definining the model that uses Overriding.
+Ordinarily, it is acceptable to use a later version of an extension in a model defined in an earlier version of DTDL; however, this freedom is lost when using Overriding.
+
 ## Override examples
 
 The following example shows an Interface with two `contents` elements.
@@ -47,10 +53,10 @@ The `schema` of the overriding Property must match the schema type of the overri
 ```json
 {
   "@context": [
-      "dtmi:dtdl:context;3",
-      "dtmi:dtdl:extension:quantitativeTypes;1",
-      "dtmi:dtdl:extension:annotation;1",
-      "dtmi:dtdl:extension:overriding;1"
+    "dtmi:dtdl:context;3",
+    "dtmi:dtdl:extension:quantitativeTypes;1",
+    "dtmi:dtdl:extension:annotation;1",
+    "dtmi:dtdl:extension:overriding;1"
   ],
   "@id": "dtmi:com:example:Sensor;1",
   "@type": "Interface",
@@ -95,7 +101,8 @@ When an Interface `extends` another Interface, the former can override a propert
   {
     "@context": [
       "dtmi:dtdl:context;3",
-      "dtmi:dtdl:extension:quantitativeTypes;1"
+      "dtmi:dtdl:extension:quantitativeTypes;1",
+      "dtmi:dtdl:extension:overriding;1"
     ],
     "@id": "dtmi:com:example:BaseSensor;1",
     "@type": "Interface",
@@ -110,10 +117,10 @@ When an Interface `extends` another Interface, the former can override a propert
   },
   {
     "@context": [
-        "dtmi:dtdl:context;3",
-        "dtmi:dtdl:extension:quantitativeTypes;1",
-        "dtmi:dtdl:extension:annotation;1",
-        "dtmi:dtdl:extension:overriding;1"
+      "dtmi:dtdl:context;3",
+      "dtmi:dtdl:extension:quantitativeTypes;1",
+      "dtmi:dtdl:extension:annotation;1",
+      "dtmi:dtdl:extension:overriding;1"
     ],
     "@id": "dtmi:com:example:Sensor;1",
     "@type": "Interface",
@@ -139,4 +146,5 @@ The chart below lists the versions of the Overriding extension that are currentl
 | Extension | Context | DTDL versions |
 | --- | --- | --- |
 | [Overriding v1](./DTDL.overriding.v1.md) | dtmi:dtdl:extension:overriding;1 | [3](./DTDL.v3.md) |
+| [Overriding v2](../v4/DTDL.overriding.v2.md) | dtmi:dtdl:extension:overriding;2 | [3](./DTDL.v3.md), [4](../v4/DTDL.v4.md) |
 

@@ -1,0 +1,23 @@
+﻿[
+  {
+    "valid": true,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:wum_thnad;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Command",
+          "name": "wum_quan",
+          "response": {
+            "dtmi:dtdl:property:name;4": "wum_snee",
+            "schema": "float"
+          }
+        }
+      }
+    ]
+  }
+]

@@ -7,14 +7,14 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;3",
-        "@id": "dtmi:example:sigma_snee;1",
+        "@id": "dtmi:example:snee_xi;1",
         "@type": "Interface",
         "extends": {
-          "@id": "dtmi:example:sigma_nuh;1",
+          "@id": "dtmi:example:snee_nu;1",
           "@type": "Interface",
           "contents": {
             "@type": "Telemetry",
-            "name": "sigma_glikk",
+            "name": "snee_mu",
             "schema": "dtmi:ex:dependentRef;1"
           }
         }
@@ -34,14 +34,14 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;3",
-        "@id": "dtmi:example:sigma_spazz;1",
+        "@id": "dtmi:example:snee_rho;1",
         "@type": "Interface",
         "extends": {
-          "@id": "dtmi:example:sigma_thnad;1",
+          "@id": "dtmi:example:snee_pi;1",
           "@type": "Interface",
           "contents": {
             "@type": "Telemetry",
-            "name": "sigma_quan",
+            "name": "snee_omicron",
             "schema": [
               "dtmi:ex:dependentRef;1"
             ]

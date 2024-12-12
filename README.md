@@ -13,7 +13,7 @@ DTDL has evolved over time, resulting in the next versions:
 |v1-preview|[dtdlv1.md](./DTDL/v1-preview/dtdlv1.md)|Out of support|
 |v2|[DTDL.v2.md](./DTDL/v2/DTDL.v2.md)|Supported in ADT, IoTCentral and IoT Plug and Play|
 |v3|[DTDL.v3.md](./DTDL/v3/DTDL.v3.md)|Supported in ADT and IoT Plug and Play|
-
+|v4|[DTDL.v4.md](./DTDL/v4/DTDL.v4.md)|Supported in Azure IoT Operations|
 
 ## :point_right: A Simple Example
 
@@ -22,8 +22,8 @@ The next interface describes a thermostat reporting temperature as degreeCelsius
 ```json
 {
   "@context": [
-    "dtmi:dtdl:context;3",
-    "dtmi:dtdl:extension:quantitativeTypes;1"
+    "dtmi:dtdl:context;4",
+    "dtmi:dtdl:extension:quantitativeTypes;2"
   ],
   "@id": "dtmi:com:example:Thermostat;1",
   "@type": "Interface",

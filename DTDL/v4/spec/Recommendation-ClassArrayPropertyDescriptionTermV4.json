@@ -1,0 +1,46 @@
+﻿[
+  {
+    "valid": true,
+    "desirable": true,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:delta_lambda;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:delta_iota;1",
+          "@type": "Array",
+          "description": [
+            "delta_kappa"
+          ],
+          "elementSchema": "unsignedInteger"
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "desirable": false,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:delta_xi;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:delta_mu;1",
+          "@type": "Array",
+          "dtmi:dtdl:property:description;4": [
+            "delta_nu"
+          ],
+          "elementSchema": "unsignedLong"
+        }
+      }
+    ]
+  }
+]

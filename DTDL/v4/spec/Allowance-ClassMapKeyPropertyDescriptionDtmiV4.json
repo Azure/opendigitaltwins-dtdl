@@ -1,0 +1,30 @@
+﻿[
+  {
+    "valid": true,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:chi_lambda;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:chi_iota;1",
+          "@type": "Map",
+          "mapValue": {
+            "name": "chi_kappa",
+            "schema": "boolean"
+          },
+          "mapKey": {
+            "dtmi:dtdl:property:description;4": [
+              "chi_eta"
+            ],
+            "name": "chi_theta",
+            "schema": "string"
+          }
+        }
+      }
+    ]
+  }
+]

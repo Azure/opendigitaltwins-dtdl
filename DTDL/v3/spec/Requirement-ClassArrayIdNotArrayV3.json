@@ -7,52 +7,11 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;3",
-        "@id": "dtmi:example:quan_humpf;1",
+        "@id": "dtmi:example:yekk_glikk;1",
         "@type": "Interface",
         "schemas": {
           "@id": [
             "dtmi:foo:bar;7"
-          ],
-          "@type": "Array",
-          "elementSchema": "time"
-        }
-      }
-    ]
-  },
-  {
-    "valid": false,
-    "options": [
-      "AllowUndefinedExtensions"
-    ],
-    "input": [
-      {
-        "@context": "dtmi:dtdl:context;3",
-        "@id": "dtmi:example:quan_fuddle;1",
-        "@type": "Interface",
-        "schemas": {
-          "@context": "dtmi:undefinedExtension:context;1",
-          "@id": [
-            "dtmi:foo:bar;7"
-          ],
-          "@type": "Array",
-          "elementSchema": "boolean"
-        }
-      }
-    ]
-  },
-  {
-    "valid": false,
-    "options": [
-      "DisallowUndefinedExtensions"
-    ],
-    "input": [
-      {
-        "@context": "dtmi:dtdl:context;3",
-        "@id": "dtmi:example:quan_glikk;1",
-        "@type": "Interface",
-        "schemas": {
-          "@id": [
-            "dtmi:foo:bar;108675309"
           ],
           "@type": "Array",
           "elementSchema": "date"
@@ -68,12 +27,12 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;3",
-        "@id": "dtmi:example:quan_nuh;1",
+        "@id": "dtmi:example:yekk_nuh;1",
         "@type": "Interface",
         "schemas": {
           "@context": "dtmi:undefinedExtension:context;1",
           "@id": [
-            "dtmi:foo:bar;108675309"
+            "dtmi:foo:bar;7"
           ],
           "@type": "Array",
           "elementSchema": "dateTime"
@@ -89,11 +48,11 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;3",
-        "@id": "dtmi:example:quan_snee;1",
+        "@id": "dtmi:example:yekk_snee;1",
         "@type": "Interface",
         "schemas": {
           "@id": [
-            "dtmi:foo:bar;999999999"
+            "dtmi:foo:bar;108675309"
           ],
           "@type": "Array",
           "elementSchema": "double"
@@ -109,12 +68,12 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;3",
-        "@id": "dtmi:example:quan_quan;1",
+        "@id": "dtmi:example:yekk_quan;1",
         "@type": "Interface",
         "schemas": {
           "@context": "dtmi:undefinedExtension:context;1",
           "@id": [
-            "dtmi:foo:bar;999999999"
+            "dtmi:foo:bar;108675309"
           ],
           "@type": "Array",
           "elementSchema": "duration"
@@ -130,11 +89,11 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;3",
-        "@id": "dtmi:example:quan_thnad;1",
+        "@id": "dtmi:example:yekk_thnad;1",
         "@type": "Interface",
         "schemas": {
           "@id": [
-            "dtmi:foo;1"
+            "dtmi:foo:bar;999999999"
           ],
           "@type": "Array",
           "elementSchema": "float"
@@ -150,12 +109,12 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;3",
-        "@id": "dtmi:example:quan_spazz;1",
+        "@id": "dtmi:example:yekk_spazz;1",
         "@type": "Interface",
         "schemas": {
           "@context": "dtmi:undefinedExtension:context;1",
           "@id": [
-            "dtmi:foo;1"
+            "dtmi:foo:bar;999999999"
           ],
           "@type": "Array",
           "elementSchema": "integer"
@@ -171,11 +130,11 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;3",
-        "@id": "dtmi:example:quan_floob;1",
+        "@id": "dtmi:example:yekk_floob;1",
         "@type": "Interface",
         "schemas": {
           "@id": [
-            "dtmi:foo:bar"
+            "dtmi:foo;1"
           ],
           "@type": "Array",
           "elementSchema": "long"
@@ -191,12 +150,12 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;3",
-        "@id": "dtmi:example:quan_zatz;1",
+        "@id": "dtmi:example:yekk_zatz;1",
         "@type": "Interface",
         "schemas": {
           "@context": "dtmi:undefinedExtension:context;1",
           "@id": [
-            "dtmi:foo:bar"
+            "dtmi:foo;1"
           ],
           "@type": "Array",
           "elementSchema": "string"
@@ -212,11 +171,11 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;3",
-        "@id": "dtmi:example:quan_jogg;1",
+        "@id": "dtmi:example:yekk_jogg;1",
         "@type": "Interface",
         "schemas": {
           "@id": [
-            "dtmi:foo:bar;3.14"
+            "dtmi:foo:bar"
           ],
           "@type": "Array",
           "elementSchema": "time"
@@ -232,12 +191,12 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;3",
-        "@id": "dtmi:example:quan_flunn;1",
+        "@id": "dtmi:example:yekk_flunn;1",
         "@type": "Interface",
         "schemas": {
           "@context": "dtmi:undefinedExtension:context;1",
           "@id": [
-            "dtmi:foo:bar;3.14"
+            "dtmi:foo:bar"
           ],
           "@type": "Array",
           "elementSchema": "boolean"
@@ -253,11 +212,11 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;3",
-        "@id": "dtmi:example:quan_itch;1",
+        "@id": "dtmi:example:yekk_itch;1",
         "@type": "Interface",
         "schemas": {
           "@id": [
-            "dtmi:foo:bar;3.141592"
+            "dtmi:foo:bar;3.14"
           ],
           "@type": "Array",
           "elementSchema": "date"
@@ -273,7 +232,48 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;3",
-        "@id": "dtmi:example:quan_yekk;1",
+        "@id": "dtmi:example:yekk_yekk;1",
+        "@type": "Interface",
+        "schemas": {
+          "@context": "dtmi:undefinedExtension:context;1",
+          "@id": [
+            "dtmi:foo:bar;3.14"
+          ],
+          "@type": "Array",
+          "elementSchema": "dateTime"
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:yekk_vroo;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": [
+            "dtmi:foo:bar;3.141592"
+          ],
+          "@type": "Array",
+          "elementSchema": "double"
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:yekk_hi;1",
         "@type": "Interface",
         "schemas": {
           "@context": "dtmi:undefinedExtension:context;1",
@@ -281,7 +281,7 @@
             "dtmi:foo:bar;3.141592"
           ],
           "@type": "Array",
-          "elementSchema": "dateTime"
+          "elementSchema": "duration"
         }
       }
     ]

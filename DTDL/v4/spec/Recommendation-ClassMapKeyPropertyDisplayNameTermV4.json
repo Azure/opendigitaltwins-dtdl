@@ -1,0 +1,60 @@
+﻿[
+  {
+    "valid": true,
+    "desirable": true,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:yuzz_chi;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:yuzz_upsilon;1",
+          "@type": "Map",
+          "mapValue": {
+            "name": "yuzz_phi",
+            "schema": "unsignedByte"
+          },
+          "mapKey": {
+            "displayName": [
+              "yuzz_sigma"
+            ],
+            "name": "yuzz_tau",
+            "schema": "string"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "desirable": false,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:yuzz_um;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:yuzz_yuzz;1",
+          "@type": "Map",
+          "mapValue": {
+            "name": "yuzz_wum",
+            "schema": "unsignedInteger"
+          },
+          "mapKey": {
+            "dtmi:dtdl:property:displayName;4": [
+              "yuzz_psi"
+            ],
+            "name": "yuzz_omega",
+            "schema": "string"
+          }
+        }
+      }
+    ]
+  }
+]

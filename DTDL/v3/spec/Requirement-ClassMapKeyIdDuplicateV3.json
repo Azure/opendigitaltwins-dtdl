@@ -7,22 +7,22 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;3",
-        "@id": "dtmi:example:thnad_eta;1",
+        "@id": "dtmi:example:gamma_eta;1",
         "@type": "Interface",
         "contents": {
-          "@id": "dtmi:example:thnad_eta;1",
+          "@id": "dtmi:example:gamma_eta;1",
           "@type": "Property",
-          "name": "thnad_kappa",
+          "name": "gamma_kappa",
           "schema": {
-            "@id": "dtmi:example:thnad_eta;1",
+            "@id": "dtmi:example:gamma_eta;1",
             "@type": "Map",
             "mapValue": {
-              "name": "thnad_iota",
-              "schema": "integer"
+              "name": "gamma_iota",
+              "schema": "duration"
             },
             "mapKey": {
-              "@id": "dtmi:example:thnad_eta;1",
-              "name": "thnad_theta",
+              "@id": "dtmi:example:gamma_eta;1",
+              "name": "gamma_theta",
               "schema": "string"
             }
           }
@@ -38,23 +38,23 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;3",
-        "@id": "dtmi:example:thnad_lambda;1",
+        "@id": "dtmi:example:gamma_lambda;1",
         "@type": "Interface",
         "contents": {
-          "@id": "dtmi:example:thnad_lambda;1",
+          "@id": "dtmi:example:gamma_lambda;1",
           "@type": "Property",
-          "name": "thnad_xi",
+          "name": "gamma_xi",
           "schema": {
-            "@id": "dtmi:example:thnad_lambda;1",
+            "@id": "dtmi:example:gamma_lambda;1",
             "@type": "Map",
             "mapValue": {
-              "name": "thnad_nu",
-              "schema": "long"
+              "name": "gamma_nu",
+              "schema": "float"
             },
             "mapKey": {
               "@context": "dtmi:undefinedExtension:context;1",
-              "@id": "dtmi:example:thnad_lambda;1",
-              "name": "thnad_mu",
+              "@id": "dtmi:example:gamma_lambda;1",
+              "name": "gamma_mu",
               "schema": "string"
             }
           }

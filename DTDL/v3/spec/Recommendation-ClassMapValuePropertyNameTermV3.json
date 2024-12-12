@@ -8,18 +8,18 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;3",
-        "@id": "dtmi:example:zeta_glikk;1",
+        "@id": "dtmi:example:sigma_glikk;1",
         "@type": "Interface",
         "schemas": {
-          "@id": "dtmi:example:zeta_humpf;1",
+          "@id": "dtmi:example:sigma_humpf;1",
           "@type": "Map",
           "mapKey": {
-            "name": "zeta_fuddle",
+            "name": "sigma_fuddle",
             "schema": "string"
           },
           "mapValue": {
-            "name": "zeta_um",
-            "schema": "string"
+            "name": "sigma_um",
+            "schema": "integer"
           }
         }
       }
@@ -34,18 +34,18 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;3",
-        "@id": "dtmi:example:zeta_thnad;1",
+        "@id": "dtmi:example:sigma_thnad;1",
         "@type": "Interface",
         "schemas": {
-          "@id": "dtmi:example:zeta_snee;1",
+          "@id": "dtmi:example:sigma_snee;1",
           "@type": "Map",
           "mapKey": {
-            "name": "zeta_quan",
+            "name": "sigma_quan",
             "schema": "string"
           },
           "mapValue": {
-            "dtmi:dtdl:property:name;3": "zeta_nuh",
-            "schema": "time"
+            "dtmi:dtdl:property:name;3": "sigma_nuh",
+            "schema": "long"
           }
         }
       }

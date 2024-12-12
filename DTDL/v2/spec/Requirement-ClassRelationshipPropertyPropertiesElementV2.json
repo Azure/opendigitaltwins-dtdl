@@ -7,19 +7,19 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;2",
-        "@id": "dtmi:example:eta_beta;1",
+        "@id": "dtmi:example:nu_floob;1",
         "@type": "Interface",
         "extends": {
-          "@id": "dtmi:example:eta_alpha;1",
+          "@id": "dtmi:example:nu_spazz;1",
           "@type": "Interface",
           "contents": {
             "@type": "Relationship",
-            "name": "zeta_hi",
+            "name": "nu_thnad",
             "properties": {
-              "@id": "dtmi:example:zeta_yekk;1",
+              "@id": "dtmi:example:nu_snee;1",
               "@type": "Property",
-              "name": "zeta_vroo",
-              "schema": "dateTime"
+              "name": "nu_quan",
+              "schema": "boolean"
             }
           }
         }
@@ -34,20 +34,20 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;2",
-        "@id": "dtmi:example:eta_eta;1",
+        "@id": "dtmi:example:nu_yekk;1",
         "@type": "Interface",
         "extends": {
-          "@id": "dtmi:example:eta_zeta;1",
+          "@id": "dtmi:example:nu_itch;1",
           "@type": "Interface",
           "contents": {
             "@type": "Relationship",
-            "name": "eta_epsilon",
+            "name": "nu_flunn",
             "properties": [
               {
-                "@id": "dtmi:example:eta_gamma;1",
+                "@id": "dtmi:example:nu_zatz;1",
                 "@type": "Property",
-                "name": "eta_delta",
-                "schema": "double"
+                "name": "nu_jogg",
+                "schema": "date"
               }
             ]
           }
@@ -63,18 +63,18 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;2",
-        "@id": "dtmi:example:eta_iota;1",
+        "@id": "dtmi:example:nu_hi;1",
         "@type": "Interface",
         "contents": [
           {
             "@id": "dtmi:ex:dependentRef;1",
             "@type": "Property",
-            "name": "eta_theta",
-            "schema": "duration"
+            "name": "nu_vroo",
+            "schema": "dateTime"
           },
           {
             "@type": "Relationship",
-            "name": "eta_kappa",
+            "name": "xi_alpha",
             "properties": "dtmi:ex:dependentRef;1"
           }
         ]
@@ -89,18 +89,18 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;2",
-        "@id": "dtmi:example:eta_mu;1",
+        "@id": "dtmi:example:xi_gamma;1",
         "@type": "Interface",
         "contents": [
           {
             "@id": "dtmi:ex:dependentRef;1",
             "@type": "Property",
-            "name": "eta_lambda",
-            "schema": "float"
+            "name": "xi_beta",
+            "schema": "double"
           },
           {
             "@type": "Relationship",
-            "name": "eta_nu",
+            "name": "xi_delta",
             "properties": [
               "dtmi:ex:dependentRef;1"
             ]
@@ -117,19 +117,19 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;2",
-        "@id": "dtmi:example:eta_sigma;1",
+        "@id": "dtmi:example:xi_iota;1",
         "@type": "Interface",
         "extends": {
-          "@id": "dtmi:example:eta_rho;1",
+          "@id": "dtmi:example:xi_theta;1",
           "@type": "Interface",
           "contents": {
             "@type": "Relationship",
-            "name": "eta_pi",
+            "name": "xi_eta",
             "properties": {
-              "@id": "dtmi:example:eta_xi;1",
+              "@id": "dtmi:example:xi_epsilon;1",
               "@type": "Property",
-              "name": "eta_omicron",
-              "schema": "integer",
+              "name": "xi_zeta",
+              "schema": "duration",
               "@context": "dtmi:dtdl:context;3"
             }
           }
@@ -145,21 +145,78 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;2",
-        "@id": "dtmi:example:eta_psi;1",
+        "@id": "dtmi:example:xi_xi;1",
         "@type": "Interface",
         "extends": {
-          "@id": "dtmi:example:eta_chi;1",
+          "@id": "dtmi:example:xi_nu;1",
           "@type": "Interface",
           "contents": {
             "@context": "dtmi:undefinedExtension:context;1",
             "@type": "Relationship",
-            "name": "eta_phi",
+            "name": "xi_mu",
             "properties": {
-              "@id": "dtmi:example:eta_tau;1",
+              "@id": "dtmi:example:xi_kappa;1",
               "@type": "Property",
-              "name": "eta_upsilon",
-              "schema": "long",
+              "name": "xi_lambda",
+              "schema": "float",
               "@context": "dtmi:dtdl:context;3"
+            }
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:xi_tau;1",
+        "@type": "Interface",
+        "extends": {
+          "@id": "dtmi:example:xi_sigma;1",
+          "@type": "Interface",
+          "contents": {
+            "@type": "Relationship",
+            "name": "xi_rho",
+            "properties": {
+              "@id": "dtmi:example:xi_omicron;1",
+              "@type": "Property",
+              "name": "xi_pi",
+              "schema": "bytes",
+              "@context": "dtmi:dtdl:context;4"
+            }
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:xi_omega;1",
+        "@type": "Interface",
+        "extends": {
+          "@id": "dtmi:example:xi_psi;1",
+          "@type": "Interface",
+          "contents": {
+            "@context": "dtmi:undefinedExtension:context;1",
+            "@type": "Relationship",
+            "name": "xi_chi",
+            "properties": {
+              "@id": "dtmi:example:xi_upsilon;1",
+              "@type": "Property",
+              "name": "xi_phi",
+              "schema": "date",
+              "@context": "dtmi:dtdl:context;4"
             }
           }
         }
@@ -174,14 +231,14 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;2",
-        "@id": "dtmi:example:eta_wum;1",
+        "@id": "dtmi:example:xi_um;1",
         "@type": "Interface",
         "extends": {
-          "@id": "dtmi:example:eta_yuzz;1",
+          "@id": "dtmi:example:xi_wum;1",
           "@type": "Interface",
           "contents": {
             "@type": "Relationship",
-            "name": "eta_omega",
+            "name": "xi_yuzz",
             "properties": []
           }
         }
@@ -196,25 +253,25 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;2",
-        "@id": "dtmi:example:eta_quan;1",
+        "@id": "dtmi:example:xi_thnad;1",
         "@type": "Interface",
         "extends": {
-          "@id": "dtmi:example:eta_snee;1",
+          "@id": "dtmi:example:xi_quan;1",
           "@type": "Interface",
           "contents": {
             "@type": "Relationship",
-            "name": "eta_nuh",
+            "name": "xi_snee",
             "properties": [
               {
-                "@id": "dtmi:example:eta_um;1",
+                "@id": "dtmi:example:xi_humpf;1",
                 "@type": "Property",
-                "name": "eta_humpf",
+                "name": "xi_fuddle",
                 "schema": "string"
               },
               {
-                "@id": "dtmi:example:eta_fuddle;1",
+                "@id": "dtmi:example:xi_glikk;1",
                 "@type": "Property",
-                "name": "eta_glikk",
+                "name": "xi_nuh",
                 "schema": "time"
               }
             ]

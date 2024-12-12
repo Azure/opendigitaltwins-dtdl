@@ -1,0 +1,54 @@
+﻿[
+  {
+    "valid": true,
+    "desirable": true,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:lambda_lambda;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:lambda_theta;1",
+          "@type": "Map",
+          "mapKey": {
+            "name": "lambda_iota",
+            "schema": "string"
+          },
+          "mapValue": {
+            "name": "lambda_kappa",
+            "schema": "date"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "desirable": false,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:lambda_omicron;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:lambda_mu;1",
+          "@type": "Map",
+          "mapKey": {
+            "name": "lambda_nu",
+            "schema": "string"
+          },
+          "dtmi:dtdl:property:mapValue;4": {
+            "name": "lambda_xi",
+            "schema": "dateTime"
+          }
+        }
+      }
+    ]
+  }
+]

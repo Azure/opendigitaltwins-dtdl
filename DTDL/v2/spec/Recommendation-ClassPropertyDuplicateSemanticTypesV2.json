@@ -8,7 +8,7 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;2",
-        "@id": "dtmi:example:eta_nuh;1",
+        "@id": "dtmi:example:xi_beta;1",
         "@type": "Interface",
         "contents": {
           "@type": [
@@ -16,8 +16,8 @@
             "Acceleration",
             "Acceleration"
           ],
-          "name": "eta_glikk",
-          "schema": "long",
+          "name": "xi_alpha",
+          "schema": "float",
           "unit": "centimetrePerSecondSquared"
         }
       }
@@ -32,7 +32,7 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;2",
-        "@id": "dtmi:example:eta_quan;1",
+        "@id": "dtmi:example:xi_delta;1",
         "@type": "Interface",
         "contents": {
           "@type": [
@@ -40,8 +40,8 @@
             "dtmi:standard:class:Acceleration;2",
             "dtmi:standard:class:Acceleration;2"
           ],
-          "name": "eta_snee",
-          "schema": "double",
+          "name": "xi_gamma",
+          "schema": "integer",
           "unit": "centimetrePerSecondSquared"
         }
       }

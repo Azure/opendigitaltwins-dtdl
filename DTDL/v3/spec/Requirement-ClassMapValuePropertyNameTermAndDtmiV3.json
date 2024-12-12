@@ -7,19 +7,19 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;3",
-        "@id": "dtmi:example:zeta_flunn;1",
+        "@id": "dtmi:example:sigma_flunn;1",
         "@type": "Interface",
         "schemas": {
-          "@id": "dtmi:example:zeta_zatz;1",
+          "@id": "dtmi:example:sigma_zatz;1",
           "@type": "Map",
           "mapKey": {
-            "name": "zeta_jogg",
+            "name": "sigma_jogg",
             "schema": "string"
           },
           "mapValue": {
-            "name": "zeta_spazz",
-            "dtmi:dtdl:property:name;3": "zeta_floob",
-            "schema": "boolean"
+            "name": "sigma_spazz",
+            "dtmi:dtdl:property:name;3": "sigma_floob",
+            "schema": "string"
           }
         }
       }
@@ -33,20 +33,20 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;3",
-        "@id": "dtmi:example:eta_alpha;1",
+        "@id": "dtmi:example:tau_alpha;1",
         "@type": "Interface",
         "schemas": {
-          "@id": "dtmi:example:zeta_vroo;1",
+          "@id": "dtmi:example:sigma_vroo;1",
           "@type": "Map",
           "mapKey": {
-            "name": "zeta_hi",
+            "name": "sigma_hi",
             "schema": "string"
           },
           "mapValue": {
             "@context": "dtmi:undefinedExtension:context;1",
-            "name": "zeta_itch",
-            "dtmi:dtdl:property:name;3": "zeta_yekk",
-            "schema": "date"
+            "name": "sigma_itch",
+            "dtmi:dtdl:property:name;3": "sigma_yekk",
+            "schema": "time"
           }
         }
       }

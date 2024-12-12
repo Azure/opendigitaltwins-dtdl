@@ -1,0 +1,24 @@
+﻿[
+  {
+    "valid": true,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:glikk_beta;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Component",
+          "dtmi:dtdl:property:comment;4": "fuddle_vroo",
+          "name": "fuddle_hi",
+          "schema": {
+            "@id": "dtmi:example:glikk_alpha;1",
+            "@type": "Interface"
+          }
+        }
+      }
+    ]
+  }
+]

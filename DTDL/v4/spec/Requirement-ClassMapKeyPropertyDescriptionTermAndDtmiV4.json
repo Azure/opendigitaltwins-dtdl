@@ -1,0 +1,65 @@
+﻿[
+  {
+    "valid": false,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:chi_um;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:chi_yuzz;1",
+          "@type": "Map",
+          "mapValue": {
+            "name": "chi_wum",
+            "schema": "date"
+          },
+          "mapKey": {
+            "description": [
+              "chi_chi"
+            ],
+            "dtmi:dtdl:property:description;4": [
+              "chi_psi"
+            ],
+            "name": "chi_omega",
+            "schema": "string"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:chi_quan;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:chi_nuh;1",
+          "@type": "Map",
+          "mapValue": {
+            "name": "chi_snee",
+            "schema": "dateTime"
+          },
+          "mapKey": {
+            "@context": "dtmi:undefinedExtension:context;1",
+            "description": [
+              "chi_humpf"
+            ],
+            "dtmi:dtdl:property:description;4": [
+              "chi_fuddle"
+            ],
+            "name": "chi_glikk",
+            "schema": "string"
+          }
+        }
+      }
+    ]
+  }
+]

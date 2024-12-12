@@ -7,15 +7,15 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;2",
-        "@id": "dtmi:example:sigma_yuzz;1",
+        "@id": "dtmi:example:yuzz_delta;1",
         "@type": "Interface",
         "extends": {
-          "@id": "dtmi:example:sigma_omega;1",
+          "@id": "dtmi:example:yuzz_gamma;1",
           "@type": "Interface",
           "contents": {
             "@type": "Property",
-            "name": "sigma_psi",
-            "schema": "double",
+            "name": "yuzz_beta",
+            "schema": "time",
             "@context": "dtmi:iotcentral:context;2"
           }
         }
@@ -30,15 +30,15 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;2",
-        "@id": "dtmi:example:sigma_humpf;1",
+        "@id": "dtmi:example:yuzz_eta;1",
         "@type": "Interface",
         "extends": {
-          "@id": "dtmi:example:sigma_um;1",
+          "@id": "dtmi:example:yuzz_zeta;1",
           "@type": "Interface",
           "contents": {
             "@type": "Property",
-            "name": "sigma_wum",
-            "schema": "duration",
+            "name": "yuzz_epsilon",
+            "schema": "boolean",
             "@context": []
           }
         }
@@ -53,15 +53,15 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;2",
-        "@id": "dtmi:example:sigma_nuh;1",
+        "@id": "dtmi:example:yuzz_kappa;1",
         "@type": "Interface",
         "extends": {
-          "@id": "dtmi:example:sigma_glikk;1",
+          "@id": "dtmi:example:yuzz_iota;1",
           "@type": "Interface",
           "contents": {
             "@type": "Property",
-            "name": "sigma_fuddle",
-            "schema": "float",
+            "name": "yuzz_theta",
+            "schema": "date",
             "@context": [
               "dtmi:iotcentral:context;2"
             ]
@@ -78,15 +78,15 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;2",
-        "@id": "dtmi:example:sigma_thnad;1",
+        "@id": "dtmi:example:yuzz_nu;1",
         "@type": "Interface",
         "extends": {
-          "@id": "dtmi:example:sigma_quan;1",
+          "@id": "dtmi:example:yuzz_mu;1",
           "@type": "Interface",
           "contents": {
             "@type": "Property",
-            "name": "sigma_snee",
-            "schema": "integer",
+            "name": "yuzz_lambda",
+            "schema": "dateTime",
             "@context": null
           }
         }
@@ -101,15 +101,15 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;2",
-        "@id": "dtmi:example:sigma_zatz;1",
+        "@id": "dtmi:example:yuzz_pi;1",
         "@type": "Interface",
         "extends": {
-          "@id": "dtmi:example:sigma_floob;1",
+          "@id": "dtmi:example:yuzz_omicron;1",
           "@type": "Interface",
           "contents": {
             "@type": "Property",
-            "name": "sigma_spazz",
-            "schema": "long",
+            "name": "yuzz_xi",
+            "schema": "double",
             "@context": 626
           }
         }
@@ -124,15 +124,15 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;2",
-        "@id": "dtmi:example:sigma_itch;1",
+        "@id": "dtmi:example:yuzz_tau;1",
         "@type": "Interface",
         "extends": {
-          "@id": "dtmi:example:sigma_flunn;1",
+          "@id": "dtmi:example:yuzz_sigma;1",
           "@type": "Interface",
           "contents": {
             "@type": "Property",
-            "name": "sigma_jogg",
-            "schema": "string",
+            "name": "yuzz_rho",
+            "schema": "duration",
             "@context": true
           }
         }
@@ -147,15 +147,15 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;2",
-        "@id": "dtmi:example:sigma_hi;1",
+        "@id": "dtmi:example:yuzz_chi;1",
         "@type": "Interface",
         "extends": {
-          "@id": "dtmi:example:sigma_vroo;1",
+          "@id": "dtmi:example:yuzz_phi;1",
           "@type": "Interface",
           "contents": {
             "@type": "Property",
-            "name": "sigma_yekk",
-            "schema": "time",
+            "name": "yuzz_upsilon",
+            "schema": "float",
             "@context": [
               null
             ]
@@ -172,15 +172,15 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;2",
-        "@id": "dtmi:example:tau_gamma;1",
+        "@id": "dtmi:example:yuzz_yuzz;1",
         "@type": "Interface",
         "extends": {
-          "@id": "dtmi:example:tau_beta;1",
+          "@id": "dtmi:example:yuzz_omega;1",
           "@type": "Interface",
           "contents": {
             "@type": "Property",
-            "name": "tau_alpha",
-            "schema": "boolean",
+            "name": "yuzz_psi",
+            "schema": "integer",
             "@context": [
               626
             ]
@@ -197,15 +197,15 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;2",
-        "@id": "dtmi:example:tau_zeta;1",
+        "@id": "dtmi:example:yuzz_humpf;1",
         "@type": "Interface",
         "extends": {
-          "@id": "dtmi:example:tau_epsilon;1",
+          "@id": "dtmi:example:yuzz_um;1",
           "@type": "Interface",
           "contents": {
             "@type": "Property",
-            "name": "tau_delta",
-            "schema": "date",
+            "name": "yuzz_wum",
+            "schema": "long",
             "@context": [
               true
             ]
@@ -222,15 +222,84 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;2",
-        "@id": "dtmi:example:tau_iota;1",
+        "@id": "dtmi:example:yuzz_nuh;1",
         "@type": "Interface",
         "extends": {
-          "@id": "dtmi:example:tau_theta;1",
+          "@id": "dtmi:example:yuzz_glikk;1",
           "@type": "Interface",
           "contents": {
             "@type": "Property",
-            "name": "tau_eta",
-            "schema": "dateTime",
+            "name": "yuzz_fuddle",
+            "schema": "string",
+            "@context": "dtmi:iotcentral:context"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:yuzz_thnad;1",
+        "@type": "Interface",
+        "extends": {
+          "@id": "dtmi:example:yuzz_quan;1",
+          "@type": "Interface",
+          "contents": {
+            "@type": "Property",
+            "name": "yuzz_snee",
+            "schema": "time",
+            "@context": "http://iotcentral/context/2"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:yuzz_zatz;1",
+        "@type": "Interface",
+        "extends": {
+          "@id": "dtmi:example:yuzz_floob;1",
+          "@type": "Interface",
+          "contents": {
+            "@type": "Property",
+            "name": "yuzz_spazz",
+            "schema": "boolean",
+            "@context": "iotcentral;2"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:yuzz_itch;1",
+        "@type": "Interface",
+        "extends": {
+          "@id": "dtmi:example:yuzz_flunn;1",
+          "@type": "Interface",
+          "contents": {
+            "@type": "Property",
+            "name": "yuzz_jogg",
+            "schema": "date",
             "@context": {}
           }
         }
@@ -245,14 +314,39 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;2",
-        "@id": "dtmi:example:tau_mu;1",
+        "@id": "dtmi:example:yuzz_hi;1",
         "@type": "Interface",
         "extends": {
-          "@id": "dtmi:example:tau_lambda;1",
+          "@id": "dtmi:example:yuzz_vroo;1",
           "@type": "Interface",
           "contents": {
             "@type": "Property",
-            "name": "tau_kappa",
+            "name": "yuzz_yekk",
+            "schema": "dateTime",
+            "@context": {
+              "foo": "dtmi:foo:bar;1"
+            }
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:wum_gamma;1",
+        "@type": "Interface",
+        "extends": {
+          "@id": "dtmi:example:wum_beta;1",
+          "@type": "Interface",
+          "contents": {
+            "@type": "Property",
+            "name": "wum_alpha",
             "schema": "double",
             "@context": [
               {}
@@ -270,62 +364,20 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;2",
-        "@id": "dtmi:example:tau_omicron;1",
+        "@id": "dtmi:example:wum_zeta;1",
         "@type": "Interface",
         "extends": {
-          "@id": "dtmi:example:tau_xi;1",
+          "@id": "dtmi:example:wum_epsilon;1",
           "@type": "Interface",
           "contents": {
             "@type": "Property",
-            "name": "tau_nu",
+            "name": "wum_delta",
             "schema": "duration",
-            "@context": "dtmi:iotcentral:context"
-          }
-        }
-      }
-    ]
-  },
-  {
-    "valid": false,
-    "options": [
-      "DisallowUndefinedExtensions"
-    ],
-    "input": [
-      {
-        "@context": "dtmi:dtdl:context;2",
-        "@id": "dtmi:example:tau_sigma;1",
-        "@type": "Interface",
-        "extends": {
-          "@id": "dtmi:example:tau_rho;1",
-          "@type": "Interface",
-          "contents": {
-            "@type": "Property",
-            "name": "tau_pi",
-            "schema": "float",
-            "@context": "http://iotcentral/context/2"
-          }
-        }
-      }
-    ]
-  },
-  {
-    "valid": false,
-    "options": [
-      "DisallowUndefinedExtensions"
-    ],
-    "input": [
-      {
-        "@context": "dtmi:dtdl:context;2",
-        "@id": "dtmi:example:tau_phi;1",
-        "@type": "Interface",
-        "extends": {
-          "@id": "dtmi:example:tau_upsilon;1",
-          "@type": "Interface",
-          "contents": {
-            "@type": "Property",
-            "name": "tau_tau",
-            "schema": "integer",
-            "@context": "iotcentral;2"
+            "@context": [
+              {
+                "foo": "dtmi:foo:bar;1"
+              }
+            ]
           }
         }
       }

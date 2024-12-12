@@ -7,15 +7,60 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;3",
-        "@id": "dtmi:example:nuh_um;1",
+        "@id": "dtmi:example:vroo_kappa;1",
         "@type": "Interface",
         "schemas": {
-          "@id": "dtmi:example:nuh_wum;1",
+          "@id": "dtmi:example:vroo_iota;1",
           "@type": "Object",
           "fields": {
-            "name": "nuh_yuzz",
+            "name": "vroo_theta",
+            "schema": "double",
+            "@type": 626
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:vroo_nu;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:vroo_mu;1",
+          "@type": "Object",
+          "fields": {
+            "@context": "dtmi:undefinedExtension:context;1",
+            "name": "vroo_lambda",
+            "schema": "duration",
+            "@type": 626
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;3",
+        "@id": "dtmi:example:vroo_pi;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:vroo_omicron;1",
+          "@type": "Object",
+          "fields": {
+            "name": "vroo_xi",
             "schema": "float",
-            "@type": 626
+            "@type": null
           }
         }
       }
@@ -29,16 +74,16 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;3",
-        "@id": "dtmi:example:nuh_glikk;1",
+        "@id": "dtmi:example:vroo_tau;1",
         "@type": "Interface",
         "schemas": {
-          "@id": "dtmi:example:nuh_fuddle;1",
+          "@id": "dtmi:example:vroo_sigma;1",
           "@type": "Object",
           "fields": {
             "@context": "dtmi:undefinedExtension:context;1",
-            "name": "nuh_humpf",
+            "name": "vroo_rho",
             "schema": "integer",
-            "@type": 626
+            "@type": null
           }
         }
       }
@@ -52,15 +97,15 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;3",
-        "@id": "dtmi:example:nuh_quan;1",
+        "@id": "dtmi:example:vroo_chi;1",
         "@type": "Interface",
         "schemas": {
-          "@id": "dtmi:example:nuh_snee;1",
+          "@id": "dtmi:example:vroo_phi;1",
           "@type": "Object",
           "fields": {
-            "name": "nuh_nuh",
+            "name": "vroo_upsilon",
             "schema": "long",
-            "@type": null
+            "@type": true
           }
         }
       }
@@ -74,16 +119,16 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;3",
-        "@id": "dtmi:example:nuh_floob;1",
+        "@id": "dtmi:example:vroo_yuzz;1",
         "@type": "Interface",
         "schemas": {
-          "@id": "dtmi:example:nuh_spazz;1",
+          "@id": "dtmi:example:vroo_omega;1",
           "@type": "Object",
           "fields": {
             "@context": "dtmi:undefinedExtension:context;1",
-            "name": "nuh_thnad",
+            "name": "vroo_psi",
             "schema": "string",
-            "@type": null
+            "@type": true
           }
         }
       }
@@ -97,15 +142,15 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;3",
-        "@id": "dtmi:example:nuh_flunn;1",
+        "@id": "dtmi:example:vroo_humpf;1",
         "@type": "Interface",
         "schemas": {
-          "@id": "dtmi:example:nuh_jogg;1",
+          "@id": "dtmi:example:vroo_um;1",
           "@type": "Object",
           "fields": {
-            "name": "nuh_zatz",
+            "name": "vroo_wum",
             "schema": "time",
-            "@type": true
+            "@type": {}
           }
         }
       }
@@ -119,16 +164,16 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;3",
-        "@id": "dtmi:example:nuh_vroo;1",
+        "@id": "dtmi:example:vroo_nuh;1",
         "@type": "Interface",
         "schemas": {
-          "@id": "dtmi:example:nuh_yekk;1",
+          "@id": "dtmi:example:vroo_glikk;1",
           "@type": "Object",
           "fields": {
             "@context": "dtmi:undefinedExtension:context;1",
-            "name": "nuh_itch",
+            "name": "vroo_fuddle",
             "schema": "boolean",
-            "@type": true
+            "@type": {}
           }
         }
       }
@@ -142,15 +187,17 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;3",
-        "@id": "dtmi:example:snee_beta;1",
+        "@id": "dtmi:example:vroo_thnad;1",
         "@type": "Interface",
         "schemas": {
-          "@id": "dtmi:example:snee_alpha;1",
+          "@id": "dtmi:example:vroo_quan;1",
           "@type": "Object",
           "fields": {
-            "name": "nuh_hi",
+            "name": "vroo_snee",
             "schema": "date",
-            "@type": {}
+            "@type": [
+              626
+            ]
           }
         }
       }
@@ -164,16 +211,18 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;3",
-        "@id": "dtmi:example:snee_epsilon;1",
+        "@id": "dtmi:example:vroo_zatz;1",
         "@type": "Interface",
         "schemas": {
-          "@id": "dtmi:example:snee_delta;1",
+          "@id": "dtmi:example:vroo_floob;1",
           "@type": "Object",
           "fields": {
             "@context": "dtmi:undefinedExtension:context;1",
-            "name": "snee_gamma",
+            "name": "vroo_spazz",
             "schema": "dateTime",
-            "@type": {}
+            "@type": [
+              626
+            ]
           }
         }
       }
@@ -187,16 +236,16 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;3",
-        "@id": "dtmi:example:snee_theta;1",
+        "@id": "dtmi:example:vroo_itch;1",
         "@type": "Interface",
         "schemas": {
-          "@id": "dtmi:example:snee_eta;1",
+          "@id": "dtmi:example:vroo_flunn;1",
           "@type": "Object",
           "fields": {
-            "name": "snee_zeta",
+            "name": "vroo_jogg",
             "schema": "double",
             "@type": [
-              626
+              null
             ]
           }
         }
@@ -211,17 +260,17 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;3",
-        "@id": "dtmi:example:snee_lambda;1",
+        "@id": "dtmi:example:vroo_hi;1",
         "@type": "Interface",
         "schemas": {
-          "@id": "dtmi:example:snee_kappa;1",
+          "@id": "dtmi:example:vroo_vroo;1",
           "@type": "Object",
           "fields": {
             "@context": "dtmi:undefinedExtension:context;1",
-            "name": "snee_iota",
+            "name": "vroo_yekk",
             "schema": "duration",
             "@type": [
-              626
+              null
             ]
           }
         }
@@ -236,16 +285,16 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;3",
-        "@id": "dtmi:example:snee_xi;1",
+        "@id": "dtmi:example:hi_gamma;1",
         "@type": "Interface",
         "schemas": {
-          "@id": "dtmi:example:snee_nu;1",
+          "@id": "dtmi:example:hi_beta;1",
           "@type": "Object",
           "fields": {
-            "name": "snee_mu",
+            "name": "hi_alpha",
             "schema": "float",
             "@type": [
-              null
+              true
             ]
           }
         }
@@ -260,17 +309,17 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;3",
-        "@id": "dtmi:example:snee_rho;1",
+        "@id": "dtmi:example:hi_zeta;1",
         "@type": "Interface",
         "schemas": {
-          "@id": "dtmi:example:snee_pi;1",
+          "@id": "dtmi:example:hi_epsilon;1",
           "@type": "Object",
           "fields": {
             "@context": "dtmi:undefinedExtension:context;1",
-            "name": "snee_omicron",
+            "name": "hi_delta",
             "schema": "integer",
             "@type": [
-              null
+              true
             ]
           }
         }
@@ -285,63 +334,14 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;3",
-        "@id": "dtmi:example:snee_upsilon;1",
+        "@id": "dtmi:example:hi_iota;1",
         "@type": "Interface",
         "schemas": {
-          "@id": "dtmi:example:snee_tau;1",
+          "@id": "dtmi:example:hi_theta;1",
           "@type": "Object",
           "fields": {
-            "name": "snee_sigma",
+            "name": "hi_eta",
             "schema": "long",
-            "@type": [
-              true
-            ]
-          }
-        }
-      }
-    ]
-  },
-  {
-    "valid": false,
-    "options": [
-      "AllowUndefinedExtensions"
-    ],
-    "input": [
-      {
-        "@context": "dtmi:dtdl:context;3",
-        "@id": "dtmi:example:snee_psi;1",
-        "@type": "Interface",
-        "schemas": {
-          "@id": "dtmi:example:snee_chi;1",
-          "@type": "Object",
-          "fields": {
-            "@context": "dtmi:undefinedExtension:context;1",
-            "name": "snee_phi",
-            "schema": "string",
-            "@type": [
-              true
-            ]
-          }
-        }
-      }
-    ]
-  },
-  {
-    "valid": false,
-    "options": [
-      "DisallowUndefinedExtensions"
-    ],
-    "input": [
-      {
-        "@context": "dtmi:dtdl:context;3",
-        "@id": "dtmi:example:snee_wum;1",
-        "@type": "Interface",
-        "schemas": {
-          "@id": "dtmi:example:snee_yuzz;1",
-          "@type": "Object",
-          "fields": {
-            "name": "snee_omega",
-            "schema": "time",
             "@type": [
               {}
             ]
@@ -358,15 +358,15 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;3",
-        "@id": "dtmi:example:snee_fuddle;1",
+        "@id": "dtmi:example:hi_mu;1",
         "@type": "Interface",
         "schemas": {
-          "@id": "dtmi:example:snee_humpf;1",
+          "@id": "dtmi:example:hi_lambda;1",
           "@type": "Object",
           "fields": {
             "@context": "dtmi:undefinedExtension:context;1",
-            "name": "snee_um",
-            "schema": "boolean",
+            "name": "hi_kappa",
+            "schema": "string",
             "@type": [
               {}
             ]

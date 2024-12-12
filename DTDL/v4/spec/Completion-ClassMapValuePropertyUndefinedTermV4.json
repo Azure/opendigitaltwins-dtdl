@@ -1,0 +1,63 @@
+﻿[
+  {
+    "valid": false,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:phi_epsilon;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:phi_gamma;1",
+          "@type": "Map",
+          "mapKey": {
+            "name": "phi_delta",
+            "schema": "string"
+          },
+          "mapValue": {
+            "@type": [
+              "MapValue",
+              "Foobar"
+            ],
+            "name": "phi_beta",
+            "schema": "unsignedByte",
+            "foobar": {}
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:phi_iota;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:phi_eta;1",
+          "@type": "Map",
+          "mapKey": {
+            "name": "phi_theta",
+            "schema": "string"
+          },
+          "mapValue": {
+            "@context": "dtmi:undefinedExtension:context;1",
+            "@type": [
+              "MapValue",
+              "Foobar"
+            ],
+            "name": "phi_zeta",
+            "schema": "unsignedInteger",
+            "foobar": {}
+          }
+        }
+      }
+    ]
+  }
+]

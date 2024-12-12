@@ -1,0 +1,53 @@
+﻿[
+  {
+    "valid": false,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:snee_beta;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Property",
+          "name": "snee_alpha",
+          "schema": {
+            "@id": "dtmi:foo:beta_psi;1",
+            "@type": "Object",
+            "fields": {
+              "name": "nuh_hi",
+              "schema": "dtmi:foo:beta_psi;1"
+            }
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": false,
+    "options": [
+      "AllowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;2",
+        "@id": "dtmi:example:snee_epsilon;1",
+        "@type": "Interface",
+        "contents": {
+          "@type": "Property",
+          "name": "snee_delta",
+          "schema": {
+            "@context": "dtmi:undefinedExtension:context;1",
+            "@id": "dtmi:foo:beta_psi;1",
+            "@type": "Object",
+            "fields": {
+              "name": "snee_gamma",
+              "schema": "dtmi:foo:beta_psi;1"
+            }
+          }
+        }
+      }
+    ]
+  }
+]

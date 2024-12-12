@@ -1,0 +1,46 @@
+﻿[
+  {
+    "valid": true,
+    "desirable": false,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:jogg_xi;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:jogg_nu;1",
+          "valueSchema": "integer",
+          "@type": [
+            "Enum",
+            "Enum"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "desirable": false,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:jogg_pi;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:jogg_omicron;1",
+          "valueSchema": "integer",
+          "@type": [
+            "dtmi:dtdl:class:Enum;4",
+            "dtmi:dtdl:class:Enum;4"
+          ]
+        }
+      }
+    ]
+  }
+]

@@ -1,0 +1,76 @@
+﻿{
+  "@context": [
+    "dtmi:dtdl:context;4",
+    "dtmi:dtdl:extension:annotation;2",
+    "dtmi:dtdl:extension:overriding;2"
+  ],
+  "@graph": [
+    {
+      "@id": "dtmi:dtdl:extension:overriding:v2:documentation",
+      "@type": [ "dtmm:Documentation" ],
+      "dtmm:description": {
+        "en-US": "Override a model property with an instance value."
+      }
+    },
+    {
+      "@id": "dtmi:dtdl:extension:overriding:v2:Override",
+      "@type": [ "rdfs:Class", "sh:NodeShape" ],
+      "rdfs:subClassOf": "AdjunctType",
+      "sh:or": [
+        { "sh:class": "dtmi:dtdl:class:Property;3" },
+        { "sh:class": "dtmi:dtdl:class:Property;4" }
+      ],
+      "sh:and": [
+        { "sh:class": "ValueAnnotation" }
+      ],
+      "sh:not": [
+        { "sh:class": "dtmi:dtdl:extension:initialization:v2:Initialized" }
+      ],
+      "dtmm:property": [
+        {
+          "@id": "dtmi:dtdl:extension:overriding:v2:Override:overrides",
+          "@type": "rdf:Property",
+          "rdfs:domain": "Override"
+        }
+      ],
+      "sh:property": [
+        {
+          "sh:path": "overrides",
+          "sh:minCount": 1,
+          "sh:maxCount": 1,
+          "sh:nodeKind": "sh:IRI",
+          "dtmm:description": {
+            "en-US": "Term or IRI of an extension property that is overridden."
+          }
+        }
+      ],
+      "dtmm:siblings": [
+        {
+          "dtmm:keyProperty": "name",
+          "dtmm:keyrefProperty": "annotates",
+          "sh:or": [
+            { "sh:class": "dtmi:dtdl:class:Property;3" },
+            { "sh:class": "dtmi:dtdl:class:Property;4" },
+            { "sh:class": "dtmi:dtdl:class:Telemetry;3" },
+            { "sh:class": "dtmi:dtdl:class:Telemetry;4" }
+          ]
+        },
+        {
+          "dtmm:keyProperty": "name",
+          "dtmm:keyrefProperty": "annotates",
+          "dtmm:path": "overrides",
+          "dtmm:uniqueReference": true,
+          "dtmm:refersToProperty": {
+            "dtmm:isMaterial": false
+          }
+        },
+        {
+          "dtmm:keyProperty": "name",
+          "dtmm:keyrefProperty": "annotates",
+          "dtmm:path": "schema",
+          "dtmm:parentOfProperty": "overrides"
+        }
+      ]
+    }
+  ]
+}

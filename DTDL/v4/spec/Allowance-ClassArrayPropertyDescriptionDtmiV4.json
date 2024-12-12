@@ -1,0 +1,23 @@
+﻿[
+  {
+    "valid": true,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:delta_theta;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:delta_zeta;1",
+          "@type": "Array",
+          "dtmi:dtdl:property:description;4": [
+            "delta_eta"
+          ],
+          "elementSchema": "unsignedByte"
+        }
+      }
+    ]
+  }
+]

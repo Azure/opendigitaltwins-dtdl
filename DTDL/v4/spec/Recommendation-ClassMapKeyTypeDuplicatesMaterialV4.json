@@ -1,0 +1,62 @@
+﻿[
+  {
+    "valid": true,
+    "desirable": false,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:theta_yekk;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:theta_flunn;1",
+          "@type": "Map",
+          "mapValue": {
+            "name": "theta_itch",
+            "schema": "short"
+          },
+          "mapKey": {
+            "name": "theta_jogg",
+            "schema": "string",
+            "@type": [
+              "MapKey",
+              "MapKey"
+            ]
+          }
+        }
+      }
+    ]
+  },
+  {
+    "valid": true,
+    "desirable": false,
+    "options": [
+      "DisallowUndefinedExtensions"
+    ],
+    "input": [
+      {
+        "@context": "dtmi:dtdl:context;4",
+        "@id": "dtmi:example:iota_beta;1",
+        "@type": "Interface",
+        "schemas": {
+          "@id": "dtmi:example:theta_hi;1",
+          "@type": "Map",
+          "mapValue": {
+            "name": "iota_alpha",
+            "schema": "string"
+          },
+          "mapKey": {
+            "name": "theta_vroo",
+            "schema": "string",
+            "@type": [
+              "dtmi:dtdl:class:MapKey;4",
+              "dtmi:dtdl:class:MapKey;4"
+            ]
+          }
+        }
+      }
+    ]
+  }
+]

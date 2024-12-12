@@ -7,11 +7,11 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;3",
-        "@id": "dtmi:example:theta_vroo;1",
+        "@id": "dtmi:example:sigma_beta;1",
         "@type": "Interface",
         "contents": {
           "@type": "Command",
-          "name": "theta_yekk",
+          "name": "sigma_alpha",
           "response": {
             "schema": "integer"
           }
@@ -27,11 +27,11 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;3",
-        "@id": "dtmi:example:iota_alpha;1",
+        "@id": "dtmi:example:sigma_delta;1",
         "@type": "Interface",
         "contents": {
           "@type": "Command",
-          "name": "theta_hi",
+          "name": "sigma_gamma",
           "response": {
             "@context": "dtmi:undefinedExtension:context;1",
             "schema": "long"
@@ -48,13 +48,13 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;3",
-        "@id": "dtmi:example:iota_delta;1",
+        "@id": "dtmi:example:sigma_eta;1",
         "@type": "Interface",
         "contents": {
           "@type": "Command",
-          "name": "iota_gamma",
+          "name": "sigma_zeta",
           "response": {
-            "name": "iota_beta"
+            "name": "sigma_epsilon"
           }
         }
       }
@@ -68,14 +68,14 @@
     "input": [
       {
         "@context": "dtmi:dtdl:context;3",
-        "@id": "dtmi:example:iota_eta;1",
+        "@id": "dtmi:example:sigma_kappa;1",
         "@type": "Interface",
         "contents": {
           "@type": "Command",
-          "name": "iota_zeta",
+          "name": "sigma_iota",
           "response": {
             "@context": "dtmi:undefinedExtension:context;1",
-            "name": "iota_epsilon"
+            "name": "sigma_theta"
           }
         }
       }
