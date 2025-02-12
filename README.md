@@ -4,7 +4,7 @@ The Digital Twins Definition Language (DTDL) is a language for describing models
 
 DTDL is open to the community and Microsoft welcomes collaboration with customers, partners, and the industry. It is based on open W3C standards such as [JSON-LD](https://json-ld.org/) and [RDF](https://www.w3.org/RDF/) which allow for easier adoption across services and tooling.
 
-## :dart: DTDL Versions
+## 🎯 DTDL Versions
 
 DTDL has evolved over time, resulting in the next versions:
 
@@ -15,7 +15,7 @@ DTDL has evolved over time, resulting in the next versions:
 |v3|[DTDL.v3.md](./DTDL/v3/DTDL.v3.md)|Supported in ADT and IoT Plug and Play|
 |v4|[DTDL.v4.md](./DTDL/v4/DTDL.v4.md)|Supported in Azure IoT Operations|
 
-## :point_right: A Simple Example
+## 👉 A Simple Example
 
 The next interface describes a thermostat reporting temperature as degreeCelsius:
 
@@ -45,20 +45,20 @@ The next interface describes a thermostat reporting temperature as degreeCelsius
 }
 ```
 
-## :cloud: Services using DTDL
+## ☁️ Services using DTDL
 
 - [Azure Digital Twins](https://azure.microsoft.com/products/digital-twins/)
 - [Azure IoT Plug and Play](https://aka.ms/iotpnp) 
 - [Azure Device Models Repository](https://aka.ms/dmr) 
 - [Azure IoT Central](https://azure.microsoft.com/products/iot-central)
 
-## :hammer_and_wrench: Developer Tools for DTDL
+## 🛠️ Developer Tools for DTDL
 
 - [DTDL Parser for .NET](https://aka.ms/dtdl-parser)
 - [VSCode DTDL extension](https://aka.ms/dtdl-vscode)
 - [Azure IoT Explorer](https://learn.microsoft.com/azure/iot-fundamentals/howto-use-iot-explorer)
 
-## :book: Modeling Guides
+## 📖 Modeling Guides
 
 - [IoT Plug and Play modeling guide](https://learn.microsoft.com/azure/iot-develop/concepts-modeling-guide)
 - [ADT modeling guide](https://learn.microsoft.com/azure/digital-twins/concepts-models)
