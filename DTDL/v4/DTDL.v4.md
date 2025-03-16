@@ -1040,6 +1040,7 @@ The chart below lists the language extensions that are currently available for u
 | [Annotation v2](./DTDL.annotation.v2.md) | feature | Add custom metadata to a Property or a Telemetry. |
 | [Overriding v2](./DTDL.overriding.v2.md) | feature | Override a model property with an instance value. |
 | [MQTT v2](./DTDL.mqtt.v2.md) | feature | Specify Interface properties to facilitate communication via the MQTT pub/sub protocol. |
+| [MQTT v3](./DTDL.mqtt.v3.md) | feature | Specify Interface properties to facilitate communication via the MQTT pub/sub protocol. |
 | [Requirement v1](./DTDL.requirement.v1.md) | feature | Selectively designate one or more fields in an Object as required. |
 | [Onvif v1](./DTDL.onvif.v1.md) | limits | Increased limits that support translating ONVIF WSDL definitions into DTDL. |
 

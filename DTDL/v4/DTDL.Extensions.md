@@ -139,6 +139,7 @@ The chart below lists the feature extensions that are currently available.
 | [Overriding v2](./DTDL.overriding.v2.md) | Override a model property with an instance value. | [3](../v3/DTDL.v3.md), [4](./DTDL.v4.md) |
 | [MQTT v1](../v3/DTDL.mqtt.v1.md) | Specify Interface properties to facilitate communication via the MQTT pub/sub protocol. | [3](../v3/DTDL.v3.md) |
 | [MQTT v2](./DTDL.mqtt.v2.md) | Specify Interface properties to facilitate communication via the MQTT pub/sub protocol. | [3](../v3/DTDL.v3.md), [4](./DTDL.v4.md) |
+| [MQTT v3](./DTDL.mqtt.v3.md) | Specify Interface properties to facilitate communication via the MQTT pub/sub protocol. | [3](../v3/DTDL.v3.md), [4](./DTDL.v4.md) |
 | [Requirement v1](./DTDL.requirement.v1.md) | Selectively designate one or more fields in an Object as required. | [3](../v3/DTDL.v3.md), [4](./DTDL.v4.md) |
 
 ## Available limit extensions

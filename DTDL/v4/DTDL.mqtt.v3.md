@@ -1,15 +1,16 @@
 ﻿# Mqtt extension
 
-**Version 2**
+**Version 3**
 
 **Usable in DTDL version 3 or 4**
 
 The DTDL Mqtt extension enables a model to specify properties for an Interface that are relevant to communication via the MQTT pub/sub protocol.
-If a service supports the Mqtt extension, it recognizes and understands the Mqtt, Idempotent, Cacheable, Transparent, and Indexed adjunct types and their defined properties if the Mqtt context is specified.
+If a service supports the Mqtt extension, then when the Mqtt context is specified, the service recognizes and understands the Mqtt, Idempotent, Cacheable, Transparent, and Indexed adjunct types and their defined properties.
+It also recognizes and understands the Result, NormalResult, ErrorResult, Error, and ErrorMessage adjunct types.
 
 ## Mqtt context
 
-The context specifier for version 2 of the Mqtt extension is "dtmi:dtdl:extension:mqtt;2".
+The context specifier for version 3 of the Mqtt extension is "dtmi:dtdl:extension:mqtt;3".
 
 ## Mqtt adjunct type
 
@@ -109,6 +110,36 @@ The chart below lists the additional properties that may be part of an element t
 Some serialization formats require index values for string EnumValues, Fields, and Telemetries.
 Although index values can be generated automatically, the Indexed adjunct type is available for setting explicit index values when needed for cross-version compatibility or interoperation across different implementations.
 
+## Result, NormalResult, and ErrorResult adjunct types
+
+The Result adjunct type can co-type an Object in DTDL version 3 or 4, but each element in the `fields` property of the Object must be co-typed NormalResult or ErrorResult.
+
+The NormalResult adjunct type can co-type a Field in DTDL version 3 or 4, but only within the `fields` property of an element that is co-typed Result.
+Within the values of a `fields` property, no more than one element may be co-typed NormalResult.
+
+The ErrorResult adjunct type can co-type a Field in DTDL version 3 or 4, but only within the `fields` property of an element that is co-typed Result.
+Within the values of a `fields` property, no more than one element may be co-typed ErrorResult.
+
+These three adjunct types work together to define DTDL Command responses that can convey user-level errors.
+As the [example below](#result-example) illustrates, an Object co-typed Result can be used as the schema of a Command response.
+The two Fields therein define types for the normal and exceptional results of the Command.
+Code-generation systems can recognize these cotypes and generate code that employs programming-language-appropriate mechanisms for indicating error results.
+
+## Error and ErrorMessage adjunct types
+
+The Error adjunct type can co-type an Object in DTDL version 3 or 4.
+
+The ErrorMessage adjunct type can co-type a Field in DTDL version 3 or 4, but only within the `fields` property of an element that is co-typed Error, and only when the Field has a `schema` property whose value is *string*.
+Within the values of a `fields` property, no more than one element may be co-typed ErrorMessage.
+
+These two adjunct types work together to define a type that expresses error information.
+As the [example below](#error-example) illustrates, an Object co-typed Error can contain a Field co-typed ErrorMessage.
+Code-generation systems can recognize these cotypes and generate code that employs programming-language-appropriate mechanisms for encapsulating error information and relaying an error message.
+
+The Error adjunct type may often be appropriate for co-typing an Object that is the `schema` of an [ErrorResult](#result-normalresult-and-errorresult-adjunct-types) Field.
+However, this extension does not mandate using Error and ErrorResult together in this way.
+Nonetheless, code-generation systems might impose such a requirement, particularly when the containing Result Object is the `schema` of a Command `response`.
+
 ## Mqtt examples
 
 The following example shows an Interface with four `contents` elements, two Telemetries and two Commands.
@@ -120,7 +151,7 @@ The "getSpeed" Command is also co-typed Cacheable and has a "ttl" property with 
 {
   "@context": [
     "dtmi:dtdl:context;3",
-    "dtmi:dtdl:extension:mqtt;2"
+    "dtmi:dtdl:extension:mqtt;3"
   ],
   "@id": "dtmi:example:TestVehicle;1",
   "@type": [ "Interface", "Mqtt" ],
@@ -178,7 +209,7 @@ These indices can be generated automatically, but the example illustrates how th
 {
   "@context": [
     "dtmi:dtdl:context;3",
-    "dtmi:dtdl:extension:mqtt;2"
+    "dtmi:dtdl:extension:mqtt;3"
   ],
   "@id": "dtmi:example:TestVehicle;1",
   "@type": [ "Interface", "Mqtt" ],
@@ -233,7 +264,7 @@ The following example shows an Interface with a Command whose `request` value ha
 {
   "@context": [
     "dtmi:dtdl:context;3",
-    "dtmi:dtdl:extension:mqtt;2"
+    "dtmi:dtdl:extension:mqtt;3"
   ],
   "@id": "dtmi:example:Display;1",
   "@type": [ "Interface", "Mqtt" ],
@@ -272,7 +303,7 @@ Therefore, the request lists both type CommandRequest and type Transparent.
 {
   "@context": [
     "dtmi:dtdl:context;3",
-    "dtmi:dtdl:extension:mqtt;2"
+    "dtmi:dtdl:extension:mqtt;3"
   ],
   "@id": "dtmi:example:Display;1",
   "@type": [ "Interface", "Mqtt" ],
@@ -312,7 +343,7 @@ The following example is not valid becuse the `schema` of the request is "string
 {
   "@context": [
     "dtmi:dtdl:context;3",
-    "dtmi:dtdl:extension:mqtt;2"
+    "dtmi:dtdl:extension:mqtt;3"
   ],
   "@id": "dtmi:example:Display;1",
   "@type": [ "Interface", "Mqtt" ],
@@ -332,11 +363,100 @@ The following example is not valid becuse the `schema` of the request is "string
 }
 ```
 
-## Changes from Version 1
+### Result example
 
-* [DTDL v4](./DTDL.v4.md) is now supported.
-* The [Transparent](#transparent-adjunct-type) adjunct type has been added.
-* The "telemServiceGroupId" and "cmdServiceGroupId" properties have been added to to the [Mqtt](#mqtt-adjunct-type) adjunct type.
+The following Interface example defines an "increment" Command with a response schema of an Object that is co-typed Result.
+The Field with co-type NormalResult has a schema that is an integer value named "counterValue", which is the result that will be returned in the response under normal circumstances.
+The Field with co-type ErrorResult has a schema defined by reference named "incrementError", which is the result that will be returned in the response under exceptional circumstances.
+
+> Note that for this model to be complete and valid, a definition for "dtmi:com:example:CounterCollection:CounterError;1" must be provided.
+The subsequent example shows an appropriate definition.
+
+```json
+{
+  "@context": [
+    "dtmi:dtdl:context;3",
+    "dtmi:dtdl:extension:mqtt;3"
+  ],
+  "@id": "dtmi:com:example:CounterCollection;1",
+  "@type": [ "Interface", "Mqtt" ],
+  "commandTopic": "rpc/command-samples/{executorId}/{commandName}",
+  "payloadFormat": "Json/ecma/404",
+  "contents": [
+    {
+      "@type": "Command",
+      "name": "increment",
+      "request": {
+        "name": "counterName",
+        "schema": "string"
+      },
+      "response": {
+        "name": "incrementResponse",
+        "schema": {
+          "@type": [ "Object", "Result" ],
+          "fields": [
+            {
+              "@type": [ "Field", "NormalResult" ],
+              "name": "counterValue",
+              "schema": "integer"
+            },
+            {
+              "@type": [ "Field", "ErrorResult" ],
+              "name": "incrementError",
+              "schema": "dtmi:com:example:CounterCollection:CounterError;1"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}
+```
+
+### Error example
+
+The following example defines an Object that is co-typed Error, indicating that this Object conveys error information.
+The Field with co-type ErrorMessage has a schema that is a string value named "explanation"; the adjunct type indicates that this field represents an error message.
+The Field named "condition" has no co-type; it is arbitrarily designed error information of the modeler's choosing.
+
+A code-generation system could use a programming-language-appropriate error type to encapsulate the information in this Object.
+The generator might further use language-appropriate means to convey the information in the "explanation" Field as an error message.
+
+```json
+{
+  "@id": "dtmi:com:example:CounterCollection:CounterError;1",
+  "@type": [ "Object", "Error" ],
+  "fields": [
+    {
+      "@type": [ "Field", "ErrorMessage" ],
+      "name": "explanation",
+      "schema": "string"
+    },
+    {
+      "name": "condition",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "integer",
+        "enumValues": [
+          {
+            "name": "counterNotFound",
+            "enumValue": 1
+          },
+          {
+            "name": "counterOverflow",
+            "enumValue": 2
+          }
+        ]
+      }
+    }
+  ]
+}
+```
+
+## Changes from Version 2
+
+* The [Result, NormalResult, and ErrorResult](#result-normalresult-and-errorresult-adjunct-types) adjunct types have been added.
+* The [Error and ErrorMessage](#error-and-errormessage-adjunct-types) adjunct types have been added.
 
 ## Feature versions
 
