@@ -117,13 +117,16 @@ The Result adjunct type can co-type an Object in DTDL version 3 or 4, but each e
 The NormalResult adjunct type can co-type a Field in DTDL version 3 or 4, but only within the `fields` property of an element that is co-typed Result.
 Within the values of a `fields` property, no more than one element may be co-typed NormalResult.
 
-The ErrorResult adjunct type can co-type a Field in DTDL version 3 or 4, but only within the `fields` property of an element that is co-typed Result.
+The ErrorResult adjunct type can co-type a Field in DTDL version 3 or 4, but only within the `fields` property of an element that is co-typed Result, and only when the Field has a `schema` property whose value is an Object that is co-typed [Error](#error-and-errormessage-adjunct-types).
 Within the values of a `fields` property, no more than one element may be co-typed ErrorResult.
 
 These three adjunct types work together to define DTDL Command responses that can convey user-level errors.
 As the [example below](#result-example) illustrates, an Object co-typed Result can be used as the schema of a Command response.
 The two Fields therein define types for the normal and exceptional results of the Command.
 Code-generation systems can recognize these cotypes and generate code that employs programming-language-appropriate mechanisms for indicating error results.
+
+When a Result Object is transmitted on the wire, at most one of its NormalResult and ErrorResult fields may have a value because a single result cannot be both normal and exceptional.
+Therefore, the NormalResult and ErrorResult adjunct types are not permitted to be co-co-typed with the Required adjunct type from the [Requirement](./DTDL.requirement.v1.md) extension.
 
 ## Error and ErrorMessage adjunct types
 
@@ -136,9 +139,7 @@ These two adjunct types work together to define a type that expresses error info
 As the [example below](#error-example) illustrates, an Object co-typed Error can contain a Field co-typed ErrorMessage.
 Code-generation systems can recognize these cotypes and generate code that employs programming-language-appropriate mechanisms for encapsulating error information and relaying an error message.
 
-The Error adjunct type may often be appropriate for co-typing an Object that is the `schema` of an [ErrorResult](#result-normalresult-and-errorresult-adjunct-types) Field.
-However, this extension does not mandate using Error and ErrorResult together in this way.
-Nonetheless, code-generation systems might impose such a requirement, particularly when the containing Result Object is the `schema` of a Command `response`.
+The Error adjunct type may be applied to arbitrary Objects, but it is required as a co-type of an Object that is the `schema` of an [ErrorResult](#result-normalresult-and-errorresult-adjunct-types) Field.
 
 ## Mqtt examples
 

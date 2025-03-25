@@ -229,6 +229,9 @@
         { "sh:class": "dtmi:dtdl:class:Field;3" },
         { "sh:class": "dtmi:dtdl:class:Field;4" }
       ],
+      "sh:not": [
+        { "sh:class": "dtmi:dtdl:extension:requirement:v1:Required" }
+      ],
       "sh:property": [
         {
           "sh:path": { "sh:inversePath": "fields" },
@@ -245,7 +248,16 @@
         { "sh:class": "dtmi:dtdl:class:Field;3" },
         { "sh:class": "dtmi:dtdl:class:Field;4" }
       ],
+      "sh:not": [
+        { "sh:class": "dtmi:dtdl:extension:requirement:v1:Required" }
+      ],
       "sh:property": [
+        {
+          "sh:path": "schema",
+          "sh:or": [
+            { "sh:class": "dtmi:dtdl:extension:mqtt:v3:Error" }
+          ]
+        },
         {
           "sh:path": { "sh:inversePath": "fields" },
           "sh:class": "dtmi:dtdl:extension:mqtt:v3:Result",
