@@ -130,6 +130,8 @@ The "getSpeed" Command is also co-typed Cacheable and has a "ttl" property with 
 }
 ```
 
+### Indexed example
+
 The following example is identical to the previous one except for two changes.
 First, the `payloadFormat` is specified as "Protobuf/3" instead of "Avro/1.11.0".
 Second, each Telemetry element is co-typed Indexed, and it specifies a unique (within the Interface) positive integer value for the `index` property.
@@ -196,4 +198,5 @@ The chart below lists the versions of the Mqtt extension that are currently avai
 | --- | --- | --- |
 | [MQTT v1](./DTDL.mqtt.v1.md) | dtmi:dtdl:extension:mqtt;1 | [3](./DTDL.v3.md) |
 | [MQTT v2](../v4/DTDL.mqtt.v2.md) | dtmi:dtdl:extension:mqtt;2 | [3](./DTDL.v3.md), [4](../v4/DTDL.v4.md) |
+| [MQTT v3](../v4/DTDL.mqtt.v3.md) | dtmi:dtdl:extension:mqtt;3 | [3](./DTDL.v3.md), [4](../v4/DTDL.v4.md) |
 

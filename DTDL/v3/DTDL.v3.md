@@ -997,6 +997,7 @@ The chart below lists the language extensions that are currently available for u
 | [Overriding v2](../v4/DTDL.overriding.v2.md) | feature | Override a model property with an instance value. |
 | [MQTT v1](./DTDL.mqtt.v1.md) | feature | Specify Interface properties to facilitate communication via the MQTT pub/sub protocol. |
 | [MQTT v2](../v4/DTDL.mqtt.v2.md) | feature | Specify Interface properties to facilitate communication via the MQTT pub/sub protocol. |
+| [MQTT v3](../v4/DTDL.mqtt.v3.md) | feature | Specify Interface properties to facilitate communication via the MQTT pub/sub protocol. |
 | [Requirement v1](../v4/DTDL.requirement.v1.md) | feature | Selectively designate one or more fields in an Object as required. |
 
 ## Changes from Version 2
